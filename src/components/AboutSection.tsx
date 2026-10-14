@@ -20,7 +20,11 @@ export function AboutSection() {
           </div>
         </div>
         <div className="flex-1">
-          <h2 className="text-[60px] md:text-[104px] font-semibold leading-[1] tracking-[-0.05em] text-[#141414] text-left">
+          <h2
+            data-reveal-01="words"
+            data-scroll
+            className="text-[60px] md:text-[104px] font-semibold leading-[1] tracking-[-0.05em] text-[#141414] text-left"
+          >
             Discover the raw majesty of Erg Chegaga with Zagora natives. Private 4x4 expeditions{" "}
             <span className="text-[#999999] font-medium">
               luxury nomad camps, sunset camel caravans, and deep Sahara heritage.

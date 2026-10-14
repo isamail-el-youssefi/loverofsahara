@@ -1,0 +1,35 @@
+.fill-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.fill-text-stack {
+  position: relative;
+  display: inline-block;
+  user-select: none;
+}
+
+.fill-text {
+  font-family: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: inherit;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.fill-text-bg {
+  color: rgba(255, 255, 255, 0.16);
+}
+
+.fill-text-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #ffffff;
+  pointer-events: none;
+}

@@ -26,14 +26,16 @@ export function ArticlesSection() {
   return (
     <section className="px-4 py-30 md:px-10">
       <div className="flex flex-col lg:flex-row items-end gap-6 w-full">
-        <h2 className="w-full lg:w-1/2 text-[32px] md:text-[64px] font-semibold tracking-[-0.05em] leading-[1.1] text-[#141414]">
+        <h2
+          data-reveal-01="words"
+          data-scroll
+          className="w-full lg:w-1/2 text-[32px] md:text-[64px] font-semibold tracking-[-0.05em] leading-[1.1] text-[#141414]"
+        >
           Sahara <span className="font-normal text-neutral-400">Stories.</span>
         </h2>
 
         <div className="w-full lg:w-1/2 flex justify-between lg:items-end gap-4 lg:text-right">
-          <p className="text-[16px] font-medium tracking-[-0.03em] text-neutral-500 max-w-sm text-left">
-            Insider guides, packing secrets, and stories from our native desert team in Zagora.
-          </p>
+
           <OriginButton
             href="#blog"
             className="h-10 rounded-[10px] border-neutral-300 px-5 text-sm font-medium text-neutral-900"
@@ -54,17 +56,17 @@ export function ArticlesSection() {
               href={`#article/${article.id}`}
               className="group block cursor-pointer"
             >
-              <div className="h-[600px] overflow-hidden rounded-lg">
+              <div className="h-[660px] overflow-hidden rounded-[10px]">
                 <img
                   src={article.img}
                   alt={article.alt}
                   width={1280}
                   height={960}
                   loading="lazy"
-                  className="h-full w-full object-cover transition duration-500 ease-out group-hover:scale-105"
+                  className="h-full w-full object-cover transition duration-500 ease-out group-hover:scale-[1.02]"
                 />
               </div>
-              <h3 className="mt-5 text-xl font-semibold tracking-tight transition group-hover:text-neutral-700">
+              <h3 className="mt-5 text-2xl font-semibold tracking-tight transition group-hover:text-neutral-700">
                 {article.title}
               </h3>
               {article.date ? (

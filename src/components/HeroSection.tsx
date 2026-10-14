@@ -14,38 +14,44 @@ export function HeroSection() {
         />
         <div className="absolute inset-0 bg-black/45" />
 
-        <Navbar className="top-[-15px] left-[-5px]" />
+        <Navbar />
 
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="relative z-10 max-w-[920px] text-center"
+          transition={{ type: "spring", damping: 25, stiffness: 180, mass: 0.8 }}
+          className="relative z-10 max-w-[900px] text-center px-4"
         >
-          <h1 className="text-[2.75rem] font-medium leading-[1.08] tracking-[-0.07em] text-white sm:text-[3.5rem] lg:text-[68px]">
+          {/* Eyebrow badge: Clean orientation with Apple frosted glass */}
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs font-medium text-white/90 mb-5 shadow-[inset_0_1px_1px_rgba(255,255,255,0.3)]">
+            <span>Erg Chegaga • Zagora</span>
+          </div>
+
+          {/* Headline: Command presence with optical negative tracking */}
+          <h1
+
+            className="text-[2.75rem] sm:text-[3.5rem] lg:text-[64px] font-semibold leading-[1.06] tracking-[-0.04em] text-white"
+          >
             Experience the Untamed Sahara of Erg Chegaga
           </h1>
-          <p className="mx-auto mt-8 max-w-[720px] text-[18px] font-medium leading-[1.35] tracking-[-0.03em] text-neutral-100/95">
-            Based in Zagora, the historic gateway to the dunes. We curate bespoke{" "}
-            <a
-              href="#expeditions"
-              className="underline underline-offset-[6px] decoration-white/40 decoration-2 transition hover:decoration-white"
-            >
-              4x4 Sahara expeditions
-            </a>
-            , luxury nomadic desert camps, and sunset camel caravans across Morocco&apos;s wildest dune sea.
+
+          {/* Subtitle: Short, high-signal, clean 2-line measure */}
+          <p className="mx-auto mt-5 max-w-[560px] text-[16px] sm:text-[18px] font-normal leading-[1.6] tracking-normal text-white/85">
+            Bespoke 4x4 expeditions, luxury nomad bivouacs, and sunset camel caravans across Morocco&apos;s wildest dune sea.
           </p>
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+
+          {/* Buttons: Tactile zero-latency press + Apple materials */}
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-3.5">
             <a
               href="#expeditions"
-              className="rounded-[10px] bg-white px-7 py-[14px] text-sm font-semibold text-black transition hover:bg-neutral-100 h-[48px] flex items-center"
+              className="h-[46px] rounded-[10px] bg-white px-7 text-sm font-semibold text-black transition-all duration-100 ease-out active:scale-[0.98] active:bg-neutral-200 hover:bg-neutral-100 flex items-center shadow-sm"
             >
               Explore Expeditions
             </a>
             <OriginButton
               href="#process"
               variant="white"
-              className="h-[48px] rounded-[10px] border-white/60 bg-transparent px-7 text-sm font-semibold text-white backdrop-blur-md hover:border-white"
+              className="h-[46px] rounded-[10px] border-white/40 bg-white/10 px-7 text-sm font-semibold text-white backdrop-blur-md hover:border-white transition-all duration-100 ease-out active:scale-[0.98] active:bg-white/20"
             >
               Discover Erg Chegaga
             </OriginButton>

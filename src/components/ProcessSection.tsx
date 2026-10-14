@@ -31,7 +31,11 @@ export function ProcessSection() {
         <div className="text-[15px] text-neutral-600 font-medium">
           Our heritage & expertise
         </div>
-        <h2 className="mt-4 text-[32px] md:text-[48px] font-medium tracking-[-0.06em] leading-[1.09] text-[#141414]">
+        <h2
+          data-reveal-01="words"
+          data-scroll
+          className="mt-4 text-[32px] md:text-[48px] font-medium tracking-[-0.06em] leading-[1.09] text-[#141414]"
+        >
           Our Sahara expeditions are{" "}
           <span className="font-normal text-neutral-500">
             handcrafted in Zagora using generations of authentic nomadic wisdom.
@@ -51,12 +55,12 @@ export function ProcessSection() {
             key={s.n}
             {...fadeUp}
             transition={{ ...fadeUp.transition, delay: i * 0.08 }}
-            className="rounded-[16px] border border-neutral-200 bg-white p-6 md:p-8 border-[#f2f2f2] border-3 transition hover:shadow-sm"
+            className="rounded-[10px] border border-neutral-200 bg-white p-6 md:p-8 border-[#f2f2f2] border-2 transition hover:shadow-sm"
           >
             <div className="flex items-start gap-4">
-              <span className="text-xl font-medium text-neutral-500 ">{s.n}.</span>
+              <span className="text-2xl font-medium text-neutral-500 pr-10 pt-2">{s.n}</span>
               <div className="flex flex-col gap-3 max-w-lg">
-                <h3 className="text-[18px] md:text-[22px] font-medium tracking-tight text-[#141414]">{s.t}</h3>
+                <h3 className="text-[18px] md:text-[26px] font-medium tracking-tight text-[#141414]">{s.t}</h3>
                 <p className="text-base font-medium leading-tight text-neutral-500">{s.d}</p>
               </div>
             </div>

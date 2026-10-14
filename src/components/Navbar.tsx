@@ -18,8 +18,13 @@ export function Navbar({ theme = "dark", className = "" }: { theme?: "dark" | "l
   const dividerColor = isLight ? "text-black/20" : "text-white/40";
 
   return (
-    <nav className={`absolute z-50 flex w-full items-center justify-between p-8 md:px-12 md:py-10 ${className}`}>
-      <a href="#" className={`text-2xl font-bold tracking-tight ${textColor}`}>
+    <nav
+      className={`absolute top-0 left-0 right-0 z-50 flex w-full items-center justify-between py-6 md:py-8 px-6 md:px-12 ${className}`}
+    >
+      <a
+        href="#"
+        className={`text-xl md:text-2xl font-bold tracking-tight transition-transform duration-100 ease-out active:scale-[0.98] ${textColor}`}
+      >
         LOVER OF SAHARA
       </a>
       <div className="flex items-center gap-6 md:gap-8">
@@ -28,7 +33,7 @@ export function Navbar({ theme = "dark", className = "" }: { theme?: "dark" | "l
             <a
               key={l.label}
               href={l.href}
-              className={`text-base font-medium transition ${textMuted}`}
+              className={`text-sm md:text-[15px] font-medium transition ${textMuted}`}
             >
               <TextRollHover activeClassName={isLight ? "text-black font-semibold" : "text-white font-semibold"}>
                 {l.label}
@@ -41,14 +46,14 @@ export function Navbar({ theme = "dark", className = "" }: { theme?: "dark" | "l
           <OriginButton
             href="#contact"
             variant={isLight ? "default" : "white"}
-            className={`h-9 rounded-[10px] border ${borderMuted} px-5 text-sm font-medium ${textColor}`}
+            className={`h-9 rounded-[10px] border ${borderMuted} px-5 text-sm font-medium ${textColor} transition-all duration-100 ease-out active:scale-[0.98]`}
           >
             Contact
           </OriginButton>
           <OriginButton
             href="#contact"
             variant={isLight ? "default" : "white"}
-            className={`h-9 rounded-[10px] border ${borderColor} px-5 text-sm font-medium ${textColor}`}
+            className={`h-9 rounded-[10px] border ${borderColor} px-5 text-sm font-medium ${textColor} transition-all duration-100 ease-out active:scale-[0.98]`}
           >
             Book Tour
           </OriginButton>

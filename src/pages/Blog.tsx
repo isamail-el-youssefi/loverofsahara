@@ -38,7 +38,7 @@ const blogArticles = [
 export function Blog() {
   return (
     <div className="relative py-44 ">
-      <Navbar theme="light" className="top-[-25px] left-[-20px]" />
+      <Navbar theme="light" />
       <section className="px-4 md:px-10">
         <div className="flex flex-col lg:flex-row items-end gap-6 w-full pb-14">
           <h2 className="w-full lg:w-1/2 text-[32px] md:text-[55px] font-semibold tracking-[-0.05em] leading-[1.1] text-[#141414]">

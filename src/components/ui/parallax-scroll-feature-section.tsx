@@ -24,7 +24,7 @@ const defaultDestinations: DestinationItemData[] = [
   description:
     "Morocco's largest and wildest sea of golden sand. Towering 300-meter dunes stretching across 40 kilometers of untouched wilderness, accessible only by private 4x4 expedition across ancient dry lakes and the Sacred Oasis.",
   imageUrl: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1600&q=85",
-  reverse: false,
+  reverse: true,
 },
 {
   id: 2,
@@ -34,7 +34,7 @@ const defaultDestinations: DestinationItemData[] = [
   description:
     "Carved between the High Atlas and Jbel Saghro mountains, featuring dramatic serpentine switchback roads, rust-red rock canyons known as the monkey fingers, and lush river oases filled with ancient earthen Kasbahs.",
   imageUrl: "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1600&q=85",
-  reverse: true,
+  reverse: false,
 },
 {
   id: 3,
@@ -44,7 +44,7 @@ const defaultDestinations: DestinationItemData[] = [
   description:
     "A magnificent 11th-century fortified clay ksar along the historic trans-Saharan caravan route. Stroll through centuries-old earthen architecture, intricate clay towers, and the legendary backdrop of cinematic epics.",
   imageUrl: "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=1600&q=85",
-  reverse: false,
+  reverse: true,
 },
 {
   id: 4,
@@ -54,7 +54,7 @@ const defaultDestinations: DestinationItemData[] = [
   description:
     "A breathtaking limestone canyon carved over millennia by the Todgha River. Sheer vertical rock walls soaring 300 meters above crystal-clear mountain streams, opening into the lush date palm groves of Tinghir.",
   imageUrl: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=85",
-  reverse: true,
+  reverse: false,
 },
 ];
 
@@ -108,10 +108,10 @@ function DestinationSectionItem({ section }: { section: DestinationItemData }) {
             <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-neutral-100 text-neutral-800 border border-neutral-200/90 shadow-2xs">
               {section.tag}
             </span>
-            <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-neutral-500">
+ {/*            <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-neutral-500">
               <MapPin size={13} className="text-[#ac2a1c] shrink-0" />
               <span>{section.location}</span>
-            </span>
+            </span> */}
           </div>
 
           {/* Apple typography: Negative tracking for large headings with optical sizing */}
@@ -120,7 +120,7 @@ function DestinationSectionItem({ section }: { section: DestinationItemData }) {
           </h3>
 
           {/* Apple typography: Comfortable reading measure (~65ch) and neutral tracking */}
-          <p className="mt-5 text-[16px] sm:text-[17px] md:text-[18px] font-normal leading-[1.68] tracking-normal text-neutral-600 max-w-xl">
+          <p className="mt-5 text-[16px] sm:text-[17px] md:text-[18px] font-normal leading-[1.68] tracking-normal text-neutral-600 max-w-lg">
             {section.description}
           </p>
 
@@ -146,7 +146,7 @@ function DestinationSectionItem({ section }: { section: DestinationItemData }) {
             section.reverse ? "lg:order-1" : "lg:order-2"
           }`}
         >
-          <div className="group relative h-[65vh] sm:h-[70vh] lg:h-[76vh] max-h-[740px] min-h-[460px] w-full overflow-hidden rounded-2xl md:rounded-[24px] bg-neutral-100 border border-neutral-200/70 shadow-2xl transition-shadow duration-300">
+          <div className="group relative h-[65vh] sm:h-[70vh] lg:h-[76vh] max-h-[740px] min-h-[460px] w-full overflow-hidden rounded-2xl md:rounded-[24px] bg-neutral-100 border border-neutral-200/70 shadow-md transition-shadow duration-300">
             <img
               src={section.imageUrl}
               alt={`${section.title} - ${section.location}`}
@@ -180,24 +180,19 @@ export const ParallaxScrollFeatureSection = ({
   return (
     <section id="destinations" className="px-4 py-24 md:px-10 bg-white">
       {/* Section Header matching website typography & layout */}
-      <div className="flex flex-col lg:flex-row items-end gap-6 w-full pb-10 border-b border-neutral-100">
+      <div className="flex flex-col lg:flex-row items-end gap-6 w-full ">
         <div className="w-full lg:w-3/5">
-          <div className="text-[15px] text-neutral-600 font-medium mb-3">
-            Our tailored destinations
-          </div>
-          <h2 className="text-[32px] md:text-[64px] font-semibold tracking-[-0.05em] leading-[1.08] text-[#141414]">
+
+          <h2
+            data-reveal-01="words"
+            data-scroll
+            className="text-[32px] md:text-[64px] font-semibold tracking-[-0.05em] leading-[1.08] text-[#141414]"
+          >
             Iconic Southern <span className="font-normal text-neutral-400">Routes.</span>
           </h2>
         </div>
 
-        <div className="w-full lg:w-2/5 flex flex-col sm:flex-row justify-between lg:items-end gap-4 lg:text-right">
-          <p className="text-[16px] font-medium tracking-[-0.03em] text-neutral-500 max-w-sm text-left">
-            From the colossal golden dunes of Erg Chegaga to ancient clay kasbahs and High Atlas gorges.
-          </p>
-          <div className="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-neutral-400 whitespace-nowrap pt-2">
-            Scroll <ArrowDown size={14} className="animate-bounce" />
-          </div>
-        </div>
+
       </div>
 
       {/* Parallax Destinations List */}

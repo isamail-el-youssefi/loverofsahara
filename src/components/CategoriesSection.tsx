@@ -18,14 +18,16 @@ export function CategoriesSection() {
   return (
     <section id="expeditions" className="px-4 py-30 md:px-10  ">
       <div className="flex flex-col lg:flex-row items-end gap-6 w-full">
-        <h2 className="w-full lg:w-1/2 text-[32px] md:text-[64px] font-semibold tracking-[-0.05em] leading-[1.1] text-[#141414]">
+        <h2
+          data-reveal-01="words"
+          data-scroll
+          className="w-full lg:w-1/2 text-[32px] md:text-[64px] font-semibold tracking-[-0.05em] leading-[1.1] text-[#141414]"
+        >
           Sahara Desert <span className="font-normal text-neutral-400">Expeditions.</span>
         </h2>
 
         <div className="w-full lg:w-1/2 flex justify-between lg:items-end gap-4 lg:text-right">
-          <p className="text-[16px] font-medium tracking-[-0.03em] text-neutral-500 max-w-sm">
-            From luxury glamping in 300-meter dunes to rugged 4x4 crossings, explore our curated Moroccan desert journeys.
-          </p>
+
           <OriginButton
             href="#itinerary"
             className="h-10 rounded-[10px] border-neutral-300 px-5 text-sm font-medium text-neutral-900"
@@ -35,13 +37,13 @@ export function CategoriesSection() {
         </div>
       </div>
 
-      <div className="mt-10 grid grid-cols-1 gap-[6px] md:grid-cols-2">
+      <div className="mt-10 grid grid-cols-1 gap-[6px] md:grid-cols-2 ">
         {categories.map((c, i) => (
           <motion.article
             key={c.title}
             {...fadeUp}
             transition={{ ...fadeUp.transition, delay: (i % 2) * 0.08 }}
-            className="group relative h-[650px] overflow-hidden rounded-lg"
+            className="group relative h-[650px] overflow-hidden rounded-[10px] "
           >
             <img
               src={c.img}

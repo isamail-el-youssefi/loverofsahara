@@ -10,7 +10,11 @@ export function CtaSection() {
         {...fadeUp}
         className="relative mb-8 overflow-hidden rounded-2xl border border-neutral-200 bg-white p-8 md:p-14"
       >
-        <h2 className="text-[60px] md:text-[104px] font-semibold leading-[1] tracking-[-0.05em] text-[#141414]">
+        <h2
+          data-reveal-01="words"
+          data-scroll
+          className="text-[60px] md:text-[104px] font-semibold leading-[1] tracking-[-0.05em] text-[#141414]"
+        >
           Plan Your Sahara Journey.
         </h2>
 

@@ -52,7 +52,11 @@ export function InventorySection() {
         {/* Left side */}
         <div className="w-full lg:w-[45%] flex flex-col justify-between">
           <div>
-            <h2 className="text-[28px] md:text-[36px] lg:text-[40px] font-medium tracking-tight leading-[1.1] mb-10 text-white">
+            <h2
+              data-reveal-01="words"
+              data-scroll
+              className="text-[28px] md:text-[36px] lg:text-[40px] font-medium tracking-tight leading-[1.1] mb-10 text-white"
+            >
               Zagora to Erg Chegaga. Pure nomad soul.
             </h2>
 

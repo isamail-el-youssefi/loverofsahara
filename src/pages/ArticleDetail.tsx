@@ -245,7 +245,7 @@ export function ArticleDetail({ id }: { id: number | null }) {
           <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-black/20" />
 
           {/* Same Navbar as HeroSection */}
-          <Navbar className="top-[-15px] left-[-5px]" />
+          <Navbar />
 
           <motion.div
             initial={{ opacity: 0, y: 30 }}

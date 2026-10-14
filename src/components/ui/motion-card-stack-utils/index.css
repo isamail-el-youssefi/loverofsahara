@@ -1,0 +1,62 @@
+.card-stack-root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  user-select: none;
+}
+
+.card-stack-root .stack {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 520px;
+  height: 480px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .card-stack-root .stack {
+    height: 540px;
+  }
+}
+
+.card-stack-root .item {
+  position: absolute;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 20px 45px -15px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+  cursor: grab;
+  touch-action: pan-y;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 90%;
+  max-height: 92%;
+}
+
+.card-stack-root .item:active {
+  cursor: grabbing;
+}
+
+.card-stack-root .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+.card-stack-root .instructions {
+  text-align: center;
+  margin-top: 1.25rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  color: #737373;
+}

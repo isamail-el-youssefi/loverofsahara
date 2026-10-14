@@ -58,14 +58,16 @@ export function GalleryZoomSection() {
     <section className="relative w-full  text-white pt-24">
       {/* Intro Header */}
       <div className="flex flex-col lg:flex-row items-end gap-6 w-full px-4 pb-16 md:px-10">
-        <h2 className="w-full lg:w-1/2 text-[32px] md:text-[64px] font-semibold tracking-[-0.05em] leading-[1.1] text-[#141414]">
+        <h2
+          data-reveal-01="words"
+          data-scroll
+          className="w-full lg:w-1/2 text-[32px] md:text-[64px] font-semibold tracking-[-0.05em] leading-[1.1] text-[#141414]"
+        >
           Sahara <span className="font-normal text-neutral-400">Stories.</span>
         </h2>
 
         <div className="w-full lg:w-1/2 flex justify-between lg:items-end gap-4 lg:text-right">
-          <p className="text-[16px] font-medium tracking-[-0.03em] text-neutral-500 max-w-sm text-left">
-            Insider guides, packing secrets, and stories from our native desert team in Zagora.
-          </p>
+
           <OriginButton
             href="#blog"
             className="h-10 rounded-[10px] border-neutral-300 px-5 text-sm font-medium text-neutral-900"

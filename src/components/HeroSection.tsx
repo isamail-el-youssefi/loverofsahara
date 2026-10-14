@@ -5,8 +5,13 @@ import { OriginButton } from "@/components/ui/origin-button";
 
 export function HeroSection() {
   return (
-    <div className="h-screen p-[4px]">
-      <section className="relative flex h-full flex-col items-center justify-center overflow-hidden rounded-2xl p-6 md:p-10">
+    <section
+      data-st-01="parallax"
+      data-st-y="300"
+      data-st-opacity="0.3"
+      className="h-screen p-[4px] bg-white"
+    >
+      <div className="relative flex h-full flex-col items-center justify-center overflow-hidden rounded-2xl p-6 md:p-10">
         <img
           src={heroImg}
           alt="Golden Sahara sand dunes in Erg Chegaga Zagora Morocco"
@@ -57,7 +62,7 @@ export function HeroSection() {
             </OriginButton>
           </div>
         </motion.div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 }

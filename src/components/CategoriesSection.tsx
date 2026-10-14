@@ -16,7 +16,13 @@ const categories = [
 
 export function CategoriesSection() {
   return (
-    <section id="expeditions" className="px-4 py-30 md:px-10  ">
+    <section
+      id="expeditions"
+      data-st-01="parallax"
+      data-st-y="250"
+      data-st-opacity="0.15"
+      className="px-4 py-30 md:px-10 bg-white"
+    >
       <div className="flex flex-col lg:flex-row items-end gap-6 w-full">
         <h2
           data-reveal-01="words"

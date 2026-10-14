@@ -25,7 +25,10 @@ export function ProcessSection() {
   return (
     <section
       id="process"
-      className="grid grid-cols-1 items-start gap-8 px-4 py-36 md:px-10 lg:grid-cols-10 lg:gap-32"
+      data-st-01="parallax"
+      data-st-y="250"
+      data-st-opacity="0.15"
+      className="grid grid-cols-1 items-start gap-8 px-4 py-36 md:px-10 lg:grid-cols-10 lg:gap-32 bg-white"
     >
       <motion.div {...fadeUp} className="lg:col-span-5 pr-10">
         <div className="text-[15px] text-neutral-600 font-medium">

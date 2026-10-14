@@ -4,6 +4,7 @@ import Lenis from "lenis";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { textReveal01 } from "@/lib/textReveal01";
+import { sectionTransition01 } from "@/lib/sectionTransition01";
 import { HeroSection } from "@/components/HeroSection";
 import { AboutSection } from "@/components/AboutSection";
 import { CategoriesSection } from "@/components/CategoriesSection";
@@ -30,21 +31,28 @@ export default function App() {
 
   useEffect(() => {
     if (isPreloaderDone && !isArticle && hash !== "#blog") {
-      const initReveal = () => {
-        textReveal01();
-        ScrollTrigger.refresh();
+      let ctx: gsap.Context | null = null;
+
+      const initPageTransitions = () => {
+        ctx?.revert();
+        ctx = gsap.context(() => {
+          sectionTransition01();
+          textReveal01();
+          ScrollTrigger.refresh();
+        });
       };
 
       if (document.fonts?.ready) {
-        document.fonts.ready.then(initReveal);
+        document.fonts.ready.then(initPageTransitions);
       } else {
-        requestAnimationFrame(initReveal);
+        requestAnimationFrame(initPageTransitions);
       }
 
       const handleLoad = () => ScrollTrigger.refresh();
       window.addEventListener("load", handleLoad, { once: true });
       return () => {
         window.removeEventListener("load", handleLoad);
+        ctx?.revert();
       };
     }
   }, [hash, isArticle, isPreloaderDone]);
@@ -169,8 +177,9 @@ export default function App() {
                   <HeroSection />
                   <CategoriesSection />
                   <DestinationsSection />
-{/*           <InventorySection />
- */}                  <ProcessSection />
+                  {/*           <InventorySection />
+                   */}{" "}
+                  <ProcessSection />
                   <ArticlesSection />
                   <GalleryZoomSection />
                 </>

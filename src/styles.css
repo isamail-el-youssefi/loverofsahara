@@ -241,5 +241,25 @@ html.is-animating .swup-transition-main {
   }
 }
 
+/* ==========================================================================
+   GSAP Section Transition 01 System
+   ========================================================================== */
 
+main {
+  position: relative;
+}
 
+section {
+  position: relative;
+  min-height: 100vh;
+  z-index: 1;
+}
+
+section[data-st-01]:not([data-st-01="pin"]) {
+  will-change: transform;
+}
+
+/* Protect sections containing sticky children from containing-block confinement */
+section:has(.sticky) {
+  will-change: auto;
+}

@@ -178,7 +178,13 @@ export const ParallaxScrollFeatureSection = ({
   destinations?: DestinationItemData[];
 }) => {
   return (
-    <section id="destinations" className="px-4 py-24 md:px-10 bg-white">
+    <section
+      id="destinations"
+      data-st-01="parallax"
+      data-st-y="250"
+      data-st-opacity="0.15"
+      className="px-4 py-24 md:px-10 bg-white"
+    >
       {/* Section Header matching website typography & layout */}
       <div className="flex flex-col lg:flex-row items-end gap-6 w-full ">
         <div className="w-full lg:w-3/5">

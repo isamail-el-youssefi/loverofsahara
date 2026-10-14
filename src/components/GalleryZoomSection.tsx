@@ -55,7 +55,7 @@ const galleryImages: ParallaxImage[] = [
 
 export function GalleryZoomSection() {
   return (
-    <section className="relative w-full  text-white pt-24">
+    <section data-st-01="parallax" className="relative w-full text-white pt-24 bg-white">
       {/* Intro Header */}
       <div className="flex flex-col lg:flex-row items-end gap-6 w-full px-4 pb-16 md:px-10">
         <h2

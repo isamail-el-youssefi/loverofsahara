@@ -1,7 +1,5 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import { getReviews } from "@/data/reviews";
-import { demoReviews } from "@/data/reviews/demo";
-import { useDemoReviews } from "@/hooks/use-demo-reviews";
 import { useReviewStyle } from "@/hooks/use-review-style";
 import { fetchReviews, REVIEW_ADDED_EVENT, type Review } from "@/lib/reviews";
 import { ReviewsCards } from "./ReviewsCards";
@@ -17,7 +15,6 @@ import { ReviewsSpotlight } from "./ReviewsSpotlight";
  */
 export function ReviewsSection({ tripSlug, tripTitle }: { tripSlug: string; tripTitle: string }) {
   const style = useReviewStyle();
-  const demo = useDemoReviews();
   const [live, setLive] = useState<Review[]>(() => getReviews(tripSlug));
 
   useEffect(() => {
@@ -39,12 +36,7 @@ export function ReviewsSection({ tripSlug, tripTitle }: { tripSlug: string; trip
     };
   }, [tripSlug]);
 
-  const reviews = useMemo(() => {
-    if (!demo || !import.meta.env.DEV) return live;
-    return [...live, ...demoReviews(tripSlug)].sort((a, b) => b.date.localeCompare(a.date));
-  }, [live, demo, tripSlug]);
-
-  const props = { tripSlug, tripTitle, reviews };
+  const props = { tripSlug, tripTitle, reviews: live };
   if (style === "spotlight") return <ReviewsSpotlight {...props} />;
   if (style === "cards") return <ReviewsCards {...props} />;
   return <ReviewsEditorial {...props} />;

@@ -4,7 +4,7 @@ import { fadeUp } from "@/lib/animations";
 import { formatReviewDate, summarize, type Review } from "@/lib/reviews";
 import { Band, SectionTitle } from "../parts";
 import { AddReviewButton } from "./AddReview";
-import { DemoTag, PhotoStrip, RT, RatingSummary, ReplyBlock, ReviewText, Stars } from "./shared";
+import { PhotoStrip, RT, RatingSummary, ReplyBlock, ReviewText, Stars } from "./shared";
 
 export interface ReviewsProps {
   tripSlug: string;
@@ -42,7 +42,6 @@ export function ReviewsEditorial({ tripSlug, tripTitle, reviews }: ReviewsProps)
               <li key={r.id} className="border-t border-ink/10 py-8 md:py-10">
                 <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5">
                   <h3 className="text-[19px] font-semibold tracking-[-0.02em]">{r.name}</h3>
-                  {r.demo && <DemoTag />}
                   <Stars value={r.rating} size={15} />
                   <span className="text-[13px] text-ink/50">{formatReviewDate(r.date)}</span>
                 </div>

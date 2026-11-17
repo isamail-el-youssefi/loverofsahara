@@ -69,7 +69,7 @@ export function GalleryZoomSection() {
   const isMobile = useIsMobile();
 
   return (
-    <section data-st-01="parallax" className="relative w-full text-white pt-24 bg-paper">
+    <section data-st-01="parallax" className="relative w-full text-white pt-[var(--section-y)] bg-paper">
       {/* Intro Header */}
       <div className="flex flex-col lg:flex-row items-end gap-6 w-full px-4 pb-16 md:px-10">
         <h2

@@ -39,7 +39,7 @@ export function HomeReviews() {
       };
 
   return (
-    <section id="reviews" className="bg-paper px-4 py-20 md:px-10 md:py-32">
+    <section id="reviews" className="bg-paper px-4 py-[var(--section-y)] md:px-10">
       <div className="grid grid-cols-1 gap-12 lg:grid-cols-[2fr_3fr] lg:gap-20">
         <div className="lg:sticky lg:top-10 lg:self-start">
           <div className="flex items-center gap-2 text-[13px] font-medium text-neutral-500">

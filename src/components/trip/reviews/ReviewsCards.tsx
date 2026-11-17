@@ -4,7 +4,7 @@ import { formatReviewDate, summarize } from "@/lib/reviews";
 import { Band, SectionTitle } from "../parts";
 import { AddReviewButton } from "./AddReview";
 import type { ReviewsProps } from "./ReviewsEditorial";
-import { DemoTag, PhotoStrip, RT, ReplyBlock, ReviewText, Stars } from "./shared";
+import { PhotoStrip, RT, ReplyBlock, ReviewText, Stars } from "./shared";
 
 /**
  * Variation 3, "Cards": a soft off-white band with each review in its own rounded card, laid out like a masonry
@@ -51,7 +51,6 @@ export function ReviewsCards({ tripSlug, tripTitle, reviews }: ReviewsProps) {
                   <div className="min-w-0">
                     <h3 className="flex items-center gap-2 text-[16px] font-semibold tracking-[-0.01em]">
                       <span className="truncate">{r.name}</span>
-                      {r.demo && <DemoTag />}
                     </h3>
                     <p className="text-[12.5px] text-ink/50">
                       {formatReviewDate(r.date)}

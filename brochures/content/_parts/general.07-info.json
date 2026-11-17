@@ -1,0 +1,44 @@
+{
+  "info-lead": "To help travelers enjoy their stay, below is some useful information about the region's facilities and infrastructure.",
+  "climat": {
+    "title": "Climate",
+    "body": "The region is characterized by a dry Saharan climate, very hot in the summer and pleasant in the winter during the day, cooling off at night. It is preferable to visit Ouarzazate, Zagora, Errachidia or Tinghir from late autumn to early spring."
+  },
+  "time": {
+    "title": "Local Time",
+    "body": "Morocco is located on a single time zone GMT + 1. During the month of Ramadan, Morocco switches to GMT. The Drâa Tafilalet region is no exception to the rule."
+  },
+  "languages": {
+    "title": "Spoken Languages",
+    "body": "In the Drâa Tafilalet region, the population speaks Berber and Arabic. Signs are in French and Arabic, sometimes in Tifinagh. Guides, hotel and guesthouse staff speak French, English and other languages due to the region's touristic vocation."
+  },
+  "hotels": {
+    "title": "Hotels",
+    "body": "The Drâa Tafilalet region is famous for the diversity of its landscapes ranging from palm groves to desert, passing through the High Atlas mountains or the desert plateaus. This panorama makes it possible to imagine any kind of accommodation. In total, the Draa Tafilalet region has 311 classified hotels with a capacity of 16,727 beds, 2,322 inns, 1,767 guest houses, 627 cottages, 307 tourist residences and 88 pensions.\n\nOuarzazate offers Palaces and 5-star hotels but also charming guest houses. In the villages and tourist sites, it is more common to find inns and guesthouses. Some Kasbahs offer accommodation for tourists. In the deserts of M'hamid and Merzouga, bivouacs or desert tents have long been the only \"rudimentary\" accommodation, in the Tuareg way of spending the night under the stars. For some years, luxury camps, equipped and heated like a 5-star hotel room are offered to the well off tourists. But in general, accommodation and catering in the Draa Tafilalet region remain affordable and suitable for all budgets."
+  },
+  "air": {
+    "title": "Air Transport",
+    "body": "The Drâa Tafilalet region has two international airports; Ouarzazate and Moulay Ali Chérif in Errachidia and a national airport; in Zagora. These airports are connected to Casablanca by frequent flights. Especially since new terminals have been put into service in 2019 in Errachidia and Ouarzazate. A new generation of transport services has been offered to travelers. In addition, a new terminal was born at the airport of Zagora now equipped with modern technology."
+  },
+  "shuttle": {
+    "title": "Shuttle from The Airport To The City Center",
+    "body": "From the airport, it is easy to find different types of transportation on the way out, whether it is cabs or tourist land transportation."
+  },
+  "land": {
+    "title": "Tourist Land Transportation",
+    "body": "The region has an extensive network of land-based tourist transporters offering a variety of options ranging from 4x4 all-terrain vehicles to 60-person buses. The CTM (Compagnie du Transport au Maroc) offers routes connecting the region's cities. Ouarzazate is connected to Zagora, Errachidia and Tinghir and Errachidia to Midelt and Errachidia to Zagora via Ouarzazate... Comfort is assured, speed is controlled, but you will have to plan for a long trip with stops in the cities."
+  },
+  "agencies": {
+    "title": "Travel Agencies",
+    "body": "For visitors looking for adapted trips, there are plenty of travel agencies in the region. Several programs are offered, and customized trips can also be made. The travel agent takes care of all the details: advice, hosting and accompaniment, reservations, travel and transportation..."
+  },
+  "emergencies": {
+    "title": "Emergencies",
+    "numbers": [
+      { "label": "Police", "tel": "19" },
+      { "label": "Firemen", "tel": "15" },
+      { "label": "Roadside assistance", "tel": "177" },
+      { "label": "Phone inquiries", "tel": "160" }
+    ]
+  }
+}

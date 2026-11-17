@@ -20,7 +20,6 @@ import { HomeAbout } from "@/components/home/HomeAbout";
 import { CtaSection } from "@/components/CtaSection";
 import { HomeFeaturedTrips } from "@/components/home/HomeFeaturedTrips";
 import { HomeReviews } from "@/components/home/HomeReviews";
-import { ProgressiveBlur } from "@/components/ProgressiveBlur";
 import { Blog } from "@/pages/Blog";
 import { Trips } from "@/pages/Trips";
 import { About } from "@/pages/About";
@@ -44,6 +43,12 @@ interface PageProps {
 }
 
 /**
+ * Options for every programmatic scroll (section tabs, menu anchors): one ~1 s glide with a soft landing.
+ * An explicit duration keeps long jumps predictable (lerp alone would crawl on far targets).
+ */
+const JUMP = { offset: -20, duration: 1.1, easing: (t: number) => 1 - Math.pow(1 - t, 4) };
+
+/**
  * One routed page = one nested scroll container (the `#swup` equivalent).
  * Old and new pages are rendered together by AnimatePresence in the same grid cell.
  */
@@ -62,13 +67,15 @@ function Page({ children, animated, ready, activeLenis }: PageProps) {
     const lenis = new Lenis({
       wrapper,
       content,
-      duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      // Light, close-to-native wheel smoothing (lerp): it eases a little, then settles soon after the wheel stops.
+      lerp: 0.09,
       orientation: "vertical",
       gestureOrientation: "vertical",
       smoothWheel: true,
       wheelMultiplier: 1,
-      touchMultiplier: 2,
+      // Lenis switches smoothing off (and makes every scrollTo instant) when the OS asks for reduced motion,
+      // e.g. Windows "Animation effects" off. The site's scrolling is meant to glide regardless.
+      respectReducedMotion: false,
     });
     activeLenis.current = lenis;
 
@@ -185,7 +192,7 @@ export default function App() {
     const scrollToAnchor = (selector: string) => {
       try {
         const el = document.querySelector(selector);
-        if (el) activeLenis.current?.scrollTo(el as HTMLElement, { offset: -20 });
+        if (el) activeLenis.current?.scrollTo(el as HTMLElement, JUMP);
       } catch {
         /* invalid selector */
       }
@@ -219,7 +226,7 @@ export default function App() {
       if (href === "#" || href === "") {
         // Logo: scroll to the top on the home page, otherwise go home.
         if (routeKeyRef.current === "home") {
-          activeLenis.current?.scrollTo(0, { duration: 1.2 });
+          activeLenis.current?.scrollTo(0, { ...JUMP, offset: 0 });
         } else {
           window.history.pushState(null, "", "/");
           setPath("/");
@@ -234,7 +241,7 @@ export default function App() {
     // In-page smooth scroll requested by components (e.g. the trip page's floating section tabs)
     const handleScrollTo = (e: Event) => {
       const el = (e as CustomEvent<{ el?: HTMLElement }>).detail?.el;
-      if (el) activeLenis.current?.scrollTo(el, { offset: -20 });
+      if (el) activeLenis.current?.scrollTo(el, JUMP);
     };
     window.addEventListener("los-scroll-to", handleScrollTo);
 
@@ -283,7 +290,6 @@ export default function App() {
         </AnimatePresence>
       </div>
       {/* No bottom blur on the detail pages (trip + article) */}
-      {!isTrip && !isPlace && !isArticle && <ProgressiveBlur />}
     </>
   );
 }

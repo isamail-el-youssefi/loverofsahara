@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
-import { ABOUT_INTRO, HERO_PHOTO, OWNER, STATS } from "@/components/about/content";
+import { ABOUT_INTRO, OWNER, STATS } from "@/components/about/content";
+import { ABOUT_PHOTO } from "@/data/siteImages";
 import { fadeUp } from "@/lib/animations";
 import { ABOUT_PATH, CONTACT_PATH } from "@/lib/routes";
 
@@ -12,17 +13,17 @@ export function HomeAbout() {
       data-st-01="parallax"
       data-st-y="250"
       data-st-opacity="0.15"
-      className="bg-paper px-4 py-20 md:px-10 md:py-28"
+      className="bg-paper px-4 py-[var(--section-y)] md:px-10"
     >
       <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-[5fr_6fr] lg:gap-16">
-        <motion.div {...fadeUp} className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-neutral-100 lg:aspect-[5/6]">
+        <motion.div {...fadeUp} className="relative aspect-[6/7] overflow-hidden rounded-2xl bg-neutral-100 lg:aspect-[10/11]">
           <img
-            src={HERO_PHOTO}
+            src={ABOUT_PHOTO}
             alt="Camel caravan in the Sahara near Zagora"
-            width={1200}
-            height={1440}
+            width={2400}
+            height={1596}
             loading="lazy"
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover object-[62%_50%]"
           />
           <p className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/60 to-transparent p-6 pt-16 text-[14px] text-white">
             “{OWNER.quote}”
@@ -41,7 +42,7 @@ export function HomeAbout() {
             data-scroll
             className="mt-5 text-[36px] font-semibold leading-[1.05] tracking-[-0.05em] text-ink md:text-[60px]"
           >
-            Native guides from Zagora. <span className="font-normal text-neutral-400">Private Sahara journeys.</span>
+            Native guides from Zagora. <div className="font-normal text-neutral-400">Private Sahara journeys.</div>
           </h2>
           <motion.p {...fadeUp} className="mt-6 max-w-xl text-[16px] font-medium leading-[1.6] tracking-[-0.02em] text-neutral-600">
             {ABOUT_INTRO}

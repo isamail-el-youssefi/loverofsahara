@@ -36,3 +36,6 @@ bringing data from old website/
 
 # Old-site export with customer emails: never commit
 Review_rows.csv
+
+# Generated brochure HTML (the PDFs in public/brochures are the deliverable)
+brochures/dist/

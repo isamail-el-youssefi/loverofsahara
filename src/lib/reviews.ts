@@ -15,8 +15,6 @@ export interface Review {
   photos: string[];
   /** The owner's public answer, if any. */
   reply?: { text: string; date: string };
-  /** Invented preview review (see src/data/reviews/demo.ts). Always shown with a "Demo" tag. */
-  demo?: boolean;
 }
 
 /** What the "Add review" form collects. */
@@ -41,6 +39,15 @@ export const REVIEW_ADDED_EVENT = "los-review-added";
  */
 export async function fetchReviews(trip: string, signal?: AbortSignal): Promise<Review[]> {
   const res = await fetch(`/api/reviews?trip=${encodeURIComponent(trip)}`, signal ? { signal } : {});
+  if (!res.ok) throw new Error(`Reviews request failed (${res.status})`);
+  const data = (await res.json()) as { reviews?: Review[] };
+  if (!Array.isArray(data.reviews)) throw new Error("Unexpected reviews response");
+  return data.reviews;
+}
+
+/** Published reviews of every trip from the reviews API. Throws when the API is unreachable. */
+export async function fetchAllReviews(signal?: AbortSignal): Promise<Review[]> {
+  const res = await fetch("/api/reviews", signal ? { signal } : {});
   if (!res.ok) throw new Error(`Reviews request failed (${res.status})`);
   const data = (await res.json()) as { reviews?: Review[] };
   if (!Array.isArray(data.reviews)) throw new Error("Unexpected reviews response");

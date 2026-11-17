@@ -196,6 +196,68 @@ export function applyReviewStyle(id: string) {
   window.dispatchEvent(new Event(REVIEW_EVENT));
 }
 
+/* ---------- Home "Popular Sahara Trips" section ---------- */
+
+export const HOME_TRIPS_STYLES: CardStyle[] = [
+  { id: "classic", name: "Classic", mood: "The three most reviewed trips" },
+  { id: "tabs", name: "Tabs", mood: "Popular first, then a tab per departure city" },
+];
+
+export const HOME_TRIPS_STORAGE_KEY = "los-home-trips";
+export const HOME_TRIPS_EVENT = "los-home-trips-change";
+export const DEFAULT_HOME_TRIPS = "classic";
+
+export function getStoredHomeTripsStyle(): string {
+  try {
+    const id = localStorage.getItem(HOME_TRIPS_STORAGE_KEY);
+    if (id && HOME_TRIPS_STYLES.some((c) => c.id === id)) return id;
+  } catch {
+    /* storage unavailable */
+  }
+  return DEFAULT_HOME_TRIPS;
+}
+
+export function applyHomeTripsStyle(id: string) {
+  try {
+    localStorage.setItem(HOME_TRIPS_STORAGE_KEY, id);
+  } catch {
+    /* storage unavailable */
+  }
+  window.dispatchEvent(new Event(HOME_TRIPS_EVENT));
+}
+
+/* ---------- Home call to action ("Plan Your Sahara Journey") ---------- */
+
+export const CTA_STYLES: CardStyle[] = [
+  { id: "classic", name: "Classic", mood: "Boxed card with contact details and photo" },
+  { id: "statement", name: "Statement", mood: "Centred headline on paper, nothing else" },
+  { id: "photo", name: "Photo", mood: "Full-bleed desert photo, text over it" },
+  { id: "ink", name: "Ink", mood: "Dark panel with a ruled contact list" },
+];
+
+export const CTA_STORAGE_KEY = "los-cta";
+export const CTA_EVENT = "los-cta-change";
+export const DEFAULT_CTA = "classic";
+
+export function getStoredCtaStyle(): string {
+  try {
+    const id = localStorage.getItem(CTA_STORAGE_KEY);
+    if (id && CTA_STYLES.some((c) => c.id === id)) return id;
+  } catch {
+    /* storage unavailable */
+  }
+  return DEFAULT_CTA;
+}
+
+export function applyCtaStyle(id: string) {
+  try {
+    localStorage.setItem(CTA_STORAGE_KEY, id);
+  } catch {
+    /* storage unavailable */
+  }
+  window.dispatchEvent(new Event(CTA_EVENT));
+}
+
 /* ---------- Footer ---------- */
 
 export const FOOTER_STYLES: CardStyle[] = [

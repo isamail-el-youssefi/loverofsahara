@@ -9,6 +9,7 @@
     "preview": "vite preview",
     "lint": "eslint .",
     "format": "prettier --write .",
+    "brochures:build": "node brochures/build.mjs",
     "trips:import": "node scripts/import-old-trips.ts",
     "imagekit:list": "node scripts/imagekit-list.mjs",
     "trips:check-heroes": "node scripts/check-trip-heroes.ts"

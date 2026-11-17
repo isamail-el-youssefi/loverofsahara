@@ -1,6 +1,6 @@
 import { createContext, forwardRef, useContext } from "react";
 import { motion } from "framer-motion";
-import { MapPin } from "lucide-react";
+import { MapPin, Star } from "lucide-react";
 import type { LocalizedTrip } from "@/data/trips";
 import { useTripCover } from "@/hooks/use-trip-cover";
 import { fadeUp } from "@/lib/animations";
@@ -234,9 +234,39 @@ function CornerCard({ trip, index }: CardProps) {
   );
 }
 
+/** Average and number of reviews of a trip, shown as a small pill on the photo. */
+export type TripRating = { average: number; count: number };
+
+/** Where the rating pill sits per card design, so it never covers that design's own labels. */
+const RATING_POS: Record<string, string> = {
+  classic: "left-4 top-[58px]",
+  index: "left-6 top-[46px]",
+  frame: "left-6 top-6",
+  editorial: "left-3 top-3",
+  caption: "left-3 top-3",
+};
+
+function RatingPill({ rating, style }: { rating: TripRating; style: string }) {
+  const pos = RATING_POS[style] ?? "left-4 top-4";
+  return (
+    <span
+      className={`pointer-events-none absolute z-10 ${pos} inline-flex items-center gap-1.5 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-medium text-white/90 shadow-[inset_0_1px_1px_rgba(255,255,255,0.25)] backdrop-blur-md [text-shadow:0_1px_6px_rgba(0,0,0,0.35)]`}
+    >
+      <Star size={13} className="fill-current" aria-hidden />
+      <span className="font-semibold">{rating.average.toFixed(1)}</span>
+      <span aria-hidden className="text-white/50">
+        ·
+      </span>
+      <span>
+        {rating.count} {rating.count === 1 ? "review" : "reviews"}
+      </span>
+    </span>
+  );
+}
+
 /** Picks the design chosen in the theme switcher. */
-export const TripCard = forwardRef<HTMLAnchorElement, CardProps & { stagger?: boolean }>(function TripCard(
-  { stagger = false, ...props },
+export const TripCard = forwardRef<HTMLAnchorElement, CardProps & { stagger?: boolean; rating?: TripRating | null }>(function TripCard(
+  { stagger = false, rating = null, ...props },
   ref,
 ) {
   const style = useCardStyle();
@@ -265,11 +295,13 @@ export const TripCard = forwardRef<HTMLAnchorElement, CardProps & { stagger?: bo
     }
   })();
   const href = tripPath(props.trip.slug);
-  const cls = "block rounded-[10px] outline-none focus-visible:ring-2 focus-visible:ring-ink/50";
+  const cls = "relative block rounded-[10px] outline-none focus-visible:ring-2 focus-visible:ring-ink/50";
+  const pill = rating && rating.count > 0 ? <RatingPill rating={rating} style={style} /> : null;
   if (!stagger) {
     return (
       <a ref={ref} href={href} aria-label={props.trip.title} className={cls}>
         {card}
+        {pill}
       </a>
     );
   }
@@ -292,6 +324,7 @@ export const TripCard = forwardRef<HTMLAnchorElement, CardProps & { stagger?: bo
         transition={{ layout: { type: "spring", stiffness: 200, damping: 25 } }}
       >
         {card}
+        {pill}
       </motion.a>
     </StaggerContext.Provider>
   );

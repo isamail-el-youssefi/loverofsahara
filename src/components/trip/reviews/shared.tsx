@@ -18,20 +18,6 @@ export const RT = {
   readLess: "Show less",
 } as const;
 
-/** Marks an invented preview review so it can never be mistaken for a real one. */
-export function DemoTag({ dark = false }: { dark?: boolean }) {
-  return (
-    <span
-      title="Invented review for previewing the layout"
-      className={`rounded-full border px-2 py-0.5 text-[10.5px] font-semibold uppercase tracking-[0.1em] ${
-        dark ? "border-white/30 text-white/70" : "border-ink/25 text-ink/55"
-      }`}
-    >
-      Demo
-    </span>
-  );
-}
-
 /** Star rating (display). Filled stars use the brand colour. */
 export function Stars({ value, size = 16, className = "" }: { value: number; size?: number; className?: string }) {
   const filled = Math.round(value);

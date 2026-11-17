@@ -27,6 +27,12 @@ export const DESTINATION_IMAGES = {
   todghaGorges: ik("/6jp/day2/9.jpg", 1600),
 };
 
+/** Home page "About us" photo: a sharp 3000 px original, asked for large because only the middle of it shows in the portrait frame. */
+export const ABOUT_PHOTO = ik("/10004.jpg", 2400);
+
+/** Home page call to action ("Photo" design): the sunset desert camp, a sharp 3000 px original. */
+export const CTA_PHOTO = ik("/trip5.jpg", 2400);
+
 /** Home page gallery (the old site's gallery photos). */
 export const GALLERY_IMAGES = {
   dunes: ik("/hero/circuit.jpg", 1920),

@@ -6,19 +6,23 @@ import {
   ABOUT_STYLES,
   CARD_STYLES,
   CONTACT_STYLES,
+  CTA_STYLES,
   DETAIL_STYLES,
   FONTS,
   FOOTER_STYLES,
   GALLERY_STYLES,
+  HOME_TRIPS_STYLES,
   INTRO_STYLES,
   REVIEW_STYLES,
   THEMES,
   applyAboutStyle,
   applyCardStyle,
   applyContactStyle,
+  applyCtaStyle,
   applyDetailStyle,
   applyFooterStyle,
   applyGalleryStyle,
+  applyHomeTripsStyle,
   applyIntroStyle,
   applyReviewStyle,
   applyFont,
@@ -29,11 +33,12 @@ import {
 import { useAboutStyle } from "@/hooks/use-about-style";
 import { useCardStyle } from "@/hooks/use-card-style";
 import { useContactStyle } from "@/hooks/use-contact-style";
+import { useCtaStyle } from "@/hooks/use-cta-style";
 import { useDetailStyle } from "@/hooks/use-detail-style";
 import { useFooterStyle } from "@/hooks/use-footer-style";
 import { useGalleryStyle } from "@/hooks/use-gallery-style";
+import { useHomeTripsStyle } from "@/hooks/use-home-trips-style";
 import { useIntroStyle } from "@/hooks/use-intro-style";
-import { DEMO_REVIEWS_AVAILABLE, setDemoReviews, useDemoReviews } from "@/hooks/use-demo-reviews";
 import { useReviewStyle } from "@/hooks/use-review-style";
 
 const THEME_EVENT = "los-theme-change";
@@ -148,10 +153,11 @@ export function ThemeSwitcher({ light = false }: { light?: boolean }) {
   const introId = useIntroStyle();
   const galleryId = useGalleryStyle();
   const reviewId = useReviewStyle();
+  const homeTripsId = useHomeTripsStyle();
+  const ctaId = useCtaStyle();
   const footerId = useFooterStyle();
   const aboutId = useAboutStyle();
   const contactId = useContactStyle();
-  const demoReviews = useDemoReviews();
   const reduce = useReducedMotion();
   const active = THEMES.find((t) => t.id === themeId) ?? THEMES[0]!;
 
@@ -329,6 +335,60 @@ export function ThemeSwitcher({ light = false }: { light?: boolean }) {
         </div>
 
         <p className="px-3 pb-2 pt-4 text-[11px] font-semibold uppercase tracking-[0.08em] text-neutral-500">
+          Home trips
+        </p>
+        <div role="radiogroup" aria-label="Home trips" className="flex flex-col gap-1">
+          {HOME_TRIPS_STYLES.map((c) => {
+            const selected = c.id === homeTripsId;
+            return (
+              <button
+                key={c.id}
+                type="button"
+                role="radio"
+                aria-checked={selected}
+                onClick={() => applyHomeTripsStyle(c.id)}
+                className={`flex items-center gap-3 rounded-xl px-3 py-2.5 text-left outline-none transition-colors focus-visible:ring-2 focus-visible:ring-ink/40 ${
+                  selected ? "bg-neutral-100" : "hover:bg-neutral-50"
+                }`}
+              >
+                <span className="min-w-0 flex-1">
+                  <span className="block text-[14px] font-semibold leading-tight">{c.name}</span>
+                  <span className="block truncate text-[12px] text-neutral-500">{c.mood}</span>
+                </span>
+                {selected && <Check size={16} className="shrink-0 text-ink" aria-hidden />}
+              </button>
+            );
+          })}
+        </div>
+
+        <p className="px-3 pb-2 pt-4 text-[11px] font-semibold uppercase tracking-[0.08em] text-neutral-500">
+          Call to action
+        </p>
+        <div role="radiogroup" aria-label="Call to action" className="flex flex-col gap-1">
+          {CTA_STYLES.map((c) => {
+            const selected = c.id === ctaId;
+            return (
+              <button
+                key={c.id}
+                type="button"
+                role="radio"
+                aria-checked={selected}
+                onClick={() => applyCtaStyle(c.id)}
+                className={`flex items-center gap-3 rounded-xl px-3 py-2.5 text-left outline-none transition-colors focus-visible:ring-2 focus-visible:ring-ink/40 ${
+                  selected ? "bg-neutral-100" : "hover:bg-neutral-50"
+                }`}
+              >
+                <span className="min-w-0 flex-1">
+                  <span className="block text-[14px] font-semibold leading-tight">{c.name}</span>
+                  <span className="block truncate text-[12px] text-neutral-500">{c.mood}</span>
+                </span>
+                {selected && <Check size={16} className="shrink-0 text-ink" aria-hidden />}
+              </button>
+            );
+          })}
+        </div>
+
+        <p className="px-3 pb-2 pt-4 text-[11px] font-semibold uppercase tracking-[0.08em] text-neutral-500">
           Trip reviews
         </p>
         <div role="radiogroup" aria-label="Trip reviews" className="flex flex-col gap-1">
@@ -354,29 +414,6 @@ export function ThemeSwitcher({ light = false }: { light?: boolean }) {
             );
           })}
         </div>
-
-        {DEMO_REVIEWS_AVAILABLE && (
-          <button
-            type="button"
-            role="switch"
-            aria-checked={demoReviews}
-            onClick={() => setDemoReviews(!demoReviews)}
-            className="mt-1 flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-left outline-none transition-colors hover:bg-neutral-50 focus-visible:ring-2 focus-visible:ring-ink/40"
-          >
-            <span className="min-w-0 flex-1">
-              <span className="block text-[14px] font-semibold leading-tight">Demo reviews</span>
-              <span className="block truncate text-[12px] text-neutral-500">Invented reviews, local preview only</span>
-            </span>
-            <span
-              aria-hidden
-              className={`relative h-5 w-9 shrink-0 rounded-full transition-colors ${demoReviews ? "bg-ink" : "bg-neutral-300"}`}
-            >
-              <span
-                className={`absolute top-0.5 h-4 w-4 rounded-full bg-white shadow transition-all ${demoReviews ? "left-[18px]" : "left-0.5"}`}
-              />
-            </span>
-          </button>
-        )}
 
         <p className="px-3 pb-2 pt-4 text-[11px] font-semibold uppercase tracking-[0.08em] text-neutral-500">
           Contact page

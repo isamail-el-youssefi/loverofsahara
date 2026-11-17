@@ -5,7 +5,7 @@ import { formatReviewDate, summarize } from "@/lib/reviews";
 import { Band, Eyebrow } from "../parts";
 import { AddReviewButton } from "./AddReview";
 import type { ReviewsProps } from "./ReviewsEditorial";
-import { DemoTag, PhotoStrip, RT, ReplyBlock, ReviewText, Stars } from "./shared";
+import { PhotoStrip, RT, ReplyBlock, ReviewText, Stars } from "./shared";
 
 /** Quote size by length: short praise is set big, long stories stay readable. */
 const quoteSize = (n: number) =>
@@ -68,7 +68,6 @@ export function ReviewsSpotlight({ tripSlug, tripTitle, reviews }: ReviewsProps)
                     <Stars value={r.rating} size={16} className="text-white" />
                     <span className="flex items-center gap-2 text-[16px] font-semibold tracking-[-0.01em]">
                       {r.name}
-                      {r.demo && <DemoTag dark />}
                     </span>
                     <span className="text-[13px] text-white/55">
                       {formatReviewDate(r.date)}

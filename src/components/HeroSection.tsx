@@ -1,66 +1,69 @@
-import { motion } from "framer-motion";
-import heroImg from "@/assets/hero.jpg";
+import { motion, useReducedMotion } from "framer-motion";
+import heroVideo from "@/assets/herovideo.mp4";
+import { registerHeroVideo } from "@/lib/heroVideo";
 import { Navbar } from "./Navbar";
-import { OriginButton } from "@/components/ui/origin-button";
 
 export function HeroSection() {
+  const reduce = useReducedMotion();
+
   return (
     <section
+      data-hero-section
       data-st-01="parallax"
       data-st-y="300"
       data-st-opacity="0.3"
-      className="h-screen p-[4px] bg-white"
+      className="h-screen p-[4px] bg-paper"
     >
-      <div className="relative flex h-full flex-col items-center justify-center overflow-hidden rounded-2xl p-6 md:p-10">
-        <img
-          src={heroImg}
-          alt="Golden Sahara sand dunes in Erg Chegaga Zagora Morocco"
-          className="absolute inset-0 h-full w-full object-cover"
+      <div className="hero-frame relative flex h-full flex-col items-start justify-end overflow-hidden rounded-lg p-6 pb-12 md:p-12 md:pb-16">
+        <video
+          ref={registerHeroVideo}
+          src={heroVideo}
+          aria-hidden
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          className="absolute inset-0 h-full w-full bg-ink-deep object-cover"
         />
-        <div className="absolute inset-0 bg-black/45" />
+        {/* Scrim only where the text sits, so the video stays bright */}
+        <div className="absolute inset-x-0 bottom-0 h-3/5 bg-gradient-to-t from-black/65 via-black/20 to-transparent" />
 
         <Navbar />
 
         <motion.div
-          initial={{ opacity: 0, y: 24 }}
+          initial={{ opacity: 0, y: reduce ? 0 : 24 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ type: "spring", damping: 25, stiffness: 180, mass: 0.8 }}
-          className="relative z-10 max-w-[900px] text-center px-4"
+          transition={reduce ? { duration: 0.2 } : { type: "spring", damping: 25, stiffness: 180, mass: 0.8 }}
+          className="hero-copy relative z-10 max-w-[640px] text-"
         >
-          {/* Eyebrow badge: Clean orientation with Apple frosted glass */}
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs font-medium text-white/90 mb-5 shadow-[inset_0_1px_1px_rgba(255,255,255,0.3)]">
-            <span>Erg Chegaga • Zagora</span>
-          </div>
-
-          {/* Headline: Command presence with optical negative tracking */}
-          <h1
-
-            className="text-[2.75rem] sm:text-[3.5rem] lg:text-[64px] font-semibold leading-[1.06] tracking-[-0.04em] text-white"
-          >
-            Experience the Untamed Sahara of Erg Chegaga
-          </h1>
-
-          {/* Subtitle: Short, high-signal, clean 2-line measure */}
-          <p className="mx-auto mt-5 max-w-[560px] text-[16px] sm:text-[18px] font-normal leading-[1.6] tracking-normal text-white/85">
-            Bespoke 4x4 expeditions, luxury nomad bivouacs, and sunset camel caravans across Morocco&apos;s wildest dune sea.
+          <p className="eyebrow hero-eyebrow mb-4 text-xs font-medium uppercase tracking-[0.18em] text-white/70">
+            Erg Chegaga • Zagora
           </p>
 
-          {/* Buttons: Tactile zero-latency press + Apple materials */}
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-3.5">
+          <h1 className="text-4xl sm:text-5xl lg:text-[52px] font-light! leading-[1.08] tracking-[-0.04em] text-white">
+            Experience the<br className="hero-br" /><i className="hero-em"> Untamed</i> Sahara of Erg Chegaga
+          </h1>
+
+          {/* Shown only in the Sahara Editorial font choice */}
+          <p className="hero-lede mt-5  text-white/85">
+            Tailor-made luxury expeditions across Erg Chegaga, Zagora and the wild dune sea of southern Morocco.
+          </p>
+
+{/*           <div className="hero-actions mt-7 flex flex-wrap items-center gap-6">
             <a
               href="#expeditions"
-              className="h-[46px] rounded-[10px] bg-white px-7 text-sm font-semibold text-black transition-all duration-100 ease-out active:scale-[0.98] active:bg-neutral-200 hover:bg-neutral-100 flex items-center shadow-sm"
+              className="flex h-[46px] items-center rounded-[10px] bg-paper px-7 text-sm font-semibold text-ink transition-all duration-100 ease-out hover:bg-neutral-100 active:scale-[0.98] active:bg-neutral-200"
             >
               Explore Expeditions
             </a>
-            <OriginButton
+            <a
               href="#process"
-              variant="white"
-              className="h-[46px] rounded-[10px] border-white/40 bg-white/10 px-7 text-sm font-semibold text-white backdrop-blur-md hover:border-white transition-all duration-100 ease-out active:scale-[0.98] active:bg-white/20"
+              className="text-sm font-medium text-white/85 transition-colors duration-100 hover:text-white active:opacity-70"
             >
-              Discover Erg Chegaga
-            </OriginButton>
-          </div>
+              Discover Erg Chegaga <span aria-hidden>→</span>
+            </a>
+          </div> */}
         </motion.div>
       </div>
     </section>

@@ -1,0 +1,669 @@
+{
+  "5-day-nomad-journey": {
+    "marketingTitle": "Pistes du Sahara - Voyage Nomade de 5 Jours",
+    "summary": "Traversez le Haut Atlas, explorez d'anciennes kasbahs, randonnez dans les canyons, rencontrez des nomades et montez à dos de chameau dans les dunes de Chegaga. Vivez des couchers de soleil dans le désert et des nuits étoilées dans un camp traditionnel.",
+    "title": "Voyage Nomade de 5 Jours",
+    "keyStops": [
+      "Col du Tizi N'Tichka",
+      "Telouet & Vallée d'Ounilla",
+      "Kasbah Ait Ben Haddou",
+      "El Kelâa des M'Gouna (Vallée des Roses)",
+      "Gorges du Dadès & Gorges du Todra",
+      "Massif du Jebel Saghrou & Nomades Ait Ata",
+      "Vallée du Draa & Palmeraie",
+      "Tamegroute (Village de Poterie & Bibliothèque)",
+      "Désert de Mhamid & Dunes de l'Erg Chegaga",
+      "Foum Zguid & Lac Iriqui",
+      "Taznakhte (Village des Tapis)"
+    ],
+    "included": [
+      "Véhicule Toyota Prado Land Cruiser avec chauffeur, carburant et assurance",
+      "Nuit au Riad à Dadès avec dîner et petit-déjeuner",
+      "Nuit en maison d'hôtes à Todgha avec dîner et petit-déjeuner",
+      "2 nuits au campement avec dîner et petit-déjeuner",
+      "5 déjeuners",
+      "Balade en dromadaire 🐪",
+      "Sandboard 🏂",
+      "Eau minérale tout le circuit",
+      "Les visites prévues au programme",
+      "Les guides locaux"
+    ],
+    "excluded": [
+      "Les boissons",
+      "Les achats et dépenses personnelles",
+      "Les pourboires"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "text": "Départ de Marrakech la matinée, direction le Haut Atlas via le col de Tichka situé à 2260 d’altitude. passant par telouet et la vallée de l'Ounilla …continuons vers la Kasbah Ait ben Hadou villages fortifiés (l’une des plus belles kasbahs du Sud marocain. Elle a bénéficié, sur le plan financier, de plusieurs tournages de films importants, dont Lawrence d’Arabie, Gladiator et Jésus de Nazareth, et est désormais classée au patrimoine mondial de l’UNESCO) Déjeuner à la Kasbah et direction vers Ouarzazate stop pour la photo au studio cinéma, avant de rejoindre El Kelâa des M’Gouna, gros village à 1450 m d’altitude, situé presque à la jonction des vallées du M’Goun et du Dadès. Piste de la Vallée des Roses en passant par Ait Saîd, Tourbist, Tamalout, qui nous amènera à Bou-Tgharar dans la Vallée des Roses. On continue sur la piste vers la kasbah du Glaoui Ait-Youl en bordure de la vallée du figues Première nuit à l’auberge familial très sympathique Très propre et confortable, idéal pour un passage d'une nuitée."
+      },
+      {
+        "day": 2,
+        "text": "Après le petit-déjeuner au riad, nous partirons pour une promenade à pied de deux heures au cœur des gorges et des canyons du Dadès. Nous traverserons le massif par la vallée du Dadès et M'semrir, en explorant les montagnes rocheuses qui surplombent les falaises et l’oasis verdoyante. C’est là que se cachent mystérieusement les ruines d’anciennes forteresses en terre et en paille.\nNotre voyage se poursuivra ensuite vers les gorges du Todra, en traversant un vaste plateau rocheux situé à plus de 2 000 mètres d’altitude, où vivent des tribus nomades. Après avoir admiré ces magnifiques canyons, nous descendrons vers les gorges du Todra pour une nouvelle promenade à pied, suivie d'une balade de deux heures dans la palmeraie. Dîner et nuit en maison d’hôtes familiale."
+      },
+      {
+        "day": 3,
+        "text": "Après le petit-déjeuner, départ vers le massif montagneux du Djebel Saghro à la rencontre des nomades de la tribu des Aït Atta. Nous descendrons ensuite vers la vallée du Drâa, où nous ferons une pause à midi pour déjeuner dans une auberge au cœur de la palmeraie.\nNotre route se poursuivra vers le désert de l'Erg Chegaga en passant par Tamegroute, célèbre pour son village de potiers et son ancienne bibliothèque coranique, puis par M'hamid. De là, nous emprunterons la piste pour rejoindre les dunes de Chegaga, tout en profitant de paysages merveilleux qui alternent entre ergs, regs et hamadas. Ce sera aussi l'occasion de partir à la recherche de la faune locale, notamment les gazelles, les antilopes ou les autruches qui peuplent la région. Après avoir admiré le coucher de soleil sur les dunes, la journée se terminera par une nuit en bivouac, à la belle étoile."
+      },
+      {
+        "day": 4,
+        "text": "Jour de repos pour profiter le maximum et le meilleur visit des Nomades avec déjeuner chez eux et visite de oasis ou déjeuner au Camp au déjeuner a l'ombre des tamaris a votre choix, l'après midi une balade à dos de dromadaire dans les dunes Pour admirer le coucher du soleil. Nuit au camp avec dîner et animations sous les étoiles au tour de feu 🔥"
+      },
+      {
+        "day": 5,
+        "text": "Réveil matinal pour assister au lever de soleil sur les dunes, puis petit déjeuner. Départ pour Foum Zguid en rendant passage au lac d’iriqui, et le plateau désertique parsemé d’acacias puis rejoindre la route goudronnée a foum Zguid . déjeuné sur place, après Continuation vers Taznakhte village des tapis berberes stop pour visiter un association féminine des tapis ,pour suit transfert pour Marrakech on passants par Imerzgan et Col de Tizi ntichka arrivée fin de d'après midi a Marrakech Fin de circuits"
+      }
+    ]
+  },
+  "3-day-sahara-sprint": {
+    "marketingTitle": "Évasion Désert - Sprint Saharien de 3 Jours",
+    "summary": "Voyagez à travers les kasbahs, les oasis et les vallées pour atteindre les dunes dorées d'Erg Lihoudi et Chigaga. Montez à dos de chameau, profitez de l'hospitalité berbère et dormez sous les étoiles du désert avec des moments inoubliables.",
+    "title": "Sprint Saharien de 3 Jours",
+    "keyStops": [
+      "Col du Tizi n'Tichka",
+      "Kasbah de Telouet & Vallée d'Ounila",
+      "Kasbah Ait Ben Haddou",
+      "Col du Tizi n'Tinifift",
+      "Vallée du Draa",
+      "Tamegroute (Village de Poterie & Bibliothèque)",
+      "Désert de Mhamid & Dunes de l'Erg Lihoudi",
+      "Dunes de l'Erg Chegaga",
+      "Taznakhte (Village des Tapis)"
+    ],
+    "included": [
+      "Véhicule Toyota Prado Land Cruiser avec chauffeur, carburant et assurance",
+      "2 nuits au campement avec dîner et petit-déjeuner",
+      "Balade en dromadaire 🐪",
+      "Les visites prévues au programme",
+      "Les guides locaux",
+      "3 déjeuners",
+      "Eau minérale tout le circuit"
+    ],
+    "excluded": [
+      "Les boissons",
+      "Les achats et dépenses personnelles",
+      "Les pourboires"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "text": "Après le ramassage depuis votre hôtel ou Riad à Marrakech, nous allons partir tôt le matin en circuit 4x4 vers le désert. Nous allons traversez col de Tizi n Tichka, puis descendre vers la magnifique vallée d’Ounila où nous allons faire une pause pour visiter la Kasbah de Ait Ben Haddou. Après le col de Tizi n'Tinifift nous allons traverser la vallée de Draa en passant par des magnifiques oasis, palmiers et ksours. suite nous prennent la route vers le Désert de Erg lihodi on passant par Zagora Tamegroute le village des poterie et l'ancien bibliothèque coranique pour suite le désert de Mhamid au bivouac Erg Lihodi dîner et nuit dans les tentes soirée avec feu 🔥 de Camp et chantes berbère a la belle étoile."
+      },
+      {
+        "day": 2,
+        "text": "Premier réveil tranquille au cœur du désert et délicieux petit-déjeuner avant le départ pour rejoindre les grandes dunes de l'Erg Chegaga. En chemin, nous traverserons de magnifiques paysages sahariens où alternent ergs, regs et hamadas. Ce sera aussi l'occasion idéale de partir à la recherche de la faune locale, notamment les gazelles, les antilopes ou les autruches qui peuplent la région.\nNous ferons une pause pour le déjeuner à l’ombre d’un tamaris, l'arbre emblématique du Sahara. Après avoir continué notre route à travers ces paysages merveilleux, nous arriverons au campement. Notre équipe de bivouac vous réservera un accueil chaleureux et vous invitera à vous installer autour d'un thé à la menthe fraîche.\nL'après-midi, après une petite marche dans les dunes, vous partirez pour une superbe balade à dos de dromadaire afin d'admirer le splendide coucher du soleil sur les crêtes de sable. La soirée débutera par un savoureux dîner traditionnel au campement. Après le repas, place à la convivialité autour du feu de camp avec une animation musicale rythmée par les chants et les tambours berbères de notre équipe, avant de passer une nuit magique sous les étoiles."
+      },
+      {
+        "day": 3,
+        "text": "Réveil matinal pour assister au lever de soleil sur les dunes, puis petit déjeuner.Départ pour Foum Zguid en rendant passage au lac d’iriqui, et le plateau désertique parsemé d’acacias puis rejoindre la route goudronnée a foum Zguid. Continuation ver Taznakhte village des tapis berberes déjeuner sur place pour suit rejoindre pied de montagne haute Atlass retraverser la Coline Tizi Ntichka pour arriver à Marrakech fin d'après-midi."
+      }
+    ]
+  },
+  "6-day-sahara-odyssey": {
+    "marketingTitle": "Horizons des Dunes – 6 Jours au Sahara",
+    "summary": "Explorez les kasbahs, les vallées et les gorges. Rencontrez des nomades, traversez des cols de montagne et vivez la vie du désert avec des balades à dos de chameau, des couchers de soleil et des bivouacs étoilés. Terminez par une visite paisible de l'oasis de Fint et de la Kasbah Ait Ben Haddou.",
+    "title": "Odyssée Saharienne de 6 Jours",
+    "keyStops": [
+      "Col du Tizi n'Tichka",
+      "Kasbah Ait Ben Haddou",
+      "El Kelâa des M'Gouna (Vallée des Roses)",
+      "Bou-Tgharar & Kasbah Ait-Youl",
+      "Gorges du Dadès & Gorges du Todra",
+      "Col du Tizi Nogdal & Points de Vue de l'Atlas",
+      "Massif du Jebel Saghrou & Nomades Ait Ata",
+      "Vallée du Draa & Palmeraie",
+      "Tamegroute (Village de Poterie & Bibliothèque)",
+      "Désert de Mhamid & Dunes de l'Erg Chegaga",
+      "Dunes de l'Erg Chegaga",
+      "Taznakhte (Village des Tapis)",
+      "Oasis de Fint"
+    ],
+    "included": [
+      "Véhicule Toyota Prado Land Cruiser avec chauffeur, carburant et assurance",
+      "Nuit au Riad à Dadès avec dîner et petit-déjeuner",
+      "Nuit en maison d'hôtes à Todgha avec dîner et petit-déjeuner",
+      "2 nuits au campement avec dîner et petit-déjeuner",
+      "Nuit au Riad à Aït Ben Haddou avec dîner et petit-déjeuner",
+      "6 déjeuners",
+      "Balade en dromadaire 🐪",
+      "Sandboard 🏂",
+      "Les visites prévues au programme",
+      "Les guides locaux",
+      "Eau minérale tout le circuit"
+    ],
+    "excluded": [
+      "Les boissons",
+      "Les achats et dépenses personnelles",
+      "Les pourboires"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "text": "Départ de Marrakech la matinée, direction le Haut Atlas via le col de Tichka situé à 2260 d’altitude. Le premier arrêt sera, la Kasbah Ait ben Hadou villages fortifiés, …Déjeuner à la Kasbah et direction vers Ouarzazate stop pour la photo au studio cinéma et la Kasbah de Taourirt, avant de rejoindre El Kelâa des M’Gouna, gros village à 1450 m d'altitude, situé presque à la jonction des vallées du M’Goun et du Dadès. Piste de la Vallée des Roses en passant par Ait Saîd, Tourbist, Tamalout, qui nous amènera à Bou-Tgharar dans la Vallée des Roses. On continue sur la piste vers la kasbah du Glaoui Ait-Youl en bordure de la vallée du Dadès. Première nuit à l’auberge. Très propre et confortable, idéal pour un passage d'une nuitée."
+      },
+      {
+        "day": 2,
+        "text": "Après le petit-déjeuner au riad, nous partirons pour une promenade à pied de deux heures au cœur des gorges et des canyons du Dadès. Nous traverserons le massif par la vallée du Dadès et M'semrir, en explorant les montagnes rocheuses qui surplombent les falaises et l’oasis verdoyante. C’est là que se cachent mystérieusement les ruines d’anciennes forteresses en terre et en paille.\nNotre voyage se poursuivra ensuite vers les gorges du Todra, en traversant un vaste plateau rocheux situé à plus de 2 000 mètres d’altitude, où vivent des tribus nomades. Après avoir admiré ces magnifiques canyons, nous descendrons vers les gorges du Todra pour une nouvelle promenade à pied, suivie d'une balade de deux heures dans la palmeraie. Dîner et nuit en maison d’hôtes familiale."
+      },
+      {
+        "day": 3,
+        "text": "Après le petit-déjeuner, départ vers le massif montagneux du Djebel Saghro à la rencontre des nomades de la tribu des Aït Atta. Nous descendrons ensuite vers la vallée du Drâa, où nous ferons une pause à midi pour déjeuner dans une auberge au cœur de la palmeraie.\nNotre route se poursuivra vers le désert de l'Erg Chegaga en passant par Tamegroute, célèbre pour son village de potiers et son ancienne bibliothèque coranique, puis par M'hamid. De là, nous emprunterons la piste pour rejoindre les dunes de Chegaga, tout en profitant de paysages merveilleux qui alternent entre ergs, regs et hamadas. Ce sera aussi l'occasion de partir à la recherche de la faune locale, notamment les gazelles, les antilopes ou les autruches qui peuplent la région. Après avoir admiré le coucher de soleil sur les dunes, la journée se terminera par une nuit en bivouac, à la belle étoile."
+      },
+      {
+        "day": 4,
+        "text": "Jour de repos pour profiter le maximum et le meilleur visit des Nomades avec déjeuner chez eux et visite de oasis ou déjeuner au Camp a votre choix, l'après midi une balade à dos de dromadaire dans les dunes Pour admirer le coucher du soleil. Nuit au camp avec dîner et animations sous les étoiles au tour de feu 🔥"
+      },
+      {
+        "day": 5,
+        "text": "Réveil matinal pour assister au magnifique lever de soleil sur les dunes, suivi du petit-déjeuner. Nous prendrons ensuite la route en direction de Foum Zguid, en traversant le lac asséché d’Iriqui et un grand plateau désertique parsemé d’acacias. Une fois arrivés à Foum Zguid, où commence la route goudronnée, nous ferons une pause pour le déjeuner.\nL’après-midi, notre voyage se poursuivra vers Taznakht, un village célèbre pour ses tapis berbères. Nous y visiterons une association de femmes tisserandes pour découvrir leur savoir-faire unique. Enfin, nous continuerons notre route jusqu'au célèbre Ksar d'Aït Ben Haddou. Inscrit au patrimoine mondial de l'UNESCO, ce joyau architectural est l'un des exemples les plus spectaculaires et les mieux préservés de l'architecture en terre du Sud marocain, ayant d'ailleurs servi de décor à de nombreux films cultes.\nNous y ferons une promenade à pied d'une heure et demie pour explorer ses ruelles fortifiées, ses maisons traditionnelles et monter jusqu'au grenier collectif qui offre une vue panoramique sur la vallée. Le dîner et la nuit se feront dans une maison d'hôtes propre et très calme."
+      },
+      {
+        "day": 6,
+        "text": "Pour cette dernière journée, nous prendrons le chemin du retour vers Marrakech en passant par la somptueuse vallée de l'Ounila, réputée pour ses villages en terre et ses merveilleux paysages contrastés, avec la visite de la Kasbah de Télouet. Nous traverserons ensuite le col du Tizi N'Tichka (2 260 m) dans le Haut Atlas, avec un arrêt déjeuner traditionnel en chemin. Arrivée à Marrakech en fin d'après-midi. Fin du circuit."
+      }
+    ]
+  },
+  "2-day-desert-getaway": {
+    "marketingTitle": "Escapade Saharienne - Découverte de 2 Jours",
+    "summary": "Une expérience courte mais immersive du désert, parfaite pour ceux qui ont peu de temps mais qui souhaitent découvrir la magie du Sahara.",
+    "title": "Escapade Désert de 2 Jours",
+    "keyStops": [
+      "Tamegroute (Poterie & Bibliothèque Coranique)",
+      "Désert d’Erg Lihoudi",
+      "Dunes de Chegaga",
+      "Vie au Bivouac & Nuit sous les Étoiles",
+      "Lac Iriki & Foum Zguid"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "text": "Départ à 10h depuis le point de rendez-vous. Passage par Tamegroute avec visite de la bibliothèque coranique et des ateliers de poterie verte. Continuation vers Erg Lihoudi pour le déjeuner, puis route vers les dunes de Chegaga. Accueil au camp avec thé de bienvenue, petite marche pour admirer le coucher du soleil. Dîner, ambiance autour du feu et chants berbères. Nuit en bivouac."
+      },
+      {
+        "day": 2,
+        "text": "Après un réveil tranquille pour admirer le lever de soleil magique sur les dunes de Chegaga, vous profiterez d’un petit-déjeuner copieux au camp. Ensuite, vous aurez du temps libre pour une marche dans les dunes, idéale pour ressentir la sérénité et l’immensité du désert.\nPuis, départ en 4x4 à travers le désert, en traversant l’erg, le reg et le lac Iriki asséché, un paysage impressionnant digne des grandes étendues sahariennes. Arrêt à Foum Zguid pour une pause déjeuner et un moment de détente. Sur le chemin du retour, vous passerez par des villages typiques et des paysages variés jusqu’à Zagora.\nArrivée en fin d’après-midi à Zagora, fin de nos services."
+      }
+    ]
+  },
+  "agadir-erg-chegaga-6-day-circuit": {
+    "marketingTitle": "Circuit Agadir - Erg Chegaga de 6 Jours",
+    "summary": "Découvrez le Maroc authentique depuis Agadir. Explorez Taroudant 'la petite Marrakech', Tilouine capitale du safran, les dunes majestueuses d'Erg Chegaga, la vallée du Draa et les gorges spectaculaires. Une odyssée complète du sud marocain.",
+    "title": "Circuit Agadir - Erg Chegaga de 6 Jours",
+    "keyStops": [
+      "Agadir - Taroudant 'la petite Marrakech'",
+      "Tilouine (Capitale du Safran)",
+      "Col de Tizi-n-Tighatine & Tizi-n-Ikhsane",
+      "Taznakhte (Village des Tapis Berbères)",
+      "Foum Zguid & Oasis aux 20 Palmiers",
+      "Dunes d'Erg Chegaga & Lac Séché Iriki",
+      "M'Hamid El Ghizlane & Vallée du Draa",
+      "Zagora & Massif Jebel Saghrou",
+      "Gorges du Toudgha & Gorges du Dadès",
+      "Vallée des Roses & Kalaa M'Gouna",
+      "Kasbah Ait Ben Haddou",
+      "Retour via Taliouine & Rivière Souss"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "text": "Départ d'Agadir à 8H30 en 4x4 direction Taroudant, surnommée « la petite Marrakech ». Balade en calèche autour de la ville fortifiée. Continuation vers Tilouine, capitale du safran, visite du musée parfumé. Traversée des cols de Tizi-n-Tighatine et Tizi-n-Ikhsane vers Taznakhte (capitale des tapis berbères) avec visite d'association féminine. Arrivée à Foum Zguid, dîner et nuit au Riad traditionnel."
+      },
+      {
+        "day": 2,
+        "text": "Après le petit-déjeuner, départ vers les grandes dunes de Chegaga. Premier arrêt dans une oasis de 20 palmiers avec sources d'eau. Continuation sur l'ancienne piste du rallye Paris-Dakar, traversée du désert rocailleux (REG) et de dunes (ERG), passage par le lac séché Iriki avec recherche de fossiles. Déjeuner à Chegaga, promenade à dos de dromadaires pour admirer le coucher de soleil. Dîner et nuit en bivouac sous les étoiles."
+      },
+      {
+        "day": 3,
+        "text": "Après le petit-déjeuner au bivouac, 60 km de route désertique jusqu'à M'Hamid El Ghizlane. Exploration du vieux village en pisé. Remontée de la vallée du Draa (1200 km), traversée de Zagora, la plus grande oasis de la vallée. Déjeuner dans restaurant au milieu des palmiers. Départ vers le massif Jebel Saghrou par le col de Tizi-n-Tazzazert (2.283m), rencontre des Nomades Ait Ata. Descente vers les gorges du Toudgha, dîner et nuit en maison d'hôtes."
+      },
+      {
+        "day": 4,
+        "text": "Petit-déjeuner avec vue sur la vallée. Promenade guidée d'1h dans la vallée, jardins et canyons jusqu'aux gorges de Toudgha. Traversée du massif par Tamettoucht et Msamrir avec ses beaux canyons. Descente vers les gorges du Dadès, promenade dans les gorges et canyons. Déjeuner dans un Riad avec vue sur la vallée des figues. Nuit et dîner dans maison d'hôtes familiale."
+      },
+      {
+        "day": 5,
+        "text": "Départ de la vallée des figues via Ait Youl, continuation sur piste vers Bou-Tgharar qui mène à la vallée des roses jusqu'à Kalaa M'Gouna (capitale des roses). Continuation vers la Kasbah Ait Ben Haddou, village fortifié classé UNESCO, décor de films comme Lawrence d'Arabie, Gladiator et Jésus de Nazareth. Dîner et nuit en maison d'hôtes."
+      },
+      {
+        "day": 6,
+        "text": "Après le petit-déjeuner, départ d'Ait Ben Haddou, retour par la route nationale en passant devant le décor du film 'Les collines ont des yeux' et le barrage de Tiouine (84m de haut). Passage par Taznakhte, traversée des deux cols, halte déjeuner à Taliouine. Continuation vers Taroudant en suivant la rivière Souss avec ses arganiers sur les collines. Arrivée à Agadir vers 18h00. Fin du circuit."
+      }
+    ]
+  },
+  "7-day-sahara-trekking": {
+    "marketingTitle": "Randonnée Désert - Trekking Sahara de 7 Jours",
+    "summary": "Aventure authentique de trekking à pied dans le désert. Traversez les plateaux fossiles de Jbel Bani, découvrez les oasis cachées, marchez dans les dunes d'Erg Chigaga et vivez comme les nomades. Une expérience immersive unique loin des sentiers battus.",
+    "title": "Randonnée Désert - Trekking Sahara de 7 Jours",
+    "keyStops": [
+      "Départ Ouarzazate/Marrakech",
+      "Petit Atlas & Vallée du Draa",
+      "Plateau d'Elfaïja & Col de Jbel Bani",
+      "Assif d'Oumsafi & Oasis Taska",
+      "Assif Mhasser & Paysages Lunaires",
+      "Amda n'Oumsafy (Petit Lac du Désert)",
+      "Oued Lamhaser & Plateau d'Acacias",
+      "Familles Nomades du Désert",
+      "Premières Dunes Erg Lmassafy",
+      "Plantes Endémiques Calotropis",
+      "Grandes Dunes d'Erg Chigaga",
+      "Plateau de Pierres Fossiles",
+      "Tamaris de Kharte Lgarsime",
+      "Retour via M'hamid & Zagora"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "text": "Départ de Ouarzazate ou Marrakech pour rejoindre le désert en passant par le petit Atlas et la vallée du Draa pour rejoindre notre camp au désert. Installation au camp de base et préparatifs pour le début de l'aventure trekking."
+      },
+      {
+        "day": 2,
+        "text": "Elfaïja – Oasis Taska. Par un sentier lacéré, nous franchirons le col de Jbel Bani fossilisé d'âge primaire, vue panoramique sur le plateau d'Elfija. Descente dans un ravin vers l'assif d'Oumsafi, suivi d'un autre plateau rocailleux avec quelques arbres d'acacia et palmiers solitaires très fréquentés par des nomades. Continuation le long de l'assif jusqu'à l'oasis Taska, déjeuner sur place. L'après-midi montée et camp. Dîner et nuit au bivouac. Étape de 3h30 minutes de marche."
+      },
+      {
+        "day": 3,
+        "text": "Oasis Taska – Amda Nomassafy. Après le lever du soleil et petit déjeuner au désert, notre caravane reprend une journée de marche le long de l'Assif Mhasser, paysage lunaire, végétation rudimentaire aux alentours, pierres calcaires et ferrifères, passage par les bergeries nomades du désert, déjeuner à Amda n'Oumsafy (petit lac au désert). Déjeuner et camp de soir sur place. Étape de 4h de marche."
+      },
+      {
+        "day": 4,
+        "text": "Amda Noumasafy – Erg Elmassafi. Après réveil et petit déjeuner, la caravane fait départ pour suivre la marche dans l'Oued Lamhaser et le plateau d'acacia et d'autres plantes désertiques, terrain rocailleux en passant proche des familles nomades puis redescendre vers les premières dunes de sable de l'Erg Lmassafy. Déjeuner et camp de soir au pied de la dune. 4h de marche."
+      },
+      {
+        "day": 5,
+        "text": "Erg Lmassafy – le grand Erg Chigaga. Après un beau lever de soleil sur les dunes et un délicieux petit déjeuner, nous commencerons à traverser de petites dunes de sables le long de l'oued couvert par la plante de Calotropis (endémique) et l'arbre de tamaris. Arrivée au pied des dunes de Chegaga, notre équipe monte les tentes, déjeuner et nuit sur place. 3h de marche."
+      },
+      {
+        "day": 6,
+        "text": "Erg Chigaga – Kharte Lgarsime. Jour de marche dans les dunes de Chigaga, nous visitons un petit plateau de pierres fossiles au milieu des dunes. Jusqu'à la fin des dunes de Chigaga et arrivée aux tamaris de Kharte Lgarsime pour la pause de midi, déjeuner et camp de soir sur place. 5h de marche."
+      },
+      {
+        "day": 7,
+        "text": "Réveil bonheur matin pour préparer nos bagages et prendre petit-déjeuner puis transfert en 4x4 pour Marrakech ou Ouarzazate en passant par M'hamid, Zagora, Agdz, Ouarzazate et Haut Atlas. Arrivée fin d'après-midi. Fin du circuit."
+      }
+    ]
+  },
+  "ouarzazate-erg-chegaga-3-day-circuit": {
+    "marketingTitle": "Circuit Désert - Ouarzazate Chegaga 3 Jours",
+    "summary": "Partez d’Ouarzazate à travers Taznakht et Foum Zguid pour atteindre les majestueuses dunes de Chegaga. Vivez l’expérience d’une nuit en bivouac sous les étoiles, découvrez la vie nomade du désert, puis revenez par la vallée du Drâa et les kasbahs. Un condensé d’aventure saharienne en seulement 3 jours.",
+    "title": "Ouarzazate - Chegaga 3 Jours",
+    "keyStops": [
+      "Ouarzazate",
+      "Taznakht (Capitale des Tapis Berbères)",
+      "Foum Zguid",
+      "Lac Iriki (Plateau Désertique)",
+      "Dunes de l’Erg Chegaga",
+      "Vie Nomade au Désert",
+      "Réserve Naturelle (Autruches)",
+      "Vallée du Drâa & Palmeraie",
+      "Kasbahs & Villages Sahariens",
+      "Tamgroute (Poterie & Bibliothèque)",
+      "Zagora",
+      "Agdz"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "text": "Après le départ d’Ouarzazate, route via Taznakht (capitale des tapis berbères). Déjeuner à Foum Zguid puis piste vers Chegaga en traversant le lac Iriki. Arrivée aux dunes pour admirer le coucher de soleil, dîner et nuit en bivouac sous tente confortable avec ambiance musicale."
+      },
+      {
+        "day": 2,
+        "text": "Journée dédiée à la découverte de la vie saharienne. Balade sur les dunes au lever et au coucher du soleil, visite d’une famille nomade et partage d’un moment authentique. Dîner sous les étoiles et seconde nuit magique en bivouac au cœur des dunes."
+      },
+      {
+        "day": 3,
+        "text": "Après le petit déjeuner, retour par la piste et possibilité d’apercevoir des autruches dans la réserve naturelle. Passage par la vallée du Drâa et ses kasbahs, arrêt à Tamgroute pour visiter les ateliers de poterie et l’ancienne bibliothèque coranique. Déjeuner possible en route avant retour à Ouarzazate."
+      }
+    ]
+  },
+  "gorges-saghro-chegaga-3-day-circuit": {
+    "marketingTitle": "Circuit Aventure - Gorges, Saghro & Chegaga 3 Jours",
+    "summary": "Partez d’Ouarzazate vers les vallées et gorges spectaculaires du Dadès et du Todra, traversez le massif du Saghro à la rencontre des nomades, puis rejoignez les majestueuses dunes de Chegaga. Retour par le lac Iriki, Taznakht et la célèbre kasbah d’Ait Ben Haddou. Un circuit varié entre montagnes, vallées et désert.",
+    "title": "Gorges, Saghro & Chegaga - 3 Jours",
+    "keyStops": [
+      "Kasbah de Taourirt (Ouarzazate)",
+      "El Kelâa des M’Gouna (Vallée des Roses)",
+      "Bou-Tgharar & Vallée des Figues",
+      "Kasbah Ait-Youl",
+      "Gorges du Dadès & Gorges du Todra",
+      "Massif du Jebel Saghro",
+      "Nomades Ait Ata",
+      "Vallée du Draa & Palmeraie",
+      "Tamegroute (Poterie & Bibliothèque)",
+      "Désert de Mhamid",
+      "Dunes de l’Erg Chegaga",
+      "Lac Iriki & Plateau désertique",
+      "Foum Zguid",
+      "Taznakht (Village des Tapis Berbères)",
+      "Kasbah Ait Ben Haddou (UNESCO)"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "text": "Départ d’Ouarzazate avec arrêt photo à la kasbah de Taourirt. Passage par El Kelâa des M’Gouna, puis la Vallée des Roses et Bou-Tgharar. Déjeuner en riad avec vue sur la vallée des figues. Piste vers Ait-Youl et balade dans les gorges du Dadès. Continuation vers les gorges du Todra pour une promenade à pied. Dîner et nuit à l’hôtel."
+      },
+      {
+        "day": 2,
+        "text": "Départ après le petit déjeuner en direction du massif du Saghro, rencontre des nomades Ait Ata. Déjeuner dans une auberge au cœur de la palmeraie de la vallée du Draa. Continuation par Tamegroute (poterie & bibliothèque coranique), puis piste vers Mhamid et Chegaga. Balade en dromadaire pour admirer le coucher de soleil. Dîner, animations et nuit en camp sous les étoiles."
+      },
+      {
+        "day": 3,
+        "text": "Lever de soleil sur les dunes, puis départ vers Foum Zguid en traversant le lac Iriki asséché et les plateaux désertiques. Déjeuner à Foum Zguid. Continuation vers Taznakht (village des tapis berbères, visite d’une association féminine). Passage par la kasbah d’Ait Ben Haddou (site UNESCO). Retour à Ouarzazate en fin de journée."
+      }
+    ]
+  },
+  "zagora-erg-chegaga-3-day-excursion": {
+    "marketingTitle": "Excursion Désert - 3 Jours Zagora & Chegaga",
+    "summary": "Trois jours d’immersion totale dans le Sahara. Découvrez Tamegroute et sa bibliothèque coranique, traversez Erg Lihoudi puis rejoignez les dunes majestueuses de Chegaga. Profitez d’une rencontre avec les Nomades, d’une balade à dos de dromadaire et d’un bivouac sous les étoiles.",
+    "title": "Zagora & Chegaga - 3 Jours",
+    "keyStops": [
+      "Tamegroute (Poterie & Bibliothèque Coranique)",
+      "Désert d’Erg Lihoudi",
+      "Dunes de Chegaga",
+      "Vie au Bivouac & Nuit sous les Étoiles",
+      "Visite des Nomades & Balade en Dromadaire",
+      "Lac Iriki & Foum Zguid",
+      "Retour vers Zagora"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "text": "Départ à 10h depuis le point de rendez-vous. Passage par Tamegroute avec visite de la bibliothèque coranique et des ateliers de poterie verte. Continuation vers Erg Lihoudi pour le déjeuner, puis route vers les dunes de Chegaga. Accueil au camp avec thé de bienvenue, petite marche pour admirer le coucher du soleil. Dîner, ambiance autour du feu et chants berbères. Nuit en bivouac."
+      },
+      {
+        "day": 2,
+        "text": "Journée de détente pour profiter pleinement du désert. Visite des Nomades avec déjeuner chez eux, ou déjeuner au camp selon votre choix. Après-midi balade à dos de dromadaire dans les dunes pour admirer le coucher du soleil. Dîner et nuit au bivouac avec animations sous les étoiles. au tour du feu 🔥"
+      },
+      {
+        "day": 3,
+        "text": "Réveil matinal pour assister au lever de soleil sur les dunes, puis petit déjeuner, Puis Départ pour M’Hamid puis rentrer à Zagora."
+      }
+    ]
+  },
+  "erg-chegaga-1-day-excursion": {
+    "marketingTitle": "Excursion Désert - 1 Jour Chegaga",
+    "summary": "Une journée inoubliable dans le désert depuis Zagora. Traversez des paysages variés en 4x4 jusqu’aux majestueuses dunes de Chegaga. Profitez d’un déjeuner au camp nomade et d’un temps libre pour savourer le calme et la beauté du Sahara avant de rentrer en fin de journée.",
+    "title": "Excursion Chegaga - 1 Jour",
+    "keyStops": [
+      "Zagora (Départ)",
+      "Paysages désertiques : Erg, Reg, Hamada & Petites Dunes",
+      "Majestueuses Dunes de Chegaga",
+      "Camp Nomade (Déjeuner & Détente)",
+      "Retour à Zagora"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "text": "Départ le matin vers 08h00 de votre hôtel ou du point de rendez-vous à Zagora. Trajet en 4x4 à travers des paysages variés du désert : Erg, Reg, Hamada et petites dunes. Arrivée aux majestueuses dunes de Chegaga vers midi. Déjeuner délicieux au camp nomade au pied des dunes. Temps libre pour se détendre, marcher sur les dunes ou simplement profiter du silence et de la beauté du désert. Dans l’après-midi, retour en 4x4 vers Zagora. Arrivée prévue en fin de journée."
+      }
+    ]
+  },
+  "marrakech-lihoudi-2-day-excursion": {
+    "marketingTitle": "Excursion dans le désert - 2 jours Marrakech à Erg Lihoudi",
+    "summary": "Une aventure de deux jours dans le désert au départ de Marrakech. Traversez le Haut Atlas et la vallée du Drâa pour rejoindre les dunes de l’Erg Lihoudi, où vous profiterez d’une balade à dos de chameau, d’un coucher de soleil et d’une nuit en camp nomade. Le deuxième jour, visitez Tamegroute et le site classé UNESCO d’Aït Ben Haddou avant de revenir à Marrakech par la vallée de l’Ounila.",
+    "title": "Marrakech - Lihoudi 2 jours",
+    "keyStops": [
+      "Marrakech (Départ)",
+      "Haut Atlas & Col de Tizi n’Tichka",
+      "Ouarzazate",
+      "Vallée du Drâa & Agdez",
+      "Erg Lihoudi (Coucher de soleil & balade à dos de chameau)",
+      "Camp nomade (Dîner & soirée autour du feu)",
+      "Tamegroute (Bibliothèque & ateliers de poterie)",
+      "Kasbah Aït Ben Haddou (UNESCO)",
+      "Vallée de l’Ounila",
+      "Marrakech (Retour)"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "text": "Départ de Marrakech à 8h00. Traversée du Haut Atlas par le col de Tizi n’Tichka (2260 m) avec arrêts photo panoramiques. Continuation vers Ouarzazate puis la vallée du Drâa. Déjeuner à Agdez (ou à Ouarzazate si souhaité). Route à travers la vallée du Drâa avec ses palmeraies et ses ksour traditionnels. Arrivée à Erg Lihoudi en fin d’après-midi. Balade à dos de chameau pour admirer le coucher de soleil sur les dunes. Installation au camp nomade. Dîner et nuit en tente berbère avec animation autour du feu (chants et tambours)."
+      },
+      {
+        "day": 2,
+        "text": "Réveil matinal pour admirer le lever du soleil sur les dunes. Petit-déjeuner au camp. Départ vers Tamegroute : visite de la bibliothèque coranique et des ateliers de poterie verte traditionnelle. Continuation vers Ouarzazate avec un arrêt à la Kasbah d’Aït Ben Haddou, classée au patrimoine mondial de l’UNESCO. Déjeuner libre en route. Retour par la vallée de l’Ounila et traversée du Haut Atlas pour arriver à Marrakech en soirée. Fin des services."
+      }
+    ]
+  },
+  "2-day-desert-escape": {
+    "marketingTitle": "Évasion au Désert - 2 Jours Inoubliables",
+    "summary": "Un court séjour au cœur du Sahara qui vous permet de découvrir la vie du désert, les paysages majestueux et de vivre une expérience authentique de bivouac.",
+    "title": "Aventure Désert de 2 Jours",
+    "keyStops": [
+      "Tamegroute (Poterie & Bibliothèque Coranique)",
+      "Désert d’Erg Lihoudi",
+      "Dunes de Chegaga",
+      "Balade à dos de dromadaire",
+      "Vie au Bivouac & Nuit sous les Étoiles"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "text": "Départ à 10h depuis le point de rendez-vous. Passage par Tamegroute avec visite de la bibliothèque coranique et des ateliers de poterie verte. Continuation vers Erg Lihoudi pour le déjeuner dans un camp, puis route vers les dunes de Chegaga en traversant de magnifiques paysages désertiques (erg, reg, hamada). Accueil au camp par notre équipe avec un thé de bienvenue à la menthe, installation et petite balade à dos de dromadaire 🐪 pour admirer le coucher du soleil. Soirée conviviale autour du feu avec chants berbères, dîner et nuit en bivouac."
+      },
+      {
+        "day": 2,
+        "text": "Réveil matinal pour assister au lever de soleil magique sur les dunes, suivi d’un petit-déjeuner au camp. Départ ensuite en 4x4 pour le retour vers Zagora à travers le désert. Arrivée en fin de matinée ou en début d’après-midi à Zagora, fin de nos services."
+      }
+    ]
+  },
+  "ouarzazate-erg-chegaga-2-day-circuit": {
+    "marketingTitle": "Découverte des dunes – Ouarzazate Chegaga 2 jours",
+    "summary": "Partez d’Ouarzazate en passant par Taznakht et Foum Zguid pour atteindre les majestueuses dunes de Chegaga. Vivez une nuit en bivouac sous les étoiles, puis retournez par la vallée du Drâa et ses kasbahs. Une aventure saharienne condensée en seulement 2 jours.",
+    "title": "Ouarzazate Chegaga 2 jours",
+    "keyStops": [
+      "Ouarzazate",
+      "Taznakht (Capitale des Tapis Berbères)",
+      "Foum Zguid",
+      "Lac Iriki (Plateau Désertique)",
+      "Dunes de l’Erg Chegaga",
+      "Vie Nomade au Désert",
+      "Réserve Naturelle (Autruches)",
+      "Vallée du Drâa & Palmeraie",
+      "Kasbahs & Villages Sahariens",
+      "Tamgroute (Poterie & Bibliothèque)",
+      "Zagora",
+      "Agdz"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "text": "Après le départ d’Ouarzazate, route via Taznakht (capitale des tapis berbères). Déjeuner à Foum Zguid puis piste vers Chegaga en traversant le lac Iriki. Arrivée aux dunes pour admirer le coucher de soleil, dîner et nuit en bivouac sous tente confortable avec ambiance musicale."
+      },
+      {
+        "day": 2,
+        "text": "Après le petit déjeuner, retour par la piste et possibilité d’apercevoir des autruches dans la réserve naturelle. Passage par la vallée du Drâa et ses kasbahs, arrêt à Tamgroute pour visiter les ateliers de poterie et l’ancienne bibliothèque coranique. Déjeuner possible en route avant retour à Ouarzazate."
+      }
+    ]
+  },
+  "marrakech-erg-chegaga-4-day-crossing": {
+    "marketingTitle": "Grande Traversée du Sahara – Marrakech à Chegaga 4 Jours",
+    "summary": "Partez de Marrakech pour un voyage fascinant à travers le Haut Atlas, les kasbahs historiques et les vallées verdoyantes avant de rejoindre les dunes dorées de Chegaga. Découvrez Tamegroute et sa poterie, vivez des soirées sous les étoiles autour du feu, rencontrez les nomades et explorez les pistes sahariennes jusqu’à Foum Zguid. Une immersion complète dans la magie du désert marocain.",
+    "title": "Marrakech - Chegaga 4 Jours",
+    "keyStops": [
+      "Marrakech (Départ en 4x4)",
+      "Col de Tizi n’Tichka (2260 m)",
+      "Kasbah de Telouet",
+      "Vallée d’Ounila & Kasbah Aït Ben Haddou (UNESCO)",
+      "Vallée du Drâa & Oasis de Palmiers",
+      "Zagora (Nuit en Maison d’Hôtes)",
+      "Tamegroute (Poterie & Bibliothèque Coranique)",
+      "Désert d’Erg Lihoudi (Déjeuner au camp)",
+      "Dunes de Chegaga (Coucher de soleil & Thé de bienvenue)",
+      "Vie au Bivouac & Soirée autour du feu",
+      "Rencontre avec les Nomades",
+      "Balade à dos de dromadaire",
+      "Lac Iriki & Plateau désertique",
+      "Taznakht (Tapis berbères & Association féminine)"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "text": "Départ de Marrakech la matinée, direction le Haut Atlas via le col de Tichka situé à 2260 d’altitude. passant par telouet et la vallée de l'Ounilla …continuons vers la Kasbah Ait ben Hadou villages fortifiés (l’une des plus belles kasbahs du Sud marocain. Elle a bénéficié, sur le plan financier, de plusieurs tournages de films importants, dont Lawrence d’Arabie, Gladiator et Jésus de Nazareth, et est désormais classée au patrimoine mondial de l’UNESCO) Déjeuner à la Kasbah et direction vers Ouarzazate stop pour la photo au studio cinéma, avant de rejoindre El Kelâa des M’Gouna, gros village à 1450 m d’altitude, situé presque à la jonction des vallées du M’Goun et du Dadès. Piste de la Vallée des Roses en passant par Ait Saîd, Tourbist, Tamalout, qui nous amènera à Bou-Tgharar dans la Vallée des Roses. On continue sur la piste vers la kasbah du Glaoui Ait-Youl en bordure de la vallée du figues Première nuit à l’auberge familial très sympathique Très propre et confortable, idéal pour un passage d'une nuitée."
+      },
+      {
+        "day": 2,
+        "text": "Après le petit-déjeuner au riad, nous partirons pour une promenade à pied de deux heures au cœur des gorges et des canyons du Dadès. Nous traverserons le massif par la vallée du Dadès et M'semrir, en explorant les montagnes rocheuses qui surplombent les falaises et l’oasis verdoyante. C’est là que se cachent mystérieusement les ruines d’anciennes forteresses en terre et en paille.\nNotre voyage se poursuivra ensuite vers les gorges du Todra, en traversant un vaste plateau rocheux situé à plus de 2 000 mètres d’altitude, où vivent des tribus nomades. Après avoir admiré ces magnifiques canyons, nous descendrons vers les gorges du Todra pour une nouvelle promenade à pied, suivie d'une balade dans la palmeraie. En fin d'après-midi, nous prendrons la route vers le massif montagneux du Djebel Saghro à la rencontre des nomades de la tribu des Aït Atta, avant de descendre vers le village de N'kob. Le dîner et la nuit se feront dans une authentique maison d'hôtes traditionnelle."
+      },
+      {
+        "day": 3,
+        "text": "Après le petit-déjeuner, nous prendrons le départ vers la magnifique vallée du Drâa, célèbre pour son immense oasis qui s'étend sur près de 200 kilomètres de palmeraie. Notre route passera par le village de Tamegroute, réputé pour sa poterie verte unique et son ancienne bibliothèque coranique.\nNous continuerons ensuite vers M’Hamid pour la pause déjeuner. L'après-midi, nous emprunterons la piste à travers des paysages désertiques grandioses où alternent ergs, regs et hamadas, Ce sera aussi l'occasion de partir à la recherche de la faune locale, notamment les gazelles, les antilopes ou les autruches qui peuplent la région. , afin de rejoindre les grandes dunes de l'Erg Chegaga. Vous pourrez y admirer un splendide coucher de soleil sur les crêtes de sable, avant de partager le dîner et de passer la nuit en bivouac sous les étoiles."
+      },
+      {
+        "day": 4,
+        "text": "Réveil matinal pour assister au lever du soleil sur les dunes, suivi d’un petit-déjeuner. Départ pour Foum Zguid en passant par le lac Iriki et le vaste plateau désertique parsemé d’acacias avant de rejoindre la route goudronnée. Continuation vers Taznakht, village réputé pour ses tapis berbères, et visite d’une association féminine de tissage. Déjeuner sur place, puis route vers Marrakech en passant par Imerzgan et le col du Tizi N’Tichka. Arrivée à Marrakech en fin d’après-midi. Fin du circuit."
+      }
+    ]
+  },
+  "4-day-nomadic-sahara-circuit": {
+    "marketingTitle": "Aventure Saharienne – Circuit Nomade de 4 Jours",
+    "summary": "Une expédition inoubliable entre montagnes et désert. Traversez les vallées du Dadès et du Drâa, explorez les kasbahs et les oasis, rencontrez les nomades du Saghro, puis rejoignez les dunes majestueuses de Chegaga. Entre balades à dos de dromadaire, nuits en bivouac et paysages à couper le souffle, vivez l’essence même du Sahara marocain.",
+    "title": "Circuit Nomade de 4 Jours",
+    "keyStops": [
+      "Marrakech (Départ)",
+      "Haut Atlas & Col de Tizi n’Tichka",
+      "Kasbah Aït Ben Haddou (UNESCO)",
+      "Ouarzazate (Studios de Cinéma & Kasbah de Taourirt)",
+      "Vallée des Roses & Boumalne Dadès",
+      "Gorges du Dadès & Gorges du Todra",
+      "Massif du Saghro & Rencontre avec les Nomades Aït Ata",
+      "Vallée du Drâa & Palmeraie",
+      "Tamegroute (Poterie & Bibliothèque Coranique)",
+      "Désert de M’Hamid & Dunes de Chegaga",
+      "Bivouac sous les Étoiles (Dîner & Musique berbère)",
+      "Lac Iriki & Plateau désertique",
+      "Taznakht (Village des Tapis)"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "text": "Après le ramassage depuis votre hôtel ou riad à Marrakech, départ tôt le matin en 4x4 en direction du Grand Sud. Nous franchirons le célèbre col du Tizi N’Tichka, culminant à 2 260 mètres d’altitude, qui offre des panoramas exceptionnels sur les sommets du Haut Atlas. Nous redescendrons ensuite pour emprunter l'ancienne route des caravanes qui traverse la magnifique vallée d’Ounila : un canyon spectaculaire aux contrastes saisissants, où la roche ocre et les cultures verdoyantes abritent de charmants petits villages en pisé.\nAu bout de cette vallée, une pause prolongée est prévue pour explorer le célèbre Ksar d’Aït Ben Haddou. Classé au patrimoine mondial de l’UNESCO, ce joyau d’architecture en terre est l'un des exemples les plus spectaculaires et les mieux préservés du Sud marocain, ayant d'ailleurs servi de décor naturel à de grands chefs-d'œuvre du cinéma mondial. Nous y ferons une agréable promenade à pied d'une heure pour arpenter ses ruelles fortifiées, découvrir ses maisons traditionnelles et monter jusqu'au sommet du ksar afin de profiter d'une vue imprenable sur toute la vallée.\nAprès la visite, notre route se poursuivra en franchissant le col du Tizi N’Tinifift pour rejoindre la mythique vallée du Drâa. Nous traverserons ce ruban de fraîcheur exceptionnel, bordé par une immense oasis de palmiers dattiers et parsemé de ksour traditionnels fortifiés. En fin de journée, arrivée à Zagora. Dîner et nuit dans une maison d’hôtes chaleureuse et familiale."
+      },
+      {
+        "day": 2,
+        "text": "Après le petit-déjeuner, départ vers le désert d’Erg Lihoudi en passant par Tamegroute, célèbre pour ses poteries vertes et son ancienne bibliothèque coranique. Après le déjeuner à Erg Lihoudi, notre voyage se poursuivra en direction des grandes dunes de Chegaga. Nous traverserons alors de splendides paysages sahariens où alternent ergs, regs et hamadas. Ce sera aussi l'occasion de partir à la recherche de la faune locale, notamment les gazelles, les antilopes ou les autruches qui peuplent la région.\nÀ l’arrivée au camp, vous recevrez un accueil chaleureux de notre équipe autour d'un thé à la menthe fraîche. Après votre installation, une petite marche dans les dunes vous permettra d'admirer le coucher du soleil. La journée se terminera par une soirée conviviale autour du feu de camp rythmée par des chants berbères, suivie du dîner et d'une nuit magique en bivouac."
+      },
+      {
+        "day": 3,
+        "text": "Une journée complète de détente pour profiter pleinement de la magie du désert. Pour le déjeuner, plusieurs options s'offrent à vous selon vos envies : partager un moment authentique avec les nomades locaux, déjeuner confortablement au camp, ou opter pour un pique-nique traditionnel à l’ombre d’un tamaris, l'arbre emblématique du Sahara.\nVous aurez la possibilité de faire une promenade à pied au milieu des dunes de sable. En fin d’après-midi, vous partirez pour une balade à dos de dromadaire afin d'admirer le splendide coucher du soleil sur les crêtes. La journée se clôturera par un dîner savoureux, des animations musicales berbères et une nuit magique sous les étoiles autour du feu de camp 🔥."
+      },
+      {
+        "day": 4,
+        "text": "Réveil matinal pour assister au lever de soleil sur les dunes, puis petit déjeuner. Départ pour Foum Zguid en rendant passage au lac d’iriqui, et le plateau désertique parsemé d’acacias puis rejoindre la route goudronnée a foum Zguid . déjeuné sur place, après Continuation vers Taznakhte village des tapis berberes stop pour visiter un association féminine des tapis ,pour suit transfert pour Marrakech on passants par Imerzgan et Col de Tizi ntichka arrivée fin de d'après midi a Marrakech Fin de circuits"
+      }
+    ]
+  },
+  "7-day-southern-odyssey": {
+    "marketingTitle": "L'Odyssée du Sud – 7 Jours de l'Atlas au Sahara",
+    "summary": "Un voyage immersif des sommets de l'Atlas aux dunes d'Erg Chegaga. Découvrez la vallée du Draa, dormez sous les étoiles au cœur du désert, et explorez l'artisanat local des tapis à Taznakhte et des poteries à Tamegroute, avant de finir en beauté par la Kasbah Ait Ben Haddou.",
+    "title": "Expédition Sahara : Le Grand Circuit de 7 Jours",
+    "keyStops": [
+      "Col du Tizi n'Tichka",
+      "Kasbah Ait Ben Haddou (UNESCO)",
+      "El Kelâa des M'Gouna (Vallée des Roses)",
+      "Bou-Tgharar & Kasbah Ait-Youl",
+      "Gorges du Dadès & Gorges du Todra",
+      "Col du Tizi Nogdal & Points de Vue de l'Atlas",
+      "Massif du Jebel Saghrou & Nomades Ait Ata",
+      "Vallée du Draa & Palmeraie",
+      "Tamegroute (Village de Poterie & Bibliothèque)",
+      "Désert de Mhamid & Dunes de l'Erg Chegaga",
+      "Dunes de l'Erg Chegaga",
+      "Taznakhte (Village des Tapis)",
+      "Oasis de Fint"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "text": "Après le ramassage à votre hébergement à Marrakech tôt le matin, départ en 4x4 en direction du Haut Atlas via le célèbre col du Tizi N’Tichka, culminant à 2 260 mètres d'altitude. Notre premier arrêt se fera à Tizi N'Aït Barka pour savourer un café devant une vue panoramique imprenable. Nous poursuivrons notre route à travers les montagnes de l'Atlas, rythmée par plusieurs haltes photos, avant d'arriver à Ouarzazate pour le déjeuner. L'après-midi, un arrêt est prévu pour photographier les célèbres studios de cinéma ainsi que la Kasbah de Taourirt. Nous rejoindrons ensuite El Kelâa des M’Gouna, un grand village situé à 1 450 mètres d'altitude, à la jonction des vallées du M’Goun et du Dadès. De là, nous emprunterons la piste de la Vallée des Roses en passant par les villages traditionnels d'Aït Saïd, Tourbist et Tamalout pour atteindre Bou-Thrarar. Enfin, nous continuerons par la piste menant à la Kasbah du Glaoui à Aït Youl, en bordure de la vallée du Dadès. Dîner et nuit dans une auberge locale, très propre, confortable et idéale pour cette première étape."
+      },
+      {
+        "day": 2,
+        "text": "Après le petit-déjeuner à l'auberge, nous commencerons la journée par une promenade à pied de deux heures au cœur des impressionnants canyons et gorges du Dadès. Nous traverserons ensuite le massif par la vallée du Dadès et M'semrir pour explorer les paysages rocheux spectaculaires qui surplombent les falaises et l'oasis verdoyante où se cachent d'anciennes forteresses en terre. Après le déjeuner en route, notre voyage se poursuivra en traversant un vaste plateau rocheux situé à plus de 2 000 mètres d'altitude, où vivent des tribus nomades, avant de descendre vers les majestueuses gorges du Todra. Nous y ferons une nouvelle promenade à pied au milieu du canyon, suivie d'une balade d'une heure et demie dans la magnifique palmeraie du Todra. Dîner et nuit à l'hôtel aux gorges."
+      },
+      {
+        "day": 3,
+        "text": "Après un copieux petit-déjeuner, vous prendrez la route en direction du majestueux massif montagneux du Djebel Saghro, où vous aurez l'occasion de croiser les nomades de la tribu des Aït Atta. Votre périple se poursuivra par une descente vers la mythique vallée du Drâa, célèbre pour ses palmeraies verdoyantes à perte de vue et ses villages fortifiés traditionnels. Après une pause déjeuner dans une auberge nichée au cœur de la palmeraie, vous rejoindrez Zagora en fin d’après-midi. Une fois installé dans votre riad, vous pourrez profiter d'un moment de détente, flâner dans les jardins de l'oasis ou découvrir l'artisanat local lors d'une visite des coopératives de bijoux et de fabrication de portes en bois de tamaris. Dîner et nuit paisible à Zagora."
+      },
+      {
+        "day": 4,
+        "text": "Après le petit-déjeuner, vous prendrez la route en direction du désert d'Erg Chegaga, en faisant une halte culturelle à Tamegroute pour découvrir son célèbre village de potiers et sa bibliothèque coranique historique. Le voyage se poursuivra ensuite par la piste, vous offrant une immersion totale au cœur de paysages sahariens grandioses, entre ergs, regs et hamadas, où vous aurez peut-être la chance d'apercevoir des autruches, des antilopes ou des gazelles. Après un pique-nique mémorable en plein désert, vous arriverez au campement où l'équipe du bivouac vous accueillera chaleureusement avec un thé à la menthe traditionnel. Vous profiterez d'une marche dans les dunes pour admirer le splendide coucher du soleil, avant de conclure cette journée magique par une soirée conviviale au coin du feu, rythmée par les chants berbères, suivie du dîner et d'une nuit sous les étoiles."
+      },
+      {
+        "day": 5,
+        "text": "Une journée complète de détente pour profiter pleinement de la magie du Sahara. Pour le déjeuner, plusieurs options s'offrent à vous selon vos envies : partager un moment authentique avec les familles nomades locales, déjeuner confortablement au camp, ou opter pour un pique-nique traditionnel à l’ombre d’un tamaris. Vous aurez également la possibilité de faire une belle promenade à pied au milieu des dunes de sable fin. En fin d’après-midi, vous partirez pour une balade à dos de dromadaire sur les crêtes afin d'admirer le coucher du soleil. La soirée se clôturera par un dîner savoureux, des animations musicales berbères autour du feu de camp 🔥 et une nuit magique sous les étoiles."
+      },
+      {
+        "day": 6,
+        "text": "Après avoir admirer le lever du soleil sur les dunes and savouré votre petit-déjeuner, vous prendrez la piste en direction de Foum Zguid. Ce trajet hors du temps vous fera traverser l'immensité du lac asséché d'Iriqui ainsi qu'un grand plateau désertique parsemé d'acacias, avant de rejoindre la route goudronnée pour une pause déjeuner sur place. L'aventure se poursuivra vers Taznakht, un village réputé pour ses tapis berbères, où vous visiterez une association de femmes tisserandes pour découvrir leur savoir-faire unique. Enfin, vous rejoindrez le célèbre Ksar d'Aït Ben Haddou, joyau d'architecture en terre classé au patrimoine mondial de l'UNESCO. Nous y ferons une visite et une promenade à pied d'une heure et demie pour explorer ses ruelles fortifiées, ses maisons traditionnelles et monter jusqu'au grenier collectif. Dîner et nuit dans une maison d’hôtes propre et très calme à Aït Ben Haddou."
+      },
+      {
+        "day": 7,
+        "text": "Après le petit-déjeuner à votre hôtel à Aït Ben Haddou, nous prendrons la route du retour vers Marrakech. Notre itinéraire empruntera la somptueuse vallée de l'Ounila, réputée pour ses merveilleux paysages de canyons ocre, ses cultures en terrasses et ses villages traditionnels en pisé, avec la visite de la Kasbah de Télouet. Nous franchirons ensuite le spectaculaire col du Tizi N’Tichka (2 260 m) dans le Haut Atlas, avec un arrêt déjeuner traditionnel en route. Arrivée à Marrakech en fin d'après-midi. Fin du circuit."
+      }
+    ]
+  },
+  "anti-atlas-atlantic-6-day-circuit": {
+    "marketingTitle": "Circuit Anti-Atlas & Atlantique - 6 Jours",
+    "summary": "circuit nature et authentique, à la découverte des montagnes de l’Anti-Atlas, de la côte atlantique et du parc de Massa, au départ d’Agadir.",
+    "title": "Circuit Anti-Atlas & Atlantique - 6 Jours",
+    "keyStops": [
+      "Agadir (Départ)",
+      "Tafraoute & Montagnes de l’Anti-Atlas",
+      "Gorges d’Aït Mansour & Oasis",
+      "Amtoudi (Greniers fortifiés & Palmeraie)",
+      "Sidi Ifni (Ville Art Déco)",
+      "Plage de Legzira (Falaises & Arches naturelles)",
+      "Mirleft",
+      "Parc National de Massa (Observation des oiseaux)",
+      "Retour à Agadir"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "text": "Route vers les montagnes de l’Anti-Atlas, paysages rocheux et villages berbères. Nuit dans une maison d’hôtes traditionnelle."
+      },
+      {
+        "day": 2,
+        "text": "Découverte des magnifiques gorges d’Aït Mansour, oasis encaissée entre les falaises. Continuation vers Amtoudi. Nuit chez l’habitant, dans un cadre authentique."
+      },
+      {
+        "day": 3,
+        "text": "Visite des greniers fortifiés (Agadirs). Balade dans la palmeraie et l’oasis. Marche facile dans les gorges et les villages alentours. Rencontre avec les habitants et découverte de la vie locale. Temps libre pour profiter du calme et de la nature."
+      },
+      {
+        "day": 4,
+        "text": "Route vers la côte atlantique et arrivée à Sidi Ifni, ancienne ville espagnole au charme Art déco."
+      },
+      {
+        "day": 5,
+        "text": "Visite de la plage de Legzira, célèbre pour ses falaises et arches naturelles. Continuation vers Mirleft. Nuit à Mirleft."
+      },
+      {
+        "day": 6,
+        "text": "Passage par le parc national de Massa, réputé pour l’observation des oiseaux (ibis chauves, flamants roses, hérons et autres espèces). Balade nature dans un environnement préservé avant le retour à Agadir."
+      }
+    ]
+  },
+  "erg-chegaga-2-day-immersion": {
+    "marketingTitle": "Immersion Désert - 2 Jours à Chegaga",
+    "summary": "Vivez une expérience authentique de deux jours dans le désert de Chegaga. Découvrez la vie nomade, profitez de balades à dos de dromadaire, admirez les couchers de soleil sur les dunes et passez des nuits magiques sous les étoiles autour du feu.",
+    "title": "Immersion Désert de Chegaga - 2 Jours",
+    "keyStops": [
+      "Mhamid el Ghizlane (Départ)",
+      "Désert d’Erg Lihoudi",
+      "Dunes de Chegaga",
+      "Balade à dos de dromadaire",
+      "Vie au Bivouac & Nuit sous les Étoiles"
+    ],
+    "itinerary": [
+      {
+        "day": 1,
+        "text": "À votre arrivée à mahamid le guide chauffeur vous attends pour vous accueillir et installer votre voiture au parking, Puis départ vers les dunes de Chegaga en profitant des belle paysage merveilleux Erg ,Reg , hamada, Arrivé à au Camp.. Nos staff de bivouac vous accueille et s'installer avec un thé à la menthe fraîche puis un balade de dromadaire dans les dunes pour admirer le coucher du soleil. Soirée avec feu de camp et chants berbères par notre équipe de camp dîner et nuit au bivouac."
+      },
+      {
+        "day": 2,
+        "text": "Réveil matinal pour assister au lever de soleil sur les dunes, puis petit déjeuner, Puis Départ pour M’Hamid."
+      }
+    ]
+  }
+}

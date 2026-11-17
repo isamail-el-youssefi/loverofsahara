@@ -1,0 +1,909 @@
+{
+  "5-day-nomad-journey": {
+    "carousel": [
+      "/test1.jpg",
+      "/desert1.jpg",
+      "/desert2.jpg"
+    ],
+    "days": {
+      "day1": [
+        "/6jp/day1/1.jpg",
+        "/6jp/day1/2.jpg",
+        "/6jp/day1/3.jpg",
+        "/6jp/day1/4.jpg",
+        "/6jp/day1/5.webp",
+        "/6jp/day1/6.jpg",
+        "/6jp/day1/7.jpg",
+        "/6jp/day1/8.jpg"
+      ],
+      "day2": [
+        "/6jp/day2/1.jpg",
+        "/6jp/day2/2.jpg",
+        "/6jp/day2/3.jpg",
+        "/6jp/day2/4.jpg",
+        "/6jp/day2/5.jpg",
+        "/6jp/day2/6.jpg",
+        "/6jp/day2/7.jpg",
+        "/6jp/day2/8.jpg",
+        "/6jp/day2/9.jpg",
+        "/6jp/day2/10.jpg"
+      ],
+      "day3": [
+        "/6jp/day3/1.jpg",
+        "/6jp/day3/2.jpg",
+        "/6jp/day3/3.jpg",
+        "/6jp/day3/4.jpg",
+        "/6jp/day3/5.jpg",
+        "/6jp/day3/6.jpg",
+        "/6jp/day3/7.jpg",
+        "/6jp/day3/8.jpg",
+        "/6jp/day3/9.jpg"
+      ],
+      "day4": [
+        "/6jp/day4/1.jpg",
+        "/6jp/day4/2.jpg",
+        "/6jp/day4/3.jpg",
+        "/6jp/day4/4.jpg",
+        "/6jp/day4/5.jpg",
+        "/6jp/day4/6.jpg",
+        "/6jp/day4/7.jpg",
+        "/6jp/day4/8.jpg"
+      ],
+      "day5": [
+        "/3jp/day3/1.jpg",
+        "/3jp/day3/2.jpg",
+        "/3jp/day3/3.jpg",
+        "/3jp/day3/4.jpg",
+        "/3jp/day3/5.jpg",
+        "/3jp/day3/6.jpg",
+        "/3jp/day3/7.jpg"
+      ]
+    }
+  },
+  "3-day-sahara-sprint": {
+    "carousel": [
+      "/test2.jpg",
+      "/oasis1.jpg",
+      "/oasis2.jpg"
+    ],
+    "days": {
+      "day1": [
+        "/3jp/day1/1.jpg",
+        "/3jp/day1/2.jpg",
+        "/3jp/day1/3.jpg",
+        "/3jp/day1/4.jpg",
+        "/3jp/day1/5.jpg",
+        "/3jp/day1/6.jpg",
+        "/3jp/day1/7.jpg",
+        "/3jp/day1/8.jpg",
+        "/3jp/day1/9.webp",
+        "/3jp/day1/10.jpg",
+        "/3jp/day1/11.jpg"
+      ],
+      "day2": [
+        "/3jp/day2/1.jpg",
+        "/3jp/day2/2.jpg",
+        "/3jp/day2/3.jpg",
+        "/3jp/day2/4.jpg",
+        "/3jp/day2/5.jpg",
+        "/3jp/day2/6.jpg",
+        "/3jp/day2/7.jpg",
+        "/3jp/day2/8.jpg",
+        "/3jp/day2/9.jpg",
+        "/3jp/day2/10.jpg",
+        "/3jp/day2/11.jpg",
+        "/3jp/day2/12.jpg",
+        "/3jp/day2/13.jpg",
+        "/3jp/day2/14.jpg"
+      ],
+      "day3": [
+        "/3jp/day3/1.jpg",
+        "/3jp/day3/2.jpg",
+        "/3jp/day3/3.jpg",
+        "/3jp/day3/4.jpg",
+        "/3jp/day3/5.jpg",
+        "/3jp/day3/6.jpg",
+        "/3jp/day3/7.jpg"
+      ]
+    }
+  },
+  "6-day-sahara-odyssey": {
+    "carousel": [
+      "/test3.jpg",
+      "/kasbah1.jpg",
+      "/kasbah2.jpg"
+    ],
+    "days": {
+      "day1": [
+        "/6jp/day1/1.jpg",
+        "/6jp/day1/2.jpg",
+        "/6jp/day1/3.jpg",
+        "/6jp/day1/4.jpg",
+        "/6jp/day1/5.webp",
+        "/6jp/day1/6.jpg",
+        "/6jp/day1/7.jpg",
+        "/6jp/day1/8.jpg"
+      ],
+      "day2": [
+        "/6jp/day2/1.jpg",
+        "/6jp/day2/2.jpg",
+        "/6jp/day2/3.jpg",
+        "/6jp/day2/4.jpg",
+        "/6jp/day2/5.jpg",
+        "/6jp/day2/6.jpg",
+        "/6jp/day2/7.jpg",
+        "/6jp/day2/8.jpg",
+        "/6jp/day2/9.jpg",
+        "/6jp/day2/10.jpg"
+      ],
+      "day3": [
+        "/6jp/day3/1.jpg",
+        "/6jp/day3/2.jpg",
+        "/6jp/day3/3.jpg",
+        "/6jp/day3/4.jpg",
+        "/6jp/day3/5.jpg",
+        "/6jp/day3/6.jpg",
+        "/6jp/day3/7.jpg",
+        "/6jp/day3/8.jpg",
+        "/6jp/day3/9.jpg"
+      ],
+      "day4": [
+        "/6jp/day2/1.jpg",
+        "/6jp/day2/2.jpg",
+        "/6jp/day2/3.jpg",
+        "/6jp/day2/4.jpg",
+        "/6jp/day2/5.jpg",
+        "/6jp/day2/6.jpg",
+        "/6jp/day2/7.jpg",
+        "/6jp/day2/8.jpg",
+        "/6jp/day2/9.jpg",
+        "/6jp/day2/10.jpg"
+      ],
+      "day5": [
+        "/6jp/day5/1.jpg",
+        "/6jp/day5/2.jpg",
+        "/6jp/day5/3.jpg",
+        "/6jp/day5/4.jpg",
+        "/6jp/day5/5.jpg",
+        "/6jp/day5/6.jpg",
+        "/6jp/day5/7.jpg"
+      ],
+      "day6": [
+        "/6jp/day6/1.jpg",
+        "/6jp/day6/2.jpg",
+        "/6jp/day6/3.jpg",
+        "/6jp/day6/4.jpg",
+        "/6jp/day6/5.jpg"
+      ]
+    }
+  },
+  "2-day-desert-getaway": {
+    "carousel": [
+      "/test2.jpg",
+      "/oasis1.jpg",
+      "/oasis2.jpg"
+    ],
+    "days": {
+      "day1": [
+        "/zagora/1.jpg",
+        "/zagora/2.jpg",
+        "/zagora/3.jpg",
+        "/zagora/4.jpg",
+        "/zagora/5.jpg",
+        "/zagora/6.jpg",
+        "/zagora/7.jpg",
+        "/zagora/8.jpg",
+        "/zagora/9.jpg",
+        "/3jp/day2/2.jpg",
+        "/3jp/day2/3.jpg",
+        "/3jp/day2/4.jpg"
+      ],
+      "day2": [
+        "/3jp/day3/3.jpg",
+        "/3jp/day2/5.jpg",
+        "/3jp/day2/6.jpg",
+        "/3jp/day2/12.jpg",
+        "/3jp/day2/13.jpg",
+        "/3jp/day2/14.jpg",
+        "/3jp/day3/5.jpg",
+        "/3jp/day3/6.jpg",
+        "/3jp/day3/7.jpg"
+      ]
+    }
+  },
+  "agadir-erg-chegaga-6-day-circuit": {
+    "carousel": [
+      "/test3.jpg",
+      "/kasbah1.jpg",
+      "/kasbah2.jpg"
+    ],
+    "days": {
+      "day1": [
+        "/agadirs/1.jpg",
+        "/agadirs/2.jpg",
+        "/agadirs/2-(2).jpg",
+        "/agadirs/3.jpg",
+        "/agadirs/4.jpg",
+        "/agadirs/5.jpg",
+        "/agadirs/6.jpg",
+        "/agadirs/7.jpg",
+        "/agadirs/8.jpg",
+        "/agadirs/9.jpg",
+        "/agadirs/10.jpg",
+        "/agadirs/11.jpg",
+        "/agadirs/12.jpg"
+      ],
+      "day2": [
+        "/6jp/day4/1.jpg",
+        "/3jp/day3/1.jpg",
+        "/6jp/day4/8.jpg",
+        "/3jp/day3/2.jpg",
+        "/6jp/day3/1.jpg",
+        "/3jp/day3/3.jpg",
+        "/3jp/day3/5.jpg",
+        "/3jp/day3/6.jpg",
+        "/3jp/day3/7.jpg"
+      ],
+      "day3": [
+        "/6jp/day3/1.jpg",
+        "/6jp/day3/2.jpg",
+        "/6jp/day3/3.jpg",
+        "/6jp/day3/4.jpg",
+        "/6jp/day3/5.jpg",
+        "/6jp/day3/6.jpg",
+        "/6jp/day3/7.jpg",
+        "/6jp/day3/8.jpg",
+        "/6jp/day3/9.jpg"
+      ],
+      "day4": [
+        "/6jp/day2/1.jpg",
+        "/6jp/day2/2.jpg",
+        "/6jp/day2/3.jpg",
+        "/6jp/day2/4.jpg",
+        "/6jp/day2/5.jpg",
+        "/6jp/day2/6.jpg",
+        "/6jp/day2/7.jpg",
+        "/6jp/day2/8.jpg",
+        "/6jp/day2/9.jpg",
+        "/6jp/day2/10.jpg"
+      ],
+      "day5": [
+        "/6jp/day1/1.jpg",
+        "/6jp/day1/4.jpg",
+        "/6jp/day1/5.webp",
+        "/6jp/day1/6.jpg",
+        "/6jp/day1/7.jpg",
+        "/6jp/day1/8.jpg"
+      ],
+      "day6": [
+        "/agadirs/13.jpg",
+        "/agadirs/14.jpg",
+        "/agadirs/1.jpg",
+        "/agadirs/2.jpg",
+        "/agadirs/2-(2).jpg",
+        "/agadirs/3.jpg",
+        "/agadirs/4.jpg",
+        "/agadirs/5.jpg",
+        "/agadirs/6.jpg",
+        "/agadirs/7.jpg",
+        "/agadirs/8.jpg",
+        "/agadirs/9.jpg",
+        "/agadirs/10.jpg",
+        "/agadirs/11.jpg",
+        "/agadirs/12.jpg"
+      ]
+    }
+  },
+  "7-day-sahara-trekking": {
+    "carousel": [
+      "/test3.jpg",
+      "/kasbah1.jpg",
+      "/kasbah2.jpg"
+    ],
+    "days": {
+      "day1": [
+        "/trekking/1.jpg",
+        "/trekking/2.jpg",
+        "/trekking/3.jpg",
+        "/trekking/4.jpg"
+      ],
+      "day2": [
+        "/trekking/5.jpg",
+        "/trekking/6.jpg",
+        "/trekking/7.jpg",
+        "/trekking/8.jpg",
+        "/trekking/9.jpg",
+        "/trekking/10.jpg",
+        "/trekking/11.jpg"
+      ],
+      "day3": [
+        "trekking/12.jpg",
+        "/trekking/13.jpg",
+        "/trekking/14.jpg",
+        "/trekking/15.jpg",
+        "/trekking/16.jpg",
+        "/trekking/17.jpg"
+      ],
+      "day4": [
+        "/trekking/18.jpg",
+        "/trekking/19.jpg",
+        "/trekking/20.jpg",
+        "/trekking/21.jpg"
+      ],
+      "day5": [
+        "/trekking/22.jpg",
+        "/trekking/23.jpg",
+        "/trekking/24.jpg"
+      ],
+      "day6": [
+        "/trekking/25.jpg",
+        "/trekking/26.jpg",
+        "/trekking/27.jpg"
+      ],
+      "day7": [
+        "/6jp/day1/3.jpg",
+        "/6jp/day3/2.jpg",
+        "/6jp/day3/3.jpg",
+        "/6jp/day3/4.jpg"
+      ]
+    }
+  },
+  "ouarzazate-erg-chegaga-3-day-circuit": {
+    "carousel": [
+      "/test2.jpg",
+      "/oasis1.jpg",
+      "/oasis2.jpg"
+    ],
+    "days": {
+      "day1": [
+        "/sahara/1.jpg",
+        "/agadirs/9.jpg",
+        "/agadirs/10.jpg",
+        "/agadirs/11.jpg",
+        "agadirs/12.jpg",
+        "/3jp/day3/1.jpg",
+        "/3jp/day3/2.jpg",
+        "/3jp/day3/3.jpg",
+        "/sahara/3.jpg",
+        "/sahara/4.jpg"
+      ],
+      "day2": [
+        "/sahara/2.jpg",
+        "/3jp/day2/2.jpg",
+        "/3jp/day2/3.jpg",
+        "/3jp/day2/4.jpg",
+        "/3jp/day2/5.jpg",
+        "/3jp/day2/6.jpg",
+        "/3jp/day2/12.jpg",
+        "/3jp/day2/13.jpg",
+        "/3jp/day2/14.jpg"
+      ],
+      "day3": [
+        "/zagora/1.jpg",
+        "/zagora/2.jpg",
+        "/zagora/3.jpg",
+        "/zagora/4.jpg",
+        "/zagora/5.jpg",
+        "/zagora/6.jpg",
+        "/zagora/7.jpg",
+        "/zagora/8.jpg",
+        "/zagora/9.jpg",
+        "/3jp/day3/7.jpg"
+      ]
+    }
+  },
+  "gorges-saghro-chegaga-3-day-circuit": {
+    "carousel": [
+      "/test2.jpg",
+      "/oasis1.jpg",
+      "/oasis2.jpg"
+    ],
+    "days": {
+      "day1": [
+        "/6jp/day1/4.jpg",
+        "/roses/1.jpg",
+        "/roses/2.jpg",
+        "/roses/3.jpg",
+        "/dades/1.jpg",
+        "/6jp/day2/1.jpg",
+        "/6jp/day2/2.jpg",
+        "/6jp/day2/3.jpg",
+        "/6jp/day2/4.jpg",
+        "/6jp/day2/5.jpg",
+        "/6jp/day2/6.jpg",
+        "/6jp/day2/7.jpg",
+        "/6jp/day2/8.jpg",
+        "/6jp/day2/9.jpg",
+        "/6jp/day2/10.jpg",
+        "/dades/2.jpg"
+      ],
+      "day2": [
+        "/saghro/1.jpg",
+        "/saghro/2.jpg",
+        "/saghro/3.jpg",
+        "/saghro/4.jpg",
+        "/zagora/1.jpg",
+        "/zagora/2.jpg",
+        "/zagora/3.jpg",
+        "/zagora/4.jpg",
+        "/zagora/5.jpg",
+        "/zagora/6.jpg",
+        "/zagora/7.jpg",
+        "/zagora/8.jpg",
+        "/zagora/9.jpg",
+        "/3jp/day2/2.jpg",
+        "/3jp/day2/3.jpg",
+        "/3jp/day2/4.jpg"
+      ],
+      "day3": [
+        "/3jp/day1/1.jpg",
+        "/3jp/day3/1.jpg",
+        "/3jp/day3/2.jpg",
+        "/3jp/day3/3.jpg",
+        "/3jp/day2/5.jpg",
+        "/3jp/day2/6.jpg",
+        "/3jp/day2/12.jpg",
+        "/3jp/day2/13.jpg",
+        "/3jp/day2/14.jpg",
+        "/3jp/day3/5.jpg",
+        "/3jp/day3/6.jpg",
+        "/3jp/day3/7.jpg"
+      ]
+    }
+  },
+  "zagora-erg-chegaga-3-day-excursion": {
+    "carousel": [
+      "/test2.jpg",
+      "/oasis1.jpg",
+      "/oasis2.jpg"
+    ],
+    "days": {
+      "day1": [
+        "/zagora/1.jpg",
+        "/zagora/2.jpg",
+        "/zagora/3.jpg",
+        "/zagora/4.jpg",
+        "/zagora/5.jpg",
+        "/zagora/6.jpg",
+        "/zagora/7.jpg",
+        "/zagora/8.jpg",
+        "/3jp/day2/2.jpg",
+        "/3jp/day2/3.jpg",
+        "/3jp/day2/4.jpg"
+      ],
+      "day2": [
+        "/sahara/1.jpg",
+        "/sahara/2.jpg",
+        "/sahara/3.jpg",
+        "/sahara/4.jpg",
+        "/3jp/day2/2.jpg",
+        "/3jp/day2/3.jpg",
+        "/3jp/day2/4.jpg",
+        "/3jp/day2/5.jpg",
+        "/3jp/day2/6.jpg",
+        "/3jp/day2/12.jpg"
+      ],
+      "day3": [
+        "/3jp/day2/13.jpg",
+        "/3jp/day2/14.jpg",
+        "/zagora/9.jpg",
+        "/3jp/day3/2.jpg",
+        "/3jp/day3/7.jpg"
+      ]
+    }
+  },
+  "erg-chegaga-1-day-excursion": {
+    "carousel": [
+      "/test2.jpg",
+      "/oasis1.jpg",
+      "/oasis2.jpg"
+    ],
+    "days": {
+      "day1": [
+        "/zagora/1.jpg",
+        "/zagora/2.jpg",
+        "/zagora/3.jpg",
+        "/zagora/4.jpg",
+        "/zagora/9.jpg",
+        "/3jp/day2/2.jpg",
+        "/3jp/day2/3.jpg",
+        "/3jp/day2/4.jpg",
+        "/3jp/day3/3.jpg",
+        "/3jp/day2/5.jpg",
+        "/3jp/day2/6.jpg",
+        "/3jp/day2/12.jpg",
+        "/3jp/day2/13.jpg",
+        "/3jp/day2/14.jpg",
+        "/3jp/day3/5.jpg",
+        "/3jp/day3/6.jpg",
+        "/3jp/day3/7.jpg"
+      ]
+    }
+  },
+  "marrakech-lihoudi-2-day-excursion": {
+    "carousel": [
+      "/test2.jpg",
+      "/oasis1.jpg",
+      "/oasis2.jpg"
+    ],
+    "days": {
+      "day1": [
+        "/6jp/day1/2.jpg",
+        "/6jp/day1/3.jpg",
+        "/6jp/day1/4.jpg",
+        "/6jp/day1/6.jpg",
+        "/zagora/1.jpg",
+        "/zagora/4.jpg",
+        "/zagora/9.jpg",
+        "/3jp/day2/2.jpg",
+        "/3jp/day2/3.jpg",
+        "/sahara/1.jpg",
+        "/sahara/2.jpg",
+        "/sahara/3.jpg",
+        "/sahara/4.jpg",
+        "/3jp/day2/4.jpg",
+        "/3jp/day3/3.jpg",
+        "/3jp/day2/5.jpg",
+        "/3jp/day2/12.jpg",
+        "/3jp/day2/13.jpg",
+        "/3jp/day2/14.jpg"
+      ],
+      "day2": [
+        "/3jp/day2/6.jpg",
+        "/zagora/5.jpg",
+        "/zagora/6.jpg",
+        "/zagora/7.jpg",
+        "/zagora/8.jpg",
+        "/6jp/day1/1.jpg",
+        "/6jp/day1/7.jpg"
+      ]
+    }
+  },
+  "2-day-desert-escape": {
+    "carousel": [
+      "/test2.jpg",
+      "/oasis1.jpg",
+      "/oasis2.jpg"
+    ],
+    "days": {
+      "day1": [
+        "/zagora/1.jpg",
+        "/zagora/2.jpg",
+        "/zagora/3.jpg",
+        "/zagora/4.jpg",
+        "/zagora/5.jpg",
+        "/zagora/6.jpg",
+        "/zagora/7.jpg",
+        "/zagora/8.jpg",
+        "/zagora/9.jpg",
+        "/3jp/day2/2.jpg",
+        "/3jp/day2/3.jpg",
+        "/3jp/day2/4.jpg"
+      ],
+      "day2": [
+        "/3jp/day3/3.jpg",
+        "/3jp/day2/5.jpg",
+        "/3jp/day2/6.jpg",
+        "/3jp/day2/12.jpg",
+        "/3jp/day2/13.jpg",
+        "/3jp/day2/14.jpg",
+        "/3jp/day3/5.jpg",
+        "/3jp/day3/6.jpg",
+        "/3jp/day3/7.jpg"
+      ]
+    }
+  },
+  "ouarzazate-erg-chegaga-2-day-circuit": {
+    "carousel": [
+      "/test2.jpg",
+      "/oasis1.jpg",
+      "/oasis2.jpg"
+    ],
+    "days": {
+      "day1": [
+        "/sahara/1.jpg",
+        "/agadirs/9.jpg",
+        "/agadirs/10.jpg",
+        "/agadirs/11.jpg",
+        "agadirs/12.jpg",
+        "/3jp/day3/1.jpg",
+        "/3jp/day3/2.jpg",
+        "/3jp/day3/3.jpg",
+        "/sahara/3.jpg",
+        "/sahara/4.jpg",
+        "/sahara/2.jpg",
+        "/3jp/day2/2.jpg",
+        "/3jp/day2/3.jpg",
+        "/3jp/day2/4.jpg",
+        "/3jp/day2/5.jpg"
+      ],
+      "day2": [
+        "/zagora/1.jpg",
+        "/zagora/2.jpg",
+        "/zagora/3.jpg",
+        "/zagora/4.jpg",
+        "/zagora/5.jpg",
+        "/zagora/6.jpg",
+        "/zagora/7.jpg",
+        "/zagora/8.jpg",
+        "/zagora/9.jpg",
+        "/3jp/day3/7.jpg"
+      ]
+    }
+  },
+  "marrakech-erg-chegaga-4-day-crossing": {
+    "carousel": [
+      "/test2.jpg",
+      "/oasis1.jpg",
+      "/oasis2.jpg"
+    ],
+    "days": {
+      "day1": [
+        "/6jp/day1/2.jpg",
+        "/6jp/day1/3.jpg",
+        "/6jp/day1/4.jpg",
+        "/6jp/day1/1.jpg",
+        "/roses/1.jpg",
+        "/roses/2.jpg",
+        "/roses/3.jpg"
+      ],
+      "day2": [
+        "/dades/1.jpg",
+        "/dades/2.jpg",
+        "/dades/3.jpg",
+        "/6jp/day2/1.jpg",
+        "/6jp/day2/2.jpg",
+        "/6jp/day2/3.jpg",
+        "/6jp/day2/4.jpg",
+        "/6jp/day2/5.jpg",
+        "/6jp/day2/6.jpg",
+        "/6jp/day2/7.jpg",
+        "/6jp/day2/8.jpg",
+        "/6jp/day2/9.jpg",
+        "/6jp/day2/10.jpg"
+      ],
+      "day3": [
+        "/saghro/1.jpg",
+        "/saghro/2.jpg",
+        "/saghro/3.jpg",
+        "/saghro/4.jpg",
+        "/zagora/1.jpg",
+        "/zagora/2.jpg",
+        "/zagora/3.jpg",
+        "/zagora/4.jpg",
+        "/zagora/5.jpg",
+        "/zagora/6.jpg",
+        "/zagora/7.jpg",
+        "/zagora/8.jpg",
+        "/zagora/9.jpg",
+        "/3jp/day3/7.jpg"
+      ],
+      "day4": [
+        "/3jp/day3/1.jpg",
+        "/3jp/day3/2.jpg",
+        "/3jp/day3/3.jpg",
+        "/6jp/day5/2.jpg",
+        "/6jp/day5/3.jpg",
+        "/6jp/day5/6.jpg",
+        "/6jp/day5/7.jpg"
+      ]
+    }
+  },
+  "4-day-nomadic-sahara-circuit": {
+    "carousel": [
+      "/test2.jpg",
+      "/oasis1.jpg",
+      "/oasis2.jpg"
+    ],
+    "days": {
+      "day1": [
+        "/dades/4.jpg",
+        "/6jp/day1/2.jpg",
+        "/6jp/day1/3.jpg",
+        "/6jp/day1/4.jpg",
+        "/6jp/day1/1.jpg",
+        "/agdz/1.jpg",
+        "/agdz/2.jpg",
+        "/agdz/3.jpg",
+        "/zagora/1.jpg",
+        "/zagora/2.jpg"
+      ],
+      "day2": [
+        "/zagora/3.jpg",
+        "/zagora/4.jpg",
+        "/zagora/5.jpg",
+        "zagora/6.jpg",
+        "zagora/7.jpg",
+        "/zagora/8.jpg",
+        "/zagora/9.jpg",
+        "/3jp/day3/7.jpg",
+        "sahara/1.jpg"
+      ],
+      "day3": [
+        "/sahara/2.jpg",
+        "/sahara/3.jpg",
+        "/sahara/4.jpg",
+        "/3jp/day2/2.jpg",
+        "/3jp/day2/3.jpg",
+        "/3jp/day2/4.jpg",
+        "/3jp/day2/5.jpg",
+        "/3jp/day2/6.jpg",
+        "/3jp/day2/12.jpg",
+        "/3jp/day2/13.jpg",
+        "/3jp/day2/14.jpg"
+      ],
+      "day4": [
+        "/3jp/day3/1.jpg",
+        "/3jp/day3/2.jpg",
+        "/3jp/day3/3.jpg",
+        "/6jp/day5/2.jpg",
+        "/6jp/day5/3.jpg",
+        "/6jp/day5/6.jpg",
+        "/6jp/day5/7.jpg"
+      ]
+    }
+  },
+  "7-day-southern-odyssey": {
+    "carousel": [
+      "/test3.jpg",
+      "/kasbah1.jpg",
+      "/kasbah2.jpg"
+    ],
+    "days": {
+      "day1": [
+        "/6jp/day1/2.jpg",
+        "/6jp/day1/3.jpg",
+        "/6jp/day1/4.jpg",
+        "/6jp/day1/5.webp",
+        "/6jp/day1/6.jpg",
+        "/6jp/day1/8.jpg"
+      ],
+      "day2": [
+        "/6jp/day2/1.jpg",
+        "/6jp/day2/2.jpg",
+        "/6jp/day2/3.jpg",
+        "/6jp/day2/4.jpg",
+        "/6jp/day2/5.jpg",
+        "/6jp/day2/6.jpg",
+        "/6jp/day2/7.jpg",
+        "/6jp/day2/8.jpg",
+        "/6jp/day2/9.jpg",
+        "/6jp/day2/10.jpg"
+      ],
+      "day3": [
+        "/6jp/day3/7.jpg",
+        "zagora/1.jpg",
+        "/zagora/2.jpg",
+        "/zagora/3.jpg",
+        "/zagora/4.jpg",
+        "/zagora/5.jpg",
+        "/zagora/6.jpg"
+      ],
+      "day4": [
+        "/6jp/day3/1.jpg",
+        "/6jp/day3/2.jpg",
+        "/6jp/day3/3.jpg",
+        "/zagora/6.jpg",
+        "/zagora/7.jpg",
+        "/zagora/8.jpg",
+        "/6jp/day3/4.jpg",
+        "/6jp/day3/5.jpg",
+        "/6jp/day3/6.jpg",
+        "/6jp/day3/8.jpg",
+        "/6jp/day3/9.jpg"
+      ],
+      "day5": [
+        "/6jp/day4/1.jpg",
+        "/6jp/day4/2.jpg",
+        "/6jp/day4/3.jpg",
+        "/6jp/day4/4.jpg",
+        "/6jp/day4/5.jpg",
+        "/6jp/day4/6.jpg",
+        "/6jp/day4/7.jpg",
+        "/6jp/day4/8.jpg"
+      ],
+      "day6": [
+        "/6jp/day5/1.jpg",
+        "/6jp/day5/2.jpg",
+        "/6jp/day5/3.jpg",
+        "/6jp/day5/4.jpg",
+        "/6jp/day5/5.jpg",
+        "/6jp/day5/7.jpg",
+        "/3jp/day1/1.jpg",
+        "/6jp/day1/7.jpg"
+      ],
+      "day7": [
+        "/6jp/day5/6.jpg",
+        "/6jp/day1/3.jpg",
+        "/6jp/day1/2.jpg",
+        "/6jp/day1/4.jpg",
+        "/6jp/day1/6.jpg",
+        "/6jp/day1/8.jpg"
+      ]
+    }
+  },
+  "anti-atlas-atlantic-6-day-circuit": {
+    "carousel": [
+      "/test3.jpg",
+      "/kasbah1.jpg",
+      "/kasbah2.jpg"
+    ],
+    "days": {
+      "day1": [
+        "/tafraoute/1.jpg",
+        "/tafraoute/2.jpg",
+        "/tafraoute/3.jpg",
+        "/tafraoute/4.jpg",
+        "/tafraoute/5.jpg"
+      ],
+      "day2": [
+        "/ait mansour/2.jpg",
+        "/ait mansour/3.jpg",
+        "/ait mansour/4.jpg",
+        "/ait mansour/5.jpg",
+        "/amtoudi/5.jpg",
+        "/amtoudi/6.jpg"
+      ],
+      "day3": [
+        "/amtoudi/1.jpg",
+        "/amtoudi/2.jpg",
+        "/amtoudi/3.jpg",
+        "/amtoudi/4.jpg",
+        "/amtoudi/7.jpg",
+        "/amtoudi/8.jpg",
+        "/amtoudi/9.jpg"
+      ],
+      "day4": [
+        "/amtoudi/10.jpg",
+        "/sidi ifnii/2.jpg",
+        "/sidi ifnii/3.jpg",
+        "/sidi ifnii/4.jpg",
+        "/sidi ifnii/5.jpg"
+      ],
+      "day5": [
+        "/sidi ifnii/1.jpg",
+        "/legzira/1.jpg",
+        "/legzira/2.jpg",
+        "/legzira/3.jpg",
+        "/legzira/4.jpg",
+        "/legzira/5.jpg"
+      ],
+      "day6": [
+        "/mirleft/1.jpg",
+        "/mirleft/2.jpg",
+        "/mirleft/3.jpg",
+        "/mirleft/4.jpg",
+        "/mirleft/5.jpg",
+        "/mirleft/6.jpg"
+      ]
+    }
+  },
+  "erg-chegaga-2-day-immersion": {
+    "carousel": [
+      "/test2.jpg",
+      "/oasis1.jpg",
+      "/oasis2.jpg"
+    ],
+    "days": {
+      "day1": [
+        "/sahara/1.jpg",
+        "/sahara/2.jpg",
+        "/sahara/3.jpg",
+        "/sahara/4.jpg",
+        "/3jp/day2/2.jpg",
+        "/3jp/day2/3.jpg",
+        "/3jp/day2/4.jpg",
+        "/3jp/day2/5.jpg",
+        "/3jp/day2/6.jpg",
+        "/3jp/day2/12.jpg"
+      ],
+      "day2": [
+        "/3jp/day2/13.jpg",
+        "/3jp/day2/14.jpg",
+        "/zagora/9.jpg",
+        "/3jp/day3/2.jpg",
+        "/3jp/day3/7.jpg"
+      ]
+    }
+  }
+}

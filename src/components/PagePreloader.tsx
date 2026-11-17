@@ -57,10 +57,10 @@ export function PagePreloader({ onComplete }: PagePreloaderProps) {
             filter: "blur(6px)",
             transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] },
           }}
-          className="fixed inset-0 z-[99999] flex flex-col items-center justify-center bg-[#141414] text-white px-6 select-none"
+          className="fixed inset-0 z-[99999] flex flex-col items-center justify-center bg-ink text-white px-6 select-none"
         >
           {/* Subtle vignette gradient harmonized with website dark surfaces */}
-          <div className="absolute inset-0  from-transparent via-[#141414]/50 to-[#0c0c0c] pointer-events-none" />
+          <div className="absolute inset-0  from-transparent via-ink/50 to-ink-deep pointer-events-none" />
 
           {/* Centered brand content with Apple spatial rhythm */}
           <div className="relative z-10 flex flex-col items-center text-center max-w-[1200px] w-full">

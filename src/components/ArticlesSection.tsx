@@ -1,24 +1,23 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
-import article1 from "@/assets/article-1.jpg";
-import article2 from "@/assets/article-2.jpg";
+import { ARTICLE_IMAGES } from "@/data/siteImages";
 import { fadeUp } from "@/lib/animations";
 import { OriginButton } from "@/components/ui/origin-button";
 
 const articles = [
   {
     id: 1,
-    img: article1,
+    img: ARTICLE_IMAGES.chegagaDunes,
     alt: "Vast golden sand dunes of Erg Chegaga under open sky",
     title: "Erg Chegaga vs Erg Chebbi: Why Morocco's Wildest Dunes Win (2026)",
     date: "Desert Guide • 6 min read",
   },
   {
     id: 2,
-    img: article2,
-    alt: "Traditional nomadic camp under the Milky Way stars in the Sahara",
+    img: ARTICLE_IMAGES.desertCamp,
+    alt: "Nomad tents of a desert camp in the Sahara near Zagora",
     title: "What to Pack for a Night in the Zagora Sahara Desert: The Complete Checklist",
-    link: { text: "Read guide →", href: "#article/2" },
+    link: { text: "Read guide →", href: "/blog/2" },
   },
 ];
 
@@ -28,13 +27,13 @@ export function ArticlesSection() {
       data-st-01="parallax"
       data-st-y="250"
       data-st-opacity="0.15"
-      className="px-4 py-30 md:px-10 bg-white"
+      className="px-4 py-30 md:px-10 bg-paper"
     >
       <div className="flex flex-col lg:flex-row items-end gap-6 w-full">
         <h2
           data-reveal-01="words"
           data-scroll
-          className="w-full lg:w-1/2 text-[32px] md:text-[64px] font-semibold tracking-[-0.05em] leading-[1.1] text-[#141414]"
+          className="w-full lg:w-1/2 text-[32px] md:text-[64px] font-semibold tracking-[-0.05em] leading-[1.1] text-ink"
         >
           Sahara <span className="font-normal text-neutral-400">Stories.</span>
         </h2>
@@ -42,7 +41,7 @@ export function ArticlesSection() {
         <div className="w-full lg:w-1/2 flex justify-between lg:items-end gap-4 lg:text-right">
 
           <OriginButton
-            href="#blog"
+            href="/blog"
             className="h-10 rounded-[10px] border-neutral-300 px-5 text-sm font-medium text-neutral-900"
           >
             View all stories <ArrowUpRight size={16} />
@@ -58,7 +57,7 @@ export function ArticlesSection() {
             transition={{ ...fadeUp.transition, delay: index * 0.08 }}
           >
             <a
-              href={`#article/${article.id}`}
+              href={`/blog/${article.id}`}
               className="group block cursor-pointer"
             >
               <div className="h-[660px] overflow-hidden rounded-[10px]">
@@ -77,7 +76,7 @@ export function ArticlesSection() {
               {article.date ? (
                 <p className="mt-2 text-sm text-neutral-500">{article.date}</p>
               ) : article.link ? (
-                <span className="mt-2 inline-block text-sm text-neutral-500 transition group-hover:text-black">
+                <span className="mt-2 inline-block text-sm text-neutral-500 transition group-hover:text-ink">
                   {article.link.text}
                 </span>
               ) : null}

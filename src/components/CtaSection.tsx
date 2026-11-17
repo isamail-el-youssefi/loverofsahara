@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
-import { ArrowUpRight, Twitter, Instagram, Youtube } from "lucide-react";
+import { ArrowUpRight, Facebook, Instagram } from "lucide-react";
 import sewing from "@/assets/sewing.jpg";
+import { CONTACT, phoneHref, whatsappBase } from "@/components/contact/data";
 import { fadeUp } from "@/lib/animations";
 
 export function CtaSection() {
@@ -8,12 +9,12 @@ export function CtaSection() {
     <section id="contact" className="px-4 md:px-10">
       <motion.div
         {...fadeUp}
-        className="relative mb-8 overflow-hidden rounded-2xl border border-neutral-200 bg-white p-8 md:p-14"
+        className="relative mb-8 overflow-hidden rounded-2xl border border-neutral-200 bg-paper p-8 md:p-14"
       >
         <h2
           data-reveal-01="words"
           data-scroll
-          className="text-[60px] md:text-[104px] font-semibold leading-[1] tracking-[-0.05em] text-[#141414]"
+          className="text-[60px] md:text-[104px] font-semibold leading-[1] tracking-[-0.05em] text-ink"
         >
           Plan Your Sahara Journey.
         </h2>
@@ -24,32 +25,34 @@ export function CtaSection() {
               Ready to explore Erg Chegaga, the Draa Valley, or customize a private 4x4 desert expedition from Zagora? Contact our local desert team today.
             </p>
             <a
-              href="mailto:contact@loverofsahara.com"
-              className="mt-6 inline-flex items-center gap-2 rounded-[10px] bg-[#121212] px-6 py-3 text-sm font-medium text-white transition hover:bg-black"
+              href="/contact"
+              className="mt-6 inline-flex items-center gap-2 rounded-[10px] bg-ink px-6 py-3 text-sm font-medium text-white transition hover:bg-ink-deep"
             >
               Book an expedition <ArrowUpRight size={16} />
             </a>
             <div className="mt-8">
               <a
-                href="mailto:contact@loverofsahara.com"
-                className="inline-block border-b border-neutral-200 pb-2 text-2xl font-semibold text-black transition hover:text-neutral-600 md:text-3xl"
+                href={`mailto:${CONTACT.email}`}
+                className="inline-block border-b border-neutral-200 pb-2 text-2xl font-semibold text-ink transition hover:text-neutral-600 md:text-3xl"
               >
-                contact@loverofsahara.com
+                {CONTACT.email}
               </a>
             </div>
             <div className="mt-4 text-sm font-medium text-neutral-500">
-              <p>📍 Boulevard Mohammed V, Zagora 47900, Drâa-Tafilalet, Morocco</p>
-              <p className="mt-1">📞 +212 524 84 70 00 • WhatsApp: +212 661 00 00 00</p>
+              <p>📍 {CONTACT.location}</p>
+              <p className="mt-1">
+                📞 <a href={phoneHref} className="transition hover:text-ink">{CONTACT.phoneDisplay}</a> • WhatsApp:{" "}
+                <a href={whatsappBase} target="_blank" rel="noopener noreferrer" className="transition hover:text-ink">
+                  {CONTACT.phoneDisplay}
+                </a>
+              </p>
             </div>
             <div className="mt-8 flex items-center gap-5 text-neutral-500">
-              <a href="#" aria-label="Twitter" className="transition hover:text-black">
-                <Twitter size={20} />
-              </a>
-              <a href="#" aria-label="Instagram" className="transition hover:text-black">
+              <a href={CONTACT.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="transition hover:text-ink">
                 <Instagram size={20} />
               </a>
-              <a href="#" aria-label="Youtube" className="transition hover:text-black">
-                <Youtube size={20} />
+              <a href={CONTACT.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="transition hover:text-ink">
+                <Facebook size={20} />
               </a>
             </div>
           </div>

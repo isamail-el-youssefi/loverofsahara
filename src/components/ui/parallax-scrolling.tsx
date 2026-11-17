@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useRef } from 'react';
+import { useScrollContainer } from "@/lib/scrollContainer";
 import { motion, useScroll, useTransform } from 'framer-motion';
 
 export interface ParallaxLayerItem {
@@ -29,7 +30,9 @@ export function ParallaxComponent({
 }: ParallaxScrollingProps) {
   const containerRef = useRef<HTMLDivElement>(null);
 
+  const scrollContainer = useScrollContainer();
   const { scrollYProgress } = useScroll({
+    ...scrollContainer,
     target: containerRef,
     offset: ['start end', 'end start'],
   });
@@ -124,7 +127,7 @@ export function ParallaxComponent({
         */}
         <motion.div
           style={{ opacity: imgZeroGradientOpacity }}
-          className="absolute bottom-0 left-0 right-0 h-[40vh] bg-gradient-to-t from-[#0f0f0f] via-[#0f0f0f]/80 to-transparent z-30 pointer-events-none"
+          className="absolute bottom-0 left-0 right-0 h-[40vh] bg-gradient-to-t from-ink-deep via-ink-deep/80 to-transparent z-30 pointer-events-none"
         />
       </div>
     </div>

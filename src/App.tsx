@@ -1,65 +1,67 @@
-import { useEffect, useState, useRef } from "react";
-import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
+import { useEffect, useState, useRef, type ReactNode, type MutableRefObject } from "react";
+import { motion, AnimatePresence, useIsPresent, useReducedMotion } from "framer-motion";
 import Lenis from "lenis";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { textReveal01 } from "@/lib/textReveal01";
 import { sectionTransition01 } from "@/lib/sectionTransition01";
+import { ScrollContainerContext } from "@/lib/scrollContainer";
+import { canonicalPath, parseRoute, routeKey } from "@/lib/routes";
+import { usePageSeo } from "@/lib/seo";
+import { homeSeo } from "@/lib/seoData";
 import { HeroSection } from "@/components/HeroSection";
-import { AboutSection } from "@/components/AboutSection";
 import { CategoriesSection } from "@/components/CategoriesSection";
 import { DestinationsSection } from "@/components/DestinationsSection";
-import { InventorySection } from "@/components/InventorySection";
 import { ProcessSection } from "@/components/ProcessSection";
 import { ArticlesSection } from "@/components/ArticlesSection";
-import { CtaSection } from "@/components/CtaSection";
 import { GalleryZoomSection } from "@/components/GalleryZoomSection";
 import { Footer } from "@/components/Footer";
+import { HomeAbout } from "@/components/home/HomeAbout";
+import { CtaSection } from "@/components/CtaSection";
+import { HomeFeaturedTrips } from "@/components/home/HomeFeaturedTrips";
+import { HomeReviews } from "@/components/home/HomeReviews";
+import { ProgressiveBlur } from "@/components/ProgressiveBlur";
 import { Blog } from "@/pages/Blog";
+import { Trips } from "@/pages/Trips";
+import { About } from "@/pages/About";
+import { Contact } from "@/pages/Contact";
+import { TripDetail } from "@/pages/TripDetail";
+import { PlaceDetail } from "@/pages/PlaceDetail";
 import { ArticleDetail } from "@/pages/ArticleDetail";
 import { PagePreloader } from "@/components/PagePreloader";
 
-export default function App() {
-  const [hash, setHash] = useState(() => window.location.hash || "");
-  const [isPreloaderDone, setIsPreloaderDone] = useState(false);
-  const lenisRef = useRef<Lenis | null>(null);
-  const shouldReduceMotion = useReducedMotion();
+/** Swup-style transition: values mirror the reference (1.4s, cubic-bezier(0.4, 0.3, 0, 1)). */
+const TRANSITION = { duration: 1.4, ease: [0.4, 0.3, 0, 1] as const };
 
-  const isArticle = hash.startsWith("#article");
-  const articleId = isArticle ? parseInt(hash.replace(/[^0-9]/g, "")) || 1 : null;
-  const routeKey = hash === "#blog" ? "blog" : isArticle ? `article-${articleId}` : "home";
+interface PageProps {
+  children: ReactNode;
+  /** Run the GSAP section / text-reveal systems for this page. */
+  animated: boolean;
+  /** Preloader finished. */
+  ready: boolean;
+  /** Receives the Lenis instance of the page that is currently active. */
+  activeLenis: MutableRefObject<Lenis | null>;
+}
 
+/**
+ * One routed page = one nested scroll container (the `#swup` equivalent).
+ * Old and new pages are rendered together by AnimatePresence in the same grid cell.
+ */
+function Page({ children, animated, ready, activeLenis }: PageProps) {
+  const isPresent = useIsPresent();
+  const reduce = useReducedMotion();
+  const scrollRef = useRef<HTMLElement>(null);
+  const contentRef = useRef<HTMLDivElement>(null);
+
+  // Smooth scrolling inside this page's own scroll container (not window)
   useEffect(() => {
-    if (isPreloaderDone && !isArticle && hash !== "#blog") {
-      let ctx: gsap.Context | null = null;
+    const wrapper = scrollRef.current;
+    const content = contentRef.current;
+    if (!wrapper || !content) return;
 
-      const initPageTransitions = () => {
-        ctx?.revert();
-        ctx = gsap.context(() => {
-          sectionTransition01();
-          textReveal01();
-          ScrollTrigger.refresh();
-        });
-      };
-
-      if (document.fonts?.ready) {
-        document.fonts.ready.then(initPageTransitions);
-      } else {
-        requestAnimationFrame(initPageTransitions);
-      }
-
-      const handleLoad = () => ScrollTrigger.refresh();
-      window.addEventListener("load", handleLoad, { once: true });
-      return () => {
-        window.removeEventListener("load", handleLoad);
-        ctx?.revert();
-      };
-    }
-  }, [hash, isArticle, isPreloaderDone]);
-
-  useEffect(() => {
-    // Initialize Lenis smooth scroll
     const lenis = new Lenis({
+      wrapper,
+      content,
       duration: 1.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       orientation: "vertical",
@@ -68,65 +70,181 @@ export default function App() {
       wheelMultiplier: 1,
       touchMultiplier: 2,
     });
-
-    lenisRef.current = lenis;
+    activeLenis.current = lenis;
 
     lenis.on("scroll", ScrollTrigger.update);
-
-    const updateTicker = (time: number) => {
-      lenis.raf(time * 1000);
-    };
-    gsap.ticker.add(updateTicker);
-    gsap.ticker.lagSmoothing(0);
-
-    const handleHashChange = () => {
-      const currentHash = window.location.hash || "";
-      setHash(currentHash);
-      if (currentHash === "" || currentHash === "#blog" || currentHash.startsWith("#article")) {
-        lenis.scrollTo(0, { immediate: true });
-      } else {
-        const targetElement = document.querySelector(currentHash);
-        if (targetElement) {
-          lenis.scrollTo(targetElement as HTMLElement, { offset: -20 });
-        }
-      }
-    };
-
-    window.addEventListener("hashchange", handleHashChange);
-    window.addEventListener("popstate", handleHashChange);
-
-    const handleAnchorClick = (e: MouseEvent) => {
-      const target = (e.target as HTMLElement)?.closest("a");
-      if (target) {
-        const href = target.getAttribute("href");
-        if (href && href.startsWith("#")) {
-          e.preventDefault();
-          if (href === "#" || href === "") {
-            window.location.hash = "";
-            setHash("");
-            lenis.scrollTo(0, { duration: 1.2 });
-          } else if (href === "#blog" || href.startsWith("#article")) {
-            window.location.hash = href;
-            setHash(href);
-            lenis.scrollTo(0, { immediate: true });
-          } else {
-            const el = document.querySelector(href);
-            if (el) {
-              lenis.scrollTo(el as HTMLElement, { offset: -20 });
-              window.history.pushState(null, "", href);
-            }
-          }
-        }
-      }
-    };
-    document.addEventListener("click", handleAnchorClick);
+    const tick = (time: number) => lenis.raf(time * 1000);
+    gsap.ticker.add(tick);
 
     return () => {
-      lenisRef.current = null;
-      gsap.ticker.remove(updateTicker);
+      gsap.ticker.remove(tick);
       lenis.destroy();
-      window.removeEventListener("hashchange", handleHashChange);
-      window.removeEventListener("popstate", handleHashChange);
+      if (activeLenis.current === lenis) activeLenis.current = null;
+    };
+  }, [activeLenis]);
+
+  // GSAP scroll systems, scoped to this page and bound to its scroll container
+  useEffect(() => {
+    const wrapper = scrollRef.current;
+    if (!animated || !ready || !wrapper) return;
+
+    let ctx: gsap.Context | null = null;
+    let cancelled = false;
+
+    const init = () => {
+      if (cancelled) return;
+      ScrollTrigger.defaults({ scroller: wrapper });
+      ctx = gsap.context(() => {
+        sectionTransition01(wrapper);
+        textReveal01(wrapper);
+        ScrollTrigger.refresh();
+      }, wrapper);
+    };
+
+    if (document.fonts?.ready) document.fonts.ready.then(init);
+    else requestAnimationFrame(init);
+
+    return () => {
+      cancelled = true;
+      ctx?.revert();
+    };
+  }, [animated, ready]);
+
+  return (
+    <motion.main
+      ref={scrollRef}
+      initial={
+        reduce
+          ? { opacity: 0 }
+          : { y: Math.round(window.innerHeight / 2), clipPath: "inset(70% 0% 0% 0%)" }
+      }
+      animate={{ y: 0, scale: 1, opacity: 1, clipPath: "inset(0% 0% 0% 0%)" }}
+      exit={reduce ? { opacity: 0 } : { y: -160, scale: 0.95, opacity: 0.5 }}
+      transition={reduce ? { duration: 0.2 } : TRANSITION}
+      onAnimationComplete={() => ScrollTrigger.refresh()}
+      style={{ zIndex: isPresent ? 2 : 1, pointerEvents: isPresent ? "auto" : "none" }}
+      className="col-start-1 row-start-1 h-[100dvh] overflow-y-auto overflow-x-hidden bg-paper text-ink antialiased"
+    >
+      <ScrollContainerContext.Provider value={scrollRef}>
+        <div ref={contentRef}>
+          <div>{children}</div>
+          <Footer />
+        </div>
+      </ScrollContainerContext.Provider>
+    </motion.main>
+  );
+}
+
+/** The home page has no component of its own, so this sets its head. */
+function HomeSeo() {
+  usePageSeo(homeSeo());
+  return null;
+}
+
+/** The home page sections, in order. */
+function Home() {
+  return (
+    <>
+      <HomeSeo />
+      <HeroSection />
+      <HomeAbout />
+      <CategoriesSection />
+      <HomeFeaturedTrips />
+      <DestinationsSection />
+      <ProcessSection />
+      <HomeReviews />
+      <ArticlesSection />
+      <GalleryZoomSection />
+      <CtaSection />
+    </>
+  );
+}
+
+export default function App() {
+  // The page is chosen by the URL path (real, crawlable URLs). Old #hash routes and the previous site's
+  // numeric URLs are rewritten to the new paths before anything renders.
+  const [path, setPath] = useState(() => {
+    const fixed = canonicalPath(window.location.pathname, window.location.hash);
+    if (fixed) window.history.replaceState(null, "", fixed);
+    return window.location.pathname;
+  });
+  const [isPreloaderDone, setIsPreloaderDone] = useState(false);
+  const activeLenis = useRef<Lenis | null>(null);
+
+  const route = parseRoute(path);
+  const isTrip = route.name === "trip";
+  const isPlace = route.name === "place";
+  const isArticle = route.name === "article";
+  const key = routeKey(route);
+  const routeKeyRef = useRef(key);
+  routeKeyRef.current = key;
+
+  useEffect(() => {
+    gsap.ticker.lagSmoothing(0);
+
+    const scrollToAnchor = (selector: string) => {
+      try {
+        const el = document.querySelector(selector);
+        if (el) activeLenis.current?.scrollTo(el as HTMLElement, { offset: -20 });
+      } catch {
+        /* invalid selector */
+      }
+    };
+
+    // Back/forward, and old #hash links typed or pasted into the address bar
+    const handlePopState = () => {
+      const fixed = canonicalPath(window.location.pathname, window.location.hash);
+      if (fixed) window.history.replaceState(null, "", fixed);
+      setPath(window.location.pathname);
+      if (!fixed && routeKeyRef.current === "home" && window.location.hash) scrollToAnchor(window.location.hash);
+    };
+
+    const handleAnchorClick = (e: MouseEvent) => {
+      if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+      const target = (e.target as HTMLElement)?.closest("a");
+      const href = target?.getAttribute("href");
+      if (!target || !href || target.target === "_blank" || target.hasAttribute("download")) return;
+
+      // Internal page link (/trips/..., /places/..., /blog): client-side navigation, no reload.
+      if (href.startsWith("/") && !href.startsWith("//")) {
+        e.preventDefault();
+        if (href !== window.location.pathname) window.history.pushState(null, "", href);
+        setPath(window.location.pathname);
+        return;
+      }
+
+      if (!href.startsWith("#")) return;
+      e.preventDefault();
+
+      if (href === "#" || href === "") {
+        // Logo: scroll to the top on the home page, otherwise go home.
+        if (routeKeyRef.current === "home") {
+          activeLenis.current?.scrollTo(0, { duration: 1.2 });
+        } else {
+          window.history.pushState(null, "", "/");
+          setPath("/");
+        }
+      } else if (routeKeyRef.current === "home") {
+        // In-page anchor on the home page (#expeditions, #process, ...)
+        scrollToAnchor(href);
+        window.history.pushState(null, "", href);
+      }
+    };
+
+    // In-page smooth scroll requested by components (e.g. the trip page's floating section tabs)
+    const handleScrollTo = (e: Event) => {
+      const el = (e as CustomEvent<{ el?: HTMLElement }>).detail?.el;
+      if (el) activeLenis.current?.scrollTo(el, { offset: -20 });
+    };
+    window.addEventListener("los-scroll-to", handleScrollTo);
+
+    window.addEventListener("hashchange", handlePopState);
+    window.addEventListener("popstate", handlePopState);
+    document.addEventListener("click", handleAnchorClick);
+    return () => {
+      window.removeEventListener("los-scroll-to", handleScrollTo);
+      window.removeEventListener("hashchange", handlePopState);
+      window.removeEventListener("popstate", handlePopState);
       document.removeEventListener("click", handleAnchorClick);
     };
   }, []);
@@ -134,63 +252,38 @@ export default function App() {
   return (
     <>
       <PagePreloader onComplete={() => setIsPreloaderDone(true)} />
-      <main className="min-h-screen bg-white text-black antialiased">
-        {/* Swup container: Single content container that fades & blurs while shared UI stays in place */}
-        <div id="swup" className="swup-transition-main w-full">
-          <AnimatePresence
-            mode="wait"
-            onExitComplete={() => {
-              lenisRef.current?.scrollTo(0, { immediate: true });
-              window.scrollTo({ top: 0, behavior: "instant" });
-              ScrollTrigger.refresh();
-            }}
+      {/* Viewport shell: locks the transition to the viewport; pages scroll inside themselves */}
+      <div className="grid h-[100dvh] overflow-hidden bg-ink-deep">
+        {/* Default sync mode keeps the outgoing and incoming pages mounted together */}
+        <AnimatePresence initial={false}>
+          <Page
+            key={key}
+            animated={route.name === "home" || isTrip || isPlace || route.name === "about" || route.name === "contact"}
+            ready={isPreloaderDone}
+            activeLenis={activeLenis}
           >
-            <motion.div
-              key={routeKey}
-              initial={{
-                opacity: 0,
-                filter: shouldReduceMotion ? "none" : "blur(8px)",
-                scale: shouldReduceMotion ? 1 : 0.996,
-              }}
-              animate={{
-                opacity: 1,
-                filter: "blur(0px)",
-                scale: 1,
-              }}
-              exit={{
-                opacity: 0,
-                filter: shouldReduceMotion ? "none" : "blur(8px)",
-                scale: shouldReduceMotion ? 1 : 0.996,
-              }}
-              transition={{
-                duration: 0.35,
-                ease: [0.22, 1, 0.36, 1], // Apple fluid critically damped curve
-              }}
-              className="w-full"
-            >
-              {hash === "#blog" ? (
-                <Blog />
-              ) : isArticle ? (
-                <ArticleDetail id={articleId} />
-              ) : (
-                <>
-                  <HeroSection />
-                  <CategoriesSection />
-                  <DestinationsSection />
-                  {/*           <InventorySection />
-                   */}{" "}
-                  <ProcessSection />
-                  <ArticlesSection />
-                  <GalleryZoomSection />
-                </>
-              )}
-            </motion.div>
-          </AnimatePresence>
-        </div>
-
-        {/* Shared UI outside that container stays in place */}
-        <Footer />
-      </main>
+            {route.name === "blog" ? (
+              <Blog />
+            ) : route.name === "trips" ? (
+              <Trips />
+            ) : route.name === "about" ? (
+              <About />
+            ) : route.name === "contact" ? (
+              <Contact />
+            ) : route.name === "trip" ? (
+              <TripDetail slug={route.slug} />
+            ) : route.name === "place" ? (
+              <PlaceDetail id={route.id} />
+            ) : route.name === "article" ? (
+              <ArticleDetail id={route.id} />
+            ) : (
+              <Home />
+            )}
+          </Page>
+        </AnimatePresence>
+      </div>
+      {/* No bottom blur on the detail pages (trip + article) */}
+      {!isTrip && !isPlace && !isArticle && <ProgressiveBlur />}
     </>
   );
 }

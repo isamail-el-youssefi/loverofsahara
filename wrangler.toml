@@ -1,0 +1,19 @@
+name = "lover-of-sahara"
+compatibility_date = "2025-01-01"
+pages_build_output_dir = "dist"
+
+# Reviews database (create with: npx wrangler d1 create lover-reviews, then paste the id below)
+[[d1_databases]]
+binding = "DB"
+database_name = "lover-reviews"
+database_id = "REPLACE_WITH_D1_DATABASE_ID"
+migrations_dir = "migrations"
+
+# Photos uploaded with new reviews (create with: npx wrangler r2 bucket create review-photos)
+[[r2_buckets]]
+binding = "PHOTOS"
+bucket_name = "review-photos"
+
+[vars]
+# Public base URL of the R2 bucket (custom domain or the r2.dev URL), no trailing slash.
+PHOTOS_BASE_URL = "https://REPLACE_WITH_R2_PUBLIC_URL"

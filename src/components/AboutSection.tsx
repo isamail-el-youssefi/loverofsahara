@@ -16,17 +16,17 @@ export function AboutSection() {
       <motion.div {...fadeUp} className="flex flex-col lg:flex-row items-start gap-8 lg:gap-1.5 w-full">
         <div className="w-full lg:w-[30%] flex-shrink-0 pt-4">
           <div className="flex items-center gap-2 text-[13px] text-neutral-500 font-medium">
-            <div className="w-1.5 h-1.5 rounded-full bg-[#ac2a1c]" /> About us
+            <div className="w-1.5 h-1.5 rounded-full bg-brand" /> About us
           </div>
         </div>
         <div className="flex-1">
           <h2
             data-reveal-01="words"
             data-scroll
-            className="text-[60px] md:text-[104px] font-semibold leading-[1] tracking-[-0.05em] text-[#141414] text-left"
+            className="text-[60px] md:text-[104px] font-semibold leading-[1] tracking-[-0.05em] text-ink text-left"
           >
             Discover the raw majesty of Erg Chegaga with Zagora natives. Private 4x4 expeditions{" "}
-            <span className="text-[#999999] font-medium">
+            <span className="text-neutral-400 font-medium">
               luxury nomad camps, sunset camel caravans, and deep Sahara heritage.
             </span>
           </h2>
@@ -40,9 +40,9 @@ export function AboutSection() {
               key={s.n + i}
               {...fadeUp}
               transition={{ ...fadeUp.transition, delay: i * 0.05 }}
-              className="flex flex-col gap-2 rounded-2xl border border-neutral-100 bg-white p-6 md:p-8 h-[145px] justify-center"
+              className="flex flex-col gap-2 rounded-2xl border border-neutral-100 bg-paper p-6 md:p-8 h-[145px] justify-center"
             >
-              <span className="text-4xl font-bold tracking-tight text-[#121212]">{s.n}</span>
+              <span className="text-4xl font-bold tracking-tight text-ink">{s.n}</span>
               <span className="text-[10px] text-neutral-500 leading-[1.3] uppercase tracking-[0.05em] font-bold max-w-[200px]">
                 {s.label}
               </span>
@@ -51,7 +51,7 @@ export function AboutSection() {
           <motion.a
             {...fadeUp}
             href="#contact"
-            className="flex cursor-pointer items-center justify-between rounded-2xl bg-[#121212] p-6 text-white transition hover:bg-black"
+            className="flex cursor-pointer items-center justify-between rounded-2xl bg-ink p-6 text-white transition hover:bg-ink-deep"
           >
             <span className="font-bold text-[13px]">Explore our story</span>
             <ArrowUpRight size={18} />

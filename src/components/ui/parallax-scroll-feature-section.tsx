@@ -1,6 +1,8 @@
 'use client'
 
+import { DESTINATION_IMAGES } from "@/data/siteImages";
 import { useRef } from "react";
+import { useScrollContainer } from "@/lib/scrollContainer";
 import { motion, useScroll, useTransform, useSpring, useReducedMotion } from "framer-motion";
 import { ArrowDown, ArrowUpRight, MapPin } from "lucide-react";
 import { OriginButton } from "@/components/ui/origin-button";
@@ -23,7 +25,7 @@ const defaultDestinations: DestinationItemData[] = [
   location: "Zagora • Sahara Desert",
   description:
     "Morocco's largest and wildest sea of golden sand. Towering 300-meter dunes stretching across 40 kilometers of untouched wilderness, accessible only by private 4x4 expedition across ancient dry lakes and the Sacred Oasis.",
-  imageUrl: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1600&q=85",
+  imageUrl: DESTINATION_IMAGES.ergChegaga,
   reverse: true,
 },
 {
@@ -33,7 +35,7 @@ const defaultDestinations: DestinationItemData[] = [
   location: "High Atlas • Tinghir Province",
   description:
     "Carved between the High Atlas and Jbel Saghro mountains, featuring dramatic serpentine switchback roads, rust-red rock canyons known as the monkey fingers, and lush river oases filled with ancient earthen Kasbahs.",
-  imageUrl: "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1600&q=85",
+  imageUrl: DESTINATION_IMAGES.dadesValley,
   reverse: false,
 },
 {
@@ -43,7 +45,7 @@ const defaultDestinations: DestinationItemData[] = [
   location: "Ouarzazate • Souss-Massa",
   description:
     "A magnificent 11th-century fortified clay ksar along the historic trans-Saharan caravan route. Stroll through centuries-old earthen architecture, intricate clay towers, and the legendary backdrop of cinematic epics.",
-  imageUrl: "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=1600&q=85",
+  imageUrl: DESTINATION_IMAGES.aitBenHaddou,
   reverse: true,
 },
 {
@@ -53,7 +55,7 @@ const defaultDestinations: DestinationItemData[] = [
   location: "Tinghir • Draa-Tafilalet",
   description:
     "A breathtaking limestone canyon carved over millennia by the Todgha River. Sheer vertical rock walls soaring 300 meters above crystal-clear mountain streams, opening into the lush date palm groves of Tinghir.",
-  imageUrl: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=85",
+  imageUrl: DESTINATION_IMAGES.todghaGorges,
   reverse: false,
 },
 ];
@@ -62,7 +64,9 @@ function DestinationSectionItem({ section }: { section: DestinationItemData }) {
   const targetRef = useRef<HTMLDivElement>(null);
   const shouldReduceMotion = useReducedMotion();
 
+  const scrollContainer = useScrollContainer();
   const { scrollYProgress } = useScroll({
+    ...scrollContainer,
     target: targetRef,
     offset: ["start 85%", "center 35%"],
   });
@@ -109,13 +113,13 @@ function DestinationSectionItem({ section }: { section: DestinationItemData }) {
               {section.tag}
             </span>
  {/*            <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-neutral-500">
-              <MapPin size={13} className="text-[#ac2a1c] shrink-0" />
+              <MapPin size={13} className="text-brand shrink-0" />
               <span>{section.location}</span>
             </span> */}
           </div>
 
           {/* Apple typography: Negative tracking for large headings with optical sizing */}
-          <h3 className="text-[34px] sm:text-[44px] lg:text-[50px] xl:text-[56px] font-semibold tracking-[-0.035em] leading-[1.1] text-[#141414]">
+          <h3 className="text-[34px] sm:text-[44px] lg:text-[50px] xl:text-[56px] font-semibold tracking-[-0.035em] leading-[1.1] text-ink">
             {section.title}
           </h3>
 
@@ -183,7 +187,7 @@ export const ParallaxScrollFeatureSection = ({
       data-st-01="parallax"
       data-st-y="250"
       data-st-opacity="0.15"
-      className="px-4 py-24 md:px-10 bg-white"
+      className="px-4 py-24 md:px-10 bg-paper"
     >
       {/* Section Header matching website typography & layout */}
       <div className="flex flex-col lg:flex-row items-end gap-6 w-full ">
@@ -192,7 +196,7 @@ export const ParallaxScrollFeatureSection = ({
           <h2
             data-reveal-01="words"
             data-scroll
-            className="text-[32px] md:text-[64px] font-semibold tracking-[-0.05em] leading-[1.08] text-[#141414]"
+            className="text-[32px] md:text-[64px] font-semibold tracking-[-0.05em] leading-[1.08] text-ink"
           >
             Iconic Southern <span className="font-normal text-neutral-400">Routes.</span>
           </h2>

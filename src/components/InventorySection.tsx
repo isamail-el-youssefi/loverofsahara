@@ -48,7 +48,7 @@ export function InventorySection() {
 
   return (
     <div id="itinerary" className="px-4 py-10 md:px-10">
-      <section className="bg-[#141414] rounded-[24px] p-6 md:p-12 lg:p-16 text-white flex flex-col lg:flex-row gap-10 lg:gap-16 xl:gap-24">
+      <section className="bg-ink rounded-[24px] p-6 md:p-12 lg:p-16 text-white flex flex-col lg:flex-row gap-10 lg:gap-16 xl:gap-24">
         {/* Left side */}
         <div className="w-full lg:w-[45%] flex flex-col justify-between">
           <div>
@@ -67,7 +67,7 @@ export function InventorySection() {
                   onClick={() => setActiveTab(tab.id)}
                   className={`text-left px-5 py-4 md:px-6 md:py-5 rounded-[16px] text-[16px] md:text-[18px] font-medium transition-colors ${
                     activeTab === tab.id
-                      ? "bg-[#1c1c1c] text-white"
+                      ? "bg-ink-soft text-white"
                       : "text-neutral-400 hover:text-white hover:bg-white/[0.02]"
                   }`}
                 >
@@ -80,16 +80,16 @@ export function InventorySection() {
           <div className="mt-8 pt-4">
             <a
               href="#contact"
-              className="inline-flex w-full items-center justify-between rounded-[12px] bg-white px-6 py-4 text-[15px] font-semibold text-black transition hover:bg-neutral-100"
+              className="inline-flex w-full items-center justify-between rounded-[12px] bg-paper px-6 py-4 text-[15px] font-semibold text-ink transition hover:bg-neutral-100"
             >
-              Plan your custom tour <ArrowUpRight size={20} className="text-black rotate-90" />
+              Plan your custom tour <ArrowUpRight size={20} className="text-ink rotate-90" />
             </a>
           </div>
         </div>
 
         {/* Right side */}
         <div className="w-full lg:w-[55%] min-h-[400px] lg:min-h-[500px]">
-          <div className="w-full h-full bg-[#1c1c1c] rounded-[24px] overflow-hidden flex flex-col md:flex-row">
+          <div className="w-full h-full bg-ink-soft rounded-[24px] overflow-hidden flex flex-col md:flex-row">
             <div className="w-full md:w-1/2 p-8 md:p-10 flex flex-col justify-between">
               <AnimatePresence mode="wait">
                 <motion.p

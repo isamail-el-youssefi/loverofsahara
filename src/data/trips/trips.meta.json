@@ -1,0 +1,1623 @@
+[
+  {
+    "slug": "5-day-nomad-journey",
+    "legacyId": 1,
+    "category": "trip",
+    "durationDays": 5,
+    "departureCity": "marrakech",
+    "pricing": [
+      {
+        "persons": 2,
+        "pricePerPersonPerDay": 140,
+        "days": 5
+      },
+      {
+        "persons": 3,
+        "pricePerPersonPerDay": 130,
+        "days": 5
+      },
+      {
+        "persons": 4,
+        "pricePerPersonPerDay": 120,
+        "days": 5
+      },
+      {
+        "persons": 5,
+        "pricePerPersonPerDay": 100,
+        "days": 5
+      }
+    ],
+    "stops": [
+      {
+        "name": "Marrakech",
+        "lat": 31.63,
+        "lng": -7.99
+      },
+      {
+        "name": "Telouet",
+        "lat": 31.33,
+        "lng": -7.23
+      },
+      {
+        "name": "Ait Ben Haddou",
+        "lat": 31.047,
+        "lng": -7.1319
+      },
+      {
+        "name": "Ouarzazate",
+        "lat": 30.9335,
+        "lng": -6.937
+      },
+      {
+        "name": "Kalaat M'Gouna",
+        "lat": 31.42,
+        "lng": -6.2
+      },
+      {
+        "name": "Gorges de Dades",
+        "lat": 31.45,
+        "lng": -5.97
+      },
+      {
+        "name": "Msemrir",
+        "lat": 31.52,
+        "lng": -5.85
+      },
+      {
+        "name": "Agoudal",
+        "lat": 32,
+        "lng": -5.49
+      },
+      {
+        "name": "Gorges Todgha",
+        "lat": 31.59,
+        "lng": -5.59
+      },
+      {
+        "name": "Jbel Saghro",
+        "lat": 31.25,
+        "lng": -5.65
+      },
+      {
+        "name": "Zagora",
+        "lat": 30.34,
+        "lng": -5.83
+      },
+      {
+        "name": "Erg Chegaga",
+        "lat": 29.85,
+        "lng": -6.05
+      },
+      {
+        "name": "Lac Iriqui",
+        "lat": 29.83,
+        "lng": -6.51
+      },
+      {
+        "name": "Foum Zguid",
+        "lat": 30.08,
+        "lng": -6.85
+      },
+      {
+        "name": "Taznakht",
+        "lat": 30.48,
+        "lng": -7.2
+      },
+      {
+        "name": "Marrakech",
+        "lat": 31.63,
+        "lng": -7.99
+      }
+    ],
+    "dayRoutes": [
+      "MARRAKECH - AIT BEN HADOU - OUARZAZATE - GORGES DE DADES:",
+      "BOUMALN DADES - MSEMRIR - GORGES TODGHA",
+      "GORGES TODGHA - ZAGORA - DESERT CHEGAGA",
+      "DESERT CHEGAGA",
+      "CHEGAGA - FOUM ZGUID - MARRAKECH"
+    ],
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m40!1m12!1m3!1d882223.3784190571!2d-7.400403060972773!3d30.26030761642388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m25!3e0!4m5!1s0xdbc36ea58680e95%3A0x75e9e9fb616de232!2sZagora!3m2!1d30.3428747!2d-5.8377713!4m5!1s0xdb085ba09b910a7%3A0xd45c630570045821!2sTaliouine!3m2!1d30.5323297!2d-7.9243144999999995!4m5!1s0xdbdcdadaabfdf03%3A0x82addcb39e23d4e2!2sTamegroute!3m2!1d30.2638799!2d-5.6799816!4m5!1s0xdbe62978e766f85%3A0xf9f632f826725240!2sMhamid!3m2!1d29.8257743!2d-5.7234007!5e0!3m2!1sfr!2sma!4v1744712629290!5m2!1sfr!2sma",
+    "cover": "caravan",
+    "cardImage": "/trip4.jpg"
+  },
+  {
+    "slug": "3-day-sahara-sprint",
+    "legacyId": 2,
+    "category": "trip",
+    "durationDays": 3,
+    "departureCity": "marrakech",
+    "pricing": [
+      {
+        "persons": 2,
+        "pricePerPersonPerDay": 140,
+        "days": 3
+      },
+      {
+        "persons": 3,
+        "pricePerPersonPerDay": 130,
+        "days": 3
+      },
+      {
+        "persons": 4,
+        "pricePerPersonPerDay": 120,
+        "days": 3
+      },
+      {
+        "persons": 5,
+        "pricePerPersonPerDay": 100,
+        "days": 3
+      }
+    ],
+    "stops": [
+      {
+        "name": "Marrakech",
+        "lat": 31.63,
+        "lng": -7.99
+      },
+      {
+        "name": "Tizi n Tichka Pass",
+        "lat": 31.286,
+        "lng": -7.381
+      },
+      {
+        "name": "Telouet",
+        "lat": 31.33,
+        "lng": -7.23
+      },
+      {
+        "name": "Ait Ben Haddou",
+        "lat": 31.047,
+        "lng": -7.1319
+      },
+      {
+        "name": "Ouarzazate",
+        "lat": 30.9335,
+        "lng": -6.937
+      },
+      {
+        "name": "Agdz",
+        "lat": 30.698,
+        "lng": -6.45
+      },
+      {
+        "name": "Zagora",
+        "lat": 30.34,
+        "lng": -5.83
+      },
+      {
+        "name": "Erg Lihodi",
+        "lat": 30.1,
+        "lng": -5.72
+      },
+      {
+        "name": "Erg Chegaga",
+        "lat": 29.85,
+        "lng": -6.05
+      },
+      {
+        "name": "Lac Iriqui",
+        "lat": 29.83,
+        "lng": -6.51
+      },
+      {
+        "name": "Foum Zguid",
+        "lat": 30.08,
+        "lng": -6.85
+      },
+      {
+        "name": "Taznakht",
+        "lat": 30.48,
+        "lng": -7.2
+      },
+      {
+        "name": "Marrakech",
+        "lat": 31.63,
+        "lng": -7.99
+      }
+    ],
+    "dayRoutes": [
+      "MARRAKECH - TICHKA - AIT BEN HADDOU - ZAGORA - ERG LIHODI:",
+      "ERG LIHODI - LES DUNES DE CHEGAGA",
+      "CHEGAGA - MARRAKECH"
+    ],
+    "mapEmbedUrl": "https://www.google.com/maps/d/embed?mid=1dSeOzM2YSbCVON6pqMFE1oDFABuVjAU0&hl=en_US&ehbc=2E312F",
+    "cover": "dunes",
+    "cardImage": "/trip2.jpg"
+  },
+  {
+    "slug": "6-day-sahara-odyssey",
+    "legacyId": 3,
+    "category": "trip",
+    "durationDays": 6,
+    "departureCity": "marrakech",
+    "pricing": [
+      {
+        "persons": 2,
+        "pricePerPersonPerDay": 140,
+        "days": 6
+      },
+      {
+        "persons": 3,
+        "pricePerPersonPerDay": 130,
+        "days": 6
+      },
+      {
+        "persons": 4,
+        "pricePerPersonPerDay": 120,
+        "days": 6
+      },
+      {
+        "persons": 5,
+        "pricePerPersonPerDay": 100,
+        "days": 6
+      }
+    ],
+    "stops": [
+      {
+        "name": "Marrakech",
+        "lat": 31.63,
+        "lng": -7.99
+      },
+      {
+        "name": "Telouet",
+        "lat": 31.33,
+        "lng": -7.23
+      },
+      {
+        "name": "Ait Ben Haddou",
+        "lat": 31.047,
+        "lng": -7.1319
+      },
+      {
+        "name": "Ouarzazate",
+        "lat": 30.9335,
+        "lng": -6.937
+      },
+      {
+        "name": "Kalaat M'Gouna",
+        "lat": 31.42,
+        "lng": -6.2
+      },
+      {
+        "name": "Gorges de Dades",
+        "lat": 31.45,
+        "lng": -5.97
+      },
+      {
+        "name": "Msemrir",
+        "lat": 31.52,
+        "lng": -5.85
+      },
+      {
+        "name": "Agoudal",
+        "lat": 32,
+        "lng": -5.49
+      },
+      {
+        "name": "Gorges Todgha",
+        "lat": 31.59,
+        "lng": -5.59
+      },
+      {
+        "name": "Jbel Saghro",
+        "lat": 31.25,
+        "lng": -5.65
+      },
+      {
+        "name": "Zagora",
+        "lat": 30.34,
+        "lng": -5.83
+      },
+      {
+        "name": "Erg Chegaga",
+        "lat": 29.85,
+        "lng": -6.05
+      },
+      {
+        "name": "Lac Iriqui",
+        "lat": 29.83,
+        "lng": -6.51
+      },
+      {
+        "name": "Foum Zguid",
+        "lat": 30.08,
+        "lng": -6.85
+      },
+      {
+        "name": "Taznakht",
+        "lat": 30.48,
+        "lng": -7.2
+      },
+      {
+        "name": "Oasis Fint",
+        "lat": 31.02,
+        "lng": -7.18
+      },
+      {
+        "name": "Marrakech",
+        "lat": 31.63,
+        "lng": -7.99
+      }
+    ],
+    "dayRoutes": [
+      "MARRAKECH - AIT BEN HADOU - OUARZAZATE - GORGES DE DADES:",
+      "BOUMALN DADES - MSEMRIR - GORGES TODGHA",
+      "GORGES TODGHA - ZAGORA - DESERT CHEGAGA",
+      "DESERT CHEGAGA",
+      "CHEGAGA - FOUM ZGUID - AIT BEN HADDOU",
+      "AIT BEN HADDOU - TELOUET - TIZI N TICHKA - MARRAKECH"
+    ],
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m76!1m12!1m3!1d2179308.580457014!2d-8.041271658848718!3d30.91468365565008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m61!3e0!4m5!1s0xdafee8d96179e51%3A0x5950b6534f87adb8!2sMarrakech!3m2!1d31.622522399999998!2d-7.989825799999999!4m5!1s0xdbad1b4f4eec3db%3A0xc8f42823faa70485!2sTelouet!3m2!1d31.288832799999998!2d-7.239665899999999!4m5!1s0xdbae06120411439%3A0x4d090f64a0ec123a!2sA%C3%AFt%20Ben%20Haddou!3m2!1d31.047043!2d-7.1318996!4m5!1s0xda3328c8a8c64bf%3A0x257d57d5120009c0!2sGorges%20du%20Dad%C3%A8s!3m2!1d31.4532146!2d-5.9675869!4m5!1s0xda2ee4ca063e53b%3A0x572beafbbe5f9c7a!2sAgoudal!3m2!1d32.0136829!2d-5.485646!4m5!1s0xdbd333073ecf085%3A0xa44fdd883982eb80!2sTodgha%20Gorges!3m2!1d31.5219851!2d-5.5273977!4m5!1s0xdbce13812474325%3A0xf0c05a2ca46b1680!2sCaf%C3%A9%20%26%20Restaurant%20Auberge%20Tiza%2C%20Tizi%20n%2C%20tazazerte!3m2!1d31.112658999999997!2d-5.777202!4m5!1s0xdbc36ea58680e95%3A0x75e9e9fb616de232!2sZagora!3m2!1d30.3428747!2d-5.8377713!4m5!1s0xdbdcdadaabfdf03%3A0x82addcb39e23d4e2!2sTamegroute!3m2!1d30.2638799!2d-5.6799816!4m5!1s0xdbe62978e766f85%3A0xf9f632f826725240!2sMhamid!3m2!1d29.8257743!2d-5.7234007!5e0!3m2!1sen!2sma!4v1749228542026!5m2!1sen!2sma&zoom=8",
+    "cover": "canyon",
+    "cardImage": "/trip3.jpg"
+  },
+  {
+    "slug": "2-day-desert-getaway",
+    "legacyId": 4,
+    "category": "excursion",
+    "durationDays": 2,
+    "departureCity": "zagora",
+    "pricing": [
+      {
+        "persons": 2,
+        "pricePerPersonPerDay": 250,
+        "days": 2
+      },
+      {
+        "persons": 3,
+        "pricePerPersonPerDay": 220,
+        "days": 2
+      },
+      {
+        "persons": 4,
+        "pricePerPersonPerDay": 200,
+        "days": 2
+      },
+      {
+        "persons": 5,
+        "pricePerPersonPerDay": 180,
+        "days": 2
+      }
+    ],
+    "stops": [
+      {
+        "name": "Marrakech",
+        "lat": 31.63,
+        "lng": -7.99
+      },
+      {
+        "name": "Aït Ben Haddou",
+        "lat": 31.047,
+        "lng": -7.1319
+      },
+      {
+        "name": "Zagora",
+        "lat": 30.34,
+        "lng": -5.83
+      }
+    ],
+    "dayRoutes": [
+      "ZAGORA - TAMEGROUTE - ERG LIHODI - ERG CHEGAGA",
+      "LES DUNES DE CHEGAGA - FOUM ZGUID - ZAGORA"
+    ],
+    "mapEmbedUrl": "https://www.google.com/maps/d/embed?mid=1dSeOzM2YSbCVON6pqMFE1oDFABuVjAU0&hl=en_US&ehbc=2E312F",
+    "cover": "dunes",
+    "cardImage": "/card/1.jpg"
+  },
+  {
+    "slug": "agadir-erg-chegaga-6-day-circuit",
+    "legacyId": 5,
+    "category": "trip",
+    "durationDays": 6,
+    "departureCity": "agadir",
+    "pricing": [
+      {
+        "persons": 2,
+        "pricePerPersonPerDay": 140,
+        "days": 6
+      },
+      {
+        "persons": 3,
+        "pricePerPersonPerDay": 130,
+        "days": 6
+      },
+      {
+        "persons": 4,
+        "pricePerPersonPerDay": 120,
+        "days": 6
+      },
+      {
+        "persons": 5,
+        "pricePerPersonPerDay": 100,
+        "days": 6
+      }
+    ],
+    "stops": [
+      {
+        "name": "Agadir",
+        "lat": 30.4278,
+        "lng": -9.5981
+      },
+      {
+        "name": "Taroudant",
+        "lat": 30.472,
+        "lng": -8.874
+      },
+      {
+        "name": "Taliouine",
+        "lat": 30.529,
+        "lng": -7.911
+      },
+      {
+        "name": "Taznakht",
+        "lat": 30.48,
+        "lng": -7.2
+      },
+      {
+        "name": "Foum Zguid",
+        "lat": 30.08,
+        "lng": -6.85
+      },
+      {
+        "name": "Erg Chegaga",
+        "lat": 29.85,
+        "lng": -6.05
+      },
+      {
+        "name": "Zagora",
+        "lat": 30.34,
+        "lng": -5.83
+      },
+      {
+        "name": "Gorges Todgha",
+        "lat": 31.59,
+        "lng": -5.59
+      },
+      {
+        "name": "Msemrir",
+        "lat": 31.52,
+        "lng": -5.85
+      },
+      {
+        "name": "Gorges Dades",
+        "lat": 31.45,
+        "lng": -5.97
+      },
+      {
+        "name": "Kalaat M'Gouna",
+        "lat": 31.42,
+        "lng": -6.2
+      },
+      {
+        "name": "Ait Ben Haddou",
+        "lat": 31.047,
+        "lng": -7.1319
+      },
+      {
+        "name": "Taznakht",
+        "lat": 30.48,
+        "lng": -7.2
+      },
+      {
+        "name": "Taliouine",
+        "lat": 30.529,
+        "lng": -7.911
+      },
+      {
+        "name": "Agadir",
+        "lat": 30.4278,
+        "lng": -9.5981
+      }
+    ],
+    "dayRoutes": [
+      "AGADIR - TAROUDANT - TILOUINE - FOUM ZGUID",
+      "FOUM ZGUID - DUNES DE CHEGAGA",
+      "DUNES DE CHEGAGA - ZAGORA - GORGES TOUDGHA",
+      "GORGES TOUDGHA - GORGES DU DADES",
+      "GORGES DADES - VALLEE DES ROSES - AIT BEN HADDOU",
+      "AIT BEN HADDOU - TAZNAKHT - TALIOUINE - AGADIR"
+    ],
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m76!1m12!1m3!1d2179308.580457014!2d-8.041271658848718!3d30.91468365565008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m61!3e0!4m5!1s0xdafee8d96179e51%3A0x5950b6534f87adb8!2sMarrakech!3m2!1d31.622522399999998!2d-7.989825799999999!4m5!1s0xdbad1b4f4eec3db%3A0xc8f42823faa70485!2sTelouet!3m2!1d31.288832799999998!2d-7.239665899999999!4m5!1s0xdbae06120411439%3A0x4d090f64a0ec123a!2sA%C3%AFt%20Ben%20Haddou!3m2!1d31.047043!2d-7.1318996!4m5!1s0xda3328c8a8c64bf%3A0x257d57d5120009c0!2sGorges%20du%20Dad%C3%A8s!3m2!1d31.4532146!2d-5.9675869!4m5!1s0xda2ee4ca063e53b%3A0x572beafbbe5f9c7a!2sAgoudal!3m2!1d32.0136829!2d-5.485646!4m5!1s0xdbd333073ecf085%3A0xa44fdd883982eb80!2sTodgha%20Gorges!3m2!1d31.5219851!2d-5.5273977!4m5!1s0xdbce13812474325%3A0xf0c05a2ca46b1680!2sCaf%C3%A9%20%26%20Restaurant%20Auberge%20Tiza%2C%20Tizi%20n%2C%20tazazerte!3m2!1d31.112658999999997!2d-5.777202!4m5!1s0xdbc36ea58680e95%3A0x75e9e9fb616de232!2sZagora!3m2!1d30.3428747!2d-5.8377713!4m5!1s0xdbdcdadaabfdf03%3A0x82addcb39e23d4e2!2sTamegroute!3m2!1d30.2638799!2d-5.6799816!4m5!1s0xdbe62978e766f85%3A0xf9f632f826725240!2sMhamid!3m2!1d29.8257743!2d-5.7234007!5e0!3m2!1sen!2sma!4v1749228542026!5m2!1sen!2sma&zoom=8",
+    "cover": "atlantic",
+    "cardImage": "/card/7.jpg"
+  },
+  {
+    "slug": "7-day-sahara-trekking",
+    "legacyId": 6,
+    "category": "trekking",
+    "durationDays": 7,
+    "departureCity": "ouarzazate",
+    "pricing": [
+      {
+        "persons": 2,
+        "pricePerPersonPerDay": 140,
+        "days": 7
+      },
+      {
+        "persons": 3,
+        "pricePerPersonPerDay": 130,
+        "days": 7
+      },
+      {
+        "persons": 4,
+        "pricePerPersonPerDay": 120,
+        "days": 7
+      },
+      {
+        "persons": 5,
+        "pricePerPersonPerDay": 100,
+        "days": 7
+      }
+    ],
+    "stops": [
+      {
+        "name": "Marrakech",
+        "lat": 31.63,
+        "lng": -7.99
+      },
+      {
+        "name": "Ouarzazate",
+        "lat": 30.9335,
+        "lng": -6.937
+      },
+      {
+        "name": "Agdz",
+        "lat": 30.693,
+        "lng": -6.443
+      },
+      {
+        "name": "Zagora",
+        "lat": 30.34,
+        "lng": -5.83
+      },
+      {
+        "name": "El Faija Zagora",
+        "lat": 30.25,
+        "lng": -5.9
+      },
+      {
+        "name": "Oued Lamhasser",
+        "lat": 29.95,
+        "lng": -6.2
+      },
+      {
+        "name": "Erg Chegaga",
+        "lat": 29.85,
+        "lng": -6.05
+      },
+      {
+        "name": "M'Hamid El Ghizlane",
+        "lat": 29.82,
+        "lng": -5.72
+      },
+      {
+        "name": "Zagora",
+        "lat": 30.34,
+        "lng": -5.83
+      },
+      {
+        "name": "Ouarzazate",
+        "lat": 30.9335,
+        "lng": -6.937
+      },
+      {
+        "name": "Marrakech",
+        "lat": 31.63,
+        "lng": -7.99
+      }
+    ],
+    "dayRoutes": [
+      "OUARZAZATE/MARRAKECH - PETIT ATLAS - VALLEE DRAA - CAMP DESERT",
+      "ELFAIJA - OASIS TASKA (3h30 marche)",
+      "OASIS TASKA - AMDA NOMASSAFY (4h marche)",
+      "AMDA NOUMASAFY - ERG ELMASSAFI (4h marche)",
+      "ERG LMASSAFY - GRAND ERG CHIGAGA (3h marche)",
+      "ERG CHIGAGA - KHARTE LGARSIME (5h marche)",
+      "TRANSFERT 4X4 - M'HAMID - ZAGORA - OUARZAZATE/MARRAKECH"
+    ],
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m76!1m12!1m3!1d2179308.580457014!2d-8.041271658848718!3d30.91468365565008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m61!3e0!4m5!1s0xdafee8d96179e51%3A0x5950b6534f87adb8!2sMarrakech!3m2!1d31.622522399999998!2d-7.989825799999999!4m5!1s0xdbad1b4f4eec3db%3A0xc8f42823faa70485!2sTelouet!3m2!1d31.288832799999998!2d-7.239665899999999!4m5!1s0xdbae06120411439%3A0x4d090f64a0ec123a!2sA%C3%AFt%20Ben%20Haddou!3m2!1d31.047043!2d-7.1318996!4m5!1s0xda3328c8a8c64bf%3A0x257d57d5120009c0!2sGorges%20du%20Dad%C3%A8s!3m2!1d31.4532146!2d-5.9675869!4m5!1s0xda2ee4ca063e53b%3A0x572beafbbe5f9c7a!2sAgoudal!3m2!1d32.0136829!2d-5.485646!4m5!1s0xdbd333073ecf085%3A0xa44fdd883982eb80!2sTodgha%20Gorges!3m2!1d31.5219851!2d-5.5273977!4m5!1s0xdbce13812474325%3A0xf0c05a2ca46b1680!2sCaf%C3%A9%20%26%20Restaurant%20Auberge%20Tiza%2C%20Tizi%20n%2C%20tazazerte!3m2!1d31.112658999999997!2d-5.777202!4m5!1s0xdbc36ea58680e95%3A0x75e9e9fb616de232!2sZagora!3m2!1d30.3428747!2d-5.8377713!4m5!1s0xdbdcdadaabfdf03%3A0x82addcb39e23d4e2!2sTamegroute!3m2!1d30.2638799!2d-5.6799816!4m5!1s0xdbe62978e766f85%3A0xf9f632f826725240!2sMhamid!3m2!1d29.8257743!2d-5.7234007!5e0!3m2!1sen!2sma!4v1749228542026!5m2!1sen!2sma&zoom=8",
+    "cover": "canyon",
+    "cardImage": "/card/2.jpg"
+  },
+  {
+    "slug": "ouarzazate-erg-chegaga-3-day-circuit",
+    "legacyId": 7,
+    "category": "trip",
+    "durationDays": 3,
+    "departureCity": "ouarzazate",
+    "pricing": [
+      {
+        "persons": 2,
+        "pricePerPersonPerDay": 140,
+        "days": 3
+      },
+      {
+        "persons": 3,
+        "pricePerPersonPerDay": 130,
+        "days": 3
+      },
+      {
+        "persons": 4,
+        "pricePerPersonPerDay": 120,
+        "days": 3
+      },
+      {
+        "persons": 5,
+        "pricePerPersonPerDay": 100,
+        "days": 3
+      }
+    ],
+    "stops": [
+      {
+        "name": "Ouarzazate",
+        "lat": 30.9335,
+        "lng": -6.937
+      },
+      {
+        "name": "Taznakht",
+        "lat": 30.48,
+        "lng": -7.2
+      },
+      {
+        "name": "Foum Zguid",
+        "lat": 30.08,
+        "lng": -6.85
+      },
+      {
+        "name": "Lac Iriki",
+        "lat": 29.83,
+        "lng": -6.51
+      },
+      {
+        "name": "Erg Chegaga",
+        "lat": 29.85,
+        "lng": -6.05
+      },
+      {
+        "name": "Mhamid El Ghizlan",
+        "lat": 29.82,
+        "lng": -5.72
+      },
+      {
+        "name": "Tamgroute",
+        "lat": 30.3,
+        "lng": -5.83
+      },
+      {
+        "name": "Zagora",
+        "lat": 30.34,
+        "lng": -5.83
+      },
+      {
+        "name": "Agdz",
+        "lat": 30.698,
+        "lng": -6.45
+      },
+      {
+        "name": "Ouarzazate",
+        "lat": 30.9335,
+        "lng": -6.937
+      }
+    ],
+    "dayRoutes": [
+      "OUARZAZATE – TAZNAKHT – FOUM ZGUID – LAC IRIKI – ERG CHEGAGA",
+      "VIE NOMADE AU DÉSERT – DUNES DE CHEGAGA",
+      "CHEGAGA – TAMGROUTE – ZAGORA – AGDZ – OUARZAZATE"
+    ],
+    "mapEmbedUrl": "https://www.google.com/maps/d/embed?mid=1dSeOzM2YSbCVON6pqMFE1oDFABuVjAU0&hl=en_US&ehbc=2E312F",
+    "cover": "canyon",
+    "cardImage": "/card/3.jpg"
+  },
+  {
+    "slug": "gorges-saghro-chegaga-3-day-circuit",
+    "legacyId": 8,
+    "category": "trip",
+    "durationDays": 3,
+    "departureCity": "ouarzazate",
+    "pricing": [
+      {
+        "persons": 2,
+        "pricePerPersonPerDay": 140,
+        "days": 3
+      },
+      {
+        "persons": 3,
+        "pricePerPersonPerDay": 130,
+        "days": 3
+      },
+      {
+        "persons": 4,
+        "pricePerPersonPerDay": 120,
+        "days": 3
+      },
+      {
+        "persons": 5,
+        "pricePerPersonPerDay": 100,
+        "days": 3
+      }
+    ],
+    "stops": [
+      {
+        "name": "Ouarzazate",
+        "lat": 30.9335,
+        "lng": -6.937
+      },
+      {
+        "name": "Kalaat Mgouna",
+        "lat": 31.25,
+        "lng": -6.13
+      },
+      {
+        "name": "Bouthgrar",
+        "lat": 31.38,
+        "lng": -6.2
+      },
+      {
+        "name": "Gorges du Dadès",
+        "lat": 31.52,
+        "lng": -6.09
+      },
+      {
+        "name": "Gorges du Todra",
+        "lat": 31.57,
+        "lng": -5.53
+      },
+      {
+        "name": "Jebel Saghro",
+        "lat": 31,
+        "lng": -5.73
+      },
+      {
+        "name": "Zagora",
+        "lat": 30.34,
+        "lng": -5.83
+      },
+      {
+        "name": "Tamgroute",
+        "lat": 30.3,
+        "lng": -5.83
+      },
+      {
+        "name": "Erg Chegaga",
+        "lat": 29.85,
+        "lng": -6.05
+      },
+      {
+        "name": "Lac Iriki",
+        "lat": 29.83,
+        "lng": -6.51
+      },
+      {
+        "name": "Foum Zguid",
+        "lat": 30.08,
+        "lng": -6.85
+      },
+      {
+        "name": "Taznakht",
+        "lat": 30.48,
+        "lng": -7.2
+      },
+      {
+        "name": "Ait Ben Haddou",
+        "lat": 31.047,
+        "lng": -7.1319
+      },
+      {
+        "name": "Ouarzazate",
+        "lat": 30.9335,
+        "lng": -6.937
+      }
+    ],
+    "dayRoutes": [
+      "Ouarzazate – Vallée des Roses – Vallée du Dadès – Gorges du Todra",
+      "Todra – Massif du Jebel Saghro – Vallée du Draa – Tamegroute – Erg Chegaga",
+      "Chegaga – Lac Iriki – Foum Zguid – Taznakht – Ait Ben Haddou – Ouarzazate"
+    ],
+    "mapEmbedUrl": "https://www.google.com/maps/d/embed?mid=1dSeOzM2YSbCVON6pqMFE1oDFABuVjAU0&hl=en_US&ehbc=2E312F",
+    "cover": "canyon",
+    "cardImage": "/card/4.jpg"
+  },
+  {
+    "slug": "zagora-erg-chegaga-3-day-excursion",
+    "legacyId": 9,
+    "category": "excursion",
+    "durationDays": 3,
+    "departureCity": "zagora",
+    "pricing": [
+      {
+        "persons": 2,
+        "pricePerPersonPerDay": 500,
+        "days": 3
+      },
+      {
+        "persons": 3,
+        "pricePerPersonPerDay": 440,
+        "days": 3
+      },
+      {
+        "persons": 4,
+        "pricePerPersonPerDay": 400,
+        "days": 3
+      },
+      {
+        "persons": 5,
+        "pricePerPersonPerDay": 360,
+        "days": 3
+      }
+    ],
+    "stops": [
+      {
+        "name": "Zagora",
+        "lat": 30.34,
+        "lng": -5.83
+      },
+      {
+        "name": "Tamgroute",
+        "lat": 30.3,
+        "lng": -5.83
+      },
+      {
+        "name": "Mhamid El Ghizlan",
+        "lat": 29.82,
+        "lng": -5.72
+      },
+      {
+        "name": "Erg Chegaga",
+        "lat": 29.85,
+        "lng": -6.05
+      }
+    ],
+    "dayRoutes": [
+      "ZAGORA – TAMEGROUTE – ERG LIHODI – ERG CHEGAGA",
+      "LES DUNES DE CHEGAGA",
+      "LES DUNES DE CHEGAGA – M'HAMID – ZAGORA"
+    ],
+    "mapEmbedUrl": "https://www.google.com/maps/d/embed?mid=1dSeOzM2YSbCVON6pqMFE1oDFABuVjAU0&hl=en_US&ehbc=2E312F",
+    "cover": "caravan",
+    "cardImage": "/card/5.jpg"
+  },
+  {
+    "slug": "erg-chegaga-1-day-excursion",
+    "legacyId": 10,
+    "category": "excursion",
+    "durationDays": 1,
+    "departureCity": "zagora",
+    "pricing": [
+      {
+        "persons": 2,
+        "pricePerPersonPerDay": 125,
+        "days": 1
+      },
+      {
+        "persons": 3,
+        "pricePerPersonPerDay": 115,
+        "days": 1
+      },
+      {
+        "persons": 4,
+        "pricePerPersonPerDay": 100,
+        "days": 1
+      },
+      {
+        "persons": 5,
+        "pricePerPersonPerDay": 90,
+        "days": 1
+      }
+    ],
+    "stops": [
+      {
+        "name": "Zagora",
+        "lat": 30.34,
+        "lng": -5.83
+      },
+      {
+        "name": "Erg Chegaga",
+        "lat": 29.85,
+        "lng": -6.05
+      }
+    ],
+    "dayRoutes": [
+      "ZAGORA – ERG CHEGAGA - ZAGORA"
+    ],
+    "mapEmbedUrl": "https://www.google.com/maps/d/embed?mid=1dSeOzM2YSbCVON6pqMFE1oDFABuVjAU0&hl=en_US&ehbc=2E312F",
+    "cover": "dunes",
+    "cardImage": "/card/3.jpg"
+  },
+  {
+    "slug": "marrakech-lihoudi-2-day-excursion",
+    "legacyId": 11,
+    "category": "excursion",
+    "durationDays": 2,
+    "departureCity": "marrakech",
+    "pricing": [
+      {
+        "persons": 2,
+        "pricePerPersonPerDay": 400,
+        "days": 2
+      },
+      {
+        "persons": 3,
+        "pricePerPersonPerDay": 350,
+        "days": 2
+      },
+      {
+        "persons": 4,
+        "pricePerPersonPerDay": 300,
+        "days": 2
+      },
+      {
+        "persons": 5,
+        "pricePerPersonPerDay": 280,
+        "days": 2
+      }
+    ],
+    "stops": [
+      {
+        "name": "Marrakech",
+        "lat": 31.63,
+        "lng": -7.99
+      },
+      {
+        "name": "Col Tichka",
+        "lat": 31.286,
+        "lng": -7.381
+      },
+      {
+        "name": "Ouarzazate",
+        "lat": 30.9335,
+        "lng": -6.937
+      },
+      {
+        "name": "Agdez",
+        "lat": 30.698,
+        "lng": -6.45
+      },
+      {
+        "name": "Erg Lihodi",
+        "lat": 30.1,
+        "lng": -5.72
+      },
+      {
+        "name": "Tamgroute",
+        "lat": 30.3,
+        "lng": -5.83
+      },
+      {
+        "name": "Ait Ben Haddou",
+        "lat": 31.047,
+        "lng": -7.1319
+      },
+      {
+        "name": "Marrakech",
+        "lat": 31.63,
+        "lng": -7.99
+      }
+    ],
+    "dayRoutes": [
+      "MARRAKECH - OUARZAZATE - AGDEZ - ERG LIHODI",
+      "ERG LIHODI - TAMEGROUTE - AIT BEN HADDOU - MARRAKECH"
+    ],
+    "mapEmbedUrl": "https://www.google.com/maps/d/embed?mid=1dSeOzM2YSbCVON6pqMFE1oDFABuVjAU0&hl=en_US&ehbc=2E312F",
+    "cover": "souk",
+    "cardImage": "/card/8.jpg"
+  },
+  {
+    "slug": "2-day-desert-escape",
+    "legacyId": 12,
+    "category": "excursion",
+    "durationDays": 2,
+    "departureCity": "zagora",
+    "pricing": [
+      {
+        "persons": 2,
+        "pricePerPersonPerDay": 175,
+        "days": 2
+      },
+      {
+        "persons": 3,
+        "pricePerPersonPerDay": 150,
+        "days": 2
+      },
+      {
+        "persons": 4,
+        "pricePerPersonPerDay": 125,
+        "days": 2
+      },
+      {
+        "persons": 5,
+        "pricePerPersonPerDay": 110,
+        "days": 2
+      }
+    ],
+    "stops": [
+      {
+        "name": "Zagora",
+        "lat": 30.34,
+        "lng": -5.83
+      },
+      {
+        "name": "Tamgroute",
+        "lat": 30.3,
+        "lng": -5.83
+      },
+      {
+        "name": "Erg Chegaga",
+        "lat": 29.85,
+        "lng": -6.05
+      }
+    ],
+    "dayRoutes": [
+      "ZAGORA - TAMEGROUTE - ERG LIHODI - ERG CHEGAGA",
+      "LES DUNES DE CHEGAGA - ZAGORA"
+    ],
+    "mapEmbedUrl": "https://www.google.com/maps/d/embed?mid=1dSeOzM2YSbCVON6pqMFE1oDFABuVjAU0&hl=en_US&ehbc=2E312F",
+    "cover": "dunes",
+    "cardImage": "/card/9.jpg"
+  },
+  {
+    "slug": "ouarzazate-erg-chegaga-2-day-circuit",
+    "legacyId": 13,
+    "category": "trip",
+    "durationDays": 2,
+    "departureCity": "ouarzazate",
+    "pricing": [
+      {
+        "persons": 2,
+        "pricePerPersonPerDay": 140,
+        "days": 2
+      },
+      {
+        "persons": 3,
+        "pricePerPersonPerDay": 130,
+        "days": 2
+      },
+      {
+        "persons": 4,
+        "pricePerPersonPerDay": 120,
+        "days": 2
+      },
+      {
+        "persons": 5,
+        "pricePerPersonPerDay": 100,
+        "days": 2
+      }
+    ],
+    "stops": [
+      {
+        "name": "Ouarzazate",
+        "lat": 30.9335,
+        "lng": -6.937
+      },
+      {
+        "name": "Taznakht",
+        "lat": 30.48,
+        "lng": -7.2
+      },
+      {
+        "name": "Foum Zguid",
+        "lat": 30.08,
+        "lng": -6.85
+      },
+      {
+        "name": "Lac Iriki",
+        "lat": 29.83,
+        "lng": -6.51
+      },
+      {
+        "name": "Erg Chegaga",
+        "lat": 29.85,
+        "lng": -6.05
+      },
+      {
+        "name": "Mhamid El Ghizlan",
+        "lat": 29.82,
+        "lng": -5.72
+      },
+      {
+        "name": "Tamgroute",
+        "lat": 30.3,
+        "lng": -5.83
+      },
+      {
+        "name": "Zagora",
+        "lat": 30.34,
+        "lng": -5.83
+      },
+      {
+        "name": "Agdz",
+        "lat": 30.698,
+        "lng": -6.45
+      },
+      {
+        "name": "Ouarzazate",
+        "lat": 30.9335,
+        "lng": -6.937
+      }
+    ],
+    "dayRoutes": [
+      "OUARZAZATE – TAZNAKHT – FOUM ZGUID – LAC IRIKI – ERG CHEGAGA",
+      "CHEGAGA – TAMGROUTE – ZAGORA – AGDZ – OUARZAZATE"
+    ],
+    "mapEmbedUrl": "https://www.google.com/maps/d/embed?mid=1dSeOzM2YSbCVON6pqMFE1oDFABuVjAU0&hl=en_US&ehbc=2E312F",
+    "cover": "canyon",
+    "cardImage": "/card/11.jpg"
+  },
+  {
+    "slug": "marrakech-erg-chegaga-4-day-crossing",
+    "legacyId": 14,
+    "category": "trip",
+    "durationDays": 4,
+    "departureCity": "marrakech",
+    "pricing": [
+      {
+        "persons": 2,
+        "pricePerPersonPerDay": 140,
+        "days": 4
+      },
+      {
+        "persons": 3,
+        "pricePerPersonPerDay": 130,
+        "days": 4
+      },
+      {
+        "persons": 4,
+        "pricePerPersonPerDay": 120,
+        "days": 4
+      },
+      {
+        "persons": 5,
+        "pricePerPersonPerDay": 100,
+        "days": 4
+      }
+    ],
+    "stops": [
+      {
+        "name": "Marrakech",
+        "lat": 31.6295,
+        "lng": -7.9811
+      },
+      {
+        "name": "Ouarzazate",
+        "lat": 30.9335,
+        "lng": -6.937
+      },
+      {
+        "name": "Vallée du Dadès",
+        "lat": 31.36,
+        "lng": -5.9
+      },
+      {
+        "name": "Boumalne Dadès",
+        "lat": 31.3667,
+        "lng": -6.2667
+      },
+      {
+        "name": "Vallée du Drâa",
+        "lat": 30.6,
+        "lng": -6
+      },
+      {
+        "name": "Zagora",
+        "lat": 30.34,
+        "lng": -5.83
+      },
+      {
+        "name": "Jbel Saghro",
+        "lat": 31,
+        "lng": -5.6
+      },
+      {
+        "name": "Tamgroute",
+        "lat": 30.3,
+        "lng": -5.83
+      },
+      {
+        "name": "Mhamid El Ghizlan",
+        "lat": 29.82,
+        "lng": -5.72
+      },
+      {
+        "name": "Erg Chegaga",
+        "lat": 29.85,
+        "lng": -6.05
+      },
+      {
+        "name": "Lac Iriki",
+        "lat": 29.83,
+        "lng": -6.51
+      },
+      {
+        "name": "Foum Zguid",
+        "lat": 30.08,
+        "lng": -6.85
+      },
+      {
+        "name": "Taznakht",
+        "lat": 30.48,
+        "lng": -7.2
+      },
+      {
+        "name": "Marrakech",
+        "lat": 31.6295,
+        "lng": -7.9811
+      }
+    ],
+    "dayRoutes": [
+      "MARRAKECH - AIT BEN HADOU - OUARZAZATE - GORGES DE DADES",
+      "GOURGE DADES - GORGE TOUDGHA - SAGHRO - N'KOB",
+      "GORGES TODGHA - ZAGORA - DESERT CHEGAGA",
+      "CHEGAGA - FOUM ZGUID - MARRAKECH"
+    ],
+    "mapEmbedUrl": "https://www.google.com/maps/d/embed?mid=1dSeOzM2YSbCVON6pqMFE1oDFABuVjAU0&hl=en_US&ehbc=2E312F",
+    "cover": "caravan",
+    "cardImage": "/card/14.jpg"
+  },
+  {
+    "slug": "4-day-nomadic-sahara-circuit",
+    "legacyId": 15,
+    "category": "trip",
+    "durationDays": 4,
+    "departureCity": "marrakech",
+    "pricing": [
+      {
+        "persons": 2,
+        "pricePerPersonPerDay": 140,
+        "days": 4
+      },
+      {
+        "persons": 3,
+        "pricePerPersonPerDay": 130,
+        "days": 4
+      },
+      {
+        "persons": 4,
+        "pricePerPersonPerDay": 120,
+        "days": 4
+      },
+      {
+        "persons": 5,
+        "pricePerPersonPerDay": 100,
+        "days": 4
+      }
+    ],
+    "stops": [
+      {
+        "name": "Marrakech",
+        "lat": 31.6295,
+        "lng": -7.9811
+      },
+      {
+        "name": "Col du Tizi n’Tichka",
+        "lat": 31.267,
+        "lng": -7.365
+      },
+      {
+        "name": "Ouarzazate",
+        "lat": 30.9335,
+        "lng": -6.937
+      },
+      {
+        "name": "Agdz",
+        "lat": 30.698,
+        "lng": -6.45
+      },
+      {
+        "name": "Vallée du Drâa",
+        "lat": 30.6,
+        "lng": -6
+      },
+      {
+        "name": "Zagora",
+        "lat": 30.34,
+        "lng": -5.83
+      },
+      {
+        "name": "Tamgroute",
+        "lat": 30.3,
+        "lng": -5.83
+      },
+      {
+        "name": "Mhamid El Ghizlan",
+        "lat": 29.82,
+        "lng": -5.72
+      },
+      {
+        "name": "Erg Chegaga",
+        "lat": 29.85,
+        "lng": -6.05
+      },
+      {
+        "name": "Lac Iriki",
+        "lat": 29.83,
+        "lng": -6.51
+      },
+      {
+        "name": "Foum Zguid",
+        "lat": 30.08,
+        "lng": -6.85
+      },
+      {
+        "name": "Taznakht",
+        "lat": 30.48,
+        "lng": -7.2
+      },
+      {
+        "name": "Marrakech",
+        "lat": 31.6295,
+        "lng": -7.9811
+      }
+    ],
+    "dayRoutes": [
+      "Marrakech - Tichka - Ait Ben Haddou - Agdez - Zagora",
+      "Zagora - Chegaga",
+      "ERG CHEGAGA",
+      "Chegaga - Foum Zguide - Taznakhte - Marrakech"
+    ],
+    "mapEmbedUrl": "https://www.google.com/maps/d/embed?mid=1dSeOzM2YSbCVON6pqMFE1oDFABuVjAU0&hl=en_US&ehbc=2E312F",
+    "cover": "stars",
+    "cardImage": "/card/12.jpg"
+  },
+  {
+    "slug": "7-day-southern-odyssey",
+    "legacyId": 16,
+    "category": "trip",
+    "durationDays": 7,
+    "departureCity": "marrakech",
+    "pricing": [
+      {
+        "persons": 2,
+        "pricePerPersonPerDay": 140,
+        "days": 7
+      },
+      {
+        "persons": 3,
+        "pricePerPersonPerDay": 130,
+        "days": 7
+      },
+      {
+        "persons": 4,
+        "pricePerPersonPerDay": 120,
+        "days": 7
+      },
+      {
+        "persons": 5,
+        "pricePerPersonPerDay": 100,
+        "days": 7
+      }
+    ],
+    "stops": [
+      {
+        "name": "Marrakech",
+        "lat": 31.63,
+        "lng": -7.99
+      },
+      {
+        "name": "Telouet",
+        "lat": 31.33,
+        "lng": -7.23
+      },
+      {
+        "name": "Ait Ben Haddou",
+        "lat": 31.047,
+        "lng": -7.1319
+      },
+      {
+        "name": "Ouarzazate",
+        "lat": 30.9335,
+        "lng": -6.937
+      },
+      {
+        "name": "Kalaat M'Gouna",
+        "lat": 31.42,
+        "lng": -6.2
+      },
+      {
+        "name": "Gorges de Dades",
+        "lat": 31.45,
+        "lng": -5.97
+      },
+      {
+        "name": "Msemrir",
+        "lat": 31.52,
+        "lng": -5.85
+      },
+      {
+        "name": "Agoudal",
+        "lat": 32,
+        "lng": -5.49
+      },
+      {
+        "name": "Gorges Todgha",
+        "lat": 31.59,
+        "lng": -5.59
+      },
+      {
+        "name": "Jbel Saghro",
+        "lat": 31.25,
+        "lng": -5.65
+      },
+      {
+        "name": "Zagora",
+        "lat": 30.34,
+        "lng": -5.83
+      },
+      {
+        "name": "Erg Chegaga",
+        "lat": 29.85,
+        "lng": -6.05
+      },
+      {
+        "name": "Lac Iriqui",
+        "lat": 29.83,
+        "lng": -6.51
+      },
+      {
+        "name": "Foum Zguid",
+        "lat": 30.08,
+        "lng": -6.85
+      },
+      {
+        "name": "Taznakht",
+        "lat": 30.48,
+        "lng": -7.2
+      },
+      {
+        "name": "Oasis Fint",
+        "lat": 31.02,
+        "lng": -7.18
+      },
+      {
+        "name": "Marrakech",
+        "lat": 31.63,
+        "lng": -7.99
+      }
+    ],
+    "dayRoutes": [
+      "MARRAKECH - OUARZAZATE - GORGES DE DADES:",
+      "BOUMALN DADES - MSEMRIR - GORGES TODGHA",
+      "GORGES TODGHA - ZAGORA",
+      "ZAGORA - DESERT CHEGAGA",
+      "DESERT CHEGAGA",
+      "CHEGAGA - KASBAH AIT BEN HADDOU",
+      "AIT BEN HADOU - KASBAH TELOUET - TIZI N TICHKA - MARRAKECH"
+    ],
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m76!1m12!1m3!1d2179308.580457014!2d-8.041271658848718!3d30.91468365565008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m61!3e0!4m5!1s0xdafee8d96179e51%3A0x5950b6534f87adb8!2sMarrakech!3m2!1d31.622522399999998!2d-7.989825799999999!4m5!1s0xdbad1b4f4eec3db%3A0xc8f42823faa70485!2sTelouet!3m2!1d31.288832799999998!2d-7.239665899999999!4m5!1s0xdbae06120411439%3A0x4d090f64a0ec123a!2sA%C3%AFt%20Ben%20Haddou!3m2!1d31.047043!2d-7.1318996!4m5!1s0xda3328c8a8c64bf%3A0x257d57d5120009c0!2sGorges%20du%20Dad%C3%A8s!3m2!1d31.4532146!2d-5.9675869!4m5!1s0xda2ee4ca063e53b%3A0x572beafbbe5f9c7a!2sAgoudal!3m2!1d32.0136829!2d-5.485646!4m5!1s0xdbd333073ecf085%3A0xa44fdd883982eb80!2sTodgha%20Gorges!3m2!1d31.5219851!2d-5.5273977!4m5!1s0xdbce13812474325%3A0xf0c05a2ca46b1680!2sCaf%C3%A9%20%26%20Restaurant%20Auberge%20Tiza%2C%20Tizi%20n%2C%20tazazerte!3m2!1d31.112658999999997!2d-5.777202!4m5!1s0xdbc36ea58680e95%3A0x75e9e9fb616de232!2sZagora!3m2!1d30.3428747!2d-5.8377713!4m5!1s0xdbdcdadaabfdf03%3A0x82addcb39e23d4e2!2sTamegroute!3m2!1d30.2638799!2d-5.6799816!4m5!1s0xdbe62978e766f85%3A0xf9f632f826725240!2sMhamid!3m2!1d29.8257743!2d-5.7234007!5e0!3m2!1sen!2sma!4v1749228542026!5m2!1sen!2sma&zoom=8",
+    "cover": "caravan",
+    "cardImage": "/card/9.jpg"
+  },
+  {
+    "slug": "anti-atlas-atlantic-6-day-circuit",
+    "legacyId": 17,
+    "category": "trip",
+    "durationDays": 6,
+    "departureCity": "agadir",
+    "pricing": [
+      {
+        "persons": 2,
+        "pricePerPersonPerDay": 140,
+        "days": 6
+      },
+      {
+        "persons": 3,
+        "pricePerPersonPerDay": 130,
+        "days": 6
+      },
+      {
+        "persons": 4,
+        "pricePerPersonPerDay": 120,
+        "days": 6
+      },
+      {
+        "persons": 5,
+        "pricePerPersonPerDay": 100,
+        "days": 6
+      }
+    ],
+    "stops": [
+      {
+        "name": "Agadir",
+        "lat": 30.42,
+        "lng": -9.59
+      },
+      {
+        "name": "Tafraoute",
+        "lat": 29.72,
+        "lng": -8.97
+      },
+      {
+        "name": "Gorges d'Aït Mansour",
+        "lat": 29.54,
+        "lng": -8.87
+      },
+      {
+        "name": "Amtoudi",
+        "lat": 29.24,
+        "lng": -9.18
+      },
+      {
+        "name": "Sidi Ifni",
+        "lat": 29.38,
+        "lng": -10.17
+      },
+      {
+        "name": "Legzira",
+        "lat": 29.44,
+        "lng": -10.11
+      },
+      {
+        "name": "Mirleft",
+        "lat": 29.58,
+        "lng": -10.03
+      },
+      {
+        "name": "Parc National de Massa",
+        "lat": 30.04,
+        "lng": -9.65
+      },
+      {
+        "name": "Agadir",
+        "lat": 30.42,
+        "lng": -9.59
+      }
+    ],
+    "dayRoutes": [
+      "AGADIR - TAFRAOUTE",
+      "Tafraoute - Gorges d’Aït Mansour - Amtoudi",
+      "Journée à Amtoudi – visites et découvertes",
+      "Amtoudi - Sidi Ifni",
+      "Sidi Ifni - Legzira - Mirleft",
+      "Parc national de Massa - Agadir"
+    ],
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m68!1m12!1m3!1d1754661.580457014!2d-10.541271658848718!3d29.91468365565008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m53!3e0!4m5!1s0xdb3b6e9afa0597b%3A0x1c0b22b302210d3f!2sAgadir!3m2!1d30.4277547!2d-9.5981072!4m5!1s0xdb41a3b4e5b6c7d%3A0x8f9a0b1c2d3e4f5a!2sTafraoute!3m2!1d29.721679!2d-8.976944!4m5!1s0xdb42b3c4d5e6f7a%3A0x9a8b7c6d5e4f3a2b!2sGorges%20d'A%C3%AFt%20Mansour!3m2!1d29.543333!2d-8.876667!4m5!1s0xdb53c4d5e6f7a8b%3A0x1b2c3d4e5f6a7b8c!2sAmtoudi!3m2!1d29.241667!2d-9.183333!4m5!1s0xdb64d5e6f7a8b9c%3A0x2c3d4e5f6a7b8c9d!2sSidi%20Ifni!3m2!1d29.383333!2d-10.175!4m5!1s0xdb75e6f7a8b9c0d%3A0x3d4e5f6a7b8c9d0e!2sLegzira!3m2!1d29.441667!2d-10.116667!4m5!1s0xdb86f7a8b9c0d1e%3A0x4e5f6a7b8c9d0e1f!2sMirleft!3m2!1d29.583333!2d-10.033333!4m5!1s0xdb97a8b9c0d1e2f%3A0x5f6a7b8c9d0e1f2a!2sParc%20National%20de%20Massa!3m2!1d30.041667!2d-9.65!4m5!1s0xdb3b6e9afa0597b%3A0x1c0b22b302210d3f!2sAgadir!3m2!1d30.4277547!2d-9.5981072!5e0!3m2!1sen!2sma!4v1749228542026!5m2!1sen!2sma&zoom=8",
+    "cover": "atlantic",
+    "cardImage": "/card/20.jpg"
+  },
+  {
+    "slug": "erg-chegaga-2-day-immersion",
+    "legacyId": 18,
+    "category": "excursion",
+    "durationDays": 2,
+    "departureCity": "mhamid el ghizlane",
+    "pricing": [
+      {
+        "persons": 2,
+        "pricePerPersonPerDay": 150,
+        "days": 2
+      },
+      {
+        "persons": 3,
+        "pricePerPersonPerDay": 130,
+        "days": 2
+      },
+      {
+        "persons": 4,
+        "pricePerPersonPerDay": 110,
+        "days": 2
+      },
+      {
+        "persons": 5,
+        "pricePerPersonPerDay": 90,
+        "days": 2
+      }
+    ],
+    "stops": [
+      {
+        "name": "Mhamid El Ghizlan",
+        "lat": 29.82,
+        "lng": -5.72
+      },
+      {
+        "name": "Erg Chegaga",
+        "lat": 29.85,
+        "lng": -6.05
+      }
+    ],
+    "dayRoutes": [
+      "M'HAMID – LES DUNES DE CHEGAGA",
+      "LES DUNES DE CHEGAGA – M'HAMID"
+    ],
+    "mapEmbedUrl": "https://www.google.com/maps/d/embed?mid=1dSeOzM2YSbCVON6pqMFE1oDFABuVjAU0&hl=en_US&ehbc=2E312F",
+    "cover": "dunes",
+    "cardImage": "/card/6.jpg"
+  }
+]

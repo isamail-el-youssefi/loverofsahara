@@ -26,6 +26,11 @@
   --radius-2xl: calc(var(--radius) + 8px);
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-ink-deep: var(--ink-deep);
+  --color-brand: var(--brand);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -62,6 +67,13 @@
 }
 
 :root {
+  /* Site theme tokens (Classic). Overridden by html[data-theme] blocks below. */
+  --paper: #ffffff;
+  --ink: #141414;
+  --ink-soft: #1c1c1c;
+  --ink-deep: #0f0f0f;
+  --brand: #ac2a1c;
+
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.129 0.042 264.695);
@@ -141,10 +153,23 @@
     background-color: var(--color-background);
     color: var(--color-foreground);
   }
+
+  /* Text selection, caret and native controls follow the active theme */
+  ::selection {
+    background-color: var(--brand);
+    color: var(--paper);
+  }
+
+  html {
+    accent-color: var(--brand);
+    caret-color: var(--brand);
+  }
 }
 
 @theme {
   --font-sans: "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", ui-serif, Georgia, serif;
+  --font-script: "Parisienne", cursive;
 }
 
 @layer base {
@@ -262,4 +287,608 @@ section[data-st-01]:not([data-st-01="pin"]) {
 /* Protect sections containing sticky children from containing-block confinement */
 section:has(.sticky) {
   will-change: auto;
+}
+
+/* Trip detail pages: sections size to their content (the rule above makes every section full-screen). */
+.trip-page section {
+  min-height: 0;
+}
+.trip-page section[data-hero-section] {
+  min-height: 520px;
+}
+
+/* ==========================================================================
+   Site colour themes (switched from the palette button in the header)
+   Each theme sets the semantic tokens and re-tints Tailwind's neutral scale.
+   ========================================================================== */
+
+html[data-theme="mother-earth"] {
+  --paper: #F4F1E2;
+  --ink: #513229;
+  --ink-soft: #6B473A;
+  --ink-deep: #3A231C;
+  --brand: #513229;
+  --color-neutral-50: #ede9db;
+  --color-neutral-100: #e5e0d1;
+  --color-neutral-200: #d8d1c3;
+  --color-neutral-300: #c3b8ab;
+  --color-neutral-400: #a19084;
+  --color-neutral-500: #7f675d;
+  --color-neutral-600: #6f554b;
+  --color-neutral-700: #63473e;
+  --color-neutral-800: #5a3d33;
+  --color-neutral-900: #55362d;
+  --color-neutral-950: #52342b;
+}
+
+html[data-theme="desert-cocoa"] {
+  --paper: #F4E6D2;
+  --ink: #291C0E;
+  --ink-soft: #6E473B;
+  --ink-deep: #1A110A;
+  --brand: #6E473B;
+  --color-neutral-50: #ecdeca;
+  --color-neutral-100: #e2d4c0;
+  --color-neutral-200: #d1c4b1;
+  --color-neutral-300: #b7a997;
+  --color-neutral-400: #998b7a;
+  --color-neutral-500: #726555;
+  --color-neutral-600: #594b3c;
+  --color-neutral-700: #46392a;
+  --color-neutral-800: #382b1c;
+  --color-neutral-900: #2f2214;
+  --color-neutral-950: #2b1e10;
+}
+
+html[data-theme="amber-walnut"] {
+  --paper: #EBEFEE;
+  --ink: #4A413C;
+  --ink-soft: #5E524B;
+  --ink-deep: #2F2824;
+  --brand: #BB6C43;
+  --color-neutral-50: #e5e8e7;
+  --color-neutral-100: #dddfde;
+  --color-neutral-200: #d0d1d0;
+  --color-neutral-300: #bbbbb9;
+  --color-neutral-400: #94918e;
+  --color-neutral-500: #6f6965;
+  --color-neutral-600: #625b57;
+  --color-neutral-700: #59514c;
+  --color-neutral-800: #514944;
+  --color-neutral-900: #4d443f;
+  --color-neutral-950: #4b423d;
+}
+
+html[data-theme="yacht-club"] {
+  --paper: #F2F0EF;
+  --ink: #245F73;
+  --ink-soft: #2F7189;
+  --ink-deep: #173F4D;
+  --brand: #733E24;
+  --color-neutral-50: #eaeaea;
+  --color-neutral-100: #dfe3e4;
+  --color-neutral-200: #cfd7da;
+  --color-neutral-300: #b4c5ca;
+  --color-neutral-400: #7498a3;
+  --color-neutral-500: #417384;
+  --color-neutral-600: #376c7e;
+  --color-neutral-700: #30677a;
+  --color-neutral-800: #2a6376;
+  --color-neutral-900: #266174;
+  --color-neutral-950: #256074;
+}
+
+/* Red Dot Tours palette (reddottours.com): warm stone, espresso ink, brick accent */
+html[data-theme="red-dot"] {
+  --paper: #F4F3EF;
+  --ink: #2C2623;
+  --ink-soft: #5C5448;
+  --ink-deep: #090807;
+  --brand: #9D3828;
+  --color-neutral-50: #eae9e5;
+  --color-neutral-100: #dedcda;
+  --color-neutral-200: #cac9c8;
+  --color-neutral-300: #b7b3ae;
+  --color-neutral-400: #969391;
+  --color-neutral-500: #8d877f;
+  --color-neutral-600: #6c655a;
+  --color-neutral-700: #5c5448;
+  --color-neutral-800: #443c35;
+  --color-neutral-900: #2c2623;
+  --color-neutral-950: #090807;
+}
+
+
+/* Red Dot typography: licensed files served from /public/font */
+@font-face { font-family: "F37 Wicklow"; src: url("/font/F37_Wicklow/F37Wicklow-Light.otf") format("opentype"); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: "F37 Wicklow"; src: url("/font/F37_Wicklow/F37Wicklow-LightItalic.otf") format("opentype"); font-weight: 300; font-style: italic; font-display: swap; }
+@font-face { font-family: "F37 Wicklow"; src: url("/font/F37_Wicklow/F37Wicklow-Regular.otf") format("opentype"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "F37 Wicklow"; src: url("/font/F37_Wicklow/F37Wicklow-Medium.otf") format("opentype"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "F37 Wicklow"; src: url("/font/F37_Wicklow/F37Wicklow-MediumItalic.otf") format("opentype"); font-weight: 500; font-style: italic; font-display: swap; }
+@font-face { font-family: "PP Neue Montreal"; src: url("/font/pp-neue-montreal-cufonfonts/ppneuemontreal-book.otf") format("opentype"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "PP Neue Montreal"; src: url("/font/pp-neue-montreal-cufonfonts/ppneuemontreal-italic.otf") format("opentype"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "PP Neue Montreal"; src: url("/font/pp-neue-montreal-cufonfonts/ppneuemontreal-medium.otf") format("opentype"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "PP Neue Montreal"; src: url("/font/pp-neue-montreal-cufonfonts/ppneuemontreal-bold.otf") format("opentype"); font-weight: 700; font-style: normal; font-display: swap; }
+
+/* Red Dot typography (reddottours.com): F37 Wicklow headings, PP Neue Montreal body,
+   Caveat as the free stand-in for September Spirit (their script). */
+html[data-font="red-dot"] {
+  --font-sans: "PP Neue Montreal", "Helvetica", "Arial", ui-sans-serif, sans-serif;
+  --font-serif: "F37 Wicklow", ui-serif, Georgia, serif;
+  --font-script: "Caveat", cursive;
+}
+html[data-font="red-dot"] h1,
+html[data-font="red-dot"] h2,
+html[data-font="red-dot"] h3,
+html[data-font="red-dot"] h4 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+}
+/* Hero headline: larger, with a little breathing room between letters */
+html[data-font="red-dot"] .hero-frame h1 {
+  font-size: clamp(2.75rem, 5.5vw + 0.5rem, 4.75rem);
+  letter-spacing: 0.02em;
+  line-height: 1.08;
+}
+html[data-font="red-dot"] h1 :is(i, em),
+html[data-font="red-dot"] h2 :is(i, em),
+html[data-font="red-dot"] h3 :is(i, em) {
+  font-style: italic;
+  font-weight: 500;
+}
+html[data-font="red-dot"] .eyebrow {
+  font-family: var(--font-script);
+  font-size: 1.75rem;
+  transform: rotate(-1deg);
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+/* Sahara Editorial: Fraunces (warm, soft-cornered serif) + DM Sans. Suits the earthy palettes. */
+html[data-font="sahara-editorial"] {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+}
+html[data-font="sahara-editorial"] h1,
+html[data-font="sahara-editorial"] h2,
+html[data-font="sahara-editorial"] h3,
+html[data-font="sahara-editorial"] h4 {
+  font-family: "Fraunces", ui-serif, Georgia, serif;
+  font-weight: 400;
+  font-optical-sizing: auto;
+}
+
+/* Sahara Editorial hero (modelled on the reddottours.com home hero): copy anchored
+   bottom-left, tight serif headline with one italic word, short lede, no buttons. */
+html[data-font="sahara-editorial"] .hero-frame h1 {
+  /* Scales with the viewport so "Untamed Sahara of Erg Chegaga" always fits on one line */
+  font-size: min(5.4vw, 4rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  white-space: nowrap;
+}
+html[data-font="sahara-editorial"] .hero-frame {
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+html[data-font="sahara-editorial"] .hero-copy {
+  width: 100%;
+  max-width: 52rem;
+  text-align: left;
+}
+html[data-font="sahara-editorial"] .hero-eyebrow,
+html[data-font="sahara-editorial"] .hero-actions {
+  display: none;
+}
+html[data-font="sahara-editorial"] .hero-em {
+  font-style: italic;
+  font-weight: 300;
+}
+.hero-lede {
+  display: none;
+}
+.hero-em {
+  font-style: normal;
+}
+.hero-br {
+  display: none;
+}
+html[data-font="sahara-editorial"] .hero-br {
+  display: initial;
+}
+html[data-font="sahara-editorial"] .hero-lede {
+  display: block;
+  max-width: min(26rem, 100%);
+  margin: 1.1rem 0 0;
+  font-size: clamp(0.875rem, 1.1vw, 1.05rem);
+  line-height: 1.4;
+  letter-spacing: -0.015em;
+}
+
+/* Sahara Editorial navbar: logo in F37 Wicklow; centred on wide screens
+   with the links on the left and the actions on the right. */
+/* Links: slightly smaller with a little air between letters, like reddottours.com */
+html:is([data-font="sahara-editorial"], [data-font="red-dot"]) .nav-links {
+  gap: 1.5em;
+  font-size: 0.9rem;
+}
+html:is([data-font="sahara-editorial"], [data-font="red-dot"]) .nav-links a {
+  font-size: 0.9rem;
+  letter-spacing: 0.015em;
+}
+/* Logo: F37 Wicklow in both fonts. Weight matches each hero headline (500 Red Dot, 400 Sahara
+   Editorial). Capitals take slight positive tracking (negative tracking is for lowercase display). */
+html:is([data-font="sahara-editorial"], [data-font="red-dot"]) .nav-logo {
+  font-family: "F37 Wicklow", ui-serif, Georgia, serif;
+  font-weight: 500; /* heaviest real F37 Wicklow weight (no Bold file) */
+  -webkit-text-stroke: 0.6px currentColor; /* extra heft without synthetic bold */
+  paint-order: stroke fill;
+  letter-spacing: 0.04em;
+  line-height: 1.05;
+}
+/* Red Dot desktop: light logo (no stroke, which would fake extra weight) */
+@media (min-width: 768px) {
+  html[data-font="red-dot"] .nav-logo {
+    font-weight: 600;
+    -webkit-text-stroke: 0;
+  }
+}
+@media (min-width: 1280px) {
+  html:is([data-font="sahara-editorial"], [data-font="red-dot"]) .site-nav {
+    justify-content: flex-start;
+  }
+  html:is([data-font="sahara-editorial"], [data-font="red-dot"]) .nav-right {
+    display: contents;
+  }
+  html:is([data-font="sahara-editorial"], [data-font="red-dot"]) .nav-links {
+    order: 0;
+    margin-right: auto;
+  }
+  html:is([data-font="sahara-editorial"], [data-font="red-dot"]) .nav-left {
+    order: 1;
+  }
+  html:is([data-font="sahara-editorial"], [data-font="red-dot"]) .nav-actions {
+    order: 2;
+    margin-left: 1rem;
+  }
+  html:is([data-font="sahara-editorial"], [data-font="red-dot"]) .nav-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    font-size: 2rem;
+    white-space: nowrap;
+  }
+}
+
+/* Smooth colour cross-fade while switching themes (colour props only, never transforms) */
+html.theme-switching *,
+html.theme-switching *::before,
+html.theme-switching *::after {
+  transition:
+    background-color 450ms cubic-bezier(0.22, 1, 0.36, 1),
+    color 450ms cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 450ms cubic-bezier(0.22, 1, 0.36, 1),
+    fill 450ms cubic-bezier(0.22, 1, 0.36, 1) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.theme-switching *,
+  html.theme-switching *::before,
+  html.theme-switching *::after {
+    transition: none !important;
+  }
+}
+
+/* Progressive blur (bottom edge) */
+.progressive-blur {
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  left: 0;
+  height: 200px;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.progressive-blur.bottom-blur {
+  --blur-direction: to top;
+  bottom: -32px;
+}
+
+.progressive-blur .layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.progressive-blur .blur-1 {
+  z-index: 1;
+  -webkit-backdrop-filter: blur(0.078125px);
+  backdrop-filter: blur(0.078125px);
+  -webkit-mask-image: linear-gradient(
+    var(--blur-direction),
+    transparent 87.5%,
+    #000 100%
+  );
+  mask-image: linear-gradient(
+    var(--blur-direction),
+    transparent 87.5%,
+    #000 100%
+  );
+}
+
+.progressive-blur .blur-2 {
+  z-index: 2;
+  -webkit-backdrop-filter: blur(0.15625px);
+  backdrop-filter: blur(0.15625px);
+  -webkit-mask-image: linear-gradient(
+    var(--blur-direction),
+    transparent 75%,
+    #000 87.5% 100%
+  );
+  mask-image: linear-gradient(
+    var(--blur-direction),
+    transparent 75%,
+    #000 87.5% 100%
+  );
+}
+
+.progressive-blur .blur-3 {
+  z-index: 3;
+  -webkit-backdrop-filter: blur(0.3125px);
+  backdrop-filter: blur(0.3125px);
+  -webkit-mask-image: linear-gradient(
+    var(--blur-direction),
+    transparent 62.5%,
+    #000 75% 87.5%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    var(--blur-direction),
+    transparent 62.5%,
+    #000 75% 87.5%,
+    transparent 100%
+  );
+}
+
+.progressive-blur .blur-4 {
+  z-index: 4;
+  -webkit-backdrop-filter: blur(0.625px);
+  backdrop-filter: blur(0.625px);
+  -webkit-mask-image: linear-gradient(
+    var(--blur-direction),
+    transparent 50%,
+    #000 62.5% 75%,
+    transparent 87.5%
+  );
+  mask-image: linear-gradient(
+    var(--blur-direction),
+    transparent 50%,
+    #000 62.5% 75%,
+    transparent 87.5%
+  );
+}
+
+.progressive-blur .blur-5 {
+  z-index: 5;
+  -webkit-backdrop-filter: blur(1.25px);
+  backdrop-filter: blur(1.25px);
+  -webkit-mask-image: linear-gradient(
+    var(--blur-direction),
+    transparent 37.5%,
+    #000 50% 62.5%,
+    transparent 75%
+  );
+  mask-image: linear-gradient(
+    var(--blur-direction),
+    transparent 37.5%,
+    #000 50% 62.5%,
+    transparent 75%
+  );
+}
+
+.progressive-blur .blur-6 {
+  z-index: 6;
+  -webkit-backdrop-filter: blur(2.5px);
+  backdrop-filter: blur(2.5px);
+  -webkit-mask-image: linear-gradient(
+    var(--blur-direction),
+    transparent 25%,
+    #000 37.5% 50%,
+    transparent 62.5%
+  );
+  mask-image: linear-gradient(
+    var(--blur-direction),
+    transparent 25%,
+    #000 37.5% 50%,
+    transparent 62.5%
+  );
+}
+
+.progressive-blur .blur-7 {
+  z-index: 7;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  -webkit-mask-image: linear-gradient(
+    var(--blur-direction),
+    transparent 12.5%,
+    #000 25% 37.5%,
+    transparent 50%
+  );
+  mask-image: linear-gradient(
+    var(--blur-direction),
+    transparent 12.5%,
+    #000 25% 37.5%,
+    transparent 50%
+  );
+}
+
+.progressive-blur .blur-8 {
+  z-index: 8;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  -webkit-mask-image: linear-gradient(
+    var(--blur-direction),
+    transparent 0%,
+    #000 12.5% 25%,
+    transparent 37.5%
+  );
+  mask-image: linear-gradient(
+    var(--blur-direction),
+    transparent 0%,
+    #000 12.5% 25%,
+    transparent 37.5%
+  );
+}
+
+@media (max-width: 680px) {
+  .progressive-blur {
+    height: 160px;
+  }
+}
+
+
+/* ==========================================================================
+   Trip route map (Leaflet): numbered pins and a dotted route, themed with site tokens
+   ========================================================================== */
+.route-map {
+  position: relative;
+  z-index: 0;
+  background: var(--ink-deep);
+}
+.route-map--light {
+  background: color-mix(in srgb, var(--ink) 6%, var(--paper));
+}
+.route-map .leaflet-container {
+  font: inherit;
+  background: transparent;
+}
+.route-map .leaflet-control-attribution {
+  background: color-mix(in srgb, var(--paper) 70%, transparent);
+  color: color-mix(in srgb, var(--ink) 60%, transparent);
+  font-size: 10px;
+}
+.route-map--dark .leaflet-control-attribution {
+  background: rgb(0 0 0 / 0.45);
+  color: rgb(255 255 255 / 0.55);
+}
+.route-map .leaflet-control-attribution a {
+  color: inherit;
+}
+.route-map .leaflet-bar a {
+  background: var(--paper);
+  color: var(--ink);
+  border-color: color-mix(in srgb, var(--ink) 15%, transparent);
+}
+.route-map .route-line {
+  stroke: var(--brand);
+}
+.route-map--dark .route-line {
+  stroke: rgb(255 255 255 / 0.55);
+}
+.route-pin-wrap {
+  background: transparent;
+  border: 0;
+}
+.route-pin {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  margin: 2px;
+  border-radius: 9999px;
+  background: var(--paper);
+  color: var(--ink);
+  border: 2px solid var(--brand);
+  font-size: 11px;
+  line-height: 1;
+  box-shadow: 0 4px 14px -4px rgb(0 0 0 / 0.45);
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.3s, background-color 0.3s, color 0.3s;
+}
+.route-pin b {
+  font-weight: 600;
+}
+.route-pin.is-active {
+  transform: scale(1.35);
+  background: var(--brand);
+  color: var(--paper);
+}
+.route-pin.is-dim {
+  opacity: 0.25;
+}
+
+/* Single-place map: a pulsing dot with the place's name beside it */
+.route-pin--dot::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background: var(--brand);
+}
+.route-pin--dot {
+  animation: route-pin-pulse 2.4s ease-out infinite;
+}
+@keyframes route-pin-pulse {
+  0% {
+    box-shadow: 0 4px 14px -4px rgb(0 0 0 / 0.45), 0 0 0 0 color-mix(in srgb, var(--brand) 45%, transparent);
+  }
+  70%,
+  100% {
+    box-shadow: 0 4px 14px -4px rgb(0 0 0 / 0.45), 0 0 0 16px transparent;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .route-pin--dot {
+    animation: none;
+  }
+}
+.route-pin-label {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 6px;
+  padding: 6px 12px;
+  border-radius: 9999px;
+  background: var(--paper);
+  color: var(--ink);
+  border: 1px solid color-mix(in srgb, var(--ink) 12%, transparent);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  box-shadow: 0 6px 18px -8px rgb(0 0 0 / 0.4);
+}
+
+/* ==========================================================================
+   Parallax images (src/lib/parallaxImages.ts): the frame clips, the direct image child moves
+   ========================================================================== */
+
+[data-parallax-image] {
+  position: relative;
+  overflow: hidden;
+}
+
+[data-parallax-image] > img,
+[data-parallax-image] > picture {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  transform-origin: center bottom;
+}
+
+[data-parallax-image] > img img,
+[data-parallax-image] > picture img {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
 }

@@ -1,7 +1,14 @@
 'use client';
 
 import { useScroll, useTransform, motion } from 'framer-motion';
-import { useRef } from 'react';
+import { useScrollContainer } from "@/lib/scrollContainer";
+import { useEffect, useRef } from 'react';
+
+/** Empty frame left above and beside the zoomed centre image: same as the footer (px-[4px]). Bottom is flush. */
+const FRAME = 4;
+/** Corner radius once zoomed: Tailwind `rounded-2xl` in this theme (matches the footer). */
+const FRAME_RADIUS = 18;
+const ZOOM_END = 0.35;
 
 export interface ParallaxImage {
   src: string;
@@ -32,14 +39,44 @@ export function ZoomParallax({
   centerLayers,
 }: ZoomParallaxProps) {
   const container = useRef<HTMLDivElement>(null);
+  const stageRef = useRef<HTMLDivElement>(null);
+  const centerRef = useRef<HTMLDivElement>(null);
+  // Final zoom factors so the centre image ends 4px short of the viewport on every side
+  const zoom = useRef({ sx: 4, sy: 4 });
+  const scrollContainer = useScrollContainer();
   const { scrollYProgress } = useScroll({
+    ...scrollContainer,
     target: container,
     offset: ['start start', 'end end'],
   });
 
-  // Phase 1 (0 to 0.35): Zoom collage into full viewport
+  useEffect(() => {
+    const stage = stageRef.current;
+    const center = centerRef.current;
+    if (!stage || !center) return;
+    const measure = () => {
+      const w = center.offsetWidth;
+      const h = center.offsetHeight;
+      if (!w || !h) return;
+      zoom.current = {
+        sx: (stage.clientWidth - FRAME * 2) / w,
+        sy: (stage.clientHeight - FRAME) / h, // top frame only: flush with the footer below
+      };
+    };
+    measure();
+    const ro = new ResizeObserver(measure);
+    ro.observe(stage);
+    ro.observe(center);
+    return () => ro.disconnect();
+  }, []);
+
+  // Phase 1 (0 to 0.35): Zoom collage into the viewport, leaving the footer-style 4px frame
   // Phase 2 (0.35 to 1.0): Pin at 100% viewport & trigger multi-layer parallax inside [Img 0]
-  const scaleCenter = useTransform(scrollYProgress, [0, 0.35, 1], [1, 4, 4]);
+  const zoomT = useTransform(scrollYProgress, (v) => Math.min(1, Math.max(0, v / ZOOM_END)));
+  const scaleXCenter = useTransform(zoomT, (t) => 1 + (zoom.current.sx - 1) * t);
+  const scaleYCenter = useTransform(zoomT, (t) => 1 + (zoom.current.sy - 1) * t);
+  // Shift down half the frame so the spare 4px ends up at the top and the bottom is flush
+  const shiftCenter = useTransform(zoomT, (t) => (FRAME / 2) * t);
 
   // Peripheral image scales and fadeout
   const scale5 = useTransform(scrollYProgress, [0, 0.35], [1, 5.2]);
@@ -48,10 +85,16 @@ export function ZoomParallax({
   const scale9 = useTransform(scrollYProgress, [0, 0.35], [1, 9.5]);
   const peripheralOpacity = useTransform(scrollYProgress, [0, 0.28, 0.35], [1, 0.8, 0]);
 
-  const scales = [scaleCenter, scale5, scale6, scale5, scale6, scale8, scale9];
+  const scales = [scale5, scale5, scale6, scale5, scale6, scale8, scale9];
 
   // Center image transitions: border-radius vanishes as it expands to full screen
-  const borderRadius0 = useTransform(scrollYProgress, [0, 0.3], ['16px', '0px']);
+  // (radius is applied before scaling, so divide by the zoom to land on a true 18px at the end)
+  // Top corners end at the footer's 18px; bottom corners square off to 0
+  const radiusTop0 = useTransform(zoomT, (t) => {
+    const end = FRAME_RADIUS / ((zoom.current.sx + zoom.current.sy) / 2);
+    return `${16 + (end - 16) * t}px`;
+  });
+  const radiusBottom0 = useTransform(zoomT, (t) => `${16 * (1 - t)}px`);
 
   // Parallax transforms inside [ Img 0 ] (Active from 0.35 to 1.0)
   // We use smaller percentage movements because they are relative to the oversized 160% height container
@@ -74,18 +117,19 @@ export function ZoomParallax({
 
   return (
     <div ref={container} className="relative h-[380vh] w-full">
-      <div className="sticky top-0 h-screen w-full overflow-hidden  ">
+      <div ref={stageRef} className="sticky top-0 h-screen w-full overflow-hidden  ">
         {images.map(({ src, alt }, index) => {
           const isCenterImage = index === 0;
-          const scale = isCenterImage ? scaleCenter : scales[index % scales.length];
+          const scale = scales[index % scales.length];
 
           return (
             <motion.div
               key={index}
-              style={{
-                scale,
-                opacity: isCenterImage ? 1 : peripheralOpacity,
-              }}
+              style={
+                isCenterImage
+                  ? { scaleX: scaleXCenter, scaleY: scaleYCenter, y: shiftCenter, opacity: 1 }
+                  : { scale, opacity: peripheralOpacity }
+              }
               className={`absolute top-0 left-0 flex h-full w-full items-center justify-center pointer-events-none ${
                 index === 1
                   ? '[&>div]:!-top-[30vh] [&>div]:!left-[5vw] [&>div]:!h-[30vh] [&>div]:!w-[35vw]'
@@ -113,7 +157,17 @@ export function ZoomParallax({
               }`}
             >
               <motion.div
-                style={isCenterImage ? { borderRadius: borderRadius0 } : undefined}
+                ref={isCenterImage ? centerRef : undefined}
+                style={
+                  isCenterImage
+                    ? {
+                        borderTopLeftRadius: radiusTop0,
+                        borderTopRightRadius: radiusTop0,
+                        borderBottomLeftRadius: radiusBottom0,
+                        borderBottomRightRadius: radiusBottom0,
+                      }
+                    : undefined
+                }
                 className={`relative h-[25vh] w-[25vw] overflow-hidden shadow-2xl transition-all duration-300 ${
                   isCenterImage
                     ? ' ring-0 bg-transparent md:px-[1px] '

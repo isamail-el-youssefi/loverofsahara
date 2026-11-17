@@ -33,3 +33,6 @@ dist-ssr
 
 # Old website kept locally only as an import source (see scripts/import-old-trips.ts)
 bringing data from old website/
+
+# Old-site export with customer emails: never commit
+Review_rows.csv

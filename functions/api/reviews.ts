@@ -120,8 +120,12 @@ export const onRequestPost: Handler = async ({ request, env }) => {
     if (f.size > MAX_PHOTO_BYTES) return json({ error: "Each photo must be under 8 MB." }, 400);
   }
 
+  if (files.length && (!env.PHOTOS || !env.PHOTOS_BASE_URL)) {
+    return json({ error: "Photo uploads aren't available yet. Please send your review without photos." }, 503);
+  }
+
   const id = crypto.randomUUID();
-  const base = env.PHOTOS_BASE_URL.replace(/\/$/, "");
+  const base = (env.PHOTOS_BASE_URL ?? "").replace(/\/$/, "");
   const photos: string[] = [];
   for (const [i, f] of files.entries()) {
     const key = `reviews/${id}-${i + 1}.${EXT[f.type]}`;

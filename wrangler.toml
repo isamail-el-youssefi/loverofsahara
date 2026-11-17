@@ -8,11 +8,11 @@ pages_build_output_dir = "dist"
 #   2. npx wrangler r2 bucket create review-photos   -> enable public access, paste its URL in PHOTOS_BASE_URL
 #   3. uncomment the blocks, then apply migrations/0001_reviews.sql and migrations/seed-old-reviews.sql
 
-# [[d1_databases]]
-# binding = "DB"
-# database_name = "lover-reviews"
-# database_id = "REPLACE_WITH_D1_DATABASE_ID"
-# migrations_dir = "migrations"
+[[d1_databases]]
+binding = "DB"
+database_name = "lover-reviews"
+database_id = "5fffa75c-c0a7-4f08-b1fb-cff52dceefd3"
+migrations_dir = "migrations"
 
 # [[r2_buckets]]
 # binding = "PHOTOS"

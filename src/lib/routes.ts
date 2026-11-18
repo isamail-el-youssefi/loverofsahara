@@ -9,6 +9,9 @@
  *   /blog, /blog/<n>       articles
  *   /about                 about Lover of Sahara and its owner
  *   /contact               contact details and the trip request form
+ *   /brochures             free PDF guides, in six languages
+ *   /brochures/<slug>      read one guide inside the site
+ *   /gallery               photos from every journey
  *
  * Old links keep working: `#trip/<slug>`-style hashes and the previous site's `/trips/5`,
  * `/excursions/4`, `/trekkings/6` URLs are mapped to the new paths by `canonicalPath`.
@@ -24,6 +27,9 @@ export type Route =
   | { name: "trips" }
   | { name: "about" }
   | { name: "contact" }
+  | { name: "brochures" }
+  | { name: "brochure"; slug: string }
+  | { name: "gallery" }
   | { name: "trip"; slug: string }
   | { name: "place"; id: string }
   | { name: "blog" }
@@ -36,6 +42,9 @@ export const TRIPS_PATH = "/trips";
 export const BLOG_PATH = "/blog";
 export const ABOUT_PATH = "/about";
 export const CONTACT_PATH = "/contact";
+export const BROCHURES_PATH = "/brochures";
+export const brochurePath = (slug: string) => `/brochures/${slug}`;
+export const GALLERY_PATH = "/gallery";
 
 const trim = (p: string) => (p.length > 1 ? p.replace(/\/+$/, "") : p) || "/";
 const slugForLegacyId = (n: string) => (SLUG_BY_LEGACY_ID as Record<number, string>)[Number(n)];
@@ -47,8 +56,12 @@ export function parseRoute(pathname: string): Route {
   if (p === BLOG_PATH) return { name: "blog" };
   if (p === ABOUT_PATH) return { name: "about" };
   if (p === CONTACT_PATH) return { name: "contact" };
+  if (p === BROCHURES_PATH) return { name: "brochures" };
+  if (p === GALLERY_PATH) return { name: "gallery" };
   let m = /^\/trips\/([^/]+)$/.exec(p);
   if (m) return { name: "trip", slug: decodeURIComponent(m[1]!) };
+  m = /^\/brochures\/([^/.]+)$/.exec(p);
+  if (m) return { name: "brochure", slug: decodeURIComponent(m[1]!) };
   m = /^\/places\/([^/]+)$/.exec(p);
   if (m) return { name: "place", id: decodeURIComponent(m[1]!) };
   m = /^\/blog\/(\d+)$/.exec(p);
@@ -61,6 +74,8 @@ export function routeKey(r: Route): string {
   switch (r.name) {
     case "trip":
       return `trip-${r.slug}`;
+    case "brochure":
+      return `brochure-${r.slug}`;
     case "place":
       return `place-${r.id}`;
     case "article":

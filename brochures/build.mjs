@@ -16,9 +16,18 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const [slug = "zagora", lang = "en"] = process.argv.slice(2);
 const content = JSON.parse(fs.readFileSync(path.join(root, "brochures", "content", `${slug}.${lang}.json`), "utf8"));
 if (!content.credit) {
-  const shared = JSON.parse(fs.readFileSync(path.join(root, "brochures", "content", "_credit.en.json"), "utf8"));
+  const creditFile = path.join(root, "brochures", "content", `_credit.${lang}.json`);
+  const shared = JSON.parse(fs.readFileSync(fs.existsSync(creditFile) ? creditFile : path.join(root, "brochures", "content", "_credit.en.json"), "utf8"));
   content.credit = { ...shared, text: shared.text.replace("{{subject}}", content.creditSubject) };
 }
+const UI = {
+  en: { inside: ["Inside the", "guide."], plan: ["Plan your Sahara", "journey."] },
+  fr: { inside: ["Dans ce", "guide."], plan: ["Votre voyage", "au Sahara."] },
+  es: { inside: ["Dentro de la", "guía."], plan: ["Su viaje", "al Sahara."] },
+  de: { inside: ["Im", "Reiseführer."], plan: ["Ihre Reise", "in die Sahara."] },
+  it: { inside: ["Dentro la", "guida."], plan: ["Il tuo viaggio", "nel Sahara."] },
+  zh: { inside: ["指南", "目录。"], plan: ["您的撒哈拉之旅。", ""] },
+}[lang] ?? (() => { throw new Error("No UI strings for lang " + lang); })();
 const I = content.items;
 const FOLIO = `Lover of Sahara  ·  ${content.title}`;
 
@@ -36,7 +45,7 @@ const asset = (p) => pathToFileURL(path.join(root, ASSET_DIR, p)).href;
 const font = (p) => pathToFileURL(path.join(root, "public", "font", p)).href;
 
 /* ---------- styles ---------- */
-const css = `
+let css = `
 @font-face{font-family:"F37 Wicklow";src:url("${font("F37_Wicklow/F37Wicklow-Light.otf")}");font-weight:300}
 @font-face{font-family:"F37 Wicklow";src:url("${font("F37_Wicklow/F37Wicklow-LightItalic.otf")}");font-weight:300;font-style:italic}
 @font-face{font-family:"F37 Wicklow";src:url("${font("F37_Wicklow/F37Wicklow-Regular.otf")}");font-weight:400}
@@ -99,6 +108,14 @@ h1,h2,h3{font-family:"F37 Wicklow",Georgia,serif;font-weight:500;margin:0;letter
 .cover-bottom{position:absolute;left:16mm;right:16mm;bottom:20mm;color:#fff}
 .cover h1{font-size:60pt;line-height:.98;letter-spacing:-.04em;color:#fff;margin:6mm 0 5mm}
 .cover h1 .dim{color:rgba(255,255,255,.62)}
+html:not([lang=en]) .cover h1{max-width:138mm}
+html:not([lang=en]):not([lang=zh]) .s06 .item p{font-size:8.3pt;line-height:1.5}
+html:not([lang=en]):not([lang=zh]) .s06 .item{margin-bottom:4mm;padding-top:3mm}
+html:not([lang=en]):not([lang=zh]) .s06 .item h3{font-size:12.5pt;margin-bottom:2mm}
+html:not([lang=en]) .emerg{margin-top:3mm;padding:4.2mm 7mm}
+html:not([lang=en]) .emerg h3{font-size:12.5pt;margin-bottom:2.5mm}
+html:not([lang=en]) .emerg .tel{font-size:21pt}
+html:not([lang=en]) .emerg .lb{margin-top:1.4mm;font-size:7pt;line-height:1.25}
 .cover-bottom p{margin:0;font-size:12pt;color:rgba(255,255,255,.82)}
 /* contents */
 .contents .inner{padding-top:22mm}
@@ -137,11 +154,36 @@ h1,h2,h3{font-family:"F37 Wicklow",Georgia,serif;font-weight:500;margin:0;letter
 .partners li{padding:1.6mm 0;border-top:.4pt solid rgba(255,255,255,.3);max-width:110mm}
 .small{font-size:8.2pt;color:rgba(255,255,255,.75);margin:0}
 .back .display{font-size:40pt}
+/* facts grid and tables (original guides) */
+.facts{display:grid;grid-template-columns:1fr 1fr 1fr;gap:7mm 9mm;margin-top:9mm}
+.fact{border-top:.4pt solid var(--rule);padding-top:4mm}
+.fact .fn{font-family:"F37 Wicklow",serif;font-weight:300;font-size:25pt;line-height:1;letter-spacing:-.035em;color:var(--brand)}
+.fact .fl{margin-top:2.2mm;font-size:8.6pt;line-height:1.45;color:var(--n600)}
+.tbl{width:100%;border-collapse:collapse;margin-top:8mm}
+.tbl th{text-align:left;font-weight:500;font-size:7.6pt;letter-spacing:.05em;text-transform:uppercase;color:var(--n500);padding:0 4mm 3mm 0;border-bottom:.6pt solid var(--ink)}
+.tbl td{vertical-align:top;padding:3.6mm 4mm 3.6mm 0;border-bottom:.4pt solid var(--rule);color:var(--n600);font-size:8.8pt;line-height:1.5}
+.tbl td:first-child{font-family:"F37 Wicklow",serif;font-size:11.5pt;color:var(--ink);width:32mm;letter-spacing:-.02em}
+.tbl.w1 td:first-child{width:112mm}
+.note{margin:6mm 0 0;font-size:8pt;line-height:1.5;color:var(--n500);font-style:italic}
 /* sticker (the Lover of Sahara brand mark): cover and last page only */
 .sticker{position:absolute;display:block;height:auto;object-fit:contain;transform:rotate(-8deg)}
 .cover .sticker{right:9mm;bottom:13mm;width:42mm}
 .back .sticker{right:10mm;bottom:14mm;width:46mm}
 `;
+// Chinese: the brand fonts have no Han glyphs, so Latin/digits keep the brand fonts and Han falls back to Microsoft YaHei
+if (lang === "zh") {
+  css = css.replace(/"F37 Wicklow",(Georgia,)?serif/g, '"F37 Wicklow","Microsoft YaHei",sans-serif')
+    .replace(/"PP Neue Montreal",Helvetica,Arial,sans-serif/g, '"PP Neue Montreal","Microsoft YaHei",sans-serif');
+  css += `html[lang=zh] *{letter-spacing:0!important;font-style:normal!important}
+html[lang=zh] .mark{letter-spacing:.12em!important}
+html[lang=zh] body{line-height:1.85;font-size:9.6pt}
+html[lang=zh] .display{font-size:29pt;line-height:1.2}
+html[lang=zh] .display.md{font-size:24pt}
+html[lang=zh] h1,html[lang=zh] h2,html[lang=zh] h3{font-weight:400;line-height:1.25}
+html[lang=zh] .cover h1{font-size:50pt}
+html[lang=zh] .lead{line-height:1.8}
+html[lang=zh] .item p,html[lang=zh] .col p{text-align:left}`;
+}
 
 
 
@@ -199,7 +241,7 @@ const R = {
   contents: (p, ctx) => `<section class="page contents">
   <div class="inner">
     ${eyebrow(content.contentsTitle)}
-    <h2 class="display">Inside the <span class="dim">guide.</span></h2>
+    <h2 class="display">${UI.inside[0]} <span class="dim">${UI.inside[1]}</span></h2>
     <ol class="toc">${content.contents
       .map((c) => `<li><span class="n">${c.n}</span><span class="t">${esc(c.title)}</span><span class="p">${ctx.sectionPage[Number(c.n)]}</span></li>`)
       .join("")}</ol>
@@ -308,6 +350,35 @@ const R = {
   ${folio()}
 </section>`,
 
+  // big figures grid (key facts), optional text blocks below
+  facts: (p) => `<section class="page">
+  <div class="inner top-pad">
+    ${eyebrow(p.eyebrow)}
+    <h2 class="display">${two(p.title)}</h2>
+    ${p.lead ? `<p class="lead">${esc(txt(p.lead))}</p>` : ""}
+    <div class="facts">${p.facts.map((f) => `<div class="fact"><div class="fn">${esc(f.n)}</div><div class="fl">${esc(f.l)}</div></div>`).join("")}</div>
+    ${p.columns ? `<div class="cols2 gap">${columns(p.columns)}</div>` : ""}
+  </div>
+  ${p.band ? `<div ${bandAttr(p.band, "bottom")}>${bandImg(p.band)}</div>` : ""}
+  ${folio()}
+</section>`,
+
+  // table (comparison, months, packing), optional note and bottom photo band
+  table: (p) => `<section class="page">
+  <div class="inner top-pad">
+    ${eyebrow(p.eyebrow)}
+    <h2 class="display">${two(p.title)}</h2>
+    ${p.lead ? `<p class="lead">${esc(txt(p.lead))}</p>` : ""}
+    <table class="tbl${p.firstWide ? " w1" : ""}"><thead><tr>${p.head.map((h) => `<th>${esc(h)}</th>`).join("")}</tr></thead><tbody>${p.rows
+      .map((r) => `<tr>${r.map((c) => `<td>${esc(c)}</td>`).join("")}</tr>`)
+      .join("")}</tbody></table>
+    ${p.note ? `<p class="note">${esc(txt(p.note))}</p>` : ""}
+    ${p.columns ? `<div class="cols2 gap">${columns(p.columns)}</div>` : ""}
+  </div>
+  ${p.band ? `<div ${bandAttr(p.band, "bottom")}>${bandImg(p.band)}</div>` : ""}
+  ${folio()}
+</section>`,
+
   back: (p) => {
     const c = content.credit;
     return `<section class="page dark back">
@@ -321,7 +392,7 @@ const R = {
       <p class="small">${esc(c.website)}  ·  ${esc(c.email)}</p>
     </div>
     <div class="cta">
-      <h2 class="display light">Plan your Sahara <span class="dim">journey.</span></h2>
+      <h2 class="display light">${UI.plan[0]} <span class="dim">${UI.plan[1]}</span></h2>
       <p class="small">www.loverofsahara.tours  ·  loveroffsahara@gmail.com  ·  +212 661 842 609</p>
     </div>
   </div>

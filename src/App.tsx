@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef, type ReactNode, type MutableRefObject } from "react";
+import { lazy, Suspense, useEffect, useState, useRef, type ReactNode, type MutableRefObject } from "react";
 import { motion, AnimatePresence, useIsPresent, useReducedMotion } from "framer-motion";
 import Lenis from "lenis";
 import gsap from "gsap";
@@ -24,6 +24,10 @@ import { Blog } from "@/pages/Blog";
 import { Trips } from "@/pages/Trips";
 import { About } from "@/pages/About";
 import { Contact } from "@/pages/Contact";
+import { Brochures } from "@/pages/Brochures";
+import { Gallery } from "@/pages/Gallery";
+// pdf.js is heavy: the reader is only fetched when someone opens a brochure
+const BrochureReader = lazy(() => import("@/pages/BrochureReader").then((m) => ({ default: m.BrochureReader })));
 import { TripDetail } from "@/pages/TripDetail";
 import { PlaceDetail } from "@/pages/PlaceDetail";
 import { ArticleDetail } from "@/pages/ArticleDetail";
@@ -217,6 +221,8 @@ export default function App() {
         e.preventDefault();
         if (href !== window.location.pathname) window.history.pushState(null, "", href);
         setPath(window.location.pathname);
+        // Same page, new query string (e.g. /trips?category=...): let the page re-read it
+        window.dispatchEvent(new Event("los-urlchange"));
         return;
       }
 
@@ -277,6 +283,14 @@ export default function App() {
               <About />
             ) : route.name === "contact" ? (
               <Contact />
+            ) : route.name === "brochures" ? (
+              <Brochures />
+            ) : route.name === "brochure" ? (
+              <Suspense fallback={<div className="h-[100dvh] bg-ink-deep" />}>
+                <BrochureReader slug={route.slug} />
+              </Suspense>
+            ) : route.name === "gallery" ? (
+              <Gallery />
             ) : route.name === "trip" ? (
               <TripDetail slug={route.slug} />
             ) : route.name === "place" ? (

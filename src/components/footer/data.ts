@@ -4,6 +4,8 @@ export const footerCols = [
     links: [
       { name: "About Us", href: "/about" },
       { name: "Contact us", href: "/contact" },
+      { name: "Brochures", href: "/brochures" },
+      { name: "Gallery", href: "/gallery" },
       { name: "Our Nomad Guides", href: "#" },
       { name: "Zagora Gateway", href: "#" },
       { name: "Sustainability", href: "#" },

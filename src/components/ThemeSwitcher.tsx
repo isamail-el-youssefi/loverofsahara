@@ -4,6 +4,7 @@ import { Check } from "lucide-react";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import {
   ABOUT_STYLES,
+  BROCHURES_STYLES,
   CARD_STYLES,
   CONTACT_STYLES,
   CTA_STYLES,
@@ -13,9 +14,11 @@ import {
   GALLERY_STYLES,
   HOME_TRIPS_STYLES,
   INTRO_STYLES,
+  PHOTOS_STYLES,
   REVIEW_STYLES,
   THEMES,
   applyAboutStyle,
+  applyBrochuresStyle,
   applyCardStyle,
   applyContactStyle,
   applyCtaStyle,
@@ -24,6 +27,7 @@ import {
   applyGalleryStyle,
   applyHomeTripsStyle,
   applyIntroStyle,
+  applyPhotosStyle,
   applyReviewStyle,
   applyFont,
   applyTheme,
@@ -31,6 +35,7 @@ import {
   getStoredTheme,
 } from "@/lib/themes";
 import { useAboutStyle } from "@/hooks/use-about-style";
+import { useBrochuresStyle } from "@/hooks/use-brochures-style";
 import { useCardStyle } from "@/hooks/use-card-style";
 import { useContactStyle } from "@/hooks/use-contact-style";
 import { useCtaStyle } from "@/hooks/use-cta-style";
@@ -39,6 +44,7 @@ import { useFooterStyle } from "@/hooks/use-footer-style";
 import { useGalleryStyle } from "@/hooks/use-gallery-style";
 import { useHomeTripsStyle } from "@/hooks/use-home-trips-style";
 import { useIntroStyle } from "@/hooks/use-intro-style";
+import { usePhotosStyle } from "@/hooks/use-photos-style";
 import { useReviewStyle } from "@/hooks/use-review-style";
 
 const THEME_EVENT = "los-theme-change";
@@ -158,6 +164,8 @@ export function ThemeSwitcher({ light = false }: { light?: boolean }) {
   const footerId = useFooterStyle();
   const aboutId = useAboutStyle();
   const contactId = useContactStyle();
+  const brochuresId = useBrochuresStyle();
+  const photosId = usePhotosStyle();
   const reduce = useReducedMotion();
   const active = THEMES.find((t) => t.id === themeId) ?? THEMES[0]!;
 
@@ -428,6 +436,60 @@ export function ThemeSwitcher({ light = false }: { light?: boolean }) {
                 role="radio"
                 aria-checked={selected}
                 onClick={() => applyContactStyle(c.id)}
+                className={`flex items-center gap-3 rounded-xl px-3 py-2.5 text-left outline-none transition-colors focus-visible:ring-2 focus-visible:ring-ink/40 ${
+                  selected ? "bg-neutral-100" : "hover:bg-neutral-50"
+                }`}
+              >
+                <span className="min-w-0 flex-1">
+                  <span className="block text-[14px] font-semibold leading-tight">{c.name}</span>
+                  <span className="block truncate text-[12px] text-neutral-500">{c.mood}</span>
+                </span>
+                {selected && <Check size={16} className="shrink-0 text-ink" aria-hidden />}
+              </button>
+            );
+          })}
+        </div>
+
+        <p className="px-3 pb-2 pt-4 text-[11px] font-semibold uppercase tracking-[0.08em] text-neutral-500">
+          Gallery page
+        </p>
+        <div role="radiogroup" aria-label="Gallery page" className="flex flex-col gap-1">
+          {PHOTOS_STYLES.map((c) => {
+            const selected = c.id === photosId;
+            return (
+              <button
+                key={c.id}
+                type="button"
+                role="radio"
+                aria-checked={selected}
+                onClick={() => applyPhotosStyle(c.id)}
+                className={`flex items-center gap-3 rounded-xl px-3 py-2.5 text-left outline-none transition-colors focus-visible:ring-2 focus-visible:ring-ink/40 ${
+                  selected ? "bg-neutral-100" : "hover:bg-neutral-50"
+                }`}
+              >
+                <span className="min-w-0 flex-1">
+                  <span className="block text-[14px] font-semibold leading-tight">{c.name}</span>
+                  <span className="block truncate text-[12px] text-neutral-500">{c.mood}</span>
+                </span>
+                {selected && <Check size={16} className="shrink-0 text-ink" aria-hidden />}
+              </button>
+            );
+          })}
+        </div>
+
+        <p className="px-3 pb-2 pt-4 text-[11px] font-semibold uppercase tracking-[0.08em] text-neutral-500">
+          Brochures page
+        </p>
+        <div role="radiogroup" aria-label="Brochures page" className="flex flex-col gap-1">
+          {BROCHURES_STYLES.map((c) => {
+            const selected = c.id === brochuresId;
+            return (
+              <button
+                key={c.id}
+                type="button"
+                role="radio"
+                aria-checked={selected}
+                onClick={() => applyBrochuresStyle(c.id)}
                 className={`flex items-center gap-3 rounded-xl px-3 py-2.5 text-left outline-none transition-colors focus-visible:ring-2 focus-visible:ring-ink/40 ${
                   selected ? "bg-neutral-100" : "hover:bg-neutral-50"
                 }`}

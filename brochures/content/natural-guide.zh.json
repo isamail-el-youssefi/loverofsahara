@@ -1,0 +1,375 @@
+{
+  "lang": "zh",
+  "slug": "natural-guide",
+  "title": "自然指南",
+  "kicker": "自然指南",
+  "subtitle": "德拉-塔菲拉莱特地区的棕榈林、山谷与沙漠",
+  "creditSubject": "德拉-塔菲拉莱特地区的自然",
+  "cover": {
+    "line": "自然指南。",
+    "dim": ""
+  },
+  "contentsTitle": "目录",
+  "contents": [
+    {
+      "n": "01",
+      "title": "引言"
+    },
+    {
+      "n": "02",
+      "title": "德拉-塔菲拉莱特的棕榈林与翠绿山谷"
+    },
+    {
+      "n": "03",
+      "title": "本地区最值得一游的行程"
+    },
+    {
+      "n": "04",
+      "title": "实用信息"
+    }
+  ],
+  "items": {
+    "intro-lead": "这片面积 88,836 平方公里的广袤地区，汇集了迥然不同却同样迷人的景观。本指南尝试汇集其中一些最著名和不太知名的地方。从中阿特拉斯东部的阿亚奇山脉及其 Ait Ayach 山谷，到塔菲拉莱特和德拉的棕榈林，再到达德斯和托德哈峡谷，还有反阿特拉斯山脉的半沙漠 Saghro 山地，或梅尔祖卡和 M'hamid El Ghizlane 的沙漠……这些都只是这片地区能为各类徒步者和冒险者提供的例子。要发现德拉-塔菲拉莱特的宝藏，需要花时间一步步去探索它。",
+    "ayachi": {
+      "title": "阿亚奇山脉与 4 个绿洲省份形成对照",
+      "body": "从马拉喀什经提奇卡山口（2,260 米）抵达的游客，可以欣赏到点缀着典型村庄的壮丽风光。瓦尔扎扎特是进入该地区的美丽门户，那里的 Skoura 和 Fint 绿洲展现着柏柏尔人的祖传生活方式。过了瓦尔扎扎特，东面的廷吉尔省则在其棕榈林和河流环绕的壮丽托德哈峡谷中提供令人惊喜的参观和徒步。沿着通往达德斯峡谷及更远的公路，在抵达 Kelaat M'gouna 的玫瑰谷之前，可以有美好的发现。穿过托德哈高处的峡谷，可以抵达米德勒特省美丽的山村 Imilchil 及其传说中的 Isli 和 Tislit 湖。在这座冬季白雪覆盖的山区省份，可以找到阿亚奇山（3,747 米）。"
+    },
+    "desert": {
+      "title": "壮丽的沙漠，尽显其辉煌",
+      "body": "再往南，是拥有丰富而古老历史的大塔菲拉莱特的茂盛棕榈林。令人向往的梅尔祖卡沙漠及其壮丽的金色沙丘仅在几公里之外。最后，在扎戈拉省，同样的景观似乎重新占据主导。棕榈林沿着长长的德拉河绵延 220 公里。从德拉最后一个绿洲村庄 M'Hamid El Ghizlane 出发，是 M'hamid 沙漠及其壮丽的 Erg Chegaga（沙丘）。让我们一起发现德拉-塔菲拉莱特壮丽自然的不同侧面。"
+    },
+    "tour-lead": "德拉-塔菲拉莱特位于一片绿洲沙漠地区，棕榈林和繁茂山谷比比皆是。从齐兹河与盖里斯河谷岸边的塔菲拉莱特棕榈林，到德拉的棕榈林，再到由托德哈河灌溉的廷吉尔绿洲，这些地域的辽阔及其文化与精神遗产都值得绕道一游。以下是本地区值得参观的主要绿洲。",
+    "skoura": {
+      "title": "Skoura 绿洲",
+      "body": "这片棕榈林因地处传说中“千座卡斯巴之路”之一而闻名，这条路从瓦尔扎扎特经廷吉尔通往埃尔福德（Erfoud）。绿洲位于瓦尔扎扎特以东 40 公里的 N10 公路上，面积 25 平方公里，种植椰枣树和果树、杏仁树、橄榄树和石榴树……是通往 Kelaat M'Gouna、达德斯峡谷和托德哈峡谷之路的第一个入口。它由 Skoura 河供水，过去使用坎儿井（khettara）灌溉系统。一些卡斯巴也点缀着风景，比如建于 17 世纪的 Amridil 卡斯巴，如今仍保存完好，已改为博物馆，其中一部分用于展示居住场景。还有其他遗迹，如卡斯巴废墟、当地手工艺品、穆斯林和犹太礼拜场所、墓地……\n\n实用信息：景点免费开放  ·  2 小时  ·  17.8 °C  ·  所有类型车辆  ·  瓦尔扎扎特 - 45502"
+    },
+    "ziz": {
+      "title": "齐兹棕榈林",
+      "body": "它与盖里斯绿洲共同构成塔菲拉莱特的大棕榈林。它以世界上最大的棕榈林而闻名：据说约有 80,000 棵棕榈树。尽管依赖河流的地下水，齐兹棕榈林仍出产摩洛哥最优质的椰枣品种。埃尔福德被选为摩洛哥的椰枣之都。这座城市曾是一片大海，也是世界上最大的露天化石博物馆，专门的手工业正蓬勃发展。在较近的历史时期，塔菲拉莱特的西吉尔马萨遗址，是这个公元 8 至 18 世纪繁荣的商队贸易十字路口的最后遗迹。在阿拉维王朝发祥地里萨尼，Moulay Ali Chérif 陵墓和阿拉维祖父居住过的 Ksar Abouam 是必看之处。Ksar Akbar 和 Oulad Abdelhalim 土堡是建筑瑰宝，值得在旅居期间参观。\n\n实用信息：景点免费开放  ·  一天  ·  20.1 °C  ·  最好开 4x4  ·  从埃尔拉希迪亚延伸到梅尔祖卡沙漠"
+    },
+    "draa": {
+      "title": "德拉河谷",
+      "body": "德拉地区被誉为摩洛哥最美丽的地区之一，沿着同名的著名河流延伸 220 公里，位于扎戈拉省内。这条山谷从 Agdz 一直通到沙漠门户 M'hamid El Ghizlane 村。它有六片绿洲，出产多种椰枣。绿洲与棕榈林如同一串树链，沿河岸伸展。棕榈树下生长着果树和其他较矮的作物，田地被矮墙围起，并有灌溉渠穿过。距扎戈拉 19 公里、通往 M'hamid 的路上，是 Tamegroute 的 Naciria 扎维亚，带有陵墓、藏有珍稀手稿的图书馆，以及绿陶村。M'hamid 附近的 Ouled Driss 绿洲是一座由植物和绿意构成的巨大迷宫，适合徒步。您可以参观那里的土坯古堡和民居，以及村中心广场上一座专门展示柏柏尔文化的小型博物馆。\n\n实用信息：景点免费开放  ·  一天  ·  20.4 °C  ·  最好开 4x4  ·  从 Agdz 延伸到 M'hamid El Ghizlane 村"
+    },
+    "tinghir": {
+      "title": "廷吉尔棕榈林",
+      "body": "廷吉尔棕榈林从托德哈峡谷一直延伸到廷吉尔与 Tinjdad 之间的 Ferkla，绵延 30 公里，气势恢宏。它由托德哈河供水的管道和地下水灌溉。这里有棕榈树和杏仁树、苹果树、石榴树、梨树、无花果树等果树，树下种植薄荷、玉米和苜蓿……棕榈林适合步行游览。邻近的廷吉尔镇也有一些有趣的景点，例如参观女性集市、Ksar Ait Lhaj Ali 及其犹太区、吹管工合作社（摩洛哥为数不多的合作社之一）和 Ikellan 清真寺。从廷吉尔出发，可以参观多处自然景点。距市区 14 公里的托德哈峡谷吸引着攀岩爱好者，他们偏爱这里坚固的岩石和已标好的攀岩路线。在廷吉尔省，开展过一项可持续发展试点项目，被视为更新托德哈绿洲（距廷吉尔市 14 公里）的典范。这就是 Afanour 新绿洲。\n\n实用信息：景点免费开放  ·  半天  ·  20.1 °C  ·  最好开 4x4  ·  廷吉尔 - 45800"
+    },
+    "tizi": {
+      "title": "Tizi N'ou 山谷",
+      "body": "美丽的 Tizi N'ou 山谷依偎在阿亚奇山地北侧、名为 Said 或 Hadi 的山峰上，位于米德勒特市西南约六十公里处。Tizi N'zou 的名字来自 Tizi 山口，即一种野生芦笋 Azou 的名字，在北侧俯瞰山谷的山脊上仍能找到一些标本。这条山脊被称为 Timelghouit，提供了一条壮丽的徒步路线：它让徒步者俯瞰山谷的村庄和田野以及 Tamalout 大坝的美丽湖泊，发现崇高的景观和令人印象深刻的荒野。这条山脊可以让人饱览白雪覆盖的高山山地的壮观景色，远处望去，田野如地毯图案般排列；这里无疑是绝美之地。\n\n实用信息：景点免费开放  ·  3 小时  ·  19 °C  ·  开车或步行  ·  米德勒特 - 54350"
+    },
+    "hike-abh": {
+      "title": "参观 Ait Ben Haddou 与瓦尔扎扎特",
+      "body": "徒步难度：容易\n\n就在沙漠门户瓦尔扎扎特之前，享受非凡的 Aït-Ben-Haddou 卡斯巴。这座古城不仅是联合国教科文组织世界遗产，也是好莱坞电影经常使用的拍摄地。\n\n在可俯瞰 Ait-Ben-Haddou 现代区的全景餐厅午餐，继续前往瓦尔扎扎特，参观 Taourirte 卡斯巴和电影博物馆。"
+    },
+    "hike-fint": {
+      "title": "Fint 绿洲",
+      "body": "徒步难度：容易\n\n一天从 Taourirte 卡斯巴开始，欣赏狭窄的步行街。然后参观电影博物馆和阿特拉斯影城，在那里可以看到在摩洛哥好莱坞拍摄的大片的布景和轶事。\n\n出发前往曾属于帕夏 Thami El Glaoui 的旧 Tifoultoute 卡斯巴。继续前往 Fint 绿洲，在当地家庭享用传统午餐，然后探索宁静的绿洲。"
+    },
+    "hike-merzouga": {
+      "title": "梅尔祖卡",
+      "body": "徒步难度：中等\n\n在这片沙漠中，距梅尔祖卡几公里处会形成意想不到的自然景观：长期干涸的 Dayet Sriji 湖，一旦下雨就会迎来粉红火烈鸟和丰富的候鸟生物多样性。\n\n抵达梅尔祖卡沙丘后，与向导一起骑骆驼。入住营地，在星空下度过一夜。"
+    },
+    "hike-arfoud": {
+      "title": "阿尔富德 - 里萨尼 - 梅尔祖卡",
+      "body": "徒步难度：容易\n\n从埃尔拉希迪亚出发前往梅尔祖卡，途经 Meski 蓝泉、美丽的齐兹山谷、埃尔福德的大理石和化石作坊、里萨尼著名的 Oulad el Abd Halim 卡斯巴，并在梅尔祖卡享用 Medfouna 午餐。\n\n抵达梅尔祖卡村后，我们置身沙丘之中，可以徒步攀登沙丘或骑四轮摩托。"
+    },
+    "hike-zagora": {
+      "title": "Zagora",
+      "body": "徒步难度：容易\n\n早晨出发前往 Tazarine，途经 Taghbalt，参观其著名的石砌土堡。然后参观 Ait Ouazik 岩画遗址。继续前往 Agdz 徒步，在那里我们将了解居民的生活方式和传统。\n\n经 Tissergat 及其德拉艺术与传统博物馆返回扎戈拉。"
+    },
+    "hike-mhamid": {
+      "title": "M'hamid 与它美丽的沙漠",
+      "body": "徒步难度：容易\n\n出发前往 M'hamid，途经 Tamegrout，参观 Naciria 扎维亚。沿 Foum Takat 公路继续，参观 El Ktaoua 大绿洲及其土堡。\n\n抵达 M'hamid，参观 Joudour Sahara 音乐学校并漫步德拉最后的绿洲，然后骑骆驼前往营地，观看沙丘上的日落，并见证晚餐的准备。"
+    },
+    "hike-roses": {
+      "title": "玫瑰谷",
+      "body": "徒步难度：容易\n\n在高阿特拉斯山腹地的玫瑰谷，一次适合所有人的徒步，穿过玫瑰谷色彩斑斓的盛装、无花果树和夹竹桃林。\n\n这也是欣赏干旱景观中的达德斯山谷、沿河柏柏尔村庄、壮丽卡斯巴和梯田花园的机会。"
+    },
+    "hike-saghro": {
+      "title": "Saghro 山地",
+      "body": "徒步难度：中等\n\n从达德斯峡谷出发，深入长达 60 公里、高度可达 500 米的巨大峡谷。继续前往 Tagdilt——位于 Boumalne Dadès 以南的鸟谷。\n\n步行继续前往 Taoudilte 村，计划在那里停留。随后继续前往 Tazazert 山，Saghro 的最高峰（2,283 米）。"
+    },
+    "hike-lakes": {
+      "title": "从 Tislit 湖到 Isli 湖",
+      "body": "徒步难度：中等\n\n从 Imilchil 出发，在东高阿特拉斯山腹地、海拔 2,200 米处，沿着一条美丽的徒步路线，行走于 Tislit 与 Isli 两座美丽的湖泊之间。\n\n传说 Isli 湖代表一位爱上年轻小伙的阿马齐格少女的眼泪，而当时部落拒绝联合；Tislit 湖则代表那位小伙的眼泪。"
+    },
+    "hike-tizi": {
+      "title": "Tizi N'Zou Imtchimin 山谷与 Tamaloute 大坝",
+      "body": "徒步难度：中等\n\n这条三小时的徒步路线可以让您发现俯瞰山谷村庄和田野北侧的山脊，以及 Tamaloute 大坝湖。\n\n这座大坝位于米德勒特市西南约六十公里处，灌溉着 Tizi N'Zou Imtchimin 山谷。"
+    },
+    "info-lead": "为帮助旅行者享受旅居，以下是有关本地区设施和基础设施的一些实用信息。",
+    "climat": {
+      "title": "气候",
+      "body": "本地区属干燥的撒哈拉气候，夏季非常炎热，冬季白天宜人，夜晚转凉。最好在深秋至早春期间参观瓦尔扎扎特、扎戈拉、埃尔拉希迪亚或廷吉尔。"
+    },
+    "time": {
+      "title": "当地时间",
+      "body": "摩洛哥只有一个时区，GMT+1。斋月期间，摩洛哥改用 GMT。德拉-塔菲拉莱特地区也不例外。"
+    },
+    "languages": {
+      "title": "通用语言",
+      "body": "在德拉-塔菲拉莱特地区，当地人讲柏柏尔语和阿拉伯语。标识使用法语和阿拉伯语，有时使用提非纳文。考虑到本地区的旅游定位，导游以及酒店和民宿的工作人员会说法语、英语和其他语言。"
+    },
+    "air": {
+      "title": "航空交通",
+      "body": "德拉-塔菲拉莱特地区有两座国际机场——瓦尔扎扎特和埃尔拉希迪亚的 Moulay Ali Chérif，以及扎戈拉的一座国内机场。这些机场有频繁航班通往卡萨布兰卡。尤其是 2019 年埃尔拉希迪亚和瓦尔扎扎特投入使用了新航站楼。为旅行者提供了新一代的运输服务。此外，扎戈拉机场也新建了一座航站楼，现已配备现代技术。"
+    },
+    "shuttle": {
+      "title": "机场至市中心接驳",
+      "body": "出机场后，很容易找到各种交通方式，无论是出租车还是陆路旅游交通。"
+    },
+    "land": {
+      "title": "陆路旅游交通",
+      "body": "本地区有一个庞大的陆路旅游运输网络，提供多种选择，从 4x4 越野车到 60 座大巴。CTM（Compagnie de Transport au Maroc）提供连接本地区各城市的线路。瓦尔扎扎特与扎戈拉、埃尔拉希迪亚和廷吉尔相连，埃尔拉希迪亚与米德勒特相连，埃尔拉希迪亚经瓦尔扎扎特与扎戈拉相连……舒适有保障，车速受到控制，但您需要规划一次途经各城市停靠的长途旅行。"
+    },
+    "agencies": {
+      "title": "旅行社",
+      "body": "对于寻求量身定制行程的游客，本地区有大量旅行社。旅行社提供多种行程方案，也可定制行程。旅行社负责所有细节：咨询、接待与陪同、预订、交通和运输……"
+    },
+    "emergencies": {
+      "title": "紧急电话",
+      "numbers": [
+        {
+          "label": "警察",
+          "tel": "19"
+        },
+        {
+          "label": "消防",
+          "tel": "15"
+        },
+        {
+          "label": "道路救援",
+          "tel": "177"
+        },
+        {
+          "label": "电话查询",
+          "tel": "160"
+        }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "type": "cover",
+      "image": "nature/cover-portrait.jpg",
+      "pos": "50% 50%"
+    },
+    {
+      "type": "contents",
+      "image": "general/dunes-sunset.jpg",
+      "pos": "50% 55%"
+    },
+    {
+      "type": "intro",
+      "startsSection": 1,
+      "band": {
+        "image": "general/monkey-fingers.jpg",
+        "pos": "50% 50%",
+        "h": 56
+      },
+      "eyebrow": "01  ·  引言",
+      "title": [
+        "德拉-塔菲拉莱特：徒步者与冒险者的天堂。",
+        ""
+      ],
+      "lead": "intro-lead",
+      "columns": [
+        [
+          {
+            "item": "ayachi",
+            "img": "general/hikers.jpg",
+            "imgPos": "50% 40%",
+            "first": true
+          }
+        ],
+        [
+          {
+            "item": "desert",
+            "img": "general/dunes-wide.jpg",
+            "imgPos": "50% 60%",
+            "first": true
+          }
+        ]
+      ]
+    },
+    {
+      "type": "opener-band",
+      "startsSection": 2,
+      "band": {
+        "image": "errachidia/palm-sea.jpg",
+        "pos": "50% 50%",
+        "h": 100
+      },
+      "num": "02",
+      "title": [
+        "德拉-塔菲拉莱特棕榈林与山谷之旅",
+        ""
+      ],
+      "lead": "tour-lead",
+      "blocks": [
+        {
+          "item": "skoura",
+          "first": true,
+          "wide": true
+        }
+      ]
+    },
+    {
+      "type": "items-auto",
+      "eyebrow": "02  ·  德拉-塔菲拉莱特的棕榈林与翠绿山谷",
+      "blocks": [
+        {
+          "item": "ziz",
+          "img": "errachidia/palm-grove-mesa.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "draa",
+          "img": "general/draa-palm-grove.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "tinghir",
+          "img": "general/tinghir-town.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "tizi",
+          "img": "midelt/tamaloute-lake.jpg",
+          "imgPos": "50% 55%"
+        }
+      ]
+    },
+    {
+      "type": "opener-band",
+      "startsSection": 3,
+      "band": {
+        "image": "general/hikers.jpg",
+        "pos": "50% 40%",
+        "h": 100
+      },
+      "num": "03",
+      "title": [
+        "本地区最值得一游的",
+        "行程"
+      ],
+      "blocks": [
+        {
+          "item": "hike-abh",
+          "first": true,
+          "wide": true
+        }
+      ],
+      "columns": [
+        [
+          {
+            "item": "hike-fint",
+            "img": "ouarzazate/fint-oasis.jpg",
+            "imgPos": "50% 50%",
+            "first": true
+          }
+        ],
+        [
+          {
+            "item": "hike-merzouga",
+            "img": "errachidia/dunes-orange.jpg",
+            "imgPos": "50% 50%",
+            "first": true
+          }
+        ]
+      ]
+    },
+    {
+      "type": "items-auto",
+      "eyebrow": "03  ·  本地区最值得一游的行程",
+      "blocks": [
+        {
+          "item": "hike-arfoud",
+          "img": "errachidia/fossil-workshop.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "hike-zagora",
+          "img": "general/tamegroute-zaouia.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "hike-mhamid",
+          "img": "general/camels.jpg",
+          "imgPos": "50% 55%"
+        },
+        {
+          "item": "hike-roses",
+          "img": "general/village-aerial.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "hike-saghro",
+          "img": "general/cliff-palm.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "hike-lakes",
+          "img": "midelt/imilchil-lake.jpg",
+          "imgPos": "50% 55%"
+        },
+        {
+          "item": "hike-tizi",
+          "img": "midelt/valley-stream.jpg",
+          "imgPos": "50% 50%"
+        }
+      ]
+    },
+    {
+      "type": "info",
+      "startsSection": 4,
+      "band": {
+        "image": "general/palm-sunset.jpg",
+        "pos": "50% 50%",
+        "h": 58
+      },
+      "num": "04",
+      "title": [
+        "实用信息。",
+        ""
+      ],
+      "lead": "info-lead",
+      "columns": [
+        [
+          {
+            "info": "climat"
+          },
+          {
+            "info": "time"
+          },
+          {
+            "info": "languages"
+          }
+        ],
+        [
+          {
+            "info": "air"
+          },
+          {
+            "info": "shuttle"
+          }
+        ],
+        [
+          {
+            "info": "land"
+          },
+          {
+            "info": "agencies"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "back",
+      "image": "nature/cover-back-portrait.jpg",
+      "pos": "50% 50%"
+    }
+  ]
+}

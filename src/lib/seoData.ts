@@ -6,7 +6,8 @@
 import type { PlaceFacts } from "@/data/places/derive";
 import { tripHeroSrc } from "@/data/trips/media";
 import { CONTACT } from "@/components/contact/data";
-import { ABOUT_PATH, BLOG_PATH, CONTACT_PATH, SITE_NAME, SITE_URL, TRIPS_PATH, articlePath, placePath, tripPath } from "./routes";
+import { BROCHURES } from "@/data/brochures";
+import { ABOUT_PATH, BLOG_PATH, BROCHURES_PATH, CONTACT_PATH, GALLERY_PATH, SITE_NAME, SITE_URL, TRIPS_PATH, articlePath, placePath, tripPath } from "./routes";
 
 export interface PageSeo {
   title: string;
@@ -144,6 +145,78 @@ export function contactSeo(): PageSeo {
         },
       },
       breadcrumb([HOME_CRUMB, { name: "Contact", path: CONTACT_PATH }]),
+    ],
+  };
+}
+
+export function gallerySeo(): PageSeo {
+  return {
+    title: `Sahara Photo Gallery: Dunes, Oases & Desert Camps | ${SITE_NAME}`,
+    description:
+      "Photos from our private Sahara journeys in Morocco: the dunes of Erg Chegaga, palm oases, ksour, gorges, nomad camps and nights under the stars.",
+    path: GALLERY_PATH,
+    type: "website",
+    jsonLd: [
+      {
+        "@context": "https://schema.org",
+        "@type": "ImageGallery",
+        "@id": `${SITE_URL}${GALLERY_PATH}#gallery`,
+        url: absUrl(GALLERY_PATH),
+        name: `${SITE_NAME} photo gallery`,
+      },
+      breadcrumb([HOME_CRUMB, { name: "Gallery", path: GALLERY_PATH }]),
+    ],
+  };
+}
+
+export function brochuresSeo(): PageSeo {
+  return {
+    title: `Free Sahara Travel Brochures (PDF) in 6 Languages | ${SITE_NAME}`,
+    description:
+      "Download free illustrated PDF guides to the Drâa-Tafilalet region of Morocco: Zagora, Tinghir, Errachidia, Ouarzazate, Midelt, nature, local food and Erg Chegaga, in English, French, German, Spanish, Italian and Chinese.",
+    path: BROCHURES_PATH,
+    type: "website",
+    jsonLd: [
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "@id": `${SITE_URL}${BROCHURES_PATH}#brochures`,
+        url: absUrl(BROCHURES_PATH),
+        name: "Sahara travel brochures",
+        hasPart: BROCHURES.map((b) => ({
+          "@type": "DigitalDocument",
+          name: b.langs.en?.title ?? b.slug,
+          encodingFormat: "application/pdf",
+          url: absUrl(`/brochures/${b.slug}-en.pdf`),
+          inLanguage: Object.keys(b.langs),
+        })),
+      },
+      breadcrumb([HOME_CRUMB, { name: "Brochures", path: BROCHURES_PATH }]),
+    ],
+  };
+}
+
+export function brochureReaderSeo(slug: string): PageSeo {
+  const b = BROCHURES.find((x) => x.slug === slug);
+  const title = b?.langs.en?.title ?? slug.replace(/-/g, " ");
+  const path = `${BROCHURES_PATH}/${slug}`;
+  return {
+    title: `${title}: Read Online | ${SITE_NAME}`,
+    description: `${b?.langs.en?.subtitle ?? "Illustrated guide to the Drâa-Tafilalet region of Morocco"} Read it online as a flipbook, or download the free PDF in six languages.`,
+    path,
+    type: "website",
+    jsonLd: [
+      {
+        "@context": "https://schema.org",
+        "@type": "DigitalDocument",
+        "@id": `${SITE_URL}${path}#brochure`,
+        url: absUrl(path),
+        name: title,
+        encodingFormat: "application/pdf",
+        inLanguage: b ? Object.keys(b.langs) : ["en"],
+        isAccessibleForFree: true,
+      },
+      breadcrumb([HOME_CRUMB, { name: "Brochures", path: BROCHURES_PATH }, { name: title, path }]),
     ],
   };
 }

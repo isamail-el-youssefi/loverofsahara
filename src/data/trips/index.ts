@@ -72,7 +72,7 @@ export interface LocalizedTrip extends TripMeta {
   departureLabel: string;
 }
 
-export { cityLabel } from "./format";
+export { cityLabel, DEPARTURE_CITIES } from "./format";
 
 export function localizeTrip(
   meta: TripMeta,

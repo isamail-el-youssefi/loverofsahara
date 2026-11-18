@@ -1,0 +1,474 @@
+{
+  "lang": "zh",
+  "slug": "tinghir",
+  "title": "廷吉尔省",
+  "kicker": "旅游指南",
+  "subtitle": "山谷、峡谷与卡斯巴",
+  "creditSubject": "廷吉尔省",
+  "cover": {
+    "line": "廷吉尔省",
+    "dim": "Tinghir."
+  },
+  "contentsTitle": "目录",
+  "contents": [
+    {
+      "n": "01",
+      "title": "廷吉尔省旅游资源概览"
+    },
+    {
+      "n": "02",
+      "title": "廷吉尔省必游之地"
+    },
+    {
+      "n": "03",
+      "title": "廷吉尔省的风俗与传统"
+    },
+    {
+      "n": "04",
+      "title": "廷吉尔省的美食"
+    },
+    {
+      "n": "05",
+      "title": "达德斯山谷之旅"
+    },
+    {
+      "n": "06",
+      "title": "实用信息"
+    }
+  ],
+  "items": {
+    "tinghir": {
+      "title": "Tinghir",
+      "subtitle": "山谷、峡谷与卡斯巴",
+      "lead": "本省由托德哈河（Todgha）滋润，河水流经一片绿色山谷，山谷里种植着果树、谷物、蕨类和薄荷。与德拉-塔菲拉莱特地区的其他城市一样，廷吉尔以卡斯巴和土堡（ksour）闻名。不过，它最独特的地方是位于城市中心的犹太区。",
+      "body": "廷吉尔位于摩洛哥中东部的托德哈山谷，由同名河流滋养。这条河穿越高阿特拉斯山脉 40 公里，流经壮丽的托德哈峡谷，造就了这片广袤的棕榈林。附近的达德斯峡谷（Dadès）呈现另一幅令人惊叹的全景，在这里可以发现各种自然奇观，比如形似猴子手指的悬崖。凯拉特姆戈纳（Kelaat M'gouna）的玫瑰谷出产最美丽、最芬芳的玫瑰。廷吉尔省幅员辽阔，面积 13,007 平方公里，居住着 322,312 人，其名称源自柏柏尔方言，意为“山之所在”。"
+    },
+    "jewish-history": {
+      "title": "数百年犹太历史的遗迹",
+      "body": "长 30 公里的棕榈林点缀着许多小型土堡和卡斯巴，分布在城市两侧，位于高阿特拉斯山与 Jbel Saghro 之间。借助水渠系统灌溉，它构成了本省的财富。这里种植杏仁树、橄榄树、椰枣树、苹果树、石榴树、杏树、无花果树、谷物、蕨类和薄荷。与本地区的城市一样，廷吉尔及其周边也以卡斯巴和土堡闻名，例如格拉维（Glaoui）卡斯巴或谢赫 Basou Ou-Ali 卡斯巴。廷吉尔的犹太区（Mellah）见证了它的犹太历史——在很长一段时期里，摩洛哥犹太社群与穆斯林在廷吉尔完美共生。位于廷吉尔以东 50 公里、托德哈下游山谷的 Ksar El Khorbat，还设有一座展示阿马齐格生活方式的博物馆。这个省份在保护国时期也是对法军重大战役的战场。其中值得一提的是 Bougafer 战役，由已故的 Assou Oubasslam 率领的 Ait Atta 部落取得了胜利。本省还有无数宝藏等待揭晓。"
+    },
+    "palm-grove": {
+      "title": "廷吉尔棕榈林",
+      "body": "廷吉尔棕榈林从托德哈峡谷一直延伸到廷吉尔与 Tinjdad 之间的 Ferkla，绵延 30 公里，景色壮丽。它由托德哈河供水的管道和地下水灌溉。棕榈树和杏仁树、苹果树、石榴树、梨树、无花果树等果树点缀着这些棕榈林，树下种植薄荷、玉米和苜蓿……棕榈林适合步行游览。从廷吉尔出发，可以参观多处自然景点。托德哈峡谷距市区 14 公里。那里实施过一项可持续发展试点项目，用于更新托德哈绿洲，此后该绿洲被称为 Afanour 新绿洲。一些登山爱好者偏爱这里，因为岩石坚固，攀岩路线已规划好。从峡谷出发，可沿 120 公里的环线一日游，前往 Tamtatoucht 村、Ait Hani 盐洞和 Agoudal（摩洛哥海拔最高的有人居住的村庄），直至米德勒特（Midelt）省的 Imilchil。"
+    },
+    "valley-of-roses": {
+      "title": "玫瑰谷之村",
+      "body": "这里是通往玫瑰谷的门户。该村海拔 1,450 米，位于 M'Goun 山谷与达德斯山谷的交汇处。该地区以玫瑰闻名，花期从 4 月中旬持续到 5 月中旬。玫瑰节于 5 月举行，为期三天，庆祝收获季节。Kelaat M'Gouna 的多家商店出售以玫瑰制成的美容产品，以及用于各大品牌香水的蒸馏玫瑰水。"
+    },
+    "monkey-paws": {
+      "title": "猴爪",
+      "body": "在通往达德斯峡谷的 Tissadrine 公路几公里之外，树木之间出现了一片由高耸的赭色石灰岩高原构成的景观。地平线上出现了小小的柏柏尔村庄。从 Miguern 峡谷望去，赭色的石灰岩悬崖形状酷似猴子的手指。它距 Boumalne Dadès 小镇 15 公里，这片岩石景观也被称为“阿特拉斯之脑”。"
+    },
+    "glaoui": {
+      "title": "格拉维卡斯巴",
+      "body": "格拉维卡斯巴坐落在一处岩石高地上，如今已成废墟，位于廷吉尔市中心以北 500 米、通往埃尔福德（Erfoud）的路上。从这里可以俯瞰城市屋顶和托德哈棕榈林的惊人全景。"
+    },
+    "basou": {
+      "title": "谢赫 Basou Ou-Ali 卡斯巴",
+      "body": "在城市南部的 Bir Anzarane 大道上，谢赫 Basou Ou Ali 卡斯巴设有一座小型博物馆，展出商队路线的精美照片，在这里可以发现摩洛哥南部最美的土堡。"
+    },
+    "ksar-lhaj-ali": {
+      "title": "Ksar Ait Lhaj Ali",
+      "body": "Ksar Ait Lhaj Ali（又称廷吉尔土堡）位于廷吉尔市中心的平原与山脉之间，有 300 座房屋和四个街区，其中包括曾住过 70 户犹太家庭的犹太区。凭借其地理位置和商业活动，这座有 600 多年历史的土堡（多次修复，最近一次在 2021 年）至今仍有人居住。廷吉尔土堡有 6 道门（其中一道已被毁），曾设有三座清真寺、一座犹太会堂、两座圣人墓，以及女性集市和吹管工合作社。"
+    },
+    "ait-youl": {
+      "title": "Aït Youl",
+      "body": "从廷吉尔中心出发，经 Boumalne Dadès 市 65 公里，就是 Ait Youl 村。它以自然风光和以 Mouhdach 卡斯巴为代表的文化财富而闻名。沿达德斯山谷前往 Ait Youl，沿途风景如画，视野开阔。这个典型的村庄是山地旅游和徒步爱好者的理想目的地……"
+    },
+    "mellah": {
+      "title": "廷吉尔犹太区（Mellah）",
+      "body": "这是廷吉尔最古老的街区，直到 20 世纪 60 年代仍有犹太社群居住。它位于廷吉尔老城（麦地那）内，有工匠、珠宝商的店铺，以及麦地那中心的“女人街”。"
+    },
+    "ikelane": {
+      "title": "Ikelane 清真寺-经学院",
+      "body": "Ikelane 清真寺位于廷吉尔附近已成废墟的 Afanour 土堡中，得益于修复而依然屹立。它一部分建在悬崖上，一部分建在土堡的小巷中，十分古老，但在 19 世纪曾经翻新。屋顶由用眼影粉（kohl）和海娜染色的夹竹桃枝条制成，由 24 根柱子支撑。清真寺设有礼拜厅、净身室、用于授课和宣礼的露台以及学生宿舍。2007 年，Afanour 协会对其进行了部分重建。"
+    },
+    "jbel-saghro": {
+      "title": "Jbel Saghro",
+      "body": "Jbel Saghro 位于瓦尔扎扎特以东、中部高阿特拉斯以南 70 公里，最高海拔 2,712 米。它俯瞰西面和南面的德拉河谷以及北面的达德斯山谷，是反阿特拉斯山脉的东段。这座前撒哈拉山地拥有由高原、山峰和峡谷构成的月球般景观，被昵称为“小霍加尔”（取自阿尔及利亚那条辽阔的山脉之名），给旅行者带来天涯海角的感觉。攀登 Jbel Saghro 并欣赏其鸟谷的最佳时间是 12 月至 3 月。"
+    },
+    "alnif": {
+      "title": "Alnif",
+      "body": "Alnif 位于反阿特拉斯山脉东部，那里陨石和化石丰富，是三叶虫的富集地——三叶虫是古生代（5 亿至 2.5 亿年前）海洋中的海洋动物。离 Alnif 村不远，约十公里处，有近 5,000 年前的岩画，刻在这些岩石遍布的干旱平原的岩石上。"
+    },
+    "old-medina": {
+      "title": "廷吉尔老城（麦地那）",
+      "body": "老城位于廷吉尔市中心，汇聚了多个合作社：吹管、锻造、纺织以及女人街。漫步在廷吉尔麦地那，可以参观作坊，看当地工匠制作绿洲中使用的多种传统工具。旁边就是著名的女人街（kissariat）。女人街在阿马齐格语中广为人知，称作“Zneqt nTotmin”，是专为女性基本用品买卖和销售保留的商业空间：珠宝、服装等……这个至今仍然存在的空间，由廷吉尔的犹太商人创建。"
+    },
+    "dinosaurs": {
+      "title": "Tiguayine 的恐龙足迹",
+      "body": "从托德哈峡谷前来，在到达达德斯峡谷入口之前，恰好距 Boumalne Dadès 镇 12 公里，就是 Tiguayine 遗址，游客可在此欣赏恐龙足迹。要近距离观看，必须穿过种有蔬菜、谷物和少量果树的田地，然后到达一条正对悬崖的小路。这面黏土悬崖曾被多层沉积物覆盖，这些沉积物将蜥脚类恐龙的足迹保存至今，这些恐龙生活在中侏罗世（2.01 亿至 1.45 亿年前）至晚白垩世（1.45 亿至 6,600 万年前）之间。"
+    },
+    "bab-nali": {
+      "title": "Bab N'Ali",
+      "body": "Bab N'Ali 的岩石山峰或悬崖位于瓦尔扎扎特与廷吉尔之间。从 Boumalne Dadès 沿通往 Iknioun 的柏油路即可到达，Bab N'Ali 景色惊人，原始而狂野。山口海拔 1,470 米，徒步和登山爱好者均可到达。"
+    },
+    "artisanal": {
+      "title": "手工艺综合区",
+      "body": "这座手工艺综合区是展示本地手工艺的橱窗，正在通往托德哈峡谷的路上建设中。"
+    },
+    "sacred-fish": {
+      "title": "圣鱼泉",
+      "body": "这处神话般的地方位于抵达托德哈峡谷之前。这眼泉水中的鱼被奉为神圣，因此泉中禁止捕鱼。"
+    },
+    "pottery-el-hara": {
+      "title": "El Hara 陶器",
+      "body": "参观可以了解工匠如何制作塔吉锅、当地厨房用具和其他传统工具。"
+    },
+    "ruins": {
+      "title": "古村落与土堡遗址",
+      "body": "廷吉尔省拥有丰富的建筑遗产，包括已成废墟的土堡和卡斯巴：Asfalou、Ait Boujane、Taourirte n'mzlien、Ait Oujana、Afanour、Tizgui 等。"
+    },
+    "marabouts": {
+      "title": "圣人墓与陵墓",
+      "body": "这些具有文化和宗教重要性的场所已有数百年历史，有的保存完好，有的已成废墟。其中包括 Sidi Ali Oubrahim、Sidi khoukhte、Sidi Abdelkrim、Sidi Bouhid 等。"
+    },
+    "imiter": {
+      "title": "Imiter 的银饰制作卡斯巴",
+      "body": "廷吉尔省因 Imiter 银矿而广为人知。这座位于村中心的卡斯巴经过修复，专门用于制作银质艺术珠宝。"
+    },
+    "assou": {
+      "title": "Taghia n Ilmchane 村的 Assou Oubaslam 卡斯巴",
+      "body": "这座凿岩而建的住所曾属于抗击法军的 Ait Atta 部落前首领。"
+    },
+    "khettaras": {
+      "title": "Ait Aissa Oubrahim 的水井与坎儿井（khettara）",
+      "body": "参观坎儿井可以了解一整套社区组织，无论是田间劳作还是水的分配。"
+    },
+    "customs-lead": "与其他阿马齐格地区一样，廷吉尔过去按照庆祝丰收的“莫塞姆”（Moussem）节奏生活。下面向您推荐几个不容错过的莫塞姆（节庆）。",
+    "rose-festival": {
+      "title": "玫瑰节",
+      "body": "凯拉特姆戈纳山谷的玫瑰收获每年 5 月进行。为庆祝这一收获，玫瑰节在 5 月的第二个周末举办，安排有艺术和商业活动。节目包括民间歌舞、游行，以及展览摊位和手工艺品销售。在这个色彩缤纷、处处飘着玫瑰香气的节日里，还会评选当年的玫瑰小姐。"
+    },
+    "timelsa": {
+      "title": "Timelsa 艺术节",
+      "body": "Timelsa 艺术节每年 8 月在廷吉尔省的 Boumalne Dadès 举办，为期 3 天，旨在支持本省的年轻创作者，弘扬非物质遗产，增强公民社会的作用。该艺术节还通过开展社会文化活动，鼓励当地居民以更开放的心态面对新体验。节目包括与本地议题相关的讲座、艺术展览、传统服饰游行，以及由本地乐队主持的音乐之夜。"
+    },
+    "distilling": {
+      "title": "玫瑰蒸馏工艺",
+      "body": "玫瑰谷种植的大马士革玫瑰在 4 月和 5 月的季节采摘。它们在黎明时分手工采摘，以免香气在阳光下散失，因为花朵刚绽放时精油含量更高。已经开放的花朵被放入蒸馏器（alembic，用于蒸馏的装置）。玫瑰精油通过水蒸馏获得，由此得到玫瑰水和精油。香水业使用的玫瑰油价格昂贵，因为生产 10 克玫瑰油需要 100 多公斤新鲜玫瑰花瓣。也就是说，生产一公斤精油需要 2,000 至 3,000 公斤花瓣。"
+    },
+    "culinary": {
+      "title": "廷吉尔的特色美食",
+      "body": "除了所有餐厅和民宿都提供的著名摩洛哥美食，如 7 种蔬菜古斯古斯、帕斯蒂拉（pastilla）、柠檬鸡肉塔吉锅和李子羊肉塔吉锅……廷吉尔还提供一些新的特色菜，例如 Ifnouzen——廷吉尔和达德斯地区的典型菜肴，在米德勒特和瓦尔扎扎特也能见到。这种苜蓿古斯古斯只用韭葱、香料和橄榄油简单烹制，是客人到达时招待的菜肴，可以在居民家中品尝。"
+    },
+    "dades-excursion": {
+      "title": "达德斯山谷之旅",
+      "body": "从 Boumalne Dadès 小镇出发，行进 12 公里后在 Ait Ziad 村停留，那里可以欣赏蜥脚类恐龙的足迹。它们靠近一条 6 公里长的峡谷，夏天适合散步或野餐。接着前往 Miguirne 峡谷，欣赏 Tamalt 悬崖，也称猴爪。其天然形状酷似猴子的手指。徒步继续前往 Timadraouine 村（悬崖的延伸部分，宛如大峡谷）。环线将在 Iminwarg 峡谷通过一条土路结束。需要说明的是，这些悬崖在 Jbel Saghro 与高阿特拉斯山之间绵延 170 公里。"
+    },
+    "info-lead": "为让旅行者的停留更加舒适，以下是有关本省设施和基础设施的一些实用信息。",
+    "climat": {
+      "title": "气候",
+      "body": "本省属温暖的地中海气候，夏季干燥。最佳旅行时间为 5 月至 6 月，以及 9 月至 11 月。"
+    },
+    "time": {
+      "title": "当地时间",
+      "body": "摩洛哥只有一个时区，GMT+1。斋月期间，摩洛哥改用 GMT。德拉-塔菲拉莱特地区也不例外。"
+    },
+    "languages": {
+      "title": "通用语言",
+      "body": "当地人讲柏柏尔语和阿拉伯语。标识使用法语和阿拉伯语，有时使用提非纳文。考虑到本省的旅游定位，导游以及酒店和民宿的工作人员会说法语、英语和其他语言。"
+    },
+    "hotels": {
+      "title": "酒店",
+      "body": "本省有多家 riad、旅馆和酒店，以及迷人的民宿。总体而言，本省的食宿价格实惠，适合各种预算。"
+    },
+    "land": {
+      "title": "陆路交通",
+      "body": "本省有一个陆路旅游运输网络，提供多种选择，从 4x4 越野车到 60 座大巴。CTM（Compagnie de Transport au Maroc）提供连接各城市的线路，舒适有保障，车速受到控制。"
+    },
+    "agencies": {
+      "title": "旅行社",
+      "body": "对于寻求量身定制行程的游客，这里不乏旅行社。旅行社提供多种行程方案，也可定制行程。旅行社负责所有细节：咨询、接待与陪同、预订、交通和接送……"
+    },
+    "emergencies": {
+      "title": "紧急电话",
+      "numbers": [
+        {
+          "label": "警察",
+          "tel": "19"
+        },
+        {
+          "label": "消防",
+          "tel": "15"
+        },
+        {
+          "label": "道路救援",
+          "tel": "177"
+        },
+        {
+          "label": "电话查询",
+          "tel": "160"
+        }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "type": "cover",
+      "image": "photos/tinghir.jpg",
+      "pos": "46% 42%"
+    },
+    {
+      "type": "contents",
+      "image": "tinghir/panorama.jpg",
+      "pos": "100% 40%"
+    },
+    {
+      "type": "intro",
+      "startsSection": 1,
+      "band": {
+        "image": "tinghir/aerial.jpg",
+        "pos": "50% 50%",
+        "h": 84
+      },
+      "eyebrow": "01  ·  廷吉尔省旅游资源概览",
+      "title": [
+        "Tinghir.",
+        "山谷、峡谷与卡斯巴。"
+      ],
+      "lead": "tinghir.lead",
+      "columns": [
+        [
+          {
+            "para": "tinghir"
+          },
+          {
+            "fig": "tinghir/palm-town.jpg",
+            "top": 6
+          }
+        ],
+        [
+          {
+            "item": "jewish-history",
+            "first": true
+          }
+        ]
+      ]
+    },
+    {
+      "type": "opener-band",
+      "startsSection": 2,
+      "band": {
+        "image": "tinghir/couple.jpg",
+        "pos": "50% 50%",
+        "h": 170
+      },
+      "num": "02",
+      "title": [
+        "廷吉尔及全省必游之地",
+        ""
+      ],
+      "blocks": [
+        {
+          "item": "palm-grove",
+          "first": true,
+          "wide": true
+        }
+      ]
+    },
+    {
+      "type": "items-auto",
+      "eyebrow": "02  ·  廷吉尔省必游之地",
+      "blocks": [
+        {
+          "item": "valley-of-roses"
+        },
+        {
+          "item": "monkey-paws",
+          "img": "tinghir/monkey-paws.jpg",
+          "imgPos": "50% 30%"
+        },
+        {
+          "item": "glaoui"
+        },
+        {
+          "item": "basou"
+        },
+        {
+          "item": "ksar-lhaj-ali",
+          "img": "tinghir/ksar-lhaj-ali.jpg",
+          "imgPos": "50% 12%"
+        },
+        {
+          "item": "ait-youl"
+        },
+        {
+          "item": "mellah",
+          "img": "tinghir/mellah.jpg",
+          "imgPos": "50% 40%"
+        },
+        {
+          "item": "ikelane"
+        },
+        {
+          "item": "jbel-saghro",
+          "img": "tinghir/jbel-saghro.jpg",
+          "imgPos": "50% 18%"
+        },
+        {
+          "item": "alnif",
+          "img": "tinghir/alnif.jpg",
+          "imgPos": "50% 40%"
+        },
+        {
+          "item": "old-medina",
+          "img": "tinghir/old-medina.jpg",
+          "imgPos": "50% 12%"
+        },
+        {
+          "item": "dinosaurs"
+        },
+        {
+          "item": "bab-nali",
+          "img": "tinghir/bab-nali.jpg",
+          "imgPos": "50% 45%"
+        },
+        {
+          "item": "artisanal"
+        },
+        {
+          "item": "sacred-fish"
+        },
+        {
+          "item": "pottery-el-hara"
+        },
+        {
+          "item": "ruins"
+        },
+        {
+          "item": "marabouts"
+        },
+        {
+          "item": "imiter",
+          "img": "tinghir/rings.jpg",
+          "imgPos": "50% 12%"
+        },
+        {
+          "item": "assou"
+        },
+        {
+          "item": "khettaras",
+          "img": "tinghir/khettaras.jpg",
+          "imgPos": "50% 40%"
+        }
+      ]
+    },
+    {
+      "type": "opener-type",
+      "startsSection": 3,
+      "num": "03",
+      "eyebrow": "廷吉尔省的风俗与传统",
+      "title": [
+        "廷吉尔省的风俗与传统",
+        ""
+      ],
+      "lead": "customs-lead",
+      "columns": [
+        [
+          {
+            "item": "rose-festival",
+            "first": true
+          },
+          {
+            "item": "timelsa"
+          }
+        ],
+        [
+          {
+            "item": "distilling",
+            "first": true
+          }
+        ]
+      ]
+    },
+    {
+      "type": "opener-type",
+      "startsSection": 4,
+      "num": "04",
+      "eyebrow": "廷吉尔省的美食",
+      "title": [
+        "廷吉尔省的美食",
+        ""
+      ],
+      "columns": [
+        [
+          {
+            "item": "culinary",
+            "first": true
+          }
+        ],
+        [
+          {
+            "fig": "tinghir/potter.jpg"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "opener-band",
+      "startsSection": 5,
+      "band": {
+        "image": "photos/tinghir.jpg",
+        "pos": "50% 78%",
+        "h": 185
+      },
+      "num": "05",
+      "title": [
+        "达德斯山谷之旅",
+        ""
+      ],
+      "blocks": [
+        {
+          "para": "dades-excursion"
+        }
+      ]
+    },
+    {
+      "type": "info",
+      "startsSection": 6,
+      "band": {
+        "image": "tinghir/panorama.jpg",
+        "pos": "75% 22%",
+        "h": 58
+      },
+      "num": "06",
+      "title": [
+        "实用信息。",
+        ""
+      ],
+      "lead": "info-lead",
+      "columns": [
+        [
+          {
+            "info": "climat"
+          },
+          {
+            "info": "time"
+          },
+          {
+            "info": "languages"
+          }
+        ],
+        [
+          {
+            "info": "hotels"
+          },
+          {
+            "info": "land"
+          }
+        ],
+        [
+          {
+            "info": "agencies"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "back",
+      "image": "photos/hero-trekking.jpg",
+      "pos": "50% 60%"
+    }
+  ]
+}

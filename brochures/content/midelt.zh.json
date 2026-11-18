@@ -1,0 +1,449 @@
+{
+  "lang": "zh",
+  "slug": "midelt",
+  "title": "米德勒特省",
+  "kicker": "旅游指南",
+  "subtitle": "令人惊叹的山地与山谷风光",
+  "creditSubject": "米德勒特省",
+  "cover": {
+    "line": "米德勒特省",
+    "dim": "Midelt."
+  },
+  "contentsTitle": "目录",
+  "contents": [
+    {
+      "n": "01",
+      "title": "米德勒特省旅游资源概览"
+    },
+    {
+      "n": "02",
+      "title": "米德勒特省必游之地"
+    },
+    {
+      "n": "03",
+      "title": "米德勒特省的风俗与传统"
+    },
+    {
+      "n": "04",
+      "title": "米德勒特省的美食"
+    },
+    {
+      "n": "05",
+      "title": "游览 Tizi N'Zou Imtchimin 山谷"
+    },
+    {
+      "n": "06",
+      "title": "实用信息"
+    }
+  ],
+  "items": {
+    "midelt": {
+      "title": "Midelt",
+      "subtitle": "令人惊叹的山地与山谷风光",
+      "lead": "米德勒特省坐落在海拔 1,500 米处，拥有美丽的自然风光，也拥有丰富的矿物和化石，对游客极具吸引力。",
+      "body": "米德勒特位于阿亚奇山（Mount Ayachi）脚下、中阿特拉斯与高阿特拉斯山脉之间，海拔 1,488 米，省内一些村庄海拔超过 2,000 米。冬季，雪覆盖着雪松和冷杉林，米德勒特是一座山区省份，拥有丰富的自然与文化景观，带来令人惊叹的体验。这座全国苹果之都（提供全国 60% 的产量）是穆卢耶河（Oued Moulouya）的发源地，该河流向里夫山区，注入地中海，沿途风光秀美。从阿亚奇 Said 或 Hadi 山（3,747 米）出发，向北经 Zaïda 市到 Boumia，会遇到美丽的 Tounfite 村（位于中阿特拉斯与高阿特拉斯之间）。沿途的 Tamaloute 大坝（库容 5,000 万立方米，2018 年夏季投入使用）旁，垂钓者们试图钓上美味的虹鳟鱼。从那里出发，一条公路通往著名的 Imilchil 村及其 Isli 和 Tislit 湖，以及 Akhiam 洞穴。第二条路通往 Assaka 村和 Tadroute 峡谷。米德勒特省还拥有通往 Ajdir 公路上的 Tanourdi 雪松林。被砍伐的区域用作牧场。森林里栖息着野猪、野兔和赤狐等多种动物。该省有 289,337 名居民，与邻近的瓦尔扎扎特一样开发太阳能，建有“Noor Midelt”太阳能电站，装机电力容量达 2,000 兆瓦。"
+    },
+    "mining-wealth": {
+      "title": "举世闻名的矿业财富",
+      "body": "在米德勒特，矿业财富长期以来是法国公司的领域。Mibladen 和 Ahouli 矿山从 1939 年到 1980 年由法国公司开采，提取铅、钒铅矿以及蓝铜矿、石英等其他结晶矿物……这些矿山至今仍由前工人和寻找岩石与矿物的年轻人开采。这些石头的爱好者将在展示珠宝、灯具、烛台、透石膏制品、石头、石膏装饰品和化石的商店里发现蓝铜矿、紫水晶、文石、重晶石、玉髓等……矿物与化石曾是米德勒特的巨大财富，也是本省居民的收入来源。"
+    },
+    "heritage": {
+      "title": "引人入胜的文化与宗教遗产",
+      "body": "就文化与精神遗产而言，米德勒特省可自豪地拥有 17 世纪由 Abu Salim El Ayachi 之父 M'hamed Boubker 建造的 Sidi Hamza 扎维亚。这个旅游地位于米德勒特市以南 70 公里。自史前时期起就为人所知，沿河左岸、靠近山体（3,400 米）源头 Assif Ziz 的一组古墓丘便是明证。阿尔摩哈德人占据了这里，并在此建立了 Abdelmoumen Agoumi 城堡，作为夜间守卫的瞭望哨。人们在这里发现了美丽的洞穴，有些达 35 平方米。阿尔摩哈德帝国在这片山地绿洲存在过的痕迹，只剩下这座干石和土坯建筑的废墟，以及几口带有 Tadellakt 灰泥的水井。Tazroft 村和藏有大量珍稀手稿的 Sidi Hamza 扎维亚就在附近。在米德勒特市，参观犹太人卡斯巴（Athmane 或 Moussa）和 Tachaouite 卡斯巴很有意思。它反映了犹太和穆斯林社群的生活方式及其数百年和平共处的历史。"
+    },
+    "must-lead": "米德勒特市在柏柏尔语中意为“受保护的牧场”，由法国人于 1918 年建立。米德勒特省的居民大多是柏柏尔人，生活在由山地、绿色山谷、东高阿特拉斯国家公园等构成的广阔区域……由犹太人和穆斯林共同居住、拥有清真寺、扎维亚和犹太会堂的土堡构成的文化与宗教遗产，见证了这些犹太和穆斯林柏柏尔人的共存。以下是本省不容错过的一些地方。",
+    "jewish-kasbah": {
+      "title": "犹太人卡斯巴（Atmane 或 Moussa）",
+      "body": "Atmane 或 Moussa 卡斯巴宛如一座真正的迷宫，由柏柏尔犹太人建造，有多座房屋以隧道式巷道相连，还有一座犹太会堂。这座卡斯巴设有防御，以便成为抵御其他部落袭击的避难所。摩洛哥犹太人前往应许之地后，卡斯巴如今由穆斯林居住。"
+    },
+    "sidi-hamza": {
+      "title": "Sidi Hamza 扎维亚",
+      "body": "Tazrouft 村位于米德勒特市以南 70 公里，也称百诗人之村，是紧邻阿尔摩哈德城堡的泥屋聚居地。Abu Salim El Ayachi（1628 年生于 Ait Ayach 部落，1681 年死于瘟疫）曾住在 Tazrouft 村的一座多层房屋里。这位学者、作家和苏菲还是一位著名旅行家，从东方及更远处带回珍贵著作，构成了一座手稿图书馆。这座大图书馆是王国最重要的图书馆之一，由一位名叫 Abu Hamza 的亲属扩建。Abou Salim El Ayachi 葬于山谷墓地。"
+    },
+    "tazrouft": {
+      "title": "Tazrouft 村",
+      "body": "Tazrouft 村位于米德勒特市以南 70 公里，也称百诗人之村，是靠近阿尔摩哈德城堡的传统土坯房聚居地。Abu Salim El Ayachi（1628–1681）——学者、作家和苏菲，Sidi Hamza 扎维亚及其珍稀手稿收藏（王国最重要的收藏之一）的创立者——就曾住在这个村庄。Abu Salim El Ayachi 葬于山谷墓地。"
+    },
+    "myriem": {
+      "title": "米德勒特的 Myriem 卡斯巴",
+      "body": "在阿特拉斯圣母修道院后面，是米德勒特的 Myriem 卡斯巴。它于 1922 年由一位法国军官的妻子创建，4 年后被方济各会修女接手，她们发展了 Myriem 卡斯巴：一个培训山区妇女手工刺绣的作坊。如今，这个十字绣和柏柏尔编织作坊为米德勒特的许多家庭提供了收入来源。"
+    },
+    "mining-cities": {
+      "title": "Mibladen 与 Ahouli 矿业城镇",
+      "body": "Mibladen 和 Ahouli 这两座旧矿业城镇距米德勒特 25 公里。Mibladen 和 Ahouli 村仍有人居住，但矿山在 20 世纪 80 年代铅价下跌后关闭。该地区的前工人仍冒着生命危险继续挖掘，寻找极其珍贵的钒铅矿矿物以及蓝铜矿、石英等其他结晶矿物……游客和收藏家可以参观坑道矿山。"
+    },
+    "akhiam": {
+      "title": "Akhiam 洞穴",
+      "body": "Akhiam 洞穴位于通往达德斯山谷的路上、距 Agoudal 村 7 公里，坐落在海拔 2,690 米处。沿一条穿过被山峰环绕的广阔平原的小路即可到达，可以步行、骑自行车、开车或骑驴前往。Akhiam 洞穴有一道美丽的瀑布，充满了柏柏尔传说。"
+    },
+    "tanghort": {
+      "title": "Tanghort 洞穴与 Ait Yaacoub 山谷",
+      "body": "从 Tazrouft 村出发，沿 Anzguemir 河左岸向上走，步行一小时后，可抵达泉水和美丽的 Tanghort 洞穴。从 Zaouite 向南开车半小时，可到达 Ait Yaacoub 遗址和山谷，1929 年这里曾是抗击法国占领者的战场。"
+    },
+    "national-park": {
+      "title": "东高阿特拉斯国家公园",
+      "body": "海拔 3,000 米的 Jbel Aberdouze 和 Ait Yahya 山谷，与 Imilchil 湖区和 Assif Melloul 山谷一起，构成了面积 48,000 公顷的东高阿特拉斯国家公园保护区。山地柏柏尔人的生物多样性、景观、文化和传统是一座有待探索的宝藏。"
+    },
+    "hammat": {
+      "title": "Hammat Moulay Ali Chérif 与 Moulay Hachem 温泉",
+      "body": "Hammat Moulay Ali Chérif 是一处温泉疗养地，距 Rich 市 16 公里。它对患有风湿、骨关节炎、便秘、肠弛缓和肥胖的患者有诸多益处……而 Hammat Moulay Hachem 距 Rich 12 公里，距 Hammat Moulay Ali Chérif 4 公里。其泉水被推荐用于消化系统。前来寻求温泉疗养的多为国内游客。"
+    },
+    "ayachi": {
+      "title": "攀登阿亚奇山并参观 Jaffar 冰斗",
+      "body": "从城里出发，两天可以登上阿亚奇山（3,737 米）。从同一地点出发，还可以到达 Jaffar 冰斗，这是摩洛哥最难到达的地方之一。这处风景绝美的自然之地保存得非常完好。最好开 4x4 前往，最好在夏季。漫长而多石的道路需要三到四小时的车程。"
+    },
+    "imilchil": {
+      "title": "Imilchil",
+      "body": "著名的 Imilchil 村位于海拔 2,200 米处，是本地区必看之地。它的婚礼莫塞姆（moussem）每年 8 月底至 9 月初举行，在圣人 Sidi Ahmed Oulmaghani 的庇佑下，聚集该地区的柏柏尔人，营造商业与节庆的氛围。"
+    },
+    "agoudal": {
+      "title": "Agoudal 村：摩洛哥最高的村庄",
+      "body": "Agoudal 坐落在高阿特拉斯山海拔 2,300 米处，是来自托德哈峡谷和达德斯峡谷的小路的交汇点，是摩洛哥海拔最高的有人居住的村庄。它是山区徒步的理想起点，也是参观 Assif Melloul 山谷、前往 Imilchil、Rich 或 Goulmima 的理想之地。"
+    },
+    "minerals-fair": {
+      "title": "米德勒特矿物与化石展",
+      "body": "米德勒特矿物与化石展于 2013 年 11 月 6 日至 10 日首次举办，旨在提升这一地质与矿业遗产。它吸引了 100 家参展商和外国游客。国家石材、化石、雕刻石与矿物材料协会鼓励举办这一展览，以促进米德勒特地区的可持续发展。"
+    },
+    "apple-exhibition": {
+      "title": "全国苹果展",
+      "body": "全国苹果展由德拉-塔菲拉莱特地区农业局主办，每年 10 月中旬在米德勒特市举行。它旨在“绿色摩洛哥计划”框架下发展苹果产业。这是鼓励果农培养注册苹果的区域营销意识、提升苹果种植并新建果园、引入微灌、购置农业设备……的契机。需要注意的是，米德勒特的苹果产量占全国的 53%。"
+    },
+    "customs-lead": "米德勒特省位于东高阿特拉斯，是阿马齐格 Aït Yafelmane 部落的家园，该部落主要由 Aït Izdeg、Aït Yahia、Aït Merghad 和 Aït Hdiddou 部落组成。这些部落是桑哈贾（Sanhadja）游牧民的后裔，保持着祖传的传统和习俗。",
+    "ahidous": {
+      "title": "Ahidous：阿马齐格的表演艺术",
+      "body": "Ahidous 由摩洛哥中阿特拉斯和高阿特拉斯山区的柏柏尔人，特别是 Imilchil 和米德勒特的人们所践行，是一种祖传的阿马齐格集体歌舞传统。在 Ahidous 中，男女组成柔软而起伏的圆圈，伴着柏柏尔歌曲起舞。Ahidous 由三个要素构成：与当地诗歌或即兴演唱相关的 Izlan 歌曲，其主题从爱情到政治；由手鼓和拍手产生的音乐节奏；最后是男女共舞。人们区分在部落特殊场合表演的 Ahidous Askwat 与家庭庆典中的 Ahidous Amezian。Imilchil 的 Bou Azmou 山峰音乐节每年庆祝 Ahidous，即 Imilchil 阿马齐格人的舞蹈和歌曲。"
+    },
+    "moussem-engagement": {
+      "title": "Imilchil 订婚节（Moussem）或 Sidi Hmad Oulmaghni 节",
+      "body": "Imilchil 村位于海拔 2,160 米的山谷中，是 Ait Hadidou 柏柏尔人的家园，他们是游牧出身的牧民。自 17 世纪起定居，被认为是摩洛哥最原汁原味、最传统的部落。婚姻仪式在 Ait Hadidou 人中具有社会、文化和精神现象的维度。Imilchil 莫塞姆每年 9 月在圣人 Sidi Hmad Oulmaghni 的陵墓所在地举行，让部落的年轻人去寻找自己的心上人。节目包括舞蹈、歌唱和商业活动，以及婚姻文书的正式办理。"
+    },
+    "moussem-hssira": {
+      "title": "米德勒特摩洛哥犹太社群的 Bou Hssira 莫塞姆",
+      "body": "每年，摩洛哥犹太社群在米德勒特省 Toulal 村（Grama 乡）庆祝 Hiloula Rebbi Ishak Abi Hssira 莫塞姆。在这个宗教莫塞姆期间，来自摩洛哥和世界各地的数百名摩洛哥犹太人齐聚这位圣人的陵墓，在节日氛围中庆祝他们的宗教仪式。"
+    },
+    "culinary-lead": "米德勒特省的苹果在整个摩洛哥闻名，因此它被用于各种菜肴。",
+    "tajine-apples": {
+      "title": "蜜饯苹果山羊肉塔吉锅",
+      "body": "这道米德勒特省的特色菜用一种较酸且在该地区产量丰富的青苹果烹制。这道塔吉锅在民宿和本省居民家中供应。"
+    },
+    "abadir": {
+      "title": "Abadir 面包",
+      "body": "这种直径一米、不加酵母的大面包，专门出现在 Imilchil，放在不含灰烬的加热石头上烘烤。然后盖上燃烧一小时的灰烬和植物（艾草），另一面重复同样的操作。这种面包可以保存一周，能供 40 人食用。"
+    },
+    "couscous": {
+      "title": "软小麦古斯古斯",
+      "body": "这种用软小麦粗粉制作的古斯古斯起源于米德勒特，也源于塔菲拉莱特的绿洲（Boutenfite、Tizgaghine 和 Tighfert）。需要至少蒸两次，每次二十分钟，并搭配豆类、肉类和蔬菜。也可以单独食用，调味或原味，热食或冷食。"
+    },
+    "trout": {
+      "title": "鳟鱼塔吉锅",
+      "body": "这道菜起源于米德勒特，用阿特拉斯鳟鱼搭配土豆、辣椒、番茄、橄榄和柠檬瓣烹制，也可能只搭配洋葱、葡萄和干果，并用蜂蜜轻微增甜。"
+    },
+    "hiking": {
+      "title": "徒步 Tizi N'Zou Imtchimin 山谷与 Tamaloute 大坝",
+      "body": "这条三小时的徒步路线可以让您发现俯瞰山谷村庄和田野北侧的山脊，以及 Tamaloute 大坝湖。这座大坝位于米德勒特市西南约六十公里处，灌溉着 Tizi N'Zou Imtchimin 山谷。徒步者可能遇到乌龟、变色龙和蜥蜴。从那里，在一直延伸到中阿特拉斯山脉屏障的巨大全景中，可以欣赏 Ait Ayach 山谷，那里以苹果园和 Anzgmir 河闻名。Tamaloute 大坝就建在这条河上，于 2018 年夏季投入使用。延长两小时，可以参观 Ait Ikou 和 Ait Ouchen 山谷的村庄，或 Tissoufra 的地热温泉（水温超过 34°）和 Assif Anzegmir 峡谷。沿着长长悬崖壁走蜿蜒小路，需要两小时才能到达峡谷。环线在 Tamaloute 村结束。"
+    },
+    "info-lead": "为让旅行者的停留更加舒适，以下是有关本省设施和基础设施的一些实用信息。",
+    "climat": {
+      "title": "气候",
+      "body": "本省属温暖湿润的亚热带气候，没有旱季。最佳旅行时间是 5 月至 10 月，此时气温宜人。"
+    },
+    "time": {
+      "title": "当地时间",
+      "body": "摩洛哥只有一个时区，GMT+1。斋月期间，摩洛哥改用 GMT。德拉-塔菲拉莱特地区也不例外。"
+    },
+    "languages": {
+      "title": "通用语言",
+      "body": "当地人讲柏柏尔语和阿拉伯语。标识使用法语和阿拉伯语，有时使用提非纳文。考虑到本省的旅游定位，导游以及酒店和民宿的工作人员会说法语、英语和其他语言。"
+    },
+    "hotels": {
+      "title": "酒店",
+      "body": "本省有多家 riad、旅馆和酒店，以及迷人的民宿。总体而言，本省的食宿价格实惠，适合各种预算。"
+    },
+    "land": {
+      "title": "陆路交通",
+      "body": "本省有一个陆路旅游运输网络，提供多种选择，从 4x4 越野车到 60 座大巴。CTM（Compagnie de Transport au Maroc）提供连接各城市的线路，舒适有保障，车速受到控制。"
+    },
+    "agencies": {
+      "title": "旅行社",
+      "body": "对于寻求量身定制行程的游客，这里不乏旅行社。旅行社提供多种行程方案，也可定制行程。旅行社负责所有细节：咨询、接待与陪同、预订、交通和接送……"
+    },
+    "emergencies": {
+      "title": "紧急电话",
+      "numbers": [
+        {
+          "label": "警察",
+          "tel": "19"
+        },
+        {
+          "label": "消防",
+          "tel": "15"
+        },
+        {
+          "label": "道路救援",
+          "tel": "177"
+        },
+        {
+          "label": "电话查询",
+          "tel": "160"
+        }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "type": "cover",
+      "image": "midelt/cover-lake-sunset.jpg",
+      "pos": "50% 45%"
+    },
+    {
+      "type": "contents",
+      "image": "midelt/contents-lake-evening.jpg",
+      "pos": "50% 50%"
+    },
+    {
+      "type": "intro",
+      "startsSection": 1,
+      "band": {
+        "image": "midelt/village-valley.jpg",
+        "pos": "50% 62%",
+        "h": 56
+      },
+      "eyebrow": "01  ·  米德勒特省旅游资源概览",
+      "title": [
+        "Midelt.",
+        "令人惊叹的山地与山谷风光。"
+      ],
+      "lead": "midelt.lead",
+      "columns": [
+        [
+          {
+            "para": "midelt"
+          }
+        ],
+        [
+          {
+            "item": "mining-wealth",
+            "first": true,
+            "img": "midelt/ahouli-bridge.jpg",
+            "imgPos": "50% 40%"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "opener-band",
+      "startsSection": 2,
+      "band": {
+        "image": "midelt/snow-valley.jpg",
+        "pos": "50% 45%",
+        "h": 118
+      },
+      "num": "02",
+      "title": [
+        "米德勒特省必游之地",
+        ""
+      ],
+      "lead": "must-lead",
+      "blocks": [
+        {
+          "item": "heritage",
+          "first": true,
+          "wide": true
+        }
+      ]
+    },
+    {
+      "type": "items-auto",
+      "eyebrow": "02  ·  米德勒特省必游之地",
+      "blocks": [
+        {
+          "item": "jewish-kasbah"
+        },
+        {
+          "item": "sidi-hamza",
+          "img": "midelt/tazrouft-river.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "tazrouft",
+          "img": "midelt/tazrouft-village.jpg",
+          "imgPos": "50% 55%"
+        },
+        {
+          "item": "myriem"
+        },
+        {
+          "item": "mining-cities",
+          "img": "midelt/ahouli-mine-tunnel.jpg",
+          "imgPos": "50% 40%"
+        },
+        {
+          "item": "akhiam",
+          "img": "midelt/cliff-cave.jpg",
+          "imgPos": "50% 40%"
+        },
+        {
+          "item": "tanghort",
+          "img": "midelt/valley-stream.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "national-park",
+          "img": "midelt/lake-snow.jpg",
+          "imgPos": "50% 55%"
+        },
+        {
+          "item": "hammat"
+        },
+        {
+          "item": "ayachi"
+        },
+        {
+          "item": "imilchil",
+          "img": "midelt/imilchil-lake.jpg",
+          "imgPos": "50% 55%"
+        },
+        {
+          "item": "agoudal"
+        },
+        {
+          "item": "minerals-fair"
+        },
+        {
+          "item": "apple-exhibition"
+        }
+      ]
+    },
+    {
+      "type": "opener-type",
+      "startsSection": 3,
+      "num": "03",
+      "eyebrow": "米德勒特省的风俗与传统",
+      "title": [
+        "米德勒特阿马齐格居民的风俗与传统",
+        ""
+      ],
+      "lead": "customs-lead",
+      "columns": [
+        [
+          {
+            "item": "ahidous",
+            "first": true
+          },
+          {
+            "item": "moussem-hssira"
+          }
+        ],
+        [
+          {
+            "item": "moussem-engagement",
+            "first": true
+          },
+          {
+            "fig": "midelt/shepherd-portrait.jpg"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "opener-type",
+      "startsSection": 4,
+      "num": "04",
+      "eyebrow": "米德勒特省的美食",
+      "title": [
+        "米德勒特的美食。",
+        ""
+      ],
+      "lead": "culinary-lead",
+      "columns": [
+        [
+          {
+            "item": "tajine-apples",
+            "first": true
+          },
+          {
+            "item": "abadir",
+            "img": "midelt/imilchil-lake-aerial.jpg",
+            "imgPos": "50% 55%"
+          }
+        ],
+        [
+          {
+            "item": "couscous",
+            "first": true
+          },
+          {
+            "item": "trout",
+            "img": "midelt/dam-lake-aerial.jpg",
+            "imgPos": "50% 50%"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "opener-band",
+      "startsSection": 5,
+      "band": {
+        "image": "midelt/tamaloute-lake.jpg",
+        "pos": "50% 55%",
+        "h": 185
+      },
+      "num": "05",
+      "title": [
+        "徒步 Tizi N'Zou Imtchimin 山谷与 Tamaloute 大坝",
+        ""
+      ],
+      "blocks": [
+        {
+          "para": "hiking"
+        }
+      ]
+    },
+    {
+      "type": "info",
+      "startsSection": 6,
+      "band": {
+        "image": "midelt/road-range.jpg",
+        "pos": "50% 40%",
+        "h": 58
+      },
+      "num": "06",
+      "title": [
+        "实用信息。",
+        ""
+      ],
+      "lead": "info-lead",
+      "columns": [
+        [
+          {
+            "info": "climat"
+          },
+          {
+            "info": "time"
+          },
+          {
+            "info": "languages"
+          }
+        ],
+        [
+          {
+            "info": "hotels"
+          },
+          {
+            "info": "land"
+          }
+        ],
+        [
+          {
+            "info": "agencies"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "back",
+      "image": "photos/hero-trekking.jpg",
+      "pos": "50% 60%"
+    }
+  ]
+}

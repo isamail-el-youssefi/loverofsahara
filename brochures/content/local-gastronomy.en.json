@@ -1,0 +1,171 @@
+{
+  "lang": "en",
+  "slug": "local-gastronomy",
+  "title": "Local Gastronomy",
+  "kicker": "Gastronomic guide",
+  "subtitle": "The 10 best meals of the Drâa Tafilalet region",
+  "creditSubject": "the local gastronomy of the Drâa Tafilalet region",
+  "cover": { "line": "Local", "dim": "Gastronomy." },
+  "contentsTitle": "Contents",
+  "contents": [
+    { "n": "01", "title": "Local gastronomy" },
+    { "n": "02", "title": "History of the tea ritual of the nomads" },
+    { "n": "03", "title": "Gastronomic tour of Drâa Tafilalet : The 10 best meals to savor" }
+  ],
+  "items": {
+    "terroir": {
+      "title": "Terroir of The Local Gastronomy",
+      "body": "The land of Drâa Tafilalet has shaped the culinary art of this vast region. The low rainfall has not prevented the development of many crops, from dates to fruit trees to cereals such as corn, barley and plants such as the widespread lucerne ... The Khattaras (this ingenious irrigation technique) has allowed, for centuries, to bring water to crops.\n\nThe gastronomy of Drâa Tafilalet is based on the agricultural products of this vast and sparsely populated region (1.6 million inhabitants in an area of 88,836 Km²). Dates remain the main product of the region, which add a\" touch \" to various dishes of the local gastronomy. The lush palm groves in Tafilalet on the edge of the Ziz valley gave birth to the Majhoul, this prestigious date variety, the ancestor of the one cultivated in California (USA) and which has become famous all over the world. The palm grove of Ghris in Goulmima on 14 km irrigated by the eponymous river and that of Tinghir irrigated by the Toudgha river (covering 30 km from the Toudgha gorges to Ferkla) are just as beautiful. Fint Oasis and the palm grove of Skoura with an area of 25 km show, in turn, the richness of the date palm in the region. In the Draa Valley, the palm groves extend from Agdz to M'Hamid El Ghizlane over an area of 220 km long and 18 km wide. This region has six oases: Mezguita, Tarnata, Fazwata, Ktawa and M'hamid."
+    },
+    "dates-apple": {
+      "title": "From The Dates of Drâa to The Apple of Midelt",
+      "body": "The varieties of dates grown throughout the region vary from Majhoul to Boufeggous , Bouzekri and Nejda, Bousthami or Jihel... Under the date palms, there are also fruit trees that vary according to region such as almond, fig, olive, These trees provide shade for ground food crops such as wheat, barley, luzern, corn, arugula and certain vegetables such as long tomatoes, turnips, red peppers and okra.\n\nSpices such as cumin and saffron grown in Alnif as well as salt from the mines of Ait Hani complete the flavors of the dishes. For centuries, these crops were irrigated thanks to the ingenious system of the Khattaras, abandoned after the drought and the departure of the workers. In the province of Midelt, the least arid of the region, we find apple orchards that producers sell throughout Morocco."
+    },
+    "goats-camels": {
+      "title": "Goats and Camels : Treasures of The Region",
+      "body": "Cattle breeding is an activity practiced by the inhabitants of the mountainous regions, plains and even arid and desert plateaus. Nomads and sedentary people have herds of goats, sheep and dromedaries.\n\nMeat is the main ingredient of various dishes that are enjoyed during festivals and major ceremonies."
+    },
+    "tea-ritual": {
+      "title": "The Ancestral Ritual of Tea Amongst The Nomads",
+      "body": "Introduced among nomadic tribes at the end of the 19th century, tea became a communication ritual reserved at first for the tribal chiefs and then taken over by the ladies to put young girls in touch with their potential suitors.\n\nBeyond being a national drink with many energy and relaxing virtues, tea has become a very famous ancestral ritual. Since its arrival in the region at the end of the 19th century, a traditional tea ritual was conceived by the nomads as a moment of exchange and communication between the members of the tribe.\n\nIn the beginning, tea was reserved for the heads of the tribes who met at the Sheikh's house after the Al Asr prayer (third prayer of the day performed in the middle of the afternoon). The ritual of the Sahrawi tea obviously requires a teapot, a silver plate and glasses added to that the tea, water and sugar. But to make it a convivial moment, the presence of three elements is vital: a group of people, time and a brazier."
+    },
+    "tea-marriage": {
+      "title": "A Feminized Ritual to Facilitate Marriages",
+      "body": "During this moment, which sometimes lasts for hours, the members of the tribe talk about their journey over several days in the desert. Those seeking information on the safest routes and preferred directions in the vast Sahara would attend the tea ritual at the Cheikh's home.\n\nThey exchanged information, told legends and recited poetry... The women also organized the same ritual. This allowed them to get to know and connect young girls with the families of suitors in the tribe.\n\nAt that time, men were not allowed to approach young girls. They could only see them from a distance as they fetched water from a well to feed the herds of goats or camels. The female tea ritual facilitated contact between young girls and their potential suitors in the tribe."
+    },
+    "tour-lead": "The gastronomy of Drâa Tafilalet is based on meat products, agricultural products grown in the oasis and local herbs. Some culinary treasures are prepared at home, on demand or available in the souks (markets). You will usually find the classic Tajine and Couscous with some regional specificities.\n\nWe present you the Top 10 of the best dishes of the region for a culinary adventure in the region Drâa Tafilalet.",
+    "saffron": {
+      "title": "Meat Tajine with Saffron",
+      "body": "Mixing subtly, as Moroccan cuisine does so well, sweet and salty, the Tajine of meat with Saffron of Ouarzazate is a culinary marvel concealing more than one secret and that one must certainly discover while passing through the region.\n\nSimmering on the embers of the Kanoun (brazier), the meat of D'mane, a breed of sheep from the oases, typical of southeastern Morocco, reveals all its flavors under the influence of a precious mixture of spices: cinnamon, ginger and honey, which is enhanced by \"Saffron\".\n\nThese red filaments with a spicy, warm and slightly bitter flavor are obtained after a laborious harvest in the valley of Ouarzazate, with 3 red stigmas per flower. It takes no less than 50,000 flowers to harvest 1 kg of fresh stigmas and nearly 5 kg of stigmas to make 1 kg of dried saffron, ready to use, hence the high price of saffron.\n\nThis tajine is served upon request in the lodgings and restaurants."
+    },
+    "baddaz": {
+      "title": "Baddaz",
+      "body": "Rhythmed by the sun, which ripens the ingredients, Baddaz, the Berber couscous, is a variant of the Moroccan couscous with a thousand turns, which is distinguished both by its ingredients, and by its singular preparation.\n\nIts base, composed of corn semolina (Asengar) is carefully rolled by hand, then steamed in a couscoussier, three times, before being flavored with 'smen' (rancid butter).\n\nThis typical dish of Ouarzazate cannot be enjoyed without the strips of salted mutton, dried in the sun \"the guedid\" and / or \"Kordas\", these pieces of mutton belly stuffed with strips of heart, liver and lungs steamed and then dried in the sun ... two components with a pronounced taste, which revive the timid flavors of cornmeal.\n\nThe alfalfa and sun-dried turnips are the finishing touch to this dish."
+    },
+    "medfouna": {
+      "title": "Medfouna",
+      "body": "In the south-east of Morocco, there is a dish which is an institution in itself: the famous Medfouna. The Moroccan equivalent of the Italian Calzone.\n\nEmblematic dish of the valley of Rissani, this ancient capital of Tafilalet, which was in the past, the stronghold of the Alaouite dynasty. The city that was once a major caravan center of trans-Saharan trade and which houses the tomb of Moulay Ali Cherif.\n\nThe Medfouna, a bread stuffed with small cubes of meat, hard-boiled eggs, almonds, onions and spices (salt, cumin, ginger and sometimes chili) is served in restaurants, or on order in markets, is a must for all visitors to the region. It is possible for visitors who wish to do so, to buy the meat themselves, used to stuff the patty, from the butchers, before handing it over to the cook, who will shape the dish... a guarantee of quality but above all a way of making visitors contribute to the process of preparing this dish."
+    },
+    "okra": {
+      "title": "Tajine of Okra",
+      "body": "The tajine of \"Mloukhia\" / okra, is the ultimate demonstration of the genius of Moroccan cuisine. This exotic vegetable, widespread in North Africa and the Middle East, is full of subtle flavors and not very pronounced, a bit like eggplant, reveals all its succulence to the palate, thanks to the clever blend of spices of the tajine, combined with the juicy sauce released by the tomatoes and onions that accompany it. Its great characteristic, is the viscous and gelatinous texture of the vegetable, marries perfectly with the meat of lamb or beef.\n\nIn order to appreciate it at its true value, the tagine of Mloukhia is tasted ideally in the hand, with bread Tafarnoute (typical of the Moroccan south) crunchy, to compose bites where mingle sauce, okra and meat, for the biggest pleasure of the taste buds of the finest gourmets.\n\nThe Tajine of Okra is served in the Tajine restaurants of Errachidia."
+    },
+    "dromedary": {
+      "title": "Dromedary Meat Tajine with Dates",
+      "body": "For the dromedary Tajine, tender pieces of dromedary thigh are preferred. The camel meat is rich in water and low in fat, in addition to being tasty, it reduces the risk of heart disease because of its low saturated fatty acids.\n\nDuring the preparation of the tagine, the meat is simmered on a bed of onion and the taste is enhanced with a potion of virgin olive oil and condiments (cinnamon, paprika, cumin, ginger). At the preparation, dates sprinkled with sesame and coated with honey, enrich this festive dish from Zagora.\n\nAvailable in the desert areas more in summer than in winter due to a higher demand and a more frequent slaughter. The dromedary tajine is served upon request in the restaurants of the province."
+    },
+    "pigeons": {
+      "title": "Stuffed Pigeons",
+      "body": "When visiting the region of Drâa Tafilalet, many visitors ask for this delicious dish: \"Stuffed pigeons of Zagora\". This dish of choice, although it seems simple to achieve, requires long hours of preparation and cooking. Sometimes stuffed with meat, sometimes with vegetables and angel hair, in everyday life, the stuffed pigeons are reserved for special occasions or privileged guests. The game used in the preparation of the dish is generally raised in the traditional way at the inhabitant's.\n\nThe pigeon meat, fine and tender, lean and very rich in iron, has this specificity to be particularly melting in mouth and to seduce the palate by a subtle taste of hazelnut. This particular dish, also appreciates the sweet and salty marriage, and is served upon request in the restaurants of the province."
+    },
+    "terfas": {
+      "title": "Tajine Terfas",
+      "body": "Zoubaïdi or ezzabdi or terfess or terfez, this rare desert mushroom, growing in parts of Morocco, especially in the southeast and the Sahara, is very popular, is similar to white gold. Growing between November and April and harvested between March and May, is an ingredient of choice for the composition of Tajine Terfas Tinghir.\n\nDeriving from the rich Moroccan Jewish culinary heritage (a traditional recipe of Moroccan Jewish families, especially to celebrate Pesach, one of the most important holidays in the Jewish religion) this dish based on truffles and beef is very well known in the region and is the pride of the local cuisine.\n\nThe meat is also known for its exceptional culinary qualities and its medicinal properties, thanks to its richness in antioxidants.\n\nThe tajine is served upon request in Tinghir restaurants."
+    },
+    "ifnouzen": {
+      "title": "Ifnouzen",
+      "body": "\"Ifnouzen\" or \"couscous with alfalfa\", is an ancestral Amazigh gastronomic specialty, appreciated by the inhabitants of the southern regions of Morocco, as well as by its visitors, reputed as a winter dish par excellence.\n\nThanks to its components and nutritional virtues, Ifnouzen provides the body with energy and warmth, to ward off the cold that prevails in winter in the region.\n\nBased in its preparation on local products: alfalfa (a chopped grass incorporated into the couscous before the final steaming with various condiments), olive oil, wheat, barley and corn, leeks, this dish is prepared by the inhabitants of the region for centuries, and is a favorite dish to welcome guests on their arrival at the home."
+    },
+    "goat-apples": {
+      "title": "Tajine of Goat Meat with Candied Apples",
+      "body": "The champion of apple production in Morocco (more than 90% of the national production), Midelt is undoubtedly the apple capital par excellence in Morocco.\n\nAs such, an atypical dish of the region has earned its reputation as the apple capital: The Tajine of Goat Meat with candied apples. Another marvel of the Moroccan gastronomic register of sweet and sour.\n\nTo make it, good pieces of goat meat are carefully chosen, then skilfully flavored with onions, garlic and coriander, to be then seasoned by a tangy green apple (harvested in abundance in the region) candied, for the basic version. In another version, prunes and roasted almonds are added to the tajine, to the delight of the guests.\n\nThis tajine is served in restaurants, guest houses and in the homes of local people."
+    },
+    "trout": {
+      "title": "Trout Tajine",
+      "body": "The province of Midelt, with its lakes, dams, wadis and large reservoirs, has a specific wealth of fish, to the delight of fishing enthusiasts ... but also for lovers of fish dishes, especially trout.\n\nThe trout tajine, this delectable dish, emblematic of Midelt, is thus very sought after by visitors to the region. Proposed in its first variant, on the earthenware dish, where we arrange the trout of the Atlas, on a bed of potatoes, nicely decorated with slices of tasty peppers, juicy tomatoes, olives and lemon confit.\n\nFor those who like it sweet and savory, you can opt for the onion, raisin and dried fruit version, sweetened with honey. The tender and tasty flesh of the local trout, lends itself smoothly to the game of flavors of this tajine, providing visitors to the region a culinary experience to delight the finest palates.\n\nThe trout tajine is served in various restaurants in the province."
+    },
+    "sub-ouarzazate": "Ouarzazate"
+  },
+  "pages": [
+    { "type": "cover", "image": "gastro/cover-portrait.jpg", "pos": "50% 50%" },
+    { "type": "contents", "image": "gastro/tea-pour.jpg", "pos": "50% 40%" },
+    {
+      "type": "intro",
+      "startsSection": 1,
+      "band": { "image": "gastro/hero-tajine.jpg", "pos": "50% 50%", "h": 56 },
+      "eyebrow": "01  ·  Local gastronomy",
+      "title": ["Terroir of", "The Local Gastronomy."],
+      "columns": [
+        [ { "para": "terroir" } ],
+        [
+          { "item": "dates-apple", "first": true, "img": "gastro/apples.jpg", "imgPos": "50% 50%" },
+          { "item": "goats-camels" }
+        ]
+      ]
+    },
+    {
+      "type": "opener-type",
+      "startsSection": 2,
+      "num": "02",
+      "eyebrow": "History of the tea ritual of the nomads",
+      "title": ["The Tea Ritual", "of The Nomads."],
+      "columns": [
+        [ { "item": "tea-ritual", "first": true, "img": "gastro/tea-set.jpg", "imgPos": "50% 50%" } ],
+        [ { "item": "tea-marriage", "first": true, "img": "gastro/tea-pour.jpg", "imgPos": "50% 40%" } ]
+      ]
+    },
+    {
+      "type": "opener-type",
+      "startsSection": 3,
+      "num": "03",
+      "eyebrow": "A Gastronomic Tour of Drâa Tafilalet",
+      "title": ["The 10 best", "Dishes of The Region."],
+      "lead": "tour-lead",
+      "columns": [
+        [ { "fig": "gastro/quince-tajine.jpg" } ],
+        [ { "fig": "gastro/hero-tajine.jpg" } ]
+      ]
+    },
+    {
+      "type": "opener-band",
+      "band": { "image": "ouarzazate/valley-aerial.jpg", "pos": "50% 50%", "h": 80 },
+      "num": "03",
+      "title": ["Ouarzazate.", ""],
+      "columns": [
+        [ { "item": "saffron", "first": true, "img": "gastro/meat-tajine-saffron.jpg" } ],
+        [ { "item": "baddaz", "first": true, "img": "gastro/baddaz.jpg" } ]
+      ]
+    },
+    {
+      "type": "opener-band",
+      "band": { "image": "errachidia/palm-sea.jpg", "pos": "50% 50%", "h": 80 },
+      "num": "03",
+      "title": ["Errachidia.", ""],
+      "columns": [
+        [ { "item": "medfouna", "first": true, "img": "gastro/medfouna.jpg" } ],
+        [ { "item": "okra", "first": true, "img": "gastro/tajine-okra.jpg" } ]
+      ]
+    },
+    {
+      "type": "opener-band",
+      "band": { "image": "general/dunes-sunset.jpg", "pos": "50% 55%", "h": 80 },
+      "num": "03",
+      "title": ["Zagora.", ""],
+      "columns": [
+        [ { "item": "dromedary", "first": true, "img": "gastro/dromedary-tajine.jpg" } ],
+        [ { "item": "pigeons", "first": true, "img": "gastro/stuffed-pigeons.jpg" } ]
+      ]
+    },
+    {
+      "type": "opener-band",
+      "band": { "image": "general/road-switchbacks.jpg", "pos": "50% 55%", "h": 80 },
+      "num": "03",
+      "title": ["Tinghir.", ""],
+      "columns": [
+        [ { "item": "terfas", "first": true, "img": "gastro/tajine-terfas.jpg" } ],
+        [ { "item": "ifnouzen", "first": true, "img": "gastro/ifnouzen.jpg" } ]
+      ]
+    },
+    {
+      "type": "opener-band",
+      "band": { "image": "midelt/tamaloute-lake.jpg", "pos": "50% 55%", "h": 80 },
+      "num": "03",
+      "title": ["Midelt.", ""],
+      "columns": [
+        [ { "item": "goat-apples", "first": true, "img": "gastro/goat-apples.jpg" } ],
+        [ { "item": "trout", "first": true, "img": "gastro/trout-tajine.jpg" } ]
+      ]
+    },
+    { "type": "back", "image": "gastro/cover-back-portrait.jpg", "pos": "50% 50%" }
+  ]
+}

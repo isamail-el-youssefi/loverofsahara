@@ -8,6 +8,11 @@ import type { TripCategory } from "@/data/trips/schema";
  */
 export interface UiStrings {
   navTrips: string;
+  navBrochures: string;
+  navGallery: string;
+  navByCategory: string;
+  navByDeparture: string;
+  reviewed: string;
   heading: string;
   intro: string;
   all: string;
@@ -28,6 +33,11 @@ export interface UiStrings {
 export const UI: Record<Lang, UiStrings> = {
   en: {
     navTrips: "Trips",
+    navBrochures: "Brochures",
+    navGallery: "Gallery",
+    navByCategory: "By category",
+    navByDeparture: "By departure",
+    reviewed: "Reviewed",
     heading: "Our Trips",
     intro: "Private 4x4 journeys into the Sahara, from short desert escapes to week-long expeditions.",
     all: "All",
@@ -43,6 +53,11 @@ export const UI: Record<Lang, UiStrings> = {
   },
   fr: {
     navTrips: "Circuits",
+    navBrochures: "Brochures",
+    navGallery: "Galerie",
+    navByCategory: "Par catégorie",
+    navByDeparture: "Par départ",
+    reviewed: "Avec avis",
     heading: "Nos Circuits",
     intro: "Voyages privés en 4x4 dans le Sahara, des escapades express aux expéditions d’une semaine.",
     all: "Tous",
@@ -58,6 +73,11 @@ export const UI: Record<Lang, UiStrings> = {
   },
   de: {
     navTrips: "Reisen",
+    navBrochures: "Broschüren",
+    navGallery: "Galerie",
+    navByCategory: "Nach Kategorie",
+    navByDeparture: "Nach Abreiseort",
+    reviewed: "Mit Bewertungen",
     heading: "Unsere Reisen",
     intro: "Private 4x4-Reisen in die Sahara – von kurzen Wüstenausflügen bis zu einwöchigen Expeditionen.",
     all: "Alle",
@@ -73,6 +93,11 @@ export const UI: Record<Lang, UiStrings> = {
   },
   es: {
     navTrips: "Viajes",
+    navBrochures: "Folletos",
+    navGallery: "Galería",
+    navByCategory: "Por categoría",
+    navByDeparture: "Por salida",
+    reviewed: "Con reseñas",
     heading: "Nuestros Viajes",
     intro: "Viajes privados en 4x4 por el Sahara, desde breves escapadas hasta expediciones de una semana.",
     all: "Todos",
@@ -88,6 +113,11 @@ export const UI: Record<Lang, UiStrings> = {
   },
   it: {
     navTrips: "Viaggi",
+    navBrochures: "Brochure",
+    navGallery: "Galleria",
+    navByCategory: "Per categoria",
+    navByDeparture: "Per partenza",
+    reviewed: "Con recensioni",
     heading: "I nostri Viaggi",
     intro: "Viaggi privati in 4x4 nel Sahara, dalle brevi fughe nel deserto alle spedizioni di una settimana.",
     all: "Tutti",
@@ -103,6 +133,11 @@ export const UI: Record<Lang, UiStrings> = {
   },
   zh: {
     navTrips: "旅行",
+    navBrochures: "手册",
+    navGallery: "图库",
+    navByCategory: "按类别",
+    navByDeparture: "按出发地",
+    reviewed: "有评价",
     heading: "我们的旅行",
     intro: "私人四驱车撒哈拉之旅，从短途沙漠之行到长达一周的探险。",
     all: "全部",

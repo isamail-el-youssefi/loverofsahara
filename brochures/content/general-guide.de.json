@@ -1,0 +1,1009 @@
+{
+  "lang": "de",
+  "slug": "general-guide",
+  "title": "Die Region Drâa-Tafilalet",
+  "kicker": "Allgemeiner Reiseführer",
+  "subtitle": "Die Region der Oasen, Berge und der Wüste",
+  "creditSubject": "der Region Drâa-Tafilalet",
+  "cover": {
+    "line": "Drâa",
+    "dim": "Tafilalet."
+  },
+  "contentsTitle": "Inhalt",
+  "contents": [
+    {
+      "n": "01",
+      "title": "Editorial"
+    },
+    {
+      "n": "02",
+      "title": "Drâa-Tafilalet, die Region der Oasen, Berge und Wüsten"
+    },
+    {
+      "n": "03",
+      "title": "Ouarzazate"
+    },
+    {
+      "n": "04",
+      "title": "Errachidia"
+    },
+    {
+      "n": "05",
+      "title": "Zagora"
+    },
+    {
+      "n": "06",
+      "title": "Tinghir"
+    },
+    {
+      "n": "07",
+      "title": "Midelt"
+    },
+    {
+      "n": "08",
+      "title": "Wanderwege: Winter und Frühling"
+    },
+    {
+      "n": "09",
+      "title": "Praktische Informationen"
+    }
+  ],
+  "items": {
+    "welcome": {
+      "title": "Draa-Tafilalet heißt Sie willkommen",
+      "paras": [
+        "Sich selbst zu begegnen, indem man sich vom Charme der Region mitreißen lässt, ist zweifellos die Geisteshaltung schlechthin eines jeden Besuchers der Region Draa-Tafilalet. In ihren weiten Räumen, ihren Bergen und Wüsten, ihren Oasen und Kasbahs liegt das Geheimnis des Glücks und der Weg zum inneren Frieden. Eine Region, in der die Zeit kein Begriff mehr ist, in der der Sand aus den Sanduhren entweicht, um sich zu seinen heimatlichen Dünen zu gesellen. Hier gewinnt das Wunder der Schöpfung seinen vollen Sinn.",
+        "Doch jenseits der Orte ist eines der größten Erbstücke von Draa-Tafilalet zweifellos seine Bevölkerung. Eine Bevölkerung, deren Freundlichkeit und menschliche Wärme Teil eines Erbes sind, das treu von Generation zu Generation weitergegeben wird.",
+        "Dieses Land der Inspiration und der Träume wird Sie blenden, wie es Millionen von Besuchern vor Ihnen geblendet hat. Jede seiner Provinzen, sei es Ouarzazate, Errachidia, Tinghir, Midelt oder Zagora, verspricht eine einzigartige und unvergessliche Reise für den, der sich die Zeit nimmt, sie zu entdecken. Mit diesem Reiseführer und unserer gesamten Dokumentation bringen wir Ihnen alles näher, was die Region Draa-Tafilalet zu bieten hat und wie Sie Ihren Aufenthalt optimal nutzen."
+      ],
+      "sign": "Marhaba, willkommen",
+      "body": "Sich selbst zu begegnen, indem man sich vom Charme der Region mitreißen lässt, ist zweifellos die Geisteshaltung schlechthin eines jeden Besuchers der Region Draa-Tafilalet. In ihren weiten Räumen, ihren Bergen und Wüsten, ihren Oasen und Kasbahs liegt das Geheimnis des Glücks und der Weg zum inneren Frieden. Eine Region, in der die Zeit kein Begriff mehr ist, in der der Sand aus den Sanduhren entweicht, um sich zu seinen heimatlichen Dünen zu gesellen. Hier gewinnt das Wunder der Schöpfung seinen vollen Sinn.\n\nDoch jenseits der Orte ist eines der größten Erbstücke von Draa-Tafilalet zweifellos seine Bevölkerung. Eine Bevölkerung, deren Freundlichkeit und menschliche Wärme Teil eines Erbes sind, das treu von Generation zu Generation weitergegeben wird.\n\nDieses Land der Inspiration und der Träume wird Sie blenden, wie es Millionen von Besuchern vor Ihnen geblendet hat. Jede seiner Provinzen, sei es Ouarzazate, Errachidia, Tinghir, Midelt oder Zagora, verspricht eine einzigartige und unvergessliche Reise für den, der sich die Zeit nimmt, sie zu entdecken. Mit diesem Reiseführer und unserer gesamten Dokumentation bringen wir Ihnen alles näher, was die Region Draa-Tafilalet zu bieten hat und wie Sie Ihren Aufenthalt optimal nutzen."
+    },
+    "region": {
+      "title": "Drâa-Tafilalet",
+      "subtitle": "Die Region der Oasen, Berge und Wüsten",
+      "lead": "Im Norden vom Hohen Atlas, im Süden von der algerischen Grenze, im Westen von der Region Souss-Massa und im Osten von der Region Oriental begrenzt, ist die Region Draa-Tafilalet das Tor zur majestätischen Sahara des Südostens. Zwischen ihren Sanddünen, ihren grünen Tälern, ihren Oasen, ihren Wadis, ihren spirituellen Zentren und ihren Kasbahs hat die Region so viele Schätze zu enthüllen.",
+      "body": "Die Region Drâa-Tafilalet ist eingebettet in Wüste, Sanddünen, Oasen, Wadis, Canyons, Berge, ockerfarbene Dörfer und Lehm-Kasbahs sowie weite, schneebedeckte Täler und die Berge des Mittleren Atlas in Midelt und des Antiatlas in Tinghir.\n\nAuf einer Fläche von 88.836 km² mit einer Bevölkerung von 1.635.008 Einwohnern (laut Volkszählung 2014) ist die Region die Wiege der Alawiden-Dynastie, einst ein Knotenpunkt des Karawanenhandels im Großen Tafilalet und dank der Zawiya Naciria in Tamgroute ein spirituelles Sufi-Zentrum; sie bewahrt auch die Spuren ihrer ersten Bewohner.\n\nIhre prähistorischen Felsgravuren von M'ifis in der Gemeinde Et-taouz bei Merzouga, von Foum Chenna und Tazarine bei Zagora, die bei den ältesten 4000 Jahre alt sind, bieten vielen Besuchern eine historische Kuriosität. Das einzigartige Mineralien- und Fossilienerbe von Midelt ist weltberühmt. Zudem zeugen ihre zahllosen Kasbahs und Ksour wie der majestätische Ksar Ait Benhaddou und die große Kasbah von Taourirte in Ouarzazate von der alten Berberarchitektur."
+    },
+    "lifestyles": {
+      "title": "Auf der Entdeckung anderer Lebensweisen",
+      "body": "Ihre reichen Palmenhaine, die Dutzende und manchmal Hunderte von Kilometern bedecken, liefern Datteln, die uralte Frucht der Sahara. In den Palmenoasen können Besucher auch Obstbäume und Anbauflächen entdecken. Spaziergänge in den Palmenhainen sind ein wirksamer Weg, die Lebensweise der lokalen Bevölkerung kennenzulernen, einschließlich landwirtschaftlicher Verfahren und uralter Traditionen. In den trockenen und wüstenhaften Gebieten leben Nomaden, die ihren Besuchern ihr Leben in der Gemeinschaft zeigen, das auf der Zucht von Ziegen und Dromedaren beruht, sowie ihre kulinarischen Spezialitäten.\n\nImmer mehr sesshaft, leben diese Nomaden heute oft in Männergruppen und lassen ihre Familien im Dorf, um ihre Kinder zur Schule zu schicken. Aber es ist immer noch möglich, Nomaden zu finden, die in Familien oder Stämmen in den Wüsten von Merzouga leben, oder, noch überraschender, in Höhlenwohnungen in der Provinz Tinghir, wo sie den Winter im Saghro im Antiatlas und den Sommer im Großen Atlas verbringen ..."
+    },
+    "sports": {
+      "title": "Eine Region der Extremsportarten",
+      "body": "Aufgrund seiner Geografie ist Drâa-Tafilalet auch ein Ziel für Abenteuer und Nervenkitzel. Zwischen Motorsport, Trekking, Sandmarathons, Mountainbike-Rennen oder Bergsteigen in den Todgha- oder Dadès-Schluchten ist die Region voller sportlicher Aktivitäten und Veranstaltungen aller Art.\n\nZu nennen sind der Grand Trail des Draa-Tals, ein 30 km langer Lauf im Draa-Tal, der Merzouga-Marathon, zwei Läufe über 16 und 35 km auf dem Gebiet der Gemeinde Taouz, der berühmte Marathon des Sables, der 1986 ins Leben gerufen wurde und über fast 230 km von Arfoud bis Merzouga durch Jbels, Ergs und Oasen führt. Auch die Rallye-Raids kommen nicht zu kurz. Die Merzouga-Rallye für Autos, Motorräder, Quads und SSV sowie die Rallye M'hamid Express sind berühmte Beispiele ..."
+    },
+    "gastro-intro": {
+      "title": "Die lokale Gastronomie vor Ort entdecken",
+      "body": "Weniger abenteuerlustige Besucher können entspannendere Aktivitäten genießen, etwa die Sandtherapie, die an heißen Sommertagen sehr verbreitet ist und sich an Menschen mit Rheuma richtet.\n\nDas Angeln von Forellen und Hechten in den legendären Seen Tislit und Isli bei Imilchil und von Regenbogenforellen am Staudamm von Tamaloute in der Provinz Midelt sowie der Besuch der vielen Höhlen wie der Akhiam- und Tanghort-Höhlen in Midelt sind für Wanderer empfehlenswert. Die Gastronomie von Drâa-Tafilalet ist ein weiterer Schatz, den es zu entdecken gilt.\n\nIn Restaurants und Hotels kaum vertreten, müssen die Spezialitäten der Region vorbestellt oder bei Einheimischen zu Hause genossen werden. Medfouna, gefüllte Tauben, Dromedar-Tajine, Mechoui oder Couscous mit Luzerne – die Spezialitäten treffen jeden Geschmack.\n\nWer die klassischen Tajines, den Couscous und andere berühmte marokkanische Spezialitäten bevorzugt, wird nicht enttäuscht. Sie stehen auf den Speisekarten der Restaurants der Region reichlich zur Auswahl. Weit und vielfältig lädt die Region Drâa-Tafilalet ihre Besucher ein, alle ihre Facetten zu entdecken! Neugier und Geduld werden Ihre wichtigsten Eigenschaften sein."
+    },
+    "ouz-intro": {
+      "title": "Ouarzazate",
+      "subtitle": "Das Tor zu Oasen und grünen Tälern",
+      "lead": "Die Perle des marokkanischen Südostens gilt als bevorzugter Drehort für Hollywood-Kultfilme. Ihre Ksour, Kasbahs, Täler und Oasen machen sie zu einer Provinz mit herrlichen Landschaften, die dank ihrer 300 Sonnentage zum Zentrum der Solarenergie in Marokko geworden ist.",
+      "body": "In der Provinz Ouarzazate leben fast 297.502 Menschen in einer Oase der Ruhe mit minimalem Verkehr. Zwischen Oasen, Kasbahs und blühenden Tälern bietet die Provinz majestätische Landschaften mit einem im Sommer sehr heißen und im Winter milden Klima, trotz Temperaturstürzen in den Winternächten. Ihr Licht von hoher Qualität und ihre Landschaften machten sie zu einem Ort, den die großen Filmproduktionen der Welt nicht verpassen dürfen."
+    },
+    "ouz-cinema": {
+      "title": "Ouarzazate: Die afrikanische Hauptstadt des Films",
+      "body": "Ouarzazate, auf einer weiten Wüstenhochebene im Schatten der Palmen gelegen, erlebte seinen ersten Dreh: „Les Hommes sans nom“ („Männer ohne Namen“) im Jahr 1937, mitten in der Kolonialzeit. Darauf folgten „Ali Baba und die vierzig Räuber“ 1954, „Lawrence von Arabien“ und „Sodom und Gomorrha“ 1962. Die Atlas-Studios waren 1983 die ersten, die sich in der Stadt niederließen. Die CLA-Studios kamen später, 2004. Diese Infrastruktur hat wesentlich zur Ankunft außergewöhnlicher Blockbuster wie Die Mumie, Gladiator, Königreich der Himmel und in jüngerer Zeit der Serie Prison Break und Queen of the Desert mit Nicole Kidman beigetragen."
+    },
+    "ouz-trade": {
+      "title": "Knotenpunkt des antiken Handels",
+      "body": "Ouarzazate war lange Zeit ein Ort des Handelstreffens mit mehreren Ländern im Norden und Süden des Kontinents. Mit der Gründung von Sijilmassa im Tafilalet Mitte des 8. Jahrhunderts war die Provinz Ouarzazate die Route der Karawanen, die Waren aus dem Sudan und von Sijilmassa nach Fès und Marrakesch brachten.\n\nOuarzazate war damit das schlagende Herz des blühenden Karawanenhandels in Marokko. Nach dem Niedergang und der arabischen Eroberung erlebte die Region erst in der Saadier-Zeit dank des Transsahara-Handels eine Wiedergeburt, bevor die Handelstätigkeit von den Europäern endgültig an die Atlantikküste umgeleitet wurde.\n\nWas die landwirtschaftliche Tätigkeit betrifft, hat der Bau des Staudamms El Mansour Eddahbi im Jahr 1966 der Landwirtschaft der Region, die auf Dattelpalmen, Safran und Rosen beruht, neuen Auftrieb gegeben. Ouarzazate ist auch reich an immateriellem Erbe, darunter von Amazigh-Frauen gewebte Berberteppiche und kulturelle Traditionen wie die des Ahwach, einer der größten Amazigh-Gemeinschaften Marokkos.\n\nGesang, Poesie und Körperbewegung verbinden sich zu einem kollektiven, choreografierten Tanz. Die Kasbahs und Ksour von Ouarzazate, über die ganze Region verstreute Lehmhäuser, stellen sein architektonisches Erbe dar. Sie waren der bevorzugte Wohnsitz wohlhabender Familien mit wirtschaftlicher, sozialer oder militärischer Macht."
+    },
+    "ouz-noor": {
+      "title": "Noor Ouarzazate versorgt eine Stadt wie Marrakesch mit Strom",
+      "body": "Heute hat Ouarzazate auch eine neue Aufgabe: Es ist das erste Aushängeschild der Solarenergie in Marokko. Mit seinen vier Produktionseinheiten kann der Solarkomplex Noor Ouarzazate 580 Megawatt erzeugen, genug, um 1,1 Millionen Marokkaner mit Strom zu versorgen.\n\nDas entspricht der Einwohnerzahl von Marrakesch. Es ist möglich, die Noor-Anlage an der Straße nach Skoura/Tinghir/Errachidia zu besichtigen, indem man einen Antrag bei MASEN, der marokkanischen Agentur für Solarenergie, stellt."
+    },
+    "ouz-sites-lead": "Ouarzazate, die uralte Hauptstadt der Berberkultur, ist voller Erbe für kulturelle und historische Besichtigungen. Zwischen Kasbahs, Filmstudios und typischen Souks kann man sich an seinen Schätzen nicht sattsehen.",
+    "ouz-taourirt": {
+      "title": "Die Kasbah von Taourirte: Das Wahrzeichen der Stadt",
+      "body": "Die Kasbah von Taourirte, auf einem Hügel im Zentrum von Ouarzazate gelegen, wurde im 17. Jahrhundert erbaut.\n\nAls wahres Symbol der Berberarchitektur ist sie aus Lehm, Stroh und Kalk gebaut. Einst der Palast des Paschas von Marrakesch, Thami El Glaoui, der dort mit seiner Familie bis 1956 residierte, ist sie heute UNESCO-Welterbe. 1972 wurde die Kasbah von Taourirte von der Gemeinde Ouarzazate gekauft.\n\nIhr nordwestlicher Teil wurde 1996 restauriert, und die Empfangsräume und Privatgemächer des Paschas sind für die Öffentlichkeit zugänglich."
+    },
+    "ouz-telouet": {
+      "title": "Die Kasbah von Telouet",
+      "body": "Die prächtige Kasbah von Telouet, einst Residenz des Paschas Glaoui, im 19. Jahrhundert erbaut, liegt 77 km von Ouarzazate entfernt an der Straße zum Ksar Ait Benhaddou.\n\nDiese prestigeträchtige und raffinierte Kasbah mit ihrer arabisch-maurischen Architektur bestand aus einem Schloss, einer Festung und einer Karawanserei. Heute liegt sie in Ruinen, da sie seit 1956 den Launen des Klimas überlassen ist.\n\nNur das Haupthaus und einige Nebengebäude stehen noch und können von Touristen besichtigt werden."
+    },
+    "ouz-benhaddou": {
+      "title": "Der Ksar Ait Benhaddou",
+      "body": "Der Ksar Ait Benhaddou liegt in den Ausläufern des Hohen Atlas in der Provinz Ouarzazate und ist eine Gruppe von Gemeinschaftswohnungen aus dem 17. Jahrhundert.\n\nDie Stätte, 30 km außerhalb von Ouarzazate gelegen, ist seit 1987 UNESCO-Welterbe.\n\nDer Ksar umfasst bescheidene Wohnhäuser, kleine Schlösser, aber auch Gebäude und Gemeinschaftsräume. Zu den öffentlichen Räumen gehören die Moschee, ein öffentlicher Platz, Dreschplätze, eine Befestigung, ein Getreidespeicher an der Spitze des Dorfes, eine Karawanserei, zwei Friedhöfe (muslimisch und jüdisch) und das Heiligtum von Sidi Ali ou Amer."
+    },
+    "ouz-atlas": {
+      "title": "Die Atlas-Studios",
+      "body": "Die Atlas-Studios, 4 km vom Stadtzentrum von Ouarzazate entfernt, wurden 1983 gegründet und bedecken eine Fläche von 20 Hektar. Hier wurden berühmte Filme gedreht, etwa Asterix & Obelix: Mission Kleopatra, Kundun von Martin Scorsese, Gladiator von Ridley Scott oder Prince of Persia. Die Studios verfügen über beeindruckende ägyptische Kulissen."
+    },
+    "ouz-cla": {
+      "title": "Die CLA-Studios",
+      "body": "Weniger grandios als die Atlas-Studios, wurden die CLA-Studios 2004 gegründet. Sie sind wegen ihrer zwei großen Filmsets und der beeindruckenden Außenkulissen von Jerusalem und Nachbauten von Mekka einen Besuch wert. Die CLA-Studios waren Drehort von „Königreich der Himmel“."
+    },
+    "ouz-museum": {
+      "title": "Das Filmmuseum von Ouarzazate",
+      "body": "Das 2007 eröffnete Filmmuseum von Ouarzazate befindet sich in einem ehemaligen Filmstudio und umfasst zwei Hektar. Es zeichnet die Geschichte der berühmten Studios von Ouarzazate und der großen dort gedrehten Filme nach."
+    },
+    "ouz-souks": {
+      "title": "Die Souks von Ouarzazate",
+      "body": "Die hübschen Geschäfte der Souks von Ouarzazate sind voller lokaler Produkte wie der handgefertigten, grünen und rustikalen Töpferware aus Tamegroute, aber auch Rosenwasser, das die Frauen aus der Rose von Kelâat M'Gouna destillieren."
+    },
+    "ouz-carpet-coop": {
+      "title": "Die Berberteppich-Genossenschaft",
+      "body": "Sie befindet sich im „Handwerkskomplex“ von Ouarzazate, einem Ort, der das traditionelle lokale Handwerk fördert. Dort findet man die Zarbiya (Teppich) des Hohen Atlas, die Chedwi, die Kharita und die Teppiche von Taznakhte ..."
+    },
+    "ouz-ahwach": {
+      "title": "Ahwach-Gesang und -Tanz",
+      "body": "Ahwach ist ein bekanntes mündliches Erbe des Amazigh-Volkes der Dörfer und Kasbahs von Ouarzazate: Taourirte, Tifoultoute, Telouet und Taskaouine. Es ist eine Kunst, die Tanz, Gestik und im berberischen Tachelhit-Dialekt gesungene Poesie verbindet. Diese Tradition, die zum Volkstanz geworden ist, wurde ursprünglich von Amazigh-Männern und -Frauen entworfen und aufgeführt, um ihre Geschichte, ihre Lebensweise und ihre Kultur mit Feinsinn und Eleganz darzustellen. Seit der Ankunft des Protektorats und mit dem Wachstum des Tourismus ist Ahwach zu einer visuellen Folkloreshow geworden. Frauen und Männer aus den Dörfern Taourirte, Tifoultoute und Telouet führen diese Tradition zur Freude der Touristen und Besucher der Region fort."
+    },
+    "ouz-taznakht": {
+      "title": "Taznakht-Teppich",
+      "body": "Als künstlerisches und kulturelles Erbe der Region Draa-Tafilalet nimmt der traditionelle Teppich einen wesentlichen Platz in der Berberkultur ein. Die Stadt Taznakht ist berühmt für ihre leuchtend bunten Teppiche mit typischen Dekormustern (Rauten, Rechtecke, Quadrate, Linien)."
+    },
+    "ouz-wedding": {
+      "title": "Die Berberhochzeit",
+      "body": "Bei den Amazigh nimmt die Hochzeitsfeier die Form eines Festes an, das 7 Tage lang in fröhlicher und heiterer Atmosphäre dauert. Am ersten Tag zieht der Zug zum Haus der Eltern der Braut. Ihm voraus geht ein Bronzetablett, gefüllt mit Henna und hartgekochten Eiern, getragen von einer älteren Frau, und er besteht aus Wagen, beladen mit Geschenkkörben, Ziegen und jungen Frauen, die mit Bendirs in den Händen singen. Bei der Ankunft wird den Gästen der Braut ein Willkommensgetränk aus Milch, Datteln, Honig und Butter serviert. Nach der Henna-Zeremonie wird die Braut darauf vorbereitet, das Elternhaus zu verlassen.\n\nSobald die Hochzeitsgäste vom Bräutigam bei sich zu Hause empfangen werden, beginnt die erste Zeremonie, gefolgt vom Alaakissa-Ritual, das dem Bräutigam verbietet, die erste Nacht mit seiner Frau zu verbringen. Sie wird daher allein schlafen. Am zweiten Tag, am frühen Nachmittag, empfangen die Eltern des Bräutigams die eintreffenden Gäste, die Schafe, Zucker, Tee, Minze, Mehl und andere Dinge mitbringen. Während dieser Zeremonie gehen Musik, Gesang und Tanz weiter. Nach dem großen Festmahl kommt die Hochzeitsnacht. Die Gäste warten draußen, um das mit Blut befleckte weiße Tuch zu sehen: ein Zeichen für die Männlichkeit des Mannes und die Jungfräulichkeit seiner Frau.\n\nAb dem dritten Tag wird das junge Paar vier Tage hintereinander von vier verschiedenen Familien eingeladen, die es mit großer Gastfreundschaft und Großzügigkeit aufnehmen und dabei die Fortsetzung der Feierlichkeiten mit Festmählern, Gesangs- und Tanzgruppen, Gästen und Geschenken sicherstellen ... Am siebten Tag kehren Braut und Bräutigam nach Hause zurück und geben einen Empfang für ihre Verwandten und engen Freunde. Am achten Tag beginnt das neue Leben des jungen Paares."
+    },
+    "ouz-culinary": {
+      "title": "Die kulinarischen Spezialitäten von Ouarzazate",
+      "body": "Wie in anderen marokkanischen Städten finden Sie Pastilla, Fleisch-Tajine mit Gemüse, Lamm-Mechoui (gebratenes Lamm) und Harira (traditionelle Suppe) ... Doch die Gastronomie von Ouarzazate bringt auch ihre eigenen Spezialitäten mit, wie Tchicha, Weizensuppe, oder Harira aus Grieß. Ihr raffiniertestes und reichhaltigstes Gericht bleibt jedoch die Chorba (Suppe) mit Tauben und Nüssen, die auf die Zeit des Paschas Thami El Glaoui zurückgeht. Ein weiteres, volkstümlicheres Gericht ist Aghroumntoudount, ein mit Zwiebeln und Fett, Gewürzen, Petersilie und Koriander gefülltes Brot. Schließlich wird Idernane, dieser aus Grieß, Eiern und Hefe zubereitete Pfannkuchen, mit Butter und Honig serviert."
+    },
+    "err-intro": {
+      "title": "Errachidia",
+      "subtitle": "Die Magie eines Ortes",
+      "lead": "Diese reiche Provinz beherbergte Sijilmassa, die erste islamische Stadt und den Handelsknotenpunkt Marokkos, im Großen Tafilalet am Rand des Tals des Oued Ziz gelegen. Als Wiege der Alawiden-Dynastie ist die Provinz Errachidia reich an Palmenhainen, Kasbahs, Tälern und der Wüste von Merzouga.",
+      "body": "Die Provinz Errachidia liegt im zentralen Süden Marokkos und grenzt im Norden an Midelt, im Westen an Tinghir und Zagora und im Südosten an Algerien. Sie ist die Hauptstadt der Region Drâa-Tafilalet, zu der auch das Große Tafilalet, die Wiege der Alawiden-Dynastie, gehört. Auf 60.000 km² leben rund 418.451 Einwohner (Volkszählung 2014). Dank der Bewässerung durch die Flüsse Ziz, Gheris und Guir, die im Hohen Atlas entspringen, ist Leben in dieser trockenen Region möglich geworden. Der Ziz-Palmenhain, der sich über 150 km von Errachidia bis Rissani erstreckt, bietet herrliche Landschaften. Die Palmenhaine von Jorf und Touroug verlaufen entlang des Flusses Ghris und beherbergen Palmen und Olivenbäume.\n\nDie Stadt Arfoud ist die Hauptstadt der Datteln, in der jedes Jahr eine internationale Messe stattfindet. Schließlich beherbergt der hohe Palmenhain von Goulmima im oberen Ghris-Tal eine Reihe von Ksour mitten im Palmenhain. Flussabwärts der Stadt Goulmima liegt der Ksar von Igoulmimen mit massiven Mauern, die die Bewohner einst vor den Überfällen benachbarter Stämme schützten."
+    },
+    "err-heritage": {
+      "title": "Ein reiches immaterielles Erbe",
+      "body": "Neben seinem architektonischen und historischen Erbe verfügt die Provinz Errachidia über ein bemerkenswertes immaterielles Erbe der Stämme der Region, die die Zivilisation des Großen Tafilalet bereichert haben. Die Überreste der Stadt Sijilmassa zeugen noch immer von ihrer glorreichen Vergangenheit als Knotenpunkt des Karawanenhandels zwischen Afrika und dem Westen. 100 km von der mittelalterlichen Hauptstadt Afrikas entfernt liegt die Stadt Rissani, in der die Alawiden-Dynastie ihren Ursprung nahm, die 1631 im Tafilalet ankam. Heute Moulay Ali Chérif genannt, ist Rissani berühmt für seine Ksour, seine alten Häuser und seine Wochenmärkte, die dienstags, donnerstags und sonntags stattfinden. Händler versammeln sich dort, um ihr lokales Kunsthandwerk, aber auch Datteln, Gewürze, Gemüse, Vieh und Stoffe anzubieten."
+    },
+    "err-must-lead": "Zwischen ihren Naturstätten, ihren Gravuren und ihren historischen Ruinen ist Errachidia die letzte Etappe der Reise, denn an ihrem Ende liegt die lang ersehnte Wüste von Merzouga.",
+    "err-mausoleum": {
+      "title": "Das Mausoleum von Moulay Ali Chérif",
+      "body": "Der Eingang zu dem 1966 in Rissani erbauten Mausoleum führt durch ein monumentales, mit Keramik verkleidetes Tor, das von einer Kuppel gekrönt wird. Man gelangt direkt in den großen Raum, der das Grab von Moulay Ali Chérif, dem ersten Begründer der Alawiden-Dynastie, beherbergt. Die heilige Anlage umfasst einen Hof, einen Patio und die Moschee."
+    },
+    "err-sijilmassa": {
+      "title": "Die Ruinen von Sijilmassa",
+      "body": "Sijilmassa, die erste große Stadt Marokkos, wurde im 8. Jahrhundert im Tafilalet-Tal gegründet und war die Etappenstadt der Karawanen, die den Sudan mit dem Maghreb und dem Mittelmeer verbanden. In ihrer Blütezeit hatte Sijilmassa 600 Kasbahs und ebenso viele Viertel. Die bedeutendste Kasbah, ein wichtiges Zentrum der berberischen Zenata, beherbergte den Palast des Emirs (Prinzen), die Große Moschee, eine Münzprägestätte sowie einen wichtigen Handelsmarkt."
+    },
+    "err-staircase": {
+      "title": "Die Himmelstreppe, die Goldene Spirale und die Stadt des Orion",
+      "body": "Diese drei monumentalen Skulpturen des deutschen Künstlers Hannsjoerg Voth entstanden 1980, 1993 und 1998 mitten in der Wüste in der Ebene von Marha nahe der Oase Fezna. Aus Sicherheitsgründen kann man sie nur aus der Ferne betrachten."
+    },
+    "err-engravings": {
+      "title": "Die Felsgravuren von Taouz und Alnif",
+      "body": "Die Felsgravuren stammen aus Tausenden von Jahren und deuten auf die erste menschliche Präsenz in der Region hin. Die Gravuren von Taouz liegen 21 km südlich von Merzouga. Ähnliche Gravuren wurden in der Region Alnif, 95 km von Rissani entfernt, gefunden. Die Darstellungen zeigen Rinder und Antilopen in Begleitung von Menschen oder Schriftzeichen in Tifinagh. Sie lassen sich bei Ausflügen im 4x4 oder auf dem Kamel entdecken."
+    },
+    "err-fossils": {
+      "title": "Geologischer Besuch der Fossilienbrüche von Arfoud",
+      "body": "13 km von Arfoud entfernt an der Straße nach Merzouga liegt die Stätte der versteinerten Steine. Weltberühmt für ihre Kopffüßer-Fossilien, wird die Stätte ausgebeutet, um Sammler und Mineralienbörsen zu beliefern. Die Minen von Taouz nahe der Wüste haben Fossilien von Dinosauriern, Krokodilen, Schildkröten und Knochenfischen zutage gefördert. In Alnif findet man Trilobiten, marine Fossilien."
+    },
+    "err-erg": {
+      "title": "Die Dünen des Erg Chebbi in Merzouga",
+      "body": "Merzouga liegt 35 km von Rissani und 50 km von der algerischen Grenze entfernt und ist das Dorf am Rand des Erg Chebbi, der höchsten Dünen Marokkos. Die 22 Kilometer langen und 5 km breiten Dünen des Erg Chebbi sind 150 Meter hoch. Aus dieser Höhe sind Sonnenuntergang und Sonnenaufgang außergewöhnlich. Merzouga bleibt für viele Besucher der Region der letzte und schönste Halt."
+    },
+    "err-ksours-title": "Die 6 Ksour, die man in der Provinz Errachidia besuchen sollte",
+    "err-ksours-lead": "Die Kasbahs und Ksour der Region, die das Tal des Ziz, des Ghris und des Guir inmitten üppiger Palmenhaine säumen, sind aus ockerfarbenem Lehm gebaut, passen sich so den Bedingungen des trockenen Klimas an und fügen sich perfekt in die Landschaft ein.",
+    "err-meski": {
+      "title": "Ksar Meski",
+      "body": "ist auf einem Felshügel am rechten Ufer des Ziz-Flusses erbaut. Es ist der einzige Ksar, der auch Stein als Baumaterial verwendet."
+    },
+    "err-maadid": {
+      "title": "Ksar Mâadid",
+      "body": "In Arfoud gelegen, ist er einer der schönsten Ksour des Tafilalet. Gut erhalten, umfasst er vier ummauerte, aneinandergrenzende Viertel. Seine hohen Mauern und majestätischen Tore verleihen ihm eine typische Architektur Südmarokkos."
+    },
+    "err-abouam": {
+      "title": "Ksar Abouam",
+      "body": "Im 17. Jahrhundert im Zentrum von Rissani erbaut, war er einst die zeitweilige Residenz von Moulay Ali Chérif, dem Großvater der Alawiden. Dieser gut geschützte Ksar beherbergt noch etwa 300 Familien. Er war auch Drehort großer Filmproduktionen."
+    },
+    "err-elfida": {
+      "title": "Ksar El Fida",
+      "body": "Diese alawidische Kasbah wurde 1854 von Sultan Moulay Hicham, dem Sohn von Moulay Ali Cherif, erbaut. Sie war bis 1965 die Residenz des Regionalchefs. Heute ist der Ksar El Fida ein archäologisches Museum. Eine Führung durch den Ort wird von einem der Erben des Ortes geleitet."
+    },
+    "err-abdelhalim": {
+      "title": "Ksar Oulad Abdelhalim",
+      "body": "4 km östlich des Zentrums von Rissani wurde dieser Ksar 1863 von Sultan Sidi Mohamed Abderrahmane erbaut und von seinem Sohn Moulay Rachid bewohnt. Er war Sitz der Verwaltung, der Justiz und des Kriegsrats. Dieser prächtige Ksar bewahrt noch das Riad, den Stall und das Arsenal. Das Innere liegt in Ruinen, aber der geschnitzte Eingang ist monumental, und seine Lehmziegelwälle zeugen von einer glorreichen Vergangenheit."
+    },
+    "err-jrana": {
+      "title": "Ksar Jrana",
+      "body": "Dieser Ksar im Stadtgebiet von Arfoud beherbergt eine Bevölkerung von 170 Haushalten. Er hat von einem Sanierungsplan profitiert, um seinen Verfall zu begrenzen. Im 18. Jahrhundert gegründet, ist er von einem Palmenhain umgeben und verfügt über einen Wanderweg. Der Ksar ist außerdem mit einem Ofen für traditionelles Brot sowie weiteren Traditionen der Region ausgestattet. Unterkünfte für Touristen und Kunsthandwerksläden sind ebenfalls vorhanden."
+    },
+    "err-gnaoua": {
+      "title": "Gnaoua Khamlia in Merzouga",
+      "body": "Das Douar Khamlia in der Wüste von Merzouga beherbergt eine schwarze Gemeinschaft, die die mystische und spirituelle Musik der Gnaoua pflegt.\n\nBeim Austausch wertvoller Waren (Gold, Elfenbein, Sklaven ...), den die Transsahara-Karawanen förderten, war der Zustrom afrikanischer Bevölkerungsgruppen in das gesamte marokkanische Gebiet bedeutend.\n\nSeit dieser Zeit im Dorf Merzouga ansässig, führen die Gnaoua von Khamlia ihre uralte Kunst fort. In weißen Kostümen erinnern ihre spirituellen Worte und Gesten, begleitet von den Qraqeb und dem Instrument Gambri, an ihre Verbundenheit mit dieser musikalischen Tradition, die vom Vater an den Sohn weitergegeben wird.\n\nGruppen wie Pigeons de sable oder Bambaras aus dem Dorf Khamlia pflegen diese Tradition noch immer."
+    },
+    "err-dates": {
+      "title": "Das Dattelfest in Arfoud",
+      "body": "Diese Region im Herzen des Tafilalet, reich an Datteln, feiert jedes Jahr im Oktober die Ernte dieser uralten Frucht. Dieses Fest der Bauern von Arfoud hat sich in den letzten Jahren in eine jährliche Handelsmesse verwandelt, die von Marokkanern und Ausländern besucht wird. Das Fest findet in der Regel in der dritten Oktoberwoche statt, je nach Ernte, und verbindet Verkauf und Ausstellungen mit Gesangs- und Tanzdarbietungen."
+    },
+    "err-culinary": {
+      "title": "Die Kochkunst von Errachidia",
+      "body": "Eine Mischung aus Berber- und Nomadengastronomie: Die Kochkunst im Großen Tafilalet beruht auf lokalen Produkten. Mechoui und Tajine mit Kamelfleisch in Merzouga, Medfouna (gefülltes Brot) in Rissani oder gefüllte Tauben, Harira Warguia und andere Couscous und Tajines – die Gastronomie der Provinz lässt sich auf den Souks und bei den Einheimischen zu Hause oder sogar auf Bestellung genießen."
+    },
+    "zag-intro": {
+      "title": "Zagora",
+      "subtitle": "Grüne Täler, Wüste und Zawiyas",
+      "lead": "Von dem Fluss Drâa bewässert, ist die Wüstenprovinz Zagora reich an Palmenhainen und Ksour. Sie zeichnet sich zudem durch ein schönes spirituelles Sufi-Erbe aus und umfasst die prächtige Wüste von M'Hamid El Ghizlane. Die Felsgravuren von Foum Chena und Tazarine bergen weitere spannende Schätze, die es zu entdecken gilt.",
+      "body": "Die Provinz Zagora wird vom Antiatlas überragt, erstreckt sich über 23.000 km² und zählt 307.306 Einwohner (Volkszählung 2014). Sie wird vom Jbel Bani durchzogen, einem langen, schmalen Gebirgszug mit steilen Hängen. Ihre grünen Palmenhaine entlang des Flusses Draa erstrecken sich über 200 km von Agdz bis M'hamid El Ghizlane auf einer Fläche von 23.000 ha Grün in einer präsaharischen Umgebung. Das Klima ist trocken, und die Wüste nimmt einen großen Teil des Gebiets ein. Die herrlichen Dünen von M'hamid, 40 km von der algerischen Grenze entfernt, und der kleine Erg von Tinfou, 25 km von Zagora, sind bei Touristen sehr beliebt. Felsgravuren, die mehrere tausend Jahre alt sind, wurden in Foum Chena und in Tazarine, 70 km nördlich von Zagora, aber auch in Foum Larjam, Ighir N'tidri und M'hamid El Ghizlane gefunden."
+    },
+    "zag-must-lead": "Zwischen Dünen, Felsgravuren, Zawiyas und Bergen bietet Zagora Besichtigungen, die sich von denen der anderen Provinzen unterscheiden, aber ebenso fesselnd sind.",
+    "zag-tamegroute": {
+      "title": "Tamegroute – zwischen einflussreicher Zawiya und Handelsknotenpunkt",
+      "body": "Jenseits ihrer mal gastlichen, mal kargen Natur hat Zagora die Gründung und das Wachstum von Zawiyas erlebt, die ein reiches spirituelles Sufi-Erbe geschaffen haben. Die einflussreiche Zawiya Naciria in Tamgroute ist dafür ein perfektes Beispiel. Im 17. Jahrhundert von Mohamed Ben Nacer übernommen und ausgebaut, besitzt diese Zawiya eine Bibliothek mit seltenen und alten Handschriften der Wissenschaft und Theologie. Die Zawiya Naciria wird zu einem Zentrum der Aufklärung, in dem sich Gelehrte, Ulema und Studenten aus dem Maghreb und aus Afrika auf der Suche nach Wissen versammeln. Das Douar Tamegroute wurde zu einem Knotenpunkt für Handelskarawanen."
+    },
+    "zag-ouazik": {
+      "title": "Die Felsgravuren von Ait Ouazik",
+      "body": "Die Stätte Ait Ouazik, 70 km nördlich von Zagora gelegen, ist eine der wichtigsten Marokkos. Ihre prähistorischen Felsgravuren befinden sich auf Tausenden von Platten am Boden, verteilt auf mehrere Hektar. Von berberischen Jägern gezeichnet, stammen sie aus der Zeit vor etwa 10.000 Jahren, als die Wüste noch eine Savanne war, und stellen die reiche Tierwelt jener Zeit dar: Gazellen, Antilopen, Nashörner und Katzenartige ... Diese Gravuren werden von einem Wächter beaufsichtigt. Es soll jedoch ein Museum eingerichtet werden, um diesen unschätzbaren Reichtum zu sammeln."
+    },
+    "zag-foumchenna": {
+      "title": "Die Felsgravuren von Foum Chenna",
+      "body": "Die 7 km westlich von Tinzouline gelegene Stätte Foum Chenna erstreckt sich über 1,1 km. Sie enthält die größte Zahl von Inschriften der alten Amazigh-Sprache, des Tifinagh. Die auf den senkrechten Wänden der Klippen eingepunzten Figuren überragen die Felsen des linken Ufers des Oued Foum Chenna. Insgesamt stellen die 1000 Gravuren Reiter, Kampfszenen mit Wurfspeeren und die Jagd auf Katzenartige dar."
+    },
+    "zag-museum": {
+      "title": "Museum für Kunst und Traditionen des Draa",
+      "body": "Der Ksar von Tissergate, ein Bauwerk aus dem 13. Jahrhundert, beherbergt das Museum für Kunst und Traditionen. Dieser von einer schönen Mauer umgebene Ksar, 7 km vom Zentrum von Zagora entfernt, wird noch immer von Familien bewohnt. Er besteht aus alten Kasbahs mit schmalen, kühlen Gassen, die gewölbt oder überdacht und manchmal sogar unterirdisch sind. Das darin untergebrachte Museum für Kunst und Traditionen des Draa zeigt Alltagsgegenstände aus dem Leben der Berber des Tals sowie ihre Bräuche und Traditionen. Im obersten Stockwerk bietet eine Terrasse den Besuchern einen Panoramablick."
+    },
+    "zag-zaouia": {
+      "title": "Die Zawiya Naciria",
+      "body": "Die Zawiya Naciria oder Zawiya von Tamegroute liegt im Draa-Tal. Sie wurde im 16. Jahrhundert gegründet und ein Jahrhundert später von M'hammad Ben Nacer ausgebaut. Sie wurde zu einer der einflussreichsten und ausstrahlungsstärksten Zawiyas der Sufi-Kultur in Marokko. Im 17. Jahrhundert wurde hier von einem seiner Nachfolger, Ahmed Naciri, eine Bibliothek gegründet; er gab an, der Sufi-Bruderschaft Tariqa Chadhiliya anzugehören, die in Marokko großen religiösen, sozioökonomischen und politischen Einfluss hatte. Die Zawiya von Tamegroute spielte im Draa-Tal eine wichtige Rolle und führte zur Gründung mehrerer weiterer Zawiyas in Marokko."
+    },
+    "zag-mhamid": {
+      "title": "M'Hamid El Ghizlane",
+      "body": "Im äußersten Südosten Marokkos, 40 km von der algerischen Grenze entfernt, gelegen, ist M'hamid El Ghizlane die letzte Oase des Draa-Tals, bevor man in die trockene Weite der Hamada eintritt.\n\nM'Hamid ist ein in zwei Teile geteiltes Dorf, ein neuer und ein alter, bestehend aus Lehmhäusern und einer erhaltenen Kasbah. Das Dorf ist der ideale Ausgangspunkt für Wanderungen in den schönsten Dünen Südostmarokkos, unter den „blauen Männern“, deren Gastfreundschaft legendär ist."
+    },
+    "zag-tinfou": {
+      "title": "Die Dünen von Tinfou",
+      "body": "25 km von Zagora entfernt, an der Straße nach M'Hamid, gibt es zwei kleine Sanddünen, die „Dünen von Tinfou“ genannt werden. Dieser kleine Erg gibt Touristen einen Vorgeschmack auf die Wüste."
+    },
+    "zag-jbel": {
+      "title": "Jbel Zagora",
+      "body": "Dank seines schönen Panoramas verdient der Jbel Zagora oder Tazagourte einen Halt. Dieser 1030 m hohe Berg bietet herrliche Ausblicke auf die Stadt und den von Ksour gesprenkelten Palmenhain des Drâa."
+    },
+    "zag-henna": {
+      "title": "Henna",
+      "body": "Henna, das im Draa-Tal produziert wird, wird aus getrockneten und pulverisierten Blättern gewonnen. Bekannt für seine kosmetische Wirkung als Körper- und Haarfarbe, wird Henna auch wegen seiner medizinischen Eigenschaften geschätzt. Es ist ein wirksames Antiseptikum, Wundheilmittel und Mittel gegen Schuppen. Orientalische Frauen verwenden es seit jeher bei Hochzeits-, Geburts-, Tauf- und Beschneidungsritualen gegen den bösen Blick."
+    },
+    "zag-songs": {
+      "title": "Lieder und Tänze von Zagora",
+      "body": "Die Stämme des Draa-Tals haben ihre künstlerischen Ausdrucksformen aus ihrer vielfältigen Vergangenheit bewahrt. Hoffnungen und Ambitionen, Kummer und Freuden drücken die Einwohner durch Lieder und Tänze aus. In der Provinz Zagora gibt es 24 Arten von Liedern und Tänzen. Diese reiche und vielfältige Volkskunst wird bei Festen gefeiert: Hochzeiten, Taufen ..."
+    },
+    "zag-souk": {
+      "title": "Der Wochenmarkt (Souk) von Agdz",
+      "body": "Der Souk von Agdz ist ein großes wöchentliches Treffen der Dorfbewohner sowie ein Ort der Information und des Austauschs. Er findet donnerstagmorgens am Dorfausgang auf dem Weg nach Zagora statt. Er bietet eine Vielfalt an Farben und Geschmäckern, die in lokalen Bräuchen verwurzelt sind."
+    },
+    "zag-jewelry": {
+      "title": "Der Schmuck von Zagora",
+      "body": "Der Berberschmuck, ein ursprüngliches Erbe der amazighisch-jüdischen Gemeinschaften, in Form von Silber- oder Bronzeschmuck mit geometrischen und floralen Mustern, ist bei Besuchern sehr beliebt."
+    },
+    "zag-pottery": {
+      "title": "Die Töpferei des Draa-Tals",
+      "body": "Nach alten Techniken hergestellt, gibt es die Töpferwaren des Südens in zwei Formen: mit grüner Glasur oder weiß. Reich und vielfältig in Technik und Dekor, umfassen sie Gebrauchsgegenstände wie Töpfe, Schalen, Vasen und Gegenstände zur Wohnungsdekoration ..."
+    },
+    "zag-dress": {
+      "title": "Die traditionelle Kleidung der Männer und Frauen des Drâa",
+      "body": "Die offizielle traditionelle Tracht der Männer des Drâa-Tals besteht aus einer Darrâa, einer Gandura und einer Kopfbedeckung, dem Feroual, in Form eines feinen Stoffbands. Im Winter tragen die Männer den Burnus, einen dicken, sorgfältig gewebten Wollumhang mit Kapuze. Die Frau hüllt sich in einen Izar (Tuch) oder eine schwarze oder weiße Malhfa. Dieses lange Tuch wird auf Brusthöhe von zwei großen Silberfibeln gehalten und an der Taille gegürtet."
+    },
+    "tin-intro": {
+      "title": "Tinghir",
+      "subtitle": "Täler, Schluchten und Kasbahs",
+      "lead": "Die Provinz wird vom Fluss Todgha bewässert, der durch ein grünes Tal fließt, in dem Obstbäume, Getreide, Farne und Minze angebaut werden. Wie die anderen Städte der Region Drâa-Tafilalet ist Tinghir berühmt für seine Kasbahs und Ksour. Sein besonderes Merkmal ist jedoch das jüdische Viertel im Herzen der Stadt.",
+      "body": "Tinghir liegt im Zentrum-Osten Marokkos im Todgha-Tal, das vom gleichnamigen Fluss gespeist wird. Dieser Fluss, der den Hohen Atlas auf 40 km und die prächtigen Todgha-Schluchten durchquert, hat diesen weiten Palmenhain entstehen lassen.\n\nDie nahe Dadès-Schlucht bietet ein weiteres atemberaubendes Panorama, in dem man Naturwunder wie die Klippen entdeckt, die an die Form von Affenfingern erinnern. Das Rosental von Kelaat M'gouna bringt die schönsten duftenden Rosen hervor. Die weite Provinz Tinghir mit 13.007 km² ist von 322.312 Menschen bewohnt, und ihr Name stammt aus dem Berberdialekt und bedeutet „Ort des Berges“."
+    },
+    "tin-jewish": {
+      "title": "Überreste einer jahrhundertealten jüdischen Geschichte",
+      "body": "Der 30 km lange Palmenhain voller kleiner Ksour und Kasbahs erstreckt sich zu beiden Seiten der Stadt zwischen dem Hohen Atlas und dem Jbel Saghro. Dank eines Systems von Wasserkanälen bewässert, bildet er den Reichtum der Provinz. Mandelbäume, Olivenbäume, Dattelpalmen, Apfelbäume, Granatapfelbäume, Aprikosenbäume, Feigenbäume, Getreide, Farne und Minze werden dort angebaut.\n\nWie die Städte der Region ist Tinghir mit seiner Umgebung auch für seine Kasbahs und Ksour bekannt, etwa die Kasbah von Glaoui oder die von Scheich Basou Ou-Ali.\n\nDas jüdische Viertel oder Mellah von Tinghir zeugt von seiner jüdischen Geschichte, einer langen Zeit, in der die marokkanische jüdische Gemeinschaft in Tinghir in perfekter Symbiose mit den Muslimen lebte. Der Ksar El Khorbat, 50 km östlich von Tinghir im unteren Todgha-Tal gelegen, beherbergt zudem ein Museum, das der amazighischen Lebensweise gewidmet ist.\n\nDiese Provinz war auch Schauplatz großer Kämpfe gegen die französische Armee zur Zeit des Protektorats. Zu nennen ist die Schlacht von Bougafer, in der der Stamm der Ait Atta unter dem verstorbenen Assou Oubasslam siegte. Die Provinz hat so viele Schätze zu offenbaren. Sie ist eine wichtige Etappe der Reise zu den Dünen der Wüste von Merzouga."
+    },
+    "tin-must-lead": "Die Provinz Tinghir ist vor allem für die Todgha-Schluchten und ihre Lehmdörfer mit jahrhundertealten Ksour bekannt. Der Mellah von Tinghir beherbergte jahrhundertelang einen Teil der Amazigh-jüdischen Gemeinschaft.",
+    "tin-roses": {
+      "title": "Das Rosental",
+      "body": "Das zwischen Kelaa des M'Gouna und Boumalne Dadès gelegene Rosental ist ein Naturwunder, berühmt für seine Rose, die im April zu blühen beginnt und die Hügel in leuchtendes Rosa taucht. Wenige Tage vor der Ernte breitet sich der Duft der Rosen überall aus. Die Rose wird für den Verzehr als Rosenwasser sowie für den Export und die Parfümindustrie angebaut. Jedes Jahr werden bis zu viertausend Tonnen Rosen während einer Woche geerntet, die mit dem berühmten und touristischen Rosenfest endet, bei dem Genossenschaften ihre lokalen Produkte verkaufen. Das Tal wurde 2014 von der UNESCO als „Global Geopark“ ausgezeichnet."
+    },
+    "tin-palm": {
+      "title": "Der Palmenhain und die Todgha-Schluchten",
+      "body": "Der Spaziergang durch den Palmenhain von Todgha kann mit dem Auto entlang des Flusses über 12 km bis zur Quelle der heiligen Fische oder zu Fuß in 3 Stunden erfolgen. Im Flussbett wechselt die Landschaft zwischen Getreidefeldern, Gemüsepflanzen, Palmen und Olivenbäumen. Die Todgha-Schluchten sind 14 km von Tinghir entfernt und können vom Palmenhain aus zu Fuß oder mit dem Fahrrad erkundet werden. Weltweit für die Qualität ihres Gesteins bekannt, sind sie mit Kletterrouten bis zu 300 m ausgestattet. Sie liegen 15 km von der Kleinstadt Boumalne Dadès entfernt."
+    },
+    "tin-dades": {
+      "title": "Die Dadès-Schluchten",
+      "body": "Die Dadès-Schluchten im zentralen Atlasgebirge liegen 92 km von Tinghir entfernt über die Kleinstadt Boumalne-Dadès."
+    },
+    "tin-monkey": {
+      "title": "Die Affenpfoten",
+      "body": "Wenige Kilometer von der Straße von Tissadrine, die zur Dadès-Schlucht führt, entfernt taucht zwischen Bäumen eine Landschaft aus hohen ockerfarbenen Kalksteinplateaus auf. Am Horizont erscheinen kleine Berberdörfer. Vom Miguern-Canyon aus sieht man ockerfarbene Kalksteinklippen, deren Form an Affenfinger erinnert."
+    },
+    "tin-mellah": {
+      "title": "Der alte Mellah von Tinghir",
+      "body": "Der im Viertel Ait El Haj Ali südlich des Platzes Ziad-Ouhmad gelegene Mellah von Tinghir zeichnet sich durch seine von hohen Lehmgebäuden gesäumten Gassen aus. Im Lauf der Jahrhunderte hat er die Authentizität der Dörfer Südmarokkos bewahrt. Im Labyrinth des Viertels zeigen Weber und Basare das Kunsthandwerk der Region."
+    },
+    "tin-roses-festival": {
+      "title": "Fest oder Moussem der Rosen von Kelaat M'gouna",
+      "body": "Die Rosenernte im Tal von Kelaat M'gouna findet jedes Jahr im Mai statt. Zur Feier dieser Ernte wird am zweiten Wochenende im Mai das Rosenfest veranstaltet, mit einem künstlerischen und kommerziellen Programm. Vorgesehen sind Volkslieder und -tänze, Umzüge sowie Ausstellungsstände und der Verkauf von Kunsthandwerk. Bei diesem farbenfrohen Fest, bei dem überall der Duft der Rosen zu riechen ist, wird die Rosenkönigin des Jahres gewählt."
+    },
+    "tin-elhart": {
+      "title": "Moussem von El Hart n'Igourramen im Todgha-Tal",
+      "body": "Eine Woche nach dem Opferfest Aid Al Adha findet der Moussem (das Fest) von Sidi El Haj Amar im Ksar El Hart n'Igourramen bei Tinghir statt. Dieser Heilige, der das Dorf El Hart gründete, lebte im 12. Jahrhundert. Er ist niemand anderes als der Bruder des Gründers von Zaouiat Ahansal. Um diesen Marabout findet der bedeutendste Moussem des Todgha-Tals statt. Der Moussem von El Hart wird auf den Ruinen des alten Ksar veranstaltet und ist ein großer, drei- bis viertägiger Markt mitten im Palmenhain. Das Vieh – Kühe, Ziegen, Schafe, Esel – wird zum Verkauf ausgestellt. Die Metzger bieten den Käufern Dromedarfleisch an. Ebenso vertreten sind die Töpferwaren des Nachbardorfes El Hart n'laamine sowie Wollteppiche, Holzmöbel und immer mehr aus Großstädten oder China importierte Dekorationsobjekte ..."
+    },
+    "mid-intro": {
+      "title": "Midelt",
+      "subtitle": "Atemberaubende Berg- und Tallandschaften",
+      "lead": "Die Provinz Midelt liegt auf 1500 m Höhe und bietet schöne Naturlandschaften, aber auch einen Reichtum an Mineralien und Fossilien, der für Touristen sehr attraktiv ist.",
+      "body": "Midelt liegt am Fuß des Berges Ayachi zwischen dem Mittleren und dem Hohen Atlas auf 1488 Metern Höhe, und einige Dörfer der Provinz liegen über 2000 Meter hoch. Im Winter in seinen Zedern- und Tannenwäldern eingeschneit, ist Midelt eine bergige Provinz, reich an Natur- und Kulturlandschaften mit atemberaubenden Erlebnissen.\n\nDie nationale Hauptstadt des Apfels (sie liefert 60 % der nationalen Produktion), in der der Oued Moulouya entspringt, der zum Rif fließt und ins Mittelmeer mündet, ist reich an schönen Landschaften. Vom Berg Ayachi Said oder Hadi (3747 m) aus, nordwärts durch die Stadt Zaïda nach Boumia, liegt das hübsche Dorf Tounfite (zwischen dem Mittleren und dem Hohen Atlas).\n\nUnterwegs versuchen am Staudamm von Tamaloute (mit einer Kapazität von 50 Millionen m³, seit Sommer 2018 in Betrieb) Angler, schmackhafte Regenbogenforellen zu fangen. Von dort führt eine Straße zum berühmten Dorf Imilchil und seinen Seen Isli und Tislit sowie zur Höhle von Akhiam.\n\nDie zweite Straße führt zum Dorf Assaka und zum Tadroute-Canyon. Die Provinz Midelt beherbergt auch den Zedernwald von Tanourdi an der Straße nach Ajdir. Das abgeholzte Gebiet dient der Beweidung.\n\nDer Wald ist Heimat mehrerer Arten wie Wildschwein, Hase und Rotfuchs. Die Provinz mit 289.337 Einwohnern nutzt, wie ihre Nachbarin Ouarzazate, die Solarenergie mit dem Solarkraftwerk „Noor Midelt“ mit einer installierten elektrischen Leistung von 2000 MW."
+    },
+    "mid-mining": {
+      "title": "Ein weltberühmter Bergbaureichtum",
+      "body": "In Midelt war der Bergbaureichtum lange Zeit die Domäne französischer Unternehmen. Die Minen von Mibladen und Ahouli wurden von 1939 bis 1980 von französischen Unternehmen ausgebeutet, um Blei, Vanadinit und andere kristallisierte Mineralien wie Azurit und Quarz zu gewinnen ... Diese Minen werden noch immer von ehemaligen Arbeitern und jungen Leuten auf der Suche nach Gesteinen und Mineralien betrieben.\n\nLiebhaber dieser Steine entdecken Azurit, Amethyst, Aragonit, Baryt, Chalcedon und andere ... in Geschäften, die Schmuck, Lampen, Windlichter, Produkte aus Selenit, Steine, Dekorationsobjekte aus Gips und Fossilien ausstellen. Mineralien und Fossilien waren ein großer Reichtum für Midelt und eine Einkommensquelle für die Bevölkerung der Provinz."
+    },
+    "mid-heritage": {
+      "title": "Ein fesselndes kulturelles und religiöses Erbe",
+      "body": "Was das kulturelle und spirituelle Erbe betrifft, kann sich die Provinz Midelt rühmen, die Zawiya von Sidi Hamza zu beherbergen, die im 17. Jahrhundert von M'hamed Boubker, dem Vater von Abu Salim El Ayachi, erbaut wurde.\n\nDieser touristische Ort liegt 70 km südlich der Stadt Midelt. Er ist seit prähistorischer Zeit bekannt, wie eine Reihe von Grabhügeln am linken Flussufer nahe den Quellen des Gebirgsmassivs (3400 m), dem Assif Ziz, bezeugt. Die Almohaden besetzten den Ort und errichteten dort die Zitadelle von Abdelmoumen Agoumi, einen Überwachungsposten der Nachtwächter. Man entdeckt dort schöne Höhlen, einige mit 35 m². Von der Präsenz des Almohadenreichs in dieser Bergoase sind nur die Ruinen dieses Gebäudes aus Trockenstein und Lehm und einige Brunnen mit dem Gips von Tadellakt erhalten.\n\nDas Dorf Tazroft und die Zawiya Sidi Hamza mit ihrer großen Bibliothek seltener Handschriften liegen in der Nähe. In der Stadt Midelt ist der Besuch der Kasbah der Juden (Athmane oder Moussa) und der Kasbah von Tachaouite interessant. Sie spiegelt die Lebensweise der jüdischen und muslimischen Gemeinschaften und ihr friedliches Zusammenleben über Jahrhunderte wider."
+    },
+    "mid-visits-lead": "Imilchil ist das berühmteste Berberdorf der Provinz dank seines berühmten Verlobungs-Moussems. Die Besteigung des Berges Ayachi, der Besuch der Akhiam-Höhle oder die Wanderung im Tal des Assif Melloul lohnen sich ebenfalls.",
+    "mid-ayachi": {
+      "title": "Besteigung des Berges Ayachi und Besuch des Jaffar-Zirkus",
+      "body": "Von der Stadt aus ist es möglich, den Berg Ayachi (3737 m) in zwei oder drei Tagen zu besteigen. Vom selben Punkt aus erreicht man auch den Jaffar-Zirkus, der einer der am schwersten zugänglichen Orte Marokkos bleibt. Dieser Naturort von großer Schönheit ist sehr gut erhalten. Man reist am besten im 4x4, vorzugsweise im Sommer. Die lange, steinige Straße erfordert drei bis vier Stunden Fahrt."
+    },
+    "mid-imilchil": {
+      "title": "Imilchil: Das kleine Tibet Marokkos",
+      "body": "Das berühmte Dorf Imilchil auf 2200 m Höhe ist ein Muss der Region. Sein Verlobungs-Moussem, der jedes Jahr zwischen Ende August und Anfang September stattfindet, versammelt die Berber der Gegend in einer Handels- und Festatmosphäre unter dem Segen des Heiligen Sidi Ahmed Oulmaghani."
+    },
+    "mid-mines": {
+      "title": "Mibladen und Ahouli",
+      "body": "Die ehemaligen Bergbaustädte Mibladen und Ahouli liegen 25 km von Midelt entfernt. Die Dörfer Mibladen und Ahouli sind noch bewohnt, aber die Minen wurden in den 1980er Jahren nach dem Verfall der Bleipreise geschlossen. Ehemalige Arbeiter der Region führen unter Lebensgefahr weiterhin Grabungen auf der Suche nach dem sehr wertvollen Vanadinit und anderen kristallisierten Mineralien wie Azurit, Quarz ... durch. Der Besuch der Stollenminen ist für Touristen und Sammler möglich."
+    },
+    "mid-agoudal": {
+      "title": "Das Dorf Agoudal: Das höchste Dorf Marokkos",
+      "body": "Agoudal liegt im Hohen Atlas auf 2300 m Höhe, dort, wo sich die Pisten aus den Todgha- und Dadès-Schluchten treffen, und ist das höchstgelegene bewohnte Dorf Marokkos. Es ist der ideale Ausgangspunkt für Bergwanderungen, aber auch für den Besuch des Tals des Assif-Melloul, um nach Imilchil, Rich oder Goulmima zu gelangen."
+    },
+    "mid-hamza": {
+      "title": "Zawiyat Sidi Hamza",
+      "body": "Das 70 km südlich der Stadt Midelt gelegene Dorf Tazrouft, auch Dorf der 100 Dichter genannt, ist eine Ansammlung von Lehmhäusern nahe der Almohaden-Zitadelle. Abu Salim El Ayachi (1628 im Stamm der Ait Ayach geboren und 1681 an der Pest gestorben) lebte in einem mehrstöckigen Haus im Dorf Tazrouft. Dieser Gelehrte, Schriftsteller und Sufi war auch ein großer Reisender, der aus dem Orient und anderswoher kostbare Werke mitbrachte, die eine Handschriftenbibliothek bildeten. Diese große Bibliothek, eine der bedeutendsten des Königreichs, wurde von einem Nachfahren namens Abu Hamza bereichert. Abu Salim El Ayachi wurde auf dem Friedhof des Tals begraben."
+    },
+    "mid-moussem": {
+      "title": "Verlobungs-Moussem von Imilchil oder Sidi Hmad Oulmaghni",
+      "body": "Das Dorf Imilchil in einem Bergtal auf 2160 m Höhe ist die Heimat der Berber der Ait Hadidou, Hirten nomadischen Ursprungs.\n\nSeit dem 17. Jahrhundert sesshaft, gelten sie als die authentischsten und traditionellsten Stämme Marokkos. Das Heiratsritual nimmt bei den Ait Hadidou die Dimension eines sozialen, kulturellen und spirituellen Phänomens an.\n\nDer jedes Jahr im September am Ort des Mausoleums des Heiligen Sidi Hmad Oulmaghni organisierte Moussem von Imilchil erlaubt den jungen Leuten des Stammes, sich auf die Suche nach ihrem Liebsten zu machen. Auf dem Programm stehen Tanz, Gesang und kommerzielle Aktivitäten sowie die Beurkundung der Eheschließungen."
+    },
+    "mid-ahidous": {
+      "title": "Ahidous: Die Kunst des Amazigh-Spektakels",
+      "body": "Ahidous, das von den Berbern des Mittleren und Hohen Atlas in Marokko, besonders in Imilchil und Midelt, praktiziert wird, ist eine uralte Tradition des kollektiven Amazigh-Tanzes und -Gesangs. Beim Ahidous-Tanz bilden Männer und Frauen weiche, wogende Reigen, begleitet von Berberliedern. Insgesamt machen drei Elemente den Ahidous aus: der Izlan-Gesang, der mit lokaler Poesie oder Improvisation verbunden ist, deren Themen von Liebe bis Politik reichen, der musikalische Rhythmus, der mit Tamburinen und Händeklatschen erzeugt wird, und schließlich der gemischte Tanz. Man unterscheidet den Ahidous Askwat, der zu besonderen Anlässen des Stammes aufgeführt wird, vom Ahidous Amezian bei Familienfesten. Das Musikfestival der Gipfel von Bou Azmou in Imilchil feiert jedes Jahr den Ahidous, den Tanz und den Gesang der Amazigh von Imilchil."
+    },
+    "mid-culinary": {
+      "title": "Kochkunst in Midelt",
+      "body": "Die Provinz Midelt ist in ganz Marokko für ihren berühmten Apfel bekannt. Deshalb wird er in verschiedenen Gerichten verwendet. In der Provinz findet man zum Beispiel die Tajine mit Ziegenfleisch und kandierten Äpfeln, Apfelsaft und Apfelmarmelade. In Imilchil werden neben Äpfeln auch Thymian und Rosmarin sowie Honig, Bohnen und Getreide in den typischen Gerichten der Region verwendet. Gerichte wie Bohnensalat mit Chermoula, Couscous mit Mais und Weizen, Abadir-Brot, Boyfnouzen (Luzerne-Couscous) sowie Gerstensuppe mit Smen beldi werden Besuchern und Touristen der Region häufig serviert."
+    },
+    "trail-winter": {
+      "title": "Einwöchige Winterreise durch die 5 Provinzen von Drâa-Tafilalet",
+      "body": "Starten Sie in Ouarzazate, besuchen Sie die Kleinstadt Taznakht, die für die Weberei von Berberteppichen bekannt ist, und kaufen Sie dort ein. Nehmen Sie dann die Straße nach Foum Zguid und bewundern Sie die kargen Berge des Antiatlas an der Straße, die Taznakht mit diesem charmanten Städtchen verbindet. Dort angekommen, bummeln Sie durch den Palmenhain von Foum Zguid oder durch seine in den Arkaden versteckten Geschäfte, bevor Sie zum Erg Chegaga, den Sanddünen von M'hamid El Ghizlane, aufbrechen. Nehmen Sie dann die Straße nach Zagora, um Nkob, die Stadt der 45 Kasbahs, zu erreichen. In Zagora ist der Besuch des Dorfes der Töpfer von Tamegroute und der Zawiya Naciria mit ihrer Bibliothek (18 km vor Zagora) unverzichtbar.\n\nDann fahren wir nach Boumalne Dadès in der Provinz Tinghir, dem Ausgangspunkt für den Besuch der schönen Dadès- und Todgha-Schluchten. Ein Hauch von Frische weht in den prächtigen Schluchten, durch die der Fluss fließt, der die Palmenhaine von Todgha und Tinghir bewässert. Anschließend suchen wir noch frischere, sogar kalte Luft im berühmten Dorf Imilchil und seinen Seen Isli und Tislit.\n\nEin Halt im Dorf Aït Hani erlaubt uns, seine herrlichen Landschaften, seinen Wasserfall von Agoulzi, seine Kasbahs sowie die historische Stätte des Jbel Badou und seine Salzmine zu besuchen. Die Straße führt weiter nach Midelt, wo wir die Kasbah der Juden (Atman oder Moussa) und die Kasbah von Tachaouite besichtigen können. Dann fahren wir nach Errachidia, der Hauptstadt der Region Drâa-Tafilalet, und weiter nach Arfoud, der Hauptstadt der Datteln und der Mejhoul, die die jährliche Messe zu dieser uralten Frucht ausrichtet.\n\nWir werden auch den Ziz-Palmenhain bewundern, den großen Palmenhain des Tafilalet, der die besten Dattelsorten Marokkos hervorbringt. Krönender Abschluss am Erg Chebbi im Dorf Merzouga, das die schönsten Dünen der Wüste Südostmarokkos bietet. Einige können 150 m erreichen."
+    },
+    "trail-spring": {
+      "title": "Frühlingsreise durch die vier Provinzen von Drâa-Tafilalet",
+      "body": "Von Marrakesch nach Ouarzazate über die Panoramastraße des Ksar Ait Benhaddou. Halten Sie 77 km vor Ouarzazate an, um die Ruinen der Kasbah von Telouet zu bewundern, der früheren Residenz des Paschas Glaoui und architektonisches Juwel im Amazigh- und arabisch-maurischen Stil, im 19. Jahrhundert erbaut. Fahren Sie weiter zum Ksar Ait Benhaddou, 30 km nordwestlich von Ouarzazate. Dieses schöne, zu Fuß erkundbare Gemeinschaftsdorf ist eine traditionelle Ansammlung von Lehmwohnungen mit privaten und öffentlichen Räumen.\n\nFahren Sie weiter nach Ouarzazate und nehmen Sie dann die Rundstrecke, die nach Dadès führt. Besuchen Sie die Oase von Skoura, das Rosental, die schönen Dadès- und Todgha-Schluchten, um schließlich die Stadt Tinghir mit ihrem jahrhundertealten jüdischen Erbe zu erreichen. Fahren Sie dann nach Rissani, wo Sie die Medfouna, das berühmte mit Fleisch gefüllte Brot, probieren und die verschiedenen Ksour und Kasbahs besuchen können: den Ksar Abouam und das Mausoleum Moulay Ali Chérif.\n\nFahren Sie dann zu den Dünen von Merzouga, um Sonnenaufgang und Sonnenuntergang in dieser ruhigen und friedlichen Umgebung zu bewundern. Nach der Wüste kehren Sie in die Palmenhaine zurück: Spazieren Sie durch den Ziz-Palmenhain bei Arfoud und den Ghris in Goulmima. Halten Sie unterwegs an, um die Khettaras von Jorf zu betreten, ein tausendjähriges System der unterirdischen Bewässerung und gerechten Wasserverteilung, das dem großen Tafilalet seit Jahrhunderten dient.\n\nFahren Sie weiter zum Dorf Imilchil in der Provinz Midelt. Bewundern Sie die Seen Isli und Tislit und versuchen Sie, in die Höhle von Akhiam einzudringen. Rückfahrt über Béni Mellal nach Marrakesch, Casablanca oder Rabat."
+    },
+    "info-lead": "Damit Reisende ihren Aufenthalt genießen können, folgen hier einige nützliche Informationen über die Einrichtungen und die Infrastruktur der Region.",
+    "climat": {
+      "title": "Klima",
+      "body": "Die Region zeichnet sich durch ein trockenes Saharaklima aus, im Sommer sehr heiß und im Winter tagsüber angenehm, nachts kühl. Ouarzazate, Zagora, Errachidia oder Tinghir besucht man am besten vom späten Herbst bis zum frühen Frühling."
+    },
+    "time": {
+      "title": "Ortszeit",
+      "body": "Marokko hat eine einzige Zeitzone, GMT + 1. Im Monat Ramadan wechselt Marokko zu GMT. Die Region Drâa-Tafilalet bildet keine Ausnahme von dieser Regel."
+    },
+    "languages": {
+      "title": "Gesprochene Sprachen",
+      "body": "In der Region Drâa-Tafilalet spricht die Bevölkerung Berberisch und Arabisch. Die Beschilderung ist auf Französisch und Arabisch, manchmal in Tifinagh. Reiseführer sowie das Personal der Hotels und Gästehäuser sprechen angesichts der touristischen Ausrichtung der Region Französisch, Englisch und weitere Sprachen."
+    },
+    "hotels": {
+      "title": "Hotels",
+      "body": "Die Region Drâa-Tafilalet ist berühmt für die Vielfalt ihrer Landschaften, die von Palmenhainen über die Wüste bis zu den Bergen des Hohen Atlas oder den Wüstenplateaus reichen. Dieses Panorama lässt jede Art von Unterkunft denkbar erscheinen. Insgesamt hat die Region Draa-Tafilalet 311 klassifizierte Hotels mit einer Kapazität von 16.727 Betten, 2.322 Herbergen, 1.767 Gästehäuser, 627 Ferienhäuser, 307 Touristenresidenzen und 88 Pensionen.\n\nOuarzazate bietet Paläste und 5-Sterne-Hotels, aber auch charmante Gästehäuser. In den Dörfern und an den Touristenorten findet man häufiger Herbergen und Gästehäuser. Einige Kasbahs bieten Touristen Unterkunft. In den Wüsten von M'hamid und Merzouga waren Biwaks oder Wüstenzelte lange die einzige „rudimentäre“ Unterkunft, nach Tuareg-Art, die Nacht unter den Sternen zu verbringen. Seit einigen Jahren werden wohlhabenden Touristen Luxuscamps angeboten, die wie ein 5-Sterne-Hotelzimmer ausgestattet und beheizt sind. Aber im Allgemeinen bleiben Unterkunft und Verpflegung in der Region Draa-Tafilalet erschwinglich und für jedes Budget geeignet."
+    },
+    "air": {
+      "title": "Luftverkehr",
+      "body": "Die Region Drâa-Tafilalet hat zwei internationale Flughäfen, Ouarzazate und Moulay Ali Chérif in Errachidia, und einen nationalen Flughafen in Zagora. Diese Flughäfen sind durch häufige Flüge mit Casablanca verbunden. Zumal 2019 in Errachidia und Ouarzazate neue Terminals in Betrieb genommen wurden. Den Reisenden wird eine neue Generation von Transportdiensten angeboten. Außerdem ist am Flughafen von Zagora ein neues Terminal entstanden, das nun mit moderner Technik ausgestattet ist."
+    },
+    "shuttle": {
+      "title": "Shuttle vom Flughafen ins Stadtzentrum",
+      "body": "Vom Flughafen aus findet man leicht verschiedene Transportmittel, seien es Taxis oder touristische Bodentransporte."
+    },
+    "land": {
+      "title": "Touristischer Bodentransport",
+      "body": "Die Region verfügt über ein weitverzweigtes Netz von touristischen Bodentransportunternehmen mit verschiedenen Optionen, von 4x4-Geländewagen bis zu Bussen für 60 Personen. Die CTM (Compagnie de Transport au Maroc) bietet Strecken an, die die Städte der Region verbinden. Ouarzazate ist mit Zagora, Errachidia und Tinghir verbunden, Errachidia mit Midelt und Errachidia mit Zagora über Ouarzazate ... Der Komfort ist gewährleistet, die Geschwindigkeit kontrolliert, aber Sie müssen eine lange Fahrt mit Zwischenstopps in den Städten einplanen."
+    },
+    "agencies": {
+      "title": "Reisebüros",
+      "body": "Für Besucher, die maßgeschneiderte Reisen suchen, gibt es in der Region reichlich Reisebüros. Es werden mehrere Programme angeboten, und individuelle Reisen sind ebenfalls möglich. Der Reisebüromitarbeiter kümmert sich um alle Details: Beratung, Empfang und Begleitung, Reservierungen, Reisen und Transport ..."
+    },
+    "emergencies": {
+      "title": "Notfälle",
+      "numbers": [
+        {
+          "label": "Polizei",
+          "tel": "19"
+        },
+        {
+          "label": "Feuerwehr",
+          "tel": "15"
+        },
+        {
+          "label": "Pannenhilfe",
+          "tel": "177"
+        },
+        {
+          "label": "Telefonauskunft",
+          "tel": "160"
+        }
+      ]
+    },
+    "welcome-sign": "Marhaba, willkommen",
+    "err-ksours": {
+      "title": "Die 6 Ksour, die man in der Provinz Errachidia besuchen sollte",
+      "body": "Die Kasbahs und Ksour der Region, die das Tal des Ziz, des Ghris und des Guir inmitten üppiger Palmenhaine säumen, sind aus ockerfarbenem Lehm gebaut, passen sich so den Bedingungen des trockenen Klimas an und fügen sich perfekt in die Landschaft ein."
+    }
+  },
+  "pages": [
+    {
+      "type": "cover",
+      "image": "general/cover-portrait.jpg",
+      "pos": "50% 50%"
+    },
+    {
+      "type": "contents",
+      "image": "general/dunes-wide.jpg",
+      "pos": "50% 60%"
+    },
+    {
+      "type": "opener-type",
+      "startsSection": 1,
+      "num": "01",
+      "eyebrow": "Editorial",
+      "title": [
+        "Draa-Tafilalet",
+        "heißt Sie willkommen."
+      ],
+      "sub": "welcome-sign",
+      "columns": [
+        [
+          {
+            "para": "welcome"
+          }
+        ],
+        [
+          {
+            "fig": "general/hikers.jpg"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "intro",
+      "startsSection": 2,
+      "band": {
+        "image": "general/dunes-sunset.jpg",
+        "pos": "50% 55%",
+        "h": 56
+      },
+      "eyebrow": "02  ·  Drâa-Tafilalet",
+      "title": [
+        "Drâa-Tafilalet.",
+        "Die Region der Oasen, Berge und Wüsten."
+      ],
+      "lead": "region.lead",
+      "columns": [
+        [
+          {
+            "para": "region"
+          }
+        ],
+        [
+          {
+            "item": "lifestyles",
+            "first": true
+          }
+        ]
+      ]
+    },
+    {
+      "type": "items-auto",
+      "eyebrow": "02  ·  Drâa-Tafilalet",
+      "blocks": [
+        {
+          "item": "sports",
+          "img": "general/camels.jpg",
+          "imgPos": "50% 55%"
+        },
+        {
+          "item": "gastro-intro",
+          "img": "ouarzazate/pottery-shop.jpg",
+          "imgPos": "50% 60%"
+        }
+      ]
+    },
+    {
+      "type": "opener-band",
+      "startsSection": 3,
+      "band": {
+        "image": "ouarzazate/cover-aitbenhaddou.jpg",
+        "pos": "50% 45%",
+        "h": 118
+      },
+      "num": "03",
+      "title": [
+        "Ouarzazate",
+        "Das Tor zu Oasen und grünen Tälern"
+      ],
+      "lead": "ouz-intro.lead",
+      "blocks": [
+        {
+          "para": "ouz-intro"
+        }
+      ]
+    },
+    {
+      "type": "items-auto",
+      "eyebrow": "03  ·  Ouarzazate",
+      "blocks": [
+        {
+          "item": "ouz-cinema",
+          "img": "ouarzazate/cinema-hall.jpg",
+          "imgPos": "50% 40%"
+        },
+        {
+          "item": "ouz-trade",
+          "img": "ouarzazate/valley-aerial.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "ouz-noor"
+        },
+        {
+          "para": "ouz-sites-lead"
+        },
+        {
+          "item": "ouz-taourirt",
+          "img": "ouarzazate/taourirt.jpg",
+          "imgPos": "50% 40%"
+        },
+        {
+          "item": "ouz-telouet"
+        },
+        {
+          "item": "ouz-benhaddou",
+          "img": "ouarzazate/aitbenhaddou-roofs.jpg",
+          "imgPos": "50% 45%"
+        },
+        {
+          "item": "ouz-atlas",
+          "img": "ouarzazate/studios-statues.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "ouz-cla"
+        },
+        {
+          "item": "ouz-museum"
+        },
+        {
+          "item": "ouz-souks",
+          "img": "ouarzazate/pottery-shop.jpg",
+          "imgPos": "50% 60%"
+        },
+        {
+          "item": "ouz-carpet-coop",
+          "img": "ouarzazate/carpets.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "ouz-ahwach"
+        },
+        {
+          "item": "ouz-taznakht",
+          "img": "ouarzazate/taznakht-rock.jpg",
+          "imgPos": "50% 40%"
+        },
+        {
+          "item": "ouz-wedding",
+          "img": "ouarzazate/potter.jpg",
+          "imgPos": "50% 40%"
+        },
+        {
+          "item": "ouz-culinary"
+        }
+      ]
+    },
+    {
+      "type": "opener-band",
+      "startsSection": 4,
+      "band": {
+        "image": "errachidia/ziz-gorge-aerial.jpg",
+        "pos": "50% 50%",
+        "h": 118
+      },
+      "num": "04",
+      "title": [
+        "Errachidia",
+        "Die Magie eines Ortes"
+      ],
+      "lead": "err-intro.lead",
+      "blocks": [
+        {
+          "para": "err-intro"
+        }
+      ]
+    },
+    {
+      "type": "items-auto",
+      "eyebrow": "04  ·  Errachidia",
+      "blocks": [
+        {
+          "item": "err-heritage",
+          "img": "errachidia/sijilmassa-arches.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "para": "err-must-lead"
+        },
+        {
+          "item": "err-mausoleum",
+          "img": "errachidia/mausoleum-aerial.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "err-sijilmassa"
+        },
+        {
+          "item": "err-staircase",
+          "img": "errachidia/celestial-staircase.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "err-engravings"
+        },
+        {
+          "item": "err-fossils",
+          "img": "errachidia/fossil-rock.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "err-erg",
+          "img": "errachidia/dunes-orange.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "err-ksours"
+        },
+        {
+          "item": "err-meski",
+          "img": "errachidia/ksar-gate.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "err-maadid"
+        },
+        {
+          "item": "err-abouam"
+        },
+        {
+          "item": "err-elfida",
+          "img": "errachidia/ksar-aerial.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "err-abdelhalim"
+        },
+        {
+          "item": "err-jrana"
+        },
+        {
+          "item": "err-gnaoua",
+          "img": "errachidia/nomad-camels.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "err-dates",
+          "img": "errachidia/dates.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "err-culinary",
+          "img": "errachidia/medfouna.jpg",
+          "imgPos": "50% 50%"
+        }
+      ]
+    },
+    {
+      "type": "opener-band",
+      "startsSection": 5,
+      "band": {
+        "image": "general/draa-palm-grove.jpg",
+        "pos": "50% 55%",
+        "h": 118
+      },
+      "num": "05",
+      "title": [
+        "Zagora",
+        "Grüne Täler, Wüste und Zawiyas"
+      ],
+      "lead": "zag-intro.lead",
+      "blocks": [
+        {
+          "para": "zag-intro"
+        }
+      ]
+    },
+    {
+      "type": "items-auto",
+      "eyebrow": "05  ·  Zagora",
+      "blocks": [
+        {
+          "para": "zag-must-lead"
+        },
+        {
+          "item": "zag-tamegroute",
+          "img": "general/tamegroute-zaouia.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "zag-ouazik"
+        },
+        {
+          "item": "zag-foumchenna"
+        },
+        {
+          "item": "zag-museum"
+        },
+        {
+          "item": "zag-zaouia"
+        },
+        {
+          "item": "zag-mhamid",
+          "img": "general/dunes-wide.jpg",
+          "imgPos": "50% 60%"
+        },
+        {
+          "item": "zag-tinfou"
+        },
+        {
+          "item": "zag-jbel"
+        },
+        {
+          "item": "zag-henna",
+          "img": "general/pottery-hands.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "zag-songs",
+          "img": "general/singers.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "zag-souk"
+        },
+        {
+          "item": "zag-jewelry"
+        },
+        {
+          "item": "zag-pottery",
+          "img": "general/pottery-museum.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "zag-dress"
+        }
+      ]
+    },
+    {
+      "type": "opener-band",
+      "startsSection": 6,
+      "band": {
+        "image": "general/road-switchbacks.jpg",
+        "pos": "50% 55%",
+        "h": 118
+      },
+      "num": "06",
+      "title": [
+        "Tinghir",
+        "Täler, Schluchten und Kasbahs"
+      ],
+      "lead": "tin-intro.lead",
+      "blocks": [
+        {
+          "para": "tin-intro"
+        }
+      ]
+    },
+    {
+      "type": "items-auto",
+      "eyebrow": "06  ·  Tinghir",
+      "blocks": [
+        {
+          "item": "tin-jewish",
+          "img": "general/tinghir-town.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "para": "tin-must-lead"
+        },
+        {
+          "item": "tin-roses",
+          "img": "general/village-aerial.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "tin-palm",
+          "img": "general/todgha-gorge.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "tin-dades",
+          "img": "general/kasbah-dades.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "tin-monkey",
+          "img": "general/monkey-fingers.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "tin-mellah"
+        },
+        {
+          "item": "tin-roses-festival",
+          "img": "general/women-dancers.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "tin-elhart"
+        }
+      ]
+    },
+    {
+      "type": "opener-band",
+      "startsSection": 7,
+      "band": {
+        "image": "midelt/tamaloute-lake.jpg",
+        "pos": "50% 55%",
+        "h": 118
+      },
+      "num": "07",
+      "title": [
+        "Midelt",
+        "Atemberaubende Berg- und Tallandschaften"
+      ],
+      "lead": "mid-intro.lead",
+      "blocks": [
+        {
+          "para": "mid-intro"
+        }
+      ]
+    },
+    {
+      "type": "items-auto",
+      "eyebrow": "07  ·  Midelt",
+      "blocks": [
+        {
+          "item": "mid-mining",
+          "img": "midelt/ayachi-peaks.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "mid-heritage",
+          "img": "midelt/tazrouft-village.jpg",
+          "imgPos": "50% 55%"
+        },
+        {
+          "para": "mid-visits-lead"
+        },
+        {
+          "item": "mid-ayachi"
+        },
+        {
+          "item": "mid-imilchil",
+          "img": "midelt/imilchil-lake.jpg",
+          "imgPos": "50% 55%"
+        },
+        {
+          "item": "mid-mines",
+          "img": "midelt/ahouli-mine-tunnel.jpg",
+          "imgPos": "50% 40%"
+        },
+        {
+          "item": "mid-agoudal"
+        },
+        {
+          "item": "mid-hamza",
+          "img": "midelt/tazrouft-river.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "mid-moussem"
+        },
+        {
+          "item": "mid-ahidous"
+        },
+        {
+          "item": "mid-culinary"
+        }
+      ]
+    },
+    {
+      "type": "text-band",
+      "startsSection": 8,
+      "eyebrow": "08  ·  Wanderwege",
+      "item": "trail-winter",
+      "band": {
+        "image": "general/camels.jpg",
+        "pos": "50% 55%",
+        "h": 70
+      }
+    },
+    {
+      "type": "text-band",
+      "eyebrow": "08  ·  Wanderwege",
+      "item": "trail-spring",
+      "band": {
+        "image": "photos/hero-trekking.jpg",
+        "pos": "50% 55%",
+        "h": 70
+      }
+    },
+    {
+      "type": "info",
+      "startsSection": 9,
+      "band": {
+        "image": "general/palm-sunset.jpg",
+        "pos": "50% 50%",
+        "h": 58
+      },
+      "num": "09",
+      "title": [
+        "Praktische",
+        "Informationen."
+      ],
+      "lead": "info-lead",
+      "noEmerg": true,
+      "columns": [
+        [
+          {
+            "info": "climat"
+          },
+          {
+            "info": "time"
+          },
+          {
+            "info": "languages"
+          }
+        ],
+        [
+          {
+            "info": "hotels"
+          }
+        ],
+        [
+          {
+            "info": "air"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "info-more",
+      "eyebrow": "09  ·  Praktische Informationen",
+      "columns": [
+        [
+          {
+            "info": "shuttle"
+          }
+        ],
+        [
+          {
+            "info": "land"
+          }
+        ],
+        [
+          {
+            "info": "agencies"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "back",
+      "image": "photos/hero-circuit.jpg",
+      "pos": "50% 60%"
+    }
+  ]
+}

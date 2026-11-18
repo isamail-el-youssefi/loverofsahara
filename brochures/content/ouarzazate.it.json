@@ -1,0 +1,487 @@
+{
+  "lang": "it",
+  "slug": "ouarzazate",
+  "title": "La provincia di Ouarzazate",
+  "kicker": "Guida turistica",
+  "subtitle": "La porta delle oasi e delle valli verdeggianti",
+  "creditSubject": "della provincia di Ouarzazate",
+  "cover": {
+    "line": "La provincia di",
+    "dim": "Ouarzazate."
+  },
+  "contentsTitle": "Indice",
+  "contents": [
+    {
+      "n": "01",
+      "title": "Descrizione delle attrazioni della provincia di Ouarzazate"
+    },
+    {
+      "n": "02",
+      "title": "I migliori siti turistici da visitare nella provincia"
+    },
+    {
+      "n": "03",
+      "title": "Usanze e tradizioni della provincia di Ouarzazate"
+    },
+    {
+      "n": "04",
+      "title": "Specialità culinarie di Ouarzazate"
+    },
+    {
+      "n": "05",
+      "title": "Equitazione nella provincia di Ouarzazate"
+    },
+    {
+      "n": "06",
+      "title": "Informazioni utili"
+    }
+  ],
+  "items": {
+    "ouarzazate": {
+      "title": "Ouarzazate",
+      "subtitle": "La porta delle oasi e delle valli verdeggianti",
+      "lead": "La perla del sud-est marocchino è nota per essere un luogo privilegiato per girare film cult di Hollywood. I suoi ksour, le sue kasbah, le sue valli e le sue oasi ne fanno una provincia dai paesaggi magnifici, diventata grazie ai suoi 300 giorni di sole il polo dell'energia solare in Marocco.",
+      "body": "La provincia di Ouarzazate conta quasi 297.502 abitanti, in un'oasi di pace con traffico minimo. Tra oasi, kasbah e valli rigogliose, la provincia offre paesaggi maestosi con un clima molto caldo d'estate e mite in inverno, nonostante gli sbalzi di temperatura nelle notti invernali. La sua luce di alta qualità e i suoi paesaggi ne hanno fatto un luogo imperdibile per le grandi produzioni cinematografiche mondiali."
+    },
+    "cinema": {
+      "title": "Ouarzazate: la Mecca del cinema",
+      "body": "Situata su un vasto altopiano desertico all'ombra delle palme, Ouarzazate ha ospitato il suo primo set: «Les Hommes sans nom» («Uomini senza nome») nel 1937, in piena epoca coloniale. A questo sono seguiti «Alì Babà e i quaranta ladroni» nel 1954, «Lawrence d'Arabia» e «Sodoma e Gomorra» nel 1962. Gli studi Atlas sono stati i primi a insediarsi in città, nel 1983. Gli studi CLA sono arrivati più tardi, nel 2004. Questa infrastruttura ha contribuito notevolmente all'arrivo di eccezionali blockbuster come La Mummia, Il gladiatore di Ridley Scott, Le crociate – Kingdom of Heaven di Ridley Scott e, più recentemente, la serie Prison Break e Queen of the Desert con Nicole Kidman."
+    },
+    "trade": {
+      "title": "Crocevia del commercio antico",
+      "body": "Ouarzazate è stata a lungo luogo di incontri commerciali con diversi paesi del nord e del sud del continente. Con la fondazione di Sijilmassa nel Tafilalet a metà dell'VIII secolo, la provincia di Ouarzazate fu la via percorsa dalle carovane che trasportavano merci dal Sudan e da Sijilmassa a Fez e Marrakech. Ouarzazate era così il cuore pulsante del fiorente commercio carovaniero in Marocco. Dopo il declino e la conquista araba, fu solo in epoca saadiana che la regione rinacque grazie al commercio transahariano, prima che l'attività commerciale fosse definitivamente deviata verso la costa atlantica dagli europei."
+    },
+    "heritage": {
+      "title": "Un patrimonio berbero vivo",
+      "body": "Per quanto riguarda l'attività agricola, la costruzione della diga El Mansour Eddahbi nel 1966 ha dato nuova vita all'agricoltura della regione, basata su palme da dattero, zafferano e rose. Ouarzazate è anche una ricchezza di patrimonio immateriale, tra cui i tappeti berberi tessuti dalle donne amazigh e tradizioni culturali come quelle dell'Ahwach, una delle più grandi comunità amazigh del Marocco. Canto, poesia e movimento del corpo si combinano in una danza collettiva e coreografica. Le kasbah e i ksour di Ouarzazate, case di terra sparse in tutta la regione, rappresentano il suo patrimonio architettonico. Erano la dimora privilegiata di famiglie facoltose con potere economico, sociale o militare."
+    },
+    "noor": {
+      "title": "Noor Ouarzazate dà luce a una città come Marrakech",
+      "body": "Oggi Ouarzazate ha anche una nuova missione: è il primo fiore all'occhiello dell'energia solare in Marocco. Con le sue quattro unità di produzione, il complesso solare Noor Ouarzazate può produrre 580 megawatt, in grado di fornire elettricità a 1,1 milioni di marocchini. Ciò equivale alla popolazione di Marrakech. È possibile visitare la centrale Noor situata sulla strada per Skoura/Tinghir/Errachidia presentando una richiesta a MASEN, l'agenzia marocchina per l'energia solare."
+    },
+    "sites-lead": "Ouarzazate, capitale ancestrale della cultura berbera, è ricca di patrimonio per visite culturali e storiche. Tra kasbah, studi cinematografici e souk tipici, non ci si stanca dei suoi tesori.",
+    "skoura": {
+      "title": "L'oasi di Skoura",
+      "body": "Questo palmeto è famoso per la sua posizione lungo una delle mitiche strade delle mille kasbah che va da Ouarzazate ad Arfoud via Tinghir. Situata a 40 km a est di Ouarzazate sulla N10, questa oasi di 25 km², dove si coltivano palme da dattero e alberi da frutto, mandorli, ulivi e melograni..., è il primo punto d'ingresso alla strada che porta a Kelaat M'Gouna e alle gole del Dadès e del Toudgha. È alimentata dall'Oued Skoura e un tempo utilizzava il sistema di irrigazione delle khettara. Alcune kasbah adornano anche il paesaggio, come la Kasbah Amridil, costruita nel XVII secolo. Ancora conservata, è stata trasformata in museo, con una parte dedicata all'abitazione. Si trovano anche altri resti come rovine di kasbah, artigianato locale, luoghi di culto musulmani ed ebraici, cimiteri..."
+    },
+    "taourirt": {
+      "title": "La Kasbah di Taourirte: il simbolo della città",
+      "body": "Situata su una collina nel centro di Ouarzazate, la Kasbah di Taourirte fu costruita nel XVII secolo. Vero simbolo dell'architettura berbera, è costruita con terra, paglia e calce. Un tempo palazzo del pascià di Marrakech, Thami El Glaoui, che vi risiedette con la sua famiglia fino al 1956, è oggi Patrimonio dell'Umanità dell'Unesco. Nel 1972 la Kasbah di Taourirte fu acquistata dal comune di Ouarzazate. La sua parte nord-occidentale è stata restaurata nel 1996 e le sale di rappresentanza e gli appartamenti privati del pascià sono aperti al pubblico."
+    },
+    "fint": {
+      "title": "L'oasi di Fint",
+      "body": "Molto vicina a Ouarzazate, a una decina di chilometri dalla città, l'oasi di Fint è risparmiata dal turismo di massa. Racchiusa tra montagne aride, circondata da villaggi con case tradizionali in adobe e punteggiata da numerosi palmeti, alberi da frutto e appezzamenti coltivati, questa affascinante oasi attrae turisti stranieri. È stata teatro di molte riprese cinematografiche, come il film Indigènes di Jamel Debbouze, Prince of Persia, Le crociate – Kingdom of Heaven, Babel..."
+    },
+    "benhaddou": {
+      "title": "Il Ksar Ait Benhaddou",
+      "body": "Situato alle pendici dell'Alto Atlante, nella provincia di Ouarzazate, il Ksar Ait Benhaddou è un insieme di abitazioni collettive risalenti al XVII secolo. Il sito, situato a 30 km da Ouarzazate, è Patrimonio dell'Umanità dell'Unesco dal 1987. Il ksar comprende modeste abitazioni, piccoli castelli, ma anche edifici e spazi comunitari. Gli spazi pubblici comprendono la moschea, una piazza pubblica, aie per la trebbiatura, una fortificazione, un granaio in cima al villaggio, un caravanserraglio, due cimiteri (musulmano ed ebraico) e il santuario di Sidi Ali o Amer."
+    },
+    "atlas-studios": {
+      "title": "Gli studi Atlas",
+      "body": "Situati a 4 km dal centro di Ouarzazate, gli studi Atlas sono stati fondati nel 1983 e coprono un'area di 20 ettari. Hanno ospitato le riprese di film famosi come Asterix e Obelix: Missione Cleopatra, Kundun di Martin Scorsese, Il gladiatore di Ridley Scott o Prince of Persia. Gli studi dispongono di impressionanti scenografie egizie."
+    },
+    "cla-studios": {
+      "title": "Gli studi CLA",
+      "body": "Meno grandiosi degli studi Atlas, gli studi CLA sono stati fondati nel 2004. Meritano una visita per i loro due grandi set e le impressionanti scenografie esterne di Gerusalemme e le ricostruzioni della Mecca. Gli studi CLA sono stati il luogo delle riprese di «Le crociate – Kingdom of Heaven»."
+    },
+    "cinema-museum": {
+      "title": "Il Museo del Cinema di Ouarzazate",
+      "body": "Aperto nel 2007, il Museo del Cinema di Ouarzazate si trova in un ex studio cinematografico e copre due ettari. Ripercorre la storia dei famosi studi di Ouarzazate e dei grandi film che vi sono stati girati."
+    },
+    "souks": {
+      "title": "I souk di Ouarzazate",
+      "body": "I graziosi negozi dei souk di Ouarzazate sono pieni di prodotti locali come la ceramica verde e rustica fatta a mano di Tamegroute, ma anche l'acqua di rose che le donne distillano dalla rosa di Kelâat M'Gouna."
+    },
+    "carpet-coop": {
+      "title": "La cooperativa dei tappeti berberi",
+      "body": "Si trova nel «Complesso artigianale» di Ouarzazate, un luogo che incoraggia l'artigianato tradizionale locale. Vi si trovano la Zarbiya (tappeto) dell'Alto Atlante, la Chedwi, la Kharita e i tappeti di Taznakhte..."
+    },
+    "taznakht": {
+      "title": "Il villaggio di Taznakht",
+      "body": "Situato a sud-ovest di Ouarzazate, il villaggio di Taznakht delle tribù Senhaja è noto per il suo artigianato di tappeti tradizionali tessuti e/o annodati. La visita della vecchia Taznakht e della sua Kasbah, dove vivevano comunità ebraiche e musulmane, merita la deviazione. Per gli amanti dei tappeti tradizionali, le cooperative di donne espongono i loro tappeti fatti a mano agli acquirenti."
+    },
+    "tifoultoute": {
+      "title": "Kasbah di Tifoultoute",
+      "body": "Situata nel villaggio berbero di Tifoultoute, 8 chilometri a ovest di Ouarzazate, la bella kasbah del villaggio è stata parzialmente restaurata. Costruita in un paesaggio formato dalla valle del fiume, offre una vista mozzafiato dalle sue terrazze. Essendo servita da set per i film Lawrence d'Arabia e Gesù di Nazareth, la kasbah ha una bella storia. Per visitarla bisogna prendere la strada nazionale n° 9 in direzione di Marrakech per 6 chilometri. È ancora gestita dal suo proprietario, nipote del Glaoui, e ospita un ristorante e un caffè."
+    },
+    "telouet": {
+      "title": "Kasbah di Telouet",
+      "body": "Ex dimora del pascià Glaoui, la splendida Kasbah di Telouet, costruita nel XIX secolo, si trova a 77 km da Ouarzazate sulla strada che porta al Ksar Ait Benhaddou. Questo gioiello dell'architettura amazigh e dello stile arabo-moresco testimonia la grandezza degli antichi caid dell'Atlante. Questa prestigiosa e raffinata kasbah era composta da un castello, una fortezza e un caravanserraglio. Oggi è in stato di abbandono, lasciata ai capricci del clima dal 1956. Della magnifica kasbah restano solo la residenza principale e alcune dependance, che i turisti possono ancora visitare."
+    },
+    "customs-lead": "Che derivino dal lascito di canti, danze e poesia, da feste e cerimonie o dalla gastronomia del passato, la provincia di Ouarzazate offre ai visitatori scoperte radicate nelle tradizioni ancestrali della provincia.",
+    "ahwach": {
+      "title": "Canti e danze Ahwach",
+      "body": "Noto patrimonio orale del popolo amazigh dei villaggi e delle kasbah di Ouarzazate: Taourirte, Tifoultoute, Telouet e Taskaouine, l'Ahwach è un'arte che combina danza, gesto e poesia cantata nel dialetto berbero tachelhit. Questa tradizione, diventata danza folcloristica, fu originariamente ideata ed eseguita da uomini e donne amazigh per raffigurare con finezza ed eleganza la loro storia, il loro stile di vita e la loro cultura. Dall'arrivo del protettorato e con la crescita del turismo, l'Ahwach è diventato uno spettacolo folcloristico visivo. Donne e uomini dei villaggi di Taourirte, Tifoultoute e Telouet continuano questa tradizione per la gioia dei turisti e dei visitatori della regione."
+    },
+    "wedding": {
+      "title": "Il matrimonio berbero",
+      "body": "Presso gli amazigh, la celebrazione del matrimonio assume la forma di una festa che dura 7 giorni in un'atmosfera gioiosa e allegra. Il primo giorno, il corteo si dirige verso la casa dei genitori della sposa. È preceduto da un vassoio di bronzo pieno di henné e uova sode portato da una donna anziana ed è composto da carri carichi di cesti di doni, capre e giovani donne che cantano con i bendir in mano. All'arrivo, agli ospiti della sposa viene servita una bevanda di benvenuto a base di latte, datteri, miele e burro. Dopo la cerimonia dell'henné, la sposa viene preparata a lasciare la casa di famiglia. Una volta che gli invitati sono accolti dallo sposo a casa sua, inizia la prima cerimonia, seguita dal rituale dell'Alaakissa, che vieta allo sposo di trascorrere la prima notte con la moglie. Perciò lei dormirà da sola. Il secondo giorno, nel primo pomeriggio, i genitori dello sposo accolgono gli ospiti che arrivano offrendo pecore, zucchero, tè, menta, farina e altri articoli. Durante questa cerimonia continuano musica, canti e danze. Dopo il grande banchetto arriva la prima notte di nozze. Gli invitati aspettano fuori per vedere il lenzuolo bianco macchiato di sangue: segno della virilità dell'uomo e della verginità della moglie. Dal terzo giorno in poi, i giovani sposi sono invitati per quattro giorni di fila da quattro famiglie diverse che li ospitano con grande ospitalità e generosità, garantendo la continuità dei festeggiamenti, con banchetti, gruppi di canto e danza, ospiti e regali... Il settimo giorno gli sposi tornano a casa per un ricevimento per i parenti e gli amici stretti. L'ottavo giorno inizia la nuova vita della giovane coppia."
+    },
+    "couscous": {
+      "title": "Couscous alle 7 verdure",
+      "body": "Si dice che l'origine del couscous risalga all'antichità, all'epoca di Massinissa. Declinato in varie forme, il couscous alle sette verdure (rapa, carota, zucca, zucchina, cipolle, pomodori e cavolo verde) è il più conosciuto in Marocco. Preparato dai berberi per celebrare Yennayer, il capodanno berbero, questo piatto simboleggia anche l'incontro e la riunione. Servito tradizionalmente ogni venerdì, è anche il piatto delle feste di matrimonio, circoncisione, lutto, offerte... che troverete ovunque nei ristoranti della regione."
+    },
+    "chicken-tajine": {
+      "title": "Tajine di pollo al limone",
+      "body": "Grande classico della cucina marocchina, il tajine di pollo con limoni sotto sale e olive viene servito molto spesso nel sud del Regno. Questo semplice piatto familiare è allo stesso tempo economico e delizioso. Viene preparato almeno una volta alla settimana in ogni casa."
+    },
+    "lamb-tajine": {
+      "title": "Tajine di agnello con mele cotogne e miele",
+      "body": "Piatto tradizionale marocchino molto apprezzato a Ouarzazate, questo tajine combina perfettamente sapori dolci e salati. Durante la stagione delle mele cotogne, da settembre a novembre, il tajine di agnello con mele cotogne viene servito nelle case d'ospiti e nei ristoranti della città."
+    },
+    "tchicha": {
+      "title": "La tchicha berbera",
+      "body": "Zuppa a base di semola d'orzo, la tchicha berbera si cuoce con pomodori e cipolle e si condisce con olio d'oliva e menta selvatica. Si mangia nelle montagne dell'Alto Atlante, soprattutto in inverno quando fa molto freddo, e viene offerta alle donne che hanno appena partorito per il suo valore nutritivo ed energetico."
+    },
+    "chorba": {
+      "title": "Chorba con piccioni e noci",
+      "body": "La storia di questo piatto di lusso risale all'epoca del pascià Thami El Glaoui, signore dell'Atlante. La leggenda vuole che la tavola di questa dinastia dovesse essere imbandita ogni giorno con un piatto fuori dall'ordinario. La chorba con piccioni e noci è un piatto molto raffinato ed estremamente ricco."
+    },
+    "horse-skoura": {
+      "title": "Attraversare il palmeto di Skoura a cavallo",
+      "body": "Salite in sella e cavalcate attraverso il palmeto di Skoura con le sue magnifiche palme e alberi da frutto e canali di irrigazione, nonché i suoi appezzamenti coltivati. Le lontane montagne innevate dell'Atlante abbelliscono il paesaggio. Lungo la strada per Ait Said si incontrano belle kasbah."
+    },
+    "horse-assaghmou": {
+      "title": "Ascesa ai monti Assaghmou e Ghassat",
+      "body": "Incontrate i nomadi e attraversate i loro accampamenti e il loro bestiame prima di fermarvi ad Assaghmou, una montagna che culmina a 1600 m. Discesa per sentieri ripidi in direzione del piccolo villaggio fortificato di N'Aij, situato dopo Ghassat (a 1450 m di altitudine)."
+    },
+    "horse-almond": {
+      "title": "Visita alla valle dei mandorli",
+      "body": "Dall'oasi di Tamassinte, i cavalieri, sui loro cavalli berberi, prendono la direzione dell'Atlante e incontrano diversi paesaggi montani. Dopo una sosta a Tamsoulte, nella valle dei mandorli (in fiore da fine febbraio a inizio marzo), si cavalca lungo piccoli sentieri costeggiando villaggi scavati nella montagna fino all'arrivo ad Atagragra."
+    },
+    "horse-izerki": {
+      "title": "Attraversamento della valle dell'Assif Izerki",
+      "body": "L'Assif Izerki è un uadi a 1104 m di altitudine. Situata a ovest di Izlagane, a nord-ovest dell'Assif Tizerkit, questa bella valle è abitata da nomadi e punteggiata da villaggi pittoreschi molto antichi. I cavalieri attraversano tutta la valle fino a Taferghouste."
+    },
+    "info-lead": "Per migliorare il soggiorno dei viaggiatori, ecco alcune informazioni utili sulle strutture e sulle infrastrutture della provincia.",
+    "climat": {
+      "title": "Clima",
+      "body": "La provincia si distingue per un clima desertico caldo. In estate, le temperature massime medie si aggirano intorno ai 37 °C. Gli inverni sono invece piuttosto freddi, soprattutto di notte. Il periodo migliore per visitare la provincia va da aprile a giugno e da settembre a ottobre."
+    },
+    "time": {
+      "title": "Ora locale",
+      "body": "Il Marocco ha un solo fuso orario, GMT + 1. Durante il mese di Ramadan, il Marocco passa a GMT. La regione del Drâa-Tafilalet non fa eccezione alla regola."
+    },
+    "languages": {
+      "title": "Lingue parlate",
+      "body": "La popolazione parla berbero e arabo. La segnaletica è in francese e arabo, a volte in tifinagh. Le guide e il personale di hotel e case d'ospiti parlano francese, inglese e altre lingue, data la vocazione turistica della provincia."
+    },
+    "hotels": {
+      "title": "Hotel",
+      "body": "La provincia offre palazzi e hotel a 5 stelle, oltre a incantevoli case d'ospiti. In generale, alloggio e ristoranti nella provincia restano accessibili e adatti a tutti i budget."
+    },
+    "air": {
+      "title": "Trasporto aereo",
+      "body": "Ouarzazate ha un aeroporto collegato a Casablanca da un volo regolare."
+    },
+    "shuttle": {
+      "title": "Navetta aeroporto – centro città",
+      "body": "All'uscita dall'aeroporto è facile trovare diversi tipi di trasporto, siano taxi o trasporti turistici."
+    },
+    "land": {
+      "title": "Trasporto via terra",
+      "body": "La provincia dispone di una rete di operatori turistici di trasporto via terra che offrono diverse opzioni, dai fuoristrada 4x4 ai pullman da 60 posti. La CTM (Compagnie de Transport au Maroc) offre linee che collegano le città. Il comfort è assicurato e la velocità controllata."
+    },
+    "agencies": {
+      "title": "Agenzie di viaggio",
+      "body": "Per i visitatori in cerca di viaggi su misura, non mancano le agenzie di viaggio. Vengono offerti diversi programmi ed è possibile organizzare anche viaggi personalizzati. L'agente di viaggio si occupa di tutti i dettagli: consulenza, accoglienza e accompagnamento, prenotazioni, viaggi e trasferimenti..."
+    },
+    "emergencies": {
+      "title": "Emergenze",
+      "numbers": [
+        {
+          "label": "Polizia",
+          "tel": "19"
+        },
+        {
+          "label": "Vigili del fuoco",
+          "tel": "15"
+        },
+        {
+          "label": "Assistenza stradale",
+          "tel": "177"
+        },
+        {
+          "label": "Informazioni telefoniche",
+          "tel": "160"
+        }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "type": "cover",
+      "image": "ouarzazate/cover-colonnade.jpg",
+      "pos": "50% 50%"
+    },
+    {
+      "type": "contents",
+      "image": "ouarzazate/contents-valley.jpg",
+      "pos": "50% 50%"
+    },
+    {
+      "type": "intro",
+      "startsSection": 1,
+      "band": {
+        "image": "ouarzazate/intro-aerial.jpg",
+        "pos": "50% 62%",
+        "h": 56
+      },
+      "eyebrow": "01  ·  Descrizione delle attrazioni della provincia di Ouarzazate",
+      "title": [
+        "Ouarzazate.",
+        "La porta delle oasi e delle valli verdeggianti."
+      ],
+      "lead": "ouarzazate.lead",
+      "columns": [
+        [
+          {
+            "para": "ouarzazate"
+          }
+        ],
+        [
+          {
+            "item": "cinema",
+            "first": true,
+            "img": "ouarzazate/cinema-hall.jpg",
+            "imgPos": "50% 40%"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "items-auto",
+      "eyebrow": "01  ·  Descrizione delle attrazioni della provincia di Ouarzazate",
+      "blocks": [
+        {
+          "item": "trade"
+        },
+        {
+          "item": "heritage",
+          "img": "ouarzazate/carpets.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "noor",
+          "img": "ouarzazate/valley-aerial.jpg",
+          "imgPos": "50% 50%"
+        }
+      ]
+    },
+    {
+      "type": "opener-band",
+      "startsSection": 2,
+      "band": {
+        "image": "ouarzazate/cover-aitbenhaddou.jpg",
+        "pos": "50% 45%",
+        "h": 118
+      },
+      "num": "02",
+      "title": [
+        "I migliori siti",
+        "turistici di Ouarzazate"
+      ],
+      "lead": "sites-lead",
+      "blocks": [
+        {
+          "item": "skoura",
+          "first": true,
+          "wide": true
+        }
+      ]
+    },
+    {
+      "type": "items-auto",
+      "eyebrow": "02  ·  I migliori siti turistici da visitare nella provincia",
+      "blocks": [
+        {
+          "item": "taourirt",
+          "img": "ouarzazate/taourirt.jpg",
+          "imgPos": "50% 40%"
+        },
+        {
+          "item": "fint",
+          "img": "ouarzazate/fint-oasis.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "benhaddou",
+          "img": "ouarzazate/aitbenhaddou-roofs.jpg",
+          "imgPos": "50% 45%"
+        },
+        {
+          "item": "atlas-studios"
+        },
+        {
+          "item": "cla-studios"
+        },
+        {
+          "item": "cinema-museum"
+        },
+        {
+          "item": "souks",
+          "img": "ouarzazate/pottery-shop.jpg",
+          "imgPos": "50% 60%"
+        },
+        {
+          "item": "carpet-coop"
+        },
+        {
+          "item": "taznakht"
+        },
+        {
+          "item": "tifoultoute",
+          "img": "ouarzazate/tifoultoute.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "telouet"
+        }
+      ]
+    },
+    {
+      "type": "opener-type",
+      "startsSection": 3,
+      "num": "03",
+      "eyebrow": "Usanze e tradizioni della provincia di Ouarzazate",
+      "title": [
+        "Usanze e tradizioni nella",
+        "provincia di Ouarzazate"
+      ],
+      "lead": "customs-lead",
+      "columns": [
+        [
+          {
+            "item": "ahwach",
+            "first": true
+          },
+          {
+            "fig": "ouarzazate/potter.jpg"
+          }
+        ],
+        [
+          {
+            "item": "wedding",
+            "first": true
+          }
+        ]
+      ]
+    },
+    {
+      "type": "opener-type",
+      "startsSection": 4,
+      "num": "04",
+      "eyebrow": "Specialità culinarie di Ouarzazate",
+      "title": [
+        "Le specialità culinarie",
+        "di Ouarzazate."
+      ],
+      "columns": [
+        [
+          {
+            "item": "couscous",
+            "first": true
+          },
+          {
+            "item": "chicken-tajine"
+          },
+          {
+            "item": "tchicha"
+          }
+        ],
+        [
+          {
+            "item": "lamb-tajine",
+            "first": true
+          },
+          {
+            "item": "chorba"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "opener-band",
+      "startsSection": 5,
+      "band": {
+        "image": "ouarzazate/palms-dusk.jpg",
+        "pos": "50% 55%",
+        "h": 100
+      },
+      "num": "05",
+      "title": [
+        "Equitazione nella",
+        "provincia di Ouarzazate"
+      ],
+      "blocks": [
+        {
+          "item": "horse-skoura",
+          "first": true
+        },
+        {
+          "item": "horse-assaghmou"
+        },
+        {
+          "item": "horse-almond",
+          "img": "ouarzazate/horses.jpg",
+          "imgPos": "50% 55%"
+        },
+        {
+          "item": "horse-izerki"
+        }
+      ]
+    },
+    {
+      "type": "info",
+      "startsSection": 6,
+      "band": {
+        "image": "ouarzazate/hammock.jpg",
+        "pos": "50% 40%",
+        "h": 58
+      },
+      "num": "06",
+      "title": [
+        "Informazioni",
+        "utili."
+      ],
+      "lead": "info-lead",
+      "columns": [
+        [
+          {
+            "info": "climat"
+          },
+          {
+            "info": "time"
+          },
+          {
+            "info": "languages"
+          }
+        ],
+        [
+          {
+            "info": "hotels"
+          },
+          {
+            "info": "air"
+          },
+          {
+            "info": "shuttle"
+          }
+        ],
+        [
+          {
+            "info": "land"
+          },
+          {
+            "info": "agencies"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "back",
+      "image": "photos/hero-trekking.jpg",
+      "pos": "50% 60%"
+    }
+  ]
+}

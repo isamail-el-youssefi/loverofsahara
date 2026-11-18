@@ -352,6 +352,68 @@ export function applyContactStyle(id: string) {
   window.dispatchEvent(new Event(CONTACT_EVENT));
 }
 
+/* ---------- Brochures page ---------- */
+
+export const BROCHURES_STYLES: CardStyle[] = [
+  { id: "editorial", name: "Editorial", mood: "Framed hero, covers in a grid, like the trip page" },
+  { id: "shelf", name: "Shelf", mood: "Dark, a pinned language list beside the covers" },
+  { id: "index", name: "Index", mood: "A ruled list, one download per language" },
+];
+
+export const BROCHURES_STORAGE_KEY = "los-brochures";
+export const BROCHURES_EVENT = "los-brochures-change";
+export const DEFAULT_BROCHURES = "shelf";
+
+export function getStoredBrochuresStyle(): string {
+  try {
+    const id = localStorage.getItem(BROCHURES_STORAGE_KEY);
+    if (id && BROCHURES_STYLES.some((c) => c.id === id)) return id;
+  } catch {
+    /* storage unavailable */
+  }
+  return DEFAULT_BROCHURES;
+}
+
+export function applyBrochuresStyle(id: string) {
+  try {
+    localStorage.setItem(BROCHURES_STORAGE_KEY, id);
+  } catch {
+    /* storage unavailable */
+  }
+  window.dispatchEvent(new Event(BROCHURES_EVENT));
+}
+
+/* ---------- Gallery page (photos from every journey) ---------- */
+
+export const PHOTOS_STYLES: CardStyle[] = [
+  { id: "mosaic", name: "Mosaic", mood: "Photos in columns, sticky filter, full-screen viewer" },
+  { id: "journeys", name: "Journeys", mood: "One film strip per trip, linked to the trip" },
+  { id: "spotlight", name: "Spotlight", mood: "Dark, one big photo and a thumbnail rail" },
+];
+
+export const PHOTOS_STORAGE_KEY = "los-photos";
+export const PHOTOS_EVENT = "los-photos-change";
+export const DEFAULT_PHOTOS = "mosaic";
+
+export function getStoredPhotosStyle(): string {
+  try {
+    const id = localStorage.getItem(PHOTOS_STORAGE_KEY);
+    if (id && PHOTOS_STYLES.some((c) => c.id === id)) return id;
+  } catch {
+    /* storage unavailable */
+  }
+  return DEFAULT_PHOTOS;
+}
+
+export function applyPhotosStyle(id: string) {
+  try {
+    localStorage.setItem(PHOTOS_STORAGE_KEY, id);
+  } catch {
+    /* storage unavailable */
+  }
+  window.dispatchEvent(new Event(PHOTOS_EVENT));
+}
+
 /* ---------- Place page gallery ---------- */
 
 export const GALLERY_STYLES: CardStyle[] = [

@@ -10,6 +10,9 @@ const CITY_LABELS: Record<string, string> = {
   "mhamid el ghizlane": "M'Hamid El Ghizlane",
 };
 
+/** Departure cities in display order (keys of CITY_LABELS). */
+export const DEPARTURE_CITIES = Object.keys(CITY_LABELS);
+
 export const cityLabel = (city: string) => CITY_LABELS[city] ?? city;
 
 /** Cheapest total per person for the whole trip in EUR (best group-size rate x days). */

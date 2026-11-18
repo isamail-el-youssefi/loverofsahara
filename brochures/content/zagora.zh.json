@@ -1,0 +1,558 @@
+{
+  "lang": "zh",
+  "slug": "zagora",
+  "title": "扎戈拉省",
+  "kicker": "旅游指南",
+  "subtitle": "绿色山谷、沙漠与扎维亚",
+  "contentsTitle": "目录",
+  "contents": [
+    {
+      "n": "01",
+      "title": "扎戈拉省旅游资源概览"
+    },
+    {
+      "n": "02",
+      "title": "扎戈拉省必游之地"
+    },
+    {
+      "n": "03",
+      "title": "扎戈拉省的风俗与传统"
+    },
+    {
+      "n": "04",
+      "title": "扎戈拉省的美食"
+    },
+    {
+      "n": "05",
+      "title": "徒步 M'hamid El Ghizlane 沙漠"
+    },
+    {
+      "n": "06",
+      "title": "实用信息"
+    }
+  ],
+  "items": {
+    "zagora": {
+      "title": "Zagora",
+      "subtitle": "绿色山谷、沙漠与扎维亚",
+      "lead": "扎戈拉省是德拉河（Drâa）滋润的沙漠省份，棕榈林与土堡（ksour）遍布其间。它还拥有美丽的苏菲精神遗产，并坐拥壮丽的 M'Hamid El Ghizlane 沙漠。Foum Chena 和 Tazarine 的岩画还藏着更多值得探索的珍宝。",
+      "body": "扎戈拉省背靠反阿特拉斯山脉，面积 23,000 平方公里，人口 307,306（2014 年人口普查）。省内的 Jbel Bani 是一条狭长而陡峭的山脉。沿德拉河分布的绿色棕榈林从 Agdz 一直延伸到 M'hamid El Ghizlane，绵延 200 公里，在前撒哈拉环境中形成 23,000 公顷的绿洲。气候干旱，沙漠占据了相当大的面积。距阿尔及利亚边境 40 公里的 M'hamid 壮丽沙丘，以及距扎戈拉 25 公里的 Tinfou 小沙海，深受游客喜爱。在 Foum Chena 和扎戈拉以北 70 公里的 Tazarine，以及 Foum Larjam、Ighir N'tidri 和 M'hamid El Ghizlane，都发现了数千年前的岩画。"
+    },
+    "tamegroute-zaouia": {
+      "title": "Tamegroute：影响深远的扎维亚与贸易十字路口",
+      "body": "扎戈拉的自然环境时而温和、时而荒凉，在这里诞生并壮大的扎维亚（苏菲道堂）造就了丰富的苏菲精神遗产。Tamgroute 颇具影响力的 Naciria 扎维亚便是绝佳例证。17 世纪，Mohamed Ben Nacer 接管并发展了这座扎维亚，馆内的图书馆收藏着罕见的科学与神学古籍。来自马格里布和非洲各地的学者与学生云集于此，追寻知识。Tamegroute 村也因此成为商队往来的十字路口。省内数不清的土堡则见证了一种围绕一体化社区生活而组织起来的古老生活方式，其近乎军事化的建筑可抵御其他部落的袭击或劫掠。"
+    },
+    "mustvisits-lead": "在沙丘、扎维亚与荒凉山脉之间，扎戈拉为您带来风格迥异却同样迷人的游览体验。求知的好奇心是您发现它所有秘密的最佳伙伴。",
+    "mhamid": {
+      "title": "M'hamid El Ghizlane 村及其沙漠",
+      "body": "M'hamid El Ghizlane 位于扎戈拉以南 90 公里，是进入沙漠之前的最后一片绿洲。它被称为“17 座土堡的绿洲”，居民 7,500 人。从土堡和卡斯巴的露台上，可以俯瞰 M'hamid El Ghizlane 棕榈林的壮观景色。大沙丘位于 M'Hamid 中心以外约五十公里处。抵达沙丘之前，需要穿越两种植被高地：一种是 Hamada，即卵石高原；另一种是 Reg，即可耕种植被的高地，那里生长着柽柳和金合欢。沙丘群 Erg Chegaga 面积达 600 平方公里。凭借三种地貌，M'hamid El Ghizlane 让人体验到原始的沙漠，并拥有世界上最美的星空之一。在这里可以看到北极星以及小熊座和大熊座……"
+    },
+    "tamegroute-village": {
+      "title": "Tamegroute 村",
+      "body": "Tamegroute 位于扎戈拉以外 18 公里、通往 M'Hamid El Ghizlane 的公路旁，是绿色陶器之村。村里还有 Naciria 扎维亚，其中有一座安葬 8 座陵墓的陵寝、藏书 4,000 册的图书馆，以及一所古兰经学校。村里的陶匠以传统方式制作绿色陶器，使用一种天然粉末，赋予它美丽的绿色釉彩，这种颜色在非斯和拉巴特的瓷砖上也能见到。这里的陶器店价格实惠。"
+    },
+    "zaouia-naciria": {
+      "title": "Naciria 扎维亚",
+      "body": "Naciria 扎维亚（又称 Tamegroute 扎维亚）位于德拉河谷，建于 16 世纪，一个世纪后由 M'hammad BenNacer 发展壮大。它成为摩洛哥苏菲文化中最有影响力、最具光辉的扎维亚之一。17 世纪，他的继任者之一 Ahmed Naciri 在此创建了图书馆；他自称是苏菲教团 Tariqa Chadhiliya 的成员，该教团在摩洛哥拥有巨大的宗教、社会经济和政治影响力。Naciria 扎维亚在德拉河谷发挥了重要作用，并带动了摩洛哥其他多座扎维亚的建立。"
+    },
+    "foum-chenna": {
+      "title": "Foum Chenna 岩画",
+      "body": "该遗址位于 Tinzouline 以西 7 公里、距扎戈拉约 40 公里，是摩洛哥最大的岩画遗址（1.2 公里）。岩壁上的这些岩画展示了阿马齐格人的提非纳文字，以及骑手、战斗和狩猎场景。为使参观更加舒适，这里建有带遮蔽处的罗马式剧场和遗产解说中心。"
+    },
+    "ait-waaziq": {
+      "title": "Tazarine 的 Ait Waaziq 岩画",
+      "body": "这是摩洛哥最重要、最有趣的岩画遗址之一。它距 Tazarine 20 公里、距扎戈拉 90 公里，通过刻凿或精细打磨岩石制成的岩画十分精美。它们可追溯到新石器时代末期（公元前 6000 年）。画面表现的是这片干旱地区仍是稀树草原时的野生动物：大象、犀牛、羚羊，还有长颈鹿、涉禽和鱼。遗址上建有石刻艺术解说中心，帮助游客了解这门古老的艺术。"
+    },
+    "ksar-amzrou": {
+      "title": "Ksar Amzrou",
+      "body": "Ksar Amzrou 位于扎戈拉东南 3 公里处。这座可追溯到 18 世纪的设防村落保存完好，至今仍有人居住。除民居外，村子南北各有一个入口，设有清真寺、犹太会堂和一个手工艺综合区。除珠宝制作外，修复和美化老门也是最兴旺的行业之一。"
+    },
+    "museum": {
+      "title": "德拉艺术与传统博物馆",
+      "body": "艺术与传统博物馆设在 13 世纪的 Tissergate 土堡里。该土堡距扎戈拉市中心 7 公里，被一圈漂亮的城墙环绕，至今仍有家庭居住。它由旧卡斯巴构成，巷道狭窄阴凉，有的带拱顶或有遮盖，有的甚至在地下。馆内的德拉艺术与传统博物馆展示了山谷柏柏尔人的日常用品以及他们的风俗与传统。顶层的露台可让游客饱览全景。"
+    },
+    "chegaga": {
+      "title": "Chegaga 沙丘",
+      "body": "Erg Chegaga 位于 M'hamid El Ghizlane 村外约 50 公里、靠近阿尔及利亚边境，由沙丘构成，长 40 公里、宽 15 公里，是撒哈拉最大的沙海。部分沙丘高达 300 米。由于通行相对不易，来访者不多，Erg Chegaga 能带来绝佳的原始沙漠体验。"
+    },
+    "jbel-zagora": {
+      "title": "Jbel Zagora",
+      "body": "凭借美丽的全景，Jbel Zagora（又名 Tazagourte）值得停留。这座山海拔 1,030 米，可远眺城市以及点缀着土堡的德拉棕榈林，景色壮美。"
+    },
+    "waterfalls": {
+      "title": "Tizghi 和 Akhbach 瀑布",
+      "body": "在德拉河谷上游，同名河流穿过 Saghro 山脉，形成了美丽的 Tizgui 和 Akhbach 瀑布。瀑布带来清凉，为徒步者提供了一处与干旱环境形成对比的舒适休息点。"
+    },
+    "nkob": {
+      "title": "Nkob 村",
+      "body": "这座“45 座卡斯巴”之村位于连接德拉河谷与齐兹河谷的公路上，曾是 Aït Atta 部落游牧民的歇脚地。Nkob 的卡斯巴已得到修复和维护，其中一些被改建为民宿，为这个宁静的村庄增添了不可否认的魅力。椰枣树和果树构成的绿洲则是另一道宜人的风景。Nkob 还是前往 Jbel Saghro 和 Jbel Amoum 峡谷徒步的起点或终点。"
+    },
+    "draa-valley": {
+      "title": "德拉河谷",
+      "body": "德拉地区被誉为摩洛哥最美丽的地区之一，沿着著名的河流延伸 220 公里，位于扎戈拉省内。这条山谷从 Agdz 一直通到沙漠门户 M'hamid El Ghizlane 村。这里有六片绿洲，出产多种椰枣。绿洲与棕榈林如同一串树链，沿河岸伸展。棕榈树下生长着果树和其他较矮的作物，田地被矮墙围起，并有灌溉渠穿过。距扎戈拉 19 公里、通往 M'hamid 的路上就是 Tamegroute 村。M'hamid 附近的 Ouled Driss 绿洲是一座由植物和绿意构成的巨大迷宫，适合徒步。您可以参观那里的土坯古堡和民居，以及村中心广场上一座专门展示柏柏尔文化的小型博物馆。"
+    },
+    "customs-lead": "德拉河谷拥有丰富的饮食遗产、歌舞和风俗，它们都是当地居民古老生活方式的一部分，值得我们学习的东西有很多。",
+    "henna": {
+      "title": "海娜（Henna）",
+      "body": "海娜产自德拉河谷，由晒干并磨成粉的叶子提取而成。它以染身体和头发的美容功效而闻名，也因药用价值受到推崇：它是有效的抗菌剂、愈合剂和去屑剂。自古以来，东方女性在婚礼、出生、洗礼和割礼仪式中使用它来驱避邪眼。"
+    },
+    "songs": {
+      "title": "扎戈拉的歌与舞",
+      "body": "德拉河谷的各部落保留了源自其多元过去的艺术表达。居民通过歌舞表达希望与抱负、悲伤与喜悦。扎戈拉省有 24 种歌舞。这种丰富多样的民间艺术会在节日里庆祝：婚礼、洗礼等……"
+    },
+    "souk": {
+      "title": "Agdz 的每周集市（Souk）",
+      "body": "Agdz 的集市是村民每周一次的盛大聚会，也是交流信息的场所，每周四上午在村口通往扎戈拉的路上举行。这里色彩与风味纷呈，深深扎根于当地风俗。"
+    },
+    "jewelry": {
+      "title": "扎戈拉的珠宝",
+      "body": "柏柏尔珠宝继承自阿马齐格犹太社群的祖传遗产，以银或青铜饰品的形式出现，带有几何和花卉图案，深受游客喜爱。"
+    },
+    "pottery": {
+      "title": "德拉河谷的陶器",
+      "body": "南方的陶器按祖传工艺制作，分为两种：绿釉陶器或白陶。它在工艺和装饰上丰富多样，包括罐、盘、花瓶等日用品和室内装饰品……"
+    },
+    "dress": {
+      "title": "德拉男女的传统服饰",
+      "body": "德拉河谷男子的官方传统服装由 Darrâa、gandoura 和头饰 Feroual（细布条形式）组成。冬天，男子披上带风帽的 burnous，这是一种精心编织的厚羊毛斗篷。女子则裹上 Izar（布）或黑色、白色的 Malhfa。这块长布在胸前由两枚大银扣针固定，并在腰间系上腰带。"
+    },
+    "gastro-draa-title": "德拉的美食",
+    "tajine": {
+      "title": "椰枣骆驼塔吉锅",
+      "body": "这道起源于扎戈拉的节庆菜肴，夏季在沙漠地区比冬季更常见，因为需求更高、宰杀更频繁。一头雄性单峰驼可提供多达 200 公斤的肉，需在宰杀时当场烹制，因为无法冷冻保存。"
+    },
+    "pigeons": {
+      "title": "酿馅鸽子",
+      "body": "这是 Drâa-Tafilalet 地区游客点得最多的菜肴之一，尤其是在扎戈拉——这道精致菜肴的发源省份。这些鸽子塞入肉或蔬菜和细面，准备时间相当长，需要 4 小时的准备才能品尝到这道专为特殊场合准备的精致菜肴。鸽子通常由当地人以传统方式饲养。"
+    },
+    "aghroum": {
+      "title": "Aghroum Ntoudount，或涂骆驼油或牛腰油的面包",
+      "body": "这种面包上涂着骆驼油（该地区最常见的骆驼科动物）或牛腰油的混合物。还会加入辣椒、洋葱和香料等其他配料，早晨作为早餐食用。"
+    },
+    "gastro-desert-title": "探索 M'hamid El Ghizlane 沙漠美食",
+    "sand-bread": {
+      "title": "沙面包",
+      "body": "沙面包用手揉制，然后放入由热石头或燃烧的棕榈叶加热到 50° 的沙子中烘烤。"
+    },
+    "dhen": {
+      "title": "Dhen",
+      "body": "这种面包涂酱由山羊黄油、盐、洋葱和迷迭香制成，可长期保存。"
+    },
+    "date-syrup": {
+      "title": "椰枣糖浆",
+      "body": "游牧民称之为 Eroub，由椰枣与水放在容器中长时间熬煮至成糖浆，再过滤去除剩余的硬块。这种产品本是纯粹的游牧发明，经该地区合作社重新推广后闻名。椰枣糖浆与面包一起食用。"
+    },
+    "bouleghman": {
+      "title": "Bouleghman",
+      "body": "这种小吃用小麦或大麦在装满沙子的大锅里烘炒制成。小麦随后清除沙子并磨碎。要变成 Boulghman，需将磨碎的小麦溶于热水和 Dhen（涂酱）或橄榄油中。这种营养丰富的食物，游牧民在早晚食用，并放在旅行袋里随身携带。"
+    },
+    "camel-milk": {
+      "title": "骆驼奶",
+      "body": "这种奶有一个惊人的特点。除了益处和营养价值（联合国粮农组织证明它是富含蛋白质、维生素 C、铁等的超级食物）外，当骆驼一岁时，它味甜，非常适合哮喘患者；而当骆驼超过 2 岁，它就变咸，非常适合糖尿病患者。可以直接从游牧部落的骆驼饲养者那里获得。"
+    },
+    "klila": {
+      "title": "Klila",
+      "body": "这道游牧菜肴用多余的骆驼奶制成。奶煮沸后滤去水分，收集剩下的部分。冷却后，游牧民把剩下的块状物与捣碎的硬椰枣混合。这种制品称为 Klila。"
+    },
+    "zennaba": {
+      "title": "Zennaba",
+      "body": "这道肉菜在宰杀绵羊或山羊的仪式之后制作。游牧民取出内脏，清洗后塞入肉馅，埋入烧热的炭火和沙中，并在内脏开口处放一截断骨来烹制。炭堆中只露出骨头，让肉蒸煮约 2 小时。"
+    },
+    "hiking-title": "徒步 M'hamid El Ghizlane 沙漠",
+    "lbour": {
+      "title": "参观 Lbour 沙丘",
+      "body": "从 M'hamid El Ghizlane 村出发，穿越干旱的黏土质 Hamada du Drâa 只需半天，即可抵达柽柳与金合欢。对经验更丰富的人，下午可继续行程，穿过一片多石的地带前往 Lbour 沙丘。在沙丘上露营，可以休息并欣赏 M'hamid El Ghizlane 的星空。"
+    },
+    "nebkit": {
+      "title": "穿越 Nebkit Sidi Taieb 沙漠",
+      "body": "从 Lbour 沙丘出发，穿越 Nebkit Sidi Taieb 沙漠需一天，到达 Erg Essmar，那里有一座古老游牧村落的遗迹和一口水井。"
+    },
+    "zahar": {
+      "title": "Zahar 大沙丘",
+      "body": "穿越山谷可抵达 Zahar 大沙丘。远处可以望见阿尔及利亚边境。下午，徒步者可以享受沙丘中的各种活动，或只是静静地沉思、冥想片刻。"
+    },
+    "sidi-naji": {
+      "title": "参观 Sidi Naji 圣人墓",
+      "body": "从 Zahar 沙丘出发，可徒步穿越 Reg de Bousnina。下午抵达 Sidi Naji，那里有一位古代圣人（marabout）的陵墓，已成为游牧民的重要朝圣地。"
+    },
+    "info-lead": "为让旅行者的停留更加舒适，以下是有关本省设施和基础设施的一些实用信息。",
+    "climat": {
+      "title": "气候",
+      "body": "本省属炎热干旱的沙漠气候，夏季漫长炎热，冬季短暂而温暖宜人。最佳旅行时间为 5 月至 6 月，以及 9 月至 11 月。"
+    },
+    "time": {
+      "title": "当地时间",
+      "body": "摩洛哥只有一个时区，GMT+1。斋月期间，摩洛哥改用 GMT。Drâa-Tafilalet 地区也不例外。"
+    },
+    "languages": {
+      "title": "通用语言",
+      "body": "当地人讲柏柏尔语和阿拉伯语。标识使用法语和阿拉伯语，有时使用提非纳文。考虑到本省的旅游定位，导游以及酒店和民宿的工作人员会说法语、英语和其他语言。"
+    },
+    "hotels": {
+      "title": "酒店",
+      "body": "扎戈拉省提供酒店、卡斯巴和 riad，也有露营地。总体而言，本省的食宿价格仍然实惠，适合各种预算。"
+    },
+    "air": {
+      "title": "航空交通",
+      "body": "扎戈拉有一座机场，有定期航班通往卡萨布兰卡。"
+    },
+    "shuttle": {
+      "title": "机场至市中心接驳",
+      "body": "出机场后，很容易找到各种交通方式，无论是出租车还是陆路旅游交通。"
+    },
+    "land": {
+      "title": "陆路交通",
+      "body": "本省有一个陆路旅游运输网络，提供多种选择，从 4x4 越野车到 60 座大巴。CTM（Compagnie de Transport au Maroc）提供连接各城市的线路，舒适有保障，车速受到控制。"
+    },
+    "agencies": {
+      "title": "旅行社",
+      "body": "对于寻求量身定制行程的游客，这里不乏旅行社。旅行社提供多种行程方案，也可定制行程。旅行社负责所有细节：咨询、接待与陪同、预订、交通和接送……"
+    },
+    "emergencies": {
+      "title": "紧急电话",
+      "numbers": [
+        {
+          "label": "警察",
+          "tel": "19"
+        },
+        {
+          "label": "消防",
+          "tel": "15"
+        },
+        {
+          "label": "道路救援",
+          "tel": "177"
+        },
+        {
+          "label": "电话查询",
+          "tel": "160"
+        }
+      ]
+    }
+  },
+  "credit": {
+    "title": "关于本指南",
+    "text": "本指南内容来自 Visit Drâa Tafilalet 出版的扎戈拉省官方旅游指南，经出版方许可在此转载。设计：Lover of Sahara。",
+    "partners": [
+      "Région Drâa-Tafilalet",
+      "Conseil Régional du Tourisme de Drâa-Tafilalet",
+      "摩洛哥国家旅游局（ONMT）"
+    ],
+    "website": "www.visitdraatafilalet.com",
+    "email": "info@visitdraatafilalet.com"
+  },
+  "cover": {
+    "line": "扎戈拉省",
+    "dim": "Zagora."
+  },
+  "pages": [
+    {
+      "type": "cover",
+      "image": "photos/hero-circuit.jpg",
+      "pos": "50% 62%"
+    },
+    {
+      "type": "contents",
+      "image": "zagora/dunes.jpg",
+      "pos": "50% 55%"
+    },
+    {
+      "type": "intro",
+      "startsSection": 1,
+      "band": {
+        "image": "photos/hero-trekking.jpg",
+        "pos": "50% 62%",
+        "h": 84
+      },
+      "eyebrow": "01  ·  扎戈拉省旅游资源概览",
+      "title": [
+        "Zagora.",
+        "绿色山谷、沙漠与扎维亚。"
+      ],
+      "lead": "zagora.lead",
+      "columns": [
+        [
+          {
+            "para": "zagora"
+          }
+        ],
+        [
+          {
+            "item": "tamegroute-zaouia",
+            "img": "zagora/tamegroute-town.jpg",
+            "first": true
+          }
+        ]
+      ]
+    },
+    {
+      "type": "opener-band",
+      "startsSection": 2,
+      "band": {
+        "image": "photos/10004.jpg",
+        "pos": "50% 50%",
+        "h": 170
+      },
+      "num": "02",
+      "title": [
+        "必游之地",
+        "Zagora."
+      ],
+      "lead": "mustvisits-lead",
+      "blocks": [
+        {
+          "item": "mhamid",
+          "first": true,
+          "wide": true
+        }
+      ]
+    },
+    {
+      "type": "items",
+      "eyebrow": "02  ·  扎戈拉省必游之地",
+      "columns": [
+        [
+          {
+            "item": "tamegroute-village"
+          },
+          {
+            "item": "zaouia-naciria"
+          },
+          {
+            "item": "foum-chenna"
+          }
+        ],
+        [
+          {
+            "item": "ait-waaziq",
+            "img": "zagora/engraving-tazarine.jpg"
+          },
+          {
+            "item": "ksar-amzrou",
+            "img": "zagora/ksar-amzrou.jpg"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "items",
+      "eyebrow": "02  ·  扎戈拉省必游之地",
+      "columns": [
+        [
+          {
+            "item": "museum",
+            "img": "zagora/museum-draa.jpg"
+          },
+          {
+            "item": "chegaga",
+            "img": "zagora/dunes.jpg",
+            "imgPos": "50% 60%"
+          }
+        ],
+        [
+          {
+            "item": "jbel-zagora"
+          },
+          {
+            "item": "waterfalls"
+          },
+          {
+            "item": "nkob"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "text-band",
+      "eyebrow": "02  ·  扎戈拉省必游之地",
+      "item": "draa-valley",
+      "band": {
+        "image": "photos/trip5.jpg",
+        "pos": "50% 55%",
+        "h": 185
+      }
+    },
+    {
+      "type": "opener-type",
+      "startsSection": 3,
+      "num": "03",
+      "eyebrow": "扎戈拉省的风俗与传统",
+      "title": [
+        "扎戈拉省的风俗与传统",
+        ""
+      ],
+      "lead": "customs-lead",
+      "columns": [
+        [
+          {
+            "item": "henna",
+            "first": true
+          }
+        ],
+        [
+          {
+            "item": "songs",
+            "img": "zagora/singers.jpg",
+            "first": true
+          }
+        ]
+      ]
+    },
+    {
+      "type": "items",
+      "eyebrow": "03  ·  扎戈拉省的风俗与传统",
+      "columns": [
+        [
+          {
+            "item": "souk",
+            "img": "zagora/souk-agdz.jpg"
+          },
+          {
+            "item": "pottery",
+            "img": "zagora/pottery-hands.jpg"
+          }
+        ],
+        [
+          {
+            "item": "jewelry",
+            "img": "zagora/jewelry.jpg"
+          },
+          {
+            "item": "dress"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "opener-type",
+      "startsSection": 4,
+      "num": "04",
+      "eyebrow": "扎戈拉省的美食",
+      "title": [
+        "扎戈拉省的美食",
+        ""
+      ],
+      "sub": "gastro-draa-title",
+      "columns": [
+        [
+          {
+            "item": "tajine",
+            "first": true
+          },
+          {
+            "item": "pigeons"
+          },
+          {
+            "item": "aghroum"
+          }
+        ],
+        [
+          {
+            "fig": "zagora/tajine-dish.jpg"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "items",
+      "eyebrow": "04  ·  扎戈拉省的美食",
+      "sub": "gastro-desert-title",
+      "columns": [
+        [
+          {
+            "item": "sand-bread"
+          },
+          {
+            "item": "dhen"
+          },
+          {
+            "item": "date-syrup"
+          },
+          {
+            "item": "bouleghman"
+          }
+        ],
+        [
+          {
+            "item": "camel-milk"
+          },
+          {
+            "item": "klila"
+          },
+          {
+            "item": "zennaba"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "dark-full",
+      "startsSection": 5,
+      "image": "photos/10007.jpg",
+      "pos": "50% 40%",
+      "eyebrow": "05  ·  徒步 M'hamid El Ghizlane 沙漠",
+      "title": [
+        "徒步",
+        "M'hamid El Ghizlane 沙漠。"
+      ],
+      "stages": [
+        "lbour",
+        "nebkit",
+        "zahar",
+        "sidi-naji"
+      ]
+    },
+    {
+      "type": "info",
+      "startsSection": 6,
+      "band": {
+        "image": "zagora/musicians.jpg",
+        "pos": "50% 22%",
+        "h": 58
+      },
+      "num": "06",
+      "title": [
+        "实用信息。",
+        ""
+      ],
+      "lead": "info-lead",
+      "columns": [
+        [
+          {
+            "info": "climat"
+          },
+          {
+            "info": "time"
+          },
+          {
+            "info": "languages"
+          }
+        ],
+        [
+          {
+            "info": "hotels"
+          },
+          {
+            "info": "air"
+          },
+          {
+            "info": "shuttle"
+          }
+        ],
+        [
+          {
+            "info": "land"
+          },
+          {
+            "info": "agencies"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "back",
+      "image": "photos/hero-trekking.jpg",
+      "pos": "50% 60%"
+    }
+  ]
+}

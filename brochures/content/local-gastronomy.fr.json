@@ -1,0 +1,336 @@
+{
+  "lang": "fr",
+  "slug": "local-gastronomy",
+  "title": "Gastronomie locale",
+  "kicker": "Guide gastronomique",
+  "subtitle": "Les 10 meilleurs plats de la région Drâa-Tafilalet",
+  "creditSubject": "la gastronomie locale de la région Drâa-Tafilalet",
+  "cover": {
+    "line": "Gastronomie",
+    "dim": "locale."
+  },
+  "contentsTitle": "Sommaire",
+  "contents": [
+    {
+      "n": "01",
+      "title": "Gastronomie locale"
+    },
+    {
+      "n": "02",
+      "title": "Histoire du rituel du thé chez les nomades"
+    },
+    {
+      "n": "03",
+      "title": "Tour gastronomique du Drâa-Tafilalet : les 10 meilleurs plats à savourer"
+    }
+  ],
+  "items": {
+    "terroir": {
+      "title": "Terroir de la gastronomie locale",
+      "body": "La terre du Drâa-Tafilalet a façonné l'art culinaire de cette vaste région. La faible pluviométrie n'a pas empêché le développement de nombreuses cultures, des dattes aux arbres fruitiers, en passant par les céréales comme le maïs, l'orge et des plantes comme la luzerne, très répandue... Les khettaras (cette ingénieuse technique d'irrigation) ont permis pendant des siècles d'amener l'eau aux cultures.\n\nLa gastronomie du Drâa-Tafilalet repose sur les produits agricoles de cette vaste région peu peuplée (1,6 million d'habitants sur une superficie de 88 836 km²). Les dattes restent le principal produit de la région et ajoutent une « touche » à divers plats de la gastronomie locale. Les luxuriantes palmeraies du Tafilalet, en bordure de la vallée du Ziz, ont donné naissance au Majhoul, cette prestigieuse variété de datte, ancêtre de celle cultivée en Californie (États-Unis) et devenue célèbre dans le monde entier. La palmeraie du Ghris à Goulmima, sur 14 km, irriguée par la rivière du même nom, et celle de Tinghir, irriguée par l'oued Toudgha (sur 30 km des gorges du Toudgha à Ferkla), sont tout aussi belles. L'oasis de Fint et la palmeraie de Skoura, d'une superficie de 25 km², montrent à leur tour la richesse du palmier dattier dans la région. Dans la vallée du Draa, les palmeraies s'étendent d'Agdz à M'Hamid El Ghizlane sur une longueur de 220 km et une largeur de 18 km. Cette région compte six oasis : Mezguita, Tarnata, Fazwata, Ktawa et M'hamid."
+    },
+    "dates-apple": {
+      "title": "Des dattes du Drâa à la pomme de Midelt",
+      "body": "Les variétés de dattes cultivées dans toute la région vont du Majhoul au Boufeggous, au Bouzekri et au Nejda, au Bousthami ou au Jihel... Sous les palmiers dattiers poussent aussi des arbres fruitiers qui varient selon les régions, comme l'amandier, le figuier ou l'olivier. Ces arbres donnent de l'ombre à des cultures vivrières au sol comme le blé, l'orge, la luzerne, le maïs, la roquette et certains légumes comme les tomates longues, les navets, les poivrons rouges et l'okra.\n\nDes épices comme le cumin et le safran cultivés à Alnif, ainsi que le sel des mines d'Ait Hani, complètent les saveurs des plats. Pendant des siècles, ces cultures ont été irriguées grâce à l'ingénieux système des khettaras, abandonné après la sécheresse et le départ des ouvriers. Dans la province de Midelt, la moins aride de la région, on trouve des vergers de pommiers dont les producteurs vendent les fruits dans tout le Maroc."
+    },
+    "goats-camels": {
+      "title": "Chèvres et chameaux : les trésors de la région",
+      "body": "L'élevage est une activité pratiquée par les habitants des régions montagneuses, des plaines et même des plateaux arides et désertiques. Nomades et sédentaires possèdent des troupeaux de chèvres, de moutons et de dromadaires.\n\nLa viande est l'ingrédient principal de divers plats que l'on savoure lors des fêtes et des grandes cérémonies."
+    },
+    "tea-ritual": {
+      "title": "Le rituel ancestral du thé chez les nomades",
+      "body": "Introduit chez les tribus nomades à la fin du XIXe siècle, le thé est devenu un rituel de communication réservé d'abord aux chefs de tribu, puis repris par les femmes pour mettre les jeunes filles en contact avec leurs prétendants potentiels.\n\nAu-delà d'être une boisson nationale aux nombreuses vertus énergisantes et relaxantes, le thé est devenu un rituel ancestral très célèbre. Depuis son arrivée dans la région à la fin du XIXe siècle, un rituel traditionnel du thé a été conçu par les nomades comme un moment d'échange et de communication entre les membres de la tribu.\n\nÀ l'origine, le thé était réservé aux chefs de tribu, qui se réunissaient chez le cheikh après la prière d'Al Asr (troisième prière de la journée, accomplie au milieu de l'après-midi). Le rituel du thé sahraoui nécessite évidemment une théière, un plateau d'argent et des verres, auxquels s'ajoutent le thé, l'eau et le sucre. Mais pour en faire un moment convivial, la présence de trois éléments est vitale : un groupe de personnes, du temps et un brasero."
+    },
+    "tea-marriage": {
+      "title": "Un rituel féminisé pour faciliter les mariages",
+      "body": "Pendant ce moment, qui dure parfois des heures, les membres de la tribu parlent de leur voyage de plusieurs jours dans le désert. Ceux qui cherchaient des informations sur les itinéraires les plus sûrs et les directions privilégiées dans le vaste Sahara assistaient au rituel du thé chez le cheikh.\n\nIls échangeaient des informations, racontaient des légendes et récitaient des poèmes... Les femmes organisaient aussi le même rituel. Cela leur permettait de faire connaître les jeunes filles aux familles des prétendants de la tribu et de les mettre en relation.\n\nÀ cette époque, les hommes n'avaient pas le droit d'approcher les jeunes filles. Ils ne pouvaient les voir que de loin lorsqu'elles allaient chercher de l'eau à un puits pour abreuver les troupeaux de chèvres ou de chameaux. Le rituel féminin du thé facilitait le contact entre les jeunes filles et leurs prétendants potentiels dans la tribu."
+    },
+    "tour-lead": "La gastronomie du Drâa-Tafilalet repose sur les produits à base de viande, les produits agricoles cultivés dans les oasis et les herbes locales. Certains trésors culinaires sont préparés à la maison, sur demande, ou disponibles dans les souks (marchés). On y trouve généralement les classiques tajine et couscous, avec quelques spécificités régionales.\n\nNous vous présentons le Top 10 des meilleurs plats de la région pour une aventure culinaire dans la région Drâa-Tafilalet.",
+    "saffron": {
+      "title": "Tajine de viande au safran",
+      "body": "Mêlant subtilement, comme la cuisine marocaine sait si bien le faire, le sucré et le salé, le tajine de viande au safran d'Ouarzazate est une merveille culinaire qui cache plus d'un secret et qu'il faut absolument découvrir en passant par la région.\n\nMijotée sur les braises du kanoun (brasero), la viande de D'mane, une race de moutons des oasis typique du sud-est du Maroc, révèle toutes ses saveurs sous l'effet d'un précieux mélange d'épices : cannelle, gingembre et miel, que rehausse le « safran ».\n\nCes filaments rouges au goût épicé, chaud et légèrement amer s'obtiennent après une récolte laborieuse dans la vallée d'Ouarzazate, avec 3 stigmates rouges par fleur. Il ne faut pas moins de 50 000 fleurs pour récolter 1 kg de stigmates frais et près de 5 kg de stigmates pour obtenir 1 kg de safran sec, prêt à l'emploi, d'où le prix élevé du safran.\n\nCe tajine est servi sur demande dans les hébergements et les restaurants."
+    },
+    "baddaz": {
+      "title": "Baddaz",
+      "body": "Rythmé par le soleil qui fait mûrir les ingrédients, le Baddaz, couscous berbère, est une variante du couscous marocain aux mille tours, qui se distingue à la fois par ses ingrédients et par sa préparation singulière.\n\nSa base, composée de semoule de maïs (Asengar), est soigneusement roulée à la main, puis cuite à la vapeur dans un couscoussier, trois fois, avant d'être parfumée au « smen » (beurre rance).\n\nCe plat typique d'Ouarzazate ne se déguste pas sans les lanières de mouton salé séchées au soleil, le « guedid », et/ou les « kordas », ces morceaux de ventre de mouton farcis de lanières de cœur, de foie et de poumons, cuits à la vapeur puis séchés au soleil... deux composantes au goût prononcé, qui relèvent les saveurs timides de la farine de maïs.\n\nLa luzerne et les navets séchés au soleil sont la touche finale de ce plat."
+    },
+    "medfouna": {
+      "title": "Medfouna",
+      "body": "Dans le sud-est du Maroc, il existe un plat qui est une institution en soi : la fameuse Medfouna. L'équivalent marocain du calzone italien.\n\nPlat emblématique de la vallée de Rissani, cette ancienne capitale du Tafilalet, qui fut autrefois le bastion de la dynastie alaouite. La ville, jadis un grand centre caravanier du commerce transsaharien, abrite le tombeau de Moulay Ali Cherif.\n\nLa Medfouna, un pain farci de petits cubes de viande, d'œufs durs, d'amandes, d'oignons et d'épices (sel, cumin, gingembre et parfois piment), servie au restaurant ou sur commande sur les marchés, est un incontournable pour tous les visiteurs de la région. Les visiteurs qui le souhaitent peuvent acheter eux-mêmes chez les bouchers la viande destinée à farcir la galette, avant de la confier au cuisinier qui façonnera le plat... une garantie de qualité, mais surtout une façon de faire participer les visiteurs à la préparation de ce plat."
+    },
+    "okra": {
+      "title": "Tajine d'okra",
+      "body": "Le tajine de « Mloukhia » / okra est la démonstration ultime du génie de la cuisine marocaine. Ce légume exotique, répandu en Afrique du Nord et au Moyen-Orient, aux saveurs subtiles et peu marquées, un peu comme l'aubergine, révèle toute sa succulence au palais grâce au savant mélange d'épices du tajine, associé à la sauce juteuse libérée par les tomates et les oignons qui l'accompagnent. Sa grande caractéristique, la texture visqueuse et gélatineuse du légume, s'accorde parfaitement avec la viande d'agneau ou de bœuf.\n\nPour l'apprécier à sa juste valeur, le tajine de Mloukhia se déguste idéalement avec les doigts, avec du pain Tafarnoute (typique du sud marocain) croustillant, pour composer des bouchées où se mêlent sauce, okra et viande, pour le plus grand plaisir des papilles des gourmets les plus fins.\n\nLe tajine d'okra est servi dans les restaurants de tajine d'Errachidia."
+    },
+    "dromedary": {
+      "title": "Tajine de viande de dromadaire aux dattes",
+      "body": "Pour le tajine de dromadaire, on préfère les morceaux tendres de cuisse de dromadaire. La viande de chameau est riche en eau et pauvre en graisses ; en plus d'être savoureuse, elle réduit le risque de maladies cardiaques grâce à sa faible teneur en acides gras saturés.\n\nPendant la préparation du tajine, la viande mijote sur un lit d'oignons et le goût est rehaussé d'un filet d'huile d'olive vierge et de condiments (cannelle, paprika, cumin, gingembre). À la préparation, des dattes saupoudrées de sésame et enrobées de miel enrichissent ce plat de fête de Zagora.\n\nOn le trouve dans les zones désertiques plus en été qu'en hiver, en raison d'une demande plus forte et d'abattages plus fréquents. Le tajine de dromadaire est servi sur demande dans les restaurants de la province."
+    },
+    "pigeons": {
+      "title": "Pigeons farcis",
+      "body": "Lors de leur visite de la région Drâa-Tafilalet, de nombreux visiteurs demandent ce délicieux plat : les « pigeons farcis de Zagora ». Ce plat de choix, bien qu'il paraisse simple à réaliser, demande de longues heures de préparation et de cuisson. Tantôt farcis de viande, tantôt de légumes et de vermicelles, au quotidien, les pigeons farcis sont réservés aux grandes occasions ou aux invités de marque. Le gibier utilisé pour la préparation du plat est généralement élevé de façon traditionnelle chez l'habitant.\n\nLa chair du pigeon, fine et tendre, maigre et très riche en fer, a la particularité d'être particulièrement fondante en bouche et de séduire le palais par un subtil goût de noisette. Ce plat particulier apprécie lui aussi le mariage du sucré et du salé, et il est servi sur demande dans les restaurants de la province."
+    },
+    "terfas": {
+      "title": "Tajine Terfas",
+      "body": "Zoubaïdi, ezzabdi, terfess ou terfez, ce champignon rare du désert, qui pousse dans certaines parties du Maroc, surtout dans le sud-est et au Sahara, est très prisé, comparable à de l'or blanc. Il pousse entre novembre et avril et se récolte entre mars et mai ; c'est un ingrédient de choix pour la composition du tajine Terfas de Tinghir.\n\nIssu du riche patrimoine culinaire juif marocain (une recette traditionnelle des familles juives marocaines, notamment pour fêter Pessah, l'une des fêtes les plus importantes de la religion juive), ce plat à base de truffes et de bœuf est très connu dans la région et fait la fierté de la cuisine locale.\n\nCe champignon est aussi réputé pour ses qualités culinaires exceptionnelles et ses propriétés médicinales, grâce à sa richesse en antioxydants.\n\nLe tajine est servi sur demande dans les restaurants de Tinghir."
+    },
+    "ifnouzen": {
+      "title": "Ifnouzen",
+      "body": "L'« Ifnouzen », ou « couscous à la luzerne », est une spécialité gastronomique amazighe ancestrale, appréciée des habitants des régions du sud du Maroc comme de ses visiteurs, réputée plat d'hiver par excellence.\n\nGrâce à ses composants et à ses vertus nutritives, l'Ifnouzen apporte au corps énergie et chaleur, pour chasser le froid qui règne l'hiver dans la région.\n\nPréparé à base de produits locaux : luzerne (herbe hachée incorporée au couscous avant la dernière cuisson à la vapeur avec divers condiments), huile d'olive, blé, orge et maïs, poireaux, ce plat est préparé par les habitants de la région depuis des siècles et c'est un plat favori pour accueillir les invités à leur arrivée à la maison."
+    },
+    "goat-apples": {
+      "title": "Tajine de viande de chèvre aux pommes confites",
+      "body": "Championne de la production de pommes au Maroc (plus de 90 % de la production nationale), Midelt est sans conteste la capitale de la pomme par excellence au Maroc.\n\nÀ ce titre, un plat atypique de la région a bâti sa réputation de capitale de la pomme : le tajine de viande de chèvre aux pommes confites. Une autre merveille du registre gastronomique marocain du sucré-salé.\n\nPour le préparer, de beaux morceaux de viande de chèvre sont soigneusement choisis, puis habilement parfumés d'oignons, d'ail et de coriandre, avant d'être assaisonnés d'une pomme verte acidulée (récoltée en abondance dans la région) confite, pour la version de base. Dans une autre version, des pruneaux et des amandes grillées sont ajoutés au tajine, au grand plaisir des convives.\n\nCe tajine est servi dans les restaurants, les maisons d'hôtes et chez les habitants."
+    },
+    "trout": {
+      "title": "Tajine de truite",
+      "body": "La province de Midelt, avec ses lacs, ses barrages, ses oueds et ses grands réservoirs, possède une richesse spécifique en poissons, au grand bonheur des amateurs de pêche... mais aussi des amateurs de plats de poisson, notamment de truite.\n\nLe tajine de truite, ce plat délectable emblématique de Midelt, est ainsi très recherché des visiteurs de la région. Proposé dans sa première variante, dans le plat en terre cuite, où l'on dispose la truite de l'Atlas sur un lit de pommes de terre, joliment décoré de tranches de poivrons savoureux, de tomates juteuses, d'olives et de citron confit.\n\nPour ceux qui l'aiment sucré-salé, on peut opter pour la version aux oignons, raisins et fruits secs, adoucie au miel. La chair tendre et savoureuse de la truite locale se prête avec douceur au jeu des saveurs de ce tajine, offrant aux visiteurs de la région une expérience culinaire pour ravir les palais les plus fins.\n\nLe tajine de truite est servi dans divers restaurants de la province."
+    },
+    "sub-ouarzazate": "Ouarzazate"
+  },
+  "pages": [
+    {
+      "type": "cover",
+      "image": "gastro/cover-portrait.jpg",
+      "pos": "50% 50%"
+    },
+    {
+      "type": "contents",
+      "image": "gastro/tea-pour.jpg",
+      "pos": "50% 40%"
+    },
+    {
+      "type": "intro",
+      "startsSection": 1,
+      "band": {
+        "image": "gastro/hero-tajine.jpg",
+        "pos": "50% 50%",
+        "h": 56
+      },
+      "eyebrow": "01  ·  Gastronomie locale",
+      "title": [
+        "Terroir de",
+        "la gastronomie locale."
+      ],
+      "columns": [
+        [
+          {
+            "para": "terroir"
+          }
+        ],
+        [
+          {
+            "item": "dates-apple",
+            "first": true,
+            "img": "gastro/apples.jpg",
+            "imgPos": "50% 50%"
+          },
+          {
+            "item": "goats-camels"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "opener-type",
+      "startsSection": 2,
+      "num": "02",
+      "eyebrow": "Histoire du rituel du thé chez les nomades",
+      "title": [
+        "Le rituel du thé",
+        "chez les nomades."
+      ],
+      "columns": [
+        [
+          {
+            "item": "tea-ritual",
+            "first": true,
+            "img": "gastro/tea-set.jpg",
+            "imgPos": "50% 50%"
+          }
+        ],
+        [
+          {
+            "item": "tea-marriage",
+            "first": true,
+            "img": "gastro/tea-pour.jpg",
+            "imgPos": "50% 40%"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "opener-type",
+      "startsSection": 3,
+      "num": "03",
+      "eyebrow": "Un tour gastronomique du Drâa-Tafilalet",
+      "title": [
+        "Les 10 meilleurs",
+        "plats de la région."
+      ],
+      "lead": "tour-lead",
+      "columns": [
+        [
+          {
+            "fig": "gastro/quince-tajine.jpg"
+          }
+        ],
+        [
+          {
+            "fig": "gastro/hero-tajine.jpg"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "opener-band",
+      "band": {
+        "image": "ouarzazate/valley-aerial.jpg",
+        "pos": "50% 50%",
+        "h": 80
+      },
+      "num": "03",
+      "title": [
+        "Ouarzazate.",
+        ""
+      ],
+      "columns": [
+        [
+          {
+            "item": "saffron",
+            "first": true,
+            "img": "gastro/meat-tajine-saffron.jpg"
+          }
+        ],
+        [
+          {
+            "item": "baddaz",
+            "first": true,
+            "img": "gastro/baddaz.jpg"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "opener-band",
+      "band": {
+        "image": "errachidia/palm-sea.jpg",
+        "pos": "50% 50%",
+        "h": 80
+      },
+      "num": "03",
+      "title": [
+        "Errachidia.",
+        ""
+      ],
+      "columns": [
+        [
+          {
+            "item": "medfouna",
+            "first": true,
+            "img": "gastro/medfouna.jpg"
+          }
+        ],
+        [
+          {
+            "item": "okra",
+            "first": true,
+            "img": "gastro/tajine-okra.jpg"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "opener-band",
+      "band": {
+        "image": "general/dunes-sunset.jpg",
+        "pos": "50% 55%",
+        "h": 80
+      },
+      "num": "03",
+      "title": [
+        "Zagora.",
+        ""
+      ],
+      "columns": [
+        [
+          {
+            "item": "dromedary",
+            "first": true,
+            "img": "gastro/dromedary-tajine.jpg"
+          }
+        ],
+        [
+          {
+            "item": "pigeons",
+            "first": true,
+            "img": "gastro/stuffed-pigeons.jpg"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "opener-band",
+      "band": {
+        "image": "general/road-switchbacks.jpg",
+        "pos": "50% 55%",
+        "h": 80
+      },
+      "num": "03",
+      "title": [
+        "Tinghir.",
+        ""
+      ],
+      "columns": [
+        [
+          {
+            "item": "terfas",
+            "first": true,
+            "img": "gastro/tajine-terfas.jpg"
+          }
+        ],
+        [
+          {
+            "item": "ifnouzen",
+            "first": true,
+            "img": "gastro/ifnouzen.jpg"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "opener-band",
+      "band": {
+        "image": "midelt/tamaloute-lake.jpg",
+        "pos": "50% 55%",
+        "h": 80
+      },
+      "num": "03",
+      "title": [
+        "Midelt.",
+        ""
+      ],
+      "columns": [
+        [
+          {
+            "item": "goat-apples",
+            "first": true,
+            "img": "gastro/goat-apples.jpg"
+          }
+        ],
+        [
+          {
+            "item": "trout",
+            "first": true,
+            "img": "gastro/trout-tajine.jpg"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "back",
+      "image": "gastro/cover-back-portrait.jpg",
+      "pos": "50% 50%"
+    }
+  ]
+}

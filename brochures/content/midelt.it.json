@@ -1,0 +1,449 @@
+{
+  "lang": "it",
+  "slug": "midelt",
+  "title": "La provincia di Midelt",
+  "kicker": "Guida turistica",
+  "subtitle": "Paesaggi di montagna e di valle mozzafiato",
+  "creditSubject": "della provincia di Midelt",
+  "cover": {
+    "line": "La provincia di",
+    "dim": "Midelt."
+  },
+  "contentsTitle": "Indice",
+  "contents": [
+    {
+      "n": "01",
+      "title": "Descrizione delle attrazioni turistiche della provincia di Midelt"
+    },
+    {
+      "n": "02",
+      "title": "Da non perdere nella provincia di Midelt"
+    },
+    {
+      "n": "03",
+      "title": "Usanze e tradizioni della provincia di Midelt"
+    },
+    {
+      "n": "04",
+      "title": "Gastronomia della provincia di Midelt"
+    },
+    {
+      "n": "05",
+      "title": "Escursione nella valle di Tizi N'Zou Imtchimin"
+    },
+    {
+      "n": "06",
+      "title": "Informazioni utili"
+    }
+  ],
+  "items": {
+    "midelt": {
+      "title": "Midelt",
+      "subtitle": "Paesaggi di montagna e di valle mozzafiato",
+      "lead": "Situata a 1500 m di altitudine, la provincia di Midelt offre bellissimi paesaggi naturali ma anche una ricchezza di minerali e fossili, molto attraente per i turisti.",
+      "body": "Situata ai piedi del monte Ayachi, tra il Medio e l'Alto Atlante, Midelt si trova a 1488 metri di altitudine, e alcuni villaggi della provincia superano i 2000 metri. Innevata in inverno tra i suoi cedri e abeti, Midelt è una provincia montuosa ricca di paesaggi naturali e culturali con esperienze mozzafiato. La capitale nazionale della mela (fornisce il 60% della produzione nazionale), dove nasce l'Oued Moulouya, che scorre verso il Rif per gettarsi nel Mediterraneo, è ricca di bei paesaggi. Dalla montagna Ayachi Said o Hadi (3747 m), risalendo verso nord attraverso la città di Zaïda fino a Boumia, si trova il grazioso villaggio di Tounfite (situato tra il Medio e l'Alto Atlante). Lungo la strada, alla diga di Tamaloute (con una capacità di 50 milioni di m³, operativa dall'estate 2018), i pescatori cercano di catturare saporite trote iridee. Da lì una strada conduce al famosissimo villaggio di Imilchil e ai suoi laghi Isli e Tislit, nonché alla grotta di Akhiam. La seconda strada conduce al villaggio di Assaka e al canyon di Tadroute. La provincia di Midelt ospita anche la foresta di cedri di Tanourdi sulla strada per Ajdir. La zona disboscata è dedicata al pascolo. La foresta ospita diverse specie come cinghiale, lepre e volpe rossa. La provincia, che conta 289.337 abitanti, sfrutta, come la vicina Ouarzazate, l'energia solare con la centrale solare «Noor Midelt» con una capacità elettrica installata di 2000 MW."
+    },
+    "mining-wealth": {
+      "title": "Una ricchezza mineraria di fama mondiale",
+      "body": "A Midelt, la ricchezza mineraria è stata a lungo dominio delle società francesi. Le miniere di Mibladen e Ahouli sono state sfruttate dal 1939 al 1980 da società francesi per estrarre piombo, vanadinite e altri minerali cristallizzati come l'azzurrite e il quarzo... Queste miniere sono ancora sfruttate da ex operai e da giovani in cerca di rocce e minerali. Gli appassionati di queste pietre scopriranno azzurrite, ametista, aragonite, barite, calcedonio e altro... in negozi che espongono gioielli, lampade, portacandele, prodotti in selenite, pietre, oggetti di decorazione in gesso e fossili. Minerali e fossili hanno rappresentato una grande ricchezza per Midelt e una fonte di reddito per la popolazione della provincia."
+    },
+    "heritage": {
+      "title": "Un affascinante patrimonio culturale e religioso",
+      "body": "Per quanto riguarda il patrimonio culturale e spirituale, la provincia di Midelt può vantare di ospitare la Zawiya di Sidi Hamza, costruita nel XVII secolo da M'hamed Boubker, padre di Abu Salim El Ayachi. Questa località turistica si trova a 70 km a sud della città di Midelt. È nota fin dalla preistoria, come testimonia un insieme di tumuli lungo la riva sinistra del fiume, vicino alle sorgenti del massiccio montuoso (3400 m), l'Assif Ziz. Gli Almohadi occuparono il luogo e vi installarono la cittadella di Abdelmoumen Agoumi, un posto di sorveglianza delle guardie notturne. Vi si scoprono belle grotte di 35 m² per alcune. Della presenza dell'Impero almohade in questa oasi di montagna restano solo le rovine di questo edificio in pietra a secco e adobe e alcuni pozzi con il gesso di Tadellakt. Nelle vicinanze si trovano il villaggio di Tazroft e la Zawiya Sidi Hamza con la sua grande biblioteca di manoscritti rari. Nella città di Midelt è interessante la visita alla Kasbah degli Ebrei (Athmane o Moussa) e alla Kasbah di Tachaouite. Riflette lo stile di vita delle comunità ebraica e musulmana e la loro pacifica convivenza per secoli."
+    },
+    "must-lead": "La città di Midelt, che in berbero significa «pascolo protetto», fu fondata dai francesi nel 1918. Gli abitanti della provincia di Midelt sono per lo più berberi e vivono in un vasto territorio composto da un massiccio montuoso, valli verdi, il parco nazionale dell'Alto Atlante Orientale... Il patrimonio culturale e religioso, composto da ksour dove ebrei e musulmani convivevano con le loro moschee, zawiya e sinagoghe, testimonia la coesistenza di questi berberi ebrei e musulmani. Ecco alcuni dei luoghi da non perdere nella provincia.",
+    "jewish-kasbah": {
+      "title": "Kasbah ebraica (Atmane o Moussa)",
+      "body": "Un vero labirinto, la Kasbah Atmane o Moussa fu costruita dagli ebrei berberi con diverse case collegate da vicoli in galleria e una sinagoga. La kasbah era fortificata per essere un rifugio contro gli attacchi di altre tribù. Dopo la partenza degli ebrei marocchini verso la terra promessa, la kasbah è oggi abitata da musulmani."
+    },
+    "sidi-hamza": {
+      "title": "Zawiyat Sidi Hamza",
+      "body": "Situato a 70 km a sud della città di Midelt, il villaggio di Tazrouft, detto anche villaggio dei 100 poeti, è un agglomerato di case di fango vicino alla cittadella almohade. Abu Salim El Ayachi (nato nel 1628 nella tribù degli Ait Ayach e morto nel 1681 di peste) visse in una casa a più piani nel villaggio di Tazrouft. Questo studioso, scrittore e sufi fu anche un famoso viaggiatore che riportò dall'Oriente e oltre opere preziose che costituirono una biblioteca di manoscritti. Questa grande biblioteca, una delle più importanti del regno, fu ampliata da un parente di nome Abu Hamza. Abou Salim El Ayachi fu sepolto nel cimitero della valle."
+    },
+    "tazrouft": {
+      "title": "Villaggio di Tazrouft",
+      "body": "Situato a 70 km a sud della città di Midelt, il villaggio di Tazrouft, detto anche villaggio dei 100 poeti, è un agglomerato di case tradizionali in adobe vicino a una cittadella almohade. In questo villaggio visse Abu Salim El Ayachi, studioso, scrittore e sufi (1628-1681), fondatore della Zawiya Sidi Hamza e della sua collezione di manoscritti rari, una delle più importanti del regno. Abu Salim El Ayachi fu sepolto nel cimitero della valle."
+    },
+    "myriem": {
+      "title": "La Kasbah Myriem a Midelt",
+      "body": "Dietro il Monastero di Nostra Signora dell'Atlante si trova la Kasbah Myriem a Midelt. Creata nel 1922 dalla moglie di un ufficiale francese, fu rilevata 4 anni dopo dalle Suore Francescane, che svilupparono la Kasbah Myriem: un laboratorio di formazione per donne di montagna nel ricamo artigianale. Oggi questo laboratorio di ricamo a punto croce e di tessitura berbera offre una fonte di reddito a molte famiglie di Midelt."
+    },
+    "mining-cities": {
+      "title": "Le città minerarie di Mibladen e Ahouli",
+      "body": "Le vecchie città minerarie di Mibladen e Ahouli si trovano a 25 km da Midelt. I villaggi di Mibladen e Ahouli sono ancora abitati ma le miniere furono chiuse negli anni Ottanta dopo il crollo dei prezzi del piombo. Ex operai della regione compiono ancora scavi rischiando la vita alla ricerca del preziosissimo minerale vanadinite e di altri minerali cristallizzati come l'azzurrite, il quarzo... La visita alle miniere in galleria è possibile per turisti e collezionisti."
+    },
+    "akhiam": {
+      "title": "Grotta di Akhiam",
+      "body": "Situata a 7 km dal villaggio di Agoudal sulla strada per la valle del Dadès, la grotta di Akhiam è arroccata a 2690 m di altitudine. È raggiungibile attraverso una pista che attraversa vaste pianure circondate da cime montuose, percorribili a piedi, in bicicletta, in auto o su asini. La grotta di Akhiam ha una bella cascata piena di leggende berbere."
+    },
+    "tanghort": {
+      "title": "La grotta di Tanghort e la valle di Ait Yaacoub",
+      "body": "Risalendo il fiume Anzguemir sulla riva sinistra dal villaggio di Tazrouft, si possono raggiungere, dopo un'ora di cammino, le sorgenti e la bella grotta di Tanghort. In mezz'ora d'auto verso sud di Zaouite si può raggiungere il sito e la valle di Ait Yaacoub, che fu il campo di battaglia contro gli occupanti francesi nel 1929."
+    },
+    "national-park": {
+      "title": "Parco nazionale dell'Alto Atlante Orientale",
+      "body": "Con un'altitudine di 3000 m, il Jbel Aberdouze e la valle di Ait Yahya formano, con la regione dei laghi di Imilchil e la valle dell'Assif Melloul, la riserva del parco nazionale dell'Alto Atlante Orientale con una superficie di 48.000 ha. La biodiversità, i paesaggi, la cultura e le tradizioni dei berberi di montagna sono un tesoro da esplorare."
+    },
+    "hammat": {
+      "title": "Sorgenti termali di Hammat Moulay Ali Chérif e Moulay Hachem",
+      "body": "Hammat Moulay Ali Chérif è una stazione termale di acque calde situata a 16 km dalla città di Rich. Ha molti benefici per i pazienti che soffrono di reumatismi, artrosi, stitichezza, atonia intestinale e obesità... Hammat Moulay Hachem si trova invece a 12 km da Rich e a 4 km da Hammat Moulay Ali Chérif. La sua acqua è consigliata per l'apparato digerente. È visitata in maggioranza da turisti nazionali in cerca di cure termali."
+    },
+    "ayachi": {
+      "title": "Salita al monte Ayachi e visita al circo di Jaffar",
+      "body": "Dalla città è possibile salire sul monte Ayachi (3737 m) in due giorni. Dallo stesso punto si può anche raggiungere il circo di Jaffar, uno dei siti più difficili da raggiungere del Marocco. Questo luogo naturale di grande bellezza è molto ben conservato. È preferibile viaggiare in 4x4, preferibilmente in estate. La lunga strada sassosa richiede da tre a quattro ore di viaggio."
+    },
+    "imilchil": {
+      "title": "Imilchil",
+      "body": "Il famoso villaggio di Imilchil, situato a 2200 m di altitudine, è una tappa obbligata della regione. Il suo moussem dei matrimoni, organizzato tra fine agosto e inizio settembre di ogni anno, riunisce i berberi della zona in un'atmosfera commerciale e festosa posta sotto la benedizione del santo Sidi Ahmed Oulmaghani."
+    },
+    "agoudal": {
+      "title": "Il villaggio di Agoudal: il villaggio più alto del Marocco",
+      "body": "Incastonato nell'Alto Atlante a 2300 m di altitudine, dove si incontrano i sentieri provenienti dalle gole del Todgha e del Dadès, Agoudal è il villaggio abitato più alto del Marocco. È il punto di partenza ideale per trekking in montagna ma anche per la visita della valle dell'Assif Melloul per raggiungere Imilchil, Rich o Goulmima."
+    },
+    "minerals-fair": {
+      "title": "Fiera dei minerali e dei fossili di Midelt",
+      "body": "Organizzata per la prima volta dal 6 al 10 novembre 2013, l'esposizione di minerali e fossili di Midelt mira a valorizzare questo patrimonio geologico e minerario. Attrae 100 espositori e visitatori stranieri. L'associazione nazionale di pietre, fossili, pietre scolpite e materiali minerali incoraggia lo svolgimento di questa esposizione per lo sviluppo sostenibile della regione di Midelt."
+    },
+    "apple-exhibition": {
+      "title": "Esposizione nazionale della mela",
+      "body": "Organizzata dalla Direzione regionale dell'agricoltura del Drâa-Tafilalet, l'esposizione nazionale della mela si tiene a metà ottobre di ogni anno nella città di Midelt. Mira a sviluppare la filiera della mela nell'ambito del Piano Marocco Verde. È un'occasione per incoraggiare i frutticoltori a sviluppare lo spirito di marketing territoriale della mela certificata, a valorizzare la coltivazione della mela e la creazione di nuovi impianti, l'introduzione della microirrigazione, l'acquisto di attrezzature agricole... Si noti che Midelt produce il 53% della produzione nazionale di mele."
+    },
+    "customs-lead": "Situata nell'Alto Atlante orientale, la provincia di Midelt ospita la tribù amazigh degli Aït Yafelmane composta principalmente dalle tribù Aït Izdeg, Aït Yahia, Aït Merghad e Aït Hdiddou. Queste tribù sono discendenti dei nomadi Sanhadja e mantengono tradizioni e usanze ancestrali.",
+    "ahidous": {
+      "title": "Ahidous: l'arte dello spettacolo amazigh",
+      "body": "Praticato dai berberi delle montagne del Medio e Alto Atlante in Marocco, in particolare a Imilchil e Midelt, l'Ahidous è una tradizione ancestrale di danza e canto collettivi amazigh. Durante l'Ahidous, uomini e donne formano cerchi flessuosi e ondulanti, accompagnati da canti berberi. Tre elementi compongono l'Ahidous: il canto Izlan, legato alla poesia locale o a un'improvvisazione i cui temi vanno dall'amore alla politica, il ritmo musicale ottenuto con tamburelli e battiti di mani e infine la danza mista. Si distingue l'Ahidous Askwat, eseguito nelle occasioni speciali della tribù, dall'Ahidous Amezian, nelle feste familiari. Il festival della musica delle vette di Bou Azmou a Imilchil celebra ogni anno l'Ahidous, la danza e il canto degli amazigh di Imilchil."
+    },
+    "moussem-engagement": {
+      "title": "Moussem del Fidanzamento di Imilchil o di Sidi Hmad Oulmaghni",
+      "body": "Il villaggio di Imilchil, situato in una valle montuosa a 2160 m di altitudine, ospita i berberi Ait Hadidou, pastori di origine nomade. Sedentari dal XVII secolo, sono ritenuti le tribù più autentiche e tradizionali del Marocco. Il rito del matrimonio assume tra gli Ait Hadidou la dimensione di un fenomeno sociale, culturale e spirituale. Organizzato ogni anno a settembre presso il mausoleo del santo Sidi Hmad Oulmaghni, il moussem di Imilchil permette ai giovani della tribù di partire alla ricerca del proprio innamorato. Il programma comprende danze, canti e attività commerciali, nonché la formalizzazione degli atti di matrimonio."
+    },
+    "moussem-hssira": {
+      "title": "Moussem Bou Hssira della comunità ebraica marocchina a Midelt",
+      "body": "Ogni anno la comunità ebraica marocchina celebra il moussem Hiloula Rebbi Ishak Abi Hssira nel villaggio di Toulal (comune di Grama), nella provincia di Midelt. Durante questo moussem religioso, diverse centinaia di ebrei marocchini dal Marocco e dal mondo si riuniscono al mausoleo di questo santo e celebrano i loro riti religiosi in un'atmosfera festosa."
+    },
+    "culinary-lead": "La provincia di Midelt è famosa in tutto il Marocco per le sue mele. Per questo vengono usate in vari piatti.",
+    "tajine-apples": {
+      "title": "Tajine di carne di capra con mele candite",
+      "body": "Questa specialità della provincia di Midelt è preparata con una mela verde piuttosto acida e abbondante nella regione. Questo tajine viene servito nelle case d'ospiti e nelle case degli abitanti della provincia."
+    },
+    "abadir": {
+      "title": "Pane Abadir",
+      "body": "Questo grande pane di un metro di diametro e senza lievito, che si trova specificamente a Imilchil, viene cotto su pietre riscaldate senza cenere. Viene poi coperto di cenere e piante (artemisia) che bruciano per un'ora. La stessa operazione viene ripetuta sull'altro lato. Questo pane si conserva fino a una settimana e può sfamare 40 persone."
+    },
+    "couscous": {
+      "title": "Couscous di grano tenero",
+      "body": "Questo couscous preparato con semola di grano tenero è originario di Midelt ma anche delle oasi del Tafilalet (Boutenfite, Tizgaghine e Tighfert). Deve essere cotto a vapore almeno due volte per venti minuti e abbinato a legumi, carne e verdure. Può anche essere mangiato da solo, aromatizzato o semplice, caldo o freddo."
+    },
+    "trout": {
+      "title": "Tajine di trota",
+      "body": "Originario di Midelt, questo tajine è preparato con trota dell'Atlante accompagnata da patate, peperoni, pomodori, olive e spicchi di limone o forse solo da cipolle, uva e frutta secca leggermente addolcita con miele."
+    },
+    "hiking": {
+      "title": "Escursione nella valle di Tizi N'Zou Imtchimin e alla diga di Tamaloute",
+      "body": "Questa escursione di tre ore permette di scoprire la cresta montuosa che domina il lato nord dei villaggi e dei campi della valle, oltre al lago della diga di Tamaloute. Questa diga si trova a circa sessanta chilometri a sud-ovest della città di Midelt. Irriga la valle di Tizi N'Zou Imtchimin. Gli escursionisti possono incontrare tartarughe, camaleonti e lucertole. Da lì si può ammirare, in un gigantesco panorama fino al bastione delle montagne del Medio Atlante, la valle di Ait Ayach, nota per i suoi frutteti di meli e il suo fiume Anzgmir. Su questo fiume è stata costruita la diga di Tamaloute, entrata in servizio nell'estate 2018. Un prolungamento di due ore permette di visitare o i villaggi della valle di Ait Ikou e Ait Ouchen o le sorgenti geotermiche calde di Tissoufra (con una temperatura di oltre 34°) e le gole dell'Assif Anzegmir. Servono due ore di cammino su sentieri tortuosi lungo le pareti delle lunghe scogliere per raggiungere le gole. Il circuito termina nel villaggio di Tamaloute."
+    },
+    "info-lead": "Per migliorare il soggiorno dei viaggiatori, ecco alcune informazioni utili sulle strutture e sulle infrastrutture della provincia.",
+    "climat": {
+      "title": "Clima",
+      "body": "La provincia ha un clima subtropicale umido caldo senza stagione secca. Il periodo migliore per visitare la provincia è da maggio a ottobre, quando le temperature sono piacevoli."
+    },
+    "time": {
+      "title": "Ora locale",
+      "body": "Il Marocco ha un solo fuso orario, GMT + 1. Durante il mese di Ramadan, il Marocco passa a GMT. La regione del Drâa-Tafilalet non fa eccezione alla regola."
+    },
+    "languages": {
+      "title": "Lingue parlate",
+      "body": "La popolazione parla berbero e arabo. La segnaletica è in francese e arabo, a volte in tifinagh. Le guide e il personale di hotel e case d'ospiti parlano francese, inglese e altre lingue, data la vocazione turistica della provincia."
+    },
+    "hotels": {
+      "title": "Hotel",
+      "body": "La provincia offre diversi riad, locande e hotel, oltre a incantevoli case d'ospiti. In generale, alloggio e cibo nella provincia sono accessibili e adatti a tutti i budget."
+    },
+    "land": {
+      "title": "Trasporto via terra",
+      "body": "La provincia dispone di una rete di operatori turistici di trasporto via terra che offrono diverse opzioni, dai fuoristrada 4x4 ai pullman da 60 posti. La CTM (Compagnie de Transport au Maroc) offre linee che collegano le città. Il comfort è assicurato e la velocità controllata."
+    },
+    "agencies": {
+      "title": "Agenzie di viaggio",
+      "body": "Per i visitatori in cerca di viaggi su misura, non mancano le agenzie di viaggio. Vengono offerti diversi programmi ed è possibile organizzare anche viaggi personalizzati. L'agente di viaggio si occupa di tutti i dettagli: consulenza, accoglienza e accompagnamento, prenotazioni, viaggi e trasferimenti..."
+    },
+    "emergencies": {
+      "title": "Emergenze",
+      "numbers": [
+        {
+          "label": "Polizia",
+          "tel": "19"
+        },
+        {
+          "label": "Vigili del fuoco",
+          "tel": "15"
+        },
+        {
+          "label": "Assistenza stradale",
+          "tel": "177"
+        },
+        {
+          "label": "Informazioni telefoniche",
+          "tel": "160"
+        }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "type": "cover",
+      "image": "midelt/cover-lake-sunset.jpg",
+      "pos": "50% 45%"
+    },
+    {
+      "type": "contents",
+      "image": "midelt/contents-lake-evening.jpg",
+      "pos": "50% 50%"
+    },
+    {
+      "type": "intro",
+      "startsSection": 1,
+      "band": {
+        "image": "midelt/village-valley.jpg",
+        "pos": "50% 62%",
+        "h": 56
+      },
+      "eyebrow": "01  ·  Descrizione delle attrazioni turistiche della provincia di Midelt",
+      "title": [
+        "Midelt.",
+        "Paesaggi di montagna e di valle mozzafiato."
+      ],
+      "lead": "midelt.lead",
+      "columns": [
+        [
+          {
+            "para": "midelt"
+          }
+        ],
+        [
+          {
+            "item": "mining-wealth",
+            "first": true,
+            "img": "midelt/ahouli-bridge.jpg",
+            "imgPos": "50% 40%"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "opener-band",
+      "startsSection": 2,
+      "band": {
+        "image": "midelt/snow-valley.jpg",
+        "pos": "50% 45%",
+        "h": 118
+      },
+      "num": "02",
+      "title": [
+        "Da non perdere nella",
+        "provincia di Midelt"
+      ],
+      "lead": "must-lead",
+      "blocks": [
+        {
+          "item": "heritage",
+          "first": true,
+          "wide": true
+        }
+      ]
+    },
+    {
+      "type": "items-auto",
+      "eyebrow": "02  ·  Da non perdere nella provincia di Midelt",
+      "blocks": [
+        {
+          "item": "jewish-kasbah"
+        },
+        {
+          "item": "sidi-hamza",
+          "img": "midelt/tazrouft-river.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "tazrouft",
+          "img": "midelt/tazrouft-village.jpg",
+          "imgPos": "50% 55%"
+        },
+        {
+          "item": "myriem"
+        },
+        {
+          "item": "mining-cities",
+          "img": "midelt/ahouli-mine-tunnel.jpg",
+          "imgPos": "50% 40%"
+        },
+        {
+          "item": "akhiam",
+          "img": "midelt/cliff-cave.jpg",
+          "imgPos": "50% 40%"
+        },
+        {
+          "item": "tanghort",
+          "img": "midelt/valley-stream.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "national-park",
+          "img": "midelt/lake-snow.jpg",
+          "imgPos": "50% 55%"
+        },
+        {
+          "item": "hammat"
+        },
+        {
+          "item": "ayachi"
+        },
+        {
+          "item": "imilchil",
+          "img": "midelt/imilchil-lake.jpg",
+          "imgPos": "50% 55%"
+        },
+        {
+          "item": "agoudal"
+        },
+        {
+          "item": "minerals-fair"
+        },
+        {
+          "item": "apple-exhibition"
+        }
+      ]
+    },
+    {
+      "type": "opener-type",
+      "startsSection": 3,
+      "num": "03",
+      "eyebrow": "Usanze e tradizioni della provincia di Midelt",
+      "title": [
+        "Le usanze e le tradizioni",
+        "delle popolazioni amazigh di Midelt"
+      ],
+      "lead": "customs-lead",
+      "columns": [
+        [
+          {
+            "item": "ahidous",
+            "first": true
+          },
+          {
+            "item": "moussem-hssira"
+          }
+        ],
+        [
+          {
+            "item": "moussem-engagement",
+            "first": true
+          },
+          {
+            "fig": "midelt/shepherd-portrait.jpg"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "opener-type",
+      "startsSection": 4,
+      "num": "04",
+      "eyebrow": "Gastronomia della provincia di Midelt",
+      "title": [
+        "La gastronomia",
+        "di Midelt."
+      ],
+      "lead": "culinary-lead",
+      "columns": [
+        [
+          {
+            "item": "tajine-apples",
+            "first": true
+          },
+          {
+            "item": "abadir",
+            "img": "midelt/imilchil-lake-aerial.jpg",
+            "imgPos": "50% 55%"
+          }
+        ],
+        [
+          {
+            "item": "couscous",
+            "first": true
+          },
+          {
+            "item": "trout",
+            "img": "midelt/dam-lake-aerial.jpg",
+            "imgPos": "50% 50%"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "opener-band",
+      "startsSection": 5,
+      "band": {
+        "image": "midelt/tamaloute-lake.jpg",
+        "pos": "50% 55%",
+        "h": 185
+      },
+      "num": "05",
+      "title": [
+        "Escursione nella valle di Tizi N'Zou Imtchimin",
+        "e alla diga di Tamaloute"
+      ],
+      "blocks": [
+        {
+          "para": "hiking"
+        }
+      ]
+    },
+    {
+      "type": "info",
+      "startsSection": 6,
+      "band": {
+        "image": "midelt/road-range.jpg",
+        "pos": "50% 40%",
+        "h": 58
+      },
+      "num": "06",
+      "title": [
+        "Informazioni",
+        "utili."
+      ],
+      "lead": "info-lead",
+      "columns": [
+        [
+          {
+            "info": "climat"
+          },
+          {
+            "info": "time"
+          },
+          {
+            "info": "languages"
+          }
+        ],
+        [
+          {
+            "info": "hotels"
+          },
+          {
+            "info": "land"
+          }
+        ],
+        [
+          {
+            "info": "agencies"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "back",
+      "image": "photos/hero-trekking.jpg",
+      "pos": "50% 60%"
+    }
+  ]
+}

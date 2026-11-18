@@ -1,0 +1,375 @@
+{
+  "lang": "es",
+  "slug": "natural-guide",
+  "title": "La guía de la naturaleza",
+  "kicker": "Guía de naturaleza",
+  "subtitle": "Palmerales, valles y desiertos de la región de Drâa-Tafilalet",
+  "creditSubject": "la naturaleza de la región de Drâa-Tafilalet",
+  "cover": {
+    "line": "La guía",
+    "dim": "de la naturaleza."
+  },
+  "contentsTitle": "Índice",
+  "contents": [
+    {
+      "n": "01",
+      "title": "Introducción"
+    },
+    {
+      "n": "02",
+      "title": "Alrededor de los palmerales y los valles verdes de Drâa-Tafilalet"
+    },
+    {
+      "n": "03",
+      "title": "Las mejores excursiones de la región"
+    },
+    {
+      "n": "04",
+      "title": "Información útil"
+    }
+  ],
+  "items": {
+    "intro-lead": "Esta vasta región de 88.836 km² reúne paisajes tan diferentes como cautivadores. Esta guía intenta reunir algunos de los más famosos y de los menos conocidos. Desde la cordillera del Ayachi, en el Medio Atlas oriental, y su valle de Ait Ayach hasta los palmerales del Tafilalet y del Drâa, pasando por las gargantas del Dadès y del Todgha, sin olvidar el macizo semidesértico del Saghro en el Antiatlas o los desiertos de Merzouga y M'hamid El Ghizlane... son solo ejemplos de lo que esta región puede ofrecer a senderistas y aventureros de todo tipo. Para descubrir los tesoros de Drâa-Tafilalet hay que tomarse el tiempo de conocerlo paso a paso.",
+    "ayachi": {
+      "title": "La cordillera del Ayachi contrasta con las 4 provincias de oasis",
+      "body": "Al llegar desde Marrakech por el puerto del Tichka (2260 m), los visitantes pueden admirar magníficos paisajes con pueblos típicos. Ouarzazate es una hermosa puerta de entrada a la zona, con sus oasis de Skoura y Fint, donde se revela el modo de vida ancestral de los bereberes. Después de Ouarzazate, la provincia de Tinghir, al este, ofrece a su vez visitas y excursiones sorprendentes en su palmeral y en las suntuosas gargantas del Todgha bordeadas por el río. Tomando la carretera de las gargantas del Dadès y más allá, se pueden hacer hermosos descubrimientos antes de llegar al valle de las rosas en Kelaat M'gouna. Por las altas gargantas del Todgha es posible llegar al hermoso pueblo de montaña de Imilchil y a sus legendarios lagos Isli y Tislit, en la provincia de Midelt. En esta provincia montañosa cubierta de nieve en invierno se encuentra el monte Ayachi (3747 m)."
+    },
+    "desert": {
+      "title": "El majestuoso desierto en todo su esplendor",
+      "body": "Más al sur se encuentran los exuberantes palmerales del Gran Tafilalet, de rica y antigua historia. El codiciado desierto de Merzouga y sus majestuosas dunas de arena dorada están a pocos kilómetros. Por último, en la provincia de Zagora, los mismos paisajes parecen retomar el protagonismo. Bordeado por el largo río Drâa, el palmeral se extiende a lo largo de 220 km. Desde M'Hamid El Ghizlane, último pueblo-oasis del Drâa, se extiende el desierto de M'hamid y su soberbio Erg Chegaga (dunas de arena). Descubramos juntos las diferentes facetas de la majestuosa naturaleza de Drâa-Tafilalet."
+    },
+    "tour-lead": "Drâa-Tafilalet se encuentra en una zona desértica de oasis que abunda en palmerales y valles verdes. Desde los palmerales del Tafilalet a orillas de los valles del Ziz y del Ghris hasta los del Drâa, pasando por los oasis de Tinghir regados por el Oued Toudgha, la inmensidad de estos territorios y su patrimonio cultural y espiritual merecen el desvío. Estos son los principales oasis de la región que visitar.",
+    "skoura": {
+      "title": "El oasis de Skoura",
+      "body": "Este palmeral es famoso por su posición a lo largo de una de las míticas rutas de las mil kasbahs que va de Ouarzazate a Erfoud pasando por Tinghir. Situado a 40 km al este de Ouarzazate en la N10, este oasis de 25 km², donde se cultivan palmeras datileras y árboles frutales, almendros, olivos y granados..., es el primer punto de entrada a la ruta que lleva a Kelaat M'Gouna y a las gargantas del Dadès y del Toudgha. Se alimenta del Oued Skoura y antiguamente utilizaba el sistema de riego de las khettaras. Algunas kasbahs adornan también el paisaje, como la Kasbah Amridil, construida en el siglo XVII. Todavía conservada, se ha transformado en museo, con una parte dedicada a la vivienda. También encontramos otros vestigios como ruinas de kasbahs, artesanía local, lugares de culto musulmanes y judíos, cementerios ...\n\nInformación útil: sitio de acceso gratuito  ·  2 horas  ·  17,8 °C  ·  Todo tipo de vehículos  ·  Ouarzazate - 45502"
+    },
+    "ziz": {
+      "title": "El palmeral del Ziz",
+      "body": "Constituye, junto con el oasis del Ghris, el gran palmeral del Tafilalet. Este es famoso por ser el mayor palmeral del mundo: contaría con unas 80.000 palmeras. Aunque depende de las aguas subterráneas del río, el palmeral del Ziz produce las mejores variedades de dátiles de Marruecos. Erfoud ha sido elegida capital marroquí del dátil. Antaño un mar, la ciudad es también el mayor museo de fósiles al aire libre del mundo, donde florece una industria artesanal dedicada. En una época histórica más reciente, las ruinas de Sijilmassa en el Tafilalet son los últimos vestigios de esta floreciente encrucijada del comercio caravanero entre los siglos VIII y XVIII. En Rissani, cuna de la dinastía alauita, el mausoleo de Moulay Ali Chérif y el Ksar Abouam, donde residió el abuelo de los alauitas, son visitas obligadas. El Ksar Akbar y el Ksar de Oulad Abdelhalim son joyas arquitectónicas que visitar durante su estancia.\n\nInformación útil: sitio de acceso gratuito  ·  Un día  ·  20,1 °C  ·  Es preferible un 4x4  ·  Se extiende desde Errachidia hasta el desierto de Merzouga"
+    },
+    "draa": {
+      "title": "El valle del Drâa",
+      "body": "Considerada una de las regiones más hermosas de Marruecos, la vasta región del Drâa, que sigue el famoso río del mismo nombre a lo largo de 220 km, se encuentra en la provincia de Zagora. Este valle va de Agdz al pueblo de M'hamid El Ghizlane, puerta del desierto. Comprende seis oasis que producen distintas variedades de dátiles. Los oasis y palmerales se extienden como un collar de árboles a orillas del río. Bajo las palmeras crecen árboles frutales y otros cultivos más bajos en parcelas rodeadas de muros bajos y atravesadas por canales de riego. A 19 km de Zagora, en la carretera de M'hamid, se encuentra la Zauía Naciria de Tamegroute con su mausoleo y su biblioteca de manuscritos raros, así como su pueblo de cerámica verde. El oasis de Ouled Driss, cerca de M'hamid, es un vasto laberinto de plantas y vegetación ideal para el senderismo. Podrá descubrir su ksar de adobe y sus casas, así como un pequeño museo, en la plaza central del pueblo, dedicado a la cultura bereber.\n\nInformación útil: sitio de acceso gratuito  ·  Un día  ·  20,4 °C  ·  Es preferible un 4x4  ·  Se extiende desde Agdz hasta el pueblo de M'hamid El Ghizlane"
+    },
+    "tinghir": {
+      "title": "El palmeral de Tinghir",
+      "body": "El palmeral de Tinghir despliega toda su magnificencia a lo largo de 30 km, desde las gargantas del Todgha hasta Ferkla, entre Tinghir y Tinjdad. Está regado por tuberías alimentadas por el río Toudgha y por aguas subterráneas. Allí hay palmeras y árboles frutales como almendros, manzanos, granados, perales e higueras. Bajo los árboles se cultivan menta, maíz y alfalfa... El palmeral es agradable de visitar a pie. La cercana ciudad de Tinghir ofrece también algunas curiosidades interesantes, como la visita al mercado de las mujeres, el Ksar Ait Lhaj Ali y su Mellah, la cooperativa de los soplillos (una de las últimas de Marruecos) y la mezquita de Ikellan. Desde Tinghir es posible visitar varios sitios naturales. Las gargantas del Todgha, a 14 km de la ciudad, atraen a los aficionados a la escalada, que las prefieren por su roca sólida y sus vías de escalada ya señalizadas. En la provincia de Tinghir se ha llevado a cabo un proyecto piloto de desarrollo sostenible que se considera un modelo para la renovación del oasis del Toudgha (situado a 14 km de la ciudad de Tinghir). Es el nuevo oasis de Afanour.\n\nInformación útil: sitio de acceso gratuito  ·  Medio día  ·  20,1 °C  ·  Es preferible un 4x4  ·  Tinghir - 45800"
+    },
+    "tizi": {
+      "title": "El valle de Tizi N'ou",
+      "body": "Acurrucado contra la vertiente norte del macizo del Ayachi, en el pico llamado Said o Hadi, el hermoso valle de Tizi N'ou se encuentra a unos sesenta kilómetros al suroeste de la ciudad de Midelt. Tizi N'zou toma su nombre del puerto de Tizi, el de un espárrago silvestre, el Azou, del que todavía se encuentran algunos ejemplares en la cresta montañosa que domina el valle por el lado norte. Conocida como Timelghouit, esta cresta ofrece una magnífica ruta de senderismo: permite a los senderistas dominar los pueblos y campos del valle, así como el hermoso lago de la presa de Tamalout, para descubrir sublimes paisajes y una impresionante naturaleza salvaje. Esta cresta ofrece una vista impresionante del alto macizo nevado, sobre los campos que se ven desde lejos dispuestos como los motivos de una alfombra; el sitio es sin duda maravilloso.\n\nInformación útil: sitio de acceso gratuito  ·  3 h  ·  19 °C  ·  En coche o a pie  ·  Midelt - 54350"
+    },
+    "hike-abh": {
+      "title": "Visita a Ait Ben Haddou y Ouarzazate",
+      "body": "Nivel de senderismo: fácil\n\nJusto antes de Ouarzazate, puerta del desierto, disfrute de la excepcional Kasbah de Aït-Ben-Haddou. Esta antigua ciudad no es solo Patrimonio de la Humanidad de la UNESCO, sino también un lugar de rodaje muy utilizado en películas de Hollywood.\n\nAlmuerzo con vistas panorámicas a la parte moderna de Ait-Ben-Haddou, continuación a Ouarzazate y visita a la Kasbah de Taourirte y al museo del cine."
+    },
+    "hike-fint": {
+      "title": "Oasis de Fint",
+      "body": "Nivel de senderismo: fácil\n\nEl día comienza en la Kasbah de Taourirte, donde se admiran las estrechas calles peatonales. Después, visita al museo del cine y a los estudios Atlas, donde se pueden ver decorados y anécdotas de grandes películas rodadas en el Hollywood de Marruecos.\n\nSalida hacia la antigua Kasbah de Tifoultoute, que perteneció al pachá Thami El Glaoui. Continuación del viaje hasta el oasis de Fint para un almuerzo tradicional con una familia local y después exploración del apacible oasis."
+    },
+    "hike-merzouga": {
+      "title": "Merzouga",
+      "body": "Nivel de senderismo: medio\n\nA pocos kilómetros de Merzouga se forman paisajes naturales inesperados en este desierto: el lago Dayet Sriji, seco durante mucho tiempo, acoge en cuanto llueve flamencos rosas y una gran biodiversidad de aves migratorias.\n\nPaseo en camello con los guías al llegar a las dunas de Merzouga. Instalación en el lugar del vivac para pasar una noche contemplando un cielo estrellado."
+    },
+    "hike-arfoud": {
+      "title": "Arfoud - Rissani - Merzouga",
+      "body": "Nivel de senderismo: fácil\n\nSalida de Errachidia hacia Merzouga pasando por la fuente azul de Meski, el hermoso valle del Ziz, el taller de mármol y fósiles de Erfoud, la famosa Kasbah de Oulad el Abd Halim en Rissani y almuerzo de Medfouna en Merzouga.\n\nAl llegar al pueblo de Merzouga, estamos en las dunas para una ascensión a pie de las dunas de arena o un paseo en quad."
+    },
+    "hike-zagora": {
+      "title": "Zagora",
+      "body": "Nivel de senderismo: fácil\n\nSalida por la mañana hacia Tazarine pasando por Taghbalt para visitar su famoso ksar de piedra. Después, visita al yacimiento de grabados rupestres de Ait Ouazik. Continuación a Agdz para una excursión en la que nos iniciarán en las formas de vida y las tradiciones de los habitantes.\n\nRegreso a Zagora por Tissergat y su museo de artes y tradiciones del Draa."
+    },
+    "hike-mhamid": {
+      "title": "M'hamid y su hermoso desierto",
+      "body": "Nivel de senderismo: fácil\n\nSalida hacia M'hamid por Tamegrout para visitar la Zauía Naciria. Continuación por la carretera de Foum Takat y visita al gran oasis de El Ktaoua y a sus ksour.\n\nLlegada a M'hamid, visita a la escuela de música Joudour Sahara y paseo por el último oasis del Draa; después salida en camello para llegar al lugar del vivac, contemplar la puesta de sol sobre las dunas y asistir a los preparativos de la cena."
+    },
+    "hike-roses": {
+      "title": "El valle de las rosas",
+      "body": "Nivel de senderismo: fácil\n\nEn el valle de las rosas, situado en el corazón del Alto Atlas, una excursión apta para todos a través del colorido atuendo del valle de las rosas, de higueras y de bosques de adelfas.\n\nEs también una ocasión para admirar el valle del Dadès en un paisaje árido, pueblos bereberes a lo largo del río, magníficas kasbahs y jardines en terrazas."
+    },
+    "hike-saghro": {
+      "title": "El macizo del Saghro",
+      "body": "Nivel de senderismo: medio\n\nPartiendo de las gargantas del Dadès para adentrarse en colosales gargantas que pueden alcanzar los 500 m de altura a lo largo de 60 km. Continuación a Tagdilt, el valle de los pájaros, al sur de Boumalne Dadès.\n\nLa caminata continúa hasta el pueblo de Taoudilte, donde está prevista una parada. La marcha se reanuda hacia el monte Tazazert, la cima del Saghro (2283 m)."
+    },
+    "hike-lakes": {
+      "title": "Del lago Tislit al lago Isli",
+      "body": "Nivel de senderismo: medio\n\nPartiendo de Imilchil, una bonita ruta de trekking a 2200 m de altitud en el corazón del Alto Atlas oriental, entre dos hermosos lagos, Tislit e Isli.\n\nLa leyenda cuenta que el lago Isli representa las lágrimas de una joven amazigh que se enamoró de un joven mientras las tribus se negaban a unirse, y el lago Tislit, las lágrimas del joven."
+    },
+    "hike-tizi": {
+      "title": "En el valle de Tizi N'Zou Imtchimin y la presa de Tamaloute",
+      "body": "Nivel de senderismo: medio\n\nEsta ruta de tres horas permite descubrir la cresta montañosa que domina el lado norte de los pueblos y campos del valle, así como el lago de la presa de Tamaloute.\n\nEsta presa se encuentra a unos sesenta kilómetros al suroeste de la ciudad de Midelt. Riega el valle de Tizi N'Zou Imtchimin."
+    },
+    "info-lead": "Para ayudar a los viajeros a disfrutar de su estancia, a continuación se ofrece información útil sobre las instalaciones e infraestructuras de la región.",
+    "climat": {
+      "title": "Clima",
+      "body": "La región se caracteriza por un clima sahariano seco, muy caluroso en verano y agradable en invierno durante el día, con noches más frescas. Es preferible visitar Ouarzazate, Zagora, Errachidia o Tinghir desde finales del otoño hasta principios de la primavera."
+    },
+    "time": {
+      "title": "Hora local",
+      "body": "Marruecos tiene un único huso horario, GMT + 1. Durante el mes de Ramadán, Marruecos pasa a GMT. La región de Drâa-Tafilalet no es una excepción a la regla."
+    },
+    "languages": {
+      "title": "Idiomas hablados",
+      "body": "En la región de Drâa-Tafilalet, la población habla bereber y árabe. La señalización está en francés y árabe, a veces en tifinagh. Los guías y el personal de hoteles y casas de huéspedes hablan francés, inglés y otros idiomas, dada la vocación turística de la región."
+    },
+    "air": {
+      "title": "Transporte aéreo",
+      "body": "La región de Drâa-Tafilalet cuenta con dos aeropuertos internacionales, Ouarzazate y Moulay Ali Chérif en Errachidia, y un aeropuerto nacional en Zagora. Estos aeropuertos están conectados con Casablanca mediante vuelos frecuentes. Más aún desde que en 2019 se pusieron en servicio nuevas terminales en Errachidia y Ouarzazate. Se ha ofrecido a los viajeros una nueva generación de servicios de transporte. Además, ha nacido una nueva terminal en el aeropuerto de Zagora, ahora equipado con tecnología moderna."
+    },
+    "shuttle": {
+      "title": "Transporte del aeropuerto al centro de la ciudad",
+      "body": "A la salida del aeropuerto es fácil encontrar distintos tipos de transporte, ya sean taxis o transporte turístico terrestre."
+    },
+    "land": {
+      "title": "Transporte turístico terrestre",
+      "body": "La región cuenta con una amplia red de transportistas turísticos terrestres que ofrecen diversas opciones, desde todoterrenos 4x4 hasta autobuses de 60 plazas. La CTM (Compagnie de Transport au Maroc) ofrece rutas que conectan las ciudades de la región. Ouarzazate está conectada con Zagora, Errachidia y Tinghir, y Errachidia con Midelt y con Zagora vía Ouarzazate... La comodidad está asegurada y la velocidad controlada, pero habrá que prever un viaje largo con paradas en las ciudades."
+    },
+    "agencies": {
+      "title": "Agencias de viajes",
+      "body": "Para los visitantes que buscan viajes adaptados, no faltan agencias de viajes en la región. Se ofrecen varios programas y también se pueden hacer viajes a medida. El agente de viajes se ocupa de todos los detalles: asesoramiento, recepción y acompañamiento, reservas, viajes y transporte..."
+    },
+    "emergencies": {
+      "title": "Emergencias",
+      "numbers": [
+        {
+          "label": "Policía",
+          "tel": "19"
+        },
+        {
+          "label": "Bomberos",
+          "tel": "15"
+        },
+        {
+          "label": "Asistencia en carretera",
+          "tel": "177"
+        },
+        {
+          "label": "Información telefónica",
+          "tel": "160"
+        }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "type": "cover",
+      "image": "nature/cover-portrait.jpg",
+      "pos": "50% 50%"
+    },
+    {
+      "type": "contents",
+      "image": "general/dunes-sunset.jpg",
+      "pos": "50% 55%"
+    },
+    {
+      "type": "intro",
+      "startsSection": 1,
+      "band": {
+        "image": "general/monkey-fingers.jpg",
+        "pos": "50% 50%",
+        "h": 56
+      },
+      "eyebrow": "01  ·  Introducción",
+      "title": [
+        "Drâa-Tafilalet.",
+        "Un paraíso para senderistas y aventureros."
+      ],
+      "lead": "intro-lead",
+      "columns": [
+        [
+          {
+            "item": "ayachi",
+            "img": "general/hikers.jpg",
+            "imgPos": "50% 40%",
+            "first": true
+          }
+        ],
+        [
+          {
+            "item": "desert",
+            "img": "general/dunes-wide.jpg",
+            "imgPos": "50% 60%",
+            "first": true
+          }
+        ]
+      ]
+    },
+    {
+      "type": "opener-band",
+      "startsSection": 2,
+      "band": {
+        "image": "errachidia/palm-sea.jpg",
+        "pos": "50% 50%",
+        "h": 100
+      },
+      "num": "02",
+      "title": [
+        "Recorrido por los palmerales y",
+        "valles de Drâa-Tafilalet"
+      ],
+      "lead": "tour-lead",
+      "blocks": [
+        {
+          "item": "skoura",
+          "first": true,
+          "wide": true
+        }
+      ]
+    },
+    {
+      "type": "items-auto",
+      "eyebrow": "02  ·  Alrededor de los palmerales y los valles verdes de Drâa-Tafilalet",
+      "blocks": [
+        {
+          "item": "ziz",
+          "img": "errachidia/palm-grove-mesa.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "draa",
+          "img": "general/draa-palm-grove.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "tinghir",
+          "img": "general/tinghir-town.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "tizi",
+          "img": "midelt/tamaloute-lake.jpg",
+          "imgPos": "50% 55%"
+        }
+      ]
+    },
+    {
+      "type": "opener-band",
+      "startsSection": 3,
+      "band": {
+        "image": "general/hikers.jpg",
+        "pos": "50% 40%",
+        "h": 100
+      },
+      "num": "03",
+      "title": [
+        "Las mejores excursiones",
+        "de la región"
+      ],
+      "blocks": [
+        {
+          "item": "hike-abh",
+          "first": true,
+          "wide": true
+        }
+      ],
+      "columns": [
+        [
+          {
+            "item": "hike-fint",
+            "img": "ouarzazate/fint-oasis.jpg",
+            "imgPos": "50% 50%",
+            "first": true
+          }
+        ],
+        [
+          {
+            "item": "hike-merzouga",
+            "img": "errachidia/dunes-orange.jpg",
+            "imgPos": "50% 50%",
+            "first": true
+          }
+        ]
+      ]
+    },
+    {
+      "type": "items-auto",
+      "eyebrow": "03  ·  Las mejores excursiones de la región",
+      "blocks": [
+        {
+          "item": "hike-arfoud",
+          "img": "errachidia/fossil-workshop.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "hike-zagora",
+          "img": "general/tamegroute-zaouia.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "hike-mhamid",
+          "img": "general/camels.jpg",
+          "imgPos": "50% 55%"
+        },
+        {
+          "item": "hike-roses",
+          "img": "general/village-aerial.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "hike-saghro",
+          "img": "general/cliff-palm.jpg",
+          "imgPos": "50% 50%"
+        },
+        {
+          "item": "hike-lakes",
+          "img": "midelt/imilchil-lake.jpg",
+          "imgPos": "50% 55%"
+        },
+        {
+          "item": "hike-tizi",
+          "img": "midelt/valley-stream.jpg",
+          "imgPos": "50% 50%"
+        }
+      ]
+    },
+    {
+      "type": "info",
+      "startsSection": 4,
+      "band": {
+        "image": "general/palm-sunset.jpg",
+        "pos": "50% 50%",
+        "h": 58
+      },
+      "num": "04",
+      "title": [
+        "Información",
+        "útil."
+      ],
+      "lead": "info-lead",
+      "columns": [
+        [
+          {
+            "info": "climat"
+          },
+          {
+            "info": "time"
+          },
+          {
+            "info": "languages"
+          }
+        ],
+        [
+          {
+            "info": "air"
+          },
+          {
+            "info": "shuttle"
+          }
+        ],
+        [
+          {
+            "info": "land"
+          },
+          {
+            "info": "agencies"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "back",
+      "image": "nature/cover-back-portrait.jpg",
+      "pos": "50% 50%"
+    }
+  ]
+}

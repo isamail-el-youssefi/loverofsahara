@@ -15,8 +15,10 @@ import { PLACES } from "@/data/places/places";
 import { getTrips, loadLegacyMedia, loadLocalizedTrips, tripImage, type LocalizedTrip } from "@/data/trips";
 import { ABOUT_INTRO, FAQ, OWNER, SUSTAINABILITY, VALUES } from "@/components/about/content";
 import { CONTACT, STEPS, whatsappBase } from "@/components/contact/data";
-import { ABOUT_PATH, BLOG_PATH, CONTACT_PATH, TRIPS_PATH, articlePath, placePath, tripPath } from "@/lib/routes";
-import { absUrl, aboutSeo, articleSeo, blogSeo, contactSeo, homeSeo, placeSeo, tripSeo, tripShareImage, tripsSeo, type PageSeo } from "@/lib/seoData";
+import { BROCHURES } from "@/data/brochures";
+import { LANGUAGES } from "@/i18n/languages";
+import { ABOUT_PATH, BLOG_PATH, BROCHURES_PATH, CONTACT_PATH, GALLERY_PATH, TRIPS_PATH, articlePath, placePath, tripPath } from "@/lib/routes";
+import { absUrl, aboutSeo, articleSeo, blogSeo, brochureReaderSeo, brochuresSeo, contactSeo, gallerySeo, homeSeo, placeSeo, tripSeo, tripShareImage, tripsSeo, type PageSeo } from "@/lib/seoData";
 
 export interface BuiltPage {
   path: string;
@@ -184,6 +186,38 @@ ${list("What your trip includes", t.included)}${list("Not included", t.excluded)
 <h2>How it works</h2><ol>${STEPS.map((s) => `<li><strong>${esc(s.title)}</strong>: ${esc(s.text)}</li>`).join("")}</ol>
 </main>`,
   });
+
+  // ---- Gallery
+  pages.push({
+    path: GALLERY_PATH,
+    seo: gallerySeo(),
+    body: `<main>${crumbs([{ name: "Home", href: "/" }, { name: "Gallery" }])}
+<h1>Sahara photo gallery</h1><p>${esc(gallerySeo().description)}</p>
+<ul>${getTrips().map((t) => `<li>${link(tripPath(t.slug), t.slug.replace(/-/g, " "))}</li>`).join("")}</ul>
+</main>`,
+  });
+
+  // ---- Brochures
+  pages.push({
+    path: BROCHURES_PATH,
+    seo: brochuresSeo(),
+    body: `<main>${crumbs([{ name: "Home", href: "/" }, { name: "Brochures" }])}
+<h1>Sahara travel brochures</h1><p>${esc(brochuresSeo().description)}</p>
+<ul>${BROCHURES.map((b) => `<li>${link(`/brochures/${b.slug}`, b.langs.en?.title ?? b.slug)} (PDF): ${LANGUAGES.filter((l) => b.langs[l.code]).map((l) => link(`/brochures/${b.slug}-${l.code}.pdf`, l.native)).join(" · ")}</li>`).join("")}</ul>
+</main>`,
+  });
+
+  for (const b of BROCHURES) {
+    const title = b.langs.en?.title ?? b.slug;
+    pages.push({
+      path: `/brochures/${b.slug}`,
+      seo: brochureReaderSeo(b.slug),
+      body: `<main>${crumbs([{ name: "Home", href: "/" }, { name: "Brochures", href: BROCHURES_PATH }, { name: title }])}
+<h1>${esc(title)}</h1><p>${esc(b.langs.en?.subtitle ?? "")}</p>
+<ul>${LANGUAGES.filter((l) => b.langs[l.code]).map((l) => `<li>${link(`/brochures/${b.slug}-${l.code}.pdf`, `${l.native} (PDF)`)}</li>`).join("")}</ul>
+</main>`,
+    });
+  }
 
   // ---- Blog
   pages.push({

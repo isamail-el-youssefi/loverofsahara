@@ -1,0 +1,623 @@
+{
+  "lang": "es",
+  "slug": "erg-chegaga",
+  "title": "Erg Chegaga",
+  "kicker": "Guía del desierto",
+  "subtitle": "El Sáhara salvaje, lejos de los caminos trillados",
+  "cover": {
+    "line": "Erg",
+    "dim": "Chegaga."
+  },
+  "contentsTitle": "Índice",
+  "contents": [
+    {
+      "n": "01",
+      "title": "El Sáhara salvaje: por qué el Erg Chegaga"
+    },
+    {
+      "n": "02",
+      "title": "Erg Chegaga: el gran mar de dunas"
+    },
+    {
+      "n": "03",
+      "title": "El viaje: del último oasis a las dunas"
+    },
+    {
+      "n": "04",
+      "title": "Alrededor del Erg Chegaga: Erg Lihoudi, el Oasis Sagrado, el lago Iriki"
+    },
+    {
+      "n": "05",
+      "title": "Fauna, cielo nocturno y vida en el desierto"
+    },
+    {
+      "n": "06",
+      "title": "Planifique su visita"
+    }
+  ],
+  "credit": {
+    "title": "Acerca de esta guía",
+    "text": "Una guía original de Lover of Sahara, escrita a partir de nuestra propia experiencia sobre el terreno y de fuentes públicas: oficinas de turismo, el Parque Nacional de Iriqui, estudios científicos y operadores locales. La información puede cambiar: las condiciones en el desierto dependen de la temporada y del tiempo.",
+    "partners": [
+      "Parque Nacional de Iriqui (ANEF)",
+      "Fuentes científicas y turísticas, 2024-2026",
+      "Experiencia sobre el terreno, Lover of Sahara"
+    ],
+    "website": "Actualizado en noviembre de 2026",
+    "email": "Confirme siempre las condiciones con su guía"
+  },
+  "items": {
+    "intro-lead": "La mayoría de los visitantes del Sáhara marroquí nunca abandonan el asfalto. El Erg Chegaga empieza exactamente donde termina el asfalto: un vasto y silencioso mar de arena dorada al que solo se llega en 4x4, lejos de las multitudes, los autobuses y el ruido.",
+    "why": {
+      "title": "Por qué Chegaga",
+      "body": "El Erg Chegaga es el mayor campo de dunas de Marruecos, un cinturón de arena de unos 35 a 40 km de largo que se extiende más allá de M'Hamid El Ghizlane, el último pueblo en la carretera. No hay asfalto hasta las dunas. El último tramo es una pista de unos 50 a 60 km, que se recorre en unas dos horas en 4x4 por llanuras pedregosas, lechos de ríos secos y arena blanda.\n\nEsa distancia es lo que protege el lugar. Los campamentos son pocos, pequeños y están muy separados, las noches son realmente oscuras y el silencio es total. Este es el Sáhara antes de que llegara la carretera turística, y es el motivo por el que llevamos aquí a los viajeros.\n\nTambién cambia la forma de viajar. Llegar a Chegaga forma parte de la experiencia: los paisajes cambiantes, el último oasis, las primeras dunas, la puesta de sol sobre la hammada. No se llega al desierto, se cruza hacia él."
+    },
+    "chebbi": {
+      "title": "Unas palabras sobre el Erg Chebbi",
+      "body": "El Erg Chebbi, cerca de Merzouga, es también espectacular. Sus dunas se elevan hasta unos 150 m junto a una carretera asfaltada, y precisamente por eso es tan popular. En temporada alta acoge cientos de campamentos, quads y grupos que llegan en autobuses enteros. Muchos viajeros aprecian su comodidad y su fácil acceso.\n\nChegaga cambia esa comodidad por espacio. Si lo que busca es soledad, un cielo lleno de estrellas y la sensación de estar muy lejos de todo, los kilómetros extra valen la pena."
+    },
+    "compare-note": "Las cifras proceden de fuentes públicas y de estimaciones de operadores turísticos y son orientativas. Las alturas de las dunas y las distancias varían de una fuente a otra.",
+    "dunes": {
+      "title": "Un gran mar de arena",
+      "body": "Un erg es un mar de arena: una amplia zona de dunas construidas y reconstruidas por el viento. Chegaga es más extenso que alto. Las estimaciones para sus dunas más altas van de unos 50 m a unos 300 m según la fuente, pero el verdadero espectáculo es la extensión: cresta tras cresta de arena dorada, interrumpidas por llanuras de grava oscura, pequeños oasis y manchas de acacias.\n\nComo el viento remodela constantemente las crestas, dos visitas nunca muestran exactamente el mismo paisaje. Las huellas desaparecen en pocas horas."
+    },
+    "light": {
+      "title": "Luz, color y silencio",
+      "body": "Las mejores horas son las primeras y las últimas del día. Al amanecer, las crestas son nítidas y de color frío. Al atardecer, la arena se vuelve naranja, luego rosa y luego violeta. Entre tanto, el sol del mediodía es fuerte y brillante, por lo que los paseos se planifican a primera hora de la mañana y a última de la tarde.\n\nLejos de carreteras y pueblos, el silencio es impresionante. A menudo los únicos sonidos son el viento, la campana de un camello o el crepitar de una hoguera."
+    },
+    "camps": {
+      "title": "Campamentos al borde de las dunas",
+      "body": "Los campamentos de Chegaga suelen ser pequeños grupos de tiendas situados entre las dunas, lejos unos de otros. La ropa de cama, las comidas y el agua potable los suele proporcionar el campamento. Como dependen de las pistas de 4x4 y del tiempo, funcionan sobre todo de octubre a abril y conviene reservarlos con antelación.\n\nEn invierno las noches son frías. La cena junto al fuego, el té de menta y la música bajo las estrellas forman parte de la velada."
+    },
+    "tamegroute": {
+      "title": "Tamegroute",
+      "body": "La última parada antes del desierto es Tamegroute, conocida por su cerámica vidriada de verde y por la zauía Naciria, un centro sufí cuya biblioteca conserva raros manuscritos antiguos. Un buen lugar para ver a los artesanos trabajar y entender la historia espiritual y comercial del valle del Draa."
+    },
+    "mhamid": {
+      "title": "M'Hamid El Ghizlane",
+      "body": "El último oasis del Draa y el último pueblo con carretera asfaltada. Su nombre se refiere a las gacelas y antiguamente se conocía como Taragalt, la llanura de las gacelas. Durante siglos fue un punto de reunión de las caravanas que partían hacia Tombuctú. Hoy es el lugar donde aprovisionarse de agua, conocer a los conductores y guías y ver el antiguo ksar. Cada otoño acoge el festival de cultura nómada Taragalte."
+    },
+    "hammada": {
+      "title": "La hammada y la pista",
+      "body": "Pasado el pueblo, el asfalto termina. La pista cruza la hammada, una llanura desértica pedregosa y plana, luego lechos de ríos secos, acacias espinosas y las primeras manchas de arena. Según la temporada y el campamento, el trayecto dura unas dos horas para unos 50 a 60 km. Un conductor local que conozca las pistas es esencial: se desplazan con el viento y las escasas lluvias."
+    },
+    "arrival": {
+      "title": "Llegada a Chegaga",
+      "body": "Las primeras dunas altas aparecen en el horizonte como un muro dorado. Tras el largo trayecto, la llegada al campamento es sencilla y poderosa: té de menta, un paseo hasta la cresta más cercana para ver el atardecer y después cena bajo un cielo lleno de estrellas."
+    },
+    "beyond-lead": "Alrededor del Erg Chegaga hay algunos lugares que merece la pena descubrir por sí mismos. Cada uno cuenta una historia distinta del desierto: agua, vida, silencio.",
+    "lihoudi": {
+      "title": "Erg Lihoudi",
+      "body": "El Erg Lihoudi es la suave introducción a las dunas: un pequeño campo de arena a unos 7 a 10 km de M'Hamid (las fuentes varían), al que se llega en una hora aproximadamente en camello. Localmente se dice que su nombre significa la duna de los judíos. Sus dunas son más pequeñas y fáciles que las de Chegaga, perfectas para un primer paseo al atardecer o una primera noche en un vivac.\n\nMuchos itinerarios se detienen aquí a almorzar antes de continuar hacia Chegaga. También es una buena opción para viajeros con poco tiempo."
+    },
+    "oasis": {
+      "title": "El Oasis Sagrado",
+      "body": "En la llanura pedregosa, camino de Chegaga, aparece una inesperada isla verde: un oasis de palmeras y acacias alimentado por un manantial natural que brota de la roca. Los operadores lo identifican con el oasis de Oum Laalag, situado a unos 50 km al suroeste de M'Hamid y de unas 15 hectáreas. Para los nómadas es un lugar santo. Tiene un santuario dedicado a un santo y, según la creencia local, un hada vive en su fuente.\n\nEl manantial siempre ha sido vital: los nómadas aún traen allí a sus animales a beber y las caravanas de la antigua ruta hacia Tombuctú dependían de él. Trátelo como un lugar de culto. Pregunte a su guía antes de entrar o de fotografiar el santuario."
+    },
+    "iriki": {
+      "title": "Lago Iriki",
+      "body": "Al final del río Draa, en una cuenca cerrada entre el Jbel Bani y las dunas, se encuentra el lago Iriki (también escrito Iriqui). Durante siglos, las crecidas del Atlas bajaron por el Draa y acababan aquí. Desde que se construyeron las presas aguas arriba, el lago está seco la mayoría de los años: una salina plana, pálida y agrietada que es un paisaje en sí mismo, atravesada por la antigua pista de Foum Zguid a M'Hamid.\n\nCuando llegan lluvias excepcionales, el agua vuelve en pocos días, y también las aves. Se han registrado flamencos y aves zancudas en el lago poco después de las crecidas; la última gran crecida registrada fue en septiembre de 2024. Un estudio científico de 2025 describe la reviviscencia del lago tras más de medio siglo de sequía. El agua no dura, así que nunca planifique un viaje en torno a ella: véala como un raro regalo."
+    },
+    "park-lead": "Las dunas de Chegaga se encuentran al borde del Parque Nacional de Iriqui, una de las mayores áreas protegidas de Marruecos. El desierto parece vacío, pero está vivo para quienes saben dónde mirar.",
+    "park": {
+      "title": "Parque Nacional de Iriqui",
+      "body": "Creado en 1994, el Parque Nacional de Iriqui abarca unas 123.000 hectáreas en las provincias de Zagora y Tata. Protege la cuenca del Iriki, las llanuras, los valles de acacias y parte del sistema de dunas, y alberga especies del desierto cada vez más raras en el norte de África. La mayoría de los animales son nocturnos y tímidos: la mejor manera de encontrarlos es leer las huellas en la arena al amanecer."
+    },
+    "gazelle": {
+      "title": "Gacela dorcas",
+      "body": "El emblema de la zona y el origen del nombre M'Hamid El Ghizlane. Esta pequeña y elegante gacela está catalogada como Vulnerable por la UICN: la caza y la sequía han reducido su número. Puede sobrevivir con la humedad de las plantas y las hojas de acacia y rara vez necesita beber."
+    },
+    "fennec": {
+      "title": "Zorro del desierto (fénec)",
+      "body": "El más pequeño de todos los zorros, con enormes orejas que disipan el calor. Es nocturno y pasa el día en una madriguera en la arena. Es poco probable que lo vea, pero sus pequeñas huellas alrededor del campamento al amanecer son buena señal. También se han registrado chacales dorados y otros zorros en el parque."
+    },
+    "ostrich": {
+      "title": "El regreso del avestruz",
+      "body": "El avestruz norteafricano casi había desaparecido de Marruecos. En febrero de 2023, la agencia de aguas y bosques liberó 16 avestruces en el Parque Nacional de Iriqui y en 2024 se registró el primer nido en libertad. El programa de reintroducción sigue siendo frágil, así que mantenga la distancia si ve alguno."
+    },
+    "houbara": {
+      "title": "Hubara",
+      "body": "Un ave terrestre discreta, perfectamente camuflada, en peligro por la caza con fines de cetrería. Es una de las especies que los conservacionistas vigilan más de cerca en la región."
+    },
+    "reptiles": {
+      "title": "Reptiles y pequeños mamíferos",
+      "body": "El uromastix, un lagarto vegetariano que se calienta sobre las rocas cálidas; la víbora cornuda del Sáhara, que se desplaza de lado y deja huellas en forma de J; los jerbos, pequeños roedores saltadores que obtienen toda su agua de los alimentos; y el escinco de arena, que parece nadar en la arena. Sacuda los zapatos por la mañana y mire dónde pone las manos."
+    },
+    "sky": {
+      "title": "Un cielo lleno de estrellas",
+      "body": "Sin pueblos en decenas de kilómetros y con solo unos pocos pequeños campamentos, el cielo nocturno de Chegaga es muy oscuro. En una noche sin luna, la Vía Láctea dibuja una franja visible en el cielo y las estrellas fugaces son frecuentes. El aire del invierno es seco y limpio, lo que mejora aún más la vista.\n\nQué ayuda: esperar de 20 a 30 minutos a que los ojos se adapten, evitar la luz del teléfono, elegir las noches cercanas a la luna nueva y abrigarse bien: las noches de invierno pueden acercarse a 0 °C. Una manta sobre la arena, más allá de las luces del campamento, es el mejor asiento que existe.\n\nPor la mañana, suba a la cresta más cercana antes del amanecer. Ver salir el sol sobre las dunas después de una noche bajo las estrellas es el momento que más recuerdan la mayoría de los viajeros."
+    },
+    "people": {
+      "title": "La gente del desierto",
+      "body": "En esta región aún viven familias nómadas amazigh que se desplazan con sus cabras y camellos por pistas y pozos que conocieron sus abuelos. Las antiguas caravanas salían de M'Hamid hacia Tombuctú y las huellas de aquel comercio aún se ven en los ksour, los pozos y los santuarios. El té es el lenguaje de la hospitalidad: tres vasos, servidos desde lo alto, se comparten con calma.\n\nSi le invitan a una tienda, acepte el té. Pregunte antes de fotografiar a las personas y sea generoso a cambio, tanto con el tiempo como con el dinero."
+    },
+    "doing": {
+      "title": "Qué hacer",
+      "body": "Trekking en camello entre Lihoudi y Chegaga, o un paseo corto al atardecer.\nTravesía de las dunas en 4x4 con un conductor experimentado.\nSandboard en las pendientes más empinadas.\nPaseo por las crestas al amanecer y al anochecer.\nObservación de estrellas desde las dunas.\nVisita a una familia nómada y té compartido.\nVisita al lago Iriki y al Oasis Sagrado.\nAlgunos campamentos ofrecen también paseos en quad; si el silencio le importa, pregunte antes de reservar.\nA finales de octubre, el festival Taragalte reúne en M'Hamid a músicos y familias nómadas."
+    },
+    "practical-lead": "Unas reglas sencillas marcan la diferencia entre un buen viaje y un gran viaje.",
+    "water": {
+      "title": "Agua y sol",
+      "body": "Incluso en invierno el sol del desierto es fuerte. Lleve una botella reutilizable (los campamentos suelen proporcionar agua filtrada), un sombrero de ala ancha y gafas de sol, aplíquese protector solar y empiece los paseos temprano. Nunca salga del campamento a pie solo sin avisar a su guía."
+    },
+    "pack": {
+      "title": "Qué llevar",
+      "body": "Capas de abrigo para la noche: forro polar o plumífero ligero, cortavientos, gorro, calcetines gruesos.\nProtección solar: SPF 50+, gafas de sol, sombrero de ala ancha.\nUn pañuelo (chèche) para el sol y la arena.\nCalzado cerrado para las dunas, sandalias para el campamento.\nUna bolsa blanda, no una maleta rígida: los últimos 50 a 60 km son en 4x4.\nUna batería externa, una linterna frontal, toallitas húmedas y protección contra el polvo para la cámara.\nAlgo de efectivo en dirhams: no hay terminales de pago en el desierto."
+    },
+    "responsible": {
+      "title": "Viaje ligero",
+      "body": "Llévese toda su basura, incluidas las colillas y las toallitas húmedas. Manténgase en las pistas existentes para proteger la frágil llanura. No moleste a la fauna ni se lleve plantas, fósiles o piedras. Respete los santuarios y los lugares sagrados. Pregunte antes de fotografiar a las personas. Deje las dunas como las encontró: limpias y silenciosas."
+    },
+    "us-lead": "Nuestro trabajo es sencillo: llevar a viajeros curiosos al verdadero Sáhara, en 4x4, y dejar atrás las multitudes. Estos son algunos de nuestros viajes al Erg Chegaga y al Erg Lihoudi.",
+    "us": {
+      "title": "Cómo viajamos",
+      "body": "Nuestros viajes se mantienen alejados de las principales carreteras turísticas: cruzamos la hammada en 4x4, paramos en Tamegroute y en el oasis y llegamos a las dunas a la hora de luz adecuada. Díganos cuántos días tiene y desde dónde parte, y construiremos la ruta con usted."
+    },
+    "back-credit": "Una guía original de Lover of Sahara, escrita a partir de nuestra propia experiencia sobre el terreno y de fuentes públicas: oficinas de turismo, el Parque Nacional de Iriqui, estudios científicos y operadores locales. La información puede cambiar: las condiciones en el desierto dependen de la temporada y del tiempo.",
+    "emergencies": {
+      "title": "Emergencias",
+      "numbers": [
+        {
+          "label": "Policía",
+          "tel": "19"
+        },
+        {
+          "label": "Bomberos",
+          "tel": "15"
+        },
+        {
+          "label": "Asistencia en carretera",
+          "tel": "177"
+        },
+        {
+          "label": "Información telefónica",
+          "tel": "160"
+        }
+      ]
+    },
+    "numbers-lead": "Un campo de dunas definido por la distancia y el silencio: las cifras clave para planificar un viaje al Erg Chegaga.",
+    "months-note": "Las temperaturas varían según la fuente y el año: consulte siempre con su guía antes de viajar.",
+    "trips-note": "Itinerarios completos y reservas: www.loverofsahara.tours",
+    "journey-text": {
+      "title": "Del último oasis a las dunas",
+      "body": "Desde Zagora, la carretera sigue el valle del Draa hacia el sur entre palmerales y ksour. Tamegroute es una primera parada natural; M'Hamid El Ghizlane es el último lugar donde comprar agua y provisiones. Más allá del pueblo, el asfalto da paso a una pista.\n\nLa pista no es un camino único: es una red de senderos a través de la hammada, los lechos de ríos secos y las llanuras, elegidos por los conductores según el tiempo. Tras unas dos horas, aparecen en el horizonte las primeras dunas del Erg Chegaga. Si viene desde Foum Zguid, la antigua pista cruza el lecho seco del lago Iriki; desde M'Hamid, pasa por el Oasis Sagrado.\n\nAlgunos buenos hábitos para el viaje: salir temprano para llegar con la luz de la tarde, viajar con agua y el depósito lleno y no ir nunca solo. Un solo 4x4 y sin cobertura no es un plan; un conductor local que conozca las pistas es la forma más segura y más interesante de ir."
+    }
+  },
+  "pages": [
+    {
+      "type": "cover",
+      "image": "chegaga/cover-portrait.jpg",
+      "pos": "50% 50%"
+    },
+    {
+      "type": "contents",
+      "image": "chegaga/dune-ridge.jpg",
+      "pos": "50% 50%"
+    },
+    {
+      "type": "intro",
+      "startsSection": 1,
+      "band": {
+        "image": "chegaga/walker-dunes.jpg",
+        "pos": "50% 55%",
+        "h": 62
+      },
+      "eyebrow": "01  ·  El Sáhara salvaje",
+      "title": [
+        "Erg Chegaga.",
+        "El Sáhara salvaje."
+      ],
+      "lead": "intro-lead",
+      "columns": [
+        [
+          {
+            "item": "why",
+            "first": true
+          }
+        ],
+        [
+          {
+            "item": "chebbi",
+            "img": "chegaga/camel-sign-road.jpg",
+            "imgPos": "50% 55%",
+            "first": true
+          }
+        ]
+      ]
+    },
+    {
+      "type": "table",
+      "eyebrow": "01  ·  El Sáhara salvaje",
+      "title": [
+        "¿Chegaga",
+        "o Chebbi?"
+      ],
+      "head": [
+        "",
+        "Erg Chegaga (M'Hamid)",
+        "Erg Chebbi (Merzouga)"
+      ],
+      "rows": [
+        [
+          "Acceso",
+          "Pista de 4x4 de unos 50 a 60 km desde M'Hamid, unas dos horas",
+          "Carretera asfaltada hasta el borde de las dunas"
+        ],
+        [
+          "Tamaño",
+          "El mayor campo de dunas de Marruecos: unos 35 a 40 km de largo (según algunas fuentes: 40 x 15 km)",
+          "Unos 22 km de largo y 5 km de ancho; las dunas más altas, de unos 150 m"
+        ],
+        [
+          "Afluencia",
+          "Pocos campamentos pequeños muy separados entre sí (los operadores citan de 20 a 30)",
+          "Más de 200 campamentos alrededor de Merzouga, muy concurrido en temporada alta"
+        ],
+        [
+          "Noches",
+          "Cielo muy oscuro, fuego y luz de las estrellas",
+          "El resplandor de los campamentos y del pueblo reduce las estrellas"
+        ],
+        [
+          "Temporada",
+          "Campamentos sobre todo de octubre a abril",
+          "Campamentos abiertos todo el año"
+        ],
+        [
+          "Ideal para",
+          "Viajeros con dos días o más que buscan espacio y silencio",
+          "Primerizos, estancias cortas, más comodidad"
+        ]
+      ],
+      "note": "compare-note",
+      "band": {
+        "image": "chegaga/dune-ridge.jpg",
+        "pos": "50% 55%",
+        "h": 78
+      }
+    },
+    {
+      "type": "facts",
+      "startsSection": 2,
+      "eyebrow": "02  ·  Erg Chegaga",
+      "title": [
+        "Erg Chegaga",
+        "en cifras."
+      ],
+      "lead": "numbers-lead",
+      "facts": [
+        {
+          "n": "35-40 km",
+          "l": "de longitud del campo de dunas, el mayor de Marruecos"
+        },
+        {
+          "n": "50-60 km",
+          "l": "de M'Hamid El Ghizlane a los campamentos, unas dos horas en 4x4"
+        },
+        {
+          "n": "50-300 m",
+          "l": "altura de las dunas según la fuente: el campo es más ancho que alto"
+        },
+        {
+          "n": "Oct.-abr.",
+          "l": "la temporada en que funcionan los campamentos"
+        },
+        {
+          "n": "0-10 °C",
+          "l": "temperaturas nocturnas de invierno citadas por los operadores, con días suaves"
+        },
+        {
+          "n": "Solo 4x4",
+          "l": "no hay asfalto más allá de M'Hamid, un conductor local es esencial"
+        },
+        {
+          "n": "123.000 ha",
+          "l": "Parque Nacional de Iriqui, creado en 1994, al borde de las dunas"
+        },
+        {
+          "n": "7-10 km",
+          "l": "de M'Hamid a las pequeñas dunas del Erg Lihoudi"
+        },
+        {
+          "n": "Cada pocos años",
+          "l": "raras crecidas devuelven el agua, y los flamencos, al lago Iriki"
+        }
+      ],
+      "band": {
+        "image": "chegaga/sunrise-rays.jpg",
+        "pos": "50% 50%",
+        "h": 96
+      }
+    },
+    {
+      "type": "opener-band",
+      "band": {
+        "image": "chegaga/dune-pattern.jpg",
+        "pos": "50% 55%",
+        "h": 96
+      },
+      "num": "02",
+      "title": [
+        "Erg Chegaga",
+        "El gran mar de dunas"
+      ],
+      "blocks": [
+        {
+          "item": "dunes",
+          "first": true,
+          "wide": true
+        }
+      ],
+      "columns": [
+        [
+          {
+            "item": "light",
+            "img": "chegaga/sunrise-arms.jpg",
+            "imgPos": "50% 55%",
+            "first": true
+          }
+        ],
+        [
+          {
+            "item": "camps",
+            "img": "chegaga/candle-heart.jpg",
+            "imgPos": "50% 60%",
+            "first": true
+          }
+        ]
+      ]
+    },
+    {
+      "type": "dark-full",
+      "startsSection": 3,
+      "image": "chegaga/caravan-sunset.jpg",
+      "pos": "50% 50%",
+      "eyebrow": "03  ·  El viaje",
+      "title": [
+        "El camino hacia el",
+        "Sáhara salvaje."
+      ],
+      "stages": [
+        "tamegroute",
+        "mhamid",
+        "hammada",
+        "arrival"
+      ]
+    },
+    {
+      "type": "text-band",
+      "eyebrow": "03  ·  El viaje",
+      "item": "journey-text",
+      "band": {
+        "image": "chegaga/piste-road.jpg",
+        "pos": "50% 55%",
+        "h": 100
+      }
+    },
+    {
+      "type": "opener-band",
+      "startsSection": 4,
+      "band": {
+        "image": "chegaga/ksar-desert.jpg",
+        "pos": "50% 55%",
+        "h": 90
+      },
+      "num": "04",
+      "title": [
+        "Alrededor del",
+        "Erg Chegaga"
+      ],
+      "lead": "beyond-lead",
+      "blocks": [
+        {
+          "item": "lihoudi",
+          "first": true,
+          "wide": true
+        }
+      ]
+    },
+    {
+      "type": "items-auto",
+      "eyebrow": "04  ·  Alrededor del Erg Chegaga",
+      "blocks": [
+        {
+          "item": "oasis",
+          "img": "chegaga/palm-oasis.jpg",
+          "imgPos": "50% 55%"
+        },
+        {
+          "item": "iriki",
+          "img": "chegaga/camel-man.jpg",
+          "imgPos": "50% 45%"
+        }
+      ]
+    },
+    {
+      "type": "opener-band",
+      "startsSection": 5,
+      "band": {
+        "image": "chegaga/footprints.jpg",
+        "pos": "50% 60%",
+        "h": 90
+      },
+      "num": "05",
+      "title": [
+        "Fauna",
+        "y cielo nocturno"
+      ],
+      "lead": "park-lead",
+      "blocks": [
+        {
+          "item": "park",
+          "first": true,
+          "wide": true
+        }
+      ]
+    },
+    {
+      "type": "items-auto",
+      "eyebrow": "05  ·  Fauna y cielo nocturno",
+      "blocks": [
+        {
+          "item": "gazelle"
+        },
+        {
+          "item": "fennec"
+        },
+        {
+          "item": "ostrich"
+        },
+        {
+          "item": "houbara"
+        },
+        {
+          "item": "reptiles"
+        },
+        {
+          "item": "sky",
+          "img": "chegaga/milky-way.jpg",
+          "imgPos": "50% 45%"
+        }
+      ]
+    },
+    {
+      "type": "items-auto",
+      "eyebrow": "05  ·  La vida en el desierto",
+      "blocks": [
+        {
+          "item": "people",
+          "img": "chegaga/campfire-group.jpg",
+          "imgPos": "50% 55%"
+        },
+        {
+          "item": "doing",
+          "img": "chegaga/campfire-night.jpg",
+          "imgPos": "50% 55%"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "startsSection": 6,
+      "eyebrow": "06  ·  Planifique su visita",
+      "title": [
+        "Cuándo",
+        "ir."
+      ],
+      "head": [
+        "Meses",
+        "Qué esperar"
+      ],
+      "rows": [
+        [
+          "Octubre - noviembre",
+          "Días cálidos y agradables y comienzo de la temporada de campamentos. Es posible una primera ventana de viento y arena en octubre."
+        ],
+        [
+          "Diciembre - febrero",
+          "Temporada alta. Días suaves, noches frías: las noches de enero pueden acercarse a 0 °C. Los cielos más despejados."
+        ],
+        [
+          "Marzo - abril",
+          "Días más cálidos; últimas semanas de la temporada de campamentos. Son posibles tormentas de arena (el viento chergui) a partir de finales de marzo."
+        ],
+        [
+          "Mayo - septiembre",
+          "Muy caluroso, a menudo de forma peligrosa. La mayoría de los campamentos están cerrados."
+        ]
+      ],
+      "note": "months-note",
+      "band": {
+        "image": "chegaga/dune-pattern.jpg",
+        "pos": "50% 50%",
+        "h": 96
+      }
+    },
+    {
+      "type": "items-auto",
+      "eyebrow": "06  ·  Planifique su visita",
+      "blocks": [
+        {
+          "para": "practical-lead"
+        },
+        {
+          "item": "water"
+        },
+        {
+          "item": "pack"
+        },
+        {
+          "item": "responsible"
+        },
+        {
+          "item": "us",
+          "img": "chegaga/camel-sign-road.jpg",
+          "imgPos": "50% 55%"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "eyebrow": "06  ·  Nuestros viajes a Chegaga",
+      "title": [
+        "Viajes al",
+        "Erg Chegaga."
+      ],
+      "lead": "us-lead",
+      "head": [
+        "Viaje",
+        "Duración"
+      ],
+      "firstWide": true,
+      "rows": [
+        [
+          "Excursión Chegaga - 1 Día",
+          "1 día"
+        ],
+        [
+          "Inmersión en el Desierto de Chegaga - 2 Días",
+          "2 días"
+        ],
+        [
+          "Ouarzazate Chegaga 2 días",
+          "2 días"
+        ],
+        [
+          "Marrakech - Lihoudi 2 Días",
+          "2 días"
+        ],
+        [
+          "Zagora & Chegaga - 3 Días",
+          "3 días"
+        ],
+        [
+          "Ouarzazate - Chegaga 3 Días",
+          "3 días"
+        ],
+        [
+          "Gargantas, Saghro & Chegaga - 3 Días",
+          "3 días"
+        ],
+        [
+          "Marrakech - Chegaga 4 Días",
+          "4 días"
+        ],
+        [
+          "Circuito Agadir - Erg Chegaga de 6 Días",
+          "6 días"
+        ]
+      ],
+      "note": "trips-note",
+      "band": {
+        "image": "chegaga/caravan-red-sky.jpg",
+        "pos": "50% 50%",
+        "h": 80
+      }
+    },
+    {
+      "type": "back",
+      "image": "chegaga/back-portrait.jpg",
+      "pos": "50% 50%"
+    }
+  ]
+}

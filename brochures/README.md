@@ -26,8 +26,8 @@ Output: `public/brochures/<slug>-<lang>.pdf` (served by the site as `/brochures/
 
 ## Status
 
-- Done: `zagora` (en, 14 pages), `tinghir` (en, 13), `errachidia` (en, 13), `midelt` (en, 12) `ouarzazate` (en, 12) and `general-guide` (en, 32 pages, awaiting review); the last four use photos from the Drive library.
-- To do (English first): local-gastronomy, natural-guide (next, one at a time), live-local. Then fr and es, then the `/brochures` page on the site.
+- Done: `zagora` (en, 14 pages), `tinghir` (en, 13), `errachidia` (en, 13), `midelt` (en, 12) `ouarzazate` (en, 12) and `general-guide` (en, 32 pages) and `local-gastronomy` (en, 11 pages) and `natural-guide` (en, 11 pages, awaiting review); the last six use photos from the Drive library.
+- To do (English first): live-local (the only old brochure left), then fr and es. Then fr and es, then the `/brochures` page on the site.
 
 Original PDFs: `https://www.visitdraatafilalet.com/assets/docs/<folder>/guide-...-<lang>.pdf` (every URL is in the old site's `app/[locale]/brochures/page.tsx`).
 
@@ -49,3 +49,8 @@ Tips from Midelt: a Drive thumbnail download can come back truncated (grey block
 Long thematic guides (general-guide, 46 source pages): the content JSON is assembled from `content/_parts/*.json` (item texts) by a small merge script that also holds the page plan. Make the PDF smaller with `python brochures/tools/make-lite-assets.py` then `LITE=1 node brochures/build.mjs <slug> <lang>` (photos 1200 px, covers untouched; about 6 MB). Do NOT post-process the PDF with PyMuPDF `rewrite_images`: it drops the pattern resources and the sticker and shades turn white. Item bodies may contain `
 
 ` (rendered as a blank line).
+
+
+## Original guides (not from the old site)
+
+`erg-chegaga` (en, 17 pages, 2.7 MB): written from research, own credit page (`credit` object in the JSON), photos in `assets/chegaga/` (Drive M'hamid and Extra folders). New page types: `facts` (grid of key figures) and `table` (head + rows, `firstWide`, optional `note`, `band`). Build: `python brochures/tools/make-lite-assets.py` then `LITE=1 node brochures/build.mjs erg-chegaga en`.

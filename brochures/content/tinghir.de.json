@@ -1,0 +1,474 @@
+{
+  "lang": "de",
+  "slug": "tinghir",
+  "title": "Die Provinz Tinghir",
+  "kicker": "Reiseführer",
+  "subtitle": "Täler, Schluchten und Kasbahs",
+  "creditSubject": "der Provinz Tinghir",
+  "cover": {
+    "line": "Die Provinz",
+    "dim": "Tinghir."
+  },
+  "contentsTitle": "Inhalt",
+  "contents": [
+    {
+      "n": "01",
+      "title": "Die touristischen Highlights der Provinz Tinghir"
+    },
+    {
+      "n": "02",
+      "title": "Sehenswürdigkeiten der Provinz Tinghir"
+    },
+    {
+      "n": "03",
+      "title": "Bräuche und Traditionen in der Provinz Tinghir"
+    },
+    {
+      "n": "04",
+      "title": "Gastronomie in der Provinz Tinghir"
+    },
+    {
+      "n": "05",
+      "title": "Ausflug ins Dadès-Tal"
+    },
+    {
+      "n": "06",
+      "title": "Praktische Informationen"
+    }
+  ],
+  "items": {
+    "tinghir": {
+      "title": "Tinghir",
+      "subtitle": "Täler, Schluchten und Kasbahs",
+      "lead": "Die Provinz wird vom Fluss Todgha bewässert, der durch ein grünes Tal fließt, in dem Obstbäume, Getreide, Farne und Minze angebaut werden. Wie die anderen Städte der Region Drâa-Tafilalet ist Tinghir berühmt für seine Kasbahs und Ksour. Sein besonderes Merkmal ist jedoch das jüdische Viertel im Herzen der Stadt.",
+      "body": "Tinghir liegt im Zentrum-Osten Marokkos im Todgha-Tal, das vom gleichnamigen Fluss gespeist wird. Dieser Fluss, der den Hohen Atlas auf 40 km und die prächtigen Todgha-Schluchten durchquert, hat diesen weiten Palmenhain entstehen lassen. Die nahe Dadès-Schlucht bietet ein weiteres atemberaubendes Panorama, in dem man Naturwunder wie die Klippen entdeckt, die an die Form von Affenfingern erinnern. Das Rosental von Kelaat M'gouna bringt die schönsten duftenden Rosen hervor. Die weite Provinz Tinghir mit 13.007 km² ist von 322.312 Menschen bewohnt, und ihr Name stammt aus dem Berberdialekt und bedeutet „Ort des Berges“."
+    },
+    "jewish-history": {
+      "title": "Überreste einer jahrhundertealten jüdischen Geschichte",
+      "body": "Der 30 km lange Palmenhain voller kleiner Ksour und Kasbahs erstreckt sich zu beiden Seiten der Stadt zwischen dem Hohen Atlas und dem Jbel Saghro. Dank eines Systems von Wasserkanälen bewässert, bildet er den Reichtum der Provinz. Mandelbäume, Olivenbäume, Dattelpalmen, Apfelbäume, Granatapfelbäume, Aprikosenbäume, Feigenbäume, Getreide, Farne und Minze werden dort angebaut. Wie die Städte der Region ist Tinghir mit seiner Umgebung auch für seine Kasbahs und Ksour bekannt, etwa die Kasbah von Glaoui oder die von Scheich Basou Ou-Ali. Das jüdische Viertel oder Mellah von Tinghir zeugt von seiner jüdischen Geschichte, einer langen Zeit, in der die marokkanische jüdische Gemeinschaft in Tinghir in perfekter Symbiose mit den Muslimen lebte. Der Ksar El Khorbat, 50 km östlich von Tinghir im unteren Todgha-Tal gelegen, beherbergt zudem ein Museum, das der amazighischen Lebensweise gewidmet ist. Diese Provinz war auch Schauplatz großer Kämpfe gegen die französische Armee zur Zeit des Protektorats. Zu nennen ist die Schlacht von Bougafer, in der der Stamm der Ait Atta unter dem verstorbenen Assou Oubasslam siegte. Die Provinz hat so viele Schätze zu offenbaren."
+    },
+    "palm-grove": {
+      "title": "Der Palmenhain von Tinghir",
+      "body": "Der Palmenhain von Tinghir entfaltet seine Pracht auf 30 km von den Todgha-Schluchten bis nach Ferkla zwischen Tinghir und Tinjdad. Er wird durch Leitungen bewässert, die vom Fluss Toudgha und vom Grundwasser gespeist werden. Palmen und Obstbäume wie Mandelbäume, Apfelbäume, Granatapfelbäume, Birnbäume und Feigenbäume schmücken diese Palmenhaine. Unter den Bäumen werden Minze, Mais und Luzerne angebaut ... Der Palmenhain lässt sich angenehm zu Fuß besichtigen. Von Tinghir aus kann man mehrere Naturstätten besuchen. Die Toudgha-Schluchten liegen 14 km von der Stadt entfernt. Dort wurde ein Pilotprojekt zur nachhaltigen Entwicklung für die Erneuerung der Oase Toudgha durchgeführt, die seither die neue Oase von Afanour genannt wird. Einige Bergsportbegeisterte bevorzugen sie wegen ihres festen Felsens und ihrer bereits angelegten Kletterrouten. Von den Schluchten aus kann ein Tagesausflug auf einer 120 km langen Rundstrecke Sie zum Dorf Tamtatoucht, zu den Salzhöhlen von Ait Hani und nach Agoudal (dem höchstgelegenen bewohnten Dorf Marokkos) bis nach Imilchil in der Provinz Midelt führen."
+    },
+    "valley-of-roses": {
+      "title": "Das Dorf des Rosentals",
+      "body": "Es ist das Tor zum Rosental. Dieses auf 1450 m Höhe gelegene Dorf liegt am Zusammenfluss der Täler des M'Goun und des Dadès. Die Region ist berühmt für ihre Rose, die von Mitte April bis Mitte Mai blüht. Das Rosenfest feiert die Erntezeit drei Tage lang im Mai. Mehrere Geschäfte in Kelaat M'Gouna verkaufen Kosmetikprodukte aus Rosen sowie destilliertes Rosenwasser, das in Parfums großer Marken verwendet wird."
+    },
+    "monkey-paws": {
+      "title": "Die Affenpfoten",
+      "body": "Wenige Kilometer von der Straße von Tissadrine, die zur Dadès-Schlucht führt, entfernt taucht zwischen Bäumen eine Landschaft aus hohen ockerfarbenen Kalksteinplateaus auf. Am Horizont erscheinen kleine Berberdörfer. Vom Miguern-Canyon aus sieht man ockerfarbene Kalksteinklippen, deren Form an Affenfinger erinnert. Diese Felslandschaft, 15 km von der Kleinstadt Boumalne Dadès entfernt, wird auch „Gehirn des Atlas“ genannt."
+    },
+    "glaoui": {
+      "title": "Die Kasbah von Glaoui",
+      "body": "Auf einem Felsvorsprung thronend, liegt die heute verfallene Kasbah von Glaoui 500 Meter nördlich des Zentrums von Tinghir an der Straße nach Erfoud. Sie bietet ein erstaunliches Panorama über die Dächer der Stadt und den Todgha-Palmenhain."
+    },
+    "basou": {
+      "title": "Die Kasbah von Scheich Basou Ou-Ali",
+      "body": "Im Süden der Stadt, an der Avenue Bir Anzarane, beherbergt die Kasbah von Scheich Basou Ou Ali ein kleines Museum mit schönen Fotografien der Karawanenrouten, auf denen man die schönsten Ksour Südmarokkos entdecken kann."
+    },
+    "ksar-lhaj-ali": {
+      "title": "Ksar Ait Lhaj Ali",
+      "body": "Der Ksar Ait Lhaj Ali oder Ksar von Tinghir liegt zwischen der Ebene und den Bergen im Zentrum von Tinghir und umfasst 300 Häuser und vier Viertel, darunter ein Mellah, in dem 70 jüdische Familien lebten. Dank seiner geografischen Lage und seiner Handelstätigkeit ist dieser über 600 Jahre alte Ksar (mehrfach restauriert, zuletzt 2021) noch immer bewohnt. Mit 6 Toren (von denen eines zerstört wurde) beherbergte der Ksar von Tinghir drei Moscheen, eine Synagoge, zwei Marabouts sowie die Kissaria der Frauen und die Genossenschaft der Bläser."
+    },
+    "ait-youl": {
+      "title": "Aït Youl",
+      "body": "65 km vom Zentrum von Tinghir entfernt, über die Stadt Boumalne Dadès, liegt das Dorf Ait Youl. Es ist bekannt für seine Naturlandschaften und seinen kulturellen Reichtum, der sich in der Kasbah Mouhdach zeigt. Entlang des Dadès-Tals bietet Ait Youl malerische Landschaften und Panoramablicke. Dieses typische Dorf ist ein ideales Ziel für Liebhaber des Bergtourismus und des Wanderns ..."
+    },
+    "mellah": {
+      "title": "Der Mellah von Tinghir",
+      "body": "Es ist das älteste Viertel von Tinghir, in dem bis in die 1960er Jahre eine jüdische Gemeinde lebte. Es liegt in der Altstadt (Medina) von Tinghir. Es umfasst Geschäfte von Handwerkern, Schmuckhändlern und die „Straße der Frauen“ im Herzen der Medina."
+    },
+    "ikelane": {
+      "title": "Moschee-Medersa von Ikelane",
+      "body": "Die Moschee von Ikelane im Ksar Afanour (in Ruinen) nahe Tinghir steht dank Restaurierung noch. Teils auf einer Klippe und teils auf einer Gasse im Ksar errichtet, ist diese Moschee sehr alt, wurde aber im 19. Jahrhundert instand gesetzt. Das Dach aus mit Kajal und Henna gefärbten Oleanderstängeln wird von 24 Säulen getragen. Die Moschee verfügt über einen Gebetsraum, einen Waschraum, eine Terrasse für den Unterricht und den Gebetsruf sowie eine Unterkunft für Studenten. 2007 wurde sie vom Verein Afanour teilweise wiederaufgebaut."
+    },
+    "jbel-saghro": {
+      "title": "Jbel Saghro",
+      "body": "Der Jbel Saghro liegt östlich von Ouarzazate, 70 km südlich des zentralen Hohen Atlas, und erreicht 2712 m Höhe. Er überragt die Täler des Drâa im Westen und Süden und das des Dadès im Norden und bildet den östlichen Teil des Antiatlas. Mit seinen Mondlandschaften aus Plateaus, Gipfeln und Schluchten vermittelt dieses präsaharische Massiv, das nach der weiten algerischen Gebirgskette „kleiner Hoggar“ genannt wird, den Reisenden das Gefühl, am Ende der Welt zu sein. Die beste Zeit, um den Jbel Saghro zu besteigen und sein Tal der Vögel zu bewundern, ist von Dezember bis März."
+    },
+    "alnif": {
+      "title": "Alnif",
+      "body": "Alnif liegt im östlichen Antiatlas, einer an Meteoriten und Fossilien reichen Umgebung, und ist eine an Trilobiten reiche Region – Meeresbewohner, die in den Ozeanen des Paläozoikums (500 bis 250 Millionen Jahre) lebten. Nicht weit vom Dorf Alnif, etwa zehn Kilometer entfernt, gibt es fast 5000 Jahre alte Felsgravuren, eingraviert in die Felsen dieser steinigen und trockenen Ebenen."
+    },
+    "old-medina": {
+      "title": "Alte Medina von Tinghir",
+      "body": "Im Zentrum von Tinghir gelegen, vereint sie mehrere Genossenschaften: Blasrohre, Schmiedekunst, Weberei und die Straße der Frauen. Ein Spaziergang durch die Medina von Tinghir ermöglicht den Besuch von Werkstätten und Orten, an denen lokale Handwerker mehrere traditionelle, in der Oase verwendete Werkzeuge herstellen. Daneben liegt die berühmte Straße der Frauen (Kissariat). Auf Amazigh weithin als „Zneqt nTotmin“ bekannt, ist die Straße der Frauen ein Handelsraum, der dem Verkauf und der Vermarktung von Grundprodukten für Frauen vorbehalten ist: Schmuck, Kleidung ... Dieser noch bestehende Raum wurde von den jüdischen Händlern von Tinghir geschaffen."
+    },
+    "dinosaurs": {
+      "title": "Dinosaurierspuren bei Tiguayine",
+      "body": "Wer aus der Todgha-Schlucht kommt, findet vor dem Eingang zur Dadès-Schlucht, genau 12 km von der Stadt Boumalne Dadès entfernt, die Stätte von Tiguayine, wo der Besucher Dinosaurierspuren bewundern kann. Um sie aus der Nähe zu sehen, muss man mit Gemüse, Getreide und einigen Obstbäumen bebaute Parzellen durchqueren, bevor man einen Pfad erreicht, der einer Klippe gegenüberliegt. Diese Lehmklippe war einst von mehreren Sedimentschichten bedeckt, die bis heute die Spuren von Sauropoden-Dinosauriern bewahrt haben, die zwischen dem Mittleren Jura (201 bis 145 Millionen Jahre) und der Oberen Kreide (-145 bis -66 Millionen Jahre) lebten."
+    },
+    "bab-nali": {
+      "title": "Bab N'Ali",
+      "body": "Die felsigen Gipfel oder Klippen von Bab N'Ali liegen zwischen Ouarzazate und Tinghir. Von Boumalne Dadès über die asphaltierte Straße nach Iknioun erreichbar, ist die Stätte von Bab N'Ali atemberaubend, unberührt und wild. Der Pass, der auf 1470 m Höhe gipfelt, ist für Wander- und Kletterfreunde zugänglich."
+    },
+    "artisanal": {
+      "title": "Das Handwerkszentrum",
+      "body": "Dieses Handwerkszentrum ist ein Schaufenster für das lokale Handwerk und befindet sich an der Straße zu den Toudgha-Schluchten im Bau."
+    },
+    "sacred-fish": {
+      "title": "Die Quelle der heiligen Fische",
+      "body": "Dieser mythische Ort liegt vor der Ankunft an den Toudgha-Schluchten. In dieser Wasserquelle leben Fische, die in den Rang von Heiligen erhoben wurden, sodass das Fischen in der Quelle verboten ist."
+    },
+    "pottery-el-hara": {
+      "title": "Die Töpferei von El Hara",
+      "body": "Der Besuch zeigt, wie die Handwerker Tajines, Gegenstände der lokalen Küche und andere traditionelle Werkzeuge herstellen."
+    },
+    "ruins": {
+      "title": "Ruinen alter Dörfer und Ksour",
+      "body": "Die Provinz Tinghir ist sehr reich an architektonischem Erbe in Form von Ksour und Kasbahs in Ruinen: Asfalou, Ait Boujane, Taourirte n'mzlien, Ait Oujana, Afanour, Tizgui usw."
+    },
+    "marabouts": {
+      "title": "Marabouts und Mausoleen",
+      "body": "Diese Stätten von kultureller und religiöser Bedeutung, die mehrere Jahrhunderte zurückreichen, sind teils erhalten, teils in Ruinen. Zu nennen sind unter anderem Sidi Ali Oubrahim, Sidi khoukhte, Sidi Abdelkrim, Sidi Bouhid usw."
+    },
+    "imiter": {
+      "title": "Die Kasbah der Silberschmuckherstellung in Imiter",
+      "body": "Die Provinz Tinghir ist weithin für die Silbermine von Imiter bekannt. Diese Kasbah im Zentrum des Dorfes ist restauriert und der Herstellung von künstlerischem Silberschmuck gewidmet."
+    },
+    "assou": {
+      "title": "Die Kasbah von Assou Oubaslam im Douar Taghia n Ilmchane",
+      "body": "Diese in den Fels gebaute Behausung gehörte dem ehemaligen Anführer der Stämme der Ait Atta im Kampf gegen die französischen Armeen."
+    },
+    "khettaras": {
+      "title": "Die Brunnen und Khettaras von Ait Aissa Oubrahim",
+      "body": "Der Besuch der Khettaras erlaubt es, eine ganze Gemeinschaftsorganisation zu entdecken, sowohl bei der Feldarbeit als auch bei der Wasserverteilung."
+    },
+    "customs-lead": "Wie die anderen amazighischen Gebiete lebte Tinghir im Rhythmus der „Moussems“, die gute Ernten feierten. Wir empfehlen Ihnen unten einige Moussems (Feste), die Sie nicht verpassen sollten.",
+    "rose-festival": {
+      "title": "Rosenfest",
+      "body": "Die Rosenernte im Tal von Kelaat M'gouna findet jedes Jahr im Mai statt. Zur Feier dieser Ernte wird am zweiten Wochenende im Mai das Rosenfest veranstaltet, mit einem künstlerischen und kommerziellen Programm. Vorgesehen sind Volkslieder und -tänze, Umzüge sowie Ausstellungsstände und der Verkauf von Kunsthandwerk. Bei diesem farbenfrohen Fest, bei dem überall der Duft der Rosen zu riechen ist, wird die Rosenkönigin des Jahres gewählt."
+    },
+    "timelsa": {
+      "title": "Timelsa-Festival",
+      "body": "Das Timelsa-Festival, das jedes Jahr im August 3 Tage lang in Boumalne Dadès in der Provinz Tinghir stattfindet, will junge Kreative der Provinz unterstützen, das immaterielle Erbe aufwerten und die Rolle der Zivilgesellschaft stärken. Dieses Festival ermutigt die lokale Bevölkerung auch, durch die Belebung soziokultureller Aktivitäten offener für neue Erfahrungen zu werden. Das Programm umfasst Vorträge zu lokalen Themen, Kunstausstellungen, einen Umzug in traditioneller Kleidung und Musikabende mit lokalen Gruppen."
+    },
+    "distilling": {
+      "title": "Die Destillation der Rosen",
+      "body": "Die im Rosental angebauten Damaszener Rosen werden in der Saison in den Monaten April und Mai gepflückt. Sie werden im Morgengrauen von Hand gepflückt, damit der Duft in der Sonne nicht entweicht, da der Gehalt an ätherischem Öl höher ist, wenn sich die Blüte gerade geöffnet hat. Die bereits geöffneten Blüten werden in die Destillierblase (Apparat zur Destillation) gegeben. Das ätherische Rosenöl wird durch Wasserdestillation gewonnen, um Rosenwasser und ätherisches Öl zu erhalten. Das in der Parfümerie verwendete Rosenöl ist teuer, da für 10 g Rosenöl mehr als 100 kg frische Rosenblätter nötig sind. So braucht man zwischen 2000 und 3000 kg Blütenblätter, um ein Kilogramm Öl zu erzeugen."
+    },
+    "culinary": {
+      "title": "Die kulinarischen Spezialitäten von Tinghir",
+      "body": "Neben den berühmten marokkanischen Spezialitäten, die in allen Restaurants und Gästehäusern angeboten werden, wie Couscous mit 7 Gemüsesorten, Pastilla, Hähnchen-Tajine mit Zitrone und Lamm-Tajine mit Pflaumen ..., bietet Tinghir einige neue Spezialitäten wie Ifnouzen, ein typisches Gericht der Region Tinghir und Dadès, das man auch in Midelt und Ouarzazate findet. Dieser Luzerne-Couscous wird einfach mit Lauch, Gewürzen und Olivenöl gekocht. Es ist ein Gericht, das Besuchern bei ihrer Ankunft serviert wird. Man kann es bei den Einwohnern zu Hause probieren."
+    },
+    "dades-excursion": {
+      "title": "Ausflug ins Dadès-Tal",
+      "body": "Von der Kleinstadt Boumalne Dadès aus fährt man 12 km, bevor man im Dorf Ait Ziad Halt macht, wo man die Fußabdrücke von Sauropoden-Dinosauriern bewundern kann. Sie befinden sich nahe einer 6 km langen Schlucht, die im Sommer zum Wandern oder für ein Picknick angenehm ist. Man setzt die Fahrt bis zur Miguirne-Schlucht fort, um die Tamalt-Klippen zu bewundern, die auch Affenpfoten genannt werden. Ihre natürliche Form erinnert an Affenfinger. Die Wanderung führt weiter zum Dorf Timadraouine (dem Anhang der Klippen, wie ein Grand Canyon). Die Runde schließt sich am Iminwarg-Canyon über eine Piste. Zu beachten ist, dass sich die Klippen über 170 km zwischen dem Jbel Saghro und dem Hohen Atlas erstrecken."
+    },
+    "info-lead": "Um den Aufenthalt der Reisenden zu verbessern, finden Sie hier einige nützliche Informationen über die Einrichtungen und die Infrastruktur der Provinz.",
+    "climat": {
+      "title": "Klima",
+      "body": "Die Provinz hat ein warmes Mittelmeerklima mit trockenen Sommern. Die beste Reisezeit für die Provinz ist von Mai bis Juni und von September bis November."
+    },
+    "time": {
+      "title": "Ortszeit",
+      "body": "Marokko hat eine einzige Zeitzone, GMT + 1. Im Monat Ramadan wechselt Marokko zu GMT. Die Region Drâa-Tafilalet bildet keine Ausnahme von dieser Regel."
+    },
+    "languages": {
+      "title": "Gesprochene Sprachen",
+      "body": "Die Bevölkerung spricht Berberisch und Arabisch. Die Beschilderung ist auf Französisch und Arabisch, manchmal in Tifinagh. Die Reiseführer sowie das Personal der Hotels und Gästehäuser sprechen angesichts der touristischen Ausrichtung der Provinz Französisch, Englisch und weitere Sprachen."
+    },
+    "hotels": {
+      "title": "Hotels",
+      "body": "Die Provinz bietet mehrere Riads, Herbergen und Hotels sowie charmante Gästehäuser. Im Allgemeinen sind Unterkunft und Verpflegung in der Provinz erschwinglich und für jedes Budget geeignet."
+    },
+    "land": {
+      "title": "Bodentransport",
+      "body": "Die Provinz verfügt über ein Netz von touristischen Bodentransportunternehmen mit mehreren Optionen, von 4x4-Geländewagen bis zu Bussen für 60 Personen. Die CTM (Compagnie de Transport au Maroc) bietet Strecken an, die die Städte verbinden. Der Komfort ist gewährleistet und die Geschwindigkeit kontrolliert."
+    },
+    "agencies": {
+      "title": "Reisebüros",
+      "body": "Für Besucher, die maßgeschneiderte Reisen suchen, fehlt es nicht an Reisebüros. Es werden mehrere Programme angeboten, und individuelle Reisen sind ebenfalls möglich. Der Reisebüromitarbeiter kümmert sich um alle Details: Beratung, Empfang und Begleitung, Reservierungen, Reisen und Transfers ..."
+    },
+    "emergencies": {
+      "title": "Notfälle",
+      "numbers": [
+        {
+          "label": "Polizei",
+          "tel": "19"
+        },
+        {
+          "label": "Feuerwehr",
+          "tel": "15"
+        },
+        {
+          "label": "Pannenhilfe",
+          "tel": "177"
+        },
+        {
+          "label": "Telefonauskunft",
+          "tel": "160"
+        }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "type": "cover",
+      "image": "photos/tinghir.jpg",
+      "pos": "46% 42%"
+    },
+    {
+      "type": "contents",
+      "image": "tinghir/panorama.jpg",
+      "pos": "100% 40%"
+    },
+    {
+      "type": "intro",
+      "startsSection": 1,
+      "band": {
+        "image": "tinghir/aerial.jpg",
+        "pos": "50% 50%",
+        "h": 84
+      },
+      "eyebrow": "01  ·  Die touristischen Highlights der Provinz Tinghir",
+      "title": [
+        "Tinghir.",
+        "Täler, Schluchten und Kasbahs."
+      ],
+      "lead": "tinghir.lead",
+      "columns": [
+        [
+          {
+            "para": "tinghir"
+          },
+          {
+            "fig": "tinghir/palm-town.jpg",
+            "top": 6
+          }
+        ],
+        [
+          {
+            "item": "jewish-history",
+            "first": true
+          }
+        ]
+      ]
+    },
+    {
+      "type": "opener-band",
+      "startsSection": 2,
+      "band": {
+        "image": "tinghir/couple.jpg",
+        "pos": "50% 50%",
+        "h": 170
+      },
+      "num": "02",
+      "title": [
+        "Sehenswürdigkeiten in Tinghir",
+        "und darüber hinaus in der Provinz"
+      ],
+      "blocks": [
+        {
+          "item": "palm-grove",
+          "first": true,
+          "wide": true
+        }
+      ]
+    },
+    {
+      "type": "items-auto",
+      "eyebrow": "02  ·  Sehenswürdigkeiten der Provinz Tinghir",
+      "blocks": [
+        {
+          "item": "valley-of-roses"
+        },
+        {
+          "item": "monkey-paws",
+          "img": "tinghir/monkey-paws.jpg",
+          "imgPos": "50% 30%"
+        },
+        {
+          "item": "glaoui"
+        },
+        {
+          "item": "basou"
+        },
+        {
+          "item": "ksar-lhaj-ali",
+          "img": "tinghir/ksar-lhaj-ali.jpg",
+          "imgPos": "50% 12%"
+        },
+        {
+          "item": "ait-youl"
+        },
+        {
+          "item": "mellah",
+          "img": "tinghir/mellah.jpg",
+          "imgPos": "50% 40%"
+        },
+        {
+          "item": "ikelane"
+        },
+        {
+          "item": "jbel-saghro",
+          "img": "tinghir/jbel-saghro.jpg",
+          "imgPos": "50% 18%"
+        },
+        {
+          "item": "alnif",
+          "img": "tinghir/alnif.jpg",
+          "imgPos": "50% 40%"
+        },
+        {
+          "item": "old-medina",
+          "img": "tinghir/old-medina.jpg",
+          "imgPos": "50% 12%"
+        },
+        {
+          "item": "dinosaurs"
+        },
+        {
+          "item": "bab-nali",
+          "img": "tinghir/bab-nali.jpg",
+          "imgPos": "50% 45%"
+        },
+        {
+          "item": "artisanal"
+        },
+        {
+          "item": "sacred-fish"
+        },
+        {
+          "item": "pottery-el-hara"
+        },
+        {
+          "item": "ruins"
+        },
+        {
+          "item": "marabouts"
+        },
+        {
+          "item": "imiter",
+          "img": "tinghir/rings.jpg",
+          "imgPos": "50% 12%"
+        },
+        {
+          "item": "assou"
+        },
+        {
+          "item": "khettaras",
+          "img": "tinghir/khettaras.jpg",
+          "imgPos": "50% 40%"
+        }
+      ]
+    },
+    {
+      "type": "opener-type",
+      "startsSection": 3,
+      "num": "03",
+      "eyebrow": "Bräuche und Traditionen in der Provinz Tinghir",
+      "title": [
+        "Bräuche und Traditionen",
+        "in der Provinz Tinghir"
+      ],
+      "lead": "customs-lead",
+      "columns": [
+        [
+          {
+            "item": "rose-festival",
+            "first": true
+          },
+          {
+            "item": "timelsa"
+          }
+        ],
+        [
+          {
+            "item": "distilling",
+            "first": true
+          }
+        ]
+      ]
+    },
+    {
+      "type": "opener-type",
+      "startsSection": 4,
+      "num": "04",
+      "eyebrow": "Gastronomie in der Provinz Tinghir",
+      "title": [
+        "Gastronomie",
+        "in der Provinz Tinghir."
+      ],
+      "columns": [
+        [
+          {
+            "item": "culinary",
+            "first": true
+          }
+        ],
+        [
+          {
+            "fig": "tinghir/potter.jpg"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "opener-band",
+      "startsSection": 5,
+      "band": {
+        "image": "photos/tinghir.jpg",
+        "pos": "50% 78%",
+        "h": 185
+      },
+      "num": "05",
+      "title": [
+        "Ausflug ins",
+        "Dadès-Tal."
+      ],
+      "blocks": [
+        {
+          "para": "dades-excursion"
+        }
+      ]
+    },
+    {
+      "type": "info",
+      "startsSection": 6,
+      "band": {
+        "image": "tinghir/panorama.jpg",
+        "pos": "75% 22%",
+        "h": 58
+      },
+      "num": "06",
+      "title": [
+        "Praktische",
+        "Informationen."
+      ],
+      "lead": "info-lead",
+      "columns": [
+        [
+          {
+            "info": "climat"
+          },
+          {
+            "info": "time"
+          },
+          {
+            "info": "languages"
+          }
+        ],
+        [
+          {
+            "info": "hotels"
+          },
+          {
+            "info": "land"
+          }
+        ],
+        [
+          {
+            "info": "agencies"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "back",
+      "image": "photos/hero-trekking.jpg",
+      "pos": "50% 60%"
+    }
+  ]
+}

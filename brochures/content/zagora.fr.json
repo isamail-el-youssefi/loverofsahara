@@ -1,0 +1,558 @@
+{
+  "lang": "fr",
+  "slug": "zagora",
+  "title": "La province de Zagora",
+  "kicker": "Guide touristique",
+  "subtitle": "Vallées vertes, désert et Zaouïas",
+  "contentsTitle": "Sommaire",
+  "contents": [
+    {
+      "n": "01",
+      "title": "Présentation des atouts touristiques de la province de Zagora"
+    },
+    {
+      "n": "02",
+      "title": "Les incontournables de la province de Zagora"
+    },
+    {
+      "n": "03",
+      "title": "Coutumes et traditions de la province de Zagora"
+    },
+    {
+      "n": "04",
+      "title": "Gastronomie de la province de Zagora"
+    },
+    {
+      "n": "05",
+      "title": "Randonnée dans le désert de M'hamid El Ghizlane"
+    },
+    {
+      "n": "06",
+      "title": "Informations pratiques"
+    }
+  ],
+  "items": {
+    "zagora": {
+      "title": "Zagora",
+      "subtitle": "Vallées vertes, désert et Zaouïas",
+      "lead": "Irriguée par le fleuve Drâa, la province désertique de Zagora regorge de palmeraies et de ksour. Elle se distingue aussi par un magnifique patrimoine spirituel soufi et abrite le superbe désert de M'Hamid El Ghizlane. Les gravures rupestres de Foum Chena et de Tazarine recèlent d'autres trésors passionnants à découvrir.",
+      "body": "Dominée par la chaîne de l'Anti-Atlas, la province de Zagora s'étend sur 23 000 km² et compte 307 306 habitants (recensement de 2014). Elle est traversée par le Jbel Bani, une longue et étroite chaîne de montagnes aux pentes abruptes. Ses palmeraies verdoyantes, le long de l'oued Draa, s'étendent sur 200 km d'Agdz à M'hamid El Ghizlane, sur une superficie de 23 000 ha de verdure en milieu présaharien. Le climat est aride et le désert occupe une part importante du territoire. Les magnifiques dunes de M'hamid, à 40 km de la frontière algérienne, et le petit erg de Tinfou, à 25 km de Zagora, sont très prisés des touristes. Des gravures rupestres datant de plusieurs milliers d'années ont été découvertes à Foum Chena et à Tazarine, à 70 km au nord de Zagora, mais aussi à Foum Larjam, Ighir N'tidri et M'hamid El Ghizlane."
+    },
+    "tamegroute-zaouia": {
+      "title": "Tamegroute, entre zaouïa influente et carrefour commercial",
+      "body": "Au-delà de sa nature tantôt accueillante, tantôt aride, Zagora a vu naître et prospérer des zaouïas qui ont créé un riche patrimoine spirituel soufi. L'influente Zaouïa Naciria de Tamgroute en est un parfait exemple. Reprise et développée par Mohamed Ben Nacer au XVIIe siècle, cette zaouïa possède une bibliothèque riche de manuscrits rares et anciens de sciences et de théologie. Oulémas et étudiants du Maghreb et d'Afrique s'y rassemblent en quête de savoir. Le douar de Tamegroute est devenu un carrefour pour les caravanes commerciales. Les innombrables ksour de la province témoignent, quant à eux, d'un mode de vie ancestral organisé autour d'une vie communautaire intégrée, avec une architecture quasi militaire qui protège des attaques ou des razzias d'autres tribus."
+    },
+    "mustvisits-lead": "Entre dunes, zaouïas et montagnes arides, Zagora propose des visites aussi différentes que captivantes. La curiosité intellectuelle est votre meilleure compagne pour en découvrir tous les secrets.",
+    "mhamid": {
+      "title": "Le village de M'hamid El Ghizlane et son désert",
+      "body": "Situé à 90 km au sud de Zagora, M'hamid El Ghizlane est la dernière oasis avant le désert de sable. Connue comme l'oasis des 17 ksour, M'hamid El Ghizlane compte 7 500 habitants. Les terrasses des ksour et des kasbahs offrent une vue à couper le souffle sur la palmeraie de M'hamid El Ghizlane. Les grandes dunes se trouvent à une cinquantaine de kilomètres du centre de M'Hamid. Il faut traverser deux types de plateaux de végétation avant d'arriver aux dunes : la hamada, un plateau de cailloux, et le reg, un plateau de végétation cultivable où l'on trouve des tamaris et des acacias. Les dunes de sable, l'Erg Chegaga, couvrent 600 km². Avec ses trois plateaux, M'hamid El Ghizlane offre l'expérience du désert sauvage et l'un des plus beaux ciels étoilés du monde. On peut y admirer l'étoile Polaire et les constellations de la Petite Ourse et de la Grande Ourse..."
+    },
+    "tamegroute-village": {
+      "title": "Le village de Tamegroute",
+      "body": "Situé à 18 km de Zagora, sur la route de M'Hamid El Ghizlane, Tamegroute est le village de la poterie verte. On y trouve aussi la Zaouia Naciria, son mausolée de 8 tombes, sa bibliothèque de 4 000 ouvrages et son école coranique. Les potiers du village façonnent la poterie verte de manière traditionnelle avec une poudre naturelle qui lui donne ce bel émail vert, que l'on retrouve aussi dans les zelliges de Fès et de Rabat. Vous y trouverez des boutiques de poterie aux prix abordables."
+    },
+    "zaouia-naciria": {
+      "title": "La Zaouïa Naciria",
+      "body": "Située dans la vallée du Draa, la Zaouïa Naciria, ou Zaouïa de Tamegroute, a été fondée au XVIe siècle et développée un siècle plus tard par M'hammad BenNacer. Elle est devenue l'une des zaouïas les plus influentes et les plus rayonnantes de la culture soufie au Maroc. Une bibliothèque y a été fondée au XVIIe siècle par l'un de ses successeurs, Ahmed Naciri, qui se réclamait de la confrérie soufie Tariqa Chadhiliya, laquelle exerçait une grande influence religieuse, socio-économique et politique au Maroc. La Zaouïa Naciria a joué un rôle important dans la vallée du Draa et a donné naissance à plusieurs autres zaouïas au Maroc."
+    },
+    "foum-chenna": {
+      "title": "Les gravures rupestres de Foum Chenna",
+      "body": "Situé à 7 km à l'ouest de Tinzouline, à environ 40 km de Zagora, c'est le plus grand site de gravures rupestres du Maroc (1,2 km). Ces gravures sur les parois rocheuses mettent en valeur l'écriture amazighe tifinagh ainsi que des scènes représentant des cavaliers, des combats et des scènes de chasse. Pour rendre la visite plus agréable, un théâtre à la romaine a été aménagé avec des abris, ainsi qu'un centre d'interprétation du patrimoine."
+    },
+    "ait-waaziq": {
+      "title": "Les gravures rupestres d'Ait Waaziq à Tazarine",
+      "body": "C'est l'un des sites de gravures les plus importants et les plus intéressants du Maroc. Situé à 20 km de Tazarine et à 90 km de Zagora, il présente des gravures réalisées par incision ou par polissage fin de la roche, très élaborées. Elles remontent à la fin du Néolithique (6 000 ans av. J.-C.). Les images représentent la faune de l'époque, où cette zone aride était une savane : éléphants, rhinocéros, antilopes, mais aussi girafes, échassiers et poissons. Un centre d'interprétation de l'art lithique a été construit sur le site pour aider les visiteurs à découvrir cet art ancien."
+    },
+    "ksar-amzrou": {
+      "title": "Ksar Amzrou",
+      "body": "À 3 km au sud-est de Zagora se trouve le ksar Amzrou. Bien préservé, ce village fortifié du XVIIIe siècle est toujours habité. Outre les maisons, il compte deux entrées, au nord et au sud, une mosquée et une synagogue, ainsi qu'un complexe artisanal. Outre la bijouterie, la rénovation et l'embellissement des anciennes portes figurent parmi les activités les plus florissantes."
+    },
+    "museum": {
+      "title": "Musée des arts et traditions du Draa",
+      "body": "C'est le ksar de Tissergate, un édifice du XIIIe siècle, qui abrite le musée des arts et traditions. Situé à 7 km du centre de Zagora, ce ksar entouré d'une belle muraille est toujours habité par des familles. Il est constitué d'anciennes kasbahs aux ruelles étroites et fraîches, voûtées ou couvertes, parfois même souterraines. Le musée des arts et traditions du Draa qu'il abrite présente des objets du quotidien des Berbères de la vallée ainsi que leurs coutumes et traditions. À l'étage supérieur, une terrasse offre aux visiteurs une vue panoramique."
+    },
+    "chegaga": {
+      "title": "Les dunes de Chegaga",
+      "body": "Situé à environ 50 km du village de M'hamid El Ghizlane, près de la frontière algérienne, l'Erg Chegaga, qui forme l'ensemble des dunes de sable, avec 40 km de long et 15 km de large, est le plus grand erg du Sahara. Certaines dunes peuvent atteindre 300 m de haut. Peu fréquenté en raison de son accès relativement difficile, l'Erg Chegaga offre une magnifique expérience du désert sauvage."
+    },
+    "jbel-zagora": {
+      "title": "Jbel Zagora",
+      "body": "Grâce à son beau panorama, le Jbel Zagora, ou Tazagourte, mérite une halte. Cette montagne de 1 030 m d'altitude offre de magnifiques vues sur la ville et sur la palmeraie du Drâa parsemée de ksour."
+    },
+    "waterfalls": {
+      "title": "Les cascades de Tizghi et d'Akhbach",
+      "body": "En amont de la vallée du Draa, l'oued du même nom traverse les montagnes du Saghro et forme les belles cascades de Tizgui et d'Akhbach. Par leur fraîcheur, ces cascades offrent aux randonneurs une agréable halte qui contraste avec les paysages arides alentour."
+    },
+    "nkob": {
+      "title": "Le village de Nkob",
+      "body": "Situé sur la route reliant la vallée du Draa à celle du Ziz, le village des « 45 kasbahs » était autrefois une halte pour les nomades de la tribu des Aït Atta. Les kasbahs de Nkob ont été restaurées et entretenues, et certaines ont été transformées en maisons d'hôtes, ce qui donne un charme indéniable à ce village paisible. L'oasis de palmiers dattiers et d'arbres fruitiers offre un autre panorama agréable. Nkob est aussi un point de départ ou d'arrivée pour des randonnées dans le Jbel Saghro et les canyons du Jbel Amoum."
+    },
+    "draa-valley": {
+      "title": "La vallée du Drâa",
+      "body": "Considérée comme l'une des plus belles régions du Maroc, la vaste région du Drâa, qui longe le célèbre fleuve sur 220 km, se trouve dans la province de Zagora. Cette vallée s'étend d'Agdz au village de M'hamid El Ghizlane, porte du désert. Elle compte six oasis qui produisent diverses variétés de dattes. Les oasis et les palmeraies s'étirent comme un chapelet d'arbres le long de la rivière. Sous les palmiers poussent des arbres fruitiers et d'autres cultures plus basses, dans des parcelles entourées de petits murets et traversées de canaux d'irrigation. À 19 km de Zagora, sur la route de M'hamid, se trouve le village de Tamegroute. L'oasis d'Ouled Driss, près de M'hamid, est un vaste labyrinthe de plantes et de verdure propice à la randonnée. Vous pourrez y découvrir son ksar en pisé et ses maisons, ainsi qu'un petit musée, sur la place centrale du village, consacré à la culture berbère."
+    },
+    "customs-lead": "Riche d'un patrimoine culinaire, de chants, de danses et de coutumes qui font partie du mode de vie ancestral de ses habitants, la vallée du Draa a tant de choses à nous apprendre.",
+    "henna": {
+      "title": "Le henné",
+      "body": "Produit dans la vallée du Draa, le henné est extrait de feuilles séchées et pulvérisées. Connu pour ses vertus cosmétiques comme colorant pour le corps et les cheveux, le henné est aussi apprécié pour ses vertus médicinales. C'est un antiseptique, un cicatrisant et un antipelliculaire efficace. Les femmes orientales l'utilisent depuis la nuit des temps lors des rituels de mariage, de naissance, de baptême et de circoncision, contre le mauvais œil."
+    },
+    "songs": {
+      "title": "Chants et danses de Zagora",
+      "body": "Les tribus de la vallée du Draa ont préservé leurs expressions artistiques issues de leur passé pluriel. Espoirs et ambitions, peines et joies sont exprimés par les habitants à travers chants et danses. On compte 24 types de chants et de danses dans la province de Zagora. Cet art populaire riche et varié est célébré lors des fêtes : mariages, baptêmes..."
+    },
+    "souk": {
+      "title": "Le souk hebdomadaire (marché) d'Agdz",
+      "body": "Grand rassemblement hebdomadaire des habitants du village, lieu d'information et d'échange, le souk d'Agdz se tient le jeudi matin à la sortie du village, sur la route de Zagora. Il offre une variété de couleurs et de saveurs enracinées dans les coutumes locales."
+    },
+    "jewelry": {
+      "title": "Les bijoux de Zagora",
+      "body": "Héritage ancestral des communautés juives amazighes, les bijoux berbères, sous forme de parures en argent ou en bronze à motifs géométriques et floraux, sont très appréciés des visiteurs."
+    },
+    "pottery": {
+      "title": "La poterie de la vallée du Draa",
+      "body": "Fabriquée selon des techniques ancestrales, la poterie du sud se présente sous deux formes : à l'émail vert ou blanche. Riche et variée par sa technique et son décor, elle propose des objets d'usage quotidien tels que pots, plats, vases et objets de décoration d'intérieur..."
+    },
+    "dress": {
+      "title": "Le costume traditionnel des hommes et des femmes du Drâa",
+      "body": "Le costume traditionnel officiel des hommes de la vallée du Drâa se compose d'une darrâa, d'une gandoura et d'une coiffe, le feroual, en forme de ruban de tissu fin. En hiver, les hommes portent le burnous, une épaisse étoffe de laine soigneusement tissée, à capuche. La femme se couvre d'un izar (pièce de tissu) ou d'une malhfa noire ou blanche. Ce long tissu est maintenu à hauteur de poitrine par deux grandes fibules en argent et ceint à la taille."
+    },
+    "gastro-draa-title": "Les plats gastronomiques du Drâa",
+    "tajine": {
+      "title": "Tajine de dromadaire aux dattes",
+      "body": "Ce plat de fête originaire de Zagora se trouve dans les zones désertiques plus en été qu'en hiver, en raison d'une demande plus forte et d'abattages plus fréquents. Un dromadaire mâle peut donner jusqu'à 200 kg de viande, préparée au moment de l'abattage, car elle ne peut pas être conservée au congélateur."
+    },
+    "pigeons": {
+      "title": "Pigeons farcis",
+      "body": "C'est l'un des plats les plus demandés par les visiteurs de la région Drâa-Tafilalet, en particulier à Zagora, province d'origine de ce plat raffiné. Ces pigeons farcis de viande ou de légumes et de vermicelles demandent un temps de préparation assez long : il faut 4 heures de préparation avant de déguster ce plat raffiné réservé aux grandes occasions. Les pigeons sont généralement élevés de façon traditionnelle par les habitants."
+    },
+    "aghroum": {
+      "title": "Aghroum Ntoudount, ou pain à la graisse de chameau ou de rognon de bœuf",
+      "body": "Ce pain est recouvert d'un mélange de graisse de chameau (le camélidé le plus courant de la région) ou de graisse de rognon de bœuf. D'autres ingrédients, comme les poivrons, les oignons et les épices, y sont ajoutés, et il se mange le matin au petit-déjeuner."
+    },
+    "gastro-desert-title": "À la découverte de la gastronomie du désert de M'hamid El Ghizlane",
+    "sand-bread": {
+      "title": "Pain de sable",
+      "body": "Le pain de sable est pétri à la main puis cuit dans du sable chauffé à 50° par des pierres chaudes ou des palmes enflammées."
+    },
+    "dhen": {
+      "title": "Dhen",
+      "body": "Cette pâte à tartiner pour le pain est préparée avec du beurre de chèvre, du sel, des oignons et du romarin. Elle peut se conserver longtemps."
+    },
+    "date-syrup": {
+      "title": "Sirop de dattes",
+      "body": "Appelé Eroub par les nomades, il est fabriqué à partir de dattes cuites longuement dans un récipient avec de l'eau jusqu'à l'obtention d'un sirop. Il est ensuite filtré pour retirer les derniers grumeaux. À l'origine, ce produit est une pure création nomade devenue célèbre après sa reprise par les coopératives de la région. Le sirop de dattes se consomme avec du pain."
+    },
+    "bouleghman": {
+      "title": "Bouleghman",
+      "body": "Cette collation est faite de blé ou d'orge grillé dans une grande poêle avec du sable. Ce blé est ensuite débarrassé de son sable et moulu. Pour le transformer en Boulghman, ce blé moulu est dilué dans de l'eau chaude et du Dhen (pâte à tartiner) ou de l'huile d'olive. Cet aliment très nourrissant est consommé par les nomades le matin ou le soir et emporté dans leurs sacs de voyage."
+    },
+    "camel-milk": {
+      "title": "Lait de chamelle",
+      "body": "Ce lait a une caractéristique étonnante. Outre ses bienfaits et ses vertus nourrissantes (reconnu comme un superaliment riche en protéines, en vitamine C, en fer... par la FAO), il est doux et parfaitement adapté aux asthmatiques lorsque la chamelle a un an. En revanche, il devient salé et idéal pour les diabétiques dès que la chamelle a plus de 2 ans. On peut l'obtenir directement auprès des éleveurs de chameaux des tribus nomades."
+    },
+    "klila": {
+      "title": "Klila",
+      "body": "Ce plat nomade est préparé à partir du surplus de lait de chamelle. Après ébullition, le lait est égoutté et le reste est recueilli. Une fois refroidis, les nomades mélangent les morceaux restants avec des dattes dures écrasées. Cette préparation s'appelle Klila."
+    },
+    "zennaba": {
+      "title": "Zennaba",
+      "body": "Ce plat de viande est préparé après le rituel d'abattage du mouton ou de la chèvre. Les nomades récupèrent les abats, qui sont nettoyés et farcis de viande. Le tout est enterré dans des braises et du sable chauds et cuit avec un morceau d'os cassé placé dans l'ouverture des abats. Seul l'os dépasse de ce tas de braises, laissant la viande cuire à la vapeur pendant environ 2 heures."
+    },
+    "hiking-title": "Randonnée dans le désert de M'hamid El Ghizlane",
+    "lbour": {
+      "title": "Visite des dunes de Lbour",
+      "body": "Depuis le village de M'hamid El Ghizlane, la traversée de la hamada du Drâa, un sol aride et argileux, se fait en une demi-journée jusqu'aux tamaris et aux acacias. Pour les plus expérimentés, la randonnée peut se prolonger l'après-midi en traversant un terrain assez caillouteux jusqu'aux dunes de Lbour. Un bivouac dans les dunes permet de se reposer et d'admirer le ciel étoilé de M'hamid El Ghizlane."
+    },
+    "nebkit": {
+      "title": "Traversée du désert de Nebkit Sidi Taieb",
+      "body": "Depuis les dunes de Lbour, la traversée du désert de Nebkit Sidi Taieb se fait en une journée pour rejoindre l'Erg Essmar, où se trouvent les vestiges d'un ancien village nomade et un puits."
+    },
+    "zahar": {
+      "title": "Les grandes dunes de Zahar",
+      "body": "La traversée de la vallée permet d'atteindre les grandes dunes de Zahar. De loin, on aperçoit la frontière algérienne. L'après-midi permet aux randonneurs de profiter des diverses activités dans les dunes ou simplement d'un moment de contemplation ou de méditation."
+    },
+    "sidi-naji": {
+      "title": "Visite du marabout de Sidi Naji",
+      "body": "Depuis les dunes de Zahar, la traversée du reg de Bousnina est accessible en randonnée. Dans l'après-midi, arrivée à Sidi Naji, où se trouve le tombeau d'un ancien marabout, devenu un haut lieu de pèlerinage pour les nomades."
+    },
+    "info-lead": "Pour améliorer le séjour des voyageurs, voici quelques informations utiles sur les équipements et les infrastructures de la province.",
+    "climat": {
+      "title": "Climat",
+      "body": "La province connaît un climat désertique chaud et aride, avec des étés longs et chauds et des hivers courts et agréablement doux. Les meilleures périodes pour visiter la province vont de mai à juin et de septembre à novembre."
+    },
+    "time": {
+      "title": "Heure locale",
+      "body": "Le Maroc est sur un seul fuseau horaire, GMT + 1. Pendant le mois de Ramadan, le Maroc passe à GMT. La région Drâa-Tafilalet ne fait pas exception à la règle."
+    },
+    "languages": {
+      "title": "Langues parlées",
+      "body": "La population parle berbère et arabe. La signalisation est en français et en arabe, parfois en tifinagh. Les guides, le personnel des hôtels et des maisons d'hôtes parlent français, anglais et d'autres langues, compte tenu de la vocation touristique de la province."
+    },
+    "hotels": {
+      "title": "Hôtels",
+      "body": "La province de Zagora propose des hôtels, des kasbahs et des riads, mais aussi des bivouacs. En général, l'hébergement et la restauration dans la province restent abordables et adaptés à tous les budgets."
+    },
+    "air": {
+      "title": "Transport aérien",
+      "body": "Zagora dispose d'un aéroport relié à Casablanca par un vol régulier."
+    },
+    "shuttle": {
+      "title": "Navette aéroport – centre-ville",
+      "body": "À la sortie de l'aéroport, il est facile de trouver différents moyens de transport, qu'il s'agisse de taxis ou de transport touristique terrestre."
+    },
+    "land": {
+      "title": "Transport terrestre",
+      "body": "La province dispose d'un réseau de transporteurs touristiques terrestres proposant plusieurs options, des 4x4 tout-terrain aux autocars de 60 places. La CTM (Compagnie de Transport au Maroc) propose des lignes reliant les villes. Le confort est assuré et la vitesse contrôlée."
+    },
+    "agencies": {
+      "title": "Agences de voyages",
+      "body": "Pour les visiteurs en quête de voyages adaptés, les agences de voyages ne manquent pas. Plusieurs programmes sont proposés, et des voyages sur mesure peuvent également être organisés. L'agent de voyages s'occupe de tous les détails : conseils, accueil et accompagnement, réservations, déplacements et transferts..."
+    },
+    "emergencies": {
+      "title": "Urgences",
+      "numbers": [
+        {
+          "label": "Police",
+          "tel": "19"
+        },
+        {
+          "label": "Pompiers",
+          "tel": "15"
+        },
+        {
+          "label": "Assistance routière",
+          "tel": "177"
+        },
+        {
+          "label": "Renseignements téléphoniques",
+          "tel": "160"
+        }
+      ]
+    }
+  },
+  "credit": {
+    "title": "À propos de ce guide",
+    "text": "Le contenu de ce guide est tiré du guide touristique officiel de la province de Zagora, publié par Visit Drâa Tafilalet, et est reproduit ici avec l'autorisation de son éditeur. Conception : Lover of Sahara.",
+    "partners": [
+      "Région Drâa-Tafilalet",
+      "Conseil Régional du Tourisme de Drâa-Tafilalet",
+      "Office National Marocain du Tourisme (ONMT)"
+    ],
+    "website": "www.visitdraatafilalet.com",
+    "email": "info@visitdraatafilalet.com"
+  },
+  "cover": {
+    "line": "La province de",
+    "dim": "Zagora."
+  },
+  "pages": [
+    {
+      "type": "cover",
+      "image": "photos/hero-circuit.jpg",
+      "pos": "50% 62%"
+    },
+    {
+      "type": "contents",
+      "image": "zagora/dunes.jpg",
+      "pos": "50% 55%"
+    },
+    {
+      "type": "intro",
+      "startsSection": 1,
+      "band": {
+        "image": "photos/hero-trekking.jpg",
+        "pos": "50% 62%",
+        "h": 84
+      },
+      "eyebrow": "01  ·  Présentation des atouts touristiques de la province de Zagora",
+      "title": [
+        "Zagora.",
+        "Vallées vertes, désert et Zaouïas."
+      ],
+      "lead": "zagora.lead",
+      "columns": [
+        [
+          {
+            "para": "zagora"
+          }
+        ],
+        [
+          {
+            "item": "tamegroute-zaouia",
+            "img": "zagora/tamegroute-town.jpg",
+            "first": true
+          }
+        ]
+      ]
+    },
+    {
+      "type": "opener-band",
+      "startsSection": 2,
+      "band": {
+        "image": "photos/10004.jpg",
+        "pos": "50% 50%",
+        "h": 170
+      },
+      "num": "02",
+      "title": [
+        "Les incontournables de",
+        "Zagora."
+      ],
+      "lead": "mustvisits-lead",
+      "blocks": [
+        {
+          "item": "mhamid",
+          "first": true,
+          "wide": true
+        }
+      ]
+    },
+    {
+      "type": "items",
+      "eyebrow": "02  ·  Les incontournables de la province de Zagora",
+      "columns": [
+        [
+          {
+            "item": "tamegroute-village"
+          },
+          {
+            "item": "zaouia-naciria"
+          },
+          {
+            "item": "foum-chenna"
+          }
+        ],
+        [
+          {
+            "item": "ait-waaziq",
+            "img": "zagora/engraving-tazarine.jpg"
+          },
+          {
+            "item": "ksar-amzrou",
+            "img": "zagora/ksar-amzrou.jpg"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "items",
+      "eyebrow": "02  ·  Les incontournables de la province de Zagora",
+      "columns": [
+        [
+          {
+            "item": "museum",
+            "img": "zagora/museum-draa.jpg"
+          },
+          {
+            "item": "chegaga",
+            "img": "zagora/dunes.jpg",
+            "imgPos": "50% 60%"
+          }
+        ],
+        [
+          {
+            "item": "jbel-zagora"
+          },
+          {
+            "item": "waterfalls"
+          },
+          {
+            "item": "nkob"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "text-band",
+      "eyebrow": "02  ·  Les incontournables de la province de Zagora",
+      "item": "draa-valley",
+      "band": {
+        "image": "photos/trip5.jpg",
+        "pos": "50% 55%",
+        "h": 185
+      }
+    },
+    {
+      "type": "opener-type",
+      "startsSection": 3,
+      "num": "03",
+      "eyebrow": "Coutumes et traditions de la province de Zagora",
+      "title": [
+        "Coutumes et traditions",
+        "de la province de Zagora."
+      ],
+      "lead": "customs-lead",
+      "columns": [
+        [
+          {
+            "item": "henna",
+            "first": true
+          }
+        ],
+        [
+          {
+            "item": "songs",
+            "img": "zagora/singers.jpg",
+            "first": true
+          }
+        ]
+      ]
+    },
+    {
+      "type": "items",
+      "eyebrow": "03  ·  Coutumes et traditions de la province de Zagora",
+      "columns": [
+        [
+          {
+            "item": "souk",
+            "img": "zagora/souk-agdz.jpg"
+          },
+          {
+            "item": "pottery",
+            "img": "zagora/pottery-hands.jpg"
+          }
+        ],
+        [
+          {
+            "item": "jewelry",
+            "img": "zagora/jewelry.jpg"
+          },
+          {
+            "item": "dress"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "opener-type",
+      "startsSection": 4,
+      "num": "04",
+      "eyebrow": "Gastronomie de la province de Zagora",
+      "title": [
+        "Gastronomie",
+        "de la province de Zagora."
+      ],
+      "sub": "gastro-draa-title",
+      "columns": [
+        [
+          {
+            "item": "tajine",
+            "first": true
+          },
+          {
+            "item": "pigeons"
+          },
+          {
+            "item": "aghroum"
+          }
+        ],
+        [
+          {
+            "fig": "zagora/tajine-dish.jpg"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "items",
+      "eyebrow": "04  ·  Gastronomie de la province de Zagora",
+      "sub": "gastro-desert-title",
+      "columns": [
+        [
+          {
+            "item": "sand-bread"
+          },
+          {
+            "item": "dhen"
+          },
+          {
+            "item": "date-syrup"
+          },
+          {
+            "item": "bouleghman"
+          }
+        ],
+        [
+          {
+            "item": "camel-milk"
+          },
+          {
+            "item": "klila"
+          },
+          {
+            "item": "zennaba"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "dark-full",
+      "startsSection": 5,
+      "image": "photos/10007.jpg",
+      "pos": "50% 40%",
+      "eyebrow": "05  ·  Randonnée dans le désert de M'hamid El Ghizlane",
+      "title": [
+        "Randonnée dans le désert de",
+        "M'hamid El Ghizlane."
+      ],
+      "stages": [
+        "lbour",
+        "nebkit",
+        "zahar",
+        "sidi-naji"
+      ]
+    },
+    {
+      "type": "info",
+      "startsSection": 6,
+      "band": {
+        "image": "zagora/musicians.jpg",
+        "pos": "50% 22%",
+        "h": 58
+      },
+      "num": "06",
+      "title": [
+        "Informations",
+        "pratiques."
+      ],
+      "lead": "info-lead",
+      "columns": [
+        [
+          {
+            "info": "climat"
+          },
+          {
+            "info": "time"
+          },
+          {
+            "info": "languages"
+          }
+        ],
+        [
+          {
+            "info": "hotels"
+          },
+          {
+            "info": "air"
+          },
+          {
+            "info": "shuttle"
+          }
+        ],
+        [
+          {
+            "info": "land"
+          },
+          {
+            "info": "agencies"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "back",
+      "image": "photos/hero-trekking.jpg",
+      "pos": "50% 60%"
+    }
+  ]
+}

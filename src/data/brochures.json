@@ -1,0 +1,434 @@
+[
+ {
+  "slug": "general-guide",
+  "group": "theme",
+  "langs": {
+   "en": {
+    "title": "The Drâa Tafilalet Region",
+    "kicker": "General guide",
+    "subtitle": "The region of oases, mountains and desert",
+    "pages": 32,
+    "mb": 7.0
+   },
+   "fr": {
+    "title": "La région Drâa-Tafilalet",
+    "kicker": "Guide général",
+    "subtitle": "La région des oasis, des montagnes et du désert",
+    "pages": 32,
+    "mb": 7.0
+   },
+   "de": {
+    "title": "Die Region Drâa-Tafilalet",
+    "kicker": "Allgemeiner Reiseführer",
+    "subtitle": "Die Region der Oasen, Berge und der Wüste",
+    "pages": 32,
+    "mb": 7.0
+   },
+   "es": {
+    "title": "La región de Drâa-Tafilalet",
+    "kicker": "Guía general",
+    "subtitle": "La región de los oasis, las montañas y el desierto",
+    "pages": 32,
+    "mb": 7.0
+   },
+   "it": {
+    "title": "La regione del Drâa-Tafilalet",
+    "kicker": "Guida generale",
+    "subtitle": "La regione delle oasi, delle montagne e del deserto",
+    "pages": 32,
+    "mb": 7.0
+   },
+   "zh": {
+    "title": "德拉-塔菲拉莱特地区",
+    "kicker": "综合指南",
+    "subtitle": "绿洲、山脉与沙漠之地",
+    "pages": 29,
+    "mb": 7.6
+   }
+  }
+ },
+ {
+  "slug": "zagora",
+  "group": "region",
+  "langs": {
+   "en": {
+    "title": "The Province of Zagora",
+    "kicker": "Touristic guide",
+    "subtitle": "Green valleys, desert and Zaouïas",
+    "pages": 14,
+    "mb": 3.2
+   },
+   "fr": {
+    "title": "La province de Zagora",
+    "kicker": "Guide touristique",
+    "subtitle": "Vallées vertes, désert et Zaouïas",
+    "pages": 14,
+    "mb": 3.2
+   },
+   "de": {
+    "title": "Die Provinz Zagora",
+    "kicker": "Reiseführer",
+    "subtitle": "Grüne Täler, Wüste und Zawiyas",
+    "pages": 14,
+    "mb": 3.2
+   },
+   "es": {
+    "title": "La provincia de Zagora",
+    "kicker": "Guía turística",
+    "subtitle": "Valles verdes, desierto y zauías",
+    "pages": 14,
+    "mb": 3.2
+   },
+   "it": {
+    "title": "La provincia di Zagora",
+    "kicker": "Guida turistica",
+    "subtitle": "Valli verdi, deserto e zawiya",
+    "pages": 14,
+    "mb": 3.2
+   },
+   "zh": {
+    "title": "扎戈拉省",
+    "kicker": "旅游指南",
+    "subtitle": "绿色山谷、沙漠与扎维亚",
+    "pages": 14,
+    "mb": 3.6
+   }
+  }
+ },
+ {
+  "slug": "tinghir",
+  "group": "region",
+  "langs": {
+   "en": {
+    "title": "The Province of Tinghir",
+    "kicker": "Touristic guide",
+    "subtitle": "Valleys, gorges and kasbahs",
+    "pages": 13,
+    "mb": 3.0
+   },
+   "fr": {
+    "title": "La province de Tinghir",
+    "kicker": "Guide touristique",
+    "subtitle": "Vallées, gorges et kasbahs",
+    "pages": 13,
+    "mb": 3.0
+   },
+   "de": {
+    "title": "Die Provinz Tinghir",
+    "kicker": "Reiseführer",
+    "subtitle": "Täler, Schluchten und Kasbahs",
+    "pages": 13,
+    "mb": 3.0
+   },
+   "es": {
+    "title": "La provincia de Tinghir",
+    "kicker": "Guía turística",
+    "subtitle": "Valles, gargantas y kasbahs",
+    "pages": 13,
+    "mb": 3.0
+   },
+   "it": {
+    "title": "La provincia di Tinghir",
+    "kicker": "Guida turistica",
+    "subtitle": "Valli, gole e kasbah",
+    "pages": 13,
+    "mb": 3.0
+   },
+   "zh": {
+    "title": "廷吉尔省",
+    "kicker": "旅游指南",
+    "subtitle": "山谷、峡谷与卡斯巴",
+    "pages": 12,
+    "mb": 3.3
+   }
+  }
+ },
+ {
+  "slug": "errachidia",
+  "group": "region",
+  "langs": {
+   "en": {
+    "title": "The Province of Errachidia",
+    "kicker": "Touristic guide",
+    "subtitle": "Oases, ksours and valleys",
+    "pages": 13,
+    "mb": 4.8
+   },
+   "fr": {
+    "title": "La province d'Errachidia",
+    "kicker": "Guide touristique",
+    "subtitle": "Oasis, ksour et vallées",
+    "pages": 13,
+    "mb": 4.8
+   },
+   "de": {
+    "title": "Die Provinz Errachidia",
+    "kicker": "Reiseführer",
+    "subtitle": "Oasen, Ksour und Täler",
+    "pages": 13,
+    "mb": 4.8
+   },
+   "es": {
+    "title": "La provincia de Errachidia",
+    "kicker": "Guía turística",
+    "subtitle": "Oasis, ksour y valles",
+    "pages": 13,
+    "mb": 4.8
+   },
+   "it": {
+    "title": "La provincia di Errachidia",
+    "kicker": "Guida turistica",
+    "subtitle": "Oasi, ksour e valli",
+    "pages": 13,
+    "mb": 4.8
+   },
+   "zh": {
+    "title": "埃尔拉希迪亚省",
+    "kicker": "旅游指南",
+    "subtitle": "绿洲、土堡与山谷",
+    "pages": 12,
+    "mb": 5.2
+   }
+  }
+ },
+ {
+  "slug": "ouarzazate",
+  "group": "region",
+  "langs": {
+   "en": {
+    "title": "The Province of Ouarzazate",
+    "kicker": "Touristic guide",
+    "subtitle": "The gateway to oases and verdant valleys",
+    "pages": 12,
+    "mb": 5.7
+   },
+   "fr": {
+    "title": "La province d'Ouarzazate",
+    "kicker": "Guide touristique",
+    "subtitle": "La porte des oasis et des vallées verdoyantes",
+    "pages": 12,
+    "mb": 5.7
+   },
+   "de": {
+    "title": "Die Provinz Ouarzazate",
+    "kicker": "Reiseführer",
+    "subtitle": "Das Tor zu Oasen und grünen Tälern",
+    "pages": 12,
+    "mb": 5.7
+   },
+   "es": {
+    "title": "La provincia de Ouarzazate",
+    "kicker": "Guía turística",
+    "subtitle": "La puerta de los oasis y los valles verdes",
+    "pages": 12,
+    "mb": 5.7
+   },
+   "it": {
+    "title": "La provincia di Ouarzazate",
+    "kicker": "Guida turistica",
+    "subtitle": "La porta delle oasi e delle valli verdeggianti",
+    "pages": 12,
+    "mb": 5.7
+   },
+   "zh": {
+    "title": "瓦尔扎扎特省",
+    "kicker": "旅游指南",
+    "subtitle": "通往绿洲与翠绿山谷的门户",
+    "pages": 12,
+    "mb": 6.1
+   }
+  }
+ },
+ {
+  "slug": "midelt",
+  "group": "region",
+  "langs": {
+   "en": {
+    "title": "The Province of Midelt",
+    "kicker": "Touristic guide",
+    "subtitle": "Breathtaking mountain and valley landscapes",
+    "pages": 12,
+    "mb": 5.3
+   },
+   "fr": {
+    "title": "La province de Midelt",
+    "kicker": "Guide touristique",
+    "subtitle": "Des paysages de montagnes et de vallées à couper le souffle",
+    "pages": 12,
+    "mb": 5.4
+   },
+   "de": {
+    "title": "Die Provinz Midelt",
+    "kicker": "Reiseführer",
+    "subtitle": "Atemberaubende Berg- und Tallandschaften",
+    "pages": 12,
+    "mb": 5.4
+   },
+   "es": {
+    "title": "La provincia de Midelt",
+    "kicker": "Guía turística",
+    "subtitle": "Impresionantes paisajes de montaña y valle",
+    "pages": 12,
+    "mb": 5.4
+   },
+   "it": {
+    "title": "La provincia di Midelt",
+    "kicker": "Guida turistica",
+    "subtitle": "Paesaggi di montagna e di valle mozzafiato",
+    "pages": 12,
+    "mb": 5.4
+   },
+   "zh": {
+    "title": "米德勒特省",
+    "kicker": "旅游指南",
+    "subtitle": "令人惊叹的山地与山谷风光",
+    "pages": 12,
+    "mb": 5.7
+   }
+  }
+ },
+ {
+  "slug": "natural-guide",
+  "group": "theme",
+  "langs": {
+   "en": {
+    "title": "The Nature Guide",
+    "kicker": "Nature guide",
+    "subtitle": "Palm groves, valleys and deserts of the Drâa Tafilalet region",
+    "pages": 11,
+    "mb": 5.1
+   },
+   "fr": {
+    "title": "Le guide de la nature",
+    "kicker": "Guide nature",
+    "subtitle": "Palmeraies, vallées et déserts de la région Drâa-Tafilalet",
+    "pages": 11,
+    "mb": 5.1
+   },
+   "de": {
+    "title": "Der Naturführer",
+    "kicker": "Naturführer",
+    "subtitle": "Palmenhaine, Täler und Wüsten der Region Drâa-Tafilalet",
+    "pages": 11,
+    "mb": 5.1
+   },
+   "es": {
+    "title": "La guía de la naturaleza",
+    "kicker": "Guía de naturaleza",
+    "subtitle": "Palmerales, valles y desiertos de la región de Drâa-Tafilalet",
+    "pages": 11,
+    "mb": 5.1
+   },
+   "it": {
+    "title": "La guida alla natura",
+    "kicker": "Guida alla natura",
+    "subtitle": "Palmeti, valli e deserti della regione del Drâa-Tafilalet",
+    "pages": 11,
+    "mb": 5.1
+   },
+   "zh": {
+    "title": "自然指南",
+    "kicker": "自然指南",
+    "subtitle": "德拉-塔菲拉莱特地区的棕榈林、山谷与沙漠",
+    "pages": 11,
+    "mb": 5.4
+   }
+  }
+ },
+ {
+  "slug": "local-gastronomy",
+  "group": "theme",
+  "langs": {
+   "en": {
+    "title": "Local Gastronomy",
+    "kicker": "Gastronomic guide",
+    "subtitle": "The 10 best meals of the Drâa Tafilalet region",
+    "pages": 11,
+    "mb": 4.9
+   },
+   "fr": {
+    "title": "Gastronomie locale",
+    "kicker": "Guide gastronomique",
+    "subtitle": "Les 10 meilleurs plats de la région Drâa-Tafilalet",
+    "pages": 11,
+    "mb": 4.9
+   },
+   "de": {
+    "title": "Lokale Gastronomie",
+    "kicker": "Gastronomischer Reiseführer",
+    "subtitle": "Die 10 besten Gerichte der Region Drâa-Tafilalet",
+    "pages": 11,
+    "mb": 4.9
+   },
+   "es": {
+    "title": "Gastronomía local",
+    "kicker": "Guía gastronómica",
+    "subtitle": "Los 10 mejores platos de la región de Drâa-Tafilalet",
+    "pages": 11,
+    "mb": 4.9
+   },
+   "it": {
+    "title": "Gastronomia locale",
+    "kicker": "Guida gastronomica",
+    "subtitle": "I 10 migliori piatti della regione del Drâa-Tafilalet",
+    "pages": 11,
+    "mb": 4.9
+   },
+   "zh": {
+    "title": "本地美食",
+    "kicker": "美食指南",
+    "subtitle": "德拉-塔菲拉莱特地区的 10 大美味",
+    "pages": 11,
+    "mb": 5.3
+   }
+  }
+ },
+ {
+  "slug": "erg-chegaga",
+  "group": "theme",
+  "langs": {
+   "en": {
+    "title": "Erg Chegaga",
+    "kicker": "Desert guide",
+    "subtitle": "The wild Sahara, off the beaten track",
+    "pages": 17,
+    "mb": 2.7
+   },
+   "fr": {
+    "title": "Erg Chegaga",
+    "kicker": "Guide du désert",
+    "subtitle": "Le Sahara sauvage, loin des sentiers battus",
+    "pages": 17,
+    "mb": 2.7
+   },
+   "de": {
+    "title": "Erg Chegaga",
+    "kicker": "Wüstenführer",
+    "subtitle": "Die wilde Sahara abseits der ausgetretenen Pfade",
+    "pages": 17,
+    "mb": 2.7
+   },
+   "es": {
+    "title": "Erg Chegaga",
+    "kicker": "Guía del desierto",
+    "subtitle": "El Sáhara salvaje, lejos de los caminos trillados",
+    "pages": 17,
+    "mb": 2.7
+   },
+   "it": {
+    "title": "Erg Chegaga",
+    "kicker": "Guida al deserto",
+    "subtitle": "Il Sahara selvaggio, lontano dai sentieri battuti",
+    "pages": 17,
+    "mb": 2.7
+   },
+   "zh": {
+    "title": "Erg Chegaga",
+    "kicker": "沙漠指南",
+    "subtitle": "狂野撒哈拉，远离人迹",
+    "pages": 17,
+    "mb": 3.1
+   }
+  }
+ }
+]

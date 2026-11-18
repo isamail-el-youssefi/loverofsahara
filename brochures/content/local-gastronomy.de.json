@@ -1,0 +1,336 @@
+{
+  "lang": "de",
+  "slug": "local-gastronomy",
+  "title": "Lokale Gastronomie",
+  "kicker": "Gastronomischer Reiseführer",
+  "subtitle": "Die 10 besten Gerichte der Region Drâa-Tafilalet",
+  "creditSubject": "der lokalen Gastronomie der Region Drâa-Tafilalet",
+  "cover": {
+    "line": "Lokale",
+    "dim": "Gastronomie."
+  },
+  "contentsTitle": "Inhalt",
+  "contents": [
+    {
+      "n": "01",
+      "title": "Lokale Gastronomie"
+    },
+    {
+      "n": "02",
+      "title": "Geschichte des Teerituals der Nomaden"
+    },
+    {
+      "n": "03",
+      "title": "Gastronomische Tour durch Drâa-Tafilalet: Die 10 besten Gerichte zum Genießen"
+    }
+  ],
+  "items": {
+    "terroir": {
+      "title": "Terroir der lokalen Gastronomie",
+      "body": "Das Land von Drâa-Tafilalet hat die Kochkunst dieser weiten Region geprägt. Die geringen Niederschläge haben die Entwicklung zahlreicher Kulturen nicht verhindert, von Datteln über Obstbäume bis hin zu Getreide wie Mais und Gerste und Pflanzen wie der weit verbreiteten Luzerne ... Die Khettaras (diese geniale Bewässerungstechnik) haben es jahrhundertelang ermöglicht, Wasser zu den Kulturen zu bringen.\n\nDie Gastronomie von Drâa-Tafilalet beruht auf den landwirtschaftlichen Erzeugnissen dieser weiten, dünn besiedelten Region (1,6 Millionen Einwohner auf einer Fläche von 88.836 km²). Datteln bleiben das Hauptprodukt der Region und verleihen verschiedenen Gerichten der lokalen Gastronomie eine „Note“. Die üppigen Palmenhaine im Tafilalet am Rand des Ziz-Tals haben den Majhoul hervorgebracht, diese prestigeträchtige Dattelsorte, den Vorfahren der in Kalifornien (USA) angebauten, die weltberühmt geworden ist. Der Ghris-Palmenhain in Goulmima über 14 km, vom gleichnamigen Fluss bewässert, und der von Tinghir, vom Fluss Toudgha bewässert (über 30 km von den Toudgha-Schluchten bis Ferkla), sind ebenso schön. Die Oase Fint und der Palmenhain von Skoura mit einer Fläche von 25 km² zeigen ihrerseits den Reichtum der Dattelpalme in der Region. Im Draa-Tal erstrecken sich die Palmenhaine von Agdz bis M'Hamid El Ghizlane über eine Fläche von 220 km Länge und 18 km Breite. Diese Region hat sechs Oasen: Mezguita, Tarnata, Fazwata, Ktawa und M'hamid."
+    },
+    "dates-apple": {
+      "title": "Von den Datteln des Drâa zum Apfel von Midelt",
+      "body": "Die in der gesamten Region angebauten Dattelsorten reichen von Majhoul über Boufeggous, Bouzekri und Nejda bis zu Bousthami oder Jihel ... Unter den Dattelpalmen gibt es auch Obstbäume, die je nach Region variieren, wie Mandel-, Feigen- und Olivenbäume. Diese Bäume spenden Schatten für Nahrungspflanzen am Boden wie Weizen, Gerste, Luzerne, Mais, Rucola und bestimmte Gemüse wie lange Tomaten, Rüben, rote Paprika und Okra.\n\nGewürze wie Kreuzkümmel und Safran, die in Alnif angebaut werden, sowie das Salz aus den Minen von Ait Hani runden die Aromen der Gerichte ab. Jahrhundertelang wurden diese Kulturen dank des genialen Systems der Khettaras bewässert, das nach der Dürre und dem Weggang der Arbeiter aufgegeben wurde. In der Provinz Midelt, der am wenigsten trockenen der Region, gibt es Apfelplantagen, deren Früchte die Erzeuger in ganz Marokko verkaufen."
+    },
+    "goats-camels": {
+      "title": "Ziegen und Kamele: Schätze der Region",
+      "body": "Viehzucht ist eine Tätigkeit der Bewohner der Bergregionen, der Ebenen und sogar der trockenen und wüstenhaften Hochebenen. Nomaden und Sesshafte besitzen Herden von Ziegen, Schafen und Dromedaren.\n\nFleisch ist die Hauptzutat verschiedener Gerichte, die bei Festen und großen Zeremonien genossen werden."
+    },
+    "tea-ritual": {
+      "title": "Das uralte Teeritual der Nomaden",
+      "body": "Bei den Nomadenstämmen Ende des 19. Jahrhunderts eingeführt, wurde der Tee zu einem Kommunikationsritual, das zunächst den Stammesführern vorbehalten war und dann von den Frauen übernommen wurde, um junge Mädchen mit ihren potenziellen Verehrern in Kontakt zu bringen.\n\nNeben seiner Rolle als Nationalgetränk mit vielen belebenden und entspannenden Eigenschaften ist der Tee zu einem sehr berühmten uralten Ritual geworden. Seit seiner Ankunft in der Region Ende des 19. Jahrhunderts wurde von den Nomaden ein traditionelles Teeritual als Moment des Austauschs und der Kommunikation zwischen den Mitgliedern des Stammes entwickelt.\n\nAnfangs war der Tee den Stammesführern vorbehalten, die sich nach dem Al-Asr-Gebet (dem dritten Tagesgebet, das mitten am Nachmittag verrichtet wird) im Haus des Scheichs trafen. Das Ritual des Sahrawi-Tees erfordert natürlich eine Teekanne, ein Silbertablett und Gläser, dazu Tee, Wasser und Zucker. Aber um daraus einen geselligen Moment zu machen, ist die Anwesenheit dreier Elemente unerlässlich: eine Gruppe von Menschen, Zeit und ein Kohlebecken."
+    },
+    "tea-marriage": {
+      "title": "Ein feminisiertes Ritual zur Erleichterung von Eheschließungen",
+      "body": "In diesem Moment, der manchmal Stunden dauert, sprechen die Mitglieder des Stammes über ihre mehrtägige Reise durch die Wüste. Wer Informationen über die sichersten Routen und bevorzugten Richtungen in der weiten Sahara suchte, nahm am Teeritual im Haus des Scheichs teil.\n\nSie tauschten Informationen aus, erzählten Legenden und rezitierten Gedichte ... Auch die Frauen veranstalteten dasselbe Ritual. Das erlaubte ihnen, junge Mädchen kennenzulernen und mit den Familien der Verehrer im Stamm in Kontakt zu bringen.\n\nDamals durften Männer sich jungen Mädchen nicht nähern. Sie konnten sie nur aus der Ferne sehen, wenn diese an einem Brunnen Wasser holten, um die Ziegen- oder Kamelherden zu tränken. Das weibliche Teeritual erleichterte den Kontakt zwischen jungen Mädchen und ihren potenziellen Verehrern im Stamm."
+    },
+    "tour-lead": "Die Gastronomie von Drâa-Tafilalet beruht auf Fleischprodukten, in den Oasen angebauten landwirtschaftlichen Erzeugnissen und lokalen Kräutern. Manche kulinarischen Schätze werden zu Hause, auf Bestellung zubereitet oder sind auf den Souks (Märkten) erhältlich. Meist findet man die klassischen Tajines und Couscous mit einigen regionalen Besonderheiten.\n\nWir präsentieren Ihnen die Top 10 der besten Gerichte der Region für ein kulinarisches Abenteuer in der Region Drâa-Tafilalet.",
+    "saffron": {
+      "title": "Fleisch-Tajine mit Safran",
+      "body": "Die Fleisch-Tajine mit Safran aus Ouarzazate verbindet auf subtile Weise, wie es die marokkanische Küche so gut kann, Süßes und Salziges und ist ein kulinarisches Wunder, das mehr als ein Geheimnis birgt und das man bei der Durchreise durch die Region unbedingt entdecken muss.\n\nAuf der Glut des Kanun (Kohlebecken) köcheln, entfaltet das Fleisch des D'mane, einer typischen Oasen-Schafrasse Südostmarokkos, unter dem Einfluss einer kostbaren Gewürzmischung alle seine Aromen: Zimt, Ingwer und Honig, der durch den „Safran“ veredelt wird.\n\nDiese roten Fäden mit würzigem, warmem und leicht bitterem Geschmack werden nach einer mühsamen Ernte im Tal von Ouarzazate gewonnen, mit 3 roten Narben pro Blüte. Es braucht nicht weniger als 50.000 Blüten, um 1 kg frische Narben zu ernten, und fast 5 kg Narben, um 1 kg getrockneten, gebrauchsfertigen Safran zu erhalten – daher der hohe Preis des Safrans.\n\nDiese Tajine wird auf Anfrage in den Unterkünften und Restaurants serviert."
+    },
+    "baddaz": {
+      "title": "Baddaz",
+      "body": "Vom Rhythmus der Sonne bestimmt, die die Zutaten reifen lässt, ist Baddaz, der Berber-Couscous, eine Variante des marokkanischen Couscous mit tausend Wendungen, die sich sowohl durch ihre Zutaten als auch durch ihre einzigartige Zubereitung auszeichnet.\n\nSeine Basis aus Maisgrieß (Asengar) wird sorgfältig von Hand gerollt und dann dreimal im Couscoussier gedämpft, bevor er mit „Smen“ (ranziger Butter) aromatisiert wird.\n\nDieses typische Gericht aus Ouarzazate lässt sich nicht ohne die Streifen aus gesalzenem, in der Sonne getrocknetem Hammelfleisch, das „Guedid“, und/oder die „Kordas“ genießen, jene Stücke aus Hammelbauch, gefüllt mit Streifen von Herz, Leber und Lunge, gedämpft und dann in der Sonne getrocknet ... zwei Bestandteile mit ausgeprägtem Geschmack, die die zurückhaltenden Aromen des Maismehls beleben.\n\nDie Luzerne und die in der Sonne getrockneten Rüben sind das Tüpfelchen auf dem i dieses Gerichts."
+    },
+    "medfouna": {
+      "title": "Medfouna",
+      "body": "Im Südosten Marokkos gibt es ein Gericht, das für sich eine Institution ist: die berühmte Medfouna. Das marokkanische Pendant zur italienischen Calzone.\n\nEin Wahrzeichengericht des Tals von Rissani, dieser alten Hauptstadt des Tafilalet, die in der Vergangenheit die Hochburg der Alawiden-Dynastie war. Die Stadt, einst ein bedeutendes Karawanenzentrum des Transsahara-Handels, beherbergt das Grab von Moulay Ali Cherif.\n\nDie Medfouna, ein Brot, gefüllt mit kleinen Fleischwürfeln, hartgekochten Eiern, Mandeln, Zwiebeln und Gewürzen (Salz, Kreuzkümmel, Ingwer und manchmal Chili), das in Restaurants oder auf Bestellung auf den Märkten serviert wird, ist ein Muss für alle Besucher der Region. Besucher, die es wünschen, können das Fleisch, mit dem der Fladen gefüllt wird, selbst beim Metzger kaufen, bevor sie es dem Koch übergeben, der das Gericht formt ... eine Qualitätsgarantie, vor allem aber eine Möglichkeit, die Besucher in die Zubereitung dieses Gerichts einzubeziehen."
+    },
+    "okra": {
+      "title": "Okra-Tajine",
+      "body": "Die Tajine mit „Mloukhia“ / Okra ist der ultimative Beweis für das Genie der marokkanischen Küche. Dieses exotische Gemüse, das in Nordafrika und im Nahen Osten weit verbreitet ist, hat feine, wenig ausgeprägte Aromen, ähnlich wie Aubergine, und entfaltet seine ganze Saftigkeit am Gaumen dank der klugen Gewürzmischung der Tajine, kombiniert mit der saftigen Sauce, die die begleitenden Tomaten und Zwiebeln abgeben. Seine große Eigenschaft, die zähflüssige und gelatineartige Textur des Gemüses, verbindet sich perfekt mit dem Fleisch von Lamm oder Rind.\n\nUm sie richtig zu würdigen, genießt man die Mloukhia-Tajine idealerweise mit der Hand, mit knusprigem Tafarnoute-Brot (typisch für den marokkanischen Süden), um Bissen zu formen, in denen sich Sauce, Okra und Fleisch vermischen, zum größten Vergnügen der Geschmacksknospen der feinsten Feinschmecker.\n\nDie Okra-Tajine wird in den Tajine-Restaurants von Errachidia serviert."
+    },
+    "dromedary": {
+      "title": "Dromedarfleisch-Tajine mit Datteln",
+      "body": "Für die Dromedar-Tajine werden zarte Stücke vom Dromedarschenkel bevorzugt. Kamelfleisch ist reich an Wasser und arm an Fett; neben seinem guten Geschmack senkt es wegen seines geringen Gehalts an gesättigten Fettsäuren das Risiko von Herzkrankheiten.\n\nBei der Zubereitung der Tajine wird das Fleisch auf einem Zwiebelbett geschmort, und der Geschmack wird durch einen Schuss Olivenöl extra vergine und Gewürze (Zimt, Paprika, Kreuzkümmel, Ingwer) verfeinert. Bei der Zubereitung bereichern mit Sesam bestreute und mit Honig überzogene Datteln dieses festliche Gericht aus Zagora.\n\nIn den Wüstengebieten ist es im Sommer häufiger zu finden als im Winter, da die Nachfrage höher ist und häufiger geschlachtet wird. Die Dromedar-Tajine wird auf Anfrage in den Restaurants der Provinz serviert."
+    },
+    "pigeons": {
+      "title": "Gefüllte Tauben",
+      "body": "Bei ihrem Besuch der Region Drâa-Tafilalet fragen viele Besucher nach diesem köstlichen Gericht: den „gefüllten Tauben von Zagora“. Dieses ausgewählte Gericht, obwohl es einfach zu machen scheint, erfordert lange Stunden der Zubereitung und des Garens. Mal mit Fleisch, mal mit Gemüse und Fadennudeln gefüllt, sind die gefüllten Tauben im Alltag besonderen Anlässen oder bevorzugten Gästen vorbehalten. Das für das Gericht verwendete Geflügel wird in der Regel auf traditionelle Weise bei den Einheimischen gezüchtet.\n\nDas feine und zarte, magere und sehr eisenreiche Taubenfleisch hat die Besonderheit, besonders auf der Zunge zu zergehen und den Gaumen mit einem feinen Haselnussgeschmack zu verführen. Dieses besondere Gericht schätzt ebenfalls die Verbindung von Süßem und Salzigem und wird auf Anfrage in den Restaurants der Provinz serviert."
+    },
+    "terfas": {
+      "title": "Terfas-Tajine",
+      "body": "Zoubaïdi, ezzabdi, terfess oder terfez, dieser seltene Wüstenpilz, der in einigen Teilen Marokkos wächst, vor allem im Südosten und in der Sahara, ist sehr begehrt und mit weißem Gold vergleichbar. Er wächst zwischen November und April, wird zwischen März und Mai geerntet und ist eine bevorzugte Zutat für die Zusammensetzung der Tajine Terfas von Tinghir.\n\nDieses Gericht aus Trüffeln und Rindfleisch stammt aus dem reichen marokkanisch-jüdischen kulinarischen Erbe (ein traditionelles Rezept marokkanisch-jüdischer Familien, besonders zur Feier von Pessach, einem der wichtigsten Feste der jüdischen Religion), ist in der Region sehr bekannt und der Stolz der lokalen Küche.\n\nDer Pilz ist auch für seine außergewöhnlichen kulinarischen Eigenschaften und seine medizinischen Eigenschaften bekannt, dank seines Reichtums an Antioxidantien.\n\nDie Tajine wird auf Anfrage in den Restaurants von Tinghir serviert."
+    },
+    "ifnouzen": {
+      "title": "Ifnouzen",
+      "body": "„Ifnouzen“ oder „Couscous mit Luzerne“ ist eine uralte gastronomische Amazigh-Spezialität, die von den Bewohnern der Südregionen Marokkos ebenso geschätzt wird wie von ihren Besuchern und als Wintergericht schlechthin gilt.\n\nDank seiner Bestandteile und seiner Nährwerte versorgt Ifnouzen den Körper mit Energie und Wärme, um die Kälte zu vertreiben, die im Winter in der Region herrscht.\n\nBei der Zubereitung auf Basis lokaler Produkte: Luzerne (ein gehacktes Gras, das vor dem letzten Dämpfen mit verschiedenen Gewürzen in den Couscous eingearbeitet wird), Olivenöl, Weizen, Gerste und Mais, Lauch, wird dieses Gericht von den Bewohnern der Region seit Jahrhunderten zubereitet und ist ein Lieblingsgericht, um Gäste bei ihrer Ankunft im Haus willkommen zu heißen."
+    },
+    "goat-apples": {
+      "title": "Tajine mit Ziegenfleisch und kandierten Äpfeln",
+      "body": "Als Meister der Apfelproduktion in Marokko (über 90 % der nationalen Produktion) ist Midelt zweifellos die Apfelhauptstadt schlechthin in Marokko.\n\nEntsprechend hat sich ein untypisches Gericht der Region seinen Ruf als Apfelhauptstadt erarbeitet: die Tajine mit Ziegenfleisch und kandierten Äpfeln. Ein weiteres Wunder des marokkanischen gastronomischen Registers des Süßsauren.\n\nZur Zubereitung werden gute Stücke Ziegenfleisch sorgfältig ausgewählt und dann geschickt mit Zwiebeln, Knoblauch und Koriander aromatisiert, um anschließend in der Grundversion mit einem säuerlichen grünen Apfel (der in der Region reichlich geerntet wird) kandiert abgeschmeckt zu werden. In einer anderen Version werden Pflaumen und geröstete Mandeln zur Tajine hinzugefügt, zur Freude der Gäste.\n\nDiese Tajine wird in Restaurants, Gästehäusern und bei Einheimischen zu Hause serviert."
+    },
+    "trout": {
+      "title": "Forellen-Tajine",
+      "body": "Die Provinz Midelt mit ihren Seen, Staudämmen, Wadis und großen Stauseen hat einen besonderen Reichtum an Fischen, zur Freude der Angelfreunde ... aber auch der Liebhaber von Fischgerichten, besonders von Forelle.\n\nDie Forellen-Tajine, dieses köstliche, für Midelt typische Gericht, ist daher bei den Besuchern der Region sehr gefragt. In ihrer ersten Variante wird sie in der Tonschale angeboten, in der die Atlas-Forelle auf einem Kartoffelbett angerichtet und hübsch mit Scheiben schmackhafter Paprika, saftiger Tomaten, Oliven und eingelegter Zitrone garniert wird.\n\nWer es süß-herzhaft mag, kann sich für die Version mit Zwiebeln, Rosinen und Trockenfrüchten entscheiden, die mit Honig gesüßt wird. Das zarte und schmackhafte Fleisch der lokalen Forelle fügt sich sanft in das Aromenspiel dieser Tajine und bietet den Besuchern der Region ein kulinarisches Erlebnis, das die feinsten Gaumen erfreut.\n\nDie Forellen-Tajine wird in verschiedenen Restaurants der Provinz serviert."
+    },
+    "sub-ouarzazate": "Ouarzazate"
+  },
+  "pages": [
+    {
+      "type": "cover",
+      "image": "gastro/cover-portrait.jpg",
+      "pos": "50% 50%"
+    },
+    {
+      "type": "contents",
+      "image": "gastro/tea-pour.jpg",
+      "pos": "50% 40%"
+    },
+    {
+      "type": "intro",
+      "startsSection": 1,
+      "band": {
+        "image": "gastro/hero-tajine.jpg",
+        "pos": "50% 50%",
+        "h": 56
+      },
+      "eyebrow": "01  ·  Lokale Gastronomie",
+      "title": [
+        "Terroir der",
+        "lokalen Gastronomie."
+      ],
+      "columns": [
+        [
+          {
+            "para": "terroir"
+          }
+        ],
+        [
+          {
+            "item": "dates-apple",
+            "first": true,
+            "img": "gastro/apples.jpg",
+            "imgPos": "50% 50%"
+          },
+          {
+            "item": "goats-camels"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "opener-type",
+      "startsSection": 2,
+      "num": "02",
+      "eyebrow": "Geschichte des Teerituals der Nomaden",
+      "title": [
+        "Das Teeritual",
+        "der Nomaden."
+      ],
+      "columns": [
+        [
+          {
+            "item": "tea-ritual",
+            "first": true,
+            "img": "gastro/tea-set.jpg",
+            "imgPos": "50% 50%"
+          }
+        ],
+        [
+          {
+            "item": "tea-marriage",
+            "first": true,
+            "img": "gastro/tea-pour.jpg",
+            "imgPos": "50% 40%"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "opener-type",
+      "startsSection": 3,
+      "num": "03",
+      "eyebrow": "Eine gastronomische Tour durch Drâa-Tafilalet",
+      "title": [
+        "Die 10 besten",
+        "Gerichte der Region."
+      ],
+      "lead": "tour-lead",
+      "columns": [
+        [
+          {
+            "fig": "gastro/quince-tajine.jpg"
+          }
+        ],
+        [
+          {
+            "fig": "gastro/hero-tajine.jpg"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "opener-band",
+      "band": {
+        "image": "ouarzazate/valley-aerial.jpg",
+        "pos": "50% 50%",
+        "h": 80
+      },
+      "num": "03",
+      "title": [
+        "Ouarzazate.",
+        ""
+      ],
+      "columns": [
+        [
+          {
+            "item": "saffron",
+            "first": true,
+            "img": "gastro/meat-tajine-saffron.jpg"
+          }
+        ],
+        [
+          {
+            "item": "baddaz",
+            "first": true,
+            "img": "gastro/baddaz.jpg"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "opener-band",
+      "band": {
+        "image": "errachidia/palm-sea.jpg",
+        "pos": "50% 50%",
+        "h": 80
+      },
+      "num": "03",
+      "title": [
+        "Errachidia.",
+        ""
+      ],
+      "columns": [
+        [
+          {
+            "item": "medfouna",
+            "first": true,
+            "img": "gastro/medfouna.jpg"
+          }
+        ],
+        [
+          {
+            "item": "okra",
+            "first": true,
+            "img": "gastro/tajine-okra.jpg"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "opener-band",
+      "band": {
+        "image": "general/dunes-sunset.jpg",
+        "pos": "50% 55%",
+        "h": 80
+      },
+      "num": "03",
+      "title": [
+        "Zagora.",
+        ""
+      ],
+      "columns": [
+        [
+          {
+            "item": "dromedary",
+            "first": true,
+            "img": "gastro/dromedary-tajine.jpg"
+          }
+        ],
+        [
+          {
+            "item": "pigeons",
+            "first": true,
+            "img": "gastro/stuffed-pigeons.jpg"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "opener-band",
+      "band": {
+        "image": "general/road-switchbacks.jpg",
+        "pos": "50% 55%",
+        "h": 80
+      },
+      "num": "03",
+      "title": [
+        "Tinghir.",
+        ""
+      ],
+      "columns": [
+        [
+          {
+            "item": "terfas",
+            "first": true,
+            "img": "gastro/tajine-terfas.jpg"
+          }
+        ],
+        [
+          {
+            "item": "ifnouzen",
+            "first": true,
+            "img": "gastro/ifnouzen.jpg"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "opener-band",
+      "band": {
+        "image": "midelt/tamaloute-lake.jpg",
+        "pos": "50% 55%",
+        "h": 80
+      },
+      "num": "03",
+      "title": [
+        "Midelt.",
+        ""
+      ],
+      "columns": [
+        [
+          {
+            "item": "goat-apples",
+            "first": true,
+            "img": "gastro/goat-apples.jpg"
+          }
+        ],
+        [
+          {
+            "item": "trout",
+            "first": true,
+            "img": "gastro/trout-tajine.jpg"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "back",
+      "image": "gastro/cover-back-portrait.jpg",
+      "pos": "50% 50%"
+    }
+  ]
+}

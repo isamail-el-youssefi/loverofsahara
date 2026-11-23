@@ -160,7 +160,7 @@ export function ScrollHorizontal({
     "relative m-0 h-[62dvh] w-[74cqw] shrink-0 overflow-hidden rounded-[10px] bg-ink-deep";
 
   return (
-    <div ref={trackRef} className="relative h-[480dvh] w-full bg-paper">
+    <div ref={trackRef} className="relative h-[340dvh] w-full bg-paper">
       {/* container-type: cqw units follow the stage width (viewport minus any scrollbar), so the last card centres exactly */}
       <div
         ref={stageRef}

@@ -104,6 +104,8 @@ export const zh: SiteStrings = {
     eyebrow: "我们的传承与专长",
     h2a: "我们的撒哈拉探险",
     h2b: "在扎戈拉手工打造，传承世代游牧民族的智慧。",
+    phoneA: "扎戈拉手工打造，",
+    phoneB: "传承游牧智慧。",
     button: "规划您的冒险",
     steps: [
       {

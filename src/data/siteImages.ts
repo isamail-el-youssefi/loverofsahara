@@ -77,4 +77,4 @@ export const ARTICLE_IMAGES = {
 };
 
 /** Contact page hero (the old contact page's photo). */
-export const CONTACT_HERO = ik("/contact3.jpg", 2000);
+export const CONTACT_HERO = ik("/10001.jpg", 2000);

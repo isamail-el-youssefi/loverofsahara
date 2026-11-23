@@ -7,6 +7,7 @@ import { useLanguage } from "@/i18n/LanguageProvider";
 import { GOOGLE_REVIEWS } from "./data";
 import { useFooterCols } from "./useFooterCols";
 import { GoogleLogo, Stars } from "./GoogleReviewsBadge";
+import { FooterQuickLinks } from "./FooterQuickLinks";
 
 /** Profile links come from the contact details (one place to edit). Google uses GOOGLE_REVIEWS.url. */
 const SOCIALS = [
@@ -22,9 +23,9 @@ export function FooterSpotlight() {
   const { rating, count, url } = GOOGLE_REVIEWS;
   const external = url.startsWith("http");
   return (
-    <div className="w-full px-[4px] pb-[4px]">
-      <footer className="overflow-hidden rounded-2xl bg-ink-deep px-6 py-14 text-white md:px-12 md:py-20 lg:px-16">
-        <motion.div {...fadeUp} className="grid gap-14 border-b border-white/15 pb-14 lg:grid-cols-12 lg:gap-16 lg:pb-20">
+    <div className="h-[100dvh] w-full px-[4px] pb-[4px]">
+      <footer className="flex flex-col justify-between h-full overflow-hidden rounded-b-2xl bg-ink-deep px-6 py-6 text-white md:px-12 md:py-[clamp(1.5rem,5vh,3.5rem)] lg:px-16">
+        <motion.div {...fadeUp} className="grid gap-6 border-b border-white/15 pb-6 md:gap-14 md:pb-14 lg:grid-cols-12 lg:gap-16 lg:pb-[clamp(1.5rem,5vh,3.5rem)]">
           <div className="lg:col-span-5">
             <div className="flex items-center gap-3">
               <GoogleLogo size={28} />
@@ -32,23 +33,25 @@ export function FooterSpotlight() {
                 Google reviews
               </span>
             </div>
-            <p className="mt-6 text-[96px] font-light leading-[0.9] tracking-[-0.05em] tabular-nums md:text-[160px]">
+            <p className="mt-3 text-[clamp(64px,13vh,110px)] font-light leading-[0.9] tracking-[-0.05em] tabular-nums md:mt-6 md:text-[clamp(80px,18vh,160px)]">
               {rating.toFixed(1)}
             </p>
-            <Stars size={22} className="mt-5" />
+            <Stars size={22} className="mt-3 md:mt-5" />
             <p className="mt-3 text-[15px] text-white/70">
               {rating} out of 5, from {count} reviews
             </p>
             <a
               href={url}
               {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-              className="mt-8 inline-flex h-[46px] items-center justify-center rounded-[10px] bg-paper px-7 text-sm font-semibold text-ink transition-all duration-100 ease-out hover:bg-neutral-100 active:scale-[0.98]"
+              className="mt-5 inline-flex h-[46px] md:mt-8 items-center justify-center rounded-[10px] bg-paper px-7 text-sm font-semibold text-ink transition-all duration-100 ease-out hover:bg-neutral-100 active:scale-[0.98]"
             >
               Read our reviews
             </a>
           </div>
 
-          <div className="grid grid-cols-2 gap-x-8 gap-y-10 lg:col-span-7">
+          <FooterQuickLinks tone="dark" className="md:hidden" />
+
+          <div className="hidden grid-cols-2 gap-x-8 gap-y-10 md:grid lg:col-span-7">
             {footerCols.slice(0, 4).map((col) => (
               <div key={col.title}>
                 <h4 className="eyebrow text-[11px] font-medium uppercase tracking-[0.12em] text-white/50">{col.title}</h4>
@@ -57,7 +60,7 @@ export function FooterSpotlight() {
                     <li key={link.name}>
                       <a
                         href={link.href}
-                        className="block py-2 text-[15px] font-medium text-white/75 transition hover:text-white"
+                        className="block py-2 text-[15px] md:py-[clamp(0.25rem,0.9vh,0.5rem)] font-medium text-white/75 transition hover:text-white"
                       >
                         <TextRollHover activeClassName="text-white">{link.name}</TextRollHover>
                       </a>
@@ -69,7 +72,7 @@ export function FooterSpotlight() {
           </div>
         </motion.div>
 
-        <div className="grid gap-8 pt-10 lg:grid-cols-12 lg:items-end">
+        <div className="grid gap-8 pt-5 md:pt-[clamp(1rem,3vh,2.5rem)] lg:grid-cols-12 lg:items-end">
           <div className="flex flex-wrap items-center gap-3 lg:col-span-5">
             {SOCIALS.map(({ name, href, icon }) => (
               <a
@@ -84,7 +87,7 @@ export function FooterSpotlight() {
               </a>
             ))}
           </div>
-          <div className="flex flex-wrap gap-x-6 gap-y-2 text-[13px] text-white/60 lg:col-span-7 lg:justify-end">
+          <div className="hidden flex-wrap gap-x-6 gap-y-2 text-[13px] text-white/60 md:flex lg:col-span-7 lg:justify-end">
             {footerCols[4]!.links.map((l) => (
               <a key={l.name} href={l.href} className="transition hover:text-white">
                 {l.name}
@@ -92,7 +95,7 @@ export function FooterSpotlight() {
             ))}
           </div>
         </div>
-        <p className="mt-10 text-[12px] text-white/45">{site.footer.rights}</p>
+        <p className="mt-5 text-[12px] text-white/45 md:mt-[clamp(0.75rem,2.5vh,2.5rem)]">{site.footer.rights}</p>
       </footer>
     </div>
   );

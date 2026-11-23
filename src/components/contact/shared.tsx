@@ -1,5 +1,7 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
-import { Facebook, Instagram, Mail, MessageCircle, Phone } from "lucide-react";
+import { Check, ChevronDown, Copy, ExternalLink, Facebook, Instagram, Mail, MessageCircle, Phone } from "lucide-react";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { GoogleReviewsBadge } from "@/components/footer/GoogleReviewsBadge";
 import { OWNER } from "@/components/about/content";
 import { Portrait } from "@/components/about/shared";
@@ -9,6 +11,83 @@ import { fadeUp } from "@/lib/animations";
 import { cn } from "@/lib/utils";
 import { CONTACT, phoneHref, whatsappBase } from "./data";
 import { useContactContent } from "./useContactContent";
+
+/** The e-mail row: opens a small menu to write in Gmail (browser tab), the default mail app, or copy the address. */
+function EmailRow({ dark, label, icon: Icon }: { dark: boolean; label: string; icon: typeof Mail }) {
+  const [open, setOpen] = useState(false);
+  const [copied, setCopied] = useState(false);
+  const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(CONTACT.email)}`;
+  const copy = async () => {
+    try {
+      await navigator.clipboard.writeText(CONTACT.email);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      /* clipboard unavailable */
+    }
+  };
+  const item =
+    "flex w-full items-center justify-between rounded-xl px-3 py-2 text-left text-[13.5px] font-medium text-ink transition-colors hover:bg-ink/[0.05]";
+  return (
+    <Popover open={open} onOpenChange={setOpen}>
+      <PopoverTrigger asChild>
+        <button
+          type="button"
+          aria-label="Choose email client"
+          className="group flex w-full items-center gap-4 py-4 text-left outline-none focus-visible:ring-2 focus-visible:ring-current md:py-5"
+        >
+          <Icon size={20} aria-hidden className={dark ? "text-white/70" : "text-ink/70"} />
+          <span className="flex min-w-0 flex-1 flex-col">
+            <span className={cn("text-[12px] uppercase tracking-[0.1em]", dark ? "text-white/55" : "text-neutral-500")}>{label}</span>
+            <span className="truncate text-[17px] font-medium tracking-[-0.01em] md:text-[19px]">{CONTACT.email}</span>
+          </span>
+          <ChevronDown size={18} aria-hidden className="opacity-60 transition-opacity group-hover:opacity-100" />
+        </button>
+      </PopoverTrigger>
+      <PopoverContent
+        align="start"
+        sideOffset={8}
+        className="z-50 w-[270px] rounded-2xl border border-ink/10 bg-paper p-1.5 text-ink shadow-[0_20px_50px_-15px_rgba(0,0,0,0.35)] outline-none"
+      >
+        <p className="px-3 pb-1.5 pt-2 text-[11px] font-semibold uppercase tracking-[0.12em] text-neutral-400">Write to us via</p>
+        <div className="flex flex-col gap-0.5">
+          <a href={gmailUrl} target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)} className={item}>
+            <span className="flex items-center gap-2.5">
+              <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-red-500/10 text-[13px] font-bold text-red-600">G</span>
+              <span>
+                <span className="block font-semibold leading-tight">Gmail</span>
+                <span className="block text-[11.5px] font-normal text-neutral-500">Opens in browser tab</span>
+              </span>
+            </span>
+            <ExternalLink size={13} className="text-neutral-400" aria-hidden />
+          </a>
+          <a href={`mailto:${CONTACT.email}`} onClick={() => setOpen(false)} className={item}>
+            <span className="flex items-center gap-2.5">
+              <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-ink/5 text-ink">
+                <Mail size={14} />
+              </span>
+              <span>
+                <span className="block font-semibold leading-tight">Default Mail App</span>
+                <span className="block text-[11.5px] font-normal text-neutral-500">Outlook, Apple Mail</span>
+              </span>
+            </span>
+          </a>
+          <button type="button" onClick={copy} className={item}>
+            <span className="flex items-center gap-2.5">
+              <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-ink/5 text-ink">
+                {copied ? <Check size={14} className="text-emerald-600" /> : <Copy size={14} />}
+              </span>
+              <span>
+                <span className="block font-semibold leading-tight">{copied ? "Copied to clipboard!" : "Copy address"}</span>
+                <span className="block text-[11.5px] font-normal text-neutral-500">{CONTACT.email}</span>
+              </span>
+            </span>
+          </button>
+        </div>
+      </PopoverContent>
+    </Popover>
+  );
+}
 
 /** The ways to reach us, as a ruled list. */
 export function ContactList({ tone = "light", className }: { tone?: "light" | "dark"; className?: string }) {
@@ -26,6 +105,9 @@ export function ContactList({ tone = "light", className }: { tone?: "light" | "d
     <ul className={cn("border-b", dark ? "border-white/15" : "border-ink/10", className)}>
       {rows.map((r) => (
         <li key={r.key} className={cn("border-t", dark ? "border-white/15" : "border-ink/10")}>
+          {r.key === "email" ? (
+            <EmailRow dark={dark} label={r.label} icon={r.icon} />
+          ) : (
           <a
             href={r.href}
             {...(r.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
@@ -38,6 +120,7 @@ export function ContactList({ tone = "light", className }: { tone?: "light" | "d
             </span>
             <span aria-hidden className="text-lg opacity-0 transition-opacity group-hover:opacity-100">↗</span>
           </a>
+          )}
         </li>
       ))}
     </ul>

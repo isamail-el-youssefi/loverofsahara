@@ -17,7 +17,7 @@ export interface TabItem {
  * Same reveal as Red Dot: the capsule grows out of its centre (clip-path inset + half-translate),
  * then the labels fade in. Going away is the reverse: labels fade out, then the capsule collapses.
  */
-export function SectionTabs({ items }: { items: TabItem[] }) {
+export function SectionTabs({ items, showAfter }: { items: TabItem[]; /** Id of the section whose arrival reveals the pill (default: the first tab). Use when the first tab is the hero. */ showAfter?: string }) {
   const scrollRef = useContext(ScrollContainerContext);
   const [active, setActive] = useState(items[0]?.id ?? "");
   const [visible, setVisible] = useState(false);
@@ -71,7 +71,7 @@ export function SectionTabs({ items }: { items: TabItem[] }) {
         if (el.getBoundingClientRect().top - base <= probe) current = it.id;
       }
       setActive(current);
-      const first = document.getElementById(items[0]?.id ?? "");
+      const first = document.getElementById(showAfter ?? items[0]?.id ?? "");
       const firstTop = first ? first.getBoundingClientRect().top - base : 0;
       setVisible(root.scrollTop + root.clientHeight * 0.6 > firstTop);
     };
@@ -83,7 +83,7 @@ export function SectionTabs({ items }: { items: TabItem[] }) {
       root.removeEventListener("scroll", compute);
       window.removeEventListener("resize", compute);
     };
-  }, [scrollRef, items]);
+  }, [scrollRef, items, showAfter]);
 
   // Keep the active tab visible when the pill scrolls horizontally (small screens).
   useEffect(() => {

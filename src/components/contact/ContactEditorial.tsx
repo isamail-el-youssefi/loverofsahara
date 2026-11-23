@@ -37,7 +37,7 @@ export function ContactEditorial() {
         </div>
       </section>
 
-      <Band id="contact" tone="paper" parallax={false}>
+      <Band id="contact" tone="paper" fullHeight>
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
           <motion.div {...fadeUp} className="lg:col-span-5">
             <Eyebrow className="mb-3">{t.getInTouch}</Eyebrow>
@@ -54,12 +54,12 @@ export function ContactEditorial() {
         </div>
       </Band>
 
-      <Band id="how" tone="off" parallax={false}>
+      <Band id="how" tone="off" parallax={false} fullHeight>
         <SectionTitle eyebrow={t.howEyebrow}>{t.howTitle}</SectionTitle>
         <div className="mt-10"><Steps /></div>
       </Band>
 
-      <Band id="map" tone="paper" parallax={false}>
+      <Band id="map" tone="paper" fullHeight>
         <div className="grid items-stretch gap-10 lg:grid-cols-12 lg:gap-14">
           <div className="flex flex-col justify-center lg:col-span-4">
             <SectionTitle eyebrow={t.whereEyebrow}>{t.whereTitle}</SectionTitle>
@@ -71,11 +71,11 @@ export function ContactEditorial() {
         </div>
       </Band>
 
-      <Band id="salah" tone="dark" parallax={false} className="py-20 md:py-28">
+      <Band id="salah" tone="dark" fullHeight className="py-20 md:py-28">
         <WhoYouTalkTo tone="dark" />
       </Band>
 
-      <Band id="faq" tone="paper" parallax={false} className="pb-24 md:pb-32">
+      <Band id="faq" tone="paper" fullHeight className="pb-24 md:pb-32">
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-4"><SectionTitle eyebrow={site.about.faqEyebrow}>{site.about.faqTitle}</SectionTitle></div>
           <div className="lg:col-span-8"><Faq /></div>

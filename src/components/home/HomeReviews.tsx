@@ -6,6 +6,7 @@ import { GoogleLogo } from "@/components/footer/GoogleReviewsBadge";
 import { GOOGLE_REVIEWS } from "@/components/footer/data";
 import { Stars } from "@/components/trip/reviews/shared";
 import { fadeUp } from "@/lib/animations";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 /** Quote size by length: the long reviews are set smaller so they stay comfortable to read in full. */
 const quoteSize = (n: number) =>
@@ -22,6 +23,7 @@ const quoteSize = (n: number) =>
 export function HomeReviews() {
   const reviews = GOOGLE_REVIEWS_LIST;
   const reduce = useReducedMotion();
+  const isMobile = useIsMobile();
   const [index, setIndex] = useState(0);
   if (reviews.length === 0) return null;
 
@@ -39,7 +41,12 @@ export function HomeReviews() {
       };
 
   return (
-    <section id="reviews" className="bg-paper px-4 py-[var(--section-y)] md:px-10">
+    <section
+      id="reviews"
+      // Phone: slides under the next section like the others (it had no parallax)
+      {...(isMobile ? { "data-st-01": "parallax", "data-st-y": "250", "data-st-opacity": "0.15" } : {})}
+      className="bg-paper px-4 py-[var(--section-y)] md:px-10"
+    >
       <div className="grid grid-cols-1 gap-12 lg:grid-cols-[2fr_3fr] lg:gap-20">
         <div className="lg:sticky lg:top-10 lg:self-start">
           <div className="flex items-center gap-2 text-[13px] font-medium text-neutral-500">
@@ -96,7 +103,7 @@ export function HomeReviews() {
                     href={GOOGLE_MAPS_URL}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-4 inline-flex items-center gap-1.5 text-[13px] font-medium text-ink underline-offset-4 hover:underline"
+                    className="mt-2 inline-flex min-h-11 items-center gap-1.5 text-[13px] font-medium text-ink underline-offset-4 hover:underline"
                   >
                     Read all reviews on Google <ArrowUpRight size={14} aria-hidden />
                   </a>

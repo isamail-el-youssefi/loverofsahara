@@ -2,6 +2,7 @@
 
 import { DESTINATION_IMAGES } from "@/data/siteImages";
 import { useRef } from "react";
+import { useIsMobile } from "@/hooks/use-mobile";
 import { useScrollContainer } from "@/lib/scrollContainer";
 import { motion, useScroll, useTransform, useSpring, useReducedMotion } from "framer-motion";
 import { ArrowDown, ArrowUpRight, MapPin } from "lucide-react";
@@ -65,6 +66,7 @@ function DestinationSectionItem({ section }: { section: DestinationItemData }) {
   const d = useLanguage().site.destinations;
   const targetRef = useRef<HTMLDivElement>(null);
   const shouldReduceMotion = useReducedMotion();
+  const isMobile = useIsMobile();
 
   const scrollContainer = useScrollContainer();
   const { scrollYProgress } = useScroll({
@@ -96,21 +98,23 @@ function DestinationSectionItem({ section }: { section: DestinationItemData }) {
   return (
     <div
       ref={targetRef}
-      className="py-16 md:py-24 lg:py-28"
+      // Phone: each card is its own parallax layer, like the page sections (it stays put and darkens while the next card slides over it).
+      {...(isMobile ? { "data-st-01": "parallax", "data-st-y": "250", "data-st-opacity": "0.15" } : {})}
+      className="relative min-h-[110dvh] bg-paper pb-4 pt-[12dvh] sm:min-h-0 sm:py-8 md:py-24 lg:py-28"
     >
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 xl:gap-20 items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-14 xl:gap-20 items-center">
         {/* Content description column - structured 5 cols with Apple typographic rhythm */}
         <motion.div
           style={{
             opacity: opacityContent,
             y: translateContent,
           }}
-          className={`lg:col-span-5 flex flex-col justify-center ${
+          className={`max-lg:order-2 lg:col-span-5 flex flex-col justify-center ${
             section.reverse ? "lg:order-2 lg:pl-2 xl:pl-6" : "lg:order-1 lg:pr-2 xl:pr-6"
           }`}
         >
           {/* Unified eyebrow header: single cohesive row preventing visual fragmentation */}
-          <div className="flex flex-wrap items-center gap-2.5 mb-5">
+          <div className="flex flex-wrap items-center gap-2.5 mb-3 md:mb-5">
             <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-neutral-100 text-neutral-800 border border-neutral-200/90 shadow-2xs">
               {section.tag}
             </span>
@@ -126,15 +130,15 @@ function DestinationSectionItem({ section }: { section: DestinationItemData }) {
           </h3>
 
           {/* Apple typography: Comfortable reading measure (~65ch) and neutral tracking */}
-          <p className="mt-5 text-[16px] sm:text-[17px] md:text-[18px] font-normal leading-[1.68] tracking-normal text-neutral-600 max-w-lg">
+          <p className="mt-4 line-clamp-4 text-[16px] sm:line-clamp-none sm:text-[17px] md:mt-5 md:text-[18px] font-normal leading-[1.68] tracking-normal text-neutral-600 max-w-lg">
             {section.description}
           </p>
 
           {/* Instant tactile response on pointerdown with harmonized button radius (rounded-[10px]) */}
-          <div className="mt-8 pt-1">
+          <div className="mt-5 pt-1 md:mt-8">
             <OriginButton
               href="#contact"
-              className="h-10 rounded-[10px] border-neutral-300 px-6 text-sm font-medium text-neutral-900 transition-all duration-100 ease-out active:scale-[0.98] active:bg-neutral-200/80 hover:bg-neutral-100"
+              className="h-11 rounded-[10px] border-neutral-300 px-6 text-sm font-medium text-neutral-900 transition-all md:h-10 duration-100 ease-out active:scale-[0.98] active:bg-neutral-200/80 hover:bg-neutral-100"
             >
               {d.explore} {section.title} <ArrowUpRight size={16} />
             </OriginButton>
@@ -148,11 +152,11 @@ function DestinationSectionItem({ section }: { section: DestinationItemData }) {
             scale: scaleImage,
             willChange: "transform, opacity",
           }}
-          className={`lg:col-span-7 flex justify-center w-full ${
+          className={`max-lg:order-1 lg:col-span-7 flex justify-center w-full ${
             section.reverse ? "lg:order-1" : "lg:order-2"
           }`}
         >
-          <div className="group relative h-[65vh] sm:h-[70vh] lg:h-[76vh] max-h-[740px] min-h-[460px] w-full overflow-hidden rounded-2xl md:rounded-[24px] bg-neutral-100 border border-neutral-200/70 shadow-md transition-shadow duration-300">
+          <div className="group relative h-[50dvh] sm:h-[70vh] lg:h-[76vh] max-h-[740px] sm:min-h-[460px] w-full overflow-hidden rounded-2xl md:rounded-[24px] bg-neutral-100 border border-neutral-200/70 shadow-md transition-shadow duration-300">
             <img
               src={section.imageUrl}
               alt={`${section.title} - ${section.location}`}

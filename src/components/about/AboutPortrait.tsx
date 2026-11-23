@@ -4,7 +4,7 @@ import { Band, Eyebrow, SectionTitle } from "@/components/trip/parts";
 import { fadeUp } from "@/lib/animations";
 import { useLanguage } from "@/i18n/LanguageProvider";
 import { useAboutContent } from "./useAboutContent";
-import { CtaCard, Faq, Portrait, ReviewsBlock, StatsRow, SustainabilityList } from "./shared";
+import { Faq, Portrait, ReviewsBlock, StatsRow, SustainabilityList } from "./shared";
 
 /** Salah first: a dark hero with his portrait and quote, his story as chapters, then the rest of the page. */
 export function AboutPortrait() {
@@ -60,7 +60,7 @@ export function AboutPortrait() {
         </div>
       </section>
 
-      <Band id="salah" tone="paper" parallax={false}>
+      <Band id="salah" tone="paper" fullHeight>
         <motion.div {...fadeUp} className="mb-12 grid gap-6 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-4">
             <Eyebrow className="mb-3">{t.storyEyebrow}</Eyebrow>
@@ -80,7 +80,7 @@ export function AboutPortrait() {
         </ol>
       </Band>
 
-      <Band id="values" tone="dark" parallax={false} className="py-20 md:py-28">
+      <Band id="values" tone="dark" fullHeight className="py-20 md:py-28">
         <Eyebrow className="mb-3 !text-white/60">{t.valuesEyebrow}</Eyebrow>
         <h2 className="mb-12 text-[32px] font-semibold leading-[1.04] tracking-[-0.035em] md:text-[48px]">{t.valuesTitle}</h2>
         <StatsRow tone="dark" className="border-b border-white/15 pb-12" />
@@ -94,13 +94,13 @@ export function AboutPortrait() {
         </div>
       </Band>
 
-      <Band id="reviews" tone="paper" parallax={false}>
+      <Band id="reviews" tone="paper" fullHeight>
         <Eyebrow className="mb-3">{t.reviewsEyebrow}</Eyebrow>
         <h2 className="mb-10 text-[30px] font-semibold leading-[1.05] tracking-[-0.035em] md:text-[40px]">{t.reviewsTitle}</h2>
         <ReviewsBlock />
       </Band>
 
-      <Band id="sustainability" tone="off" parallax={false}>
+      <Band id="sustainability" tone="off" fullHeight>
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-4">
             <SectionTitle eyebrow={t.sustainEyebrow}>{t.sustainTitle}</SectionTitle>
@@ -111,7 +111,7 @@ export function AboutPortrait() {
         </div>
       </Band>
 
-      <Band id="faq" tone="paper" parallax={false}>
+      <Band id="faq" tone="paper" fullHeight>
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-4">
             <SectionTitle eyebrow={t.faqEyebrow}>{t.faqTitle}</SectionTitle>
@@ -122,9 +122,6 @@ export function AboutPortrait() {
         </div>
       </Band>
 
-      <Band tone="paper" parallax={false} className="!pt-4 pb-24 md:pb-32">
-        <CtaCard />
-      </Band>
     </div>
   );
 }

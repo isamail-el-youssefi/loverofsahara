@@ -52,25 +52,28 @@ export function PagePreloader({ onComplete }: PagePreloaderProps) {
           key="page-preloader"
           initial={{ y: 0 }}
           exit={{ y: "-100%", transition: { duration: 0.9, ease: [0.76, 0, 0.24, 1] } }}
-          className="fixed inset-0 z-[99999] flex select-none flex-col items-center justify-center bg-ink px-6 text-white"
+          // Full white screen; the wordmark fills in with the site's main (ink) colour
+          className="fixed inset-0 z-[99999] select-none bg-white text-ink"
         >
+          <div className="flex h-full w-full flex-col items-center justify-center overflow-hidden px-6">
           <div className="relative z-10 flex w-full max-w-[1200px] flex-col items-center text-center">
             <div className="fill-text-container w-full overflow-hidden py-2">
               <div className="fill-text-stack">
                 <div
-                  className={`fill-text fill-text-bg ${WORD_SIZE} font-bold leading-[0.98] tracking-[-0.04em]`}
+                  className={`fill-text fill-text-bg !text-[color-mix(in_srgb,var(--color-ink)_15%,white)] ${WORD_SIZE} font-bold leading-[0.98] tracking-[-0.04em]`}
                   aria-hidden
                 >
                   {WORD}
                 </div>
                 <motion.div
-                  className={`fill-text fill-text-fill ${WORD_SIZE} font-bold leading-[0.98] tracking-[-0.04em]`}
+                  className={`fill-text fill-text-fill !text-ink ${WORD_SIZE} font-bold leading-[0.98] tracking-[-0.04em]`}
                   style={{ clipPath }}
                 >
                   {WORD}
                 </motion.div>
               </div>
             </div>
+          </div>
           </div>
         </motion.div>
       )}

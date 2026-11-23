@@ -71,7 +71,7 @@ export interface SiteStrings {
     cards: T4<{ name: string; blurb: string }>;
     comingSoon: string;
   };
-  process: { eyebrow: string; h2a: string; h2b: string; button: string; steps: T3<{ t: string; d: string }> };
+  process: { eyebrow: string; h2a: string; h2b: string; /** Short two-tone headline for phones. */ phoneA: string; phoneB: string; button: string; steps: T3<{ t: string; d: string }> };
   destinations: { h2a: string; h2b: string; label: string; explore: string; items: T4<{ title: string; tag: string; location: string; description: string }> };
   articles: {
     h2a: string;

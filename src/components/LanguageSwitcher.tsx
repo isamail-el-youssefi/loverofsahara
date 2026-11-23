@@ -18,7 +18,7 @@ export function LanguageSwitcher({ light = false }: { light?: boolean }) {
           type="button"
           aria-label={`${ui.language}: ${LANGUAGES.find((l) => l.code === lang)?.native ?? lang}`}
           title={ui.language}
-          className={`flex h-9 shrink-0 items-center gap-1.5 rounded-full border px-2.5 text-[12px] font-semibold uppercase tracking-wide backdrop-blur-md shadow-[inset_0_1px_1px_rgba(255,255,255,0.25)] outline-none transition-colors focus-visible:ring-2 focus-visible:ring-white/70 ${triggerTone}`}
+          className={`flex h-11 shrink-0 md:h-9 items-center gap-1.5 rounded-full border px-2.5 text-[12px] font-semibold uppercase tracking-wide backdrop-blur-md shadow-[inset_0_1px_1px_rgba(255,255,255,0.25)] outline-none transition-colors focus-visible:ring-2 focus-visible:ring-white/70 ${triggerTone}`}
         >
           <Globe size={16} aria-hidden />
           <span>{lang}</span>

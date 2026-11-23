@@ -49,7 +49,7 @@ export function ArticlesSection() {
               href={`/blog/${article.id}`}
               className="group block cursor-pointer"
             >
-              <div className="h-[660px] overflow-hidden rounded-[10px]">
+              <div className="h-[420px] overflow-hidden rounded-[10px] md:h-[660px]">
                 <img
                   src={article.img}
                   alt={article.alt}
@@ -65,7 +65,7 @@ export function ArticlesSection() {
               {article.date ? (
                 <p className="mt-2 text-sm text-neutral-500">{article.date}</p>
               ) : article.link ? (
-                <span className="mt-2 inline-block text-sm text-neutral-500 transition group-hover:text-ink">
+                <span className="mt-2 inline-flex min-h-11 items-center text-sm text-neutral-500 transition group-hover:text-ink md:min-h-0">
                   {article.link.text}
                 </span>
               ) : null}

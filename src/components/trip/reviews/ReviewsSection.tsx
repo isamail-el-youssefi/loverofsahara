@@ -1,20 +1,15 @@
 import { useEffect, useState } from "react";
 import { getReviews } from "@/data/reviews";
-import { useReviewStyle } from "@/hooks/use-review-style";
 import { fetchReviews, REVIEW_ADDED_EVENT, type Review } from "@/lib/reviews";
-import { ReviewsCards } from "./ReviewsCards";
 import { ReviewsEditorial } from "./ReviewsEditorial";
-import { ReviewsSpotlight } from "./ReviewsSpotlight";
 
 /**
- * The trip's reviews and the "Add a review" button, in the layout chosen in the theme switcher
- * ("Trip reviews": Editorial, Spotlight or Cards). Trips with no reviews yet show an invitation instead.
+ * The trip's reviews and the "Add a review" button (editorial layout). Trips with no reviews yet show an invitation instead.
  *
  * Reviews start from the build-time data (so the prerendered page already has them), then the live list is
  * loaded from the reviews API (Cloudflare D1). A review just sent by the visitor is added straight away.
  */
 export function ReviewsSection({ tripSlug, tripTitle }: { tripSlug: string; tripTitle: string }) {
-  const style = useReviewStyle();
   const [live, setLive] = useState<Review[]>(() => getReviews(tripSlug));
 
   useEffect(() => {
@@ -37,7 +32,5 @@ export function ReviewsSection({ tripSlug, tripTitle }: { tripSlug: string; trip
   }, [tripSlug]);
 
   const props = { tripSlug, tripTitle, reviews: live };
-  if (style === "spotlight") return <ReviewsSpotlight {...props} />;
-  if (style === "cards") return <ReviewsCards {...props} />;
   return <ReviewsEditorial {...props} />;
 }

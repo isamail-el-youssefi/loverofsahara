@@ -117,7 +117,7 @@ export function CtaStatement() {
       </div>
       <a
         href={`mailto:${CONTACT.email}`}
-        className="mt-10 inline-block border-b border-ink/15 pb-1.5 text-[15px] font-medium text-neutral-600 transition hover:border-ink hover:text-ink"
+        className="mt-8 inline-flex min-h-11 items-center border-b border-ink/15 pb-1 text-[15px] font-medium text-neutral-600 transition hover:border-ink hover:text-ink"
       >
         {CONTACT.email}
       </a>

@@ -107,6 +107,8 @@ export const fr: SiteStrings = {
     eyebrow: "Notre héritage et notre expertise",
     h2a: "Nos expéditions dans le Sahara sont",
     h2b: "conçues à la main à Zagora, nourries par des générations de sagesse nomade authentique.",
+    phoneA: "Conçues à Zagora,",
+    phoneB: "nourries de sagesse nomade.",
     button: "Préparez votre aventure",
     steps: [
       {

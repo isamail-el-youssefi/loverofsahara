@@ -628,7 +628,7 @@ export function Band({
   const tones = {
     paper: "bg-paper text-ink",
     dark: "bg-ink-deep text-white",
-    off: "bg-ink/[0.045] text-ink",
+    off: "bg-[color-mix(in_srgb,var(--color-ink)_4.5%,var(--color-paper))] text-ink", // opaque: a see-through band lets the parallax band underneath show through
   } as const;
   return (
     <section

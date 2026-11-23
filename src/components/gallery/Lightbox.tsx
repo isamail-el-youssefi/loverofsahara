@@ -63,8 +63,10 @@ export function Lightbox({
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.25 }}
-          className="fixed inset-0 z-[200] flex flex-col bg-ink-deep/95 text-white backdrop-blur-sm"
+          // touch-none: without it the phone browser takes the horizontal drag for scrolling and cancels the pointer, so the swipe never fires
+          className="fixed inset-0 z-[200] flex touch-none flex-col bg-ink-deep/95 text-white backdrop-blur-sm"
           onPointerDown={(e) => (touch.current = e.clientX)}
+          onPointerCancel={() => (touch.current = null)}
           onPointerUp={(e) => {
             if (touch.current === null) return;
             const dx = e.clientX - touch.current;

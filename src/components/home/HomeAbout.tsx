@@ -48,7 +48,7 @@ export function HomeAbout() {
           >
             {h.h2a} <div className="font-normal text-neutral-400">{h.h2b}</div>
           </h2>
-          <motion.p {...fadeUp} className="mt-6 max-w-xl text-[16px] font-medium leading-[1.6] tracking-[-0.02em] text-neutral-600">
+          <motion.p {...fadeUp} className="mt-5 max-w-xl text-[16px] font-medium leading-[1.6] tracking-[-0.02em] text-neutral-600">
             {ABOUT_INTRO}
           </motion.p>
 
@@ -66,16 +66,16 @@ export function HomeAbout() {
             ))}
           </dl>
 
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <a
               href={aboutPath(lang)}
-              className="inline-flex items-center gap-2 rounded-full bg-ink px-5 py-3 text-[13px] font-semibold text-white transition hover:bg-ink-deep"
+              className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-ink px-5 py-3 text-[13px] font-semibold text-white transition hover:bg-ink-deep"
             >
               {h.ourStory} <ArrowUpRight size={16} aria-hidden />
             </a>
             <a
               href={CONTACT_PATH}
-              className="inline-flex items-center gap-2 rounded-full border border-ink/20 px-5 py-3 text-[13px] font-semibold text-ink transition hover:bg-ink/5"
+              className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full border border-ink/20 px-5 py-3 text-[13px] font-semibold text-ink transition hover:bg-ink/5"
             >
               {h.planTrip}
             </a>

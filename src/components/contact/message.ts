@@ -60,6 +60,16 @@ export const mailtoUrl = (f: RequestFields, t?: FormStrings) => {
 
 const buildTripInquiryMessage_legacy = buildMessage;
 
+function subjectFor(f: RequestFields, t?: FormStrings) {
+  return f.trip
+    ? (t ? t.subjectTrip.replace("{trip}", f.trip) : `Trip request: ${f.trip}`)
+    : (t ? t.subjectNone : "Trip request from loverofsahara.tours");
+}
+
+/** Same message, composed in a Gmail browser tab. */
+export const gmailUrl = (f: RequestFields, t?: FormStrings) =>
+  `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(CONTACT.email)}&su=${encodeURIComponent(subjectFor(f, t))}&body=${encodeURIComponent(buildMessage(f, t))}`;
+
 export interface TripInquiryParams {
   tripTitle: string;
   durationDays: number;

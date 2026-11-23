@@ -3,8 +3,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import { TripsMenuPanel } from "@/components/navbar/TripsMenu";
 import { OriginButton } from "@/components/ui/origin-button";
 import { TextRollHover } from "@/components/ui/text-stagger-hover";
-import { ThemeSwitcher } from "@/components/ThemeSwitcher";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { MobileMenu } from "@/components/navbar/MobileMenu";
 import { useLanguage } from "@/i18n/LanguageProvider";
 
 const navLinks = [
@@ -57,7 +57,7 @@ export function Navbar({ theme = "dark", className = "" }: { theme?: "dark" | "l
             exit={{ opacity: 0 }}
             transition={{ duration: 0.18, ease: "easeOut" }}
             style={{ paddingTop: navH, minHeight: "70vh" }}
-            className="absolute inset-x-[4px] top-0 -z-10 flex flex-col rounded-b-lg bg-paper text-ink shadow-[0_30px_80px_-30px_rgba(0,0,0,0.45)] [.hero-frame_&]:inset-x-0"
+            className="absolute inset-x-[4px] top-0 -z-10 flex flex-col rounded-b-lg bg-paper text-ink shadow-[0_30px_80px_-30px_rgba(0,0,0,0.45)] [.hero-frame_&]:inset-x-0 [.nav-framed_&]:inset-x-0"
             onClick={() => setOpen(false)}
           >
             <TripsMenuPanel />
@@ -67,12 +67,14 @@ export function Navbar({ theme = "dark", className = "" }: { theme?: "dark" | "l
       <div className="nav-left flex items-center gap-2 sm:gap-3">
         <a
           href="#"
-          className={`nav-logo w-[6.6rem] text-[17px] leading-[1.05] sm:w-auto sm:text-xl md:texxl font-bold tracking-tight transition-[transform,color] duration-100 ease-out active:scale-[0.98] ${textColor}`}
+          className={`nav-logo -my-2 whitespace-nowrap py-2 text-[20px] leading-[1.05] sm:text-2xl md:texxl font-bold tracking-tight transition-[transform,color] duration-100 ease-out active:scale-[0.98] ${textColor}`}
         >
           LOVER OF SAHARA
         </a>
-        <ThemeSwitcher light={isLight} />
-        <LanguageSwitcher light={isLight} />
+        {/* Phones and tablets: the language lives in the menu */}
+        <span className="hidden lg:inline-flex">
+          <LanguageSwitcher light={isLight} />
+        </span>
       </div>
       <div className="nav-right flex items-center gap-6 md:gap-8">
         <div className="nav-links hidden items-center gap-6 lg:flex">
@@ -107,9 +109,9 @@ export function Navbar({ theme = "dark", className = "" }: { theme?: "dark" | "l
           })}
         </div>
         <div className="nav-actions flex items-center gap-3">
-          <span className={`hidden sm:inline ${dividerColor}`}>|</span>
-          {/* "Contact" is dropped on phones: Book Tour goes to the same place and space is tight */}
-          <span className="hidden sm:inline-flex">
+          <MobileMenu light={isLight} />
+          <span className={`hidden lg:inline ${dividerColor}`}>|</span>
+          <span className="hidden lg:inline-flex">
             <OriginButton
               href="/contact"
               variant={isLight ? "default" : "white"}
@@ -118,13 +120,15 @@ export function Navbar({ theme = "dark", className = "" }: { theme?: "dark" | "l
               Contact
             </OriginButton>
           </span>
+          <span className="hidden lg:inline-flex">
           <OriginButton
             href="/contact"
             variant={isLight ? "default" : "white"}
-            className={`h-9 whitespace-nowrap rounded-[10px] border ${borderColor} px-4 sm:px-5 text-sm font-medium ${textColor} transition-all duration-100 ease-out active:scale-[0.98]`}
+            className={`h-11 whitespace-nowrap rounded-[10px] border ${borderColor} px-4 sm:px-5 md:h-9 text-sm font-medium ${textColor} transition-all duration-100 ease-out active:scale-[0.98]`}
           >
             Book Tour
           </OriginButton>
+          </span>
         </div>
       </div>
     </nav>

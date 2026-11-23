@@ -43,6 +43,8 @@ interface PageProps {
   animated: boolean;
   /** Preloader finished. */
   ready: boolean;
+  /** Footer design for this page. */
+  footer?: "editorial" | "spotlight";
   /** Receives the Lenis instance of the page that is currently active. */
   activeLenis: MutableRefObject<Lenis | null>;
 }
@@ -57,7 +59,7 @@ const JUMP = { offset: -20, duration: 1.1, easing: (t: number) => 1 - Math.pow(1
  * One routed page = one nested scroll container (the `#swup` equivalent).
  * Old and new pages are rendered together by AnimatePresence in the same grid cell.
  */
-function Page({ children, animated, ready, activeLenis }: PageProps) {
+function Page({ children, animated, ready, activeLenis, footer }: PageProps) {
   const isPresent = useIsPresent();
   const reduce = useReducedMotion();
   const scrollRef = useRef<HTMLElement>(null);
@@ -140,7 +142,7 @@ function Page({ children, animated, ready, activeLenis }: PageProps) {
       <ScrollContainerContext.Provider value={scrollRef}>
         <div ref={contentRef}>
           <div>{children}</div>
-          <Footer />
+          <Footer {...(footer ? { variant: footer } : {})} />
         </div>
       </ScrollContainerContext.Provider>
     </motion.main>
@@ -283,6 +285,7 @@ export default function App() {
             animated={route.name === "home" || isTrip || isPlace || route.name === "about" || route.name === "contact"}
             ready={isPreloaderDone}
             activeLenis={activeLenis}
+            {...(route.name === "brochures" ? { footer: "spotlight" as const } : {})}
           >
             {route.name === "blog" ? (
               <Blog />

@@ -1,7 +1,6 @@
-import { useContext, useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowUpRight, Check, Copy } from "lucide-react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Navbar } from "@/components/Navbar";
 import { TripCard } from "@/components/TripCard";
 import { RouteMap } from "@/components/trip/RouteMap";
@@ -11,15 +10,12 @@ import { getCover, loadLegacyMedia, tripImage } from "@/data/trips";
 import type { LegacyMedia } from "@/data/trips/schema";
 import { getPlace, placeIdForStop } from "@/data/places";
 import { placeHero } from "@/data/places/heroes";
-import { useGalleryStyle } from "@/hooks/use-gallery-style";
 import { useIntroStyle } from "@/hooks/use-intro-style";
 import { useTrips } from "@/hooks/use-trips";
 import { fadeUp } from "@/lib/animations";
-import { parallaxImages } from "@/lib/parallaxImages";
 import { TRIPS_PATH } from "@/lib/routes";
 import { usePageSeo } from "@/lib/seo";
 import { absUrl, placeSeo } from "@/lib/seoData";
-import { ScrollContainerContext } from "@/lib/scrollContainer";
 
 /** Labels that only exist on place pages (English for now, like the trip page's own labels). */
 const PT = {
@@ -39,25 +35,12 @@ const PT = {
   gallery: "Gallery",
   galleryTitle: "From the road",
   journeys: "On these journeys",
-  plan: "Plan this trip",
-  planLead: "Tell us your dates and group size and we will shape the journey around you.",
-  contact: "Get in touch",
 } as const;
 
 /** 5 + 3 + 5: the sticky gallery's two scrolling columns and its pinned middle column. */
 const GALLERY_MAX = 13;
 /** Fewer photos than this and a gallery would look thin, so the band stays empty. */
 const GALLERY_MIN = 4;
-
-/** Frame shapes for the parallax gallery: a 12-column rhythm of wide and tall frames, some dropped for stagger. */
-const PARALLAX_FRAMES = [
-  { span: "md:col-span-7", ratio: "4 / 3", drop: "" },
-  { span: "md:col-span-5", ratio: "3 / 4", drop: "md:mt-24" },
-  { span: "md:col-span-5", ratio: "3 / 4", drop: "" },
-  { span: "md:col-span-7", ratio: "4 / 3", drop: "md:mt-24" },
-  { span: "md:col-span-6", ratio: "1 / 1", drop: "" },
-  { span: "md:col-span-6", ratio: "1 / 1", drop: "md:mt-16" },
-] as const;
 
 /** A framed, lazy photo that hides itself if the file is missing. */
 function GalleryPhoto({ path, className }: { path: string; className: string }) {
@@ -155,9 +138,6 @@ export function PlaceDetail({ id }: { id: string }) {
   const { trips, status } = useTrips();
   const reduce = useReducedMotion();
   const intro = useIntroStyle();
-  const galleryStyle = useGalleryStyle();
-  const scrollRef = useContext(ScrollContainerContext);
-  const parallaxRef = useRef<HTMLDivElement>(null);
   const [media, setMedia] = useState<Record<string, LegacyMedia> | undefined>();
 
   useEffect(() => {
@@ -227,20 +207,6 @@ export function PlaceDetail({ id }: { id: string }) {
     return out;
   }, [media, visiting, id]);
 
-  // Parallax gallery: start the per-frame tweens once the frames are mounted, revert them when the style
-  // or the photos change or the page unmounts. They scroll with <main>, not the window.
-  const parallaxOn = galleryStyle === "parallax" && gallery.length >= GALLERY_MIN;
-  useEffect(() => {
-    const scope = parallaxRef.current;
-    if (!parallaxOn || !scope) return;
-    const cleanup = parallaxImages(scope, scrollRef?.current ?? null);
-    const raf = requestAnimationFrame(() => ScrollTrigger.refresh());
-    return () => {
-      cancelAnimationFrame(raf);
-      cleanup();
-    };
-  }, [parallaxOn, gallery, scrollRef]);
-
   if (!facts) {
     return (
       <div className="relative flex min-h-screen items-center justify-center px-6">
@@ -267,7 +233,6 @@ export function PlaceDetail({ id }: { id: string }) {
   const heroPath = photos[0];
   const heroSrc = placeHero(id) ?? (heroPath && tripImage(heroPath, 2000)) ?? getCover(visiting[0]?.cover ?? "dunes");
   const lines = twoLines(place.name);
-  const mailto = `mailto:contact@loverofsahara.com?subject=${encodeURIComponent(place.name)}`;
 
   const factRows: [string, string][] = [
     [PT.type, place.kind],
@@ -412,25 +377,7 @@ export function PlaceDetail({ id }: { id: string }) {
               </h2>
             </motion.div>
 
-            {galleryStyle === "parallax" ? (
-              // Frames stay in the page flow; each photo drifts down inside its clipped frame as you scroll.
-              <div ref={parallaxRef} className="grid grid-cols-1 gap-[6px] md:grid-cols-12 md:items-start">
-                {gallery.slice(0, PARALLAX_FRAMES.length).map((p, i) => {
-                  const f = PARALLAX_FRAMES[i]!;
-                  const src = tripImage(p, 1400);
-                  return (
-                    <div
-                      key={p}
-                      data-parallax-image
-                      style={{ aspectRatio: f.ratio }}
-                      className={`rounded-md ${f.span} ${f.drop}`}
-                    >
-                      {src && <img src={src} alt="" loading="eager" draggable={false} className="bg-neutral-100" />}
-                    </div>
-                  );
-                })}
-              </div>
-            ) : midCount === 0 ? (
+            {midCount === 0 ? (
               <div className="grid grid-cols-2 gap-[6px] md:grid-cols-3">
                 {gallery.map((p) => (
                   <GalleryPhoto key={p} path={p} className="h-56 object-cover md:h-96" />
@@ -470,7 +417,7 @@ export function PlaceDetail({ id }: { id: string }) {
         )}
       </Band>
 
-      {/* The trips that stop here, then a call to action */}
+      {/* The trips that stop here, then the footer */}
       {hasTrips && (
         <Band id="trips" tone="paper" parallax={false} className="!pt-0 pb-24 md:pb-32">
           <h2 className="mb-7 text-[26px] font-semibold tracking-[-0.03em] md:text-[32px]">{PT.journeys}</h2>
@@ -478,20 +425,6 @@ export function PlaceDetail({ id }: { id: string }) {
             {visiting.slice(0, 6).map((t, i) => (
               <TripCard key={t.slug} trip={t} index={i} />
             ))}
-          </div>
-          <div className="mt-16 rounded-2xl bg-ink-deep px-6 py-14 text-center text-white md:px-12 md:py-20">
-            <h2 className="mx-auto max-w-[16ch] text-[32px] font-semibold leading-[1.05] tracking-[-0.035em] md:text-[52px]">
-              {PT.plan}
-            </h2>
-            <p className="mx-auto mt-4 max-w-md text-[15px] leading-normal text-white/70">{PT.planLead}</p>
-            <div className="mt-7">
-              <a
-                href={mailto}
-                className="inline-flex h-[46px] items-center justify-center rounded-[10px] bg-paper px-7 text-sm font-semibold text-ink transition-all duration-100 ease-out hover:bg-neutral-100 active:scale-[0.98]"
-              >
-                {PT.contact}
-              </a>
-            </div>
           </div>
         </Band>
       )}

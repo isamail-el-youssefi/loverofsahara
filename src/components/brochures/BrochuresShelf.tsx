@@ -59,7 +59,8 @@ function Group({ title, lead, items, lang, t }: { title: string; lead: string; i
 export function BrochuresShelf() {
   const [lang, setLang, t] = useBrochureLang();
   return (
-    <div className="relative bg-ink-deep text-white">
+    <div className="bg-paper px-[4px] pt-[4px]">
+    <div className="nav-framed relative rounded-t-lg bg-ink-deep text-white">
       <Navbar />
       <section className="px-4 pb-28 pt-32 md:px-10 md:pt-40">
         <div className="grid grid-cols-[minmax(0,1fr)] gap-14 lg:grid-cols-12 lg:gap-16">
@@ -114,6 +115,7 @@ export function BrochuresShelf() {
           </div>
         </div>
       </section>
+    </div>
     </div>
   );
 }

@@ -1,80 +1,34 @@
-import { useEffect, useState } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import { Check } from "lucide-react";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import {
   ABOUT_STYLES,
   BROCHURES_STYLES,
-  CARD_STYLES,
   CONTACT_STYLES,
-  CTA_STYLES,
-  DETAIL_STYLES,
-  FONTS,
   FOOTER_STYLES,
   GALLERY_STYLES,
   HOME_TRIPS_STYLES,
-  INTRO_STYLES,
   PHOTOS_STYLES,
   REVIEW_STYLES,
   THEMES,
   applyAboutStyle,
   applyBrochuresStyle,
-  applyCardStyle,
   applyContactStyle,
-  applyCtaStyle,
-  applyDetailStyle,
   applyFooterStyle,
   applyGalleryStyle,
   applyHomeTripsStyle,
-  applyIntroStyle,
   applyPhotosStyle,
   applyReviewStyle,
-  applyFont,
-  applyTheme,
-  getStoredFont,
   getStoredTheme,
 } from "@/lib/themes";
 import { useAboutStyle } from "@/hooks/use-about-style";
 import { useBrochuresStyle } from "@/hooks/use-brochures-style";
-import { useCardStyle } from "@/hooks/use-card-style";
 import { useContactStyle } from "@/hooks/use-contact-style";
-import { useCtaStyle } from "@/hooks/use-cta-style";
-import { useDetailStyle } from "@/hooks/use-detail-style";
 import { useFooterStyle } from "@/hooks/use-footer-style";
 import { useGalleryStyle } from "@/hooks/use-gallery-style";
 import { useHomeTripsStyle } from "@/hooks/use-home-trips-style";
-import { useIntroStyle } from "@/hooks/use-intro-style";
 import { usePhotosStyle } from "@/hooks/use-photos-style";
 import { useReviewStyle } from "@/hooks/use-review-style";
-
-const THEME_EVENT = "los-theme-change";
-
-function useSiteTheme() {
-  const [themeId, setThemeId] = useState(getStoredTheme);
-
-  useEffect(() => {
-    const sync = () => setThemeId(getStoredTheme());
-    window.addEventListener(THEME_EVENT, sync);
-    return () => window.removeEventListener(THEME_EVENT, sync);
-  }, []);
-
-  const select = (id: string) => {
-    applyTheme(id);
-    setThemeId(id);
-    window.dispatchEvent(new Event(THEME_EVENT));
-  };
-
-  return [themeId, select] as const;
-}
-
-function useSiteFont() {
-  const [fontId, setFontId] = useState(getStoredFont);
-  const select = (id: string) => {
-    applyFont(id);
-    setFontId(id);
-  };
-  return [fontId, select] as const;
-}
 
 /** Artist's palette whose paint dots always show the active theme's colours. */
 function PaletteIcon({ colors }: { colors: string[] }) {
@@ -113,61 +67,17 @@ function PaletteIcon({ colors }: { colors: string[] }) {
   );
 }
 
-/** Tiny wireframe of each trip-card design for the picker. */
-function CardThumb({ id }: { id: string }) {
-  const photo = "bg-gradient-to-br from-neutral-400 to-neutral-600";
-  return (
-    <span className="relative flex h-10 w-12 shrink-0 overflow-hidden rounded-md border border-black/10 bg-paper" aria-hidden>
-      {id === "frame" ? (
-        <span className="m-[2px] flex flex-1 flex-col gap-[2px] rounded-[3px] border border-black/20 p-[2px]">
-          <span className={`h-[18px] rounded-[2px] ${photo}`} />
-          <span className="mx-auto h-[2px] w-1/2 rounded bg-neutral-500" />
-        </span>
-      ) : id === "editorial" || id === "caption" ? (
-        <span className="flex w-full flex-col gap-[2px] p-[3px]">
-          <span className={`h-[22px] rounded-[2px] ${photo}`} />
-          <span className="h-[2px] w-3/4 rounded bg-neutral-500" />
-          <span className="h-[2px] w-1/2 rounded bg-neutral-300" />
-        </span>
-      ) : (
-        <span className={`relative m-[3px] flex-1 rounded-[3px] ${photo}`}>
-          {id === "plaque" ? (
-            <span className="absolute inset-x-[2px] bottom-[2px] h-[9px] rounded-[2px] bg-paper" />
-          ) : (
-            <>
-              <span className="absolute bottom-[8px] left-[3px] h-[2px] w-3/4 rounded bg-white" />
-              {id !== "reveal" && <span className="absolute bottom-[4px] left-[3px] h-[2px] w-1/2 rounded bg-white/60" />}
-              {id === "classic" && (
-                <>
-                  <span className="absolute left-[3px] top-[3px] h-[3px] w-3 rounded-full bg-white/60" />
-                  <span className="absolute right-[3px] top-[3px] h-[3px] w-3 rounded-full bg-white/60" />
-                </>
-              )}
-            </>
-          )}
-        </span>
-      )}
-    </span>
-  );
-}
-
 export function ThemeSwitcher({ light = false }: { light?: boolean }) {
-  const [themeId, select] = useSiteTheme();
-  const [fontId, selectFont] = useSiteFont();
-  const cardId = useCardStyle();
-  const detailId = useDetailStyle();
-  const introId = useIntroStyle();
   const galleryId = useGalleryStyle();
   const reviewId = useReviewStyle();
   const homeTripsId = useHomeTripsStyle();
-  const ctaId = useCtaStyle();
   const footerId = useFooterStyle();
   const aboutId = useAboutStyle();
   const contactId = useContactStyle();
   const brochuresId = useBrochuresStyle();
   const photosId = usePhotosStyle();
   const reduce = useReducedMotion();
-  const active = THEMES.find((t) => t.id === themeId) ?? THEMES[0]!;
+  const active = THEMES.find((t) => t.id === getStoredTheme()) ?? THEMES[0]!;
 
   const triggerTone = light
     ? "border-black/15 bg-black/[0.04] text-ink hover:bg-black/[0.08]"
@@ -178,8 +88,8 @@ export function ThemeSwitcher({ light = false }: { light?: boolean }) {
       <PopoverTrigger asChild>
         <motion.button
           type="button"
-          aria-label={`Change colour theme (current: ${active.name})`}
-          title="Colour themes"
+          aria-label={`Site options`}
+          title="Site options"
           {...(reduce ? {} : { whileHover: { rotate: -14, scale: 1.08 }, whileTap: { scale: 0.94 } })}
           transition={{ type: "spring", stiffness: 380, damping: 18 }}
           className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full border backdrop-blur-md shadow-[inset_0_1px_1px_rgba(255,255,255,0.25)] outline-none transition-colors focus-visible:ring-2 focus-visible:ring-white/70 ${triggerTone}`}
@@ -196,153 +106,6 @@ export function ThemeSwitcher({ light = false }: { light?: boolean }) {
         className="z-[100] max-h-[var(--radix-popover-content-available-height)] w-[min(320px,calc(100vw-24px))] overflow-y-auto overscroll-contain rounded-2xl border border-neutral-200 bg-paper p-2 text-ink shadow-[0_24px_60px_-20px_rgba(0,0,0,0.35)]"
       >
         <p className="px-3 pb-2 pt-2 text-[11px] font-semibold uppercase tracking-[0.08em] text-neutral-500">
-          Colour theme
-        </p>
-        <div role="radiogroup" aria-label="Colour theme" className="flex flex-col gap-1">
-          {THEMES.map((t) => {
-            const selected = t.id === themeId;
-            return (
-              <button
-                key={t.id}
-                type="button"
-                role="radio"
-                aria-checked={selected}
-                onClick={() => select(t.id)}
-                className={`flex items-center gap-3 rounded-xl px-3 py-2.5 text-left outline-none transition-colors focus-visible:ring-2 focus-visible:ring-ink/40 ${
-                  selected ? "bg-neutral-100" : "hover:bg-neutral-50"
-                }`}
-              >
-                <span className="flex shrink-0 -space-x-2" aria-hidden>
-                  {t.swatches.map((c, i) => (
-                    <span
-                      key={i}
-                      className="h-7 w-7 rounded-full border-2 border-paper shadow-sm ring-1 ring-black/10"
-                      style={{ backgroundColor: c }}
-                    />
-                  ))}
-                </span>
-                <span className="min-w-0 flex-1">
-                  <span className="block text-[14px] font-semibold leading-tight">{t.name}</span>
-                  <span className="block truncate text-[12px] text-neutral-500">{t.mood}</span>
-                </span>
-                {selected && <Check size={16} className="shrink-0 text-ink" aria-hidden />}
-              </button>
-            );
-          })}
-        </div>
-
-        <p className="px-3 pb-2 pt-4 text-[11px] font-semibold uppercase tracking-[0.08em] text-neutral-500">
-          Typography
-        </p>
-        <div role="radiogroup" aria-label="Typography" className="flex flex-col gap-1">
-          {FONTS.map((f) => {
-            const selected = f.id === fontId;
-            return (
-              <button
-                key={f.id}
-                type="button"
-                role="radio"
-                aria-checked={selected}
-                onClick={() => selectFont(f.id)}
-                className={`flex items-center gap-3 rounded-xl px-3 py-2.5 text-left outline-none transition-colors focus-visible:ring-2 focus-visible:ring-ink/40 ${
-                  selected ? "bg-neutral-100" : "hover:bg-neutral-50"
-                }`}
-              >
-                <span className="flex w-12 shrink-0 items-baseline justify-center gap-0.5 leading-none" aria-hidden>
-                  <span className="text-[26px]" style={{ fontFamily: f.preview[0] }}>A</span>
-                  <span className="text-[15px]" style={{ fontFamily: f.preview[1] }}>a</span>
-                  <span className="text-[18px]" style={{ fontFamily: f.preview[2] }}>g</span>
-                </span>
-                <span className="min-w-0 flex-1">
-                  <span className="block text-[14px] font-semibold leading-tight">{f.name}</span>
-                  <span className="block truncate text-[12px] text-neutral-500">{f.mood}</span>
-                </span>
-                {selected && <Check size={16} className="shrink-0 text-ink" aria-hidden />}
-              </button>
-            );
-          })}
-        </div>
-
-        <p className="px-3 pb-2 pt-4 text-[11px] font-semibold uppercase tracking-[0.08em] text-neutral-500">
-          Trip cards
-        </p>
-        <div role="radiogroup" aria-label="Trip cards" className="grid grid-cols-2 gap-1">
-          {CARD_STYLES.map((c) => {
-            const selected = c.id === cardId;
-            return (
-              <button
-                key={c.id}
-                type="button"
-                role="radio"
-                aria-checked={selected}
-                onClick={() => applyCardStyle(c.id)}
-                title={c.mood}
-                className={`flex items-center gap-2 rounded-xl px-2 py-2 text-left outline-none transition-colors focus-visible:ring-2 focus-visible:ring-ink/40 ${
-                  selected ? "bg-neutral-100" : "hover:bg-neutral-50"
-                }`}
-              >
-                <CardThumb id={c.id} />
-                <span className="min-w-0 flex-1 truncate text-[13px] font-semibold leading-tight">{c.name}</span>
-                {selected && <Check size={14} className="shrink-0 text-ink" aria-hidden />}
-              </button>
-            );
-          })}
-        </div>
-        <p className="px-3 pb-2 pt-4 text-[11px] font-semibold uppercase tracking-[0.08em] text-neutral-500">
-          Trip page
-        </p>
-        <div role="radiogroup" aria-label="Trip page" className="flex flex-col gap-1">
-          {DETAIL_STYLES.map((c) => {
-            const selected = c.id === detailId;
-            return (
-              <button
-                key={c.id}
-                type="button"
-                role="radio"
-                aria-checked={selected}
-                onClick={() => applyDetailStyle(c.id)}
-                className={`flex items-center gap-3 rounded-xl px-3 py-2.5 text-left outline-none transition-colors focus-visible:ring-2 focus-visible:ring-ink/40 ${
-                  selected ? "bg-neutral-100" : "hover:bg-neutral-50"
-                }`}
-              >
-                <span className="min-w-0 flex-1">
-                  <span className="block text-[14px] font-semibold leading-tight">{c.name}</span>
-                  <span className="block truncate text-[12px] text-neutral-500">{c.mood}</span>
-                </span>
-                {selected && <Check size={16} className="shrink-0 text-ink" aria-hidden />}
-              </button>
-            );
-          })}
-        </div>
-
-        <p className="px-3 pb-2 pt-4 text-[11px] font-semibold uppercase tracking-[0.08em] text-neutral-500">
-          Trip intro
-        </p>
-        <div role="radiogroup" aria-label="Trip intro" className="flex flex-col gap-1">
-          {INTRO_STYLES.map((c) => {
-            const selected = c.id === introId;
-            return (
-              <button
-                key={c.id}
-                type="button"
-                role="radio"
-                aria-checked={selected}
-                onClick={() => applyIntroStyle(c.id)}
-                className={`flex items-center gap-3 rounded-xl px-3 py-2.5 text-left outline-none transition-colors focus-visible:ring-2 focus-visible:ring-ink/40 ${
-                  selected ? "bg-neutral-100" : "hover:bg-neutral-50"
-                }`}
-              >
-                <span className="min-w-0 flex-1">
-                  <span className="block text-[14px] font-semibold leading-tight">{c.name}</span>
-                  <span className="block truncate text-[12px] text-neutral-500">{c.mood}</span>
-                </span>
-                {selected && <Check size={16} className="shrink-0 text-ink" aria-hidden />}
-              </button>
-            );
-          })}
-        </div>
-
-        <p className="px-3 pb-2 pt-4 text-[11px] font-semibold uppercase tracking-[0.08em] text-neutral-500">
           Home trips
         </p>
         <div role="radiogroup" aria-label="Home trips" className="flex flex-col gap-1">
@@ -355,33 +118,6 @@ export function ThemeSwitcher({ light = false }: { light?: boolean }) {
                 role="radio"
                 aria-checked={selected}
                 onClick={() => applyHomeTripsStyle(c.id)}
-                className={`flex items-center gap-3 rounded-xl px-3 py-2.5 text-left outline-none transition-colors focus-visible:ring-2 focus-visible:ring-ink/40 ${
-                  selected ? "bg-neutral-100" : "hover:bg-neutral-50"
-                }`}
-              >
-                <span className="min-w-0 flex-1">
-                  <span className="block text-[14px] font-semibold leading-tight">{c.name}</span>
-                  <span className="block truncate text-[12px] text-neutral-500">{c.mood}</span>
-                </span>
-                {selected && <Check size={16} className="shrink-0 text-ink" aria-hidden />}
-              </button>
-            );
-          })}
-        </div>
-
-        <p className="px-3 pb-2 pt-4 text-[11px] font-semibold uppercase tracking-[0.08em] text-neutral-500">
-          Call to action
-        </p>
-        <div role="radiogroup" aria-label="Call to action" className="flex flex-col gap-1">
-          {CTA_STYLES.map((c) => {
-            const selected = c.id === ctaId;
-            return (
-              <button
-                key={c.id}
-                type="button"
-                role="radio"
-                aria-checked={selected}
-                onClick={() => applyCtaStyle(c.id)}
                 className={`flex items-center gap-3 rounded-xl px-3 py-2.5 text-left outline-none transition-colors focus-visible:ring-2 focus-visible:ring-ink/40 ${
                   selected ? "bg-neutral-100" : "hover:bg-neutral-50"
                 }`}

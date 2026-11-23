@@ -10,7 +10,6 @@ import {
   Facts,
   Highlights,
   IncludedExcluded,
-  PlanButton,
   PlanPanel,
   PricingTable,
   SectionTitle,
@@ -200,9 +199,6 @@ export function SplitLayout({ ctx }: { ctx: TripCtx }) {
               <div className="mt-8 border-t border-ink/10 pt-7">
                 <PricingTable ctx={ctx} compact />
                 <p className="mt-3 text-[12.5px] text-neutral-500">{T.pricingNote}</p>
-              </div>
-              <div className="mt-6">
-                <PlanButton ctx={ctx} />
               </div>
             </div>
           </aside>

@@ -1,8 +1,10 @@
 import { useState } from "react";
+import { useLanguage } from "@/i18n/LanguageProvider";
 import { cn } from "@/lib/utils";
 
 /** Newsletter sign-up shared by every footer design. `tone` is the colour of the surface it sits on. */
 export function NewsletterForm({ tone = "dark", className }: { tone?: "dark" | "light"; className?: string }) {
+  const { site } = useLanguage();
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
 
@@ -23,7 +25,7 @@ export function NewsletterForm({ tone = "dark", className }: { tone?: "dark" | "
           className,
         )}
       >
-        ✨ Thank you for subscribing to Lover of Sahara updates!
+        {site.footer.thanks}
       </div>
     );
   }
@@ -44,15 +46,15 @@ export function NewsletterForm({ tone = "dark", className }: { tone?: "dark" | "
         required
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        placeholder="Email"
-        aria-label="Email address"
+        placeholder={site.footer.emailPlaceholder}
+        aria-label={site.footer.emailLabel}
         className="w-full bg-transparent text-sm text-ink placeholder:text-neutral-500 focus:outline-none"
       />
       <button
         type="submit"
         className="shrink-0 cursor-pointer rounded-[10px] bg-ink px-6 py-2 text-sm font-semibold text-white transition hover:bg-neutral-800 md:px-10 md:text-base"
       >
-        Sign up
+        {site.footer.signUp}
       </button>
     </form>
   );

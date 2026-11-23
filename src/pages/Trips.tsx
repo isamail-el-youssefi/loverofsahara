@@ -16,9 +16,9 @@ import { tripsSeo } from "@/lib/seoData";
 type Filter = "all" | TripCategory;
 
 export function Trips() {
-  usePageSeo(tripsSeo());
   const { trips, status } = useTrips();
   const { ui, lang } = useLanguage();
+  usePageSeo(tripsSeo(lang));
   const stop = lang === "zh" ? "。" : ".";
   // The home page category cards and the navbar menu link here as /trips?category=excursion&departure=zagora
   const readCategory = (): Filter => {

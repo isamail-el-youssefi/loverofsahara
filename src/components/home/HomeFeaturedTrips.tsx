@@ -7,8 +7,9 @@ import { getAllReviews } from "@/data/reviews";
 import type { LocalizedTrip } from "@/data/trips";
 import { useHomeTripsStyle } from "@/hooks/use-home-trips-style";
 import { useTrips } from "@/hooks/use-trips";
+import { useLanguage } from "@/i18n/LanguageProvider";
 import { fetchAllReviews, summarize, type Review, type ReviewSummary } from "@/lib/reviews";
-import { TRIPS_PATH } from "@/lib/routes";
+import { tripsPath } from "@/lib/routes";
 
 /** Cards per page (and per row on desktop). */
 const PER_PAGE = 3;
@@ -27,7 +28,8 @@ type Entry = { trip: LocalizedTrip; summary: ReviewSummary | null };
  * Reviews start from the build-time data, then refresh from the reviews API.
  */
 export function HomeFeaturedTrips() {
-  const { trips, status } = useTrips();
+  const { trips, status, lang } = useTrips();
+  const f = useLanguage().site.featured;
   const style = useHomeTripsStyle();
   const [reviews, setReviews] = useState<Review[]>(getAllReviews);
 
@@ -65,17 +67,17 @@ export function HomeFeaturedTrips() {
           data-scroll
           className="w-full text-[32px] font-semibold leading-[1.1] tracking-[-0.05em] text-ink md:text-[64px] lg:w-1/2"
         >
-          Popular <span className="font-normal text-neutral-400">Sahara Trips.</span>
+          {f.h2a} <span className="font-normal text-neutral-400">{f.h2b}</span>
         </h2>
         <div className="flex w-full justify-between gap-4 lg:w-1/2 lg:items-end">
           <p className="max-w-sm text-[16px] font-medium tracking-[-0.03em] text-neutral-500">
-            Private 4x4 journeys, desert camps and caravans, planned around you by a local team.
+            {f.lead}
           </p>
           <a
-            href={TRIPS_PATH}
+            href={tripsPath(lang)}
             className="inline-flex shrink-0 items-center gap-2 rounded-full bg-ink px-5 py-3 text-[13px] font-semibold text-white transition hover:bg-ink-deep"
           >
-            View all trips <ArrowUpRight size={16} aria-hidden />
+            {f.viewAll} <ArrowUpRight size={16} aria-hidden />
           </a>
         </div>
       </div>
@@ -101,11 +103,12 @@ export function HomeFeaturedTrips() {
 
 /** Round frosted arrow centred on the left or right edge of the cards (desktop; touch screens just swipe). */
 function ArrowButton({ dir, disabled, onClick }: { dir: "prev" | "next"; disabled: boolean; onClick: () => void }) {
+  const f = useLanguage().site.featured;
   const Icon = dir === "prev" ? ChevronLeft : ChevronRight;
   return (
     <button
       type="button"
-      aria-label={dir === "prev" ? "Previous trips" : "Next trips"}
+      aria-label={dir === "prev" ? f.prev : f.next}
       disabled={disabled}
       onClick={onClick}
       className={`absolute top-1/2 z-20 hidden h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-white/40 bg-paper/90 text-ink shadow-[0_8px_24px_-8px_rgba(0,0,0,0.35)] backdrop-blur-md outline-none transition hover:bg-paper focus-visible:ring-2 focus-visible:ring-ink/50 disabled:pointer-events-none disabled:opacity-0 md:flex ${
@@ -126,6 +129,7 @@ const GAP = 16;
  * reserved, so every tab has the same card height.
  */
 function TabbedTrips({ entries, reviewed }: { entries: Entry[]; reviewed: Entry[] }) {
+  const f = useLanguage().site.featured;
   const reduce = useReducedMotion();
   const scroller = useRef<HTMLDivElement>(null);
   const [tab, setTab] = useState(POPULAR);
@@ -142,8 +146,8 @@ function TabbedTrips({ entries, reviewed }: { entries: Entry[]; reviewed: Entry[
     const cities = [...byCity.entries()]
       .sort((a, b) => b[1].items.length - a[1].items.length || a[1].label.localeCompare(b[1].label))
       .map(([id, g]) => ({ id, label: g.label, items: g.items }));
-    return [...(reviewed.length ? [{ id: POPULAR, label: "Popular", items: reviewed }] : []), ...cities];
-  }, [entries, reviewed]);
+    return [...(reviewed.length ? [{ id: POPULAR, label: f.popular, items: reviewed }] : []), ...cities];
+  }, [entries, reviewed, f.popular]);
 
   const current = tabs.find((t) => t.id === tab) ?? tabs[0]!;
   const items = current.items;
@@ -175,7 +179,7 @@ function TabbedTrips({ entries, reviewed }: { entries: Entry[]; reviewed: Entry[
   return (
     <>
       <AnimatedTabs
-        aria-label="Trips by departure"
+        aria-label={f.byDeparture}
         className="mb-6"
         value={current.id}
         onChange={(id) => {
@@ -214,13 +218,13 @@ function TabbedTrips({ entries, reviewed }: { entries: Entry[]; reviewed: Entry[
       </div>
 
       {/* Always present on desktop (even with one page) so every tab keeps the same card height. */}
-      <div role="group" aria-label="More trips" className="mt-6 hidden h-2 items-center justify-center gap-2 md:flex">
+      <div role="group" aria-label={f.more} className="mt-6 hidden h-2 items-center justify-center gap-2 md:flex">
         {pages > 1 &&
           Array.from({ length: pages }, (_, i) => (
             <button
               key={i}
               type="button"
-              aria-label={`Page ${i + 1} of ${pages}`}
+              aria-label={f.page.replace("{i}", String(i + 1)).replace("{n}", String(pages))}
               aria-current={i === page}
               onClick={() => goTo(i)}
               className={`h-2 rounded-full outline-none transition-all duration-300 focus-visible:ring-2 focus-visible:ring-ink/50 focus-visible:ring-offset-2 ${

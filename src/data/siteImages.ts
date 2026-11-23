@@ -14,9 +14,22 @@ const ik = (path: string, w = 1400) => tripImage(path, w) as string;
 /** Home page: the four expedition cards. */
 export const CATEGORY_IMAGES = {
   camps: ik("/trip5.jpg"),
-  fourByFour: ik("/222.jpg"),
+  fourByFour: ik("/card/11.jpg"), // golden dunes with a tiny camel party: a short escape, not a caravan
   caravans: ik("/hero/trekking.jpg"),
-  draaValley: ik("/trip4.jpg"),
+  yoga: ik("/hero/yoga.jpg"),
+};
+
+/**
+ * Trips dropdown, "By departure": one photo that shows each city (or, for M'hamid, the dunes it leads to).
+ * Keys are the `departureCity` values in trips.meta.json; a city not listed here falls back to the photo of
+ * its first trip.
+ */
+export const CITY_IMAGES: Record<string, string> = {
+  marrakech: ik("/hero/marrakech.jpg", 900),
+  zagora: ik("/hero/zagora.jpg", 900),
+  agadir: ik("/card/20.jpg", 900), // the Legzira arch on the Atlantic coast
+  ouarzazate: ik("/hero/ouarzazate.jpg", 900),
+  "mhamid el ghizlane": ik("/hero/circuit.jpg", 900),
 };
 
 /** Home page: the four destinations. */
@@ -36,14 +49,16 @@ export const CTA_PHOTO = ik("/trip5.jpg", 2400);
 /** Home page gallery (the old site's gallery photos). */
 export const GALLERY_IMAGES = {
   dunes: ik("/hero/circuit.jpg", 1920),
-  tichkaPass: ik("/6666.jpg", 1280),
-  campfireStars: ik("/10007.jpg", 1280),
-  aitBenHaddou: ik("/3333.jpg", 1280),
-  caravan: ik("/10004.jpg", 1280),
-  canyon: ik("/10002.jpg", 1280),
-  desertLunch: ik("/11-1.jpg", 1280),
-  todghaGorges: ik("/6jp/day2/9.jpg", 1280),
-  marrakech: ik("/hero/marrakech.jpg", 1280),
+};
+
+/** Home "Happy travelers" zoom collage: photos sent by guests (the old site's "Happy travelers" carousel). */
+export const TRAVELER_IMAGES = {
+  group: ik("/2.jpg", 1280),
+  bigGroup: ik("/8.jpg", 1280),
+  camels: ik("/6.jpg", 1280),
+  trio: ik("/1.jpg", 1280),
+  picnic: ik("/11-1.jpg", 1280),
+  camelCouple: ik("/9.jpg", 1280),
 };
 
 /** Blog: one cover per article, plus the photos inside the articles. */

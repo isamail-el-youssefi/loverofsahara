@@ -22,7 +22,7 @@ export function ReviewsEditorial({ tripSlug, tripTitle, reviews }: ReviewsProps)
   const summary = summarize(reviews);
 
   return (
-    <Band id="reviews" tone="paper" parallax={false}>
+    <Band id="reviews" tone="paper" fullHeight>
       <motion.div {...fadeUp} className="grid gap-12 lg:grid-cols-[2fr_3fr] lg:gap-14">
         <div className="lg:sticky lg:top-10 lg:self-start">
           <SectionTitle eyebrow={RT.eyebrow}>{RT.title}</SectionTitle>

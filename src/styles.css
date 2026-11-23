@@ -538,6 +538,18 @@ html:is([data-font="sahara-editorial"], [data-font="red-dot"]) .nav-logo {
   letter-spacing: 0.04em;
   line-height: 1.05;
 }
+/* Preloader wordmark: same typeface as the header logo, pushed to extra bold. */
+.fill-text-container .fill-text {
+  font-weight: 900; /* Geist is variable up to 900 */
+  letter-spacing: 0.01em;
+}
+html:is([data-font="sahara-editorial"], [data-font="red-dot"])  .fill-text-container .fill-text {
+  font-family: "F37 Wicklow", ui-serif, Georgia, serif;
+  font-weight: 500; /* heaviest real F37 Wicklow weight (no Bold file) */
+  -webkit-text-stroke: 0.03em currentColor; /* the extra-bold weight: stroke scales with the big type */
+  paint-order: stroke fill;
+  letter-spacing: 0.04em;
+}
 /* Red Dot desktop: light logo (no stroke, which would fake extra weight) */
 @media (min-width: 768px) {
   html[data-font="red-dot"] .nav-logo {

@@ -3,11 +3,16 @@ import { ArrowUpRight } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Band, Eyebrow, SectionTitle } from "@/components/trip/parts";
 import { fadeUp } from "@/lib/animations";
-import { ABOUT_TAIL, CTA, HERO_PHOTO, OWNER, STATS, VALUES } from "./content";
+import { HERO_PHOTO } from "./content";
+import { useLanguage } from "@/i18n/LanguageProvider";
+import { useAboutContent } from "./useAboutContent";
 import { CtaCard, Faq, Portrait, ReviewsBlock, SustainabilityList } from "./shared";
 
 /** Home-page vibe: oversized statement, stat cards beside a big photo, sticky portrait, numbered values. */
 export function AboutStory() {
+  const { ABOUT_TAIL, CTA, OWNER, STATS, VALUES } = useAboutContent();
+  const { site } = useLanguage();
+  const t = site.about;
   return (
     <div className="trip-page relative">
       <Navbar theme="light" />
@@ -16,11 +21,11 @@ export function AboutStory() {
         <motion.div {...fadeUp} className="flex flex-col items-start gap-8 lg:flex-row lg:gap-1.5">
           <div className="w-full flex-shrink-0 pt-4 lg:w-[30%]">
             <div className="flex items-center gap-2 text-[13px] font-medium text-neutral-500">
-              <div className="h-1.5 w-1.5 rounded-full bg-brand" /> About us
+              <div className="h-1.5 w-1.5 rounded-full bg-brand" /> {site.homeAbout.eyebrow}
             </div>
           </div>
           <h1 className="flex-1 text-[38px] font-semibold leading-[1.04] tracking-[-0.05em] text-ink md:text-[64px]">
-            Native guides from Zagora. <span className="font-medium text-neutral-400">{ABOUT_TAIL}</span>
+            {site.homeAbout.h2a} <span className="font-medium text-neutral-400">{ABOUT_TAIL}</span>
           </h1>
         </motion.div>
 
@@ -49,7 +54,7 @@ export function AboutStory() {
             </motion.a>
           </div>
           <motion.div {...fadeUp} className="relative h-[480px] flex-1 overflow-hidden rounded-2xl lg:h-[610px]">
-            <img src={HERO_PHOTO} alt="A camel caravan crossing the dunes near Zagora" loading="lazy" className="h-full w-full object-cover" />
+            <img src={HERO_PHOTO} alt={site.homeAbout.photoAlt} loading="lazy" className="h-full w-full object-cover" />
           </motion.div>
         </div>
       </Band>
@@ -67,20 +72,20 @@ export function AboutStory() {
             </div>
           </div>
           <motion.div {...fadeUp} className="lg:col-span-7">
-            <Eyebrow className="mb-3">Meet {OWNER.name}</Eyebrow>
+            <Eyebrow className="mb-3">{t.ownerEyebrow}</Eyebrow>
             <p className="text-[28px] font-light leading-[1.15] tracking-[-0.03em] md:text-[44px]">“{OWNER.quote}”</p>
             <div className="mt-10 space-y-5 text-[16px] leading-[1.75] text-ink/80">
               {OWNER.bio.map((p) => (
                 <p key={p.slice(0, 24)}>{p}</p>
               ))}
             </div>
-            <p className="mt-8 text-[14px] text-neutral-500">Speaks {OWNER.languages.join(", ")}.</p>
+            <p className="mt-8 text-[14px] text-neutral-500">{t.languagesLabel}: {OWNER.languages.join(", ")}.</p>
           </motion.div>
         </div>
       </Band>
 
       <Band id="values" tone="paper" parallax={false}>
-        <SectionTitle eyebrow="What we stand for">Four things we never compromise on</SectionTitle>
+        <SectionTitle eyebrow={t.valuesEyebrow}>{t.valuesTitleStory}</SectionTitle>
         <ol className="mt-10 border-b border-ink/10">
           {VALUES.map((v, i) => (
             <li key={v.title} className="grid gap-3 border-t border-ink/10 py-8 md:grid-cols-[4rem_minmax(0,1fr)_minmax(0,1.4fr)] md:items-baseline md:gap-8 md:py-10">
@@ -93,16 +98,16 @@ export function AboutStory() {
       </Band>
 
       <Band id="reviews" tone="paper" parallax={false} className="!pt-0">
-        <Eyebrow className="mb-3">Why travel with us</Eyebrow>
-        <h2 className="mb-10 text-[30px] font-semibold leading-[1.05] tracking-[-0.035em] md:text-[40px]">Trusted by our guests</h2>
+        <Eyebrow className="mb-3">{t.reviewsEyebrow}</Eyebrow>
+        <h2 className="mb-10 text-[30px] font-semibold leading-[1.05] tracking-[-0.035em] md:text-[40px]">{t.reviewsTitle}</h2>
         <ReviewsBlock />
       </Band>
 
       <Band id="sustainability" tone="dark" parallax={false} className="py-20 md:py-28">
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-4">
-            <Eyebrow className="mb-3 !text-white/60">Responsible travel</Eyebrow>
-            <h2 className="text-[32px] font-semibold leading-[1.04] tracking-[-0.035em] md:text-[48px]">Sustainability</h2>
+            <Eyebrow className="mb-3 !text-white/60">{t.sustainEyebrow}</Eyebrow>
+            <h2 className="text-[32px] font-semibold leading-[1.04] tracking-[-0.035em] md:text-[48px]">{t.sustainTitle}</h2>
           </div>
           <div className="lg:col-span-8">
             <SustainabilityList tone="dark" />
@@ -113,7 +118,7 @@ export function AboutStory() {
       <Band id="faq" tone="paper" parallax={false}>
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-4">
-            <SectionTitle eyebrow="Good to know">Questions</SectionTitle>
+            <SectionTitle eyebrow={t.faqEyebrow}>{t.faqTitle}</SectionTitle>
           </div>
           <div className="lg:col-span-8">
             <Faq />

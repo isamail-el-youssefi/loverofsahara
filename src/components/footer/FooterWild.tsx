@@ -1,10 +1,13 @@
 import { TextRollHover } from "@/components/ui/text-stagger-hover";
-import { footerCols } from "./data";
+import { useLanguage } from "@/i18n/LanguageProvider";
+import { useFooterCols } from "./useFooterCols";
 import { GoogleReviewsBadge } from "./GoogleReviewsBadge";
 import { NewsletterForm } from "./NewsletterForm";
 
 /** Dark panel with the giant "Authentic. Wild." wordmark (the original footer) plus the Google badge. */
 export function FooterWild() {
+  const footerCols = useFooterCols();
+  const { site } = useLanguage();
   return (
     <div className="flex min-h-[85vh] w-full flex-col px-[4px] pb-[4px] pt-0 lg:h-[96vh]">
       <footer className="relative flex flex-1 flex-col justify-between overflow-hidden rounded-b-2xl bg-ink-deep px-6 py-8 text-white md:px-12 md:pb-4 md:pt-10 lg:px-16 lg:pb-6 lg:pt-12">
@@ -22,7 +25,7 @@ export function FooterWild() {
 
             <div className="w-full lg:col-span-5">
               <p className="mb-3.5 w-full text-xs font-medium text-neutral-300 md:text-base">
-                Stay connected with Sahara travel insights and exclusive desert stories.
+                {site.footer.newsletter}
               </p>
               <NewsletterForm tone="dark" />
             </div>
@@ -50,10 +53,8 @@ export function FooterWild() {
         </div>
 
         <div className="mt-auto flex flex-col justify-end pb-10 pt-6">
-          <p className="mb-2 text-right text-xs text-neutral-400">© 2025–2026 Lover of Sahara. All rights reserved.</p>
-          <div className="select-none overflow-hidden whitespace-nowrap text-[11.5vw] font-bold uppercase leading-[0.88] tracking-[-0.04em] text-neutral-200">
-            Authentic. Wild.
-          </div>
+          <p className="mb-2 text-right text-xs text-neutral-400">{site.footer.rights}</p>
+          <div className="select-none overflow-hidden whitespace-nowrap text-[11.5vw] font-bold uppercase leading-[0.88] tracking-[-0.04em] text-neutral-200">{site.footer.wordmark}</div>
         </div>
       </footer>
     </div>

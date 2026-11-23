@@ -12,6 +12,7 @@ import { placeHref, placeIdForStop } from "@/data/places";
 import { tripImage } from "@/data/trips";
 import { fadeUp } from "@/lib/animations";
 import { useIntroStyle } from "@/hooks/use-intro-style";
+import { useIsMobile } from "@/hooks/use-mobile";
 import { ScrollContainerContext } from "@/lib/scrollContainer";
 import { RouteMap } from "./RouteMap";
 import { SectionTabs, type TabItem } from "./SectionTabs";
@@ -51,11 +52,12 @@ const GALLERY_MIN = 4;
  * Modelled on the Red Dot destination page: centred hero, floating section tabs, a dark "places"
  * band with the route map, a sticky map beside the itinerary, and alternating paper / off-white bands.
  */
-export function RedDotLayout({ ctx }: { ctx: TripCtx }) {
+export function RedDotLayout({ ctx, dayPanels = false }: { ctx: TripCtx; dayPanels?: boolean }) {
   const { trip, ui, money } = ctx;
   const reduce = useReducedMotion();
   const scrollRef = useContext(ScrollContainerContext);
   const intro = useIntroStyle();
+  const isMobile = useIsMobile();
 
   // Always two lines: break at the space that best balances the two halves.
   const titleLines = useMemo(() => {
@@ -130,7 +132,7 @@ export function RedDotLayout({ ctx }: { ctx: TripCtx }) {
   const seenPhotos = new Set<string>();
   trip.itinerary.forEach((d, dayIdx) => {
     for (const p of ctx.dayImages(d.day)) {
-      const url = tripImage(p, 1800);
+      const url = tripImage(p, isMobile ? 900 : 1800);
       if (!url || seenPhotos.has(p) || galleryItems.length >= GALLERY_MAX) continue;
       seenPhotos.add(p);
       galleryItems.push({ id: p, url, thumb: tripImage(p, 240) ?? url, title: `${trip.title.trim()}, ${T.day.toLowerCase()} ${d.day}` });
@@ -160,18 +162,40 @@ export function RedDotLayout({ ctx }: { ctx: TripCtx }) {
     return () => cancelAnimationFrame(raf);
   }, [hasGallery]);
 
+  // The parallax (and its darkening veil) is timed from each section's measured position. Photos and reviews load
+  // after that measurement and change the page height, which left the veil half-on over sections still in view
+  // (they looked grey). Measure again whenever the page's height changes.
+  const rootRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const el = rootRef.current;
+    if (!el || typeof ResizeObserver === "undefined") return;
+    let raf = 0;
+    let last = el.offsetHeight;
+    const ro = new ResizeObserver(() => {
+      if (Math.abs(el.offsetHeight - last) < 2) return;
+      last = el.offsetHeight;
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(() => ScrollTrigger.refresh());
+    });
+    ro.observe(el);
+    return () => {
+      cancelAnimationFrame(raf);
+      ro.disconnect();
+    };
+  }, []);
+
   const hasIncl = !!(trip.included?.length || trip.excluded?.length);
   const tabs = TABS.filter((t) => (t.id === "included" ? hasIncl : t.id === "gallery" ? hasGallery : true));
 
   return (
-    <div className="trip-page relative">
+    <div ref={rootRef} className="trip-page relative">
       {/* Hero: script label + big title, centred over the photo */}
       <section
         data-hero-section
         data-st-01="parallax"
         data-st-y="300"
         data-st-opacity="0.3"
-        className="h-screen bg-paper p-[4px]"
+        className="h-[100dvh] bg-paper p-[4px]"
       >
         <div className="relative flex h-full flex-col items-start justify-end overflow-hidden rounded-lg bg-ink-deep p-6 pb-12 text-center md:p-12 md:pb-16">
           <TripHero ctx={ctx} className="absolute inset-0 h-full w-full object-cover object-[50%_72%]" />
@@ -206,28 +230,24 @@ export function RedDotLayout({ ctx }: { ctx: TripCtx }) {
         </div>
       </section>
 
-      {/* Overview: facts + why we love it */}
-      {/* Both intro layouts are switchable in the theme switcher ("Trip intro"). Neither uses the parallax. */}
-      {intro === "side" ? (
-        <Band id="overview" tone="paper" parallax={false} minHeight="58dvh">
+      {/* Overview: facts + why we love it, then the highlights. One band, so the parallax treats them as one section. */}
+      <Band id="overview" tone="paper" fullHeight>
+        {intro === "side" ? (
           <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-16">
             <Brief ctx={ctx} className="lg:col-span-8" />
             <Facts ctx={ctx} variant="stack" className="lg:col-span-4" />
           </div>
-        </Band>
-      ) : (
-        <Band id="overview" tone="paper" parallax={false} minHeight="58dvh">
-          <Facts ctx={ctx} className="grid grid-cols-2 gap-y-7 border-b border-ink/10 pb-10 md:grid-cols-4 md:pb-14" />
-          <Brief ctx={ctx} className="pt-10 md:pt-14" />
-        </Band>
-      )}
+        ) : (
+          <div>
+            <Facts ctx={ctx} className="grid grid-cols-2 gap-x-6 gap-y-7 border-b md:gap-x-0 border-ink/10 pb-10 md:grid-cols-4 md:pb-14" />
+            <Brief ctx={ctx} className="pt-10 md:pt-14" />
+          </div>
+        )}
 
-      {/* "Why this journey / Highlights": its own band, kept out of the parallax effect */}
-      {trip.keyStops.length > 0 && (
-        <Band tone="paper" parallax={false} minHeight="42dvh" className="!pt-0">
+        {trip.keyStops.length > 0 && (
           <motion.div
             {...fadeUp}
-            className="grid gap-8 border-t border-ink/10 pt-10 md:grid-cols-12 md:gap-10 md:pt-14"
+            className="mt-16 grid gap-8 border-t border-ink/10 pt-10 md:mt-24 md:grid-cols-12 md:gap-10 md:pt-14"
           >
             <div className="md:col-span-4">
               <Eyebrow className="mb-3">{T.overview}</Eyebrow>
@@ -239,8 +259,8 @@ export function RedDotLayout({ ctx }: { ctx: TripCtx }) {
               <Highlights ctx={ctx} />
             </div>
           </motion.div>
-        </Band>
-      )}
+        )}
+      </Band>
 
       {/* Route: dark band, stops list left, map right (Red Dot's "Places to visit") */}
       <Band id="route" tone="dark" fullHeight className="py-20 md:py-28">
@@ -269,34 +289,64 @@ export function RedDotLayout({ ctx }: { ctx: TripCtx }) {
       </Band>
 
       {/* Itinerary: days on the left, map pinned on the right and following the day in view */}
-      {/* No parallax here: the pinned map is sticky and must not be moved by a section tween */}
-      <Band id="itinerary" tone="paper" parallax={false}>
+      <Band id="itinerary" tone="paper">
         <SectionTitle eyebrow={T.itinerary}>{ui.days(trip.durationDays)}</SectionTitle>
         <div className="mt-10 grid gap-10 lg:grid-cols-12 lg:gap-14">
           <div className="lg:col-span-7">
-            {trip.itinerary.map((d, i) => (
-              <article
-                key={d.day}
-                ref={(el) => {
-                  dayRefs.current[i] = el;
-                }}
-                data-day-index={i}
-                onMouseEnter={() => setDayInView(i)}
-                className={`border-t border-ink/10 py-9 transition-opacity duration-500 md:py-12 ${
-                  dayInView !== null && dayInView !== i ? "opacity-55" : "opacity-100"
-                }`}
-              >
-                <Eyebrow>
-                  {T.day} {pad(d.day)}
-                </Eyebrow>
-                {d.route && (
-                  <h3 className="mt-2.5 text-[22px] font-semibold leading-[1.15] tracking-[-0.03em] md:text-[27px]">
-                    {tidyRoute(d.route)}
-                  </h3>
-                )}
-                <p className="mt-4 max-w-[40rem] whitespace-pre-line text-[15.5px] leading-[1.7] text-ink/80">{d.text}</p>
-              </article>
-            ))}
+            {trip.itinerary.map((d, i) =>
+              dayPanels ? (
+                <article
+                  key={d.day}
+                  ref={(el) => {
+                    dayRefs.current[i] = el;
+                  }}
+                  data-day-index={i}
+                  className="py-1"
+                >
+                  <div className="relative flex min-h-[200px] items-end overflow-hidden rounded-2xl bg-ink-deep md:min-h-[340px]">
+                    <span
+                      aria-hidden
+                      className="pointer-events-none absolute -right-2 -top-6 select-none text-[220px] font-semibold leading-none tracking-[-0.06em] text-white/[0.07] md:text-[340px]"
+                    >
+                      {pad(d.day)}
+                    </span>
+                    <div className="relative p-6 text-white md:p-10">
+                      <p className="eyebrow text-[11px] font-medium uppercase tracking-[0.16em] text-white/65">
+                        {T.day} {pad(d.day)}
+                      </p>
+                      {d.route && (
+                        <h3 className="mt-2 max-w-[28ch] text-[24px] font-semibold leading-[1.1] tracking-[-0.03em] md:text-[38px]">
+                          {tidyRoute(d.route)}
+                        </h3>
+                      )}
+                    </div>
+                  </div>
+                  <p className="max-w-[40rem] whitespace-pre-line py-8 text-[15.5px] leading-[1.7] text-ink/80">{d.text}</p>
+                </article>
+              ) : (
+                <article
+                  key={d.day}
+                  ref={(el) => {
+                    dayRefs.current[i] = el;
+                  }}
+                  data-day-index={i}
+                  onMouseEnter={() => setDayInView(i)}
+                  className={`border-t border-ink/10 py-9 transition-opacity duration-500 md:py-12 ${
+                    dayInView !== null && dayInView !== i ? "opacity-55" : "opacity-100"
+                  }`}
+                >
+                  <Eyebrow>
+                    {T.day} {pad(d.day)}
+                  </Eyebrow>
+                  {d.route && (
+                    <h3 className="mt-2.5 text-[22px] font-semibold leading-[1.15] tracking-[-0.03em] md:text-[27px]">
+                      {tidyRoute(d.route)}
+                    </h3>
+                  )}
+                  <p className="mt-4 max-w-[40rem] whitespace-pre-line text-[15.5px] leading-[1.7] text-ink/80">{d.text}</p>
+                </article>
+              ),
+            )}
           </div>
           <div className="hidden lg:col-span-5 lg:block">
             <div className="sticky top-6">
@@ -313,11 +363,69 @@ export function RedDotLayout({ ctx }: { ctx: TripCtx }) {
         </div>
       </Band>
 
-      {/* Gallery: photos from every day of the trip. Same width as the other bands; no parallax (it is draggable). */}
-      {hasGallery && (
-        <Band id="gallery" tone="paper" parallax={false} fullHeight className="md:!py-16">
-          {/* 40% info on the left, 60% carousel on the right (stacked on small screens) */}
-          <motion.div {...fadeUp} className="grid gap-10 lg:grid-cols-[2fr_3fr] lg:items-center lg:gap-14">
+      {/* Gallery: photos from every day of the trip. Same width as the other bands. */}
+      {/* Gallery and included / not included are one band, so the parallax treats them as one section. */}
+      {(hasGallery || hasIncl) && (
+        <Band id={hasGallery ? "gallery" : "included"} tone="paper" fullHeight className={`${hasGallery ? "md:!py-16" : ""} ${hasIncl ? "!pb-44 md:!pb-52" : ""}`}>
+          {/* Phone: title, then the photo (swipe), then the day chips in one scrolling row and the day's text.
+              The text block has a fixed minimum height so the photo does not jump as the day changes. */}
+          {hasGallery && isMobile && (
+            <motion.div {...fadeUp} className="min-w-0">
+              <SectionTitle eyebrow={T.gallery}>{T.galleryTitle}</SectionTitle>
+              <ThumbnailCarousel
+                compact
+                className="mt-6"
+                items={galleryItems}
+                index={shownIndex}
+                onIndexChange={setGalleryIndex}
+                slideClassName="h-[max(240px,calc(100dvh-25rem))]"
+              />
+              <div
+                className="-mx-4 mt-5 flex gap-2 overflow-x-auto px-4 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+                role="group"
+                aria-label="Jump to a day"
+              >
+                {daysWithPhotos.map((dayIdx) => {
+                  const on = dayIdx === shownDay;
+                  return (
+                    <button
+                      key={dayIdx}
+                      type="button"
+                      aria-pressed={on}
+                      onClick={() => setGalleryIndex(galleryDays.indexOf(dayIdx))}
+                      className={`min-h-11 shrink-0 rounded-full border px-5 text-[14px] leading-tight outline-none transition-colors ${
+                        on ? "border-ink bg-ink text-paper" : "border-ink/15 text-ink/80"
+                      }`}
+                    >
+                      {T.day} {pad(trip.itinerary[dayIdx]?.day ?? dayIdx + 1)}
+                    </button>
+                  );
+                })}
+              </div>
+              {shownItin && (
+                <div className="mt-4 min-h-[7.5rem]" aria-live="polite">
+                  <p className="line-clamp-3 text-[15px] leading-[1.6] text-ink/75">{clip(shownItin.text, 150)}</p>
+                  {shownPlaces.length > 0 && (
+                    <ul className="-mx-4 mt-4 flex gap-2 overflow-x-auto px-4 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                      {shownPlaces.map((pl) => (
+                        <li key={pl.id} className="shrink-0">
+                          <a
+                            href={placeHref(pl.id)}
+                            className="inline-flex min-h-11 items-center gap-1 rounded-full border border-ink/15 px-4 text-[14px] leading-tight text-ink/80"
+                          >
+                            {pl.name} <ArrowUpRight size={13} aria-hidden />
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              )}
+            </motion.div>
+          )}
+
+          {hasGallery && !isMobile && (
+          <motion.div {...fadeUp} className="grid min-w-0 gap-10 lg:grid-cols-[2fr_3fr] lg:items-center lg:gap-14">
             <div className="flex flex-col">
               <SectionTitle eyebrow={T.gallery}>{T.galleryTitle}</SectionTitle>
               <p className="mt-4 max-w-[28rem] text-[14.5px] leading-[1.6] text-ink/65">
@@ -386,16 +494,19 @@ export function RedDotLayout({ ctx }: { ctx: TripCtx }) {
               slideClassName="h-[52dvh] lg:h-[max(340px,calc(100dvh-15rem))]"
             />
           </motion.div>
-        </Band>
-      )}
+          )}
 
-      {/* Included / not included */}
-      {hasIncl && (
-        <Band id="included" tone="off">
-          <SectionTitle eyebrow={T.included}>{T.includedTitle}</SectionTitle>
-          <div className="mt-10">
-            <IncludedExcluded ctx={ctx} />
-          </div>
+          {hasIncl && (
+            <div
+              id={hasGallery ? "included" : undefined}
+              className={hasGallery ? "mt-16 scroll-mt-20 border-t border-ink/10 pt-14 md:mt-24 md:pt-20" : ""}
+            >
+              <SectionTitle eyebrow={T.included}>{T.includedTitle}</SectionTitle>
+              <div className="mt-10">
+                <IncludedExcluded ctx={ctx} />
+              </div>
+            </div>
+          )}
         </Band>
       )}
 
@@ -406,7 +517,7 @@ export function RedDotLayout({ ctx }: { ctx: TripCtx }) {
       {/* Pricing */}
       <Band id="pricing" tone="paper">
         <div className="grid gap-8 md:grid-cols-12 md:gap-10">
-          <div className="md:col-span-4">
+          <div className="md:sticky md:top-10 md:col-span-4 md:self-start">
             <SectionTitle eyebrow={T.pricing}>
               {ui.from} {money.format(trip.fromPrice)}
             </SectionTitle>
@@ -422,7 +533,7 @@ export function RedDotLayout({ ctx }: { ctx: TripCtx }) {
       </Band>
 
       {ctx.more.length > 0 && (
-        <Band tone="paper" parallax={false} className="!pt-0 pb-24 md:pb-32">
+        <Band tone="paper" parallax={false} className="!pt-24 pb-24 md:!pt-40 md:pb-32">
           <h2
             className="mb-7 text-[26px] font-semibold tracking-[-0.03em] md:text-[32px]"
           >

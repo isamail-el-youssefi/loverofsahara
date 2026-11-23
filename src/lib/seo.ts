@@ -22,10 +22,18 @@ const prop = (property: string, content: string) =>
  * prerendered HTML; this keeps tabs, history and JS-running crawlers correct as people navigate.)
  */
 export function applySeo(seo: PageSeo) {
-  const url = absUrl(seo.path);
+  const url = absUrl(seo.canonical ?? seo.path);
   document.title = seo.title;
   meta("description", seo.description);
   upsert("link", 'link[rel="canonical"]', { rel: "canonical", href: url });
+  document.head.querySelectorAll('link[rel="alternate"][hreflang]').forEach((l) => l.remove());
+  for (const alt of seo.alternates ?? []) {
+    const l = document.createElement("link");
+    l.rel = "alternate";
+    l.hreflang = alt.hreflang;
+    l.href = absUrl(alt.path);
+    document.head.appendChild(l);
+  }
 
   prop("og:site_name", SITE_NAME);
   prop("og:type", seo.type);

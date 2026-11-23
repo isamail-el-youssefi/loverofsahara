@@ -12,10 +12,10 @@ import { BROCHURE_STRINGS, type BrochureStrings } from "./strings";
  * The language the brochures are shown in. It starts as the site language and follows it when the visitor
  * changes it in the navbar; the chips on this page change it too, without touching the site language.
  */
-export function useBrochureLang(): [Lang, (l: Lang) => void, BrochureStrings] {
+export function useBrochureLang(fromUrl?: Lang): [Lang, (l: Lang) => void, BrochureStrings] {
   const { lang: siteLang } = useLanguage();
-  const [lang, setLang] = useState<Lang>(siteLang);
-  useEffect(() => setLang(siteLang), [siteLang]);
+  const [lang, setLang] = useState<Lang>(fromUrl ?? siteLang);
+  useEffect(() => setLang(fromUrl ?? siteLang), [siteLang, fromUrl]);
   return [lang, setLang, BROCHURE_STRINGS[lang]];
 }
 

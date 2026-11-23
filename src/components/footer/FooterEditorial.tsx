@@ -1,12 +1,15 @@
 import { motion } from "framer-motion";
 import { TextRollHover } from "@/components/ui/text-stagger-hover";
 import { fadeUp } from "@/lib/animations";
-import { footerCols } from "./data";
+import { useLanguage } from "@/i18n/LanguageProvider";
+import { useFooterCols } from "./useFooterCols";
 import { GoogleReviewsBadge } from "./GoogleReviewsBadge";
 import { NewsletterForm } from "./NewsletterForm";
 
 /** Paper footer in the Red Dot / place-page language: light display statement, ruled columns, framed badge. */
 export function FooterEditorial() {
+  const footerCols = useFooterCols();
+  const { site } = useLanguage();
   return (
     <footer className="bg-paper px-6 pb-8 pt-20 text-ink md:px-12 md:pt-28 lg:px-16">
       <motion.div {...fadeUp} className="grid gap-10 border-b border-ink/10 pb-14 lg:grid-cols-12 lg:gap-14 lg:pb-20">
@@ -28,7 +31,7 @@ export function FooterEditorial() {
           <GoogleReviewsBadge tone="light" className="self-start" />
           <div>
             <p className="mb-3 text-[14px] text-neutral-500">
-              Stay connected with Sahara travel insights and exclusive desert stories.
+              {site.footer.newsletter}
             </p>
             <NewsletterForm tone="light" />
           </div>
@@ -53,8 +56,8 @@ export function FooterEditorial() {
       </div>
 
       <div className="flex flex-col gap-2 border-t border-ink/10 pt-6 text-[12px] text-neutral-500 sm:flex-row sm:justify-between">
-        <span>© 2025–2026 Lover of Sahara. All rights reserved.</span>
-        <span>Authentic. Wild.</span>
+        <span>{site.footer.rights}</span>
+        <span>{site.footer.wordmark}</span>
       </div>
     </footer>
   );

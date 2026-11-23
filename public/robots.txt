@@ -1,16 +1,39 @@
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
+# Search engines and AI assistants are welcome to read and cite everything on this site.
 User-agent: *
 Allow: /
 
-Sitemap: https://www.loverofsahara.com/sitemap.xml
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://loverofsahara.tours/sitemap.xml
+
+# LLM discovery
+# llms.txt: https://loverofsahara.tours/llms.txt
+# llms-full.txt: https://loverofsahara.tours/llms-full.txt

@@ -2,14 +2,14 @@ import { motion } from "framer-motion";
 import { Navbar } from "@/components/Navbar";
 import { Band, Eyebrow, SectionTitle } from "@/components/trip/parts";
 import { fadeUp } from "@/lib/animations";
-import { ABOUT_INTRO, OWNER, VALUES } from "./content";
+import { useLanguage } from "@/i18n/LanguageProvider";
+import { useAboutContent } from "./useAboutContent";
 import { CtaCard, Faq, Portrait, ReviewsBlock, StatsRow, SustainabilityList } from "./shared";
-
-/** What each paragraph of Salah's own words is about. */
-const CHAPTERS = ["Where I come from", "What I share", "What we do"] as const;
 
 /** Salah first: a dark hero with his portrait and quote, his story as chapters, then the rest of the page. */
 export function AboutPortrait() {
+  const { ABOUT_INTRO, OWNER, VALUES } = useAboutContent();
+  const t = useLanguage().site.about;
   return (
     <div className="trip-page relative">
       <section
@@ -38,7 +38,7 @@ export function AboutPortrait() {
               <p className="mt-8 max-w-[34rem] text-[22px] font-light leading-[1.25] tracking-[-0.02em] text-white/85 md:text-[30px]">
                 “{OWNER.quote}”
               </p>
-              <ul className="mt-8 flex flex-wrap gap-2" aria-label="Languages spoken">
+              <ul className="mt-8 flex flex-wrap gap-2" aria-label={t.languagesLabel}>
                 {OWNER.languages.map((l) => (
                   <li key={l} className="rounded-full border border-white/25 px-3.5 py-1.5 text-[13px] leading-tight text-white/85">
                     {l}
@@ -63,7 +63,7 @@ export function AboutPortrait() {
       <Band id="salah" tone="paper" parallax={false}>
         <motion.div {...fadeUp} className="mb-12 grid gap-6 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-4">
-            <Eyebrow className="mb-3">Our story</Eyebrow>
+            <Eyebrow className="mb-3">{t.storyEyebrow}</Eyebrow>
           </div>
           <p className="text-[24px] font-light leading-[1.22] tracking-[-0.03em] md:text-[36px] lg:col-span-8">{ABOUT_INTRO}</p>
         </motion.div>
@@ -72,7 +72,7 @@ export function AboutPortrait() {
             <li key={p.slice(0, 24)} className="grid gap-4 border-t border-ink/10 py-8 md:grid-cols-12 md:gap-16 md:py-12">
               <div className="md:col-span-4">
                 <span className="text-[12px] tabular-nums text-neutral-400">{String(i + 1).padStart(2, "0")}</span>
-                <h3 className="mt-1 text-[24px] font-semibold tracking-[-0.03em] md:text-[30px]">{CHAPTERS[i]}</h3>
+                <h3 className="mt-1 text-[24px] font-semibold tracking-[-0.03em] md:text-[30px]">{t.chapters[i]}</h3>
               </div>
               <p className="max-w-[40rem] text-[16px] leading-[1.75] text-ink/80 md:col-span-8">{p}</p>
             </li>
@@ -81,8 +81,8 @@ export function AboutPortrait() {
       </Band>
 
       <Band id="values" tone="dark" parallax={false} className="py-20 md:py-28">
-        <Eyebrow className="mb-3 !text-white/60">What we stand for</Eyebrow>
-        <h2 className="mb-12 text-[32px] font-semibold leading-[1.04] tracking-[-0.035em] md:text-[48px]">Authentic. Wild.</h2>
+        <Eyebrow className="mb-3 !text-white/60">{t.valuesEyebrow}</Eyebrow>
+        <h2 className="mb-12 text-[32px] font-semibold leading-[1.04] tracking-[-0.035em] md:text-[48px]">{t.valuesTitle}</h2>
         <StatsRow tone="dark" className="border-b border-white/15 pb-12" />
         <div className="mt-12 grid gap-[6px] md:grid-cols-2 lg:grid-cols-4">
           {VALUES.map((v) => (
@@ -95,15 +95,15 @@ export function AboutPortrait() {
       </Band>
 
       <Band id="reviews" tone="paper" parallax={false}>
-        <Eyebrow className="mb-3">Why travel with us</Eyebrow>
-        <h2 className="mb-10 text-[30px] font-semibold leading-[1.05] tracking-[-0.035em] md:text-[40px]">Trusted by our guests</h2>
+        <Eyebrow className="mb-3">{t.reviewsEyebrow}</Eyebrow>
+        <h2 className="mb-10 text-[30px] font-semibold leading-[1.05] tracking-[-0.035em] md:text-[40px]">{t.reviewsTitle}</h2>
         <ReviewsBlock />
       </Band>
 
       <Band id="sustainability" tone="off" parallax={false}>
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-4">
-            <SectionTitle eyebrow="Responsible travel">Sustainability</SectionTitle>
+            <SectionTitle eyebrow={t.sustainEyebrow}>{t.sustainTitle}</SectionTitle>
           </div>
           <div className="lg:col-span-8">
             <SustainabilityList />
@@ -114,7 +114,7 @@ export function AboutPortrait() {
       <Band id="faq" tone="paper" parallax={false}>
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-4">
-            <SectionTitle eyebrow="Good to know">Questions</SectionTitle>
+            <SectionTitle eyebrow={t.faqEyebrow}>{t.faqTitle}</SectionTitle>
           </div>
           <div className="lg:col-span-8">
             <Faq />

@@ -26,7 +26,7 @@ export function ReviewsSpotlight({ tripSlug, tripTitle, reviews }: ReviewsProps)
   const r = reviews[Math.min(index, last)];
 
   return (
-    <Band id="reviews" tone="dark" parallax={false} minHeight="64dvh" className="py-20 md:py-28">
+    <Band id="reviews" tone="dark" fullHeight className="py-20 md:py-28">
       <div className="mx-auto flex w-full max-w-[60rem] flex-col items-center text-center">
         <Eyebrow className="!text-white/60">{RT.eyebrow}</Eyebrow>
 

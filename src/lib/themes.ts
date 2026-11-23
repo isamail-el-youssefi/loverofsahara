@@ -40,7 +40,7 @@ export const FONTS: SiteFont[] = [
 ];
 
 export const FONT_STORAGE_KEY = "los-font";
-export const DEFAULT_FONT = "default";
+export const DEFAULT_FONT = "red-dot";
 
 export function applyFont(id: string) {
   document.documentElement.setAttribute("data-font", id);
@@ -51,13 +51,8 @@ export function applyFont(id: string) {
   }
 }
 
+/** Colour theme, typography and trip cards are fixed (no switcher). */
 export function getStoredFont(): string {
-  try {
-    const id = localStorage.getItem(FONT_STORAGE_KEY);
-    if (id && FONTS.some((f) => f.id === id)) return id;
-  } catch {
-    /* storage unavailable */
-  }
   return DEFAULT_FONT;
 }
 
@@ -79,12 +74,6 @@ export function applyTheme(id: string, animate = true) {
 }
 
 export function getStoredTheme(): string {
-  try {
-    const id = localStorage.getItem(THEME_STORAGE_KEY);
-    if (id && THEMES.some((t) => t.id === id)) return id;
-  } catch {
-    /* storage unavailable */
-  }
   return DEFAULT_THEME;
 }
 
@@ -114,12 +103,6 @@ export const CARD_EVENT = "los-card-change";
 export const DEFAULT_CARD = "minimal";
 
 export function getStoredCardStyle(): string {
-  try {
-    const id = localStorage.getItem(CARD_STORAGE_KEY);
-    if (id && CARD_STYLES.some((c) => c.id === id)) return id;
-  } catch {
-    /* storage unavailable */
-  }
   return DEFAULT_CARD;
 }
 

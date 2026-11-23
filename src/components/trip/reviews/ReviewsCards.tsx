@@ -16,7 +16,7 @@ export function ReviewsCards({ tripSlug, tripTitle, reviews }: ReviewsProps) {
   const summary = summarize(reviews);
 
   return (
-    <Band id="reviews" tone="off" parallax={false}>
+    <Band id="reviews" tone="off" fullHeight>
       <motion.div {...fadeUp}>
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <SectionTitle eyebrow={RT.eyebrow}>{RT.title}</SectionTitle>

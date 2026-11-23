@@ -3,7 +3,7 @@
  * social previews get real titles, descriptions, canonical links, structured data and page content without
  * running JavaScript:
  *
- *   dist/places/zagora/index.html, dist/trips/<slug>/index.html, dist/trips/index.html, dist/blog/..., dist/index.html
+ *   dist/places/zagora.html, dist/trips/<slug>.html, dist/trips.html, dist/fr/trips/<slug>.html, dist/blog/..., dist/index.html
  *   dist/sitemap.xml, dist/_redirects (old numeric URLs -> new slugs, plus the single-page-app fallback)
  *
  * The page content comes from scripts/seo-entry.ts, loaded through Vite's own SSR build so it reads the same
@@ -18,7 +18,7 @@ import { build } from "vite";
 const root = process.cwd();
 const dist = path.join(root, "dist");
 const tmp = path.join(root, "node_modules", ".prerender");
-const SITE_URL = "https://www.loverofsahara.com"; // keep in step with src/lib/routes.ts
+const SITE_URL = "https://loverofsahara.tours"; // keep in step with src/lib/routes.ts
 
 if (!fs.existsSync(path.join(dist, "index.html"))) {
   console.error("prerender: dist/index.html not found. Run `vite build` first.");
@@ -59,13 +59,15 @@ const HIDDEN =
 
 function render(page) {
   const { seo } = page;
-  const url = abs(seo.path);
+  const url = abs(seo.canonical ?? seo.path);
   let html = shell;
+  if (seo.htmlLang) html = html.replace(/<html lang="[^"]*"/, `<html lang="${attr(seo.htmlLang)}"`);
   for (const re of STRIP) html = html.replace(re, "");
   const head = [
     `<title>${attr(seo.title).replace(/&quot;/g, '"')}</title>`,
     `<meta name="description" content="${attr(seo.description)}" />`,
     `<link rel="canonical" href="${attr(url)}" />`,
+    ...(seo.alternates ?? []).map((a) => `<link rel="alternate" hreflang="${attr(a.hreflang)}" href="${attr(abs(a.path))}" />`),
     `<meta property="og:site_name" content="Lover of Sahara" />`,
     `<meta property="og:type" content="${seo.type}" />`,
     `<meta property="og:title" content="${attr(seo.title)}" />`,
@@ -89,20 +91,45 @@ function render(page) {
   return html;
 }
 
+// Each page is written as <path>.html (dist/fr/about.html), not <path>/index.html: Cloudflare Pages serves
+// /fr/about straight from fr/about.html, but would redirect /fr/about to /fr/about/ for fr/about/index.html,
+// and then every canonical link, hreflang and sitemap URL (all without the trailing slash) would point at a redirect.
 for (const page of pages) {
-  const dir = page.path === "/" ? dist : path.join(dist, ...page.path.split("/").filter(Boolean));
-  fs.mkdirSync(dir, { recursive: true });
-  fs.writeFileSync(path.join(dir, "index.html"), render(page));
+  const file = page.path === "/" ? path.join(dist, "index.html") : path.join(dist, ...page.path.split("/").filter(Boolean)) + ".html";
+  fs.mkdirSync(path.dirname(file), { recursive: true });
+  fs.writeFileSync(file, render(page));
 }
 
 // 3. Sitemap and redirects.
-const today = new Date().toISOString().slice(0, 10);
+// No <lastmod>: a build date on every URL is not a real change date, and search engines learn to ignore it.
+// Pages that are duplicates of another (canonical elsewhere) stay out of the sitemap.
+const listed = pages.filter((p) => !p.seo.canonical || p.seo.canonical === p.seo.path);
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${pages.map((p) => `  <url><loc>${abs(p.path)}</loc><lastmod>${today}</lastmod></url>`).join("\n")}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+${listed
+  .map((p) => {
+    const alts = (p.seo.alternates ?? [])
+      .map((a) => `<xhtml:link rel="alternate" hreflang="${attr(a.hreflang)}" href="${attr(abs(a.path))}"/>`)
+      .join("");
+    return `  <url><loc>${abs(p.path)}</loc>${alts}</url>`;
+  })
+  .join("\n")}
 </urlset>
 `;
 fs.writeFileSync(path.join(dist, "sitemap.xml"), sitemap);
+
+// A redirect must never answer for a page that exists: Cloudflare applies _redirects before it serves files.
+{
+  const paths = pages.map((p) => p.path);
+  const clash = redirects.filter((r) => {
+    const from = r.split(/\s+/)[0];
+    return from.endsWith("/*") ? paths.some((p) => p.startsWith(from.slice(0, -1))) : paths.includes(from);
+  });
+  if (clash.length) {
+    console.error(`prerender: ${clash.length} redirect(s) would hide a real page:\n  ${clash.slice(0, 10).join("\n  ")}`);
+    process.exit(1);
+  }
+}
 
 // Old numeric URLs first, then the SPA fallback (prerendered files win over it on Netlify/Cloudflare-style hosts).
 fs.writeFileSync(path.join(dist, "_redirects"), `${redirects.join("\n")}\n/*  /index.html  200\n`);

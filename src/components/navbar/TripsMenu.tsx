@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import { ArrowUpRight } from "lucide-react";
-import { CATEGORY_IMAGES } from "@/data/siteImages";
+import { CATEGORY_IMAGES, CITY_IMAGES } from "@/data/siteImages";
 import { TRIP_CATEGORIES, cityLabel, countByCategory, getTrips, tripImage, type TripCategory } from "@/data/trips";
 import { useLanguage } from "@/i18n/LanguageProvider";
 import { TRIPS_PATH } from "@/lib/routes";
@@ -45,7 +45,7 @@ function useMenuData() {
         label: cityLabel(t.departureCity),
         href: `${TRIPS_PATH}?departure=${encodeURIComponent(t.departureCity)}`,
         count: 1,
-        img: (t.cardImage && tripImage(t.cardImage, 700)) || CATEGORY_IMAGES.camps,
+        img: CITY_IMAGES[t.departureCity] ?? ((t.cardImage && tripImage(t.cardImage, 700)) || CATEGORY_IMAGES.camps),
       });
     }
     const cities = [...cityMap.values()].sort((a, b) => b.count - a.count);

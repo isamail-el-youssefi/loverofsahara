@@ -2,26 +2,11 @@ import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { fadeUp } from "@/lib/animations";
 import { OriginButton } from "@/components/ui/origin-button";
-
-const steps = [
-  {
-    n: "01",
-    t: "Native Sahrawi & Berber Guides",
-    d: "Born and raised in the Drâa Valley and the desert oases, our guides hold ancestral knowledge of Saharan tracks, star navigation, and local Berber traditions.",
-  },
-  {
-    n: "02",
-    t: "Private 4x4 Fleet & Tailored Pacing",
-    d: "Travel in modern, air-conditioned Toyota Land Cruisers with seasoned desert drivers. Stop whenever you wish for photographs, tea with nomadic families, and fossil hunting.",
-  },
-  {
-    n: "03",
-    t: "Deep Dunes Access (Erg Chegaga)",
-    d: "Unlike tourist-heavy Erg Chebbi, Erg Chegaga requires 60km of authentic off-road navigation, rewarding you with pristine silence and 300-meter golden sand dunes.",
-  },
-];
+import { useLanguage } from "@/i18n/LanguageProvider";
 
 export function ProcessSection() {
+  const p = useLanguage().site.process;
+  const steps = p.steps.map((s, i) => ({ n: String(i + 1).padStart(2, "0"), t: s.t, d: s.d }));
   return (
     <section
       id="process"
@@ -32,23 +17,21 @@ export function ProcessSection() {
     >
       <motion.div {...fadeUp} className="lg:col-span-5 pr-10">
         <div className="text-[15px] text-neutral-600 font-medium">
-          Our heritage & expertise
+          {p.eyebrow}
         </div>
         <h2
           data-reveal-01="words"
           data-scroll
           className="mt-4 text-[32px] md:text-[48px] font-medium tracking-[-0.06em] leading-[1.09] text-ink"
         >
-          Our Sahara expeditions are{" "}
-          <span className="font-normal text-neutral-500">
-            handcrafted in Zagora using generations of authentic nomadic wisdom.
-          </span>
+          {p.h2a}{" "}
+          <span className="font-normal text-neutral-500">{p.h2b}</span>
         </h2>
         <OriginButton
           href="#contact"
           className="mt-6 h-10 rounded-[10px] border-neutral-300 px-5 text-sm font-medium text-neutral-900"
         >
-          Plan your adventure <ArrowUpRight size={16} />
+          {p.button} <ArrowUpRight size={16} />
         </OriginButton>
       </motion.div>
 

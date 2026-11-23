@@ -31,6 +31,9 @@ export function StopsShowcase({
   const row = n >= 15 ? "py-1.5" : n >= 11 ? "py-2" : "py-3";
   const name = n >= 15 ? "text-[15px] md:text-[16px]" : n >= 11 ? "text-[16px] md:text-[17px]" : "text-[17px] md:text-[19px]";
   const [hovered, setHovered] = useState<number | null>(null);
+  // Until the visitor has hovered a row, the first clickable stop shows its arrow on touch screens (no hover
+  // there to reveal it) so it is clear the rows are links.
+  const [touched, setTouched] = useState(false);
   const box = useRef<HTMLOListElement>(null);
   const card = useRef<HTMLDivElement>(null);
   const target = useRef({ x: 0, y: 0 });
@@ -63,6 +66,8 @@ export function StopsShowcase({
   const rows = useRef<(HTMLLIElement | null)[]>([]);
   const fromMap = hovered === null && active.length === 1 ? (active[0] ?? null) : null;
   const shown = hovered ?? fromMap;
+  const firstLink = stops.findIndex((x) => x.href);
+  const hint = !touched && shown === null && active.length === 0 && firstLink >= 0 ? firstLink : null;
   useEffect(() => {
     if (hovered !== null) return;
     if (fromMap === null) {
@@ -95,6 +100,7 @@ export function StopsShowcase({
   };
 
   const enter = (i: number) => {
+    setTouched(true);
     setHovered(i);
     onActive(i);
     start();
@@ -183,7 +189,11 @@ export function StopsShowcase({
                   <ArrowUpRight
                     aria-hidden
                     className={`h-4 w-4 text-white/70 transition-all duration-300 ease-out ${
-                      shown === i ? "translate-x-0 translate-y-0 opacity-100" : "-translate-x-2 translate-y-2 opacity-0"
+                      shown === i
+                        ? "translate-x-0 translate-y-0 opacity-100"
+                        : hint === i
+                          ? "-translate-x-2 translate-y-2 opacity-0 [@media(hover:none)]:translate-x-0 [@media(hover:none)]:translate-y-0 [@media(hover:none)]:opacity-100"
+                          : "-translate-x-2 translate-y-2 opacity-0"
                     }`}
                   />
                 )}

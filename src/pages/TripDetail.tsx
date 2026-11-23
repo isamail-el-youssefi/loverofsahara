@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { Navbar } from "@/components/Navbar";
 import { RedDotLayout } from "@/components/trip/RedDotLayout";
-import { CinematicLayout, EditorialLayout, IndexLayout, SplitLayout } from "@/components/trip/layouts";
 import type { TripCtx } from "@/components/trip/parts";
 import { getCover, loadLegacyMedia, tripHeroSrc, tripImage } from "@/data/trips";
 import type { LegacyMedia } from "@/data/trips/schema";
@@ -67,16 +66,6 @@ export function TripDetail({ slug }: { slug: string }) {
     more: related.length === 3 ? related : trips.filter((t) => t.slug !== trip.slug).slice(0, 3),
   };
 
-  switch (layout) {
-    case "reddot":
-      return <RedDotLayout ctx={ctx} />;
-    case "split":
-      return <SplitLayout ctx={ctx} />;
-    case "index":
-      return <IndexLayout ctx={ctx} />;
-    case "cinematic":
-      return <CinematicLayout ctx={ctx} />;
-    default:
-      return <EditorialLayout ctx={ctx} />;
-  }
+  // Phones get the same page as desktop (hero, intro, stops, gallery, reviews, tab bar), with each day as a large panel.
+  return <RedDotLayout ctx={ctx} dayPanels={layout === "cinematic"} />;
 }

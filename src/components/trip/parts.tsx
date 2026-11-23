@@ -1,4 +1,19 @@
 import { useState } from "react";
+import { useIsMobile } from "@/hooks/use-mobile";
+import { Check, ChevronDown, Copy, ExternalLink, Mail, MessageCircle } from "lucide-react";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
+import { CONTACT } from "@/components/contact/data";
+import {
+  buildTripGmailUrl,
+  buildTripInquiryMessage,
+  buildTripMailtoUrl,
+  buildTripWhatsappUrl,
+  type TripInquiryParams,
+} from "@/components/contact/message";
 import { tripImage, type LocalizedTrip } from "@/data/trips";
 import type { UiStrings } from "@/i18n/ui";
 
@@ -174,7 +189,7 @@ export function BriefText({ label, text, className = "" }: { label: string; text
   return (
     <div className={className}>
       <Eyebrow className="mb-4">{label}</Eyebrow>
-      <p className="max-w-[48rem] text-[24px] font-light leading-[1.25] tracking-[-0.02em] text-ink md:text-[36px]">
+      <p className="max-w-[48rem] text-[21px] font-light leading-[1.3] tracking-[-0.02em] text-ink md:text-[36px]">
         {text}
       </p>
     </div>
@@ -225,7 +240,7 @@ function RuledList({ items }: { items: string[] }) {
     <ul className="divide-y divide-ink/10 border-y border-ink/10">
       {items.map((item, i) => (
         <li key={i} className="py-3 text-[14.5px] leading-[1.5] text-ink/80">
-          {item}
+          {item.replace(/\p{Extended_Pictographic}️?/gu, "").trim()}
         </li>
       ))}
     </ul>
@@ -253,56 +268,332 @@ export function IncludedExcluded({ ctx }: { ctx: TripCtx }) {
   );
 }
 
+export function EmailChoicePopover({
+  params,
+  dark = false,
+  compact = false,
+}: {
+  params: TripInquiryParams;
+  dark?: boolean;
+  compact?: boolean;
+}) {
+  const [open, setOpen] = useState(false);
+  const [copied, setCopied] = useState(false);
+
+  const gmailUrl = buildTripGmailUrl(params);
+  const mailtoUrl = buildTripMailtoUrl(params);
+  const inquiryMessage = buildTripInquiryMessage(params);
+
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(`To: ${CONTACT.email}\n\n${inquiryMessage}`);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      // clipboard fallback
+    }
+  };
+
+  const triggerClasses = dark
+    ? "inline-flex h-[46px] items-center justify-center gap-2 rounded-full border border-white/30 px-6 text-sm font-semibold text-white transition-all duration-100 ease-out hover:bg-white/10 active:scale-[0.98]"
+    : `inline-flex items-center justify-center gap-1.5 rounded-full border border-ink/20 text-ink transition-all duration-100 ease-out hover:bg-ink/[0.04] active:scale-[0.98] ${
+        compact ? "h-[40px] px-4 text-[13px]" : "h-[42px] px-5 text-[13.5px] font-semibold"
+      }`;
+
+  return (
+    <Popover open={open} onOpenChange={setOpen}>
+      <PopoverTrigger asChild>
+        <button type="button" className={triggerClasses} aria-label="Choose email client">
+          <Mail size={15} aria-hidden="true" />
+          <span>Email</span>
+          <ChevronDown size={13} className={dark ? "text-white/60" : "text-neutral-400"} aria-hidden="true" />
+        </button>
+      </PopoverTrigger>
+
+      <PopoverContent
+        align="end"
+        sideOffset={8}
+        className="z-50 w-[270px] rounded-2xl border border-ink/10 bg-paper p-1.5 text-ink shadow-[0_20px_50px_-15px_rgba(0,0,0,0.35)] outline-none"
+      >
+        <p className="px-3 pb-1.5 pt-2 text-[11px] font-semibold uppercase tracking-[0.12em] text-neutral-400">
+          Send inquiry via
+        </p>
+
+        <div className="flex flex-col gap-0.5">
+          {/* Gmail */}
+          <a
+            href={gmailUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setOpen(false)}
+            className="flex items-center justify-between rounded-xl px-3 py-2 text-left text-[13.5px] font-medium text-ink transition-colors hover:bg-ink/[0.05]"
+          >
+            <span className="flex items-center gap-2.5">
+              <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-red-500/10 text-red-600 font-bold text-[13px]">
+                G
+              </span>
+              <span>
+                <span className="block leading-tight font-semibold">Gmail</span>
+                <span className="block text-[11.5px] text-neutral-500 font-normal">Opens in browser tab</span>
+              </span>
+            </span>
+            <ExternalLink size={13} className="text-neutral-400" aria-hidden="true" />
+          </a>
+
+          {/* Default Mail App (Outlook, Apple Mail) */}
+          <a
+            href={mailtoUrl}
+            onClick={() => setOpen(false)}
+            className="flex items-center justify-between rounded-xl px-3 py-2 text-left text-[13.5px] font-medium text-ink transition-colors hover:bg-ink/[0.05]"
+          >
+            <span className="flex items-center gap-2.5">
+              <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-ink/5 text-ink">
+                <Mail size={14} />
+              </span>
+              <span>
+                <span className="block leading-tight font-semibold">Default Mail App</span>
+                <span className="block text-[11.5px] text-neutral-500 font-normal">Outlook, Apple Mail</span>
+              </span>
+            </span>
+          </a>
+
+          {/* Copy Details */}
+          <button
+            type="button"
+            onClick={handleCopy}
+            className="flex w-full items-center justify-between rounded-xl px-3 py-2 text-left text-[13.5px] font-medium text-ink transition-colors hover:bg-ink/[0.05]"
+          >
+            <span className="flex items-center gap-2.5">
+              <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-ink/5 text-ink">
+                {copied ? <Check size={14} className="text-emerald-600" /> : <Copy size={14} />}
+              </span>
+              <span>
+                <span className="block leading-tight font-semibold">
+                  {copied ? "Copied to clipboard!" : "Copy Details"}
+                </span>
+                <span className="block text-[11.5px] text-neutral-500 font-normal">
+                  {copied ? "Ready to paste anywhere" : "Copy email & message"}
+                </span>
+              </span>
+            </span>
+          </button>
+        </div>
+      </PopoverContent>
+    </Popover>
+  );
+}
+
 export function PricingTable({ ctx, compact = false }: { ctx: TripCtx; compact?: boolean }) {
+  const isMobile = useIsMobile();
   const { trip, money } = ctx;
   const tiers = [...trip.pricing].sort((a, b) => a.persons - b.persons);
+
+  const [selected, setSelected] = useState<number | "solo" | "custom">(() => {
+    const two = tiers.find((x) => x.persons === 2);
+    return two ? two.persons : (tiers[0]?.persons ?? 2);
+  });
+
+  const selectedTier = typeof selected === "number" ? tiers.find((x) => x.persons === selected) : undefined;
+  const pricePerPersonPerDay = selectedTier ? selectedTier.pricePerPersonPerDay : trip.fromPrice;
+  const totalPerPerson = selectedTier ? pricePerPersonPerDay * selectedTier.days : trip.fromPrice * trip.durationDays;
+  const groupTotal = typeof selected === "number" ? totalPerPerson * selected : undefined;
+
+  const inquiryParams: TripInquiryParams = {
+    tripTitle: trip.title,
+    durationDays: trip.durationDays,
+    departureCity: trip.departureCity,
+    persons: selected,
+    pricePerPersonPerDay: typeof selected === "number" ? pricePerPersonPerDay : undefined,
+    totalPerPerson: typeof selected === "number" ? totalPerPerson : undefined,
+    groupTotal,
+  };
+
+  const waUrl = buildTripWhatsappUrl(inquiryParams);
+
   return (
     <div>
-      <div className="grid grid-cols-3 pb-2.5 text-[11px] font-medium uppercase tracking-[0.14em] text-neutral-500">
-        <span>{T.group}</span>
-        <span>{T.perDay}</span>
-        <span className="text-right">{T.total}</span>
+      {/* Table header */}
+      <div className="grid grid-cols-12 pb-2.5 text-[11px] font-medium uppercase tracking-[0.14em] text-neutral-500">
+        <span className="col-span-5">{T.group}</span>
+        <span className="col-span-3 text-center">{T.perDay}</span>
+        <span className="col-span-4 text-right">{T.total}</span>
       </div>
-      {tiers.map((p) => (
-        <div
-          key={`${p.persons}-${p.days}`}
-          className={`grid grid-cols-3 items-baseline border-t border-ink/10 ${compact ? "py-2.5" : "py-3.5"}`}
-        >
-          <span className="text-[15px] text-ink">
-            {p.persons} {p.persons === 1 ? "person" : "people"}
-          </span>
-          <span className="text-[15px] text-ink/65">{money.format(p.pricePerPersonPerDay)}</span>
-          <span className={`text-right font-semibold tracking-[-0.02em] text-ink ${compact ? "text-[16px]" : "text-[19px]"}`}>
-            {money.format(p.pricePerPersonPerDay * p.days)}
-          </span>
+
+      {/* Ruled rows */}
+      <div className="divide-y divide-ink/10 border-y border-ink/10">
+        {tiers.map((p) => {
+          const isSelected = selected === p.persons;
+          return (
+            <button
+              key={`${p.persons}-${p.days}`}
+              type="button"
+              onClick={() => setSelected(p.persons)}
+              className={`group -mx-2.5 grid w-[calc(100%+1.25rem)] grid-cols-12 items-baseline rounded-md px-2.5 text-left transition-colors duration-100 ${
+                compact ? "py-2.5" : "py-3.5"
+              } ${isSelected ? "bg-ink/[0.04]" : "hover:bg-ink/[0.02]"}`}
+            >
+              <span className="col-span-5 flex items-center gap-2 text-[15px] text-ink">
+                <span
+                  className={`h-1.5 w-1.5 shrink-0 rounded-full transition-all ${
+                    isSelected
+                      ? "bg-brand opacity-100 scale-100"
+                      : "bg-ink/30 opacity-0 scale-75 group-hover:opacity-100 group-hover:scale-100"
+                  }`}
+                  aria-hidden="true"
+                />
+                <span className={isSelected ? "font-semibold text-ink" : "text-ink"}>
+                  {p.persons} {p.persons === 1 ? "person" : "people"}
+                </span>
+              </span>
+              <span className="col-span-3 text-center text-[15px] text-ink/65">
+                {money.format(p.pricePerPersonPerDay)}
+              </span>
+              <span
+                className={`col-span-4 text-right font-semibold tracking-[-0.02em] text-ink ${
+                  compact ? "text-[16px]" : "text-[19px]"
+                }`}
+              >
+                {money.format(p.pricePerPersonPerDay * p.days)}
+              </span>
+            </button>
+          );
+        })}
+      </div>
+
+      {/* Alternative sizes: quiet editorial links */}
+      <div className="mt-3.5 flex flex-wrap items-center justify-between gap-2 text-[12.5px] text-neutral-500">
+        <span>Custom group size?</span>
+        <div className="flex items-center gap-3">
+          <button
+            type="button"
+            onClick={() => setSelected("solo")}
+            className={`inline-flex min-h-11 items-center transition-colors md:min-h-0 ${
+              selected === "solo"
+                ? "font-semibold text-ink underline underline-offset-4 decoration-brand"
+                : "hover:text-ink"
+            }`}
+          >
+            Solo traveler (1)
+          </button>
+          <span className="text-neutral-300" aria-hidden="true">·</span>
+          <button
+            type="button"
+            onClick={() => setSelected("custom")}
+            className={`inline-flex min-h-11 items-center transition-colors md:min-h-0 ${
+              selected === "custom"
+                ? "font-semibold text-ink underline underline-offset-4 decoration-brand"
+                : "hover:text-ink"
+            }`}
+          >
+            6+ people (Group rate)
+          </button>
         </div>
-      ))}
+      </div>
+
+      {/* Editorial Inquiry Action Strip */}
+      <div className={`border-t border-ink/10 pt-5 ${compact ? "mt-5" : "mt-8"}`}>
+        <div className="flex items-center justify-between gap-3 sm:gap-4">
+          <div className="min-w-0">
+            <p className="eyebrow flex items-center gap-2 whitespace-nowrap text-[11px] font-medium uppercase tracking-[0.14em] text-neutral-500">
+              <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-brand" aria-hidden="true" />
+              {selected === "solo"
+                ? "Solo Traveler"
+                : selected === "custom"
+                  ? "Group (6+ People)"
+                  : `${selected} travelers`}
+            </p>
+            <p className="mt-1 text-[15.5px] font-medium tracking-[-0.01em] text-ink">
+              {selected === "solo" ? (
+                "Tailored private journey for 1 person"
+              ) : selected === "custom" ? (
+                "Tailored quote with dedicated 4x4"
+              ) : (
+                <>
+                  {/* Phone: just the total, so the price and both buttons fit on one line */}
+                  {groupTotal ? (
+                    <span className="sm:hidden">
+                      <span className="font-semibold text-ink">{money.format(groupTotal)}</span>
+                      <span className="text-neutral-500"> total</span>
+                    </span>
+                  ) : null}
+                  <span className={groupTotal ? "hidden sm:inline" : ""}>
+                    <span className="font-semibold text-ink">{money.format(totalPerPerson)}</span>
+                    <span className="text-neutral-500"> / person</span>
+                    {groupTotal && (
+                      <span className="font-normal text-neutral-500"> · {money.format(groupTotal)} total</span>
+                    )}
+                  </span>
+                </>
+              )}
+            </p>
+          </div>
+
+          <div className="flex shrink-0 items-center gap-1.5 sm:gap-2.5">
+            <a
+              href={waUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex h-[42px] items-center justify-center gap-2 rounded-full bg-ink px-3.5 text-[13.5px] sm:px-5 font-semibold text-paper transition-all duration-100 ease-out hover:bg-ink-deep active:scale-[0.98]"
+            >
+              <MessageCircle size={15} aria-hidden="true" />
+              <span>WhatsApp</span>
+            </a>
+            <EmailChoicePopover params={inquiryParams} compact={compact || isMobile} />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
 
 export function PlanButton({ ctx, dark = false }: { ctx: TripCtx; dark?: boolean }) {
+  const defaultTier = [...ctx.trip.pricing].sort((a, b) => a.persons - b.persons)[0];
+  const persons = defaultTier ? defaultTier.persons : 2;
+  const totalPerPerson = defaultTier
+    ? defaultTier.pricePerPersonPerDay * defaultTier.days
+    : ctx.trip.fromPrice * ctx.trip.durationDays;
+  const groupTotal = defaultTier ? totalPerPerson * defaultTier.persons : totalPerPerson * 2;
+
+  const inquiryParams: TripInquiryParams = {
+    tripTitle: ctx.trip.title,
+    durationDays: ctx.trip.durationDays,
+    departureCity: ctx.trip.departureCity,
+    persons,
+    pricePerPersonPerDay: defaultTier?.pricePerPersonPerDay ?? ctx.trip.fromPrice,
+    totalPerPerson,
+    groupTotal,
+  };
+
+  const waUrl = buildTripWhatsappUrl(inquiryParams);
+
   return (
-    <a
-      href={`mailto:contact@loverofsahara.com?subject=${encodeURIComponent(ctx.trip.title)}`}
-      className={`inline-flex h-[46px] items-center justify-center rounded-[10px] px-7 text-sm font-semibold transition-all duration-100 ease-out active:scale-[0.98] ${
-        dark ? "bg-paper text-ink hover:bg-neutral-100" : "bg-ink text-paper hover:opacity-90"
-      }`}
-    >
-      {T.contact}
-    </a>
+    <div className="flex flex-wrap items-center justify-center gap-3">
+      <a
+        href={waUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`inline-flex h-[46px] items-center justify-center gap-2 rounded-full px-6 text-sm font-semibold transition-all duration-100 ease-out active:scale-[0.98] ${
+          dark ? "bg-paper text-ink hover:bg-neutral-100" : "bg-ink text-paper hover:bg-ink-deep"
+        }`}
+      >
+        <MessageCircle size={16} aria-hidden="true" />
+        <span>WhatsApp</span>
+      </a>
+      <EmailChoicePopover params={inquiryParams} dark={dark} />
+    </div>
   );
 }
 
+/** Closing call to action: the Statement design (centred on paper, hairline above), with the trip's own text and buttons. */
 export function PlanPanel({ ctx }: { ctx: TripCtx }) {
   return (
-    <div className="rounded-2xl bg-ink-deep px-6 py-14 text-center text-white md:px-12 md:py-20">
-      <h2 className="mx-auto max-w-[16ch] text-[32px] font-semibold leading-[1.05] tracking-[-0.035em] md:text-[52px]">
+    <div className="border-t border-ink/10 px-2 pb-8 pt-20 text-center md:pt-28">
+      <h2 className="mx-auto max-w-5xl text-[40px] font-semibold leading-[1.02] tracking-[-0.05em] text-ink md:text-[104px]">
         {T.plan}
       </h2>
-      <p className="mx-auto mt-4 max-w-md text-[15px] leading-[1.5] text-white/70">{T.planLead}</p>
-      <div className="mt-7">
-        <PlanButton ctx={ctx} dark />
+      <p className="mx-auto mt-8 max-w-md text-[16px] font-medium leading-[1.6] tracking-[-0.02em] text-neutral-500">{T.planLead}</p>
+      <div className="mt-10">
+        <PlanButton ctx={ctx} />
       </div>
     </div>
   );

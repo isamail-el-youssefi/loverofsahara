@@ -99,7 +99,7 @@ export function SectionTabs({ items }: { items: TabItem[] }) {
   return (
     <nav
       aria-label="Page sections"
-      className="pointer-events-none fixed inset-x-0 bottom-4 z-[60] flex justify-center px-[4vw] md:bottom-6"
+      className="pointer-events-none fixed inset-x-0 bottom-[max(1rem,env(safe-area-inset-bottom))] z-[60] flex justify-center px-[4vw] md:bottom-6"
     >
       <motion.div
         style={{ clipPath, x: shift }}

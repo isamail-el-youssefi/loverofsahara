@@ -1,57 +1,21 @@
-export const footerCols = [
-  {
-    title: "Lover of Sahara",
-    links: [
-      { name: "About Us", href: "/about" },
-      { name: "Contact us", href: "/contact" },
-      { name: "Brochures", href: "/brochures" },
-      { name: "Gallery", href: "/gallery" },
-      { name: "Our Nomad Guides", href: "#" },
-      { name: "Zagora Gateway", href: "#" },
-      { name: "Sustainability", href: "#" },
-    ],
-  },
-  {
-    title: "Expeditions",
-    links: [
-      { name: "Erg Chegaga 2D/1N", href: "#expeditions" },
-      { name: "Zagora to Foum Zguid 3D", href: "#expeditions" },
-      { name: "Marrakech to Chegaga 4D", href: "#expeditions" },
-      { name: "Sunset Camel Caravans", href: "#expeditions" },
-      { name: "Private 4x4 Dune Tours", href: "#expeditions" },
-    ],
-  },
-  {
-    title: "Destinations",
-    links: [
-      { name: "Zagora & Draa Valley", href: "#destinations" },
-      { name: "Erg Chegaga Dunes", href: "#destinations" },
-      { name: "M'Hamid El Ghizlane", href: "#destinations" },
-      { name: "Lake Iriki (Dry Lake)", href: "#destinations" },
-      { name: "Tamgroute Pottery", href: "#destinations" },
-    ],
-  },
-  {
-    title: "Experiences",
-    links: [
-      { name: "Luxury Desert Glamping", href: "#process" },
-      { name: "Traditional Nomad Bivouac", href: "#process" },
-      { name: "Sahara Stargazing Nights", href: "#process" },
-      { name: "Berber Fireside Dining", href: "#process" },
-      { name: "Sandboarding & Trekking", href: "#process" },
-    ],
-  },
-  {
-    title: "Legal & Info",
-    links: [
-      { name: "Terms & Conditions", href: "#" },
-      { name: "Privacy Policy", href: "#" },
-      { name: "Desert Packing Guide", href: "/blog" },
-      { name: "Weather in Zagora", href: "#" },
-      { name: "Booking Policy", href: "#" },
-    ],
-  },
+import type { SiteStrings } from "@/i18n/site";
+
+/** Where each footer link goes (the same in every language); the words are in site.footer.cols. */
+const HREFS = [
+  ["/about", "/contact", "/brochures", "/gallery", "#", "#", "#"],
+  ["#expeditions", "#expeditions", "#expeditions", "#expeditions", "#expeditions"],
+  ["#destinations", "#destinations", "#destinations", "#destinations", "#destinations"],
+  ["#process", "#process", "#process", "#process", "#process"],
+  ["#", "#", "/blog", "#", "#"],
 ];
+
+/** The five footer columns in one language. */
+export function getFooterCols(site: SiteStrings) {
+  return site.footer.cols.map((col, i) => ({
+    title: col.title,
+    links: col.links.map((name, j) => ({ name, href: HREFS[i]![j]! })),
+  }));
+}
 
 /** Google reviews shown in the footer. TODO: replace `url` with the Google Business reviews link. */
 export const GOOGLE_REVIEWS = {

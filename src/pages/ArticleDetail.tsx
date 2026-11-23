@@ -3,22 +3,28 @@ import { motion } from "framer-motion";
 import { ArrowRight, Clock, Share2, Bookmark } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { OriginButton } from "@/components/ui/origin-button";
-import { blogArticles } from "@/data/articles";
+import { useLanguage } from "@/i18n/LanguageProvider";
+import { PAGES } from "@/i18n/pages";
+import { localizedArticles } from "@/data/articles-i18n";
+import { aboutPath, articlePath, blogPath, homePath } from "@/lib/routes";
 import { usePageSeo } from "@/lib/seo";
 import { articleSeo } from "@/lib/seoData";
-
 
 export function ArticleDetail({ id }: { id: number | null }) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [id]);
 
-  const currentIndex = blogArticles.findIndex((a) => a.id === id);
-  const article = currentIndex !== -1 ? blogArticles[currentIndex] : blogArticles[0];
-  usePageSeo(article ? articleSeo(article) : undefined);
+  const { lang } = useLanguage();
+  const t = PAGES[lang].article;
+  const articles = localizedArticles(lang);
+
+  const currentIndex = articles.findIndex((a) => a.id === id);
+  const article = currentIndex !== -1 ? articles[currentIndex] : articles[0];
+  usePageSeo(article ? articleSeo(article, lang) : undefined);
 
   const nextArticle =
-    blogArticles[(currentIndex + 1) % blogArticles.length] || blogArticles[0];
+    articles[(currentIndex + 1) % articles.length] || articles[0];
 
   return (
     <div className="min-h-screen bg-paper">
@@ -27,7 +33,7 @@ export function ArticleDetail({ id }: { id: number | null }) {
         <section className="relative flex h-full flex-col justify-end overflow-hidden rounded-2xl p-6 md:p-10">
           <img
             src={article.img}
-            alt={article.title}
+            alt={article.alt || article.title}
             className="absolute inset-0 h-full w-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-black/20" />
@@ -43,9 +49,9 @@ export function ArticleDetail({ id }: { id: number | null }) {
           >
             {/* Breadcrumbs */}
             <div className="mb-6 flex items-center gap-2 text-xs font-light text-white/70">
-              <a href="#" className="hover:text-white transition">Home</a>
+              <a href={homePath(lang)} className="hover:text-white transition">{t.home}</a>
               <span>/</span>
-              <a href="/blog" className="hover:text-white transition">Blog</a>
+              <a href={blogPath(lang)} className="hover:text-white transition">{t.blog}</a>
               <span>/</span>
               <span className="text-white/90">{article.category}</span>
             </div>
@@ -63,9 +69,9 @@ export function ArticleDetail({ id }: { id: number | null }) {
             {/* Author Info */}
             <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs font-medium text-white/80">
               <span>
-                By{" "}
+                {t.by}{" "}
                 <a
-                  href="#"
+                  href={aboutPath(lang)}
                   className="text-white underline decoration-white/40 underline-offset-4 transition hover:decoration-white"
                 >
                   {article.author}
@@ -73,9 +79,9 @@ export function ArticleDetail({ id }: { id: number | null }) {
                 , {article.authorRole}
               </span>
               <span className="hidden sm:inline text-white/40">|</span>
-              <span>Published {article.published}</span>
+              <span>{t.published} {article.published}</span>
               <span className="hidden sm:inline text-white/40">|</span>
-              <span>Updated {article.updated}</span>
+              <span>{t.updated} {article.updated}</span>
             </div>
           </motion.div>
         </section>
@@ -97,17 +103,17 @@ export function ArticleDetail({ id }: { id: number | null }) {
                 }
               }}
               className="flex items-center gap-1.5 hover:text-neutral-900 transition cursor-pointer"
-              title="Copy link"
+              title={t.shareTitle}
             >
               <Share2 size={14} />
-              <span>Share</span>
+              <span>{t.share}</span>
             </button>
             <button
               className="flex items-center gap-1.5 hover:text-neutral-900 transition cursor-pointer"
-              title="Bookmark article"
+              title={t.saveTitle}
             >
               <Bookmark size={14} />
-              <span>Save</span>
+              <span>{t.save}</span>
             </button>
           </div>
         </div>
@@ -177,7 +183,7 @@ export function ArticleDetail({ id }: { id: number | null }) {
                       <div className="overflow-hidden rounded-xl bg-neutral-100">
                         <img
                           src={section.images.src}
-                          alt="Editorial visual 1"
+                          alt={section.images.caption || t.imgAlt[0]}
                           className="h-[380px] w-full object-cover transition duration-500 hover:scale-105"
                         />
                         {section.images.caption && (
@@ -190,7 +196,7 @@ export function ArticleDetail({ id }: { id: number | null }) {
                         <div className="overflow-hidden rounded-xl bg-neutral-100">
                           <img
                             src={section.images.secondarySrc}
-                            alt="Editorial visual 2"
+                            alt={section.images.secondaryCaption || t.imgAlt[1]}
                             className="h-[380px] w-full object-cover transition duration-500 hover:scale-105"
                           />
                           {section.images.secondaryCaption && (
@@ -205,7 +211,7 @@ export function ArticleDetail({ id }: { id: number | null }) {
                     <div className="overflow-hidden rounded-xl bg-neutral-100">
                       <img
                         src={section.images.src}
-                        alt="Editorial photography"
+                        alt={section.images.caption || t.imgAlt[2]}
                         className="h-[420px] md:h-[500px] w-full object-cover transition duration-500 hover:scale-105"
                       />
                       {section.images.caption && (
@@ -226,20 +232,20 @@ export function ArticleDetail({ id }: { id: number | null }) {
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6 rounded-2xl border border-neutral-100 bg-neutral-50/50 p-6 md:p-8">
             <div className="space-y-1">
               <span className="text-xs font-semibold uppercase tracking-widest text-neutral-400">
-                Written by
+                {t.written}
               </span>
               <h3 className="text-lg font-semibold text-neutral-900 tracking-tight">
                 {article.author}
               </h3>
               <p className="text-xs text-neutral-500 max-w-sm">
-                {article.authorRole} sharing authentic insights, navigation routes, and cultural traditions from the Moroccan Sahara.
+                {t.writtenTail.replace("{role}", article.authorRole)}
               </p>
             </div>
             <OriginButton
-              href="/blog"
+              href={blogPath(lang)}
               className="h-9 rounded-xl border border-neutral-300 px-5 text-xs font-medium text-neutral-900"
             >
-              All Stories
+              {t.allStories}
             </OriginButton>
           </div>
         </div>
@@ -248,10 +254,10 @@ export function ArticleDetail({ id }: { id: number | null }) {
         {nextArticle && (
           <div className="mt-14 border-t border-neutral-100 pt-10">
             <span className="text-xs font-semibold uppercase tracking-wider text-neutral-400">
-              Next in Blog
+              {t.next}
             </span>
             <a
-              href={`/blog/${nextArticle.id}`}
+              href={articlePath(nextArticle.id, lang)}
               className="group mt-4 flex items-center justify-between gap-4 rounded-2xl border border-neutral-100 p-6 transition hover:border-neutral-300 hover:bg-neutral-50/40"
             >
               <div className="space-y-1">

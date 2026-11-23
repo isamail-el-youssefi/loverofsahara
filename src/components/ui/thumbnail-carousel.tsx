@@ -71,8 +71,11 @@ export function ThumbnailCarousel({
   slideClassName = "h-[52dvh] md:h-[72dvh]",
   index: controlledIndex,
   onIndexChange,
+  compact = false,
 }: {
   items: CarouselItem[];
+  /** Phone layout: photos fill the frame (no blurred letterbox), no arrows and no thumbnail strip, just swipe and the counter. */
+  compact?: boolean;
   className?: string;
   /** Height classes of the big photo frame (defaults to a share of the screen height). */
   slideClassName?: string;
@@ -116,7 +119,7 @@ export function ThumbnailCarousel({
     "absolute top-1/2 z-10 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-paper text-ink shadow-lg outline-none transition-transform focus-visible:ring-2 focus-visible:ring-ink/50 enabled:hover:scale-110 disabled:cursor-not-allowed disabled:opacity-40";
 
   return (
-    <div className={`flex flex-col gap-3 ${className}`}>
+    <div className={`flex min-w-0 flex-col gap-3 ${className}`}>
       <div
         ref={box}
         role="group"
@@ -132,6 +135,7 @@ export function ThumbnailCarousel({
         <motion.div
           className="flex cursor-grab active:cursor-grabbing"
           drag="x"
+          dragDirectionLock
           dragElastic={0.2}
           dragMomentum={false}
           onDragStart={() => setDragging(true)}
@@ -147,38 +151,45 @@ export function ThumbnailCarousel({
         >
           {items.map((item, i) => (
             <div key={item.id} className={`relative w-full shrink-0 overflow-hidden ${slideClassName}`}>
-              {/* A blurred copy fills the frame, so the whole photo can be shown (nothing cropped) without empty sides. */}
-              <img
-                src={item.thumb ?? item.url}
-                alt=""
-                aria-hidden
-                draggable={false}
-                className="pointer-events-none absolute inset-0 h-full w-full scale-110 select-none object-cover opacity-70 blur-2xl"
-              />
+              {/* A blurred copy fills the frame, so the whole photo can be shown (nothing cropped) without empty sides.
+                  Only the shown photo and its neighbours get one: blur layers are costly. */}
+              {!compact && Math.abs(i - index) <= 1 && (
+                <img
+                  src={item.thumb ?? item.url}
+                  alt=""
+                  aria-hidden
+                  draggable={false}
+                  className="pointer-events-none absolute inset-0 h-full w-full scale-110 select-none object-cover opacity-70 blur-2xl"
+                />
+              )}
               <img
                 src={item.url}
                 alt={item.title}
-                loading={i < 2 ? "eager" : "lazy"}
+                loading={Math.abs(i - index) <= 1 ? "eager" : "lazy"}
                 draggable={false}
-                className="pointer-events-none relative h-full w-full select-none object-contain"
+                className={`pointer-events-none relative h-full w-full select-none ${compact ? "object-cover" : "object-contain"}`}
               />
             </div>
           ))}
         </motion.div>
 
-        <button type="button" aria-label="Previous photo" disabled={index === 0} onClick={() => go(index - 1)} className={`${arrow} left-4`}>
-          <ChevronLeft size={22} aria-hidden />
-        </button>
-        <button type="button" aria-label="Next photo" disabled={index === last} onClick={() => go(index + 1)} className={`${arrow} right-4`}>
-          <ChevronRight size={22} aria-hidden />
-        </button>
+        {!compact && (
+          <>
+            <button type="button" aria-label="Previous photo" disabled={index === 0} onClick={() => go(index - 1)} className={`${arrow} left-4`}>
+              <ChevronLeft size={22} aria-hidden />
+            </button>
+            <button type="button" aria-label="Next photo" disabled={index === last} onClick={() => go(index + 1)} className={`${arrow} right-4`}>
+              <ChevronRight size={22} aria-hidden />
+            </button>
+          </>
+        )}
 
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 rounded-full bg-black/50 px-3 py-1 text-sm text-white tabular-nums" aria-live="polite">
           {index + 1} / {items.length}
         </div>
       </div>
 
-      <Thumbnails items={items} index={index} setIndex={go} />
+      {!compact && <Thumbnails items={items} index={index} setIndex={go} />}
     </div>
   );
 }

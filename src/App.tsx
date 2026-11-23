@@ -6,7 +6,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { textReveal01 } from "@/lib/textReveal01";
 import { sectionTransition01 } from "@/lib/sectionTransition01";
 import { ScrollContainerContext } from "@/lib/scrollContainer";
-import { canonicalPath, parseRoute, routeKey } from "@/lib/routes";
+import { canonicalPath, localePath, parseRoute, routeKey, localizedRouteLang } from "@/lib/routes";
+import { useLanguage } from "@/i18n/LanguageProvider";
 import { usePageSeo } from "@/lib/seo";
 import { homeSeo } from "@/lib/seoData";
 import { HeroSection } from "@/components/HeroSection";
@@ -148,7 +149,8 @@ function Page({ children, animated, ready, activeLenis }: PageProps) {
 
 /** The home page has no component of its own, so this sets its head. */
 function HomeSeo() {
-  usePageSeo(homeSeo());
+  const { lang } = useLanguage();
+  usePageSeo(homeSeo(lang));
   return null;
 }
 
@@ -181,6 +183,9 @@ export default function App() {
   });
   const [isPreloaderDone, setIsPreloaderDone] = useState(false);
   const activeLenis = useRef<Lenis | null>(null);
+  const { lang } = useLanguage();
+  const langRef = useRef(lang);
+  langRef.current = lang;
 
   const route = parseRoute(path);
   const isTrip = route.name === "trip";
@@ -213,7 +218,9 @@ export default function App() {
     const handleAnchorClick = (e: MouseEvent) => {
       if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
       const target = (e.target as HTMLElement)?.closest("a");
-      const href = target?.getAttribute("href");
+      let href = target?.getAttribute("href");
+      // Links to the pages that exist in every language keep the language the visitor is reading (/trips/x -> /fr/trips/x).
+      if (href && localizedRouteLang(href) === "en") href = localePath(langRef.current, href);
       if (!target || !href || target.target === "_blank" || target.hasAttribute("download")) return;
 
       // Internal page link (/trips/..., /places/..., /blog): client-side navigation, no reload.
@@ -234,8 +241,10 @@ export default function App() {
         if (routeKeyRef.current === "home") {
           activeLenis.current?.scrollTo(0, { ...JUMP, offset: 0 });
         } else {
-          window.history.pushState(null, "", "/");
-          setPath("/");
+          const home = localePath(langRef.current, "/");
+          window.history.pushState(null, "", home);
+          setPath(home);
+          window.dispatchEvent(new Event("los-urlchange"));
         }
       } else if (routeKeyRef.current === "home") {
         // In-page anchor on the home page (#expeditions, #process, ...)
@@ -287,7 +296,7 @@ export default function App() {
               <Brochures />
             ) : route.name === "brochure" ? (
               <Suspense fallback={<div className="h-[100dvh] bg-ink-deep" />}>
-                <BrochureReader slug={route.slug} />
+                <BrochureReader slug={route.slug} lang={route.lang} />
               </Suspense>
             ) : route.name === "gallery" ? (
               <Gallery />

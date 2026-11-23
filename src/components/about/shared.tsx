@@ -4,17 +4,20 @@ import { Plus } from "lucide-react";
 import { GoogleReviewsBadge } from "@/components/footer/GoogleReviewsBadge";
 import { fadeUp } from "@/lib/animations";
 import { cn } from "@/lib/utils";
-import { CTA, FAQ, HERO_PHOTO, OWNER, QUOTES, STATS, SUSTAINABILITY } from "./content";
+import { HERO_PHOTO, OWNER as OWNER_EN } from "./content";
+import { useLanguage } from "@/i18n/LanguageProvider";
+import { useAboutContent } from "./useAboutContent";
 
 const fallbackPhoto = HERO_PHOTO;
 
 /** Salah's portrait from the old site; if that file cannot load, a desert photo stands in. */
-export function Portrait({ className, alt = `${OWNER.name}, ${OWNER.role}` }: { className?: string; alt?: string }) {
-  const [src, setSrc] = useState(OWNER.portrait ?? fallbackPhoto);
+export function Portrait({ className, alt }: { className?: string; alt?: string }) {
+  const { site } = useLanguage();
+  const [src, setSrc] = useState(OWNER_EN.portrait ?? fallbackPhoto);
   return (
     <img
       src={src}
-      alt={alt}
+      alt={alt ?? site.about.portraitAlt}
       loading="lazy"
       draggable={false}
       onError={() => setSrc(fallbackPhoto)}
@@ -25,6 +28,7 @@ export function Portrait({ className, alt = `${OWNER.name}, ${OWNER.role}` }: { 
 
 /** Accessible accordion on native <details>, one question open at a time. */
 export function Faq({ tone = "light" }: { tone?: "light" | "dark" }) {
+  const { FAQ } = useAboutContent();
   const [open, setOpen] = useState<number | null>(0);
   const dark = tone === "dark";
   return (
@@ -62,13 +66,15 @@ export function Faq({ tone = "light" }: { tone?: "light" | "dark" }) {
 
 /** Real guest words plus the Google rating badge. */
 export function ReviewsBlock({ tone = "light" }: { tone?: "light" | "dark" }) {
+  const { QUOTES } = useAboutContent();
+  const { site } = useLanguage();
   const dark = tone === "dark";
   return (
     <div>
       <div className="mb-10 flex flex-wrap items-center justify-between gap-6">
         <GoogleReviewsBadge tone={dark ? "dark" : "light"} />
         <p className={cn("max-w-sm text-[14px]", dark ? "text-white/60" : "text-neutral-500")}>
-          Guests write about Salah and the team in their own words.
+          {site.about.reviewsNote}
         </p>
       </div>
       <div className="grid gap-[6px] md:grid-cols-3">
@@ -95,6 +101,7 @@ export function ReviewsBlock({ tone = "light" }: { tone?: "light" | "dark" }) {
 
 /** Three short commitments in a ruled list. */
 export function SustainabilityList({ tone = "light" }: { tone?: "light" | "dark" }) {
+  const { SUSTAINABILITY } = useAboutContent();
   const dark = tone === "dark";
   return (
     <ol className={cn("border-b", dark ? "border-white/15" : "border-ink/10")}>
@@ -120,6 +127,7 @@ export function SustainabilityList({ tone = "light" }: { tone?: "light" | "dark"
 
 /** Four numbers in a row. */
 export function StatsRow({ tone = "light", className }: { tone?: "light" | "dark"; className?: string }) {
+  const { STATS } = useAboutContent();
   const dark = tone === "dark";
   return (
     <dl className={cn("grid grid-cols-2 gap-x-6 gap-y-8 md:grid-cols-4", className)}>
@@ -142,6 +150,7 @@ export function StatsRow({ tone = "light", className }: { tone?: "light" | "dark
 
 /** Closing call to action card, same as the place page's "Plan this trip". */
 export function CtaCard() {
+  const { CTA } = useAboutContent();
   return (
     <div className="rounded-2xl bg-ink-deep px-6 py-14 text-center text-white md:px-12 md:py-20">
       <h2 className="mx-auto max-w-[16ch] text-[32px] font-semibold leading-[1.05] tracking-[-0.035em] md:text-[52px]">

@@ -80,6 +80,9 @@ export function RouteMap({ stops, active, onActive, tone = "light", className = 
 
     map.fitBounds(L.latLngBounds(points), { padding: [48, 48], maxZoom: 9 });
 
+    // Touch screens: one finger scrolls the page (it used to be swallowed by the map); two fingers pinch to zoom and pan.
+    if (L.Browser.mobile) map.dragging.disable();
+
     // Page scroll first: enable wheel zoom only after a click, release when the pointer leaves.
     map.on("click", () => map.scrollWheelZoom.enable());
     el.addEventListener("mouseleave", () => map.scrollWheelZoom.disable());

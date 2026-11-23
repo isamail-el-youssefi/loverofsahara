@@ -1,5 +1,7 @@
 import { CATEGORY_IMAGES } from "@/data/siteImages";
 import { countByCategory, getTrips, type TripCategory } from "@/data/trips";
+import type { SiteStrings } from "@/i18n/site";
+import type { UiStrings } from "@/i18n/ui";
 import { CONTACT_PATH, TRIPS_PATH } from "@/lib/routes";
 
 export interface CategoryCard {
@@ -12,24 +14,25 @@ export interface CategoryCard {
   count: string;
 }
 
-const CARDS: { name: string; blurb: string; category: TripCategory | null; img: string }[] = [
-  { name: "Circuits", blurb: "Private multi-day journeys, from 2 to 7 days.", category: "trip", img: CATEGORY_IMAGES.camps },
-  { name: "Excursions", blurb: "Short desert escapes, from 1 to 3 days.", category: "excursion", img: CATEGORY_IMAGES.fourByFour },
-  { name: "Trekking", blurb: "A week on foot through the desert.", category: "trekking", img: CATEGORY_IMAGES.caravans },
-  { name: "Yoga", blurb: "Yoga in the desert.", category: null, img: CATEGORY_IMAGES.draaValley },
+/** The four cards: what does not change with the language (trip category and photo). Names and blurbs are in site.categories. */
+const CARDS: { category: TripCategory | null; img: string }[] = [
+  { category: "trip", img: CATEGORY_IMAGES.camps },
+  { category: "excursion", img: CATEGORY_IMAGES.fourByFour },
+  { category: "trekking", img: CATEGORY_IMAGES.caravans },
+  { category: null, img: CATEGORY_IMAGES.yoga },
 ];
 
 /** The four trip categories with live trip counts. Yoga has no trips yet, so it points to the contact page. */
-export function getCategoryCards(): CategoryCard[] {
+export function getCategoryCards(site: SiteStrings, ui: UiStrings): CategoryCard[] {
   const counts = countByCategory(getTrips());
-  return CARDS.map((c) => {
+  return CARDS.map((c, i) => {
     const n = c.category ? counts[c.category] : 0;
     return {
-      name: c.name,
-      blurb: c.blurb,
+      name: site.categories.cards[i]!.name,
+      blurb: site.categories.cards[i]!.blurb,
       img: c.img,
       href: c.category ? `${TRIPS_PATH}?category=${c.category}` : CONTACT_PATH,
-      count: c.category ? `${n} ${n === 1 ? "trip" : "trips"}` : "Coming soon",
+      count: c.category ? ui.showing(n) : site.categories.comingSoon,
     };
   });
 }

@@ -24,13 +24,8 @@
       rel="stylesheet"
     />
     <script>
-      try {
-        var t = localStorage.getItem("los-theme") || "amber-walnut";
-        document.documentElement.setAttribute("data-theme", t);
-        document.documentElement.setAttribute("data-font", localStorage.getItem("los-font") || "default");
-      } catch (e) {
-        document.documentElement.setAttribute("data-theme", "amber-walnut");
-      }
+      document.documentElement.setAttribute("data-theme", "amber-walnut");
+      document.documentElement.setAttribute("data-font", "red-dot");
     </script>
   </head>
   <body>

@@ -2,7 +2,8 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { ArrowDown, BookOpen, ChevronLeft, ChevronRight, Maximize2, Rows3, X } from "lucide-react";
 import type { PDFDocumentProxy } from "pdfjs-dist";
 import { BROCHURES, brochureCover, brochureIn, brochurePdf } from "@/data/brochures";
-import { BROCHURES_PATH } from "@/lib/routes";
+import { BROCHURES_PATH, brochureLangPath } from "@/lib/routes";
+import { isLang, type Lang } from "@/i18n/languages";
 import { usePageSeo } from "@/lib/seo";
 import { brochureReaderSeo } from "@/lib/seoData";
 import { cn } from "@/lib/utils";
@@ -26,9 +27,10 @@ const pill =
   "inline-flex h-9 items-center gap-2 rounded-full border px-3.5 text-[14px] font-medium tracking-[-0.01em] outline-none transition-colors focus-visible:ring-2 focus-visible:ring-white";
 
 /** Reads one brochure inside the site: an openable book, or an immersive scroll. */
-export function BrochureReader({ slug }: { slug: string }) {
+export function BrochureReader({ slug, lang }: { slug: string; lang?: string | undefined }) {
   const brochure = BROCHURES.find((b) => b.slug === slug);
-  usePageSeo(brochureReaderSeo(slug));
+  const urlLang = isLang(lang) ? lang : undefined;
+  usePageSeo(brochureReaderSeo(slug, urlLang));
   // Unknown slug: send the visitor to the list
   useEffect(() => {
     if (!brochure) {
@@ -37,12 +39,18 @@ export function BrochureReader({ slug }: { slug: string }) {
     }
   }, [brochure]);
   if (!brochure) return null;
-  return <Reader slug={slug} />;
+  return <Reader slug={slug} urlLang={urlLang} />;
 }
 
-function Reader({ slug }: { slug: string }) {
+function Reader({ slug, urlLang }: { slug: string; urlLang: Lang | undefined }) {
   const brochure = BROCHURES.find((b) => b.slug === slug)!;
-  const [langWanted, setLang, bt] = useBrochureLang();
+  const [langWanted, setLangState, bt] = useBrochureLang(urlLang);
+  // Each language has its own URL (so each can be indexed): keep the address bar in step with the chips.
+  const setLang = (l: Lang) => {
+    setLangState(l);
+    window.history.replaceState(null, "", brochureLangPath(slug, l));
+    window.dispatchEvent(new PopStateEvent("popstate"));
+  };
   const { lang, info } = brochureIn(brochure, langWanted);
   const t = READER_STRINGS[lang];
   const url = brochurePdf(slug, lang);

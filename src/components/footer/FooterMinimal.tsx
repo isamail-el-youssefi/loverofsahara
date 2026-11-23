@@ -1,10 +1,13 @@
 import { TextRollHover } from "@/components/ui/text-stagger-hover";
-import { footerCols } from "./data";
+import { useLanguage } from "@/i18n/LanguageProvider";
+import { useFooterCols } from "./useFooterCols";
 import { GoogleReviewsBadge } from "./GoogleReviewsBadge";
 import { NewsletterForm } from "./NewsletterForm";
 
 /** Compact paper footer: brand and Google badge on one row, links in one ruled row, newsletter, copyright. */
 export function FooterMinimal() {
+  const footerCols = useFooterCols();
+  const { site } = useLanguage();
   return (
     <footer className="bg-paper px-6 pb-8 pt-14 text-ink md:px-12 lg:px-16">
       <div className="flex flex-col gap-6 border-b border-ink/10 pb-8 md:flex-row md:items-center md:justify-between">
@@ -32,7 +35,7 @@ export function FooterMinimal() {
       </div>
 
       <div className="flex flex-col gap-4 pt-6 md:flex-row md:items-center md:justify-between">
-        <p className="text-[12px] text-neutral-500">© 2025–2026 Lover of Sahara. All rights reserved.</p>
+        <p className="text-[12px] text-neutral-500">{site.footer.rights}</p>
         <NewsletterForm tone="light" className="md:max-w-md" />
       </div>
     </footer>

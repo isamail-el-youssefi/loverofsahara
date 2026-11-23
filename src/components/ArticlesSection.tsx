@@ -3,25 +3,14 @@ import { ArrowUpRight } from "lucide-react";
 import { ARTICLE_IMAGES } from "@/data/siteImages";
 import { fadeUp } from "@/lib/animations";
 import { OriginButton } from "@/components/ui/origin-button";
-
-const articles = [
-  {
-    id: 1,
-    img: ARTICLE_IMAGES.chegagaDunes,
-    alt: "Vast golden sand dunes of Erg Chegaga under open sky",
-    title: "Erg Chegaga vs Erg Chebbi: Why Morocco's Wildest Dunes Win (2026)",
-    date: "Desert Guide • 6 min read",
-  },
-  {
-    id: 2,
-    img: ARTICLE_IMAGES.desertCamp,
-    alt: "Nomad tents of a desert camp in the Sahara near Zagora",
-    title: "What to Pack for a Night in the Zagora Sahara Desert: The Complete Checklist",
-    link: { text: "Read guide →", href: "/blog/2" },
-  },
-];
+import { useLanguage } from "@/i18n/LanguageProvider";
 
 export function ArticlesSection() {
+  const a = useLanguage().site.articles;
+  const articles = [
+    { id: 1, img: ARTICLE_IMAGES.chegagaDunes, alt: a.items[0].alt, title: a.items[0].title, date: a.items[0].meta, link: undefined },
+    { id: 2, img: ARTICLE_IMAGES.desertCamp, alt: a.items[1].alt, title: a.items[1].title, date: undefined, link: { text: a.readGuide } },
+  ];
   return (
     <section
       data-st-01="parallax"
@@ -35,7 +24,7 @@ export function ArticlesSection() {
           data-scroll
           className="w-full lg:w-1/2 text-[32px] md:text-[64px] font-semibold tracking-[-0.05em] leading-[1.1] text-ink"
         >
-          Sahara <span className="font-normal text-neutral-400">Stories.</span>
+          {a.h2a} <span className="font-normal text-neutral-400">{a.h2b}</span>
         </h2>
 
         <div className="w-full lg:w-1/2 flex justify-between lg:items-end gap-4 lg:text-right">
@@ -44,7 +33,7 @@ export function ArticlesSection() {
             href="/blog"
             className="h-10 rounded-[10px] border-neutral-300 px-5 text-sm font-medium text-neutral-900"
           >
-            View all stories <ArrowUpRight size={16} />
+            {a.viewAll} <ArrowUpRight size={16} />
           </OriginButton>
         </div>
       </div>

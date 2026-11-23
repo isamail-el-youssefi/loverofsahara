@@ -37,7 +37,7 @@ const cardEnter = {
   exit: { opacity: 0, scale: 0.96, transition: { duration: 0.25, ease: "easeIn" as const } },
 };
 
-const photoCard = "group relative h-[480px] overflow-hidden rounded-[10px] bg-ink-deep md:h-[540px]";
+const photoCard = "group relative h-[400px] overflow-hidden rounded-[10px] bg-ink-deep md:h-[540px]";
 const photo = "h-full w-full object-cover transition-transform duration-[1200ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.04]";
 
 /** Minimal: full-bleed photo, a soft low gradient, the title and a single quiet line. */
@@ -294,7 +294,7 @@ export const TripCard = forwardRef<HTMLAnchorElement, CardProps & { stagger?: bo
         return <ClassicCard {...props} />;
     }
   })();
-  const href = tripPath(props.trip.slug);
+  const href = tripPath(props.trip.slug, props.trip.lang);
   const cls = "relative block rounded-[10px] outline-none focus-visible:ring-2 focus-visible:ring-ink/50";
   const pill = rating && rating.count > 0 ? <RatingPill rating={rating} style={style} /> : null;
   if (!stagger) {
@@ -351,7 +351,7 @@ function ClassicCard({ trip, index }: CardProps) {
     <motion.article
       {...motionProps}
       data-trip={trip.slug}
-      className="group relative h-[480px] overflow-hidden rounded-[10px] bg-ink-deep md:h-[540px]"
+      className="group relative h-[400px] overflow-hidden rounded-[10px] bg-ink-deep md:h-[540px]"
     >
       <img
         src={cover}

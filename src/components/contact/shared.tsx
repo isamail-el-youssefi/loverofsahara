@@ -4,24 +4,27 @@ import { GoogleReviewsBadge } from "@/components/footer/GoogleReviewsBadge";
 import { OWNER } from "@/components/about/content";
 import { Portrait } from "@/components/about/shared";
 import { RouteMap } from "@/components/trip/RouteMap";
+import { useLanguage } from "@/i18n/LanguageProvider";
 import { fadeUp } from "@/lib/animations";
 import { cn } from "@/lib/utils";
-import { CONTACT, STEPS, phoneHref, whatsappBase } from "./data";
-
-const ROWS = [
-  { key: "whatsapp", label: "WhatsApp", value: CONTACT.phoneDisplay, href: whatsappBase, icon: MessageCircle, external: true },
-  { key: "email", label: "Email", value: CONTACT.email, href: `mailto:${CONTACT.email}`, icon: Mail, external: false },
-  { key: "phone", label: "Phone", value: CONTACT.phoneDisplay, href: phoneHref, icon: Phone, external: false },
-  { key: "instagram", label: "Instagram", value: "@lover_of_sahara", href: CONTACT.instagram, icon: Instagram, external: true },
-  { key: "facebook", label: "Facebook", value: "loveroffsahara", href: CONTACT.facebook, icon: Facebook, external: true },
-] as const;
+import { CONTACT, phoneHref, whatsappBase } from "./data";
+import { useContactContent } from "./useContactContent";
 
 /** The ways to reach us, as a ruled list. */
 export function ContactList({ tone = "light", className }: { tone?: "light" | "dark"; className?: string }) {
   const dark = tone === "dark";
+  const t = useContactContent();
+  const rows = [
+    { key: "whatsapp", label: "WhatsApp", value: CONTACT.phoneDisplay, href: whatsappBase, icon: MessageCircle, external: true },
+    { key: "email", label: t.emailLabel, value: CONTACT.email, href: `mailto:${CONTACT.email}`, icon: Mail, external: false },
+    { key: "phone", label: t.phoneLabel, value: CONTACT.phoneDisplay, href: phoneHref, icon: Phone, external: false },
+    { key: "instagram", label: "Instagram", value: "@lover_of_sahara", href: CONTACT.instagram, icon: Instagram, external: true },
+    { key: "facebook", label: "Facebook", value: "loveroffsahara", href: CONTACT.facebook, icon: Facebook, external: true },
+  ] as const;
+
   return (
     <ul className={cn("border-b", dark ? "border-white/15" : "border-ink/10", className)}>
-      {ROWS.map((r) => (
+      {rows.map((r) => (
         <li key={r.key} className={cn("border-t", dark ? "border-white/15" : "border-ink/10")}>
           <a
             href={r.href}
@@ -44,9 +47,10 @@ export function ContactList({ tone = "light", className }: { tone?: "light" | "d
 /** Three numbered steps. */
 export function Steps({ tone = "light" }: { tone?: "light" | "dark" }) {
   const dark = tone === "dark";
+  const t = useContactContent();
   return (
     <ol className="grid gap-[6px] md:grid-cols-3">
-      {STEPS.map((s, i) => (
+      {t.steps.map((s, i) => (
         <motion.li
           key={s.title}
           {...fadeUp}
@@ -79,6 +83,13 @@ export function FindUsMap({ tone = "light", className }: { tone?: "light" | "dar
 /** Who answers: Salah's portrait, the languages he speaks and the Google rating. */
 export function WhoYouTalkTo({ tone = "light" }: { tone?: "light" | "dark" }) {
   const dark = tone === "dark";
+  const t = useContactContent();
+  const { lang } = useLanguage();
+  const orWord = lang === "fr" ? "ou" : lang === "de" ? "oder" : lang === "es" ? "o" : lang === "it" ? "o" : lang === "zh" ? "或" : "or";
+  const langsStr = `${OWNER.languages.slice(0, -1).join(", ")} ${orWord} ${OWNER.languages[OWNER.languages.length - 1]}`;
+  const talking = t.talking.replace("{name}", OWNER.name).replace("{role}", OWNER.role.toLowerCase());
+  const born = t.born.replace("{langs}", langsStr);
+
   return (
     <div className="grid items-center gap-8 md:grid-cols-[minmax(0,280px)_1fr] md:gap-12">
       <div className="aspect-[4/5] overflow-hidden rounded-2xl bg-ink-deep">
@@ -86,10 +97,10 @@ export function WhoYouTalkTo({ tone = "light" }: { tone?: "light" | "dark" }) {
       </div>
       <div>
         <p className="text-[26px] font-light leading-[1.2] tracking-[-0.03em] md:text-[38px]">
-          You will be talking to {OWNER.name}, {OWNER.role.toLowerCase()}.
+          {talking}
         </p>
         <p className={cn("mt-4 max-w-[34rem] text-[15.5px] leading-[1.65]", dark ? "text-white/70" : "text-ink/75")}>
-          Born and raised in Zagora, he and the native team plan every journey themselves. Write in {OWNER.languages.slice(0, -1).join(", ")} or {OWNER.languages[OWNER.languages.length - 1]}.
+          {born}
         </p>
         <div className="mt-6">
           <GoogleReviewsBadge tone={dark ? "dark" : "light"} />

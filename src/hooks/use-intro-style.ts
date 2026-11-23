@@ -1,13 +1,6 @@
-import { useEffect, useState } from "react";
-import { INTRO_EVENT, getStoredIntroStyle } from "@/lib/themes";
+import { useIsMobile } from "@/hooks/use-mobile";
 
-/** Currently selected trip-page intro layout; updates live when changed in the theme switcher. */
+/** Trip intro layout (fixed, no switcher): brief + height on phones, facts beside the brief on desktop. */
 export function useIntroStyle() {
-  const [style, setStyle] = useState(getStoredIntroStyle);
-  useEffect(() => {
-    const sync = () => setStyle(getStoredIntroStyle());
-    window.addEventListener(INTRO_EVENT, sync);
-    return () => window.removeEventListener(INTRO_EVENT, sync);
-  }, []);
-  return style;
+  return useIsMobile() ? "row" : "side";
 }

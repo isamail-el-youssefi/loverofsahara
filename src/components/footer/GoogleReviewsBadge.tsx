@@ -1,4 +1,5 @@
 import { Star } from "lucide-react";
+import { useLanguage } from "@/i18n/LanguageProvider";
 import { cn } from "@/lib/utils";
 import { GOOGLE_REVIEWS } from "./data";
 
@@ -38,13 +39,14 @@ export function Stars({ className, size = 14 }: { className?: string; size?: num
 
 /** Link badge: Google logo, 5 stars, "5.0 · 21 Google reviews". */
 export function GoogleReviewsBadge({ tone = "dark", className }: { tone?: "dark" | "light"; className?: string }) {
+  const { site } = useLanguage();
   const { rating, count, url } = GOOGLE_REVIEWS;
   const external = url.startsWith("http");
   return (
     <a
       href={url}
       {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-      aria-label={`${rating.toFixed(1)} out of 5 on Google, ${count} reviews`}
+      aria-label={`${rating.toFixed(1)} ${site.footer.googleAria}, ${count} ${site.footer.googleReviews}`}
       className={cn(
         "group inline-flex items-center gap-3 rounded-[10px] border px-4 py-2.5 outline-none transition-colors focus-visible:ring-2 focus-visible:ring-current",
         tone === "dark"
@@ -60,7 +62,7 @@ export function GoogleReviewsBadge({ tone = "dark", className }: { tone?: "dark"
           <Stars />
         </span>
         <span className={cn("text-[12px]", tone === "dark" ? "text-white/65" : "text-neutral-500")}>
-          {count} Google reviews
+          {count} {site.footer.googleReviews}
         </span>
       </span>
     </a>

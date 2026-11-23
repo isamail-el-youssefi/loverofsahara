@@ -1,12 +1,16 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
-import { ABOUT_INTRO, OWNER, STATS } from "@/components/about/content";
+import { useAboutContent } from "@/components/about/useAboutContent";
+import { useLanguage } from "@/i18n/LanguageProvider";
 import { ABOUT_PHOTO } from "@/data/siteImages";
 import { fadeUp } from "@/lib/animations";
-import { ABOUT_PATH, CONTACT_PATH } from "@/lib/routes";
+import { CONTACT_PATH, aboutPath } from "@/lib/routes";
 
 /** Home "Complete" layout: a short, calm introduction to the team: photo, one headline, one paragraph, four facts. */
 export function HomeAbout() {
+  const { ABOUT_INTRO, OWNER, STATS } = useAboutContent();
+  const { lang, site } = useLanguage();
+  const h = site.homeAbout;
   return (
     <section
       id="about"
@@ -19,7 +23,7 @@ export function HomeAbout() {
         <motion.div {...fadeUp} className="relative aspect-[6/7] overflow-hidden rounded-2xl bg-neutral-100 lg:aspect-[10/11]">
           <img
             src={ABOUT_PHOTO}
-            alt="Camel caravan in the Sahara near Zagora"
+            alt={h.photoAlt}
             width={2400}
             height={1596}
             loading="lazy"
@@ -35,14 +39,14 @@ export function HomeAbout() {
 
         <div>
           <div className="flex items-center gap-2 text-[13px] font-medium text-neutral-500">
-            <span className="h-1.5 w-1.5 rounded-full bg-brand" aria-hidden /> About us
+            <span className="h-1.5 w-1.5 rounded-full bg-brand" aria-hidden /> {h.eyebrow}
           </div>
           <h2
             data-reveal-01="words"
             data-scroll
             className="mt-5 text-[36px] font-semibold leading-[1.05] tracking-[-0.05em] text-ink md:text-[60px]"
           >
-            Native guides from Zagora. <div className="font-normal text-neutral-400">Private Sahara journeys.</div>
+            {h.h2a} <div className="font-normal text-neutral-400">{h.h2b}</div>
           </h2>
           <motion.p {...fadeUp} className="mt-6 max-w-xl text-[16px] font-medium leading-[1.6] tracking-[-0.02em] text-neutral-600">
             {ABOUT_INTRO}
@@ -64,16 +68,16 @@ export function HomeAbout() {
 
           <div className="mt-8 flex flex-wrap gap-3">
             <a
-              href={ABOUT_PATH}
+              href={aboutPath(lang)}
               className="inline-flex items-center gap-2 rounded-full bg-ink px-5 py-3 text-[13px] font-semibold text-white transition hover:bg-ink-deep"
             >
-              Our story <ArrowUpRight size={16} aria-hidden />
+              {h.ourStory} <ArrowUpRight size={16} aria-hidden />
             </a>
             <a
               href={CONTACT_PATH}
               className="inline-flex items-center gap-2 rounded-full border border-ink/20 px-5 py-3 text-[13px] font-semibold text-ink transition hover:bg-ink/5"
             >
-              Plan your trip
+              {h.planTrip}
             </a>
           </div>
         </div>

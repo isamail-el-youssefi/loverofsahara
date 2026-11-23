@@ -6,6 +6,7 @@ import { useScrollContainer } from "@/lib/scrollContainer";
 import { motion, useScroll, useTransform, useSpring, useReducedMotion } from "framer-motion";
 import { ArrowDown, ArrowUpRight, MapPin } from "lucide-react";
 import { OriginButton } from "@/components/ui/origin-button";
+import { useLanguage } from "@/i18n/LanguageProvider";
 
 export interface DestinationItemData {
 id: number;
@@ -61,6 +62,7 @@ const defaultDestinations: DestinationItemData[] = [
 ];
 
 function DestinationSectionItem({ section }: { section: DestinationItemData }) {
+  const d = useLanguage().site.destinations;
   const targetRef = useRef<HTMLDivElement>(null);
   const shouldReduceMotion = useReducedMotion();
 
@@ -134,7 +136,7 @@ function DestinationSectionItem({ section }: { section: DestinationItemData }) {
               href="#contact"
               className="h-10 rounded-[10px] border-neutral-300 px-6 text-sm font-medium text-neutral-900 transition-all duration-100 ease-out active:scale-[0.98] active:bg-neutral-200/80 hover:bg-neutral-100"
             >
-              Explore {section.title} <ArrowUpRight size={16} />
+              {d.explore} {section.title} <ArrowUpRight size={16} />
             </OriginButton>
           </div>
         </motion.div>
@@ -162,7 +164,7 @@ function DestinationSectionItem({ section }: { section: DestinationItemData }) {
             {/* Apple translucent frosted glass card with light-catching specular edge */}
             <div className="absolute bottom-6 left-6 right-6 flex items-end justify-between text-white">
               <div>
-                <p className="text-[11px] uppercase tracking-[0.16em] text-white/70 font-semibold">Morocco Destination</p>
+                <p className="text-[11px] uppercase tracking-[0.16em] text-white/70 font-semibold">{d.label}</p>
                 <p className="text-2xl md:text-3xl font-semibold tracking-tight text-white mt-1">{section.title}</p>
               </div>
               <span className="text-xs font-medium text-white/95 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/25 shadow-[inset_0_1px_1px_rgba(255,255,255,0.4)]">
@@ -177,10 +179,14 @@ function DestinationSectionItem({ section }: { section: DestinationItemData }) {
 }
 
 export const ParallaxScrollFeatureSection = ({
-  destinations = defaultDestinations,
+  destinations: given,
 }: {
   destinations?: DestinationItemData[];
 }) => {
+  const d = useLanguage().site.destinations;
+  // Photos and layout are fixed; the words come from the language files.
+  const destinations =
+    given ?? defaultDestinations.map((base, i) => ({ ...base, ...d.items[i]! }));
   return (
     <section
       id="destinations"
@@ -198,7 +204,7 @@ export const ParallaxScrollFeatureSection = ({
             data-scroll
             className="text-[32px] md:text-[64px] font-semibold tracking-[-0.05em] leading-[1.08] text-ink"
           >
-            Iconic Southern <span className="font-normal text-neutral-400">Routes.</span>
+            {d.h2a} <span className="font-normal text-neutral-400">{d.h2b}</span>
           </h2>
         </div>
 

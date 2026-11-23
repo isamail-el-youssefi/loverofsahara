@@ -1,10 +1,12 @@
 import { motion, useReducedMotion } from "framer-motion";
 import heroVideo from "@/assets/herovideo.mp4";
 import { registerHeroVideo } from "@/lib/heroVideo";
+import { useLanguage } from "@/i18n/LanguageProvider";
 import { Navbar } from "./Navbar";
 
 export function HeroSection() {
   const reduce = useReducedMotion();
+  const h = useLanguage().site.hero;
 
   return (
     <section
@@ -38,16 +40,16 @@ export function HeroSection() {
           className="hero-copy relative z-10 max-w-[640px] text-"
         >
           <p className="eyebrow hero-eyebrow mb-4 text-xs font-medium uppercase tracking-[0.18em] text-white/70">
-            Erg Chegaga • Zagora
+            {h.eyebrow}
           </p>
 
           <h1 className="text-4xl sm:text-5xl lg:text-[52px] font-light! leading-[1.08] tracking-[-0.04em] text-white">
-            Experience the<br className="hero-br" /><i className="hero-em"> Untamed</i> Sahara of Erg Chegaga
+            {h.pre}<br className="hero-br" /><i className="hero-em">{h.em}</i>{h.post}
           </h1>
 
           {/* Shown only in the Sahara Editorial font choice */}
           <p className="hero-lede mt-5  text-white/85">
-            Tailor-made luxury expeditions across Erg Chegaga, Zagora and the wild dune sea of southern Morocco.
+            {h.lede}
           </p>
 
 {/*           <div className="hero-actions mt-7 flex flex-wrap items-center gap-6">

@@ -3,7 +3,9 @@ import { Facebook, Instagram } from "lucide-react";
 import { TextRollHover } from "@/components/ui/text-stagger-hover";
 import { fadeUp } from "@/lib/animations";
 import { CONTACT } from "@/components/contact/data";
-import { GOOGLE_REVIEWS, footerCols } from "./data";
+import { useLanguage } from "@/i18n/LanguageProvider";
+import { GOOGLE_REVIEWS } from "./data";
+import { useFooterCols } from "./useFooterCols";
 import { GoogleLogo, Stars } from "./GoogleReviewsBadge";
 
 /** Profile links come from the contact details (one place to edit). Google uses GOOGLE_REVIEWS.url. */
@@ -15,6 +17,8 @@ const SOCIALS = [
 
 /** Dark framed band led by the Google rating: huge "5.0", logo, stars, and a button to read the reviews. */
 export function FooterSpotlight() {
+  const footerCols = useFooterCols();
+  const { site } = useLanguage();
   const { rating, count, url } = GOOGLE_REVIEWS;
   const external = url.startsWith("http");
   return (
@@ -88,7 +92,7 @@ export function FooterSpotlight() {
             ))}
           </div>
         </div>
-        <p className="mt-10 text-[12px] text-white/45">© 2025–2026 Lover of Sahara. All rights reserved.</p>
+        <p className="mt-10 text-[12px] text-white/45">{site.footer.rights}</p>
       </footer>
     </div>
   );

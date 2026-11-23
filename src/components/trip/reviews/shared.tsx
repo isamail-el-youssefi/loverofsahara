@@ -64,7 +64,7 @@ export function ReviewText({
           type="button"
           onClick={() => setOpen((v) => !v)}
           aria-expanded={open}
-          className={`mt-2 text-[13px] font-medium underline underline-offset-4 outline-none transition-opacity hover:opacity-70 focus-visible:ring-2 ${
+          className={`mt-2 inline-flex min-h-11 items-center text-[13px] font-medium underline md:min-h-0 underline-offset-4 outline-none transition-opacity hover:opacity-70 focus-visible:ring-2 ${
             dark ? "text-white focus-visible:ring-white/60" : "text-ink focus-visible:ring-ink/40"
           }`}
         >

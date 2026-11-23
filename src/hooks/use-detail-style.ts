@@ -1,13 +1,6 @@
-import { useEffect, useState } from "react";
-import { DETAIL_EVENT, getStoredDetailStyle } from "@/lib/themes";
+import { useIsMobile } from "@/hooks/use-mobile";
 
-/** Currently selected trip-page layout; updates live when changed in the theme switcher. */
+/** Trip-page layout (fixed, no switcher): Red Dot on desktop, Cinematic on phones. */
 export function useDetailStyle() {
-  const [style, setStyle] = useState(getStoredDetailStyle);
-  useEffect(() => {
-    const sync = () => setStyle(getStoredDetailStyle());
-    window.addEventListener(DETAIL_EVENT, sync);
-    return () => window.removeEventListener(DETAIL_EVENT, sync);
-  }, []);
-  return style;
+  return useIsMobile() ? "cinematic" : "reddot";
 }

@@ -3,16 +3,14 @@ import { ArrowUpRight, Facebook, Instagram } from "lucide-react";
 import { CONTACT, phoneHref, whatsappBase } from "@/components/contact/data";
 import { CTA_PHOTO } from "@/data/siteImages";
 import { fadeUp } from "@/lib/animations";
+import { useLanguage } from "@/i18n/LanguageProvider";
 import { CONTACT_PATH } from "@/lib/routes";
-
-/** The one paragraph all designs share (same words as the original section). */
-const COPY =
-  "Ready to explore Erg Chegaga, the Draa Valley, or customize a private 4x4 desert expedition from Zagora? Contact our local desert team today.";
 
 const eyebrow = "flex items-center gap-2 text-[13px] font-medium";
 
 /** Classic: a quiet paper card that overlaps the end of the gallery photo. Headline, one paragraph, two actions, four facts. */
 export function CtaClassic() {
+  const { site } = useLanguage();
   const fact = "text-[15px] font-medium tracking-[-0.01em] text-ink transition hover:text-neutral-500";
   const label = "text-[12px] font-medium uppercase tracking-[0.08em] text-neutral-400";
   return (
@@ -21,24 +19,24 @@ export function CtaClassic() {
       className="relative mb-8 rounded-[28px] border border-ink/10 bg-paper px-8 py-14 shadow-[0_50px_110px_-50px_rgba(0,0,0,0.5)] md:px-16 md:py-20"
     >
       <div className={`${eyebrow} text-neutral-500`}>
-        <span className="h-1.5 w-1.5 rounded-full bg-brand" aria-hidden /> Plan your trip
+        <span className="h-1.5 w-1.5 rounded-full bg-brand" aria-hidden /> {site.cta.eyebrow}
       </div>
       <motion.h2
         {...fadeUp}
         className="mt-6 max-w-4xl text-[48px] font-semibold leading-[1.02] tracking-[-0.05em] text-ink md:text-[96px]"
       >
-        Plan your Sahara <span className="font-normal text-neutral-400">journey.</span>
+        {site.cta.h2a} <span className="font-normal text-neutral-400">{site.cta.h2b}</span>
       </motion.h2>
 
       <div className="mt-14 grid gap-12 border-t border-ink/10 pt-10 lg:grid-cols-2 lg:gap-20">
         <div>
-          <p className="max-w-md text-[16px] font-medium leading-[1.6] tracking-[-0.02em] text-neutral-500">{COPY}</p>
+          <p className="max-w-md text-[16px] font-medium leading-[1.6] tracking-[-0.02em] text-neutral-500">{site.cta.copy}</p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <a
               href={CONTACT_PATH}
               className="inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3.5 text-[14px] font-semibold text-white transition hover:bg-ink-deep"
             >
-              Book an expedition <ArrowUpRight size={16} aria-hidden />
+              {site.cta.book} <ArrowUpRight size={16} aria-hidden />
             </a>
             <a
               href={whatsappBase}
@@ -46,14 +44,14 @@ export function CtaClassic() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-full border border-ink/20 px-6 py-3.5 text-[14px] font-semibold text-ink transition hover:bg-ink/5"
             >
-              WhatsApp us
+              {site.cta.whatsapp}
             </a>
           </div>
         </div>
 
         <dl className="grid grid-cols-1 gap-x-10 gap-y-7 sm:grid-cols-2">
           <div>
-            <dt className={label}>Email</dt>
+            <dt className={label}>{site.cta.email}</dt>
             <dd className="mt-2">
               <a href={`mailto:${CONTACT.email}`} className={fact}>
                 {CONTACT.email}
@@ -61,7 +59,7 @@ export function CtaClassic() {
             </dd>
           </div>
           <div>
-            <dt className={label}>Phone &amp; WhatsApp</dt>
+            <dt className={label}>{site.cta.phone}</dt>
             <dd className="mt-2">
               <a href={phoneHref} className={fact}>
                 {CONTACT.phoneDisplay}
@@ -69,11 +67,11 @@ export function CtaClassic() {
             </dd>
           </div>
           <div>
-            <dt className={label}>Based in</dt>
-            <dd className="mt-2 text-[15px] font-medium tracking-[-0.01em] text-ink">{CONTACT.location}</dd>
+            <dt className={label}>{site.cta.basedIn}</dt>
+            <dd className="mt-2 text-[15px] font-medium tracking-[-0.01em] text-ink">{site.cta.location}</dd>
           </div>
           <div>
-            <dt className={label}>Follow</dt>
+            <dt className={label}>{site.cta.follow}</dt>
             <dd className="mt-2 flex gap-5">
               <a href={CONTACT.instagram} target="_blank" rel="noopener noreferrer" className={fact}>
                 Instagram
@@ -91,21 +89,22 @@ export function CtaClassic() {
 
 /** Statement: centred headline on the paper colour, one paragraph, two buttons, one email. No boxes. */
 export function CtaStatement() {
+  const { site } = useLanguage();
   return (
     <motion.div {...fadeUp} className="mb-8 border-t border-ink/10 px-2 pb-8 pt-20 text-center md:pt-28">
       <div className={`${eyebrow} justify-center text-neutral-500`}>
-        <span className="h-1.5 w-1.5 rounded-full bg-brand" aria-hidden /> Plan your trip
+        <span className="h-1.5 w-1.5 rounded-full bg-brand" aria-hidden /> {site.cta.eyebrow}
       </div>
       <motion.h2 {...fadeUp} className="mx-auto mt-6 max-w-5xl text-[48px] font-semibold leading-[1.02] tracking-[-0.05em] text-ink md:text-[104px]">
-        Plan your Sahara <span className="font-normal text-neutral-400">journey.</span>
+        {site.cta.h2a} <span className="font-normal text-neutral-400">{site.cta.h2b}</span>
       </motion.h2>
-      <p className="mx-auto mt-8 max-w-md text-[16px] font-medium leading-[1.6] tracking-[-0.02em] text-neutral-500">{COPY}</p>
+      <p className="mx-auto mt-8 max-w-md text-[16px] font-medium leading-[1.6] tracking-[-0.02em] text-neutral-500">{site.cta.copy}</p>
       <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
         <a
           href={CONTACT_PATH}
           className="inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3.5 text-[14px] font-semibold text-white transition hover:bg-ink-deep"
         >
-          Book an expedition <ArrowUpRight size={16} aria-hidden />
+          {site.cta.book} <ArrowUpRight size={16} aria-hidden />
         </a>
         <a
           href={whatsappBase}
@@ -113,7 +112,7 @@ export function CtaStatement() {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 rounded-full border border-ink/20 px-6 py-3.5 text-[14px] font-semibold text-ink transition hover:bg-ink/5"
         >
-          WhatsApp us
+          {site.cta.whatsapp}
         </a>
       </div>
       <a
@@ -128,6 +127,7 @@ export function CtaStatement() {
 
 /** Photo: the sunset desert camp full-bleed, headline bottom-left, actions bottom-right. */
 export function CtaPhoto() {
+  const { site } = useLanguage();
   return (
     <motion.div {...fadeUp} className="relative mb-8 overflow-hidden rounded-[24px] bg-ink-deep text-white">
       <img
@@ -150,13 +150,13 @@ export function CtaPhoto() {
             Plan your Sahara <span className="font-normal text-white/60">journey.</span>
           </motion.h2>
           <div>
-            <p className="max-w-sm text-[15px] font-medium leading-[1.6] text-white/75">{COPY}</p>
+            <p className="max-w-sm text-[15px] font-medium leading-[1.6] text-white/75">{site.cta.copy}</p>
             <div className="mt-7 flex flex-wrap gap-3">
               <a
                 href={CONTACT_PATH}
                 className="inline-flex items-center gap-2 rounded-full bg-paper px-6 py-3.5 text-[14px] font-semibold text-ink transition hover:bg-white"
               >
-                Book an expedition <ArrowUpRight size={16} aria-hidden />
+                {site.cta.book} <ArrowUpRight size={16} aria-hidden />
               </a>
               <a
                 href={whatsappBase}
@@ -164,7 +164,7 @@ export function CtaPhoto() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-6 py-3.5 text-[14px] font-semibold text-white backdrop-blur-md transition hover:bg-white/20"
               >
-                WhatsApp us
+                {site.cta.whatsapp}
               </a>
             </div>
           </div>
@@ -200,6 +200,7 @@ function Row({ label, value, href, external }: { label: string; value: string; h
 
 /** Ink: a dark panel, headline on the left, a ruled list of ways to reach the team on the right. */
 export function CtaInk() {
+  const { site } = useLanguage();
   return (
     <motion.div
       {...fadeUp}
@@ -208,19 +209,19 @@ export function CtaInk() {
       <div className="flex flex-col justify-between gap-12">
         <div>
           <div className={`${eyebrow} text-white/55`}>
-            <span className="h-1.5 w-1.5 rounded-full bg-brand" aria-hidden /> Plan your trip
+            <span className="h-1.5 w-1.5 rounded-full bg-brand" aria-hidden /> {site.cta.eyebrow}
           </div>
           <motion.h2 {...fadeUp} className="mt-6 text-[48px] font-semibold leading-[1.02] tracking-[-0.05em] md:text-[88px]">
             Plan your Sahara <span className="font-normal text-white/45">journey.</span>
           </motion.h2>
         </div>
         <div>
-          <p className="max-w-md text-[15px] font-medium leading-[1.6] text-white/65">{COPY}</p>
+          <p className="max-w-md text-[15px] font-medium leading-[1.6] text-white/65">{site.cta.copy}</p>
           <a
             href={CONTACT_PATH}
             className="mt-7 inline-flex items-center gap-2 rounded-full bg-paper px-6 py-3.5 text-[14px] font-semibold text-ink transition hover:bg-white"
           >
-            Book an expedition <ArrowUpRight size={16} aria-hidden />
+            {site.cta.book} <ArrowUpRight size={16} aria-hidden />
           </a>
         </div>
       </div>

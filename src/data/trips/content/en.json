@@ -74,10 +74,10 @@
     "included": [
       "Toyota Prado Land Cruiser vehicle with driver, fuel, and insurance",
       "2 nights at desert camp with dinner and breakfast",
+      "3 lunches",
       "Camel ride 🐪",
       "Visits scheduled in the program",
       "Local guides",
-      "3 lunches",
       "Mineral water throughout the entire tour"
     ],
     "excluded": [
@@ -175,6 +175,19 @@
       "Bivouac Life & Night under the Stars",
       "Return to Zagora"
     ],
+    "included": [
+      "Toyota Prado Land Cruiser vehicle with driver, fuel, and insurance",
+      "1 night at desert camp with dinner and breakfast",
+      "2 lunches",
+      "Visits scheduled in the program",
+      "Local guides",
+      "Mineral water throughout the entire tour"
+    ],
+    "excluded": [
+      "Drinks and beverages",
+      "Personal purchases and expenses",
+      "Tips and gratuities"
+    ],
     "itinerary": [
       {
         "day": 1,
@@ -203,6 +216,22 @@
       "Valley of Roses & Kalaa M'Gouna",
       "Kasbah Ait Ben Haddou",
       "Return via Taliouine & Souss River"
+    ],
+    "included": [
+      "Toyota Prado Land Cruiser vehicle with driver, fuel, and insurance",
+      "Night in a Riad in Foum Zguid with dinner and breakfast",
+      "1 night at desert camp with dinner and breakfast",
+      "3 nights in guest houses with dinner and breakfast",
+      "6 lunches",
+      "Camel ride 🐪",
+      "Visits scheduled in the program",
+      "Local guides",
+      "Mineral water throughout the entire tour"
+    ],
+    "excluded": [
+      "Drinks and beverages",
+      "Personal purchases and expenses",
+      "Tips and gratuities"
     ],
     "itinerary": [
       {
@@ -249,6 +278,18 @@
       "Great Dunes of Erg Chigaga",
       "Fossil Stone Plateau",
       "Kharte Lgarsime Tamaris"
+    ],
+    "included": [
+      "Vehicle transfer from Ouarzazate or Marrakech with driver, fuel, and insurance",
+      "6 nights in desert bivouac with dinner and breakfast",
+      "7 lunches",
+      "Local guides",
+      "Mineral water throughout the entire tour"
+    ],
+    "excluded": [
+      "Drinks and beverages",
+      "Personal purchases and expenses",
+      "Tips and gratuities"
     ],
     "itinerary": [
       {
@@ -299,6 +340,19 @@
       "Zagora",
       "Agdz"
     ],
+    "included": [
+      "Toyota Prado Land Cruiser vehicle with driver, fuel, and insurance",
+      "2 nights at desert camp with dinner and breakfast",
+      "3 lunches",
+      "Visits scheduled in the program",
+      "Local guides",
+      "Mineral water throughout the entire tour"
+    ],
+    "excluded": [
+      "Drinks and beverages",
+      "Personal purchases and expenses",
+      "Tips and gratuities"
+    ],
     "itinerary": [
       {
         "day": 1,
@@ -335,6 +389,21 @@
       "Taznakht (Berber Carpet Village)",
       "Ait Ben Haddou Kasbah (UNESCO)"
     ],
+    "included": [
+      "Toyota Prado Land Cruiser vehicle with driver, fuel, and insurance",
+      "Night in a hotel in the gorges with dinner and breakfast",
+      "1 night at desert camp with dinner and breakfast",
+      "3 lunches",
+      "Camel ride 🐪",
+      "Visits scheduled in the program",
+      "Local guides",
+      "Mineral water throughout the entire tour"
+    ],
+    "excluded": [
+      "Drinks and beverages",
+      "Personal purchases and expenses",
+      "Tips and gratuities"
+    ],
     "itinerary": [
       {
         "day": 1,
@@ -363,6 +432,20 @@
       "Lake Iriki & Foum Zguid",
       "Return to Zagora"
     ],
+    "included": [
+      "Toyota Prado Land Cruiser vehicle with driver, fuel, and insurance",
+      "2 nights at desert camp with dinner and breakfast",
+      "3 lunches",
+      "Camel ride 🐪",
+      "Visits scheduled in the program",
+      "Local guides",
+      "Mineral water throughout the entire tour"
+    ],
+    "excluded": [
+      "Drinks and beverages",
+      "Personal purchases and expenses",
+      "Tips and gratuities"
+    ],
     "itinerary": [
       {
         "day": 1,
@@ -389,6 +472,17 @@
       "Nomad Camp (Lunch & Relaxation)",
       "Return to Zagora"
     ],
+    "included": [
+      "Toyota Prado Land Cruiser vehicle with driver, fuel, and insurance",
+      "1 lunch",
+      "Local guides",
+      "Mineral water throughout the entire tour"
+    ],
+    "excluded": [
+      "Drinks and beverages",
+      "Personal purchases and expenses",
+      "Tips and gratuities"
+    ],
     "itinerary": [
       {
         "day": 1,
@@ -412,6 +506,20 @@
       "Ounila Valley",
       "Marrakech (Return)"
     ],
+    "included": [
+      "Toyota Prado Land Cruiser vehicle with driver, fuel, and insurance",
+      "1 night at desert camp with dinner and breakfast",
+      "2 lunches",
+      "Camel ride 🐪",
+      "Visits scheduled in the program",
+      "Local guides",
+      "Mineral water throughout the entire tour"
+    ],
+    "excluded": [
+      "Drinks and beverages",
+      "Personal purchases and expenses",
+      "Tips and gratuities"
+    ],
     "itinerary": [
       {
         "day": 1,
@@ -433,6 +541,20 @@
       "Chegaga Dunes",
       "Camel Ride",
       "Bivouac Life & Night under the Stars"
+    ],
+    "included": [
+      "Toyota Prado Land Cruiser vehicle with driver, fuel, and insurance",
+      "1 night at desert camp with dinner and breakfast",
+      "2 lunches",
+      "Camel ride 🐪",
+      "Visits scheduled in the program",
+      "Local guides",
+      "Mineral water throughout the entire tour"
+    ],
+    "excluded": [
+      "Drinks and beverages",
+      "Personal purchases and expenses",
+      "Tips and gratuities"
     ],
     "itinerary": [
       {
@@ -462,6 +584,19 @@
       "Tamgroute (Pottery & Library)",
       "Zagora",
       "Agdz"
+    ],
+    "included": [
+      "Toyota Prado Land Cruiser vehicle with driver, fuel, and insurance",
+      "1 night at desert camp with dinner and breakfast",
+      "2 lunches",
+      "Visits scheduled in the program",
+      "Local guides",
+      "Mineral water throughout the entire tour"
+    ],
+    "excluded": [
+      "Drinks and beverages",
+      "Personal purchases and expenses",
+      "Tips and gratuities"
     ],
     "itinerary": [
       {
@@ -493,6 +628,21 @@
       "Camel Ride",
       "Iriki Lake & Desert Plateau",
       "Taznakht (Berber Rugs & Women's Association)"
+    ],
+    "included": [
+      "Toyota Prado Land Cruiser vehicle with driver, fuel, and insurance",
+      "Night in a family inn in Dades with dinner and breakfast",
+      "Night in a traditional guest house in N'kob with dinner and breakfast",
+      "1 night at desert camp with dinner and breakfast",
+      "4 lunches",
+      "Visits scheduled in the program",
+      "Local guides",
+      "Mineral water throughout the entire tour"
+    ],
+    "excluded": [
+      "Drinks and beverages",
+      "Personal purchases and expenses",
+      "Tips and gratuities"
     ],
     "itinerary": [
       {
@@ -532,6 +682,21 @@
       "Iriki Lake & Desert Plateau",
       "Taznakht (Carpet Village)"
     ],
+    "included": [
+      "Toyota Prado Land Cruiser vehicle with driver, fuel, and insurance",
+      "Night in a guest house in Zagora with dinner and breakfast",
+      "2 nights at desert camp with dinner and breakfast",
+      "4 lunches",
+      "Camel ride 🐪",
+      "Visits scheduled in the program",
+      "Local guides",
+      "Mineral water throughout the entire tour"
+    ],
+    "excluded": [
+      "Drinks and beverages",
+      "Personal purchases and expenses",
+      "Tips and gratuities"
+    ],
     "itinerary": [
       {
         "day": 1,
@@ -569,6 +734,24 @@
       "Dunes of Erg Chegaga",
       "Taznakhte (Carpet Village)",
       "Fint Oasis"
+    ],
+    "included": [
+      "Toyota Prado Land Cruiser vehicle with driver, fuel, and insurance",
+      "Night in an inn in Dades with dinner and breakfast",
+      "Night in a hotel in the Todgha gorges with dinner and breakfast",
+      "Night in Zagora with dinner and breakfast",
+      "2 nights at desert camp with dinner and breakfast",
+      "Night in a guest house in Ait Benhaddou with dinner and breakfast",
+      "7 lunches",
+      "Camel ride 🐪",
+      "Visits scheduled in the program",
+      "Local guides",
+      "Mineral water throughout the entire tour"
+    ],
+    "excluded": [
+      "Drinks and beverages",
+      "Personal purchases and expenses",
+      "Tips and gratuities"
     ],
     "itinerary": [
       {
@@ -616,6 +799,19 @@
       "Massa National Park (Bird watching)",
       "Return to Agadir"
     ],
+    "included": [
+      "Toyota Prado Land Cruiser vehicle with driver, fuel, and insurance",
+      "5 nights in traditional guest houses and local accommodation",
+      "6 lunches",
+      "Visits scheduled in the program",
+      "Local guides",
+      "Mineral water throughout the entire tour"
+    ],
+    "excluded": [
+      "Drinks and beverages",
+      "Personal purchases and expenses",
+      "Tips and gratuities"
+    ],
     "itinerary": [
       {
         "day": 1,
@@ -653,6 +849,19 @@
       "Chegaga Dunes",
       "Camel ride",
       "Bivouac life & Night under the stars"
+    ],
+    "included": [
+      "Toyota Prado Land Cruiser vehicle with driver, fuel, and insurance",
+      "1 night at desert camp with dinner and breakfast",
+      "2 lunches",
+      "Camel ride 🐪",
+      "Local guides",
+      "Mineral water throughout the entire tour"
+    ],
+    "excluded": [
+      "Drinks and beverages",
+      "Personal purchases and expenses",
+      "Tips and gratuities"
     ],
     "itinerary": [
       {

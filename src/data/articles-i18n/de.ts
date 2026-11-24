@@ -2,9 +2,9 @@ import type { ArticleTexts } from "./types";
 
 export const de: ArticleTexts = {
   1: {
-    category: "WÜSTENEXPEDITIONEN",
+    category: "Wüstenexpeditionen",
     title: "Erg Chegaga oder Erg Chebbi:\nWarum Marokkos wildeste Dünen gewinnen",
-    authorRole: "Leitender Wüstenführer, Zagora",
+    authorRole: "Inhaber und Wüstenführer",
     published: "14. Oktober 2025, 08:30 Uhr GMT+1",
     updated: "10. Januar 2026, 17:15 Uhr GMT+1",
     readTime: "6 Min. Lesezeit",
@@ -44,7 +44,7 @@ export const de: ArticleTexts = {
           },
         ],
         quote: "In Chegaga sieht man die Sahara nicht nur – man spürt ihren uralten, ununterbrochenen Herzschlag.",
-        quoteAuthor: "Brahim, einheimischer Nomadenführer aus Zagora",
+        quoteAuthor: "Salah Mouna, einheimischer Nomadenführer aus Zagora",
       },
       {
         heading: "03 / Mit dem 4x4 zu den Dünen",
@@ -65,9 +65,9 @@ export const de: ArticleTexts = {
     ],
   },
   2: {
-    category: "REISEN UND PACKEN",
+    category: "Reisen und Packen",
     title: "Was Sie für eine Nacht in der Sahara bei Zagora einpacken sollten:\nDie vollständige Checkliste",
-    authorRole: "Expeditionskoordinator, Zagora",
+    authorRole: "Inhaber und Wüstenführer",
     published: "2. November 2025, 11:15 Uhr GMT+1",
     updated: "14. Januar 2026, 15:40 Uhr GMT+1",
     readTime: "5 Min. Lesezeit",
@@ -107,14 +107,14 @@ export const de: ArticleTexts = {
           },
         ],
         quote: "Kleiden Sie sich für die Sonne, bereiten Sie sich auf die Sterne vor und lassen Sie die Wüste allen unnötigen Lärm abstreifen.",
-        quoteAuthor: "Youssef, Team von Lover of Sahara",
+        quoteAuthor: "Salah Mouna, Team von Lover of Sahara",
       },
     ],
   },
   3: {
-    category: "4X4-EXPEDITIONEN",
+    category: "4x4-Expeditionen",
     title: "Die legendäre Durchquerung des Iriki-Sees\nund die Route der Paris–Dakar",
-    authorRole: "Meister-Navigator für 4x4",
+    authorRole: "Inhaber und Wüstenführer",
     published: "20. November 2025, 09:00 Uhr GMT+1",
     updated: "18. Dezember 2025, 13:20 Uhr GMT+1",
     readTime: "5 Min. Lesezeit",
@@ -134,9 +134,9 @@ export const de: ArticleTexts = {
     ],
   },
   4: {
-    category: "KULTUR UND NOMADISCHES ERBE",
+    category: "Kultur und nomadisches Erbe",
     title: "Nomadische Traditionen des Drâa-Tals:\nTee, Musik und Taguella-Brot",
-    authorRole: "Koordinatorin für kulturelles Erbe",
+    authorRole: "Inhaber und Wüstenführer",
     published: "5. Dezember 2025, 14:30 Uhr GMT+1",
     updated: "8. Januar 2026, 16:00 Uhr GMT+1",
     readTime: "7 Min. Lesezeit",

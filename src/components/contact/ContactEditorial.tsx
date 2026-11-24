@@ -47,8 +47,8 @@ export function ContactEditorial() {
             </p>
             <ContactList className="mt-8" />
           </motion.div>
-          <motion.div {...fadeUp} className="rounded-2xl border border-ink/10 bg-ink/[0.03] p-6 md:p-10 lg:col-span-7">
-            <h3 className="mb-6 text-[22px] font-semibold tracking-[-0.03em] md:text-[26px]">{t.tripRequest}</h3>
+          <motion.div {...fadeUp} className="rounded-2xl border border-ink/10 bg-ink/[0.03] p-4 md:p-10 lg:col-span-7">
+            <h3 className="mb-4 md:mb-6 text-[22px] font-semibold tracking-[-0.03em] md:text-[26px]">{t.tripRequest}</h3>
             <ContactForm />
           </motion.div>
         </div>

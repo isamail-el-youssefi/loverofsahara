@@ -6,7 +6,7 @@ import { OriginButton } from "@/components/ui/origin-button";
 import { useLanguage } from "@/i18n/LanguageProvider";
 import { PAGES } from "@/i18n/pages";
 import { localizedArticles } from "@/data/articles-i18n";
-import { aboutPath, articlePath, blogPath, homePath } from "@/lib/routes";
+import { aboutPath, articlePath, blogPath } from "@/lib/routes";
 import { usePageSeo } from "@/lib/seo";
 import { articleSeo } from "@/lib/seoData";
 
@@ -28,9 +28,13 @@ export function ArticleDetail({ id }: { id: number | null }) {
 
   return (
     <div className="min-h-dvh bg-paper">
-      {/* Hero Section - 90vh (Preserving user modifications) */}
-      <div className="h-[90dvh] p-[4px]">
-        <section className="relative flex h-full flex-col justify-end overflow-hidden rounded-2xl p-6 md:p-10">
+      {/* Hero: one full screen with the 4px frame on every side, like the hero of the other pages */}
+      <div className="h-dvh p-[4px]">
+        {/* minHeight reset: the global `section { min-height: 100dvh }` would make this taller than its 4px frame and hide the bottom gap */}
+        <section
+          style={{ minHeight: 0 }}
+          className="relative flex h-full flex-col justify-end overflow-hidden rounded-2xl p-6 md:p-10"
+        >
           <img
             src={article.img}
             alt={article.alt || article.title}
@@ -47,48 +51,39 @@ export function ArticleDetail({ id }: { id: number | null }) {
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             className="relative z-10 max-w-[900px] w-full"
           >
-            {/* Breadcrumbs */}
-            <div className="mb-6 flex items-center gap-2 text-xs font-light text-white/70">
-              <a href={homePath(lang)} className="hover:text-white transition">{t.home}</a>
-              <span>/</span>
-              <a href={blogPath(lang)} className="hover:text-white transition">{t.blog}</a>
-              <span>/</span>
-              <span className="text-white/90">{article.category}</span>
-            </div>
-
             {/* Category Subheading */}
-            <p className="eyebrow mb-4 text-sm font-light text-white/80 uppercase">
+            <p className="eyebrow mb-4 text-sm font-light text-white/80">
               {article.category}
             </p>
 
             {/* Title */}
-            <h1 className="mb-8 text-[2.75rem] font-medium leading-[1] tracking-tighter text-white sm:text-[3.5rem] lg:text-[68px] whitespace-pre-line">
+            <h1 className="text-[2.75rem] font-medium leading-[1] tracking-tighter text-white sm:text-[3.5rem] lg:text-[68px] whitespace-pre-line">
               {article.title}
             </h1>
-
-            {/* Author Info */}
-            <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs font-medium text-white/80">
-              <span>
-                {t.by}{" "}
-                <a
-                  href={aboutPath(lang)}
-                  className="text-white underline decoration-white/40 underline-offset-4 transition hover:decoration-white"
-                >
-                  {article.author}
-                </a>
-                , {article.authorRole}
-              </span>
-              <span className="hidden sm:inline text-white/40">|</span>
-              <span>{t.published} {article.published}</span>
-              <span className="hidden sm:inline text-white/40">|</span>
-              <span>{t.updated} {article.updated}</span>
-            </div>
           </motion.div>
         </section>
       </div>
 
       {/* Article Content Layout - Minimalist Editorial */}
       <main className="mx-auto max-w-[760px] px-6 py-16 md:px-8 md:py-20">
+        {/* Byline (moved out of the hero, which now shows only the category and the title) */}
+        <p className="mb-6 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs font-medium text-neutral-500">
+          <span>
+            {t.by}{" "}
+            <a
+              href={aboutPath(lang)}
+              className="text-neutral-900 underline decoration-neutral-300 underline-offset-4 transition hover:decoration-neutral-900"
+            >
+              {article.author}
+            </a>
+            , {article.authorRole}
+          </span>
+          <span className="hidden sm:inline text-neutral-300">|</span>
+          <span>{t.published} {article.published}</span>
+          <span className="hidden sm:inline text-neutral-300">|</span>
+          <span>{t.updated} {article.updated}</span>
+        </p>
+
         {/* Meta Bar: Read time & Sharing */}
         <div className="flex items-center justify-between border-b border-neutral-100 pb-6 text-xs text-neutral-400 font-medium tracking-wide uppercase">
           <div className="flex items-center gap-2 text-neutral-500">

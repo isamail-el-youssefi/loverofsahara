@@ -2,9 +2,9 @@ import type { ArticleTexts } from "./types";
 
 export const es: ArticleTexts = {
   1: {
-    category: "EXPEDICIONES POR EL DESIERTO",
+    category: "Expediciones por el desierto",
     title: "Erg Chegaga o Erg Chebbi:\npor qué ganan las dunas más salvajes de Marruecos",
-    authorRole: "Guía principal del desierto, Zagora",
+    authorRole: "Propietario y guía del desierto",
     published: "14 de octubre de 2025, 08:30 GMT+1",
     updated: "10 de enero de 2026, 17:15 GMT+1",
     readTime: "6 min de lectura",
@@ -44,7 +44,7 @@ export const es: ArticleTexts = {
           },
         ],
         quote: "En Chegaga no solo ves el Sahara: sientes su latido antiguo e ininterrumpido.",
-        quoteAuthor: "Brahim, guía nómada nativo de Zagora",
+        quoteAuthor: "Salah Mouna, guía nómada nativo de Zagora",
       },
       {
         heading: "03 / Llegar a las dunas en 4x4",
@@ -65,9 +65,9 @@ export const es: ArticleTexts = {
     ],
   },
   2: {
-    category: "VIAJE Y EQUIPAJE",
+    category: "Viaje y equipaje",
     title: "Qué llevar para una noche en el Sahara de Zagora:\nla lista completa",
-    authorRole: "Coordinador de expediciones, Zagora",
+    authorRole: "Propietario y guía del desierto",
     published: "2 de noviembre de 2025, 11:15 GMT+1",
     updated: "14 de enero de 2026, 15:40 GMT+1",
     readTime: "5 min de lectura",
@@ -107,14 +107,14 @@ export const es: ArticleTexts = {
           },
         ],
         quote: "Vístete para el sol, prepárate para las estrellas y deja que el desierto te quite todo el ruido innecesario.",
-        quoteAuthor: "Youssef, equipo de Lover of Sahara",
+        quoteAuthor: "Salah Mouna, equipo de Lover of Sahara",
       },
     ],
   },
   3: {
-    category: "EXPEDICIONES EN 4X4",
+    category: "Expediciones en 4x4",
     title: "La legendaria travesía del lago Iriki\ny la ruta del Paris-Dakar",
-    authorRole: "Maestro navegante 4x4",
+    authorRole: "Propietario y guía del desierto",
     published: "20 de noviembre de 2025, 09:00 GMT+1",
     updated: "18 de diciembre de 2025, 13:20 GMT+1",
     readTime: "5 min de lectura",
@@ -134,9 +134,9 @@ export const es: ArticleTexts = {
     ],
   },
   4: {
-    category: "CULTURA Y PATRIMONIO NÓMADA",
+    category: "Cultura y patrimonio nómada",
     title: "Tradiciones nómadas del valle del Drâa:\nté, música y pan taguella",
-    authorRole: "Coordinadora del patrimonio cultural",
+    authorRole: "Propietario y guía del desierto",
     published: "5 de diciembre de 2025, 14:30 GMT+1",
     updated: "8 de enero de 2026, 16:00 GMT+1",
     readTime: "7 min de lectura",

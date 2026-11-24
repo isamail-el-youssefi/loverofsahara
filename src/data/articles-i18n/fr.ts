@@ -2,9 +2,9 @@ import type { ArticleTexts } from "./types";
 
 export const fr: ArticleTexts = {
   1: {
-    category: "EXPÉDITIONS DANS LE DÉSERT",
+    category: "Expéditions dans le désert",
     title: "Erg Chegaga ou Erg Chebbi :\npourquoi les dunes les plus sauvages du Maroc l’emportent",
-    authorRole: "Guide principal du désert, Zagora",
+    authorRole: "Propriétaire et guide du désert",
     published: "14 octobre 2025, 08 h 30 GMT+1",
     updated: "10 janvier 2026, 17 h 15 GMT+1",
     readTime: "6 min de lecture",
@@ -44,7 +44,7 @@ export const fr: ArticleTexts = {
           },
         ],
         quote: "À Chegaga, on ne se contente pas de voir le Sahara : on ressent son battement de cœur ancien et ininterrompu.",
-        quoteAuthor: "Brahim, guide nomade natif de Zagora",
+        quoteAuthor: "Salah Mouna, guide nomade natif de Zagora",
       },
       {
         heading: "03 / Rejoindre les dunes en 4x4",
@@ -65,9 +65,9 @@ export const fr: ArticleTexts = {
     ],
   },
   2: {
-    category: "VOYAGE ET BAGAGES",
+    category: "Voyage et bagages",
     title: "Que mettre dans sa valise pour une nuit dans le Sahara de Zagora :\nla liste complète",
-    authorRole: "Coordinateur d’expéditions, Zagora",
+    authorRole: "Propriétaire et guide du désert",
     published: "2 novembre 2025, 11 h 15 GMT+1",
     updated: "14 janvier 2026, 15 h 40 GMT+1",
     readTime: "5 min de lecture",
@@ -107,14 +107,14 @@ export const fr: ArticleTexts = {
           },
         ],
         quote: "Habillez-vous pour le soleil, préparez-vous pour les étoiles et laissez le désert effacer tout bruit inutile.",
-        quoteAuthor: "Youssef, équipe Lover of Sahara",
+        quoteAuthor: "Salah Mouna, équipe Lover of Sahara",
       },
     ],
   },
   3: {
-    category: "EXPÉDITIONS EN 4X4",
+    category: "Expéditions en 4x4",
     title: "La légendaire traversée du lac Iriki\net la route du Paris-Dakar",
-    authorRole: "Maître navigateur 4x4",
+    authorRole: "Propriétaire et guide du désert",
     published: "20 novembre 2025, 09 h 00 GMT+1",
     updated: "18 décembre 2025, 13 h 20 GMT+1",
     readTime: "5 min de lecture",
@@ -134,9 +134,9 @@ export const fr: ArticleTexts = {
     ],
   },
   4: {
-    category: "CULTURE ET PATRIMOINE NOMADE",
+    category: "Culture et patrimoine nomade",
     title: "Les traditions nomades de la vallée du Drâa :\nthé, musique et pain taguella",
-    authorRole: "Coordinatrice du patrimoine culturel",
+    authorRole: "Propriétaire et guide du désert",
     published: "5 décembre 2025, 14 h 30 GMT+1",
     updated: "8 janvier 2026, 16 h 00 GMT+1",
     readTime: "7 min de lecture",

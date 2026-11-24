@@ -4,7 +4,7 @@ export const zh: ArticleTexts = {
   1: {
     category: "沙漠探险",
     title: "谢加加沙丘与谢比沙丘：\n为什么摩洛哥最野性的沙丘胜出",
-    authorRole: "首席沙漠向导，扎戈拉",
+    authorRole: "创始人兼沙漠向导",
     published: "2025年10月14日 08:30（GMT+1）",
     updated: "2026年1月10日 17:15（GMT+1）",
     readTime: "阅读约6分钟",
@@ -44,7 +44,7 @@ export const zh: ArticleTexts = {
           },
         ],
         quote: "在谢加加，您不只是看到撒哈拉，更能感受到它古老而不曾中断的心跳。",
-        quoteAuthor: "布拉欣，扎戈拉本地游牧向导",
+        quoteAuthor: "Salah Mouna，扎戈拉本地游牧向导",
       },
       {
         heading: "03 / 乘4x4越野前往沙丘",
@@ -67,7 +67,7 @@ export const zh: ArticleTexts = {
   2: {
     category: "旅行与行李",
     title: "在扎戈拉撒哈拉过夜该带什么：\n完整清单",
-    authorRole: "探险协调员，扎戈拉",
+    authorRole: "创始人兼沙漠向导",
     published: "2025年11月2日 11:15（GMT+1）",
     updated: "2026年1月14日 15:40（GMT+1）",
     readTime: "阅读约5分钟",
@@ -107,14 +107,14 @@ export const zh: ArticleTexts = {
           },
         ],
         quote: "为阳光着装，为星空做准备，让沙漠洗去一切不必要的喧嚣。",
-        quoteAuthor: "优素福，Lover of Sahara 团队",
+        quoteAuthor: "Salah Mouna，Lover of Sahara 团队",
       },
     ],
   },
   3: {
     category: "4X4探险",
     title: "穿越伊里基湖的传奇之旅\n与巴黎-达喀尔拉力赛路线",
-    authorRole: "资深4x4领航员",
+    authorRole: "创始人兼沙漠向导",
     published: "2025年11月20日 09:00（GMT+1）",
     updated: "2025年12月18日 13:20（GMT+1）",
     readTime: "阅读约5分钟",
@@ -136,7 +136,7 @@ export const zh: ArticleTexts = {
   4: {
     category: "文化与游牧传统",
     title: "德拉河谷的游牧传统：\n茶、音乐与塔古拉面包",
-    authorRole: "文化遗产协调员",
+    authorRole: "创始人兼沙漠向导",
     published: "2025年12月5日 14:30（GMT+1）",
     updated: "2026年1月8日 16:00（GMT+1）",
     readTime: "阅读约7分钟",

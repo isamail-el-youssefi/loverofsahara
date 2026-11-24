@@ -8,7 +8,7 @@ import { EMPTY_REQUEST, buildMessage, gmailUrl, mailtoUrl, validate, whatsappUrl
 import { useContactContent } from "./useContactContent";
 
 const field =
-  "w-full rounded-[10px] border border-ink/20 bg-paper px-4 py-3 text-[15px] text-ink outline-none transition-colors placeholder:text-neutral-400 focus:border-ink focus-visible:ring-2 focus-visible:ring-ink/20";
+  "w-full rounded-[10px] border border-ink/20 bg-paper px-4 py-3 max-md:py-2.5 text-[15px] text-ink outline-none transition-colors placeholder:text-neutral-400 focus:border-ink focus-visible:ring-2 focus-visible:ring-ink/20";
 const label = "mb-1.5 block text-[13px] font-medium text-ink/80";
 
 /**
@@ -77,8 +77,8 @@ ${buildMessage(f, t)}`);
     ) : null;
 
   return (
-    <form noValidate onSubmit={(e) => e.preventDefault()} className={cn("grid gap-5", className)} aria-label={t.aria}>
-      <div className="grid gap-5 sm:grid-cols-2">
+    <form noValidate onSubmit={(e) => e.preventDefault()} className={cn("grid gap-5 max-md:gap-3", className)} aria-label={t.aria}>
+      <div className="grid gap-5 max-md:gap-3 sm:grid-cols-2">
         <div>
           <label htmlFor="cf-name" className={label}>{t.name}</label>
           <input id="cf-name" autoComplete="name" value={f.name} onChange={set("name")} aria-invalid={!!errors.name} aria-describedby={errors.name ? "err-name" : undefined} className={field} />
@@ -103,7 +103,7 @@ ${buildMessage(f, t)}`);
         </select>
       </div>
 
-      <div className="grid gap-5 sm:grid-cols-2">
+      <div className="grid grid-cols-[1.5fr_1fr] gap-5 max-md:gap-3 sm:grid-cols-2">
         <div>
           <label htmlFor="cf-dates" className={label}>{t.dates}</label>
           <input id="cf-dates" placeholder={t.datesPh} value={f.dates} onChange={set("dates")} className={field} />
@@ -116,15 +116,15 @@ ${buildMessage(f, t)}`);
 
       <div>
         <label htmlFor="cf-message" className={label}>{t.message}</label>
-        <textarea id="cf-message" rows={4} value={f.message} onChange={set("message")} placeholder={t.messagePh} aria-invalid={!!errors.message} aria-describedby={errors.message ? "err-message" : undefined} className={cn(field, "resize-y")} />
+        <textarea id="cf-message" rows={4} value={f.message} onChange={set("message")} placeholder={t.messagePh} aria-invalid={!!errors.message} aria-describedby={errors.message ? "err-message" : undefined} className={cn(field, "resize-y max-md:h-[80px]")} />
         {err("message")}
       </div>
 
-      <div className="flex flex-col gap-3 sm:flex-row">
+      <div className="flex flex-col gap-3 max-md:gap-2 sm:flex-row">
         <button
           type="button"
           onClick={() => send("whatsapp")}
-          className="inline-flex h-[46px] max-md:h-14 sm:flex-1 items-center justify-center gap-2 rounded-[10px] bg-ink px-6 text-sm max-md:text-base font-semibold text-paper transition-all duration-100 ease-out hover:bg-ink/85 active:scale-[0.98]"
+          className="inline-flex h-[46px] max-md:h-[52px] sm:flex-1 items-center justify-center gap-2 rounded-[10px] bg-ink px-6 text-sm max-md:text-base font-semibold text-paper transition-all duration-100 ease-out hover:bg-ink/85 active:scale-[0.98]"
         >
           <MessageCircle size={17} aria-hidden /> {t.whatsapp}
         </button>
@@ -135,7 +135,7 @@ ${buildMessage(f, t)}`);
               onClick={() => send("email")}
               aria-haspopup="menu"
               aria-expanded={mailOpen}
-              className="inline-flex h-[46px] max-md:h-14 sm:flex-1 items-center justify-center gap-2 rounded-[10px] border border-ink px-6 text-sm max-md:text-base font-semibold text-ink transition-all duration-100 ease-out hover:bg-ink/[0.06] active:scale-[0.98]"
+              className="inline-flex h-[46px] max-md:h-[52px] sm:flex-1 items-center justify-center gap-2 rounded-[10px] border border-ink px-6 text-sm max-md:text-base font-semibold text-ink transition-all duration-100 ease-out hover:bg-ink/[0.06] active:scale-[0.98]"
             >
               <Mail size={17} aria-hidden /> {t.emailBtn}
               <ChevronDown size={14} className="text-neutral-400" aria-hidden />

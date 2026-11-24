@@ -32,10 +32,10 @@ export const blogArticles: ArticleData[] = [
   {
     id: 1,
     img: IMG.chegagaDunes,
-    category: "DESERT EXPEDITIONS",
+    category: "Desert Expeditions",
     title: "Erg Chegaga vs Erg Chebbi:\nWhy Morocco's Wildest Dunes Win",
-    author: "Brahim Ait Mansour",
-    authorRole: "Lead Desert Guide, Zagora",
+    author: "Salah Mouna",
+    authorRole: "Owner & desert guide",
     published: "October 14, 2025, 08:30am GMT+1",
     updated: "January 10, 2026, 05:15pm GMT+1",
     readTime: "6 min read",
@@ -77,7 +77,7 @@ export const blogArticles: ArticleData[] = [
           }
         ],
         quote: "In Chegaga, you do not simply see the Sahara — you feel its ancient, uninterrupted heartbeat.",
-        quoteAuthor: "Brahim, Native Zagora Nomad Guide"
+        quoteAuthor: "Salah Mouna, Native Zagora Nomad Guide"
       },
       {
         heading: "03 / Reaching the Dunes via 4x4 Overland",
@@ -105,10 +105,10 @@ export const blogArticles: ArticleData[] = [
   {
     id: 2,
     img: IMG.desertCamp,
-    category: "TRAVEL & PACKING",
+    category: "Travel & Packing",
     title: "What to Pack for a Night in the Zagora Sahara:\nThe Complete Checklist",
-    author: "Youssef El Sahraoui",
-    authorRole: "Expedition Coordinator, Zagora",
+    author: "Salah Mouna",
+    authorRole: "Owner & desert guide",
     published: "November 02, 2025, 11:15am GMT+1",
     updated: "January 14, 2026, 03:40pm GMT+1",
     readTime: "5 min read",
@@ -150,17 +150,17 @@ export const blogArticles: ArticleData[] = [
           }
         ],
         quote: "Dress for the sun, prepare for the stars, and let the desert strip away all unnecessary noise.",
-        quoteAuthor: "Youssef, Lover of Sahara Team"
+        quoteAuthor: "Salah Mouna, Lover of Sahara Team"
       }
     ]
   },
   {
     id: 3,
     img: IMG.irikiCrossing,
-    category: "4X4 EXPEDITIONS",
+    category: "4x4 Expeditions",
     title: "The Legendary Crossing of Lake Iriki\n& the Paris-Dakar Route",
-    author: "Omar Ben Ali",
-    authorRole: "Master 4x4 Navigator",
+    author: "Salah Mouna",
+    authorRole: "Owner & desert guide",
     published: "November 20, 2025, 09:00am GMT+1",
     updated: "December 18, 2025, 01:20pm GMT+1",
     readTime: "5 min read",
@@ -185,10 +185,10 @@ export const blogArticles: ArticleData[] = [
   {
     id: 4,
     img: IMG.teaCeremony,
-    category: "CULTURE & NOMADIC HERITAGE",
+    category: "Culture & Nomadic Heritage",
     title: "Nomadic Traditions of the Draa Valley:\nTea, Music & Taguella Bread",
-    author: "Fatima Zahra Draoui",
-    authorRole: "Cultural Heritage Coordinator",
+    author: "Salah Mouna",
+    authorRole: "Owner & desert guide",
     published: "December 05, 2025, 02:30pm GMT+1",
     updated: "January 08, 2026, 04:00pm GMT+1",
     readTime: "7 min read",

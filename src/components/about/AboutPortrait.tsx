@@ -18,27 +18,29 @@ export function AboutPortrait() {
         data-st-01="parallax"
         data-st-y="300"
         data-st-opacity="0.3"
-        className="min-h-dvh bg-paper p-[4px]"
+        className="max-md:h-dvh min-h-dvh bg-paper p-[4px]"
       >
-        <div className="relative flex min-h-[calc(100dvh-8px)] flex-col overflow-hidden rounded-lg bg-ink-deep px-6 pb-10 pt-32 text-white md:px-12 md:pb-14 md:pt-40">
+        <div className="relative flex min-h-[calc(100dvh-8px)] max-md:h-full max-md:min-h-0 flex-col overflow-hidden rounded-lg bg-ink-deep px-6 pb-8 pt-28 text-white md:px-12 md:pb-14 md:pt-40">
           <Navbar />
-          <div className="grid flex-1 items-end gap-10 lg:grid-cols-12 lg:gap-14">
+          {/* Phone: the portrait takes whatever height is left, so the hero is exactly one screen however many lines the text wraps to */}
+          <div className="grid flex-1 items-end gap-10 lg:grid-cols-12 lg:gap-14 max-md:flex max-md:min-h-0 max-md:flex-col max-md:justify-end max-md:gap-5">
             <motion.div
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
               className="lg:col-span-7"
             >
-              <p className="eyebrow mb-5 text-[13px] font-medium uppercase tracking-[0.18em] text-white/70">
-                {OWNER.role} <span aria-hidden>·</span> Lover of Sahara
+              <p className="eyebrow mb-3 text-[13px] font-medium uppercase tracking-[0.18em] text-white/70 md:mb-5">
+                {OWNER.role} <span aria-hidden className="max-md:hidden">·</span>{" "}
+                <span className="max-md:hidden">Lover of Sahara</span>
               </p>
               <h1 className="text-[48px] font-semibold leading-[0.98] tracking-[-0.04em] md:text-[96px] md:font-light">
                 {OWNER.name}
               </h1>
-              <p className="mt-8 max-w-[34rem] text-[22px] font-light leading-[1.25] tracking-[-0.02em] text-white/85 md:text-[30px]">
+              <p className="mt-5 max-w-[34rem] text-[22px] font-light md:mt-8 leading-[1.25] tracking-[-0.02em] text-white/85 md:text-[30px]">
                 “{OWNER.quote}”
               </p>
-              <ul className="mt-8 flex flex-wrap gap-2" aria-label={t.languagesLabel}>
+              <ul className="mt-5 flex flex-wrap gap-2 md:mt-8" aria-label={t.languagesLabel}>
                 {OWNER.languages.map((l) => (
                   <li key={l} className="rounded-full border border-white/25 px-3.5 py-1.5 text-[13px] leading-tight text-white/85">
                     {l}
@@ -50,9 +52,9 @@ export function AboutPortrait() {
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-              className="lg:col-span-5"
+              className="lg:col-span-5 max-md:min-h-0 max-md:flex-1"
             >
-              <div className="aspect-[4/5] max-h-[70dvh] overflow-hidden rounded-2xl bg-white/10 lg:ml-auto">
+              <div className="aspect-[4/5] max-h-[70dvh] overflow-hidden rounded-2xl bg-white/10 lg:ml-auto max-md:aspect-auto max-md:h-full max-md:max-h-none">
                 <Portrait />
               </div>
             </motion.div>

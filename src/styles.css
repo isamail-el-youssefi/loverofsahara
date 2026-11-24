@@ -289,8 +289,11 @@ section {
   z-index: 1;
 }
 
-section[data-st-01]:not([data-st-01="pin"]) {
-  will-change: transform;
+/* Desktop only: on phones these sections are sticky (not transformed), and a permanent layer just adds jitter. */
+@media (min-width: 769px) {
+  section[data-st-01]:not([data-st-01="pin"]) {
+    will-change: transform;
+  }
 }
 
 /* Protect sections containing sticky children from containing-block confinement */

@@ -145,6 +145,12 @@ export function sectionTransition01(
     return { mode, y: 0 };
   };
 
+  const getScrollerHeight = (el: HTMLElement) => {
+    // The page scroller is the <main> that wraps the sections (see Page in App.tsx).
+    const scroller = el.closest("main");
+    return scroller ? scroller.clientHeight : window.innerHeight;
+  };
+
   const scope = isScope(scopeOrConfig) ? scopeOrConfig : document;
   const config = getConfig(
     isScope(scopeOrConfig) ? maybeConfig : (scopeOrConfig as SectionTransitionConfig),
@@ -216,12 +222,17 @@ export function sectionTransition01(
     if (!nextSection) return;
 
     if (mode === "pin") {
+      // CSS sticky instead of a GSAP pin: a JS pin toggles position:fixed from scroll events, which lag
+      // behind native touch scrolling and make the section jitter on phones. Sticky is composited by the
+      // browser. The section holds still once its bottom edge reaches the bottom of the scroll
+      // container (same moment the old pin started), while the next section slides over it.
+      gsap.set(section, { position: "sticky" });
       ScrollTrigger.create({
-        trigger: nextSection,
+        trigger: section,
         start: "top bottom",
-        end: "top top",
-        pin: section,
-        pinSpacing: false,
+        onRefresh: () => {
+          gsap.set(section, { top: Math.min(0, getScrollerHeight(section) - section.offsetHeight) });
+        },
       });
 
       if (configuredMode === "parallax" && opacity !== null) {

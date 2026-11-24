@@ -109,5 +109,5 @@ export function summarize(reviews: readonly Review[]): ReviewSummary {
 }
 
 /** "9 Nov 2025" */
-export const formatReviewDate = (iso: string) =>
-  iso ? new Date(iso + "T12:00:00").toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" }) : "";
+export const formatReviewDate = (iso: string, locale = "en-GB") =>
+  iso ? new Date(iso + "T12:00:00").toLocaleDateString(locale, { day: "numeric", month: "short", year: "numeric" }) : "";

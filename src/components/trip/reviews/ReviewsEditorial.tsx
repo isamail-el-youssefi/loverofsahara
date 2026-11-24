@@ -1,10 +1,13 @@
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
 import { fadeUp } from "@/lib/animations";
-import { formatReviewDate, summarize, type Review } from "@/lib/reviews";
+import { LANGUAGE_NAMES, formatReviewDate, summarize, type Review } from "@/lib/reviews";
 import { Band, SectionTitle } from "../parts";
 import { AddReviewButton } from "./AddReview";
-import { PhotoStrip, RT, RatingSummary, ReplyBlock, ReviewText, Stars } from "./shared";
+import { useLanguage } from "@/i18n/LanguageProvider";
+import { fill } from "@/i18n/reviewStrings";
+import { useReviewT } from "@/i18n/useReviewT";
+import { PhotoStrip, RatingSummary, ReplyBlock, ReviewText, Stars, dateLocale } from "./shared";
 
 export interface ReviewsProps {
   tripSlug: string;
@@ -18,6 +21,8 @@ export interface ReviewsProps {
  * invitation instead of an empty hole.
  */
 export function ReviewsEditorial({ tripSlug, tripTitle, reviews }: ReviewsProps) {
+  const RT = useReviewT();
+  const { lang } = useLanguage();
   const has = reviews.length > 0;
   const summary = summarize(reviews);
 
@@ -43,9 +48,9 @@ export function ReviewsEditorial({ tripSlug, tripTitle, reviews }: ReviewsProps)
                 <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5">
                   <h3 className="text-[19px] font-semibold tracking-[-0.02em]">{r.name}</h3>
                   <Stars value={r.rating} size={15} />
-                  <span className="text-[13px] text-ink/50">{formatReviewDate(r.date)}</span>
+                  <span className="text-[13px] text-ink/50">{formatReviewDate(r.date, dateLocale(lang))}</span>
                 </div>
-                {r.lang !== "en" && <p className="mt-1 text-[12px] text-ink/50">{RT.original(r.lang)}</p>}
+                {r.lang !== lang && <p className="mt-1 text-[12px] text-ink/50">{fill(RT.original, { lang: LANGUAGE_NAMES[r.lang] })}</p>}
                 <ReviewText text={r.comment} lines={6} className="mt-4 max-w-[42rem] text-[16px] leading-[1.75] text-ink/85" />
                 <PhotoStrip photos={r.photos} name={r.name} className="mt-5" />
                 {r.reply && <ReplyBlock reply={r.reply} className="mt-6 max-w-[40rem]" />}

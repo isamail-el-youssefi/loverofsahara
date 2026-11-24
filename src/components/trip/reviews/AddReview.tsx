@@ -2,13 +2,13 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { Check, ImagePlus, Loader2, PenLine, Star, X } from "lucide-react";
 import { Dialog, DialogContent, DialogDescription, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { submitReview } from "@/lib/reviews";
-import { RT } from "./shared";
+import { fill } from "@/i18n/reviewStrings";
+import { useReviewT } from "@/i18n/useReviewT";
 
 const MIN_COMMENT = 20;
 const MAX_COMMENT = 1500;
 const MAX_PHOTOS = 4;
 const MAX_PHOTO_MB = 8;
-const WORDS = ["", "Poor", "Fair", "Good", "Very good", "Excellent"];
 
 type Tone = "solid" | "light" | "outline";
 const TONES: Record<Tone, string> = {
@@ -43,6 +43,8 @@ export function AddReviewButton({
   tone?: Tone;
   className?: string;
 }) {
+  const RT = useReviewT();
+  const WORDS = RT.words;
   const [open, setOpen] = useState(false);
   const [status, setStatus] = useState<"idle" | "sending" | "done" | "error">("idle");
   const [rating, setRating] = useState(0);
@@ -83,9 +85,9 @@ export function AddReviewButton({
     const next = [...photos];
     let problem: string | undefined;
     for (const f of Array.from(list)) {
-      if (!f.type.startsWith("image/")) problem = "Only image files can be added.";
-      else if (f.size > MAX_PHOTO_MB * 1048576) problem = `Each photo must be under ${MAX_PHOTO_MB} MB.`;
-      else if (next.length >= MAX_PHOTOS) problem = `You can add up to ${MAX_PHOTOS} photos.`;
+      if (!f.type.startsWith("image/")) problem = RT.errImage;
+      else if (f.size > MAX_PHOTO_MB * 1048576) problem = fill(RT.errSize, { mb: MAX_PHOTO_MB });
+      else if (next.length >= MAX_PHOTOS) problem = fill(RT.errMax, { n: MAX_PHOTOS });
       else next.push(f);
     }
     setPhotos(next);
@@ -95,10 +97,10 @@ export function AddReviewButton({
 
   const validate = (): Errors => {
     const e: Errors = {};
-    if (!rating) e.rating = "Choose a rating from 1 to 5 stars.";
-    if (!name.trim()) e.name = "Please tell us your name.";
-    if (email.trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email.trim())) e.email = "That email address doesn't look right.";
-    if (comment.trim().length < MIN_COMMENT) e.comment = `Please write at least ${MIN_COMMENT} characters (${comment.trim().length} so far).`;
+    if (!rating) e.rating = RT.errRating;
+    if (!name.trim()) e.name = RT.errName;
+    if (email.trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email.trim())) e.email = RT.errEmail;
+    if (comment.trim().length < MIN_COMMENT) e.comment = fill(RT.errComment, { min: MIN_COMMENT, n: comment.trim().length });
     return e;
   };
 
@@ -117,7 +119,7 @@ export function AddReviewButton({
       await submitReview({ trip: tripSlug, name: name.trim(), email: email.trim(), rating, comment: comment.trim(), photos, website: honeypot });
       setStatus("done");
     } catch (err) {
-      setFailure(err instanceof Error && err.message ? err.message : "Something went wrong. Please try again.");
+      setFailure(err instanceof Error && err.message ? err.message : RT.errGeneric);
       setStatus("error");
     }
   };
@@ -144,23 +146,23 @@ export function AddReviewButton({
             <span className="flex h-14 w-14 items-center justify-center rounded-full bg-brand text-paper">
               <Check size={26} aria-hidden />
             </span>
-            <DialogTitle className="mt-5 text-[26px] font-semibold tracking-[-0.03em]">Thank you, {name.trim().split(" ")[0]}</DialogTitle>
+            <DialogTitle className="mt-5 text-[26px] font-semibold tracking-[-0.03em]">{fill(RT.thanks, { name: name.trim().split(" ")[0] ?? "" })}</DialogTitle>
             <DialogDescription className="mt-2 max-w-sm text-[15px] leading-[1.6] text-ink/70">
-              Your review of {tripTitle} is now published on this page. We read every one.
+              {fill(RT.published, { trip: tripTitle })}
             </DialogDescription>
             <button
               type="button"
               onClick={() => onOpenChange(false)}
               className="mt-7 inline-flex h-11 items-center rounded-[10px] bg-ink px-6 text-sm font-semibold text-paper outline-none transition-opacity hover:opacity-90 focus-visible:ring-2 focus-visible:ring-ink/50"
             >
-              Close
+              {RT.close}
             </button>
           </div>
         ) : (
           <form onSubmit={submit} noValidate>
-            <DialogTitle className="text-[26px] font-semibold leading-tight tracking-[-0.03em]">Add your review</DialogTitle>
+            <DialogTitle className="text-[26px] font-semibold leading-tight tracking-[-0.03em]">{RT.addTitle}</DialogTitle>
             <DialogDescription className="mt-1.5 text-[14.5px] leading-[1.55] text-ink/65">
-              About <span className="font-medium text-ink">{tripTitle}</span>. It helps the next traveller choose.
+              {RT.about.split("{trip}")[0]}<span className="font-medium text-ink">{tripTitle}</span>{RT.about.split("{trip}")[1]}
             </DialogDescription>
 
             {/* Honeypot: hidden from people, bots fill it in */}
@@ -177,9 +179,9 @@ export function AddReviewButton({
 
             {/* Rating */}
             <fieldset className="mt-6">
-              <legend className="text-[13px] font-medium text-ink/80">Your rating</legend>
+              <legend className="text-[13px] font-medium text-ink/80">{RT.rating}</legend>
               <div className="mt-2 flex items-center gap-3" onMouseLeave={() => setHoverRating(0)}>
-                <div role="radiogroup" aria-label="Rating" aria-invalid={!!errors.rating} className="flex gap-1">
+                <div role="radiogroup" aria-label={RT.ratingAria} aria-invalid={!!errors.rating} className="flex gap-1">
                   {[1, 2, 3, 4, 5].map((n) => (
                     <button
                       key={n}
@@ -187,7 +189,7 @@ export function AddReviewButton({
                       type="button"
                       role="radio"
                       aria-checked={rating === n}
-                      aria-label={`${n} ${n === 1 ? "star" : "stars"}: ${WORDS[n]}`}
+                      aria-label={`${n} ${RT.star[n === 1 ? 0 : 1]}: ${WORDS[n]}`}
                       onMouseEnter={() => setHoverRating(n)}
                       onFocus={(e) => {
                         // Preview a star while tabbing with the keyboard, not when focus is moved by the page.
@@ -215,7 +217,7 @@ export function AddReviewButton({
             <div className="mt-5 grid gap-4 sm:grid-cols-2">
               <div>
                 <label htmlFor="review-name" className="text-[13px] font-medium text-ink/80">
-                  Your name
+                  {RT.name}
                 </label>
                 <input
                   id="review-name"
@@ -223,14 +225,14 @@ export function AddReviewButton({
                   onChange={(e) => setName(e.target.value)}
                   autoComplete="name"
                   aria-invalid={!!errors.name}
-                  placeholder="Alex Martin"
+                  placeholder={RT.namePh}
                   className={`${field} mt-1.5 h-11 ${errors.name ? "border-brand" : "border-ink/15"}`}
                 />
                 {errors.name && <p className="mt-1.5 text-[13px] text-brand">{errors.name}</p>}
               </div>
               <div>
                 <label htmlFor="review-email" className="text-[13px] font-medium text-ink/80">
-                  Email <span className="font-normal text-ink/50">(optional)</span>
+                  {RT.email} <span className="font-normal text-ink/50">{RT.optional}</span>
                 </label>
                 <input
                   id="review-email"
@@ -245,7 +247,7 @@ export function AddReviewButton({
                 {errors.email ? (
                   <p className="mt-1.5 text-[13px] text-brand">{errors.email}</p>
                 ) : (
-                  <p className="mt-1.5 text-[12px] text-ink/50">Never shown publicly.</p>
+                  <p className="mt-1.5 text-[12px] text-ink/50">{RT.neverShown}</p>
                 )}
               </div>
             </div>
@@ -254,7 +256,7 @@ export function AddReviewButton({
             <div className="mt-4">
               <div className="flex items-baseline justify-between">
                 <label htmlFor="review-comment" className="text-[13px] font-medium text-ink/80">
-                  Your experience
+                  {RT.experience}
                 </label>
                 <span className="text-[12px] tabular-nums text-ink/50">
                   {comment.length}/{MAX_COMMENT}
@@ -266,7 +268,7 @@ export function AddReviewButton({
                 onChange={(e) => setComment(e.target.value.slice(0, MAX_COMMENT))}
                 rows={5}
                 aria-invalid={!!errors.comment}
-                placeholder="What stood out? The guide, the camp, the landscapes, the food..."
+                placeholder={RT.commentPh}
                 className={`${field} mt-1.5 resize-y py-3 leading-[1.6] ${errors.comment ? "border-brand" : "border-ink/15"}`}
               />
               {errors.comment && <p className="mt-1.5 text-[13px] text-brand">{errors.comment}</p>}
@@ -275,15 +277,15 @@ export function AddReviewButton({
             {/* Photos */}
             <div className="mt-4">
               <p className="text-[13px] font-medium text-ink/80">
-                Photos <span className="font-normal text-ink/50">(optional, up to {MAX_PHOTOS})</span>
+                {RT.photos} <span className="font-normal text-ink/50">{fill(RT.photosOpt, { n: MAX_PHOTOS })}</span>
               </p>
               <div className="mt-2 flex flex-wrap gap-2">
                 {previews.map((src, i) => (
                   <div key={src} className="relative h-20 w-24 overflow-hidden rounded-lg bg-ink/[0.06]">
-                    <img src={src} alt={`Selected photo ${i + 1}`} className="h-full w-full object-cover" />
+                    <img src={src} alt={fill(RT.selectedPhoto, { i: i + 1 })} className="h-full w-full object-cover" />
                     <button
                       type="button"
-                      aria-label={`Remove photo ${i + 1}`}
+                      aria-label={fill(RT.removePhoto, { i: i + 1 })}
                       onClick={() => setPhotos((p) => p.filter((_, k) => k !== i))}
                       className="absolute right-1 top-1 flex h-6 w-6 items-center justify-center rounded-full bg-black/65 text-white outline-none transition-colors hover:bg-black focus-visible:ring-2 focus-visible:ring-white"
                     >
@@ -297,7 +299,7 @@ export function AddReviewButton({
                     onClick={() => fileInput.current?.click()}
                     className="flex h-20 w-24 flex-col items-center justify-center gap-1 rounded-lg border border-dashed border-ink/25 text-[12px] text-ink/60 outline-none transition-colors hover:bg-ink/[0.04] focus-visible:ring-2 focus-visible:ring-ink/40"
                   >
-                    <ImagePlus size={18} aria-hidden /> Add photo
+                    <ImagePlus size={18} aria-hidden /> {RT.addPhoto}
                   </button>
                 )}
                 <input
@@ -319,14 +321,14 @@ export function AddReviewButton({
             )}
 
             <div className="mt-7 flex flex-col-reverse gap-3 sm:flex-row sm:items-center sm:justify-between">
-              <p className="text-[12px] leading-[1.5] text-ink/50">Your name and review may be shown on this page.</p>
+              <p className="text-[12px] leading-[1.5] text-ink/50">{RT.mayBeShown}</p>
               <button
                 type="submit"
                 disabled={status === "sending"}
                 className="inline-flex h-12 items-center justify-center gap-2 rounded-[10px] bg-ink px-7 text-sm font-semibold text-paper outline-none transition-opacity hover:opacity-90 focus-visible:ring-2 focus-visible:ring-ink/50 disabled:opacity-60"
               >
                 {status === "sending" && <Loader2 size={16} className="animate-spin" aria-hidden />}
-                {status === "sending" ? "Sending" : "Send review"}
+                {status === "sending" ? RT.sending : RT.send}
               </button>
             </div>
           </form>

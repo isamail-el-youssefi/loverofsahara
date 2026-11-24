@@ -23,26 +23,16 @@ import {
   Facts,
   Highlights,
   IncludedExcluded,
-  PlanPanel,
   PricingTable,
   SectionTitle,
-  T,
   TripHero,
   pad,
   stopsForDay,
   tidyRoute,
   type TripCtx,
 } from "./parts";
+import { useTripT } from "@/i18n/useTripT";
 
-const TABS: TabItem[] = [
-  { id: "overview", label: "Overview" },
-  { id: "route", label: "Route" },
-  { id: "itinerary", label: "Itinerary" },
-  { id: "gallery", label: "Gallery" },
-  { id: "included", label: "Included" },
-  { id: "reviews", label: "Reviews" },
-  { id: "pricing", label: "Pricing" },
-];
 
 /** At most this many photos in the gallery; fewer than the minimum and the band is left out. */
 const GALLERY_MAX = 24;
@@ -53,6 +43,7 @@ const GALLERY_MIN = 4;
  * band with the route map, a sticky map beside the itinerary, and alternating paper / off-white bands.
  */
 export function RedDotLayout({ ctx, dayPanels = false }: { ctx: TripCtx; dayPanels?: boolean }) {
+  const T = useTripT();
   const { trip, ui, money } = ctx;
   const reduce = useReducedMotion();
   const scrollRef = useContext(ScrollContainerContext);
@@ -135,7 +126,7 @@ export function RedDotLayout({ ctx, dayPanels = false }: { ctx: TripCtx; dayPane
       const url = tripImage(p, isMobile ? 900 : 1800);
       if (!url || seenPhotos.has(p) || galleryItems.length >= GALLERY_MAX) continue;
       seenPhotos.add(p);
-      galleryItems.push({ id: p, url, thumb: tripImage(p, 240) ?? url, title: `${trip.title.trim()}, ${T.day.toLowerCase()} ${d.day}` });
+      galleryItems.push({ id: p, url, thumb: tripImage(p, 240) ?? url, title: `${trip.title.trim()}, ${T.dayN(d.day).toLowerCase()}` });
       galleryDays.push(dayIdx);
     }
   });
@@ -185,7 +176,9 @@ export function RedDotLayout({ ctx, dayPanels = false }: { ctx: TripCtx; dayPane
   }, []);
 
   const hasIncl = !!(trip.included?.length || trip.excluded?.length);
-  const tabs = TABS.filter((t) => (t.id === "included" ? hasIncl : t.id === "gallery" ? hasGallery : true));
+  const tabs = (["overview", "route", "itinerary", "gallery", "included", "reviews", "pricing"] as const)
+    .map((id): TabItem => ({ id, label: T.tabs[id] }))
+    .filter((t) => (t.id === "included" ? hasIncl : t.id === "gallery" ? hasGallery : true));
 
   return (
     <div ref={rootRef} className="trip-page relative">
@@ -312,7 +305,7 @@ export function RedDotLayout({ ctx, dayPanels = false }: { ctx: TripCtx; dayPane
                     </span>
                     <div className="relative p-6 text-white md:p-10">
                       <p className="eyebrow text-[11px] font-medium uppercase tracking-[0.16em] text-white/65">
-                        {T.day} {pad(d.day)}
+                        {T.dayN(pad(d.day))}
                       </p>
                       {d.route && (
                         <h3 className="mt-2 max-w-[28ch] text-[24px] font-semibold leading-[1.1] tracking-[-0.03em] md:text-[38px]">
@@ -336,7 +329,7 @@ export function RedDotLayout({ ctx, dayPanels = false }: { ctx: TripCtx; dayPane
                   }`}
                 >
                   <Eyebrow>
-                    {T.day} {pad(d.day)}
+                    {T.dayN(pad(d.day))}
                   </Eyebrow>
                   {d.route && (
                     <h3 className="mt-2.5 text-[22px] font-semibold leading-[1.15] tracking-[-0.03em] md:text-[27px]">
@@ -383,7 +376,7 @@ export function RedDotLayout({ ctx, dayPanels = false }: { ctx: TripCtx; dayPane
               <div
                 className="-mx-4 mt-5 flex gap-2 overflow-x-auto px-4 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
                 role="group"
-                aria-label="Jump to a day"
+                aria-label={T.jumpToDay}
               >
                 {daysWithPhotos.map((dayIdx) => {
                   const on = dayIdx === shownDay;
@@ -397,7 +390,7 @@ export function RedDotLayout({ ctx, dayPanels = false }: { ctx: TripCtx; dayPane
                         on ? "border-ink bg-ink text-paper" : "border-ink/15 text-ink/80"
                       }`}
                     >
-                      {T.day} {pad(trip.itinerary[dayIdx]?.day ?? dayIdx + 1)}
+                      {T.dayN(pad(trip.itinerary[dayIdx]?.day ?? dayIdx + 1))}
                     </button>
                   );
                 })}
@@ -434,7 +427,7 @@ export function RedDotLayout({ ctx, dayPanels = false }: { ctx: TripCtx; dayPane
               </p>
 
               {/* Jump to a day's photos */}
-              <div className="mt-7 flex flex-wrap gap-2" role="group" aria-label="Jump to a day">
+              <div className="mt-7 flex flex-wrap gap-2" role="group" aria-label={T.jumpToDay}>
                 {daysWithPhotos.map((dayIdx) => {
                   const on = dayIdx === shownDay;
                   return (
@@ -447,7 +440,7 @@ export function RedDotLayout({ ctx, dayPanels = false }: { ctx: TripCtx; dayPane
                         on ? "border-ink bg-ink text-paper" : "border-ink/15 text-ink/80 hover:bg-ink/[0.05]"
                       }`}
                     >
-                      {T.day} {pad(trip.itinerary[dayIdx]?.day ?? dayIdx + 1)}
+                      {T.dayN(pad(trip.itinerary[dayIdx]?.day ?? dayIdx + 1))}
                     </button>
                   );
                 })}
@@ -515,7 +508,7 @@ export function RedDotLayout({ ctx, dayPanels = false }: { ctx: TripCtx; dayPane
       <ReviewsSection tripSlug={trip.slug} tripTitle={trip.title.trim()} />
 
       {/* Pricing */}
-      <Band id="pricing" tone="paper">
+      <Band id="pricing" tone="paper" className="!min-h-[100dvh] md:!min-h-[110dvh] flex flex-col justify-center">
         <div className="grid gap-8 md:grid-cols-12 md:gap-10">
           <div className="md:sticky md:top-10 md:col-span-4 md:self-start">
             <SectionTitle eyebrow={T.pricing}>
@@ -526,9 +519,6 @@ export function RedDotLayout({ ctx, dayPanels = false }: { ctx: TripCtx; dayPane
           <div className="md:col-span-7 md:col-start-6">
             <PricingTable ctx={ctx} />
           </div>
-        </div>
-        <div className="mt-16">
-          <PlanPanel ctx={ctx} />
         </div>
       </Band>
 

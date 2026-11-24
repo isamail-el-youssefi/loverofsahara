@@ -7,6 +7,7 @@ import { LANGUAGES, type Lang } from "@/i18n/languages";
 import { useLanguage } from "@/i18n/LanguageProvider";
 import { cn } from "@/lib/utils";
 import { BROCHURE_STRINGS, type BrochureStrings } from "./strings";
+import { useTripT } from "@/i18n/useTripT";
 
 /**
  * The language the brochures are shown in. It starts as the site language and follows it when the visitor
@@ -34,9 +35,10 @@ export function LanguageChips({
   tone?: "light" | "dark";
   className?: string;
 }) {
+  const T = useTripT();
   const dark = tone === "dark";
   return (
-    <div role="radiogroup" aria-label="Language" className={cn("flex flex-wrap gap-1.5", className)}>
+    <div role="radiogroup" aria-label={T.languageLabel} className={cn("flex flex-wrap gap-1.5", className)}>
       {LANGUAGES.map((l) => {
         const on = l.code === value;
         return (

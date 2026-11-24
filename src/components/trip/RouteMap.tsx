@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { useTripT } from "@/i18n/useTripT";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 
@@ -34,6 +35,7 @@ const tileUrl = (tone: "light" | "dark", layer: "Base" | "Reference") =>
  * `trips.meta.json`. Wheel zoom stays off until the map is clicked so it never hijacks page scrolling.
  */
 export function RouteMap({ stops, active, onActive, tone = "light", className = "", named = false }: RouteMapProps) {
+  const T = useTripT();
   const host = useRef<HTMLDivElement>(null);
   const markers = useRef<L.Marker[]>([]);
   const onActiveRef = useRef(onActive);
@@ -114,7 +116,7 @@ export function RouteMap({ stops, active, onActive, tone = "light", className = 
       ref={host}
       data-lenis-prevent
       role="region"
-      aria-label="Route map"
+      aria-label={T.routeMap}
       className={`route-map route-map--${tone} ${className}`}
     />
   );

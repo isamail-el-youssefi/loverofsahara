@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import { CONTACT } from "./data";
 import { EMPTY_REQUEST, buildMessage, gmailUrl, mailtoUrl, validate, whatsappUrl, type Channel, type RequestFields } from "./message";
 import { useContactContent } from "./useContactContent";
+import { useTripT } from "@/i18n/useTripT";
 
 const field =
   "w-full rounded-[10px] border border-ink/20 bg-paper px-4 py-3 max-md:py-2.5 text-[15px] text-ink outline-none transition-colors placeholder:text-neutral-400 focus:border-ink focus-visible:ring-2 focus-visible:ring-ink/20";
@@ -16,6 +17,7 @@ const label = "mb-1.5 block text-[13px] font-medium text-ink/80";
  * already written, so nothing is stored or sent anywhere else. `?trip=<slug>` pre-selects a trip.
  */
 export function ContactForm({ className }: { className?: string }) {
+  const T = useTripT();
   const { trips } = useTrips();
   const t = useContactContent().form;
   const [f, setF] = useState<RequestFields>(EMPTY_REQUEST);
@@ -146,14 +148,14 @@ ${buildMessage(f, t)}`);
             sideOffset={8}
             className="z-50 w-[270px] rounded-2xl border border-ink/10 bg-paper p-1.5 text-ink shadow-[0_20px_50px_-15px_rgba(0,0,0,0.35)] outline-none"
           >
-            <p className="px-3 pb-1.5 pt-2 text-[11px] font-semibold uppercase tracking-[0.12em] text-neutral-400">Send request via</p>
+            <p className="px-3 pb-1.5 pt-2 text-[11px] font-semibold uppercase tracking-[0.12em] text-neutral-400">{T.sendVia}</p>
             <div className="flex flex-col gap-0.5">
               <a href={gmailUrl(f, t)} target="_blank" rel="noopener noreferrer" onClick={mailChosen} className={item}>
                 <span className="flex items-center gap-2.5">
                   <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-red-500/10 text-[13px] font-bold text-red-600">G</span>
                   <span>
                     <span className="block font-semibold leading-tight">Gmail</span>
-                    <span className="block text-[11.5px] font-normal text-neutral-500">Opens in browser tab</span>
+                    <span className="block text-[11.5px] font-normal text-neutral-500">{T.opensTab}</span>
                   </span>
                 </span>
                 <ExternalLink size={13} className="text-neutral-400" aria-hidden />
@@ -164,7 +166,7 @@ ${buildMessage(f, t)}`);
                     <Mail size={14} />
                   </span>
                   <span>
-                    <span className="block font-semibold leading-tight">Default Mail App</span>
+                    <span className="block font-semibold leading-tight">{T.defaultApp}</span>
                     <span className="block text-[11.5px] font-normal text-neutral-500">Outlook, Apple Mail</span>
                   </span>
                 </span>

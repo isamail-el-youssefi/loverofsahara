@@ -4,6 +4,7 @@ import { TextRollHover } from "@/components/ui/text-stagger-hover";
 import { fadeUp } from "@/lib/animations";
 import { CONTACT } from "@/components/contact/data";
 import { useLanguage } from "@/i18n/LanguageProvider";
+import { useTripT } from "@/i18n/useTripT";
 import { GOOGLE_REVIEWS } from "./data";
 import { useFooterCols } from "./useFooterCols";
 import { GoogleLogo, Stars } from "./GoogleReviewsBadge";
@@ -21,6 +22,7 @@ const SOCIALS = [
 export function FooterSpotlight({ roundedTop = false }: { roundedTop?: boolean }) {
   const footerCols = useFooterCols();
   const { site } = useLanguage();
+  const T = useTripT();
   const { rating, count, url } = GOOGLE_REVIEWS;
   const external = url.startsWith("http");
   return (
@@ -32,7 +34,7 @@ export function FooterSpotlight({ roundedTop = false }: { roundedTop?: boolean }
             <div className="flex items-center gap-3">
               <GoogleLogo size={28} />
               <span className="eyebrow text-[12px] font-medium uppercase tracking-[0.16em] text-white/60">
-                Google reviews
+                {site.footer.googleReviews}
               </span>
             </div>
             <p className="mt-3 text-[clamp(64px,13vh,110px)] font-light leading-[0.9] tracking-[-0.05em] tabular-nums md:mt-6 md:text-[clamp(80px,18vh,160px)]">
@@ -47,7 +49,7 @@ export function FooterSpotlight({ roundedTop = false }: { roundedTop?: boolean }
               {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
               className="mt-5 inline-flex h-[46px] md:mt-8 items-center justify-center rounded-[10px] bg-paper px-7 text-sm font-semibold text-ink transition-all duration-100 ease-out hover:bg-neutral-100 active:scale-[0.98]"
             >
-              Read our reviews
+              {T.readReviews}
             </a>
           </div>
 
@@ -89,13 +91,6 @@ export function FooterSpotlight({ roundedTop = false }: { roundedTop?: boolean }
                 className="flex h-11 w-11 items-center justify-center rounded-full border border-white/20 bg-white/5 text-white outline-none transition-colors hover:bg-white/15 focus-visible:ring-2 focus-visible:ring-white/60"
               >
                 {icon}
-              </a>
-            ))}
-          </div>
-          <div className="hidden flex-wrap gap-x-6 gap-y-2 text-[13px] text-white/60 md:flex lg:col-span-7 lg:justify-end">
-            {footerCols[4]!.links.map((l) => (
-              <a key={l.name} href={l.href} className="transition hover:text-white">
-                {l.name}
               </a>
             ))}
           </div>

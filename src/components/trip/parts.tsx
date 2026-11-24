@@ -16,6 +16,7 @@ import {
 } from "@/components/contact/message";
 import { tripImage, type LocalizedTrip } from "@/data/trips";
 import type { UiStrings } from "@/i18n/ui";
+import { useTripT } from "@/i18n/useTripT";
 
 /** Everything a layout needs. All layouts read the same data, only the arrangement differs. */
 export interface TripCtx {
@@ -44,36 +45,6 @@ export function TripHero({ ctx, className }: { ctx: TripCtx; className: string }
     </picture>
   );
 }
-
-/** Labels that only exist on the trip page (English for now). */
-export const T = {
-  back: "All trips",
-  highlights: "Highlights",
-  itinerary: "Day by day",
-  gallery: "Gallery",
-  galleryTitle: "Photos from this journey",
-  nowShowing: "Now showing",
-  day: "Day",
-  included: "Included",
-  excluded: "Not included",
-  pricing: "Pricing",
-  pricingNote: "Per person for the whole trip. Private groups, always tailored.",
-  group: "Group",
-  perDay: "Per day",
-  total: "Total",
-  plan: "Plan this trip",
-  planLead: "Tell us your dates and group size and we will shape this journey around you.",
-  contact: "Get in touch",
-  more: "More journeys",
-  departs: "Departs from",
-  duration: "Duration",
-  stops: "Stops",
-  photos: "Photos",
-  overview: "Why this journey",
-  brief: "The journey",
-  routeLabel: "The route",
-  includedTitle: "What your trip includes",
-} as const;
 
 const SMALL = new Set(["de", "du", "des", "of", "el", "al", "and", "the", "&", "to", "in", "via", "d", "n"]);
 
@@ -173,6 +144,7 @@ export function Facts({
   /** `stack`: a ruled column (used beside the brief); `row`: the compact grid. */
   variant?: "row" | "stack";
 }) {
+  const T = useTripT();
   const { trip, ui, money } = ctx;
   const rows: [string, string][] = [
     [T.duration, ui.days(trip.durationDays)],
@@ -198,6 +170,7 @@ export function BriefText({ label, text, className = "" }: { label: string; text
 
 /** The trip's short brief (the summary every trip already has). */
 export function Brief({ ctx, className = "" }: { ctx: TripCtx; className?: string }) {
+  const T = useTripT();
   return <BriefText label={T.brief} text={ctx.trip.summary} className={className} />;
 }
 
@@ -248,6 +221,7 @@ function RuledList({ items }: { items: string[] }) {
 }
 
 export function IncludedExcluded({ ctx }: { ctx: TripCtx }) {
+  const T = useTripT();
   const { included, excluded } = ctx.trip;
   if (!included?.length && !excluded?.length) return null;
   return (
@@ -277,6 +251,7 @@ export function EmailChoicePopover({
   dark?: boolean;
   compact?: boolean;
 }) {
+  const T = useTripT();
   const [open, setOpen] = useState(false);
   const [copied, setCopied] = useState(false);
 
@@ -303,9 +278,9 @@ export function EmailChoicePopover({
   return (
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
-        <button type="button" className={triggerClasses} aria-label="Choose email client">
+        <button type="button" className={triggerClasses} aria-label={T.chooseClient}>
           <Mail size={15} aria-hidden="true" />
-          <span>Email</span>
+          <span>{T.email}</span>
           <ChevronDown size={13} className={dark ? "text-white/60" : "text-neutral-400"} aria-hidden="true" />
         </button>
       </PopoverTrigger>
@@ -316,7 +291,7 @@ export function EmailChoicePopover({
         className="z-50 w-[270px] rounded-2xl border border-ink/10 bg-paper p-1.5 text-ink shadow-[0_20px_50px_-15px_rgba(0,0,0,0.35)] outline-none"
       >
         <p className="px-3 pb-1.5 pt-2 text-[11px] font-semibold uppercase tracking-[0.12em] text-neutral-400">
-          Send inquiry via
+          {T.sendVia}
         </p>
 
         <div className="flex flex-col gap-0.5">
@@ -334,7 +309,7 @@ export function EmailChoicePopover({
               </span>
               <span>
                 <span className="block leading-tight font-semibold">Gmail</span>
-                <span className="block text-[11.5px] text-neutral-500 font-normal">Opens in browser tab</span>
+                <span className="block text-[11.5px] text-neutral-500 font-normal">{T.opensTab}</span>
               </span>
             </span>
             <ExternalLink size={13} className="text-neutral-400" aria-hidden="true" />
@@ -351,7 +326,7 @@ export function EmailChoicePopover({
                 <Mail size={14} />
               </span>
               <span>
-                <span className="block leading-tight font-semibold">Default Mail App</span>
+                <span className="block leading-tight font-semibold">{T.defaultApp}</span>
                 <span className="block text-[11.5px] text-neutral-500 font-normal">Outlook, Apple Mail</span>
               </span>
             </span>
@@ -369,10 +344,10 @@ export function EmailChoicePopover({
               </span>
               <span>
                 <span className="block leading-tight font-semibold">
-                  {copied ? "Copied to clipboard!" : "Copy Details"}
+                  {copied ? T.copied : T.copyDetails}
                 </span>
                 <span className="block text-[11.5px] text-neutral-500 font-normal">
-                  {copied ? "Ready to paste anywhere" : "Copy email & message"}
+                  {copied ? T.readyToPaste : T.copyHint}
                 </span>
               </span>
             </span>
@@ -384,6 +359,7 @@ export function EmailChoicePopover({
 }
 
 export function PricingTable({ ctx, compact = false }: { ctx: TripCtx; compact?: boolean }) {
+  const T = useTripT();
   const isMobile = useIsMobile();
   const { trip, money } = ctx;
   const tiers = [...trip.pricing].sort((a, b) => a.persons - b.persons);
@@ -442,7 +418,7 @@ export function PricingTable({ ctx, compact = false }: { ctx: TripCtx; compact?:
                   aria-hidden="true"
                 />
                 <span className={isSelected ? "font-semibold text-ink" : "text-ink"}>
-                  {p.persons} {p.persons === 1 ? "person" : "people"}
+                  {p.persons} {p.persons === 1 ? T.person : T.people}
                 </span>
               </span>
               <span className="col-span-3 text-center text-[15px] text-ink/65">
@@ -462,7 +438,7 @@ export function PricingTable({ ctx, compact = false }: { ctx: TripCtx; compact?:
 
       {/* Alternative sizes: quiet editorial links */}
       <div className="mt-3.5 flex flex-wrap items-center justify-between gap-2 text-[12.5px] text-neutral-500">
-        <span>Custom group size?</span>
+        <span>{T.customGroup}</span>
         <div className="flex items-center gap-3">
           <button
             type="button"
@@ -473,7 +449,7 @@ export function PricingTable({ ctx, compact = false }: { ctx: TripCtx; compact?:
                 : "hover:text-ink"
             }`}
           >
-            Solo traveler (1)
+            {T.solo}
           </button>
           <span className="text-neutral-300" aria-hidden="true">·</span>
           <button
@@ -485,7 +461,7 @@ export function PricingTable({ ctx, compact = false }: { ctx: TripCtx; compact?:
                 : "hover:text-ink"
             }`}
           >
-            6+ people (Group rate)
+            {T.sixPlus}
           </button>
         </div>
       </div>
@@ -497,30 +473,30 @@ export function PricingTable({ ctx, compact = false }: { ctx: TripCtx; compact?:
             <p className="eyebrow flex items-center gap-2 whitespace-nowrap text-[11px] font-medium uppercase tracking-[0.14em] text-neutral-500">
               <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-brand" aria-hidden="true" />
               {selected === "solo"
-                ? "Solo Traveler"
+                ? T.soloLabel
                 : selected === "custom"
-                  ? "Group (6+ People)"
-                  : `${selected} travelers`}
+                  ? T.groupLabel
+                  : T.travelers(selected)}
             </p>
             <p className="mt-1 text-[15.5px] font-medium tracking-[-0.01em] text-ink">
               {selected === "solo" ? (
-                "Tailored private journey for 1 person"
+                T.soloText
               ) : selected === "custom" ? (
-                "Tailored quote with dedicated 4x4"
+                T.groupText
               ) : (
                 <>
                   {/* Phone: just the total, so the price and both buttons fit on one line */}
                   {groupTotal ? (
                     <span className="sm:hidden">
                       <span className="font-semibold text-ink">{money.format(groupTotal)}</span>
-                      <span className="text-neutral-500"> total</span>
+                      <span className="text-neutral-500"> {T.totalWord}</span>
                     </span>
                   ) : null}
                   <span className={groupTotal ? "hidden sm:inline" : ""}>
                     <span className="font-semibold text-ink">{money.format(totalPerPerson)}</span>
-                    <span className="text-neutral-500"> / person</span>
+                    <span className="text-neutral-500"> {T.perPersonWord}</span>
                     {groupTotal && (
-                      <span className="font-normal text-neutral-500"> · {money.format(groupTotal)} total</span>
+                      <span className="font-normal text-neutral-500"> · {money.format(groupTotal)} {T.totalWord}</span>
                     )}
                   </span>
                 </>
@@ -586,6 +562,7 @@ export function PlanButton({ ctx, dark = false }: { ctx: TripCtx; dark?: boolean
 
 /** Closing call to action: the Statement design (centred on paper, hairline above), with the trip's own text and buttons. */
 export function PlanPanel({ ctx }: { ctx: TripCtx }) {
+  const T = useTripT();
   return (
     <div className="border-t border-ink/10 px-2 pb-8 pt-20 text-center md:pt-28">
       <h2 className="mx-auto max-w-5xl text-[40px] font-semibold leading-[1.02] tracking-[-0.05em] text-ink md:text-[104px]">

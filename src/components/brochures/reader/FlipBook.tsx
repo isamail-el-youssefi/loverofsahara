@@ -3,6 +3,7 @@ import { AnimatePresence, animate, motion, useMotionValue, useReducedMotion, use
 import type { PDFDocumentProxy } from "pdfjs-dist";
 import { PdfCanvas } from "./PdfCanvas";
 import { renderPage } from "./pdf";
+import { useTripT } from "@/i18n/useTripT";
 
 interface Props {
   doc: PDFDocumentProxy | null;
@@ -30,6 +31,7 @@ const right = (i: number, total: number) => (2 * i + 1 <= total ? 2 * i + 1 : nu
 
 /** A book you can open: pages turn in 3D (desktop spread) or slide (single page), by click, drag or keys. */
 export function FlipBook({ doc, id, total, cover, pageW, pageH, single, index, onIndex }: Props) {
+  const T = useTripT();
   const reduce = useReducedMotion();
   const last = positions(total, single) - 1;
   const [turn, setTurn] = useState<{ from: number; to: number } | null>(null);
@@ -124,7 +126,7 @@ export function FlipBook({ doc, id, total, cover, pageW, pageH, single, index, o
     >
       <button
         type="button"
-        aria-label="Previous page"
+        aria-label={T.prevPage}
         tabIndex={-1}
         onClick={prev}
         disabled={!staticLeft}
@@ -136,7 +138,7 @@ export function FlipBook({ doc, id, total, cover, pageW, pageH, single, index, o
       </button>
       <button
         type="button"
-        aria-label="Next page"
+        aria-label={T.nextPage}
         tabIndex={-1}
         onClick={next}
         disabled={!staticRight}

@@ -6,14 +6,13 @@ import { TextRollHover } from "@/components/ui/text-stagger-hover";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { MobileMenu } from "@/components/navbar/MobileMenu";
 import { useLanguage } from "@/i18n/LanguageProvider";
-
-const navLinks = [
-  { label: "Sahara Stories", href: "/blog" },
-  { label: "About", href: "/about" },
-];
+import { PAGES } from "@/i18n/pages";
+import { useTripT } from "@/i18n/useTripT";
+import { localePath } from "@/lib/routes";
 
 export function Navbar({ theme = "dark", className = "" }: { theme?: "dark" | "light", className?: string }) {
-  const { ui } = useLanguage();
+  const { ui, site, lang } = useLanguage();
+  const T = useTripT();
   const [open, setOpen] = useState(false);
   const navRef = useRef<HTMLElement>(null);
   const [navH, setNavH] = useState(0);
@@ -26,10 +25,11 @@ export function Navbar({ theme = "dark", className = "" }: { theme?: "dark" | "l
     return () => window.removeEventListener("resize", read);
   }, [open]);
   const links: { label: string; href: string; xlOnly?: boolean }[] = [
-    { label: ui.navTrips, href: "/trips" },
-    ...navLinks,
-    { label: ui.navBrochures, href: "/brochures", xlOnly: true },
-    { label: ui.navGallery, href: "/gallery", xlOnly: true },
+    { label: ui.navTrips, href: localePath(lang, "/trips") },
+    { label: PAGES[lang].blog.name, href: localePath(lang, "/blog") },
+    { label: site.footer.cols[0]!.links[0]!, href: localePath(lang, "/about") },
+    { label: ui.navBrochures, href: localePath(lang, "/brochures"), xlOnly: true },
+    { label: ui.navGallery, href: localePath(lang, "/gallery"), xlOnly: true },
   ];
   // While the menu is open the navbar sits on the menu's colour, so it takes that colour's tones.
   const isLight = open || theme === "light";
@@ -113,20 +113,20 @@ export function Navbar({ theme = "dark", className = "" }: { theme?: "dark" | "l
           <span className={`hidden lg:inline ${dividerColor}`}>|</span>
           <span className="hidden lg:inline-flex">
             <OriginButton
-              href="/contact"
+              href={localePath(lang, "/contact")}
               variant={isLight ? "default" : "white"}
               className={`h-9 rounded-[10px] border ${borderMuted} px-5 text-sm font-medium ${textColor} transition-all duration-100 ease-out active:scale-[0.98]`}
             >
-              Contact
+              {site.footer.cols[0]!.links[1]}
             </OriginButton>
           </span>
           <span className="hidden lg:inline-flex">
           <OriginButton
-            href="/contact"
+            href={localePath(lang, "/contact")}
             variant={isLight ? "default" : "white"}
             className={`h-11 whitespace-nowrap rounded-[10px] border ${borderColor} px-4 sm:px-5 md:h-9 text-sm font-medium ${textColor} transition-all duration-100 ease-out active:scale-[0.98]`}
           >
-            Book Tour
+            {T.bookTour}
           </OriginButton>
           </span>
         </div>

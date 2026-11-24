@@ -11,9 +11,11 @@ import { fadeUp } from "@/lib/animations";
 import { cn } from "@/lib/utils";
 import { CONTACT, phoneHref, whatsappBase } from "./data";
 import { useContactContent } from "./useContactContent";
+import { useTripT } from "@/i18n/useTripT";
 
 /** The e-mail row: opens a small menu to write in Gmail (browser tab), the default mail app, or copy the address. */
 function EmailRow({ dark, label, icon: Icon }: { dark: boolean; label: string; icon: typeof Mail }) {
+  const T = useTripT();
   const [open, setOpen] = useState(false);
   const [copied, setCopied] = useState(false);
   const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(CONTACT.email)}`;
@@ -33,7 +35,7 @@ function EmailRow({ dark, label, icon: Icon }: { dark: boolean; label: string; i
       <PopoverTrigger asChild>
         <button
           type="button"
-          aria-label="Choose email client"
+          aria-label={T.chooseClient}
           className="group flex w-full items-center gap-4 py-4 text-left outline-none focus-visible:ring-2 focus-visible:ring-current md:py-5"
         >
           <Icon size={20} aria-hidden className={dark ? "text-white/70" : "text-ink/70"} />
@@ -49,14 +51,14 @@ function EmailRow({ dark, label, icon: Icon }: { dark: boolean; label: string; i
         sideOffset={8}
         className="z-50 w-[270px] rounded-2xl border border-ink/10 bg-paper p-1.5 text-ink shadow-[0_20px_50px_-15px_rgba(0,0,0,0.35)] outline-none"
       >
-        <p className="px-3 pb-1.5 pt-2 text-[11px] font-semibold uppercase tracking-[0.12em] text-neutral-400">Write to us via</p>
+        <p className="px-3 pb-1.5 pt-2 text-[11px] font-semibold uppercase tracking-[0.12em] text-neutral-400">{T.sendVia}</p>
         <div className="flex flex-col gap-0.5">
           <a href={gmailUrl} target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)} className={item}>
             <span className="flex items-center gap-2.5">
               <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-red-500/10 text-[13px] font-bold text-red-600">G</span>
               <span>
                 <span className="block font-semibold leading-tight">Gmail</span>
-                <span className="block text-[11.5px] font-normal text-neutral-500">Opens in browser tab</span>
+                <span className="block text-[11.5px] font-normal text-neutral-500">{T.opensTab}</span>
               </span>
             </span>
             <ExternalLink size={13} className="text-neutral-400" aria-hidden />
@@ -67,7 +69,7 @@ function EmailRow({ dark, label, icon: Icon }: { dark: boolean; label: string; i
                 <Mail size={14} />
               </span>
               <span>
-                <span className="block font-semibold leading-tight">Default Mail App</span>
+                <span className="block font-semibold leading-tight">{T.defaultApp}</span>
                 <span className="block text-[11.5px] font-normal text-neutral-500">Outlook, Apple Mail</span>
               </span>
             </span>

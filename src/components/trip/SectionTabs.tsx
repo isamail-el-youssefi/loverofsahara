@@ -1,5 +1,6 @@
 import { useContext, useEffect, useRef, useState } from "react";
 import { animate, motion, useMotionValue, useTransform } from "framer-motion";
+import { useTripT } from "@/i18n/useTripT";
 import { ScrollContainerContext } from "@/lib/scrollContainer";
 
 /** Red Dot's pill easing: slow in, slow out. */
@@ -18,6 +19,7 @@ export interface TabItem {
  * then the labels fade in. Going away is the reverse: labels fade out, then the capsule collapses.
  */
 export function SectionTabs({ items, showAfter }: { items: TabItem[]; /** Id of the section whose arrival reveals the pill (default: the first tab). Use when the first tab is the hero. */ showAfter?: string }) {
+  const T = useTripT();
   const scrollRef = useContext(ScrollContainerContext);
   const [active, setActive] = useState(items[0]?.id ?? "");
   const [visible, setVisible] = useState(false);
@@ -98,7 +100,7 @@ export function SectionTabs({ items, showAfter }: { items: TabItem[]; /** Id of 
 
   return (
     <nav
-      aria-label="Page sections"
+      aria-label={T.pageSections}
       className="pointer-events-none fixed inset-x-0 bottom-[max(1rem,env(safe-area-inset-bottom))] z-[60] flex justify-center px-[4vw] md:bottom-6"
     >
       <motion.div

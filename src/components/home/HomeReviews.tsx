@@ -7,6 +7,8 @@ import { GOOGLE_REVIEWS } from "@/components/footer/data";
 import { Stars } from "@/components/trip/reviews/shared";
 import { fadeUp } from "@/lib/animations";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { useLanguage } from "@/i18n/LanguageProvider";
+import { PAGES } from "@/i18n/pages";
 
 /** Quote size by length: the long reviews are set smaller so they stay comfortable to read in full. */
 const quoteSize = (n: number) =>
@@ -24,6 +26,8 @@ export function HomeReviews() {
   const reviews = GOOGLE_REVIEWS_LIST;
   const reduce = useReducedMotion();
   const isMobile = useIsMobile();
+  const { lang, site } = useLanguage();
+  const t = PAGES[lang].home.reviews;
   const [index, setIndex] = useState(0);
   if (reviews.length === 0) return null;
 
@@ -50,14 +54,14 @@ export function HomeReviews() {
       <div className="grid grid-cols-1 gap-12 lg:grid-cols-[2fr_3fr] lg:gap-20">
         <div className="lg:sticky lg:top-10 lg:self-start">
           <div className="flex items-center gap-2 text-[13px] font-medium text-neutral-500">
-            <span className="h-1.5 w-1.5 rounded-full bg-brand" aria-hidden /> Reviews
+            <span className="h-1.5 w-1.5 rounded-full bg-brand" aria-hidden /> {t.eyebrow}
           </div>
           <h2
             data-reveal-01="words"
             data-scroll
             className="mt-5 text-[36px] font-semibold leading-[1.05] tracking-[-0.05em] text-ink md:text-[60px]"
           >
-            What travellers <span className="font-normal text-neutral-400">say.</span>
+            {t.h2a} <span className="font-normal text-neutral-400">{t.h2b}</span>
           </h2>
           <motion.div {...fadeUp} className="mt-10 flex items-end gap-4">
             <span className="text-[64px] font-light leading-[0.9] tracking-[-0.05em] text-ink md:text-[80px]">
@@ -66,7 +70,7 @@ export function HomeReviews() {
             <div className="pb-1">
               <Stars value={GOOGLE_REVIEWS.rating} size={15} />
               <p className="mt-1.5 flex items-center gap-1.5 text-[12px] text-neutral-500">
-                <GoogleLogo size={13} /> {GOOGLE_REVIEWS.count} Google reviews
+                <GoogleLogo size={13} /> {GOOGLE_REVIEWS.count} {site.footer.googleReviews}
               </p>
             </div>
           </motion.div>
@@ -75,7 +79,7 @@ export function HomeReviews() {
         <div
           role="group"
           aria-roledescription="carousel"
-          aria-label="Traveller reviews"
+          aria-label={t.aria}
           tabIndex={0}
           onKeyDown={(e) => {
             if (e.key === "ArrowLeft") go(index - 1);
@@ -96,16 +100,16 @@ export function HomeReviews() {
                   <span className="font-semibold text-ink">{r.name}</span>
                   <span aria-hidden> · </span>
                   <span className="inline-flex items-center gap-1.5 align-middle">
-                    <GoogleLogo size={13} /> Google review
+                    <GoogleLogo size={13} /> {t.source}
                   </span>
-                  <span className="mt-1 block text-[12px]">Original review · Français</span>
+                  <span className="mt-1 block text-[12px]">{t.original.replace("{lang}", "Français")}</span>
                   <a
                     href={GOOGLE_MAPS_URL}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-2 inline-flex min-h-11 items-center gap-1.5 text-[13px] font-medium text-ink underline-offset-4 hover:underline"
                   >
-                    Read all reviews on Google <ArrowUpRight size={14} aria-hidden />
+                    {t.readAll} <ArrowUpRight size={14} aria-hidden />
                   </a>
                 </figcaption>
               </motion.figure>

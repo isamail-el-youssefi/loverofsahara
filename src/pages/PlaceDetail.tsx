@@ -10,32 +10,14 @@ import { getCover, loadLegacyMedia, tripImage } from "@/data/trips";
 import type { LegacyMedia } from "@/data/trips/schema";
 import { getPlace, placeIdForStop } from "@/data/places";
 import { placeHero } from "@/data/places/heroes";
+import { PLACE_LABELS, localizePlace, type PlaceLabels } from "@/data/places/i18n";
+import { useLanguage } from "@/i18n/LanguageProvider";
 import { useIntroStyle } from "@/hooks/use-intro-style";
 import { useTrips } from "@/hooks/use-trips";
 import { fadeUp } from "@/lib/animations";
 import { TRIPS_PATH } from "@/lib/routes";
 import { usePageSeo } from "@/lib/seo";
 import { absUrl, placeSeo } from "@/lib/seoData";
-
-/** Labels that only exist on place pages (English for now, like the trip page's own labels). */
-const PT = {
-  back: "Back",
-  the: "The place",
-  insights: "Insights",
-  insightTitles: ["Why stop here", "What to see", "The story", "Best moment", "Good to know"],
-  type: "Type",
-  region: "Region",
-  fromMarrakech: "From Marrakech",
-  startFinish: "Start & finish",
-  bestTime: "Best time",
-  onTrips: "On our trips",
-  coordinates: "Coordinates",
-  where: "Where it sits",
-  gettingThere: "Getting there",
-  gallery: "Gallery",
-  galleryTitle: "From the road",
-  journeys: "On these journeys",
-} as const;
 
 /** 5 + 3 + 5: the sticky gallery's two scrolling columns and its pinned middle column. */
 const GALLERY_MAX = 13;
@@ -65,12 +47,12 @@ function dms(value: number) {
 }
 
 /** Where it sits: latitude and longitude in degrees-minutes-seconds with the decimals beneath, plus copy and open-in-maps actions. */
-function Coordinates({ lat, lng, name }: { lat: number; lng: number; name: string }) {
+function Coordinates({ lat, lng, name, PT }: { lat: number; lng: number; name: string; PT: PlaceLabels }) {
   const [copied, setCopied] = useState(false);
   const decimal = `${lat.toFixed(4)}, ${lng.toFixed(4)}`;
   const cells = [
-    { label: "Latitude", dms: `${dms(lat)} ${lat >= 0 ? "N" : "S"}`, dec: `${Math.abs(lat).toFixed(4)}° ${lat >= 0 ? "N" : "S"}` },
-    { label: "Longitude", dms: `${dms(lng)} ${lng >= 0 ? "E" : "W"}`, dec: `${Math.abs(lng).toFixed(4)}° ${lng >= 0 ? "E" : "W"}` },
+    { label: PT.latitude, dms: `${dms(lat)} ${lat >= 0 ? PT.cardinals[0] : PT.cardinals[1]}`, dec: `${Math.abs(lat).toFixed(4)}° ${lat >= 0 ? PT.cardinals[0] : PT.cardinals[1]}` },
+    { label: PT.longitude, dms: `${dms(lng)} ${lng >= 0 ? PT.cardinals[2] : PT.cardinals[3]}`, dec: `${Math.abs(lng).toFixed(4)}° ${lng >= 0 ? PT.cardinals[2] : PT.cardinals[3]}` },
   ];
 
   const copy = async () => {
@@ -102,16 +84,16 @@ function Coordinates({ lat, lng, name }: { lat: number; lng: number; name: strin
           className="inline-flex h-9 items-center gap-2 rounded-[10px] border border-ink/15 px-3.5 text-[13px] font-medium text-ink outline-none transition-colors hover:bg-ink/[0.05] focus-visible:ring-2 focus-visible:ring-ink/40 active:scale-[0.98]"
         >
           {copied ? <Check size={14} aria-hidden /> : <Copy size={14} aria-hidden />}
-          <span aria-live="polite">{copied ? "Copied" : "Copy coordinates"}</span>
+          <span aria-live="polite">{copied ? PT.copied : PT.copyCoords}</span>
         </button>
         <a
           href={`https://www.google.com/maps/search/?api=1&query=${lat},${lng}`}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label={`Open ${name} in Google Maps (opens in a new tab)`}
+          aria-label={PT.openMapsAria.replace("{name}", name)}
           className="inline-flex h-9 items-center gap-1.5 rounded-[10px] border border-ink/15 px-3.5 text-[13px] font-medium text-ink outline-none transition-colors hover:bg-ink/[0.05] focus-visible:ring-2 focus-visible:ring-ink/40 active:scale-[0.98]"
         >
-          Open in Maps <ArrowUpRight size={14} aria-hidden />
+          {PT.openMaps} <ArrowUpRight size={14} aria-hidden />
         </a>
       </div>
     </div>
@@ -138,6 +120,8 @@ export function PlaceDetail({ id }: { id: string }) {
   const { trips, status } = useTrips();
   const reduce = useReducedMotion();
   const intro = useIntroStyle();
+  const { lang } = useLanguage();
+  const PT = PLACE_LABELS[lang];
   const [media, setMedia] = useState<Record<string, LegacyMedia> | undefined>();
 
   useEffect(() => {
@@ -211,12 +195,12 @@ export function PlaceDetail({ id }: { id: string }) {
     return (
       <div className="relative flex min-h-dvh items-center justify-center px-6">
         <Navbar theme="light" />
-        <p className="text-neutral-500">{status === "loading" ? "Loading" : "We could not find that place."}</p>
+        <p className="text-neutral-500">{status === "loading" ? PT.loading : PT.notFound}</p>
       </div>
     );
   }
 
-  const { place } = facts;
+  const place = localizePlace(id, facts.place, lang);
   // Known synchronously from the trip data, so the trips band exists from the first render. The scroll
   // effects bind each band to the one below it when the page mounts, so it must not pop in later.
   const hasTrips = facts.tripSlugs.length > 0;
@@ -235,7 +219,7 @@ export function PlaceDetail({ id }: { id: string }) {
   const lines = twoLines(place.name);
 
   const factRows: [string, string][] = [
-    [PT.type, place.kind],
+    [PT.type, PT.kinds[place.kind]],
     [PT.region, place.region],
     [PT.fromMarrakech, facts.kmFromMarrakech === 0 ? PT.startFinish : `~${facts.kmFromMarrakech} km`],
     [PT.bestTime, place.bestTime],
@@ -243,11 +227,11 @@ export function PlaceDetail({ id }: { id: string }) {
   ];
 
   const tabs: TabItem[] = [
-    { id: "overview", label: "Overview" },
-    { id: "insights", label: "Insights" },
-    { id: "map", label: "Map" },
-    ...(hasGallery ? [{ id: "gallery", label: "Gallery" }] : []),
-    ...(hasTrips ? [{ id: "trips", label: "Trips" }] : []),
+    { id: "overview", label: PT.tabs.overview },
+    { id: "insights", label: PT.tabs.insights },
+    { id: "map", label: PT.tabs.map },
+    ...(hasGallery ? [{ id: "gallery", label: PT.tabs.gallery }] : []),
+    ...(hasTrips ? [{ id: "trips", label: PT.tabs.trips }] : []),
   ];
 
   return (
@@ -263,7 +247,7 @@ export function PlaceDetail({ id }: { id: string }) {
         <div className="relative flex h-full flex-col items-start justify-end overflow-hidden rounded-lg bg-ink-deep p-6 pb-12 text-left md:p-12 md:pb-16">
           <img
             src={heroSrc}
-            alt={`${place.name}, ${place.region}, Morocco`}
+            alt={PT.heroAlt.replace("{place}", `${place.name}, ${place.region}`)}
             fetchPriority="high"
             className="absolute inset-0 h-full w-full object-cover object-[50%_60%]"
           />
@@ -277,7 +261,7 @@ export function PlaceDetail({ id }: { id: string }) {
             className="relative z-10 flex flex-col items-start text-left text-white"
           >
             <p className="eyebrow mb-5 text-[13px] font-medium uppercase tracking-[0.18em] text-white/80">
-              {place.kind} <span aria-hidden>·</span> {place.region}
+              {PT.kinds[place.kind]} <span aria-hidden>·</span> {place.region}
             </p>
             <h1 className="whitespace-nowrap text-[min(7vw,40px)] font-semibold leading-[1] md:text-[min(6vw,84px)] md:font-light!">
               {lines.map((line, i) => (
@@ -346,10 +330,10 @@ export function PlaceDetail({ id }: { id: string }) {
             </h2>
             <p className="mt-5 max-w-[30rem] text-[15.5px] leading-[1.65] text-ink/75">
               {facts.kmFromMarrakech === 0
-                ? "Marrakech is where our journeys begin and end, before the road climbs into the High Atlas and drops towards the desert."
-                : `About ${facts.kmFromMarrakech} km from Marrakech as the crow flies. The road is longer: it winds over the High Atlas and along the valleys, which is a large part of the journey.`}
+                ? PT.marrakechText
+                : PT.distanceText.replace("{km}", String(facts.kmFromMarrakech))}
             </p>
-            <Coordinates lat={facts.lat} lng={facts.lng} name={place.name} />
+            <Coordinates lat={facts.lat} lng={facts.lng} name={place.name} PT={PT} />
           </div>
           <div className="flex lg:col-span-7">
             <RouteMap

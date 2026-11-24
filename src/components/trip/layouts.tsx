@@ -13,16 +13,17 @@ import {
   PlanPanel,
   PricingTable,
   SectionTitle,
-  T,
   TripHero,
   pad,
   tidyRoute,
   type TripCtx,
 } from "./parts";
+import { useTripT } from "@/i18n/useTripT";
 
 const gutter = "px-4 md:px-10";
 
 function More({ ctx }: { ctx: TripCtx }) {
+  const T = useTripT();
   if (!ctx.more.length) return null;
   return (
     <section className={`${gutter} pb-24 md:pb-32`}>
@@ -37,6 +38,7 @@ function More({ ctx }: { ctx: TripCtx }) {
 }
 
 function HeroFrame({ ctx, tall }: { ctx: TripCtx; tall: boolean }) {
+  const T = useTripT();
   const { trip } = ctx;
   const reduce = useReducedMotion();
   return (
@@ -76,6 +78,7 @@ function FactsStrip({ ctx }: { ctx: TripCtx }) {
 }
 
 function HighlightsBlock({ ctx }: { ctx: TripCtx }) {
+  const T = useTripT();
   if (!ctx.trip.keyStops.length) return null;
   return (
     <motion.section {...fadeUp} className={`${gutter} py-14 md:py-20`}>
@@ -92,6 +95,7 @@ function HighlightsBlock({ ctx }: { ctx: TripCtx }) {
 }
 
 function TailSections({ ctx }: { ctx: TripCtx }) {
+  const T = useTripT();
   const hasIncl = ctx.trip.included?.length || ctx.trip.excluded?.length;
   return (
     <>
@@ -128,6 +132,7 @@ function TailSections({ ctx }: { ctx: TripCtx }) {
 /* ------------------------------------------------------------------------------------------- */
 
 export function EditorialLayout({ ctx }: { ctx: TripCtx }) {
+  const T = useTripT();
   return (
     <div className="trip-page relative">
       <HeroFrame ctx={ctx} tall />
@@ -145,7 +150,7 @@ export function EditorialLayout({ ctx }: { ctx: TripCtx }) {
               >
                 <header className="md:col-span-4">
                   <Eyebrow>
-                    {T.day} {pad(d.day)}
+                    {T.dayN(pad(d.day))}
                   </Eyebrow>
                   {d.route && (
                     <h3 className="mt-2.5 text-[22px] font-semibold leading-[1.15] tracking-[-0.03em] text-ink md:text-[26px]">
@@ -171,6 +176,7 @@ export function EditorialLayout({ ctx }: { ctx: TripCtx }) {
 /* ------------------------------------------------------------------------------------------- */
 
 export function SplitLayout({ ctx }: { ctx: TripCtx }) {
+  const T = useTripT();
   const { trip, ui } = ctx;
   return (
     <div className="trip-page relative">
@@ -255,6 +261,7 @@ export function SplitLayout({ ctx }: { ctx: TripCtx }) {
 /* ------------------------------------------------------------------------------------------- */
 
 export function IndexLayout({ ctx }: { ctx: TripCtx }) {
+  const T = useTripT();
   const [open, setOpen] = useState<number | null>(1);
   return (
     <div className="trip-page relative">
@@ -279,7 +286,7 @@ export function IndexLayout({ ctx }: { ctx: TripCtx }) {
                   >
                     <span className="w-8 shrink-0 text-[13px] tabular-nums text-neutral-400">{pad(d.day)}</span>
                     <span className="min-w-0 flex-1 text-[19px] font-semibold leading-[1.2] tracking-[-0.025em] text-ink md:text-[22px]">
-                      {d.route ? tidyRoute(d.route) : `${T.day} ${d.day}`}
+                      {d.route ? tidyRoute(d.route) : T.dayN(d.day)}
                     </span>
                     <ChevronDown
                       size={20}
@@ -314,6 +321,7 @@ export function IndexLayout({ ctx }: { ctx: TripCtx }) {
 /* ------------------------------------------------------------------------------------------- */
 
 export function CinematicLayout({ ctx }: { ctx: TripCtx }) {
+  const T = useTripT();
   const [hover, setHover] = useState<number | null>(null);
   const active = hover === null ? [] : [hover];
   return (
@@ -345,7 +353,7 @@ export function CinematicLayout({ ctx }: { ctx: TripCtx }) {
               </span>
               <div className="relative p-6 text-white md:p-10">
                 <p className="eyebrow text-[11px] font-medium uppercase tracking-[0.16em] text-white/65">
-                  {T.day} {pad(d.day)}
+                  {T.dayN(pad(d.day))}
                 </p>
                 {d.route && (
                   <h3 className="mt-2 max-w-[28ch] text-[24px] font-semibold leading-[1.1] tracking-[-0.03em] md:text-[38px]">

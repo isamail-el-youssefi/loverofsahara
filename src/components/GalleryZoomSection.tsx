@@ -2,6 +2,8 @@ import { ZoomParallax, ParallaxImage } from "@/components/ui/zoom-parallax";
 import { ScrollHorizontal, type ScrollHorizontalItem } from "@/components/ui/motion-scroll-horizontal";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { ArrowDown, ArrowUpRight, Sparkles } from "lucide-react";
+import { useLanguage } from "@/i18n/LanguageProvider";
+import { PAGES } from "@/i18n/pages";
 import { OriginButton } from "./ui/origin-button";
 
 // Import local parallax layers provided by user
@@ -15,55 +17,59 @@ import skyLayerPhone from "../assets/parallex/backlayer-m.webp";
 import duneLayerPhone from "../assets/parallex/midlayer-m.webp";
 import womenLayerPhone from "../assets/parallex/frontlayer-m.webp";
 
-const galleryImages: ParallaxImage[] = [
+const buildGalleryImages = (alts: string[]): ParallaxImage[] => [
   {
     // [ Img 0 ] - Center hero image that expands to fill the full viewport (3-layer parallax)
     src: GALLERY_IMAGES.dunes,
-    alt: "Golden dunes of Erg Chegaga under a clear sky",
+    alt: alts[0] ?? "",
   },
   {
     // [ Img 1 ] - Top Right (wide)
     src: TRAVELER_IMAGES.group,
-    alt: "A group of travelers posing together on a mountain track",
+    alt: alts[1] ?? "",
   },
   {
     // [ Img 2 ] - Top Left (tall)
     src: TRAVELER_IMAGES.bigGroup,
-    alt: "A big group of travelers cheering in the dunes with their guide",
+    alt: alts[2] ?? "",
   },
   {
     // [ Img 3 ] - Middle Right
     src: TRAVELER_IMAGES.camels,
-    alt: "A traveler and camels on a dune under a deep blue sky",
+    alt: alts[3] ?? "",
   },
   {
     // [ Img 4 ] - Bottom Right
     src: TRAVELER_IMAGES.trio,
-    alt: "Two travelers and their guide in a blue robe on the dunes",
+    alt: alts[4] ?? "",
   },
   {
     // [ Img 5 ] - Bottom Left
     src: TRAVELER_IMAGES.picnic,
-    alt: "Travelers sharing a tagine picnic in the shade of an acacia",
+    alt: alts[5] ?? "",
   },
   {
     // [ Img 6 ] - Bottom Center-Right
     src: TRAVELER_IMAGES.camelCouple,
-    alt: "A couple standing with their camel in the sand",
+    alt: alts[6] ?? "",
   },
 ];
 
 // Phone gallery: horizontal scroll through guest photos; the final card is the same
 // 3-layer image as the desktop zoom-parallax centre and zooms to full screen with layer parallax.
-const phoneItems: ScrollHorizontalItem[] = [
-  { src: TRAVELER_IMAGES.bigGroup, alt: "A big group of travelers cheering in the dunes with their guide", label: "Our travelers", location: "Dunes of Erg Chegaga" },
-  { src: TRAVELER_IMAGES.picnic, alt: "Travelers sharing a tagine picnic in the shade of an acacia", label: "Desert picnic", location: "Tagine under the acacia" },
-  { src: TRAVELER_IMAGES.camelCouple, alt: "A couple standing with their camel in the sand", label: "Camel walk", location: "Sunset in the dunes" },
-  { src: TRAVELER_IMAGES.group, alt: "A group of travelers posing together on a mountain track", label: "On the trail", location: "Anti-Atlas tracks" },
+const buildPhoneItems = (p: { alt: string; label: string; location: string }[]): ScrollHorizontalItem[] => [
+  { src: TRAVELER_IMAGES.bigGroup, alt: p[0]?.alt ?? "", label: p[0]?.label ?? "", location: p[0]?.location ?? "" },
+  { src: TRAVELER_IMAGES.picnic, alt: p[1]?.alt ?? "", label: p[1]?.label ?? "", location: p[1]?.location ?? "" },
+  { src: TRAVELER_IMAGES.camelCouple, alt: p[2]?.alt ?? "", label: p[2]?.label ?? "", location: p[2]?.location ?? "" },
+  { src: TRAVELER_IMAGES.group, alt: p[3]?.alt ?? "", label: p[3]?.label ?? "", location: p[3]?.location ?? "" },
 ];
 
 export function GalleryZoomSection() {
   const isMobile = useIsMobile();
+  const { lang } = useLanguage();
+  const t = PAGES[lang].home.collage;
+  const galleryImages = buildGalleryImages(t.alts);
+  const phoneItems = buildPhoneItems(t.phone);
 
   return (
     <section data-st-01="parallax" className="relative w-full text-white pt-[var(--section-y)] bg-paper">
@@ -74,7 +80,7 @@ export function GalleryZoomSection() {
           data-scroll
           className="w-full lg:w-1/2 text-[32px] md:text-[64px] font-semibold tracking-[-0.05em] leading-[1.1] text-ink"
         >
-          Happy <span className="font-normal text-neutral-400">travelers.</span>
+          {t.h2a} <span className="font-normal text-neutral-400">{t.h2b}</span>
         </h2>
 
         <div className="w-full lg:w-1/2 flex justify-between lg:items-end gap-4 lg:text-right">
@@ -83,7 +89,7 @@ export function GalleryZoomSection() {
             href="#reviews"
             className="h-10 rounded-[10px] border-neutral-300 px-5 text-sm font-medium text-neutral-900"
           >
-            Read the reviews <ArrowUpRight size={16} />
+            {t.button} <ArrowUpRight size={16} />
           </OriginButton>
         </div>
       </div>

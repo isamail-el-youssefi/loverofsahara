@@ -1,28 +1,20 @@
 import { useState } from "react";
 import { Star } from "lucide-react";
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog";
-import { LANGUAGE_NAMES, formatReviewDate, type Review, type ReviewSummary } from "@/lib/reviews";
+import { useLanguage } from "@/i18n/LanguageProvider";
+import { fill } from "@/i18n/reviewStrings";
+import { useReviewT } from "@/i18n/useReviewT";
+import { formatReviewDate, type Review, type ReviewSummary } from "@/lib/reviews";
 
-/** Labels that only exist in the reviews section (English for now, like the rest of the trip page labels). */
-export const RT = {
-  eyebrow: "Reviews",
-  title: "What travellers say",
-  add: "Add a review",
-  basedOn: (n: number) => `Based on ${n} ${n === 1 ? "review" : "reviews"}`,
-  emptyTitle: "No reviews yet",
-  emptyLead: "Been on this journey? Tell the next traveller what it was really like.",
-  firstLine: "Be the first to tell this story.",
-  original: (lang: Review["lang"]) => `Original review · ${LANGUAGE_NAMES[lang]}`,
-  reply: "Reply from Lover of Sahara",
-  readMore: "Read more",
-  readLess: "Show less",
-} as const;
+/** BCP 47 tag used to write dates in the page language. */
+export const dateLocale = (lang: string) => (lang === "zh" ? "zh-CN" : lang === "en" ? "en-GB" : lang);
 
 /** Star rating (display). Filled stars use the brand colour. */
 export function Stars({ value, size = 16, className = "" }: { value: number; size?: number; className?: string }) {
+  const RT = useReviewT();
   const filled = Math.round(value);
   return (
-    <span className={`inline-flex items-center gap-0.5 ${className}`} role="img" aria-label={`${value} out of 5 stars`}>
+    <span className={`inline-flex items-center gap-0.5 ${className}`} role="img" aria-label={fill(RT.outOf, { v: value })}>
       {[1, 2, 3, 4, 5].map((n) => (
         <Star
           key={n}
@@ -48,6 +40,7 @@ export function ReviewText({
   className?: string;
   dark?: boolean;
 }) {
+  const RT = useReviewT();
   const [open, setOpen] = useState(false);
   const long = text.length > 280;
   const clamp = !open && long ? { WebkitLineClamp: lines } : undefined;
@@ -80,6 +73,7 @@ const sized = (url: string, w: number) => (url.includes("imagekit.io") && !url.i
 
 /** Small photo thumbnails that open larger in a lightbox. */
 export function PhotoStrip({ photos, name, className = "" }: { photos: string[]; name: string; className?: string }) {
+  const RT = useReviewT();
   const [shown, setShown] = useState<string | null>(null);
   if (!photos.length) return null;
   return (
@@ -90,7 +84,7 @@ export function PhotoStrip({ photos, name, className = "" }: { photos: string[];
             <button
               type="button"
               onClick={() => setShown(p)}
-              aria-label={`Open photo ${i + 1} from ${name}'s review`}
+              aria-label={`${name} · ${i + 1}`}
               className="block h-16 w-20 overflow-hidden rounded-lg bg-ink/[0.06] outline-none ring-offset-2 transition-transform hover:scale-[1.04] focus-visible:ring-2 focus-visible:ring-ink/50 md:h-[72px] md:w-24"
             >
               <img src={sized(p, 240)} alt="" loading="lazy" draggable={false} className="h-full w-full object-cover" />
@@ -100,10 +94,10 @@ export function PhotoStrip({ photos, name, className = "" }: { photos: string[];
       </ul>
       <Dialog open={shown !== null} onOpenChange={(o) => !o && setShown(null)}>
         <DialogContent className="max-w-[min(92vw,1100px)] border-0 bg-transparent p-0 shadow-none sm:rounded-2xl">
-          <DialogTitle className="sr-only">Photo from {name}&apos;s review</DialogTitle>
-          <DialogDescription className="sr-only">Enlarged review photo</DialogDescription>
+          <DialogTitle className="sr-only">{name}</DialogTitle>
+          <DialogDescription className="sr-only">{RT.enlarged}</DialogDescription>
           {shown && (
-            <img src={sized(shown, 1800)} alt={`Photo from ${name}'s review`} className="max-h-[86dvh] w-full rounded-2xl object-contain" />
+            <img src={sized(shown, 1800)} alt={name} className="max-h-[86dvh] w-full rounded-2xl object-contain" />
           )}
         </DialogContent>
       </Dialog>
@@ -113,11 +107,13 @@ export function PhotoStrip({ photos, name, className = "" }: { photos: string[];
 
 /** The owner's public answer to a review. */
 export function ReplyBlock({ reply, dark = false, className = "" }: { reply: NonNullable<Review["reply"]>; dark?: boolean; className?: string }) {
+  const RT = useReviewT();
+  const { lang } = useLanguage();
   return (
     <div className={`border-l-2 pl-4 ${dark ? "border-white/25" : "border-brand/50"} ${className}`}>
       <p className={`text-[12px] font-medium uppercase tracking-[0.12em] ${dark ? "text-white/55" : "text-ink/50"}`}>
         {RT.reply}
-        {reply.date ? ` · ${formatReviewDate(reply.date)}` : ""}
+        {reply.date ? ` · ${formatReviewDate(reply.date, dateLocale(lang))}` : ""}
       </p>
       <p className={`mt-1.5 whitespace-pre-line text-[14.5px] leading-[1.65] ${dark ? "text-white/75" : "text-ink/75"}`}>{reply.text}</p>
     </div>
@@ -126,6 +122,7 @@ export function ReplyBlock({ reply, dark = false, className = "" }: { reply: Non
 
 /** Big average, stars, and a bar per star count. */
 export function RatingSummary({ summary, className = "" }: { summary: ReviewSummary; className?: string }) {
+  const RT = useReviewT();
   const max = Math.max(1, ...summary.perStar);
   return (
     <div className={className}>
@@ -135,10 +132,10 @@ export function RatingSummary({ summary, className = "" }: { summary: ReviewSumm
         </span>
         <div className="pb-2">
           <Stars value={summary.average} size={18} />
-          <p className="mt-1.5 text-[13px] text-ink/60">{RT.basedOn(summary.count)}</p>
+          <p className="mt-1.5 text-[13px] text-ink/60">{fill(RT.basedOn[summary.count === 1 ? 0 : 1], { n: summary.count })}</p>
         </div>
       </div>
-      <ul className="mt-6 flex flex-col gap-2" aria-label="Ratings breakdown">
+      <ul className="mt-6 flex flex-col gap-2" aria-label={RT.breakdown}>
         {[5, 4, 3, 2, 1].map((n) => {
           const count = summary.perStar[n - 1] ?? 0;
           return (

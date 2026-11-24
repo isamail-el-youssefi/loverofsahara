@@ -6,6 +6,8 @@ import { LANGUAGES } from "@/i18n/languages";
 import { useLanguage } from "@/i18n/LanguageProvider";
 import { localePath } from "@/lib/routes";
 import { cn } from "@/lib/utils";
+import { PAGES } from "@/i18n/pages";
+import { useTripT } from "@/i18n/useTripT";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
@@ -16,7 +18,7 @@ function useMenuItems() {
   return [
     { label: ui.navTrips, href: localePath(lang, "/trips") },
     { label: about!, href: localePath(lang, "/about") },
-    { label: "Sahara Stories", href: localePath(lang, "/blog") },
+    { label: PAGES[lang].blog.name, href: localePath(lang, "/blog") },
     { label: ui.navBrochures, href: localePath(lang, "/brochures") },
     { label: ui.navGallery, href: localePath(lang, "/gallery") },
     { label: contact!, href: localePath(lang, "/contact") },
@@ -25,6 +27,7 @@ function useMenuItems() {
 
 /** Burger button (phones and tablets) that opens the menu sheet. */
 export function MobileMenu({ light = false }: { light?: boolean }) {
+  const T = useTripT();
   const [open, setOpen] = useState(false);
   const tone = light
     ? "border-black/15 bg-black/[0.04] text-ink hover:bg-black/[0.08]"
@@ -33,7 +36,7 @@ export function MobileMenu({ light = false }: { light?: boolean }) {
     <>
       <button
         type="button"
-        aria-label="Open menu"
+        aria-label={T.openMenu}
         aria-expanded={open}
         onClick={() => setOpen(true)}
         className={`flex size-11 shrink-0 items-center justify-center rounded-full border shadow-[inset_0_1px_1px_rgba(255,255,255,0.25)] outline-none backdrop-blur-md transition-colors focus-visible:ring-2 focus-visible:ring-white/70 lg:hidden ${tone}`}
@@ -49,6 +52,7 @@ export function MobileMenu({ light = false }: { light?: boolean }) {
 }
 
 function MenuOverlay({ onClose }: { onClose: () => void }) {
+  const T = useTripT();
   const reduce = useReducedMotion();
   const items = useMenuItems();
   const { lang, setLang } = useLanguage();
@@ -70,7 +74,7 @@ function MenuOverlay({ onClose }: { onClose: () => void }) {
       ref={closeRef}
       type="button"
       onClick={onClose}
-      aria-label="Close menu"
+      aria-label={T.closeMenu}
       className="flex size-11 items-center justify-center rounded-full border border-ink/20 outline-none transition-colors hover:bg-ink hover:text-paper focus-visible:ring-2 focus-visible:ring-current"
     >
       <X size={20} />
@@ -78,7 +82,7 @@ function MenuOverlay({ onClose }: { onClose: () => void }) {
   );
 
   const langs = (
-    <div role="radiogroup" aria-label="Language" className="flex flex-wrap gap-1.5">
+    <div role="radiogroup" aria-label={T.languageLabel} className="flex flex-wrap gap-1.5">
       {LANGUAGES.map((l) => {
         const on = l.code === lang;
         return (
@@ -108,7 +112,7 @@ function MenuOverlay({ onClose }: { onClose: () => void }) {
       onClick={onClose}
       className="inline-flex h-[48px] w-full items-center justify-center rounded-[10px] bg-ink px-7 text-sm font-semibold text-paper transition-all duration-100 ease-out hover:bg-ink/85 active:scale-[0.98]"
     >
-      Book Tour
+      {T.bookTour}
     </a>
   );
 
@@ -142,7 +146,7 @@ function MenuOverlay({ onClose }: { onClose: () => void }) {
       <motion.div
         role="dialog"
         aria-modal="true"
-        aria-label="Menu"
+        aria-label={T.menu}
         data-lenis-prevent
         className="fixed inset-x-[4px] bottom-0 z-[200] max-h-[100dvh] overflow-y-auto rounded-t-2xl bg-paper px-5 pb-[max(1.25rem,env(safe-area-inset-bottom))] pt-3 text-ink shadow-[0_-30px_80px_-30px_rgba(0,0,0,0.5)]"
         {...sheetMotion}
@@ -151,7 +155,7 @@ function MenuOverlay({ onClose }: { onClose: () => void }) {
           <span aria-hidden className="ml-1 h-1 w-10 rounded-full bg-ink/20" />
           {closeBtn}
         </div>
-        <nav aria-label="Menu">
+        <nav aria-label={T.menu}>
           <ul className="grid grid-cols-2 gap-[6px]">
             {items.map((l, i) => (
               <motion.li key={l.href} {...rise(i)}>

@@ -117,7 +117,7 @@ export function ZoomParallax({
 
   return (
     <div ref={container} className="relative h-[380vh] w-full">
-      <div ref={stageRef} className="sticky top-0 h-screen w-full overflow-hidden  ">
+      <div ref={stageRef} className="sticky top-0 h-dvh w-full overflow-hidden  ">
         {images.map(({ src, alt }, index) => {
           const isCenterImage = index === 0;
           const scale = scales[index % scales.length];

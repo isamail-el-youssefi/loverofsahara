@@ -18,7 +18,7 @@ export function AboutPortrait() {
         data-st-01="parallax"
         data-st-y="300"
         data-st-opacity="0.3"
-        className="min-h-screen bg-paper p-[4px]"
+        className="min-h-dvh bg-paper p-[4px]"
       >
         <div className="relative flex min-h-[calc(100dvh-8px)] flex-col overflow-hidden rounded-lg bg-ink-deep px-6 pb-10 pt-32 text-white md:px-12 md:pb-14 md:pt-40">
           <Navbar />

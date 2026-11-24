@@ -54,7 +54,7 @@ export function ParallaxComponent({
       className={`relative h-[130vh] sm:h-[150vh] w-full overflow-hidden bg-neutral-950 text-white ${className}`}
     >
       {/* Sticky Parallax Viewport */}
-      <div className="sticky top-0 h-screen w-full overflow-hidden flex items-center justify-center">
+      <div className="sticky top-0 h-dvh w-full overflow-hidden flex items-center justify-center">
         {/* Layer 1 (Deepest Background - Sky & Distant Dunes) */}
         <motion.div
           style={{ y: yLayer1, opacity: opacityFade }}

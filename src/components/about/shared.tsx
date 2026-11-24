@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useId, useState } from "react";
 import { motion } from "framer-motion";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Plus } from "lucide-react";
 import { GoogleReviewsBadge } from "@/components/footer/GoogleReviewsBadge";
 import { fadeUp } from "@/lib/animations";
@@ -26,38 +27,63 @@ export function Portrait({ className, alt }: { className?: string; alt?: string 
   );
 }
 
-/** Accessible accordion on native <details>, one question open at a time. */
+/**
+ * Accordion, one question open at a time. The answer's height animates with a CSS grid-row transition
+ * (0fr to 1fr), so the answer that closes and the one that opens slide together and the questions below
+ * glide instead of jumping. Each question is a real button (aria-expanded / aria-controls).
+ */
 export function Faq({ tone = "light" }: { tone?: "light" | "dark" }) {
   const { FAQ } = useAboutContent();
+  const baseId = useId();
   const [open, setOpen] = useState<number | null>(0);
   const dark = tone === "dark";
   return (
     <div className={cn("border-b", dark ? "border-white/15" : "border-ink/10")}>
       {FAQ.map((f, i) => {
         const isOpen = open === i;
+        const panelId = `${baseId}-panel-${i}`;
         return (
-          <details
-            key={f.q}
-            open={isOpen}
-            onToggle={(e) => {
-              const el = e.currentTarget;
-              if (el.open && open !== i) setOpen(i);
-              if (!el.open && open === i) setOpen(null);
-            }}
-            className={cn("group border-t", dark ? "border-white/15" : "border-ink/10")}
-          >
-            <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5 text-[18px] font-semibold tracking-[-0.02em] outline-none marker:hidden focus-visible:ring-2 focus-visible:ring-current md:py-6 md:text-[21px] [&::-webkit-details-marker]:hidden">
-              {f.q}
-              <Plus
-                size={20}
-                aria-hidden
-                className="shrink-0 transition-transform duration-300 group-open:rotate-45"
-              />
-            </summary>
-            <p className={cn("max-w-[44rem] pb-6 text-[15.5px] leading-[1.65]", dark ? "text-white/70" : "text-ink/75")}>
-              {f.a}
-            </p>
-          </details>
+          <div key={f.q} className={cn("border-t", dark ? "border-white/15" : "border-ink/10")}>
+            <h3>
+              <button
+                type="button"
+                aria-expanded={isOpen}
+                aria-controls={panelId}
+                onClick={() => setOpen(isOpen ? null : i)}
+                style={{ WebkitTapHighlightColor: "transparent" }}
+                className="flex w-full cursor-pointer items-center justify-between gap-6 py-5 text-left text-[18px] font-semibold tracking-[-0.02em] outline-none focus-visible:ring-2 focus-visible:ring-current md:py-6 md:text-[21px]"
+              >
+                {f.q}
+                <Plus
+                  size={20}
+                  aria-hidden
+                  className={cn(
+                    "shrink-0 transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] motion-reduce:duration-150",
+                    isOpen && "rotate-45",
+                  )}
+                />
+              </button>
+            </h3>
+            <div
+              id={panelId}
+              role="region"
+              aria-hidden={!isOpen}
+              onTransitionEnd={(e) => {
+                // Heights changed: let the scroll-driven section effects re-measure once the slide has finished
+                if (e.target === e.currentTarget && e.propertyName === "grid-template-rows") ScrollTrigger.refresh();
+              }}
+              className={cn(
+                "grid transition-[grid-template-rows,opacity] duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] motion-reduce:duration-150",
+                isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0",
+              )}
+            >
+              <div className="min-h-0 overflow-hidden">
+                <p className={cn("max-w-[44rem] pb-6 text-[15.5px] leading-[1.65]", dark ? "text-white/70" : "text-ink/75")}>
+                  {f.a}
+                </p>
+              </div>
+            </div>
+          </div>
         );
       })}
     </div>

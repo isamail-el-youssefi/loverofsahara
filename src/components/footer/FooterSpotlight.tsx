@@ -8,6 +8,7 @@ import { GOOGLE_REVIEWS } from "./data";
 import { useFooterCols } from "./useFooterCols";
 import { GoogleLogo, Stars } from "./GoogleReviewsBadge";
 import { FooterQuickLinks } from "./FooterQuickLinks";
+import { FooterExplore } from "./FooterExplore";
 
 /** Profile links come from the contact details (one place to edit). Google uses GOOGLE_REVIEWS.url. */
 const SOCIALS = [
@@ -17,14 +18,15 @@ const SOCIALS = [
 ];
 
 /** Dark framed band led by the Google rating: huge "5.0", logo, stars, and a button to read the reviews. */
-export function FooterSpotlight() {
+export function FooterSpotlight({ roundedTop = false }: { roundedTop?: boolean }) {
   const footerCols = useFooterCols();
   const { site } = useLanguage();
   const { rating, count, url } = GOOGLE_REVIEWS;
   const external = url.startsWith("http");
   return (
-    <div className="h-[100dvh] w-full px-[4px] pb-[4px]">
-      <footer className="flex flex-col justify-between h-full overflow-hidden rounded-b-2xl bg-ink-deep px-6 py-6 text-white md:px-12 md:py-[clamp(1.5rem,5vh,3.5rem)] lg:px-16">
+    // Exactly one screen tall (padding included). With roundedTop it has the same 4px frame as the hero sections, top included.
+    <div className={`ftr-box h-[100dvh] w-full px-[4px] pb-[4px] ${roundedTop ? "pt-[4px]" : ""}`}>
+      <footer className={`flex flex-col justify-between h-full overflow-hidden ${roundedTop ? "rounded-2xl" : "rounded-b-2xl"} bg-ink-deep px-6 py-6 text-white md:px-12 md:py-[clamp(1.5rem,5vh,3.5rem)] lg:px-16`}>
         <motion.div {...fadeUp} className="grid gap-6 border-b border-white/15 pb-6 md:gap-14 md:pb-14 lg:grid-cols-12 lg:gap-16 lg:pb-[clamp(1.5rem,5vh,3.5rem)]">
           <div className="lg:col-span-5">
             <div className="flex items-center gap-3">
@@ -49,7 +51,10 @@ export function FooterSpotlight() {
             </a>
           </div>
 
-          <FooterQuickLinks tone="dark" className="md:hidden" />
+          <div className="md:hidden">
+            <FooterQuickLinks tone="dark" />
+            <FooterExplore />
+          </div>
 
           <div className="hidden grid-cols-2 gap-x-8 gap-y-10 md:grid lg:col-span-7">
             {footerCols.slice(0, 4).map((col) => (

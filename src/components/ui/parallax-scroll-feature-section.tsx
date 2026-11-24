@@ -100,7 +100,7 @@ function DestinationSectionItem({ section }: { section: DestinationItemData }) {
       ref={targetRef}
       // Phone: each card is its own parallax layer, like the page sections (it stays put and darkens while the next card slides over it).
       {...(isMobile ? { "data-st-01": "parallax", "data-st-y": "250", "data-st-opacity": "0.15" } : {})}
-      className="relative min-h-[110dvh] bg-paper pb-4 pt-[12dvh] sm:min-h-0 sm:py-8 md:py-24 lg:py-28"
+      className="relative min-h-[110dvh] bg-paper px-4 pb-4 pt-[12dvh] sm:min-h-0 sm:py-8 md:px-0 md:py-24 lg:py-28"
     >
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-14 xl:gap-20 items-center">
         {/* Content description column - structured 5 cols with Apple typographic rhythm */}
@@ -197,10 +197,11 @@ export const ParallaxScrollFeatureSection = ({
       data-st-01="parallax"
       data-st-y="250"
       data-st-opacity="0.15"
-      className="px-4 py-[var(--section-y)] md:px-10 bg-paper"
+      // No side padding on phones: each card is a full-width parallax layer, so the padding lives on the header and inside each card.
+      className="py-[var(--section-y)] md:px-10 bg-paper"
     >
       {/* Section Header matching website typography & layout */}
-      <div className="flex flex-col lg:flex-row items-end gap-6 w-full ">
+      <div className="flex flex-col lg:flex-row items-end gap-6 w-full max-md:px-4">
         <div className="w-full lg:w-3/5">
 
           <h2

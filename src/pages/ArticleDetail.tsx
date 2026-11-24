@@ -27,9 +27,9 @@ export function ArticleDetail({ id }: { id: number | null }) {
     articles[(currentIndex + 1) % articles.length] || articles[0];
 
   return (
-    <div className="min-h-screen bg-paper">
+    <div className="min-h-dvh bg-paper">
       {/* Hero Section - 90vh (Preserving user modifications) */}
-      <div className="h-[90vh] p-[4px]">
+      <div className="h-[90dvh] p-[4px]">
         <section className="relative flex h-full flex-col justify-end overflow-hidden rounded-2xl p-6 md:p-10">
           <img
             src={article.img}

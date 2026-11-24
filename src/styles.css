@@ -286,6 +286,7 @@ main {
 section {
   position: relative;
   min-height: 100vh;
+  min-height: 100dvh;
   z-index: 1;
 }
 
@@ -747,3 +748,10 @@ html.theme-switching *::after {
   max-width: none;
   object-fit: cover;
 }
+
+/* Phone footer: it is exactly one screen tall, so each extra group only appears when the footer has room for it. */
+.ftr-box { container-type: size; container-name: ftr; }
+.ftr-t1, .ftr-t2, .ftr-t3 { display: none; }
+@container ftr (min-height: 720px) { .ftr-t1 { display: flex; } }
+@container ftr (min-height: 780px) { .ftr-t2 { display: flex; } }
+@container ftr (min-height: 820px) { .ftr-t3 { display: flex; } }

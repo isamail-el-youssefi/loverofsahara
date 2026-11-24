@@ -108,7 +108,7 @@ export function SectionTabs({ items, showAfter }: { items: TabItem[]; /** Id of 
         <motion.div
           ref={track}
           style={{ opacity: labels, visibility: labelVisibility }}
-          className="flex w-full items-center gap-1 overflow-x-auto p-1.5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+          className="flex w-full items-center gap-1 overflow-x-auto p-1.5 max-md:p-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
         >
         {items.map((it) => {
           const on = it.id === active;
@@ -119,7 +119,7 @@ export function SectionTabs({ items, showAfter }: { items: TabItem[]; /** Id of 
               data-tab={it.id}
               aria-current={on ? "true" : undefined}
               onClick={() => go(it.id)}
-              className={`shrink-0 rounded-full px-5 py-3 text-[15px] font-medium transition-colors duration-300 outline-none focus-visible:ring-2 focus-visible:ring-white/70 ${
+              className={`shrink-0 rounded-full px-5 py-3 text-[15px] font-medium max-md:px-4 max-md:py-2 max-md:text-[14px] transition-colors duration-300 outline-none focus-visible:ring-2 focus-visible:ring-white/70 ${
                 on ? "bg-paper text-ink" : "text-white/70 hover:bg-white/10 hover:text-white"
               }`}
             >

@@ -44,7 +44,7 @@ export function TripDetail({ slug }: { slug: string }) {
 
   if (!trip) {
     return (
-      <div className="relative flex min-h-screen items-center justify-center px-6">
+      <div className="relative flex min-h-dvh items-center justify-center px-6">
         <Navbar theme="light" />
         <p className="text-neutral-500">{status === "loading" ? "Loading" : "We could not find that trip."}</p>
       </div>

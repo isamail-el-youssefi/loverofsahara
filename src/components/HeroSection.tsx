@@ -14,7 +14,7 @@ export function HeroSection() {
       data-st-01="parallax"
       data-st-y="300"
       data-st-opacity="0.3"
-      className="h-screen p-[4px] bg-paper"
+      className="h-dvh p-[4px] bg-paper"
     >
       <div className="hero-frame relative flex h-full flex-col items-start justify-end overflow-hidden rounded-lg p-6 pb-12 md:p-12 md:pb-16">
         <video

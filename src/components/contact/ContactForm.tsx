@@ -67,7 +67,7 @@ ${buildMessage(f, t)}`);
   };
 
   const item =
-    "flex w-full items-center justify-between rounded-xl px-3 py-2 text-left text-[13.5px] font-medium text-ink transition-colors hover:bg-ink/[0.05]";
+    "flex w-full items-center justify-between rounded-xl px-3 py-2 max-md:py-3 text-left text-[13.5px] font-medium text-ink transition-colors hover:bg-ink/[0.05]";
 
   const err = (k: keyof RequestFields) =>
     errors[k] ? (
@@ -124,7 +124,7 @@ ${buildMessage(f, t)}`);
         <button
           type="button"
           onClick={() => send("whatsapp")}
-          className="inline-flex h-[46px] flex-1 items-center justify-center gap-2 rounded-[10px] bg-ink px-6 text-sm font-semibold text-paper transition-all duration-100 ease-out hover:bg-ink/85 active:scale-[0.98]"
+          className="inline-flex h-[46px] max-md:h-14 sm:flex-1 items-center justify-center gap-2 rounded-[10px] bg-ink px-6 text-sm max-md:text-base font-semibold text-paper transition-all duration-100 ease-out hover:bg-ink/85 active:scale-[0.98]"
         >
           <MessageCircle size={17} aria-hidden /> {t.whatsapp}
         </button>
@@ -135,7 +135,7 @@ ${buildMessage(f, t)}`);
               onClick={() => send("email")}
               aria-haspopup="menu"
               aria-expanded={mailOpen}
-              className="inline-flex h-[46px] flex-1 items-center justify-center gap-2 rounded-[10px] border border-ink px-6 text-sm font-semibold text-ink transition-all duration-100 ease-out hover:bg-ink/[0.06] active:scale-[0.98]"
+              className="inline-flex h-[46px] max-md:h-14 sm:flex-1 items-center justify-center gap-2 rounded-[10px] border border-ink px-6 text-sm max-md:text-base font-semibold text-ink transition-all duration-100 ease-out hover:bg-ink/[0.06] active:scale-[0.98]"
             >
               <Mail size={17} aria-hidden /> {t.emailBtn}
               <ChevronDown size={14} className="text-neutral-400" aria-hidden />

@@ -9,6 +9,11 @@ import { GALLERY_IMAGES, TRAVELER_IMAGES } from "@/data/siteImages";
 import skyLayer from "../assets/parallex/backlayer.png";
 import duneLayer from "../assets/parallex/midlayer.png";
 import womenLayer from "../assets/parallex/frontlayer.png";
+// Phones get 1500px WebP copies of the same layers: the 2400px PNGs (about 15MB each once decoded) overflow
+// the phone GPU's tile memory during the final zoom, which shows up as white squares flashing in and out.
+import skyLayerPhone from "../assets/parallex/backlayer-m.webp";
+import duneLayerPhone from "../assets/parallex/midlayer-m.webp";
+import womenLayerPhone from "../assets/parallex/frontlayer-m.webp";
 
 const galleryImages: ParallaxImage[] = [
   {
@@ -87,7 +92,7 @@ export function GalleryZoomSection() {
       {isMobile ? (
         <ScrollHorizontal
           items={phoneItems}
-          layers={{ sky: skyLayer, dune: duneLayer, front: womenLayer }}
+          layers={{ sky: skyLayerPhone, dune: duneLayerPhone, front: womenLayerPhone }}
         />
       ) : (
         <ZoomParallax

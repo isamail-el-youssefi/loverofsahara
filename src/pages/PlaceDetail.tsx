@@ -209,7 +209,7 @@ export function PlaceDetail({ id }: { id: string }) {
 
   if (!facts) {
     return (
-      <div className="relative flex min-h-screen items-center justify-center px-6">
+      <div className="relative flex min-h-dvh items-center justify-center px-6">
         <Navbar theme="light" />
         <p className="text-neutral-500">{status === "loading" ? "Loading" : "We could not find that place."}</p>
       </div>
@@ -258,7 +258,7 @@ export function PlaceDetail({ id }: { id: string }) {
         data-st-01="parallax"
         data-st-y="300"
         data-st-opacity="0.3"
-        className="h-screen bg-paper p-[4px]"
+        className="h-dvh bg-paper p-[4px]"
       >
         <div className="relative flex h-full flex-col items-start justify-end overflow-hidden rounded-lg bg-ink-deep p-6 pb-12 text-left md:p-12 md:pb-16">
           <img
@@ -398,7 +398,7 @@ export function PlaceDetail({ id }: { id: string }) {
                       <GalleryPhoto key={p} path={p} className="h-96 object-cover" />
                     ))}
                   </div>
-                  <div className="sticky top-0 col-span-4 grid h-screen grid-rows-3 gap-[6px] self-start">
+                  <div className="sticky top-0 col-span-4 grid h-dvh grid-rows-3 gap-[6px] self-start">
                     {colMid.map((p) => (
                       <figure key={p} className="h-full w-full overflow-hidden rounded-md">
                         <Photo path={p} w={900} className="block h-full w-full object-cover align-bottom" />

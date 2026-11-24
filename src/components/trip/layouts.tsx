@@ -40,7 +40,7 @@ function HeroFrame({ ctx, tall }: { ctx: TripCtx; tall: boolean }) {
   const { trip } = ctx;
   const reduce = useReducedMotion();
   return (
-    <section data-hero-section className={`${tall ? "h-[92vh]" : "h-[68vh]"} min-h-[520px] bg-paper p-[4px]`}>
+    <section data-hero-section className={`${tall ? "h-[92dvh]" : "h-[68dvh]"} min-h-[520px] bg-paper p-[4px]`}>
       <div className="relative flex h-full flex-col justify-end overflow-hidden rounded-2xl bg-ink-deep p-6 pb-9 md:p-12 md:pb-12">
         <TripHero ctx={ctx} className="absolute inset-0 h-full w-full object-cover object-[50%_72%]" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/5 to-black/25" />

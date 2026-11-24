@@ -8,6 +8,7 @@ import { sectionTransition01 } from "@/lib/sectionTransition01";
 import { ScrollContainerContext } from "@/lib/scrollContainer";
 import { canonicalPath, localePath, parseRoute, routeKey, localizedRouteLang } from "@/lib/routes";
 import { useLanguage } from "@/i18n/LanguageProvider";
+import { useIsMobile } from "@/hooks/use-mobile";
 import { usePageSeo } from "@/lib/seo";
 import { homeSeo } from "@/lib/seoData";
 import { HeroSection } from "@/components/HeroSection";
@@ -62,6 +63,7 @@ const JUMP = { offset: -20, duration: 1.1, easing: (t: number) => 1 - Math.pow(1
 function Page({ children, animated, ready, activeLenis, footer }: PageProps) {
   const isPresent = useIsPresent();
   const reduce = useReducedMotion();
+  const isMobile = useIsMobile();
   const scrollRef = useRef<HTMLElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
 
@@ -127,14 +129,17 @@ function Page({ children, animated, ready, activeLenis, footer }: PageProps) {
   return (
     <motion.main
       ref={scrollRef}
+      // Phones: no page transition. The new page is simply there (no slide / clip reveal) and the old one is removed at once.
       initial={
-        reduce
-          ? { opacity: 0 }
-          : { y: Math.round(window.innerHeight / 2), clipPath: "inset(70% 0% 0% 0%)" }
+        isMobile
+          ? false
+          : reduce
+            ? { opacity: 0 }
+            : { y: Math.round(window.innerHeight / 2), clipPath: "inset(70% 0% 0% 0%)" }
       }
-      animate={{ y: 0, scale: 1, opacity: 1, clipPath: "inset(0% 0% 0% 0%)" }}
-      exit={reduce ? { opacity: 0 } : { y: -160, scale: 0.95, opacity: 0.5 }}
-      transition={reduce ? { duration: 0.2 } : TRANSITION}
+      animate={isMobile ? { opacity: 1 } : { y: 0, scale: 1, opacity: 1, clipPath: "inset(0% 0% 0% 0%)" }}
+      {...(isMobile ? {} : { exit: reduce ? { opacity: 0 } : { y: -160, scale: 0.95, opacity: 0.5 } })}
+      transition={isMobile ? { duration: 0 } : reduce ? { duration: 0.2 } : TRANSITION}
       onAnimationComplete={() => ScrollTrigger.refresh()}
       style={{ zIndex: isPresent ? 2 : 1, pointerEvents: isPresent ? "auto" : "none" }}
       className="col-start-1 row-start-1 h-[100dvh] overflow-y-auto overflow-x-hidden bg-paper text-ink antialiased"

@@ -7,6 +7,7 @@ import { isLang, type Lang } from "@/i18n/languages";
 import { usePageSeo } from "@/lib/seo";
 import { brochureReaderSeo } from "@/lib/seoData";
 import { cn } from "@/lib/utils";
+import { useThemeColor } from "@/hooks/use-theme-color";
 import { LanguageChips, PdfLink, useBrochureLang } from "@/components/brochures/shared";
 import { FlipBook, indexOfPage, pageAt, positions } from "@/components/brochures/reader/FlipBook";
 import { ScrollReader } from "@/components/brochures/reader/ScrollReader";
@@ -28,6 +29,8 @@ const pill =
 
 /** Reads one brochure inside the site: an openable book, or an immersive scroll. */
 export function BrochureReader({ slug, lang }: { slug: string; lang?: string | undefined }) {
+  // The reader is dark (ink-deep, amber-walnut): tint the phone's status / address bar to match.
+  useThemeColor("#2F2824");
   const brochure = BROCHURES.find((b) => b.slug === slug);
   const urlLang = isLang(lang) ? lang : undefined;
   usePageSeo(brochureReaderSeo(slug, urlLang));

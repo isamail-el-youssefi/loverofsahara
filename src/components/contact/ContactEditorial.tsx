@@ -16,7 +16,7 @@ export function ContactEditorial() {
   const { site } = useLanguage();
   return (
     <div className="trip-page relative">
-      <section data-hero-section data-st-01="parallax" data-st-y="300" data-st-opacity="0.3" className="h-screen bg-paper p-[4px]">
+      <section data-hero-section data-st-01="parallax" data-st-y="300" data-st-opacity="0.3" className="h-dvh bg-paper p-[4px]">
         <div className="relative flex h-full flex-col items-start justify-end overflow-hidden rounded-lg bg-ink-deep p-6 pb-12 text-left md:p-12 md:pb-16">
           <img src={CONTACT_HERO} alt="" fetchPriority="high" className="absolute inset-0 h-full w-full object-cover object-[50%_60%]" />
           <div className="absolute inset-0 bg-black/30" />

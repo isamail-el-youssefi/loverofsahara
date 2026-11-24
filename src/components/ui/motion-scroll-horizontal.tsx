@@ -224,7 +224,8 @@ export function ScrollHorizontal({
             className="absolute left-1/2 top-1/2 m-0 overflow-hidden bg-ink-deep"
           >
             {/* Oversized stack so edges never show while layers translate */}
-            <div className="absolute -top-[30%] -left-[10%] h-[160%] w-[120%]">
+            {/* Full width (layers never move sideways) and 150% tall: the biggest travel is the foreground's -15%, which needs 22.5% spare. Smaller boxes mean less GPU memory. */}
+            <div className="absolute -top-[25%] left-0 h-[150%] w-full">
               <motion.div
                 style={{ y: reduce ? 0 : yLayer1 }}
                 className="pointer-events-none absolute inset-0 will-change-transform"

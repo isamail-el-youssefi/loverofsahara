@@ -7,6 +7,7 @@ import { AnimatedTabs } from "@/components/ui/animated-tabs";
 import { DEPARTURE_CITIES, TRIP_CATEGORIES, cityLabel, countByCategory, type TripCategory } from "@/data/trips";
 import { getAllReviews } from "@/data/reviews";
 import { useTrips } from "@/hooks/use-trips";
+import { useIsMobile } from "@/hooks/use-mobile";
 import { useLanguage } from "@/i18n/LanguageProvider";
 import { fadeUp } from "@/lib/animations";
 import { fetchAllReviews, type Review } from "@/lib/reviews";
@@ -17,6 +18,7 @@ type Filter = "all" | TripCategory;
 
 export function Trips() {
   const { trips, status } = useTrips();
+  const isMobile = useIsMobile();
   const { ui, lang } = useLanguage();
   usePageSeo(tripsSeo(lang));
   const stop = lang === "zh" ? "。" : ".";
@@ -69,10 +71,11 @@ export function Trips() {
       trips.filter(
         (t) =>
           (filter === "all" || t.category === filter) &&
-          (departure === "all" || t.departureCity === departure) &&
-          (!reviewedOnly || reviewedSlugs.has(t.slug)),
+          // Phones have no city / reviewed filters, so a ?departure= link must not silently apply one there
+          (isMobile || departure === "all" || t.departureCity === departure) &&
+          (isMobile || !reviewedOnly || reviewedSlugs.has(t.slug)),
       ),
-    [trips, filter, departure, reviewedOnly, reviewedSlugs],
+    [trips, filter, departure, reviewedOnly, reviewedSlugs, isMobile],
   );
   const departurePills = useMemo(
     () => [
@@ -120,12 +123,14 @@ export function Trips() {
             onChange={(id) => setFilter(id as Filter)}
             disabled={status !== "ready"}
             tabs={pills.map((p) => ({ id: p.key, label: p.label, count: status === "ready" ? p.count : "·" }))}
+            className="max-md:[scrollbar-width:none] max-md:[&::-webkit-scrollbar]:hidden"
           />
           <AnimatedTabs
             aria-label={ui.navByDeparture}
             value={departure}
             onChange={(id) => setDeparture(id)}
             disabled={status !== "ready"}
+            className="max-md:hidden"
             tabs={departurePills.map((p) => ({ id: p.id, label: p.label, count: status === "ready" ? p.count : "·" }))}
           />
           {reviewedCount > 0 && (
@@ -134,7 +139,7 @@ export function Trips() {
               aria-pressed={reviewedOnly}
               disabled={status !== "ready"}
               onClick={() => setReviewedOnly((v) => !v)}
-              className={`inline-flex h-10 items-center gap-2 whitespace-nowrap rounded-sm border border-ink px-4 text-sm font-medium outline-none transition-colors duration-300 focus-visible:ring-2 focus-visible:ring-ink/50 disabled:opacity-50 ${
+              className={`inline-flex h-10 items-center gap-2 whitespace-nowrap max-md:hidden rounded-sm border border-ink px-4 text-sm font-medium outline-none transition-colors duration-300 focus-visible:ring-2 focus-visible:ring-ink/50 disabled:opacity-50 ${
                 reviewedOnly ? "bg-ink text-paper" : "text-ink hover:bg-ink/10"
               }`}
             >

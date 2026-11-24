@@ -144,7 +144,7 @@ function MenuOverlay({ onClose }: { onClose: () => void }) {
         aria-modal="true"
         aria-label="Menu"
         data-lenis-prevent
-        className="fixed inset-x-[4px] bottom-[4px] z-[200] max-h-[calc(100dvh-8px)] overflow-y-auto rounded-2xl bg-paper px-5 pb-5 pt-3 text-ink shadow-[0_-30px_80px_-30px_rgba(0,0,0,0.5)]"
+        className="fixed inset-x-[4px] bottom-0 z-[200] max-h-[100dvh] overflow-y-auto rounded-t-2xl bg-paper px-5 pb-[max(1.25rem,env(safe-area-inset-bottom))] pt-3 text-ink shadow-[0_-30px_80px_-30px_rgba(0,0,0,0.5)]"
         {...sheetMotion}
       >
         <div className="mb-3 flex items-center justify-between">
